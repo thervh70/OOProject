@@ -12,6 +12,8 @@ public class RNG_Test {
 		for(int i=0;i<lijst.length;i++){
 			System.out.println(lijst[i]);
 		}
+		
+		
 	}
 
 }
