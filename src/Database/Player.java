@@ -4,7 +4,20 @@ public class Player {
 	
 	private String fnm, lnm, pos;
 	private int pri, age, pac, sho, pas, dri, def, phy;
-
+	/**
+	 * Constructor creates a Player
+	 * @param fnm Firstname
+	 * @param lnm Lastname
+	 * @param pos Position
+	 * @param age Age
+	 * @param pri Price
+	 * @param pac Pace
+	 * @param sho Shooting
+	 * @param pas Passing
+	 * @param dri Dribbling
+	 * @param def Defending
+	 * @param phy Physical
+	 */
 	public Player(String fnm, String lnm, String pos, int age, int pri, int pac,
 			int sho, int pas, int dri, int def, int phy) {
 		this.fnm = fnm;
@@ -19,8 +32,10 @@ public class Player {
 		this.def = def;
 		this.phy = phy;
 	}
-
-	
+	/**
+	 * Method toString gives a String-representation of a Player
+	 * @return String
+	 */
 	public String toString() {
 		return "Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
@@ -31,8 +46,10 @@ public class Player {
 				+ " Defending: "+this.getDef()
 				+ " Physical "+this.getPhy();
 	}
-	
-
+	/**
+	 * Method toWrite stringifies a Player so it can be written to xml-file
+	 * @return
+	 */
 	public String toWrite(){
 		String res="      <PLAYER>\r\n";
 		res+="         <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
@@ -49,91 +66,32 @@ public class Player {
 		res+="      </PLAYER>\r\n";
 		return res;
 	}
-	public String getFnm() {
-		return fnm;
-	}
-
-	public void setFnm(String fnm) {
-		this.fnm = fnm;
-	}
-
-	public String getLnm() {
-		return lnm;
-	}
-
-	public void setLnm(String lnm) {
-		this.lnm = lnm;
-	}
-
-	public String getPos() {
-		return pos;
-	}
-
-	public void setPos(String pos) {
-		this.pos = pos;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public int getPri() {
-		return pri;
-	}
-
-	public void setPri(int pri) {
-		this.pri = pri;
-	}
-
-	public int getPac() {
-		return pac;
-	}
-
-	public void setPac(int pac) {
-		this.pac = pac;
-	}
-
-	public int getSho() {
-		return sho;
-	}
-
-	public void setSho(int sho) {
-		this.sho = sho;
-	}
-
-	public int getPas() {
-		return pas;
-	}
-
-	public void setPas(int pas) {
-		this.pas = pas;
-	}
-
-	public int getDri() {
-		return dri;
-	}
-
-	public void setDri(int dri) {
-		this.dri = dri;
-	}
-
-	public int getDef() {
-		return def;
-	}
-
-	public void setDef(int def) {
-		this.def = def;
-	}
-
-	public int getPhy() {
-		return phy;
-	}
-
-	public void setPhy(int phy) {
-		this.phy = phy;
-	}
+	/**
+	 * Getters
+	 */
+	public String getFnm() {return fnm;}
+	public String getLnm() {return lnm;}
+	public String getPos() {return pos;}
+	public int getPri() {return pri;}
+	public int getAge() {return age;}
+	public int getPac() {return pac;}
+	public int getSho() {return sho;}
+	public int getPas() {return pas;}
+	public int getDri() {return dri;}
+	public int getDef() {return def;}
+	public int getPhy() {return phy;}
+	/**
+	 * Setters
+	 */
+	public void setFnm(String fnm) {this.fnm = fnm;}
+	public void setLnm(String lnm) {this.lnm = lnm;}
+	public void setPos(String pos) {this.pos = pos;}
+	public void setPri(int pri) {this.pri = pri;}
+	public void setAge(int age) {this.age = age;}
+	public void setPac(int pac) {this.pac = pac;}
+	public void setSho(int sho) {this.sho = sho;}
+	public void setPas(int pas) {this.pas = pas;}
+	public void setDri(int dri) {this.dri = dri;}
+	public void setDef(int def) {this.def = def;}
+	public void setPhy(int phy) {this.phy = phy;}
 }
