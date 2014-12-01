@@ -23,7 +23,6 @@ public class XmlParser {
 		    
 	    NodeList divisie = document.getDocumentElement().getChildNodes();
 		DBmain d = parseDB(divisie);
-		d = GetPlayerPrice.priceInXML(d);
 		System.out.println(d);
 		writeToXML(d);
 	}
