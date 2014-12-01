@@ -7,18 +7,18 @@
 
 public class gameEngine {
 
-	//Rate, Pace, Shoot, Pass, Dribble, Defend, Physical, Condition
+	//Pace, Shoot, Pass, Dribble, Defend, Physical, Condition
 	//TODO: Calculate attack scores based on team scores
 	
 	/*
-	private double ratAveA,pacAveA,shoAveA,pasAveA,driAveA,defAveA,phyAveA,conAveA;  //Team average of individual scores, Team A
-	private double ratAveB,pacAveB,shoAveB,pasAveB,driAveB,defAveB,phyAveB,conAveB;  //Team average of individual scores, Team B
+	private double pacAveA,shoAveA,pasAveA,driAveA,defAveA,phyAveA,conAveA;  //Team average of individual scores, Team A
+	private double pacAveB,shoAveB,pasAveB,driAveB,defAveB,phyAveB,conAveB;  //Team average of individual scores, Team B
 	private int dfCntA,mfCntA,stCntA; //Count the number of defenders, midfielders, strikers, Team A
 	private int dfCntB,mfCntB,stCntB; //Count the number of defenders, midfielders, strikers, Team A
 	*/
 	//Here are the testing values, change these to change the strength of the teams
-	private static int teamAatt = 0;
-	private static int teamAdef = 0;
+	private static int teamAatt = 50;
+	private static int teamAdef = 50;
 	
 	private static int teamBatt = 70;
 	private static int teamBdef = 70;
