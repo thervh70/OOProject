@@ -16,4 +16,3 @@ public class RNG_Test {
 	}
 
 }
-
