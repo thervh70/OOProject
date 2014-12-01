@@ -118,7 +118,7 @@ public class XmlParser {
 	  		case "LASTNAME": lname = playerattributes.item(j).getTextContent(); break;
 	  		case "AGE": age = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		case "TYPE": type = playerattributes.item(j).getTextContent(); break;
-//	  		case "PRICE": pri = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "PRICE": pri = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		case "PACE": pac = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		case "SHOOTING": sho = 	Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		case "PASSING": pas = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
