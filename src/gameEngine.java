@@ -18,8 +18,8 @@ public class gameEngine {
 	*/
 	
 	//Here are the testing values, change these to change the strength of the teams
-	private static int teamAatt = 50;
-	private static int teamAdef = 50;
+	private static int teamAatt = 0;
+	private static int teamAdef = 0;
 	
 	private static int teamBatt = 70;
 	private static int teamBdef = 70;
@@ -81,7 +81,7 @@ public class gameEngine {
 			b = def*(Math.random());
 			
 			if(a>b){ 
-				c++; 
+				c++;
 			}		
 		}
 		
