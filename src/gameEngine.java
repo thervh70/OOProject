@@ -32,7 +32,6 @@ public class gameEngine {
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
 	 * A syso is then displayed with the score
-	 * Tevens is Robin homoseksueel
 	 */
 	
 	public static void main(String[] args) {
