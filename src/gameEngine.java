@@ -23,10 +23,10 @@ public class gameEngine {
 	private static int teamBatt = 70;
 	private static int teamBdef = 70;
 	
-	/*
 	private static int targA = 0;
 	private static int targB = 0;
-	*/
+	
+	private static int d = 0;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -36,10 +36,12 @@ public class gameEngine {
 	public static void main(String[] args) {
 	
 		int A = attack(teamAatt, teamBdef);
+		targA = d;
 		int B = attack(teamBatt, teamAdef);
+		targB = d;
 		
 		if(A>B){
-			System.out.print("Team A won: ");;
+			System.out.print("Team A won: ");
 		}
 		else if(B>A){
 			System.out.print("Team B won: ");
@@ -49,6 +51,9 @@ public class gameEngine {
 		}
 		
 		System.out.println(A + "-" + B);
+		
+		System.out.println("Attempts A: " + targA);
+		System.out.println("Attempts B: " + targB);
 	}
 	
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
@@ -73,7 +78,7 @@ public class gameEngine {
 		int c = 0;
 		
 		//TODO: Link int d to target attempts
-		int d = (int) Math.round((Math.random()*10)+1);
+		d = (int) Math.round((Math.random()*(att/10))+1);
 		
 		for(int i = 0; i < d; i++){
 			a = att*(Math.random()-0.3);
