@@ -16,7 +16,6 @@ public class gameEngine {
 	private int dfCntA,mfCntA,stCntA; //Count the number of defenders, midfielders, strikers, Team A
 	private int dfCntB,mfCntB,stCntB; //Count the number of defenders, midfielders, strikers, Team A
 	*/
-	
 	//Here are the testing values, change these to change the strength of the teams
 	private static int teamAatt = 0;
 	private static int teamAdef = 0;
