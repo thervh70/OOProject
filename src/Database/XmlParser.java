@@ -1,28 +1,23 @@
 package Database;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
 import javax.xml.parsers.*;
 
 import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 
 public class XmlParser {
 
 	/**
-	 * Methode main leest een DIVISIE uit een xml bestand uit. Hierbij worden methode parseTeam en methode parsePlayer aangeroepen.
+	 * Method main executes shit
 	 * @param args
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		//Get the DOM Builder Factory and DOM Builder
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder = factory.newDocumentBuilder();
-		//Load and Parse the XML document. Document contains the complete XML as a Tree.
-		Document document = builder.parse("teams/Divisietest.xml");
-		    
-	    NodeList divisie = document.getDocumentElement().getChildNodes();
-		DBmain d = parseDB(divisie);
+		DBmain d = parseDB();
 		System.out.println(d);
 		writeToXML(d);
 	}
@@ -55,16 +50,25 @@ public class XmlParser {
 			res.addTeam(resT);
 		}
 		return res;
-	}*/
-	
+	}*/	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
 	 * and parserPlayer are called during this process.
 	 * 
 	 * @param division NodeList of all teams
 	 * @return DBmain
+	 * @throws IOException 
+	 * @throws SAXException 
+	 * @throws ParserConfigurationException 
 	 */
-	public static DBmain parseDB(NodeList division) {
+	public static DBmain parseDB() throws SAXException, IOException, ParserConfigurationException {
+		//Get the DOM Builder Factory and DOM Builder
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		//Load and Parse the XML document. Document contains the complete XML as a Tree.
+		Document document = builder.parse("teams/Divisietest.xml");
+		    
+	    NodeList division = document.getDocumentElement().getChildNodes();
 		DBmain d = new DBmain();
 	    for(int i=1;i<division.getLength();i+=2) {
 	    	Node team = division.item(i);
@@ -126,7 +130,11 @@ public class XmlParser {
 	  	Player p = new Player(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
-	
+	/**
+	 * Method writeToXML writes a Database to a xml-file
+	 * @param db
+	 * @throws FileNotFoundException
+	 */
 	public static void writeToXML(DBmain db) throws FileNotFoundException {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
