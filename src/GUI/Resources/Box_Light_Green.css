@@ -1,0 +1,9 @@
+.Box {
+  background-image: url("Box.png");
+  position: absolute;
+  left: 75px;
+  top: 50px;
+  width: 1770px;
+  height: 980px;
+  z-index: 2;
+}
