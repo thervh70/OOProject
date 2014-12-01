@@ -19,38 +19,8 @@ public class XmlParser {
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
-		writeToXML(d);
+//		writeToXML(d);
 	}
-	
-	/**
-	 * This methods only purpose was to fix a mistake in the xml-file!
-	 */
-	/*public static DBmain reparser(DBmain d) {
-		DBmain res = new DBmain();
-		for(int i=0;i<d.getSize();i++) {
-			Team t = d.getT(i);
-			String teamname = t.getNm();
-			int budget = t.getBdgt();
-			Team resT = new Team(teamname, budget);
-			for(int j=0;j<t.getSize();j++) {
-				Player p = t.getPlayer(j);
-				String fnm = p.getFnm();
-				String lnm = p.getLnm();
-				String pos = p.getPos();
-				int pac = p.getAge();
-				int sho = p.getPac();
-				int pas = p.getSho();
-				int dri = p.getPas();
-				int def = p.getDri();
-				int phy = p.getDef();
-				int age = p.getPhy();
-				Player resP = new Player(fnm, lnm, pos, age, pac, sho, pas, dri, def, phy);
-				resT.addPlayer(resP);
-			}
-			res.addTeam(resT);
-		}
-		return res;
-	}*/	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
 	 * and parserPlayer are called during this process.
@@ -66,7 +36,7 @@ public class XmlParser {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		//Load and Parse the XML document. Document contains the complete XML as a Tree.
-		Document document = builder.parse("teams/Divisietest.xml");
+		Document document = builder.parse("src/Database/Database_v4.xml");
 		    
 	    NodeList division = document.getDocumentElement().getChildNodes();
 		DBmain d = new DBmain();
@@ -91,9 +61,11 @@ public class XmlParser {
 	    NodeList teamattributes = teamattrs;
 	    String teamname = teamattributes.item(1).getTextContent();
 	    String bdgtString = teamattributes.item(3).getTextContent();
-	    int budget = Integer.parseInt(bdgtString);
-	    Team t = new Team(teamname, budget);
-	    for(int i=5;i<teamattributes.getLength();i+=2) {
+	    String bdgtString_rel = teamattributes.item(5).getTextContent();
+	    int budget_vir = Integer.parseInt(bdgtString);
+	    int budget_rel = Integer.parseInt(bdgtString_rel);
+	    Team t = new Team(teamname, budget_vir, budget_rel);
+	    for(int i=7;i<teamattributes.getLength();i+=2) {
 	    	
 	    	Node player = teamattributes.item(i);
 	    	if(player.getNodeName().equals("PLAYER")) {
@@ -145,6 +117,35 @@ public class XmlParser {
 		pw.print(wrt);
 		pw.close();
 	}
+	/**
+	 * This methods only purpose was to fix a mistake in the xml-file!
+	 */
+	/*public static DBmain reparser(DBmain d) {
+		DBmain res = new DBmain();
+		for(int i=0;i<d.getSize();i++) {
+			Team t = d.getT(i);
+			String teamname = t.getNm();
+			int budget = t.getBdgt();
+			Team resT = new Team(teamname, budget);
+			for(int j=0;j<t.getSize();j++) {
+				Player p = t.getPlayer(j);
+				String fnm = p.getFnm();
+				String lnm = p.getLnm();
+				String pos = p.getPos();
+				int pac = p.getAge();
+				int sho = p.getPac();
+				int pas = p.getSho();
+				int dri = p.getPas();
+				int def = p.getDri();
+				int phy = p.getDef();
+				int age = p.getPhy();
+				Player resP = new Player(fnm, lnm, pos, age, pac, sho, pas, dri, def, phy);
+				resT.addPlayer(resP);
+			}
+			res.addTeam(resT);
+		}
+		return res;
+	}*/	
 }
 	
 

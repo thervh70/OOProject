@@ -6,7 +6,7 @@ public class GetPlayerPrice {
 		DBmain res = new DBmain();
 		for(int i=0;i<db.getSize();i++) {
 			Team t = db.getT(i);
-			Team resT = new Team(t.getNm(), t.getBdgt());
+			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
 			for(int j=0;j<t.getSize();j++) {
 				Player p = t.getPlayer(j);
 				Player resP = definePlayerPrice(p);
