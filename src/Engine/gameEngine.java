@@ -1,3 +1,5 @@
+package Engine;
+
 /**The root of our game.
  * This class calculates the score for a match.
  *  
@@ -10,12 +12,12 @@ public class gameEngine {
 	//Pace, Shoot, Pass, Dribble, Defend, Physical, Condition
 	//TODO: Calculate attack scores based on team scores
 	
-	/*
 	private double pacAveA,shoAveA,pasAveA,driAveA,defAveA,phyAveA,conAveA;  //Team average of individual scores, Team A
 	private double pacAveB,shoAveB,pasAveB,driAveB,defAveB,phyAveB,conAveB;  //Team average of individual scores, Team B
+	
 	private int dfCntA,mfCntA,stCntA; //Count the number of defenders, midfielders, strikers, Team A
 	private int dfCntB,mfCntB,stCntB; //Count the number of defenders, midfielders, strikers, Team A
-	*/
+	
 	//Here are the testing values, change these to change the strength of the teams
 	private static int teamAatt = 50;
 	private static int teamAdef = 50;
@@ -77,7 +79,6 @@ public class gameEngine {
 		double a = 0,b = 0;
 		int c = 0;
 		
-		//TODO: Link int d to target attempts
 		d = (int) Math.round((Math.random()*(att/10))+1);
 		
 		for(int i = 0; i < d; i++){
@@ -88,9 +89,6 @@ public class gameEngine {
 				c++;
 			}		
 		}
-		
-		//Extra randomness --> 
-		//c = (int) (c*(Math.random()+0.5));
 		
 		return c;
 	}
