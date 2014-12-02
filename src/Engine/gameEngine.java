@@ -1,4 +1,13 @@
 package Engine;
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
+import Database.DBmain;
+import Database.Team; 
+import Database.XmlParser;
 
 /**The root of our game.
  * This class calculates the score for a match.
@@ -8,45 +17,57 @@ package Engine;
  */
 
 public class gameEngine {
-
-	//Pace, Shoot, Pass, Dribble, Defend, Physical, Condition
-	//TODO: Calculate attack scores based on team scores
-	
-	private double pacAveA,shoAveA,pasAveA,driAveA,defAveA,phyAveA,conAveA;  //Team average of individual scores, Team A
-	private double pacAveB,shoAveB,pasAveB,driAveB,defAveB,phyAveB,conAveB;  //Team average of individual scores, Team B
-	
-	private int dfCntA,mfCntA,stCntA; //Count the number of defenders, midfielders, strikers, Team A
-	private int dfCntB,mfCntB,stCntB; //Count the number of defenders, midfielders, strikers, Team A
-	
-	//Here are the testing values, change these to change the strength of the teams
-	private static int teamAatt = 50;
-	private static int teamAdef = 50;
-	
-	private static int teamBatt = 70;
-	private static int teamBdef = 70;
 	
 	private static int targA = 0;
 	private static int targB = 0;
 	
-	private static int d = 0;
+	private static int attempts = 0;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
 	 * A syso is then displayed with the score
+	 * @throws ParserConfigurationException 
+	 * @throws IOException 
+	 * @throws SAXException 
 	 */
 	
-	public static void main(String[] args) {
-	
-		int A = attack(teamAatt, teamBdef);
-		targA = d;
-		int B = attack(teamBatt, teamAdef);
-		targB = d;
+	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
 		
+		DBmain d = XmlParser.parseDB();
+		Team alpha = d.getT(13);
+		Team beta = d.getT(14);
+		
+		System.out.println(alpha.getNm() + " vs " + beta.getNm());
+		System.out.println(alpha.calcAttScore() + "\t" + beta.calcAttScore());
+		System.out.println(alpha.calcDefScore() + "\t" + beta.calcDefScore() + "\n");
+		
+		int psv = 0;
+		int cam = 0;
+		int gel = 0;
+		
+		for(int i = 0; i < 1000; i++){
+			int A = attack(alpha.calcAttScore(), beta.calcDefScore());
+			targA = attempts;
+		//	System.out.println("Attempts PSV: " + targA);
+			int B = attack(beta.calcAttScore(), alpha.calcDefScore());
+			targB = attempts;
+		//	System.out.println("Attempts Cambuur: " + targB);
+			
+			if(A>B) psv++;
+			else if(B>A) cam++;
+			else if(B==A) gel++;
+		}
+		
+		System.out.println(alpha.getNm()+ ": " + psv);
+		System.out.println(beta.getNm()+ ": " + cam);
+		System.out.println("Gelijk: " + gel);
+		
+		/*
 		if(A>B){
-			System.out.print("Team A won: ");
+			System.out.print(alpha.getNm() + " won: ");
 		}
 		else if(B>A){
-			System.out.print("Team B won: ");
+			System.out.print(beta.getNm() + " won: ");
 		}
 		else{
 			System.out.print("It's a tie: ");
@@ -56,6 +77,7 @@ public class gameEngine {
 		
 		System.out.println("Attempts A: " + targA);
 		System.out.println("Attempts B: " + targB);
+		*/
 	}
 	
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
@@ -68,8 +90,6 @@ public class gameEngine {
 	 * Within the attacking mechanism is a -0.3, this is a numerical correction.
 	 * That way the program is able to reproduce reliable scores.
 	 * 
-	 * To add extra randomness an extra function was made, this was unneccesary.
-	 * 
 	 * @param att Attacking score of team A
 	 * @param def Defending score of team B
 	 * @return The amount of goals scored by attacking team
@@ -79,9 +99,9 @@ public class gameEngine {
 		double a = 0,b = 0;
 		int c = 0;
 		
-		d = (int) Math.round((Math.random()*(att/10))+1);
+		attempts = (int) Math.round((Math.random()*(att/5))+1);
 		
-		for(int i = 0; i < d; i++){
+		for(int i = 0; i < attempts; i++){
 			a = att*(Math.random()-0.3);
 			b = def*(Math.random());
 			
