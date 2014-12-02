@@ -67,6 +67,12 @@ public class Player {
 		return res;
 	}
 	
+	/**This method calculates the individual attacking score of a player
+	 * It relies on the position of the player
+	 * 
+	 * @return Attacking score for 1 player
+	 */
+	
 	public double calcAttScore(){
 		double score = 0;
 		String pos = this.getPos();
@@ -86,6 +92,12 @@ public class Player {
 		
 		return score;
 	}
+	
+	/**This method calculates the individual defending score of a player
+	 * It relies on the position of the player.
+	 * 
+	 * @return Defending score for 1 player
+	 */
 	
 	public double calcDefScore(){
 		double score = 0;

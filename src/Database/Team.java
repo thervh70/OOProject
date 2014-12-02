@@ -57,6 +57,15 @@ public class Team {
 		return res;
 	}
 	
+	/**The attacking score of a team is calculated.
+	 * This is done by adding all of the attacking score of a player.
+	 * This means only type 3 or 4 players (str/mid and str)
+	 * The score is divided by the amount of players of that type.
+	 * Final score is enlarged and rounded
+	 * 
+	 * @return An attacking score value
+	 */
+	
 	public int calcAttScore(){
 		double score = 0;
 		
@@ -73,6 +82,15 @@ public class Team {
 		
 		return (int) score;
 	}
+	
+	/**The defending score of a team is calculated.
+	 * This is done by adding all of the defending score of a player.
+	 * This means only type 1 or 2 players (def and def/mid)
+	 * The score is divided by the amount of players of that type.
+	 * Final score is enlarged and rounded
+	 * 
+	 * @return A defending score value
+	 */
 	
 	public int calcDefScore(){
 		double score = 0;
@@ -96,6 +114,7 @@ public class Team {
 	 * @param a Type - 0=Keeper, 1=Defender, 2=Def/Mid, 3=Str/Mid, 4=Striker
 	 * @return Count
 	 */
+	
 	public int count(int a){
 		int count = 0;
 		for(int i = 0; i < this.getSize(); i++){
