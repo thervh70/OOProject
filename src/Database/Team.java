@@ -56,6 +56,72 @@ public class Team {
 		res += "   </TEAM>\r\n";
 		return res;
 	}
+	
+	public int calcAttScore(){
+		double score = 0;
+		
+		for(int i = 0; i < this.getSize(); i++){
+			Player p = this.getPlayer(i);
+			score += p.calcAttScore();
+		}
+		
+		int count = this.count(3) + this.count(4);
+				
+		score /= count;
+		score *= 10;
+		score = Math.round(score);
+		
+		return (int) score;
+	}
+	
+	public int calcDefScore(){
+		double score = 0;
+		
+		for(int i = 0; i < this.getSize(); i++){
+			Player p = this.getPlayer(i);
+			score += p.calcDefScore();
+		}
+		
+		int count = this.count(1) + this.count(2);
+		
+		score /= count;
+		score *= 10;
+		score = Math.round(score);
+		
+		return (int) score;
+	}
+	
+	/**Count the amount of players of a certain type
+	 * 
+	 * @param a Type - 0=Keeper, 1=Defender, 2=Def/Mid, 3=Str/Mid, 4=Striker
+	 * @return Count
+	 */
+	public int count(int a){
+		int count = 0;
+		for(int i = 0; i < this.getSize(); i++){
+			Player p = this.getPlayer(i);
+			String pos = p.getPos();
+			
+			switch(a){
+			case 0:
+				if(pos.equals("KP")) count++;
+				break;
+			case 1:
+				if(pos.equals("RB") || pos.equals("CB") || pos.equals("LB")) count++;
+				break;
+			case 2:
+				if(pos.equals("CDM") || pos.equals("CM")) count++;
+				break;
+			case 3:
+				if(pos.equals("CAM") || pos.equals("LW") || pos.equals("RW")) count++;
+				break;
+			case 4:
+				if(pos.equals("ST")) count++;
+				break;
+			}
+		}
+		return count;
+	}
 	/**
 	 * Getters
 	 */
