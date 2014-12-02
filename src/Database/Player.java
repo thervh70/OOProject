@@ -66,6 +66,46 @@ public class Player {
 		res+="      </PLAYER>\r\n";
 		return res;
 	}
+	
+	public double calcAttScore(){
+		double score = 0;
+		String pos = this.getPos();
+		int pac = this.getPac();
+		int sho = this.getSho();
+		int pas = this.getPas();
+		int dri = this.getDri();
+		int def = this.getDef();
+		int phy = this.getPhy();
+
+		if(pos.equals("CAM") || pos.equals("LW") || pos.equals("RW")) {
+			score = (pac*15 + sho*15 + pas*15 + dri*15 + def*15 + phy*25)/100;
+		}
+		else if(pos.equals("ST")) {
+			score = (pac*10 + sho*25 + pas*15 + dri*15 + def*10 + phy*25)/100;
+		}
+		
+		return score;
+	}
+	
+	public double calcDefScore(){
+		double score = 0;
+		String pos = this.getPos();
+		int pac = this.getPac();
+		int sho = this.getSho();
+		int pas = this.getPas();
+		int dri = this.getDri();
+		int def = this.getDef();
+		int phy = this.getPhy();
+
+		if(pos.equals("RB") || pos.equals("CB") || pos.equals("LB")) {
+			score = (pac*10 + sho*10 + pas*15 + dri*10 + def*40 + phy*15)/100;
+		}
+		else if(pos.equals("CDM") || pos.equals("CM")) {
+			score = (pac*15 + sho*10 + pas*20 + dri*10 + def*25 + phy*20)/100;
+		}
+		
+		return score;
+	}
 	/**
 	 * Getters
 	 */
