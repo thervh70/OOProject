@@ -35,11 +35,11 @@ public class gameEngine {
 		
 		DBmain d = XmlParser.parseDB();
 		Team alpha = d.getT(13);
-		Team beta = d.getT(14);
+		Team beta = d.getT(1);
 		
 		System.out.println(alpha.getNm() + " vs " + beta.getNm());
-		System.out.println(alpha.calcAttScore() + "\t" + beta.calcAttScore());
-		System.out.println(alpha.calcDefScore() + "\t" + beta.calcDefScore() + "\n");
+		System.out.println(Math.round(alpha.calcAttScore()) + "\t" + Math.round(beta.calcAttScore()));
+		System.out.println(Math.round(alpha.calcDefScore()) + "\t" + Math.round(beta.calcDefScore()) + "\n");
 		
 		int psv = 0;
 		int cam = 0;
@@ -48,10 +48,8 @@ public class gameEngine {
 		for(int i = 0; i < 1000; i++){
 			int A = attack(alpha.calcAttScore(), beta.calcDefScore());
 			targA = attempts;
-		//	System.out.println("Attempts PSV: " + targA);
 			int B = attack(beta.calcAttScore(), alpha.calcDefScore());
 			targB = attempts;
-		//	System.out.println("Attempts Cambuur: " + targB);
 			
 			if(A>B) psv++;
 			else if(B>A) cam++;
@@ -95,15 +93,15 @@ public class gameEngine {
 	 * @return The amount of goals scored by attacking team
 	 */
 	
-	public static int attack(int att, int def){
+	public static int attack(double att, double def){
 		double a = 0,b = 0;
 		int c = 0;
 		
-		attempts = (int) Math.round((Math.random()*(att/5))+1);
+		attempts = (int) Math.round((Math.random()*(att/6))+1);
 		
 		for(int i = 0; i < attempts; i++){
-			a = att*(Math.random()-0.3);
-			b = def*(Math.random());
+			a = att*(Math.random()-0.3); //correction ensures not too much goals are made
+			b = def*(Math.random()); //correction ensures not too much ties are made
 			
 			if(a>b){ 
 				c++;
