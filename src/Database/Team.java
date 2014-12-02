@@ -77,7 +77,7 @@ public class Team {
 		int count = this.count(3) + this.count(4);
 				
 		score /= count;
-		score *= 1000;
+	//	score *= 1000;
 		score = Math.round(score);
 		
 		return (int) score;
@@ -103,7 +103,7 @@ public class Team {
 		int count = this.count(1) + this.count(2);
 		
 		score /= count;
-		score *= 1000;
+	//	score *= 1000;
 		score = Math.round(score);
 		
 		return (int) score;
