@@ -66,7 +66,7 @@ public class Team {
 	 * @return An attacking score value
 	 */
 	
-	public int calcAttScore(){
+	public double calcAttScore(){
 		double score = 0;
 		
 		for(int i = 0; i < this.getSize(); i++){
@@ -78,9 +78,8 @@ public class Team {
 				
 		score /= count;
 	//	score *= 1000;
-		score = Math.round(score);
 		
-		return (int) score;
+		return score;
 	}
 	
 	/**The defending score of a team is calculated.
@@ -92,7 +91,7 @@ public class Team {
 	 * @return A defending score value
 	 */
 	
-	public int calcDefScore(){
+	public double calcDefScore(){
 		double score = 0;
 		
 		for(int i = 0; i < this.getSize(); i++){
@@ -104,9 +103,8 @@ public class Team {
 		
 		score /= count;
 	//	score *= 1000;
-		score = Math.round(score);
 		
-		return (int) score;
+		return score;
 	}
 	
 	/**Count the amount of players of a certain type
