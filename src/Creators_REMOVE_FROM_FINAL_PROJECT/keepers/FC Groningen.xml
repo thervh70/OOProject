@@ -1,0 +1,15 @@
+   <KEEPERS_FOR_TEAM>
+      <TEAMNAME>FC Groningen</TEAMNAME>
+      <KEEPER>
+         <FIRSTNAME>Sergio</FIRSTNAME>
+         <LASTNAME>Padt</LASTNAME>
+         <DIVING>77</DIVING>
+         <HANDLING>67</HANDLING>
+         <KICKING>70</KICKING>
+         <REFLEXES>77</REFLEXES>
+         <SPEED>41</SPEED>
+         <POSITIONING>68</POSITIONING>
+         <HEIGHT>197</HEIGHT>
+         <AGE>24</AGE>
+      </KEEPER>
+   </KEEPERS_FOR_TEAM>
