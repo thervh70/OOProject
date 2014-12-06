@@ -7,6 +7,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
@@ -60,6 +62,20 @@ public class PickTeam{
 		hbox2.getChildren().addAll(Twente, Utrecht, Feyenoord, Eagles, Heracles, NAC);
 		hbox3.getChildren().addAll(PEC, PSV, Cambuur, Heerenveen, Vitesse, Willem);
 		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back);
+		
+		Continue.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e){
+				ManagementCenter.start(primaryStage);
+			}
+		});
+		
+		Back.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e){
+				StartupMenu.back(primaryStage);
+			}
+		});
 		
 		Scene scene = new Scene(root, 1770, 980);
 		primaryStage.setScene(scene);
