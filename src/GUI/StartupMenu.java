@@ -86,7 +86,6 @@ public class StartupMenu {
 					PickTeam.start(primaryStage);
 				} catch (SAXException | IOException
 						| ParserConfigurationException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
