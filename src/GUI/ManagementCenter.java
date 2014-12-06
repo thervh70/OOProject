@@ -18,14 +18,14 @@ public class ManagementCenter {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
-		Button change = new Button("Change Team");
+		Button manage = new Button("Manage Team");
 		Button table = new Button("Competition Table");
 		Button match = new Button("Match Center");
 		Button market = new Button("Transfer Market");
 		Button save = new Button("Save Game");
 		Button menu = new Button("Back to main menu");
 		
-		change.setFont(new Font("Arial", 35));
+		manage.setFont(new Font("Arial", 35));
 		table.setFont(new Font("Arial", 35));
 		match.setFont(new Font("Arial", 35));
 		market.setFont(new Font("Arial", 35));
@@ -36,11 +36,25 @@ public class ManagementCenter {
 		menu.setFont(new Font("Arial", 25));
 		
 		VBox vbox = new VBox(20);
-		vbox.getChildren().addAll(change, table, match, market, save);
+		vbox.getChildren().addAll(manage, table, match, market, save);
 		vbox.setLayoutX(650);
 		vbox.setLayoutY(300);
 		
 		root.getChildren().addAll(vbox, menu);
+		
+		manage.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				TeamManagement.start(primaryStage);
+			}
+		});
+		
+		table.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				CompetitionTable.start(primaryStage);
+			}
+		});
 		
 		match.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -49,12 +63,13 @@ public class ManagementCenter {
 			}
 		});
 		
-		menu.setOnAction(new EventHandler<ActionEvent>() {
+		market.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				StartupMenu.back(primaryStage);
+				TransferMarket.start(primaryStage);
 			}
 		});
+		
 		
 		save.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -97,6 +112,13 @@ public class ManagementCenter {
 
 			}
 			
+		});
+		
+		menu.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				StartupMenu.back(primaryStage);
+			}
 		});
 		
 		Scene scene = new Scene(root, 1770, 980);

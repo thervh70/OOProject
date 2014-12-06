@@ -14,15 +14,15 @@ public class Results {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
-		Button center = new Button("Back to Management Center");
+		Button back = new Button("Back to Management Center");
 		
-		center.setFont(new Font("Arial", 25));
-		center.setLayoutX(80);
-		center.setLayoutY(870);
+		back.setFont(new Font("Arial", 25));
+		back.setLayoutX(80);
+		back.setLayoutY(870);
 		
-		root.getChildren().add(center);
+		root.getChildren().add(back);
 		
-		center.setOnAction(new EventHandler<ActionEvent>() {
+		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
 				ManagementCenter.start(primaryStage);

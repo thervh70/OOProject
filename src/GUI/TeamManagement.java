@@ -9,32 +9,17 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-public class MatchCenter {
+public class TeamManagement {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
-		Button results = new Button("Results");
-		Button start = new Button("Start match");
 		Button back = new Button("Back to Management Center");
 		
 		back.setFont(new Font("Arial", 25));
-		results.setFont(new Font("Arial", 25));
-		start.setFont(new Font("Arial", 30));
 		back.setLayoutX(80);
 		back.setLayoutY(870);
-		results.setLayoutX(100);
-		results.setLayoutY(200);
-		start.setLayoutX(100);
-		start.setLayoutY(270);
 		
-		root.getChildren().addAll(back, results, start);
-		
-		results.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent e) {
-				Results.start(primaryStage);
-			}
-		});
+		root.getChildren().add(back);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -47,5 +32,4 @@ public class MatchCenter {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
-
 }
