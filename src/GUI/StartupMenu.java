@@ -15,9 +15,8 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-public class StartupMenu extends Application {
+public class StartupMenu {
 
-	@Override
 	public void start(Stage primaryStage) {
 		Pane startupMenu = new Pane();
 		Button newGame = new Button("NEW GAME");
@@ -112,10 +111,5 @@ public class StartupMenu extends Application {
 		startupMenu.getChildren().addAll(newGame, loadGame, exit);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-	}
-	
-
-	public static void main(String[] args) {
-		launch(args);
 	}
 }

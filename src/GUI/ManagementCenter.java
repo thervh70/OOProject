@@ -8,6 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.stage.Popup;
+import javafx.stage.PopupBuilder;
+import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 
 public class ManagementCenter {
@@ -50,6 +54,49 @@ public class ManagementCenter {
 			public void handle(ActionEvent e) {
 				StartupMenu.back(primaryStage);
 			}
+		});
+		
+		save.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				Popup save = new Popup();
+				save.setHeight(200);
+				save.setWidth(500);
+				
+				Text overwrite = new Text("Saving the game will overwrite your previous save state");
+				Text overwrite2 = new Text("Are you sure you want to overwrite?");
+				Button yes = new Button("Yes");
+				Button no = new Button("No");
+				
+				overwrite.setLayoutY(200);
+				overwrite2.setLayoutY(250);
+				yes.setLayoutX(10);
+				yes.setLayoutY(300);
+				no.setLayoutX(310);
+				no.setLayoutY(300);
+				
+				save.getContent().addAll(overwrite, overwrite2, yes, no);
+				root.setVisible(false);
+				save.show(primaryStage);
+				
+				yes.setOnAction(new EventHandler<ActionEvent>() {
+					@Override
+					public void handle(ActionEvent e) {
+						save.hide();
+						root.setVisible(true);
+					}
+				});
+				
+				no.setOnAction(new EventHandler<ActionEvent>() {
+					@Override
+					public void handle(ActionEvent e) {
+						save.hide();
+						root.setVisible(true);
+					}
+				});
+
+			}
+			
 		});
 		
 		Scene scene = new Scene(root, 1770, 980);
