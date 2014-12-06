@@ -45,6 +45,13 @@ public class ManagementCenter {
 			}
 		});
 		
+		menu.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				StartupMenu.back(primaryStage);
+			}
+		});
+		
 		Scene scene = new Scene(root, 1770, 980);
 		primaryStage.setScene(scene);
 		primaryStage.show();
