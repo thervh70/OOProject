@@ -11,3 +11,6 @@
     -fx-width: 1000;
 }
 
+.custom-button:hover {
+    -fx-background-color: #9ACD32;
+}

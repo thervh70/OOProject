@@ -1,6 +1,8 @@
 package GUI;
 	
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -17,13 +19,26 @@ import javafx.scene.text.Text;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
-		try {
-			Pane root = new Pane();
+			/* Pane root = new Pane();
+			Pane root2 = new Pane();
 			Scene scene = new Scene(root,400,400);
+
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			
 			Button t= new Button("Hello FX!");
+			Button t2 = new Button("Andere button");
 			t.getStyleClass().add("custom-button");
+			t2.getStyleClass().add("custom-button");
+			t.setOnAction(new EventHandler<ActionEvent>(){
+				@Override public void handle(ActionEvent e) {
+					scene = new Scene(root2,400,400);
+					
+					scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+					primaryStage.setScene(scene);
+					primaryStage.show();
+			    }
+				
+			});
 			//root.setCenter(t);
 			//t.setLayoutX(50);
 			//t.setLayoutY(50);
@@ -34,6 +49,7 @@ public class Main extends Application {
 
 			
 		    root.getChildren().add(t);
+		    root2.getChildren().add(t2);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			primaryStage.setResizable(false);
@@ -43,9 +59,12 @@ public class Main extends Application {
 			root.getStyleClass().add("background");
 		} catch(Exception e) {
 			e.printStackTrace();
-		}
-		
+		} */
+			
+	
 	}
+			
+	
 	
 	public static void main(String[] args) {
 		launch(args);
