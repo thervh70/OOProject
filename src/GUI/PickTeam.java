@@ -98,6 +98,7 @@ public class PickTeam{
 				ManagementCenter.start(primaryStage);
 			}
 		});
+
 		
 		Back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
