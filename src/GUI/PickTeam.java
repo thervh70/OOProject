@@ -123,7 +123,27 @@ public class PickTeam{
 			@Override
 			public void handle(ActionEvent e) {
 				players.getChildren().clear();
-				Team team = teams.getT(0);
+				Team team = new Team(null, 0, 0);
+				switch(name.getText().toString()){
+				case "ADO": team = teams.getT(0); break;
+				case "Ajax": team = teams.getT(1); break;
+				case "AZ": team = teams.getT(2); break;
+				case "Excelsior": team = teams.getT(3); break;
+				case "FC Dordrecht": team = teams.getT(4); break;
+				case "FC Groningen": team = teams.getT(5); break;
+				case "FC Twente": team = teams.getT(6); break;
+				case "FC Utrecht": team = teams.getT(7); break;
+				case "Feyenoord": team = teams.getT(8); break;
+				case "Go Ahead Eagles": team = teams.getT(9); break;
+				case "Heracles Almelo": team = teams.getT(10); break;
+				case "NAC Breda": team = teams.getT(11); break;
+				case "PEC Zwolle": team = teams.getT(12); break;
+				case "PSV": team = teams.getT(13); break;
+				case "SC Cambuur": team = teams.getT(14); break;
+				case "SC Heerenveen": team = teams.getT(15); break;
+				case "Vitesse": team = teams.getT(16); break;
+				case "Willem II": team = teams.getT(17); break;
+				}
 				for(int i = 0; i < team.getSize(); i++){
 					players.getChildren().add(new Text(team.getPlayer(i).toString()));
 				}
