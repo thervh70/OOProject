@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 public class StartupMenu {
 
-	public void start(Stage primaryStage) {
+	public static void start(Stage primaryStage) {
 		Pane startupMenu = new Pane();
 		Button newGame = new Button("NEW GAME");
 		Button loadGame = new Button("LOAD GAME");
