@@ -6,6 +6,8 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -20,36 +22,45 @@ public class CompetitionTable {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
+		
+		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");
-		VBox table = new VBox(15);
-		table.setPrefSize(1370, 660);
-		Text a = new Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor");
-		Text b = new Text("incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ");
-		Text c = new Text("exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure ");
-		Text d = new Text("dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.");
-		Text e = new Text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt");
-		Text f = new Text("mollit anim id est laborum");
-		
-		table.setBackground(new Background(new BackgroundFill(Color.CORNSILK, CornerRadii.EMPTY, Insets.EMPTY)));
-		table.setLayoutX(200);
-		table.setLayoutY(160);
-		
-		table.getChildren().addAll(new Text("This box will show a competition table"), new Text("With stuff shown in a VBox"), new Text("More stuff"), a, b, c, d, e, f);
-		
 		back.setFont(new Font("Arial", 25));
 		back.setLayoutX(80);
 		back.setLayoutY(870);
 		
+		Text t = new Text(350,50, "Ranking");
+		t.setScaleX(5);
+		t.setScaleY(5);
 		
-		
-		root.getChildren().addAll(back, table);
+		//Create a table with fixed columns
+		TableView<String> table = new TableView();
+		table.setEditable(false);
+		table.setPrefSize(700, 540);
+		table.setLayoutX(100);
+		table.setLayoutY(100);
+		TableColumn rank = new TableColumn("Rank");
+		rank.setPrefWidth(50);
+        TableColumn name = new TableColumn("Team Name");
+		name.setPrefWidth(550);
+		TableColumn points = new TableColumn("Points");
+		points.setPrefWidth(100);
+        rank.setResizable(false);
+        name.setResizable(false);
+        points.setResizable(false);
+        table.getColumns().addAll(rank,name,points);
+        
+        
+		root.getChildren().add(back);
+		root.getChildren().add(table);
+		root.getChildren().add(t);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
 				ManagementCenter.start(primaryStage);
 			}
-		});
+		}); 
 		
 		Scene scene = new Scene(root, 1770, 980);
 		primaryStage.setScene(scene);
