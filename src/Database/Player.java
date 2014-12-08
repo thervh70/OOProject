@@ -118,6 +118,24 @@ public class Player {
 		
 		return score;
 	}
+	
+	public boolean equals(Object other) {
+		if(other instanceof Player) {
+			Player that = (Player)(other);
+			return this.getFnm().equals(that.getFnm()) &&
+					this.getLnm().equals(that.getLnm()) &&
+					this.getPos().equals(that.getPos()) &&
+					this.getPri() == that.getPri() &&
+					this.getAge() == that.getAge() &&
+					this.getPac() == that.getPac() &&
+					this.getSho() == that.getSho() &&
+					this.getPas() == that.getPas() &&
+					this.getDri() == that.getDri() &&
+					this.getDef() == that.getDef() &&
+					this.getPhy() == that.getPhy();
+		}
+		return false;
+	}
 	/**
 	 * Getters
 	 */

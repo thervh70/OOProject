@@ -2,10 +2,16 @@ package Database;
 
 public class GetPlayerPrice {
 
+	/** 
+	 * This Method provides every Player with a price. Method definePlayerPrice(Player p) is used for this.
+	 * @param db
+	 * @return DBmain
+	 */
+	
 	public static DBmain priceInXML(DBmain db) {
 		DBmain res = new DBmain();
 		for(int i=0;i<db.getSize();i++) {
-			Team t = db.getT(i);
+			Team t = db.getTeam(i);
 			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
 			for(int j=0;j<t.getSize();j++) {
 				Player p = t.getPlayer(j);
@@ -17,6 +23,11 @@ public class GetPlayerPrice {
 		}
 		return res;
 	}
+	/**
+	 * This Method provides every Player with a price. This price is based on their statistics relative to their position on the field.
+	 * @param p
+	 * @return Player
+	 */
 	
 	public static Player definePlayerPrice(Player p) {
 		int pri = 75000;

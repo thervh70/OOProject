@@ -14,7 +14,7 @@ public class scoreTest {
 		DBmain d = XmlParser.parseDB();
 		
 		for(int i = 0; i < 18; i++){
-			Team t = d.getT(i);
+			Team t = d.getTeam(i);
 			int att = (int) t.calcAttScore();
 			double mapAtt = map(att,50,70,0,100);
 			int def = (int) t.calcDefScore();

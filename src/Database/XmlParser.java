@@ -21,6 +21,7 @@ public class XmlParser {
 		System.out.println(d);
 //		writeToXML(d);
 	}
+	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
 	 * and parserPlayer are called during this process.
@@ -31,6 +32,7 @@ public class XmlParser {
 	 * @throws SAXException 
 	 * @throws ParserConfigurationException 
 	 */
+	
 	public static DBmain parseDB() throws SAXException, IOException, ParserConfigurationException {
 		//Get the DOM Builder Factory and DOM Builder
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -56,6 +58,7 @@ public class XmlParser {
    * @param teamattrs de verschillende attributen van een team (teamnaam, spelers)
    * @return Team t 
    */
+	
 	public static Team parseTeam(NodeList teamattrs) {
 		//Iterating through the nodes and extracting the data. Because of I don't know, only the odd items contain players
 	    NodeList teamattributes = teamattrs;
@@ -76,11 +79,13 @@ public class XmlParser {
 	    }
 	    return t;
 	  }
+	
 	  /**
 	   * Methode parsePlayer wordt aangeroepen door methode parseTeam en leest een SPELER uit een xml bestand uit.
 	   * @param playerattributes de verschillende attributen van de uit te lezen SPELER
 	   * @return TestPlayer p
 	   */
+	
 	public static Player parsePlayer(NodeList playerattributes) {
 		String fname = null, lname = null, type = null;
 		int age = 0, pri = 0, pac = 0, sho = 0, pas = 0, dri = 0, def = 0, phy = 0;
@@ -102,11 +107,13 @@ public class XmlParser {
 	  	Player p = new Player(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
+	
 	/**
 	 * Method writeToXML writes a Database to a xml-file
 	 * @param db
 	 * @throws FileNotFoundException
 	 */
+	
 	public static void writeToXML(DBmain db) throws FileNotFoundException {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
@@ -117,9 +124,11 @@ public class XmlParser {
 		pw.print(wrt);
 		pw.close();
 	}
+	
 	/**
 	 * This methods only purpose was to fix a mistake in the xml-file!
 	 */
+	
 	/*public static DBmain reparser(DBmain d) {
 		DBmain res = new DBmain();
 		for(int i=0;i<d.getSize();i++) {

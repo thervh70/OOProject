@@ -34,8 +34,8 @@ public class gameEngine {
 	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
 		
 		DBmain d = XmlParser.parseDB();
-		Team alpha = d.getT(13);
-		Team beta = d.getT(1);
+		Team alpha = d.getTeam(13);
+		Team beta = d.getTeam(1);
 		
 		System.out.println(alpha.getNm() + " vs " + beta.getNm());
 		System.out.println(Math.round(alpha.calcAttScore()) + "\t" + Math.round(beta.calcAttScore()));

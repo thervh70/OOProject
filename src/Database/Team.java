@@ -139,18 +139,47 @@ public class Team {
 		}
 		return count;
 	}
+	
+	/**
+	 * Methode equals checks if two Teams are equal to each other. 
+	 * Criteria:
+	 *  - Size of both Teams has to be the same
+	 *  - Name of both Teams has to be the same
+	 *  - Real and Virtual Budgets of both Teams have to be the same
+	 *  - Both Teams must have equal Players at each position on their ArrayLists. Method equals in class Player is used for this.
+	 */
+	
+	public boolean equals(Object other) {
+		if(other instanceof Team) {
+			Team that = (Team)(other);
+			if(!(this.getSize() == that.getSize() && this.getNm().equals(that.getNm()) && this.getBdgt_rel() == that.getBdgt_rel() && this.getBdgt_vir() == that.getBdgt_vir())) {
+				return false;
+			}
+			for(int i=0; i<this.getSize(); i++) {
+				if(!(this.getPlayer(i).equals(that.getPlayer(i)))) {
+					return false;
+				}
+			}
+			return true;
+		}
+		return false;
+	}
+	
 	/**
 	 * Getters
 	 */
+	
 	public String getNm() {return this.nm;}
 	public ArrayList<Player> getT() {return this.t;}
 	public int getBdgt_vir() {return this.bdgt_vir;}
 	public int getBdgt_rel() {return this.bdgt_rel;}
 	public int getSize() {return t.size();}
 	public Player getPlayer(int i) {return t.get(i);}
+	
 	/**
 	 * Setters
 	 */
+	
 	public void setNm(String name) {this.nm = name;}
 	public void setBdgt_vir(int budget_vir) {this.bdgt_vir = budget_vir;}
 	public void setBdgt_rel(int budget_rel) {this.bdgt_rel = budget_rel;}
