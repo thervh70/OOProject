@@ -125,7 +125,7 @@ public class PickTeam{
 		});
 		
 		//Add everything to the window and show it
-		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back, line);
+		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back, line,players);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
@@ -165,7 +165,7 @@ public class PickTeam{
 				for(int i = 0; i < team.getSize(); i++){
 					players.getChildren().add(new Text(team.getPlayer(i).toString()));
 				}
-				root.getChildren().add(players);
+				
 			}
 		});
 		return players;
