@@ -45,7 +45,7 @@ public class gameEngine {
 		int cam = 0;
 		int gel = 0;
 		
-		for(int i = 0; i < 1000; i++){
+		for(int i = 0; i < 100000; i++){
 			int A = attack(alpha.calcAttScore(), beta.calcDefScore());
 			targA = attempts;
 			int B = attack(beta.calcAttScore(), alpha.calcDefScore());
