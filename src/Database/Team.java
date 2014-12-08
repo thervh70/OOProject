@@ -50,8 +50,10 @@ public class Team {
 		res += "      <VIRTUAL_BUDGET>" + this.bdgt_vir + "</VIRTUAL_BUDGET>\r\n";
 		res += "      <BUDGET>" + this.bdgt_rel + "</BUDGET>\r\n";
 		for(int i=0;i<t.size();i++) {
-			Player p = this.getT().get(i);
-			res += p.toWrite();
+			if(this.getPlayer(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+				res += p.toWrite();
+			}
 		}
 		res += "   </TEAM>\r\n";
 		return res;
@@ -70,8 +72,10 @@ public class Team {
 		double score = 0;
 		
 		for(int i = 0; i < this.getSize(); i++){
-			Player p = this.getPlayer(i);
-			score += p.calcAttScore();
+			if(this.getPlayer(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+				score += p.calcAttScore();
+			}
 		}
 		
 		int count = this.count(3) + this.count(4);
@@ -95,8 +99,10 @@ public class Team {
 		double score = 0;
 		
 		for(int i = 0; i < this.getSize(); i++){
-			Player p = this.getPlayer(i);
-			score += p.calcDefScore();
+			if(this.getPlayer(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+				score += p.calcDefScore();
+			}
 		}
 		
 		int count = this.count(1) + this.count(2);

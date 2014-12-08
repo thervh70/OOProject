@@ -16,11 +16,11 @@ public class XmlParser {
 	 * @param args
 	 * @throws Exception
 	 */
-	public static void main(String[] args) throws Exception {
+	/*public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
 //		writeToXML(d);
-	}
+	}*/
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
@@ -104,7 +104,7 @@ public class XmlParser {
 	  		case "PHYSICAL": phy = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		}
 	  	}
-	  	Player p = new Player(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
+	  	Player p = new Fieldplayer(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
 	

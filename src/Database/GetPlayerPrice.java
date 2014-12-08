@@ -14,9 +14,11 @@ public class GetPlayerPrice {
 			Team t = db.getTeam(i);
 			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
 			for(int j=0;j<t.getSize();j++) {
-				Player p = t.getPlayer(j);
-				Player resP = definePlayerPrice(p);
-				resT.addPlayer(resP);
+				if(t.getPlayer(j) instanceof Fieldplayer) {
+					Fieldplayer p = (Fieldplayer)(t.getPlayer(j));
+					Fieldplayer resP = definePlayerPrice(p);
+					resT.addPlayer(resP);
+				}
 			}
 			res.addTeam(resT);
 			System.out.println(res);
@@ -29,7 +31,7 @@ public class GetPlayerPrice {
 	 * @return Player
 	 */
 	
-	public static Player definePlayerPrice(Player p) {
+	public static Fieldplayer definePlayerPrice(Fieldplayer p) {
 		int pri = 75000;
 		double score = 0;
 		String pos = p.getPos();
