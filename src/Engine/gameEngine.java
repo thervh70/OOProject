@@ -35,7 +35,7 @@ public class gameEngine {
 		
 		DBmain d = XmlParser.parseDB();
 		Team alpha = d.getTeam(13);
-		Team beta = d.getTeam(1);
+		Team beta = d.getTeam(14);
 		
 		System.out.println(alpha.getNm() + " vs " + beta.getNm());
 		System.out.println(Math.round(alpha.calcAttScore()) + "\t" + Math.round(beta.calcAttScore()));
@@ -44,21 +44,26 @@ public class gameEngine {
 		int psv = 0;
 		int cam = 0;
 		int gel = 0;
+		int A = 0;
+		int B = 0;
 		
-		for(int i = 0; i < 100000; i++){
-			int A = attack(alpha.calcAttScore(), beta.calcDefScore());
+		for(int i = 0; i < 10; i++){
+			A = attack(alpha.calcAttScore(), beta.calcDefScore());
 			targA = attempts;
-			int B = attack(beta.calcAttScore(), alpha.calcDefScore());
+			B = attack(beta.calcAttScore(), alpha.calcDefScore());
 			targB = attempts;
 			
 			if(A>B) psv++;
 			else if(B>A) cam++;
 			else if(B==A) gel++;
+			
+			System.out.println(A + "-" + B);
 		}
 		
-		System.out.println(alpha.getNm()+ ": " + psv);
-		System.out.println(beta.getNm()+ ": " + cam);
-		System.out.println("Gelijk: " + gel);
+		//System.out.println(alpha.getNm()+ ": " + A);
+		//System.out.println(beta.getNm()+ ": " + B);
+		//System.out.println("Gelijk: " + gel);
+		
 		
 		/*
 		if(A>B){
