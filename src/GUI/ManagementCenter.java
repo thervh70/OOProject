@@ -5,6 +5,8 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Line;
@@ -25,16 +27,20 @@ public class ManagementCenter {
 		Button market = new Button("Transfer Market");
 		Button save = new Button("Save Game");
 		Button menu = new Button("Back to main menu");
-		Line line = new Line();
+		//Line line = new Line();
 		
-		line.setEndX(1770);
-		line.setLayoutY(820);
+		//line.setEndX(1770);
+		//line.setLayoutY(820);
 		
 		manage.setFont(new Font("Arial", 35));
 		table.setFont(new Font("Arial", 35));
 		match.setFont(new Font("Arial", 35));
 		market.setFont(new Font("Arial", 35));
 		save.setFont(new Font("Arial", 35));
+		
+		Image background = new Image("/GUI/Resources/background_managementcenter.png");
+		ImageView imgView = new ImageView(background);
+		root.getChildren().add(imgView);
 		
 		menu.setLayoutX(80);
 		menu.setLayoutY(870);
@@ -124,7 +130,7 @@ public class ManagementCenter {
 			}
 		});
 		
-		root.getChildren().addAll(vbox, menu, line);
+		root.getChildren().addAll(vbox, menu);
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
