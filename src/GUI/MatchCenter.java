@@ -24,11 +24,9 @@ public class MatchCenter {
 		line.setEndX(1770);
 		line.setLayoutY(820);
 		
-		Image background = new Image("/GUI/Resources/background_matchcenter.png");
-		ImageView imgView = new ImageView(background);
-		imgView.setLayoutX(0);
-		imgView.setLayoutY(0);
-		root.getChildren().add(imgView);
+	//	Image background = new Image("/GUI/Resources/background_matchcenter.png");
+	//	ImageView imgView = new ImageView(background);
+	//	root.getChildren().add(imgView);
 		
 		back.setFont(new Font("Arial", 25));
 		results.setFont(new Font("Arial", 25));
