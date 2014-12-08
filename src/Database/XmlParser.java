@@ -16,11 +16,12 @@ public class XmlParser {
 	 * @param args
 	 * @throws Exception
 	 */
-	/*public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
+		
 //		writeToXML(d);
-	}*/
+	}
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
@@ -38,7 +39,7 @@ public class XmlParser {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		//Load and Parse the XML document. Document contains the complete XML as a Tree.
-		Document document = builder.parse("src/Database/Database_v4.xml");
+		Document document = builder.parse("src/Database/Database_v5.xml");
 		    
 	    NodeList division = document.getDocumentElement().getChildNodes();
 		DBmain d = new DBmain();
@@ -73,7 +74,12 @@ public class XmlParser {
 	    	Node player = teamattributes.item(i);
 	    	if(player.getNodeName().equals("PLAYER")) {
 	    		NodeList playerattributes = player.getChildNodes();
-	    		Player p = parsePlayer(playerattributes);
+	    		Fieldplayer p = parsePlayer(playerattributes);
+	    		t.addPlayer(p);
+	    	}
+	    	else if(player.getNodeName().equals("KEEPER")) {
+	    		NodeList playerattributes = player.getChildNodes();
+	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    	}
 	    }
@@ -86,7 +92,7 @@ public class XmlParser {
 	   * @return TestPlayer p
 	   */
 	
-	public static Player parsePlayer(NodeList playerattributes) {
+	public static Fieldplayer parsePlayer(NodeList playerattributes) {
 		String fname = null, lname = null, type = null;
 		int age = 0, pri = 0, pac = 0, sho = 0, pas = 0, dri = 0, def = 0, phy = 0;
 	  	for(int j=0;j<playerattributes.getLength();j++) {
@@ -104,7 +110,30 @@ public class XmlParser {
 	  		case "PHYSICAL": phy = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		}
 	  	}
-	  	Player p = new Fieldplayer(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
+	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
+	  	return p;
+	}
+	
+	public static Goalkeeper parseKeeper(NodeList playerattributes) {
+		String fname = null, lname = null, type = null;
+		int age = 0, pri = 0, div = 0, han = 0, kick = 0, ref = 0, spd = 0, ping = 0, hei = 0;
+	  	for(int j=0;j<playerattributes.getLength();j++) {
+	  		switch(playerattributes.item(j).getNodeName()) {
+	  		case "FIRSTNAME": fname = playerattributes.item(j).getTextContent(); break;
+	  		case "LASTNAME": lname = playerattributes.item(j).getTextContent(); break;
+	  		case "AGE": age = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "PRICE": pri = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "DIVING": div = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "HANDLING": han = 	Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "KICKING": kick = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "REFLEXES": ref = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "SPEED": spd = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "POSITIONING": ping = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+	  		case "HEIGHT": hei = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
+
+	  		}
+	  	}
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, 0, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	
@@ -155,6 +184,30 @@ public class XmlParser {
 		}
 		return res;
 	}*/	
+	
+	/**
+	 * This methods only purpose was to fix a mistake in the xml-file!
+	 */
+	
+	/*public static DBmain reparser2(DBmain d) {
+		DBmain res = new DBmain();
+		for(int i=0;i<d.getSize();i++) {
+			Team t = d.getTeam(i);
+			String teamname = t.getNm();
+			int budget_vir = t.getBdgt_vir();
+			int budget_rel = t.getBdgt_rel();
+			Team resT = new Team(teamname, budget_vir, budget_rel);
+			for(int j=0;j<t.getSize();j++) {
+				Player p = t.getPlayer(j);
+				String pos = p.getPos();
+				if(pos.equals("RM")) {p.setPos("RW");}
+				else if(pos.equals("LM")) {p.setPos("LW");}
+				resT.addPlayer(p);
+			}
+			res.addTeam(resT);
+		}
+		return res;
+	}*/
 }
 	
 
