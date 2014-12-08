@@ -13,13 +13,12 @@ public class scoreTest {
 	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
 		DBmain d = XmlParser.parseDB();
 		
+		System.out.println("Att\tDef\tName");
 		for(int i = 0; i < 18; i++){
 			Team t = d.getTeam(i);
 			int att = (int) t.calcAttScore();
-			double mapAtt = map(att,50,70,0,100);
 			int def = (int) t.calcDefScore();
-			double mapDef = map(def,50,70,0,100);
-			System.out.println(att + "\t" + mapAtt + "\t" + def + "\t" + mapDef + "\t" + t.getNm());
+			System.out.println(att + "\t" + def + "\t" + t.getNm());
 		}
 	}
 	
