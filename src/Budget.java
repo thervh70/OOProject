@@ -11,7 +11,7 @@ public class Budget {
 		Player p = new Fieldplayer("Frits","Fritsman","RB",19,100000,100,100,100,100,100,100);
 		budg_rel=100000000;
 		budg_vir=100000000;
-		for(int i=0;i<10000;i++){
+		for(int i=0;i<100;i++){
 			System.out.println(bieden(p));
 			/**System.out.println(budg_rel);
 			System.out.println(budg_vir);**/
