@@ -11,6 +11,8 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -36,6 +38,10 @@ public class StartupMenu {
 		loadGame.setLayoutY(700);
 		exit.setLayoutX(1400);
 		exit.setLayoutY(800);
+		
+		Image background = new Image("/GUI/Resources/background_splashscreen.png");
+		ImageView imgView = new ImageView(background);
+		root.getChildren().add(imgView);
 		
 		//Give click functionality to "New Game", directs to Team Picking 
 		newGame.setOnAction(new EventHandler<ActionEvent>(){

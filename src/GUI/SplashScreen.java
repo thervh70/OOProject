@@ -40,8 +40,6 @@ public class SplashScreen extends Application {
 		//create background image
 		Image background = new Image("/GUI/Resources/background_splashscreen.png");
 		ImageView imgView = new ImageView(background);
-		imgView.setLayoutX(0);
-		imgView.setLayoutY(0);
 		root.getChildren().add(imgView);
         
 		//create text and add css
