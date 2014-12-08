@@ -69,8 +69,7 @@ public class Results {
 			}
 		});
 		
-		Scene scene = new Scene(root, 1770, 980);
-		primaryStage.setScene(scene);
+		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
 

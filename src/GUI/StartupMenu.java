@@ -23,7 +23,7 @@ public class StartupMenu {
 	 * @param primaryStage - The window
 	 */
 	public static void start(Stage primaryStage) {
-		Pane startupMenu = new Pane();
+		Pane root = new Pane();
 		Button newGame = new Button("NEW GAME");
 		Button loadGame = new Button("LOAD GAME");
 		Button exit = new Button("EXIT");
@@ -66,9 +66,8 @@ public class StartupMenu {
 			}
 		});
 		
-		Scene scene = new Scene(startupMenu, 1770, 980);
-		startupMenu.getChildren().addAll(newGame, loadGame, exit);
-		primaryStage.setScene(scene);
+		root.getChildren().addAll(newGame, loadGame, exit);
+		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
 }

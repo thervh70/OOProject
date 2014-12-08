@@ -126,8 +126,7 @@ public class PickTeam{
 		
 		//Add everything to the window and show it
 		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back, line);
-		Scene scene = new Scene(root, 1770, 980);
-		primaryStage.setScene(scene);
+		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
 	

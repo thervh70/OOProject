@@ -58,6 +58,7 @@ public class TeamManagement {
 		dribbling.setResizable(false);
 		defending.setResizable(false);
 		physical.setResizable(false);
+		name.setEditable(false);
 		
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
@@ -79,8 +80,7 @@ public class TeamManagement {
 			}
 		});
 		
-		Scene scene = new Scene(root, 1770, 980);
-		primaryStage.setScene(scene);
+		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
 }
