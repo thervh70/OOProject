@@ -6,6 +6,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -16,6 +17,10 @@ public class MatchCenter {
 		Button results = new Button("Results");
 		Button start = new Button("Start match");
 		Button back = new Button("Back to Management Center");
+		Line line = new Line();
+		
+		line.setEndX(1770);
+		line.setLayoutY(820);
 		
 		back.setFont(new Font("Arial", 25));
 		results.setFont(new Font("Arial", 25));
@@ -27,7 +32,7 @@ public class MatchCenter {
 		start.setLayoutX(100);
 		start.setLayoutY(270);
 		
-		root.getChildren().addAll(back, results, start);
+	
 		
 		results.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -43,6 +48,7 @@ public class MatchCenter {
 			}
 		});
 		
+		root.getChildren().addAll(back, results, start, line);
 		Scene scene = new Scene(root, 1770, 980);
 		primaryStage.setScene(scene);
 		primaryStage.show();

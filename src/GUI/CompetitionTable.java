@@ -14,6 +14,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -28,6 +29,11 @@ public class CompetitionTable {
 		back.setFont(new Font("Arial", 25));
 		back.setLayoutX(80);
 		back.setLayoutY(870);
+		
+		Line line = new Line();
+		
+		line.setEndX(1770);
+		line.setLayoutY(820);
 		
 		Text t = new Text(350,50, "Ranking");
 		t.setScaleX(5);
@@ -51,9 +57,7 @@ public class CompetitionTable {
         table.getColumns().addAll(rank,name,points);
         
         
-		root.getChildren().add(back);
-		root.getChildren().add(table);
-		root.getChildren().add(t);
+		root.getChildren().addAll(back, table, t, line);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

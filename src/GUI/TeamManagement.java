@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -17,6 +18,10 @@ public class TeamManagement {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		Button back = new Button("Back to Management Center");
+		Line line = new Line();
+		
+		line.setEndX(1770);
+		line.setLayoutY(820);
 		
 		//Create a table for the setup with fixed columns
 		TableView<String> tableSetup = new TableView();
@@ -65,9 +70,7 @@ public class TeamManagement {
 		back.setLayoutY(870);
 		
 		//Add elements to the canvas
-		root.getChildren().add(back);
-		root.getChildren().add(tableSetup);
-		root.getChildren().add(tableBench);
+		root.getChildren().addAll(back, tableSetup, tableBench, line);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
