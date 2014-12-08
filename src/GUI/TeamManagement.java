@@ -23,6 +23,9 @@ public class TeamManagement {
 		line.setEndX(1770);
 		line.setLayoutY(820);
 		
+		Text t1 = new Text(400,50,"Set-up");
+		Text t2 = new Text(400,500, "Bench");
+		
 		//Create a table for the setup with fixed columns
 		TableView<String> tableSetup = new TableView();
 		tableSetup.setEditable(false);
@@ -35,8 +38,8 @@ public class TeamManagement {
 		TableView<String> tableBench = new TableView();
 		tableBench.setEditable(false);
 		tableBench.setPrefSize(700, 540);
-		tableBench.setLayoutX(100);
-		tableBench.setLayoutY(550);
+		tableBench.setLayoutX(950);
+		tableBench.setLayoutY(100);
 		tableBench.setEditable(false);
 		
 		//Creat columns for both tables
@@ -44,21 +47,34 @@ public class TeamManagement {
         TableColumn position = new TableColumn("Position");
 		TableColumn age = new TableColumn("Age");
 		TableColumn worth = new TableColumn("Worth");
-		TableColumn shooting = new TableColumn("Shooting");
-		TableColumn passing = new TableColumn("Passing");
-		TableColumn dribbling = new TableColumn("Dribbling");
-		TableColumn defending = new TableColumn("Defending");
-		TableColumn physical = new TableColumn("Physical");
+		TableColumn pace = new TableColumn("PAC");
+		TableColumn shooting = new TableColumn("SHO");
+		TableColumn passing = new TableColumn("PAS");
+		TableColumn dribbling = new TableColumn("DRI");
+		TableColumn defending = new TableColumn("DEF");
+		TableColumn physical = new TableColumn("PHY");
 		name.setResizable(false);
+		name.setPrefWidth(200);
 		position.setResizable(false);
+		position.setPrefWidth(100);
 		age.setResizable(false);
+		age.setPrefWidth(50);
 		worth.setResizable(false);
+		worth.setPrefWidth(100);
 		shooting.setResizable(false);
+		shooting.setPrefWidth(50);
 		passing.setResizable(false);
+		passing.setPrefWidth(50);
 		dribbling.setResizable(false);
+		dribbling.setPrefWidth(50);
 		defending.setResizable(false);
+		defending.setPrefWidth(50);
 		physical.setResizable(false);
+<<<<<<< HEAD
 		name.setEditable(false);
+=======
+		physical.setPrefWidth(50);
+>>>>>>> origin/master
 		
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
