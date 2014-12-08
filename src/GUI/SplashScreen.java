@@ -64,7 +64,7 @@ public class SplashScreen extends Application {
         
         //add text to the canvas and give it a fade in/ fade out effect
 		root.getChildren().add(t);
-		FadeTransition ft = new FadeTransition(Duration.millis(3000), t);
+		FadeTransition ft = new FadeTransition(Duration.millis(1000), t);
 	     ft.setFromValue(1.0);
 	     ft.setToValue(0);
 	     ft.setCycleCount(1000);
