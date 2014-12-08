@@ -5,6 +5,8 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
@@ -21,6 +23,12 @@ public class MatchCenter {
 		
 		line.setEndX(1770);
 		line.setLayoutY(820);
+		
+		Image background = new Image("/GUI/Resources/background_matchcenter.png");
+		ImageView imgView = new ImageView(background);
+		imgView.setLayoutX(0);
+		imgView.setLayoutY(0);
+		root.getChildren().add(imgView);
 		
 		back.setFont(new Font("Arial", 25));
 		results.setFont(new Font("Arial", 25));

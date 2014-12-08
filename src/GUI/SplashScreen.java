@@ -58,7 +58,7 @@ public class SplashScreen extends Application {
                 });
         
         //Same for when a key is pressed
-        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
             public void handle(KeyEvent ke) {
             	StartupMenu.start(primaryStage);
             }
