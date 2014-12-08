@@ -31,12 +31,9 @@ public class SplashScreen extends Application {
 		
 		//set up window
 		Pane root = new Pane();
-<<<<<<< HEAD
 		Scene scene = new Scene(root,1920, 1080);
 
-=======
-		Scene scene = new Scene(root,1770, 980);
->>>>>>> origin/master
+
 		//import css file
 		scene.getStylesheets().add(getClass().getResource("/GUI/Resources/splash_screen.css").toExternalForm());
 		
@@ -81,13 +78,7 @@ public class SplashScreen extends Application {
 			primaryStage.setFullScreen(true);
 			primaryStage.show();
 			primaryStage.setResizable(false);
-<<<<<<< HEAD
-=======
 			primaryStage.setFullScreen(true);
-			
-	          
-	
->>>>>>> origin/master
 	}
 			
 	

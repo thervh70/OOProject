@@ -70,11 +70,11 @@ public class TeamManagement {
 		defending.setResizable(false);
 		defending.setPrefWidth(50);
 		physical.setResizable(false);
-<<<<<<< HEAD
+
 		name.setEditable(false);
-=======
+
 		physical.setPrefWidth(50);
->>>>>>> origin/master
+
 		
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
