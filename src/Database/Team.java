@@ -7,30 +7,36 @@ public class Team {
 	private ArrayList<Player> t;
 	private String nm;
 	int bdgt_vir, bdgt_rel;
+	
 	/**
 	 * Constructor creates a Team with a budget, teamname and an ArrayList of Players
 	 * @param name
 	 * @param budget
 	 */
+	
 	public Team(String name, int budget_vir, int budget_rel) {
 		t = new ArrayList<Player>();
 		nm = name;
 		bdgt_vir = budget_vir;
 		bdgt_rel = budget_rel;
 	}
+	
 	/**
 	 * Method addPlayer adds a Player to a Team given the Player isn't already in the Team
 	 * @param p Player
 	 */
+	
 	public void addPlayer(Player p) {
 		if(!t.contains(p)) {
 			t.add(p);
 		}
 	}
+	
 	/**
 	 * Method toString gives a String-representation of a Team
 	 * @return res String
 	 */
+	
 	public String toString() {
 		String res = "Team: " + nm + "(" + t.size() + ") Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n  ";
 		for (int i = 0; i < t.size(); i++) {
@@ -40,10 +46,12 @@ public class Team {
 		res += "\n";
 		return res;
 	}
+	
 	/**
 	 * Method toWrite Stringifies a Team so it can be written in xml-file
 	 * @return
 	 */
+	
 	public String toWrite() {
 		String res = "   <TEAM>\r\n";
 		res += "      <TEAMNAME>" + this.nm + "</TEAMNAME>\r\n";

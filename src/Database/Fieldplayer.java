@@ -2,10 +2,10 @@ package Database;
 
 public class Fieldplayer extends Player {
 	
-	private String fnm, lnm, pos;
-	private int pri, age, pac, sho, pas, dri, def, phy;
+	private int pac, sho, pas, dri, def, phy;
+	
 	/**
-	 * Constructor creates a Player
+	 * Constructor creates a Fieldplayer, inherits firstname, lastname, posititon, age and price from Player
 	 * @param fnm Firstname
 	 * @param lnm Lastname
 	 * @param pos Position
@@ -18,6 +18,7 @@ public class Fieldplayer extends Player {
 	 * @param def Defending
 	 * @param phy Physical
 	 */
+	
 	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, int pac,
 			int sho, int pas, int dri, int def, int phy) {
 		super(fnm, lnm, pos, age, pri);
@@ -28,10 +29,12 @@ public class Fieldplayer extends Player {
 		this.def = def;
 		this.phy = phy;
 	}
+	
 	/**
-	 * Method toString gives a String-representation of a Player
+	 * Method toString gives a String-representation of a Fieldplayer
 	 * @return String
 	 */
+	
 	public String toString() {
 		return "Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
@@ -42,10 +45,12 @@ public class Fieldplayer extends Player {
 				+ " Defending: "+this.getDef()
 				+ " Physical "+this.getPhy();
 	}
+	
 	/**
-	 * Method toWrite stringifies a Player so it can be written to xml-file
-	 * @return
+	 * Method toWrite stringifies a Fieldplayer so it can be written to xml-file
+	 * @return a xml-writable String
 	 */
+	
 	public String toWrite(){
 		String res="      <PLAYER>\r\n";
 		res+="         <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
@@ -114,6 +119,19 @@ public class Fieldplayer extends Player {
 		
 		return score;
 	}
+	
+	/**
+	 * Method equals checks if two Fieldplayers are equals to each other
+	 * Criteria:
+	 *  - Firstname
+	 *  - Lastname
+	 *  - Position
+	 *  - Price
+	 *  - Age
+	 *  - Stats (Pace, Shooting, Passing, Defending, Dribbling, Physical)
+	 *  @param An object with which the Fieldplayer is checked
+	 *  @return A Boolean which indicates whether the Fieldplayers are equal or not.
+	 */
 	
 	public boolean equals(Object other) {
 		if(other instanceof Fieldplayer) {

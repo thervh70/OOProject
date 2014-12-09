@@ -5,6 +5,16 @@ public abstract class Player {
 	private String firstname, lastname, pos;
 	private int age, pri;
 	
+	/**
+	 * Since Player is abstract, no instances can be made of Player.
+	 * Fieldplayer and Goalkeeper inherit from Player via this constructor.
+	 * @param firstname
+	 * @param lastname
+	 * @param pos
+	 * @param age
+	 * @param pri
+	 */
+	
 	public Player(String firstname, String lastname, String pos, int age, int pri) {
 		super();
 		this.firstname = firstname;

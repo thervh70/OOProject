@@ -12,10 +12,11 @@ import org.xml.sax.SAXException;
 public class XmlParser {
 
 	/**
-	 * Method main executes shit
+	 * Method main executes stuff
 	 * @param args
 	 * @throws Exception
 	 */
+	
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
@@ -24,8 +25,8 @@ public class XmlParser {
 	}
 	
 	/**
-	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam
-	 * and parserPlayer are called during this process.
+	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
+	 * parserPlayer and parseKeeper are called during this process.
 	 * 
 	 * @param division NodeList of all teams
 	 * @return DBmain
@@ -53,12 +54,12 @@ public class XmlParser {
 	    return d;
 	}
 	
-  /**
-   * Methode parseTeam wordt aangeroepen door methode main en leest een TEAM uit een xml bestand uit. Bij het
-   * uitlezen wordt methode parsePlayer aangeroepen.
-   * @param teamattrs de verschillende attributen van een team (teamnaam, spelers)
-   * @return Team t 
-   */
+	/**
+	 * Method parseTeam is called from parseDB and is given a NodeList teamattrs.
+	 * It parses a Team from a xml-file to an object, using Method parsePlayer and parseKeeper.
+	 * @param teamattrs
+	 * @return
+	 */
 	
 	public static Team parseTeam(NodeList teamattrs) {
 		//Iterating through the nodes and extracting the data. Because of I don't know, only the odd items contain players
@@ -86,11 +87,11 @@ public class XmlParser {
 	    return t;
 	  }
 	
-	  /**
-	   * Methode parsePlayer wordt aangeroepen door methode parseTeam en leest een SPELER uit een xml bestand uit.
-	   * @param playerattributes de verschillende attributen van de uit te lezen SPELER
-	   * @return TestPlayer p
-	   */
+	/**
+	  * Method parsePlayer is called by parseTeam and parses a Fielplayer from xml to an object.
+	  * @param playerattributes
+	  * @return
+	  */
 	
 	public static Fieldplayer parsePlayer(NodeList playerattributes) {
 		String fname = null, lname = null, type = null;
@@ -114,8 +115,14 @@ public class XmlParser {
 	  	return p;
 	}
 	
+	/**
+	  * Method parseKeeper is called by parseTeam and parses a Goalkeeper from xml to an object.
+	  * @param playerattributes
+	  * @return
+	  */
+	
 	public static Goalkeeper parseKeeper(NodeList playerattributes) {
-		String fname = null, lname = null, type = null;
+		String fname = null, lname = null;
 		int age = 0, pri = 0, div = 0, han = 0, kick = 0, ref = 0, spd = 0, ping = 0, hei = 0;
 	  	for(int j=0;j<playerattributes.getLength();j++) {
 	  		switch(playerattributes.item(j).getNodeName()) {
@@ -133,7 +140,7 @@ public class XmlParser {
 
 	  		}
 	  	}
-	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, 0, div, han, kick, ref, spd, ping, hei);
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	

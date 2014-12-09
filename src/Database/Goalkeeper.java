@@ -2,8 +2,23 @@ package Database;
 
 public class Goalkeeper extends Player {
 	
-	private String fnm, lnm, pos;
-	private int age, pri, div, han, kick, ref, spd, ping, hei;
+	private int div, han, kick, ref, spd, ping, hei;
+	
+	/**
+	 * Constructor creates a Goalkeeper, inherits firstname, lastname, posititon, age and price from Player
+	 * @param firstname
+	 * @param lastname
+	 * @param pos
+	 * @param age
+	 * @param price
+	 * @param diving
+	 * @param handling
+	 * @param kicking
+	 * @param reflexes
+	 * @param speed
+	 * @param positioning
+	 * @param height
+	 */
 	
 	public Goalkeeper(String firstname, String lastname, String pos, int age, int price, int diving, int handling, int kicking,
 			int reflexes, int speed, int positioning, int height) {
@@ -17,6 +32,11 @@ public class Goalkeeper extends Player {
 		this.hei = height;
 	}
 	
+	/**
+	 * Method toString gives a String-representation of a Goalkeeper
+	 * @return String
+	 */
+	
 	public String toString() {
 		return "Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
@@ -28,6 +48,11 @@ public class Goalkeeper extends Player {
 				+ " Positioning: "+this.getPing()
 				+ " Height "+this.getHei();
 	}
+	
+	/**
+	 * Method toWrite stringifies a Goalkeeper so it can be written to xml-file
+	 * @return a xml-writable String
+	 */
 	
 	public String toWrite(){
 		String res="      <KEEPER>\r\n";
@@ -48,8 +73,38 @@ public class Goalkeeper extends Player {
 	}
 	
 	/**
+	 * This Method checks if two Goalkeepers are equals to each other.
+	 * Criteria:
+	 *  - Firstname
+	 *  - Lastname
+	 *  - Position
+	 *  - Price
+	 *  - Age
+	 *  - Stats (Diving, Handling, Kicking, Reflexes, Positioning and Height)
+	 *  @param An object with which the Goalkeeper is checked
+	 *  @return A Boolean which indicates whether the Goalkeeper are equal or not.
+	 */
+	
+	public boolean equals(Object other) {
+		if(other instanceof Goalkeeper) {
+			Goalkeeper that = (Goalkeeper)(other);
+			return this.getFnm().equals(that.getFnm()) &&
+					this.getLnm().equals(that.getLnm()) &&
+					this.getPos().equals(that.getPos()) &&
+					this.getPri() == that.getPri() &&
+					this.getAge() == that.getAge() &&
+					this.getDiv() == that.getDiv() &&
+					this.getHan() == that.getHan() &&
+					this.getKick() == that.getKick() &&
+					this.getRef() == that.getRef() &&
+					this.getPing() == that.getPing() &&
+					this.getHei() == that.getHei();
+		}
+		return false;
+	}
+	
+	/**
 	 * Getters
-	 * @return
 	 */
 	
 	public int getDiv() {return div;}
@@ -62,7 +117,6 @@ public class Goalkeeper extends Player {
 	
 	/**
 	 * Setters
-	 * @param div
 	 */
 	
 	public void setDiv(int div) {this.div = div;}
