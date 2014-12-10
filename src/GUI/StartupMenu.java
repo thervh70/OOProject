@@ -35,15 +35,6 @@ public class StartupMenu {
 		Style.setButtonStyle(loadGame, 55);
 		Style.setButtonStyle(exit, 55);
 
-		/*
-		newGame.setLayoutX(1400);
-		newGame.setLayoutY(600);
-		loadGame.setLayoutX(1400);
-		loadGame.setLayoutY(700);
-		exit.setLayoutX(1400);
-		exit.setLayoutY(800);
-		*/
-		
 		VBox vbox = new VBox(5);
 		vbox.getChildren().addAll(newGame,loadGame,exit);
 		vbox.setLayoutX(1360);
