@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Cell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -55,6 +57,10 @@ public class Results {
 		Score.setResizable(false);
 		
 		tableResults.getColumns().addAll(homeTeam, column, awayTeam, column2, Score);
+		
+		Image background = new Image("/GUI/Resources/background_results.png");
+		ImageView imgView = new ImageView(background);
+		root.getChildren().add(imgView);
 		
 		root.getChildren().addAll(back, tableResults);
 		

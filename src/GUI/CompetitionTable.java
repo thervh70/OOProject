@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -24,23 +26,22 @@ public class CompetitionTable {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
+		Image background = new Image("/GUI/Resources/background_competition-table.png");
+		ImageView imgView = new ImageView(background);
+		root.getChildren().add(imgView);
+		
 		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
 		back.setLayoutX(150);
 		back.setLayoutY(870);
 		
-		Text t = new Text(350,50, "Ranking");
-		Style.setTextStyle(t, 15);
-		t.setScaleX(5);
-		t.setScaleY(5);
-		
 		//Create a table with fixed columns
 		TableView<String> table = new TableView();
 		table.setEditable(false);
 		table.setPrefSize(700, 540);
-		table.setLayoutX(100);
-		table.setLayoutY(100);
+		table.setLayoutX(600);
+		table.setLayoutY(225);
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(50);
         TableColumn name = new TableColumn("Team Name");
@@ -53,7 +54,7 @@ public class CompetitionTable {
         table.getColumns().addAll(rank,name,points);
         
         
-		root.getChildren().addAll(back, table, t);
+		root.getChildren().addAll(back, table);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
