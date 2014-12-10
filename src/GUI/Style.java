@@ -27,7 +27,7 @@ public abstract class Style {
 	
 	public static void setTextStyle(Text t, int size){
 		Font textFont = new Font("Agency FB", size);
-		Color color = Color.WHITE;
+		Color color = Color.WHITESMOKE;
 		t.setFont(textFont);
 		t.setFill(color);
 	}
