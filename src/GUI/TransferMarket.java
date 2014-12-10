@@ -19,36 +19,38 @@ public class TransferMarket {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
-		Button back = new Button("Back to Management Center");
-		Text forSale = new Text("For Sale");
-		Text myProducts = new Text("My Products :)");
-		Font font = new Font("Arial", 35);
 		
 		Image background = new Image("/GUI/Resources/background_transfer-market.png");
 		ImageView imgView = new ImageView(background);
 		root.getChildren().add(imgView);
 		
-		forSale.setFont(font);
-		forSale.setLayoutX(125);
-		forSale.setLayoutY(220);
-		myProducts.setFont(font);
-		myProducts.setLayoutX(1000);
-		myProducts.setLayoutY(220);
+		Button back = new Button("Back to Management Center");
+		Text forSale = new Text("For Sale");
+		Text myProducts = new Text("My Products :)");
 		
-		back.setFont(new Font("Arial", 25));
-		back.setLayoutX(80);
+		Style.setButtonStyle(back, 45);
+		back.setLayoutX(150);
 		back.setLayoutY(870);
+		
+		Style.setTextStyle(forSale, 45);
+		forSale.setLayoutX(475);
+		forSale.setLayoutY(230);
+
+		Style.setTextStyle(myProducts, 45);
+		myProducts.setLayoutX(1275);
+		myProducts.setLayoutY(230);
+
 		
 		TableView<String> tableForSale = new TableView();
 		tableForSale.setEditable(false);
-		tableForSale.setPrefSize(801, 540);
+		tableForSale.setPrefSize(800, 540);
 		tableForSale.setLayoutX(125);
 		tableForSale.setLayoutY(250);
 		tableForSale.setEditable(false);
 		
 		TableView<String> tableMyPlayers = new TableView();
-		tableMyPlayers.setPrefSize(720, 540);
-		tableMyPlayers.setLayoutX(1000);
+		tableMyPlayers.setPrefSize(800, 540);
+		tableMyPlayers.setLayoutX(990);
 		tableMyPlayers.setLayoutY(250);
 		tableMyPlayers.setEditable(false);
 		
@@ -75,7 +77,7 @@ public class TransferMarket {
 		price.setResizable(false);
 		
 		tableForSale.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
-		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 
 		
 		root.getChildren().addAll(back, tableForSale, forSale, tableMyPlayers, myProducts);

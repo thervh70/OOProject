@@ -4,16 +4,15 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.PopupBuilder;
-import javafx.stage.PopupWindow;
 import javafx.stage.Stage;
 
 public class ManagementCenter {
@@ -27,24 +26,26 @@ public class ManagementCenter {
 		Button save = new Button("Save Game");
 		Button menu = new Button("Back to main menu");
 		
-		manage.setFont(new Font("Arial", 35));
-		table.setFont(new Font("Arial", 35));
-		match.setFont(new Font("Arial", 35));
-		market.setFont(new Font("Arial", 35));
-		save.setFont(new Font("Arial", 35));
+		Style.setButtonStyle(manage, 50);
+		Style.setButtonStyle(table, 50);
+		Style.setButtonStyle(match, 50);
+		Style.setButtonStyle(market, 50);
+		Style.setButtonStyle(save, 50);
 		
+		Style.setButtonStyle(menu, 45);
+
 		Image background = new Image("/GUI/Resources/background_managementcenter.png");
 		ImageView imgView = new ImageView(background);
 		root.getChildren().add(imgView);
 		
-		menu.setLayoutX(80);
+		menu.setLayoutX(150);
 		menu.setLayoutY(870);
-		menu.setFont(new Font("Arial", 25));
 		
-		VBox vbox = new VBox(20);
+		VBox vbox = new VBox(15);
 		vbox.getChildren().addAll(manage, table, match, market, save);
-		vbox.setLayoutX(650);
-		vbox.setLayoutY(300);
+		vbox.setLayoutX(775);
+		vbox.setLayoutY(220);
+		vbox.setAlignment(Pos.CENTER);
 		
 		manage.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -82,6 +83,7 @@ public class ManagementCenter {
 				Popup save = new Popup();
 				save.setHeight(200);
 				save.setWidth(500);
+				save.centerOnScreen();
 				
 				Text overwrite = new Text("Saving the game will overwrite your previous save state");
 				Text overwrite2 = new Text("Are you sure you want to overwrite?");
@@ -97,6 +99,7 @@ public class ManagementCenter {
 				
 				save.getContent().addAll(overwrite, overwrite2, yes, no);
 				root.setVisible(false);
+				
 				save.show(primaryStage);
 				
 				yes.setOnAction(new EventHandler<ActionEvent>() {

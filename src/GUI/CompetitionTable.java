@@ -26,16 +26,12 @@ public class CompetitionTable {
 		
 		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");
-		back.setFont(new Font("Arial", 25));
-		back.setLayoutX(80);
+		Style.setButtonStyle(back, 45);
+		back.setLayoutX(150);
 		back.setLayoutY(870);
 		
-		Line line = new Line();
-		
-		line.setEndX(1770);
-		line.setLayoutY(820);
-		
 		Text t = new Text(350,50, "Ranking");
+		Style.setTextStyle(t, 15);
 		t.setScaleX(5);
 		t.setScaleY(5);
 		
@@ -57,7 +53,7 @@ public class CompetitionTable {
         table.getColumns().addAll(rank,name,points);
         
         
-		root.getChildren().addAll(back, table, t, line);
+		root.getChildren().addAll(back, table, t);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

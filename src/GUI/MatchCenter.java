@@ -19,26 +19,21 @@ public class MatchCenter {
 		Button results = new Button("Results");
 		Button start = new Button("Start match");
 		Button back = new Button("Back to Management Center");
-		Line line = new Line();
 		
-		line.setEndX(1770);
-		line.setLayoutY(820);
-		
+		Style.setButtonStyle(results, 50);
+		Style.setButtonStyle(start, 60);
+		Style.setButtonStyle(back, 45);
+
 	//	Image background = new Image("/GUI/Resources/background_matchcenter.png");
 	//	ImageView imgView = new ImageView(background);
 	//	root.getChildren().add(imgView);
-		
-		back.setFont(new Font("Arial", 25));
-		results.setFont(new Font("Arial", 25));
-		start.setFont(new Font("Arial", 30));
-		back.setLayoutX(80);
+
+		back.setLayoutX(150);
 		back.setLayoutY(870);
-		results.setLayoutX(100);
+		results.setLayoutX(150);
 		results.setLayoutY(200);
-		start.setLayoutX(100);
-		start.setLayoutY(270);
-		
-	
+		start.setLayoutX(150);
+		start.setLayoutY(300);
 		
 		results.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -54,7 +49,7 @@ public class MatchCenter {
 			}
 		});
 		
-		root.getChildren().addAll(back, results, start, line);
+		root.getChildren().addAll(back, results, start);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}

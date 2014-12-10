@@ -26,10 +26,10 @@ public class Results {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		Button back = new Button("Back to Management Center");
-		Line line = new Line();
 		
-		line.setEndX(1770);
-		line.setLayoutY(820);
+		Style.setButtonStyle(back, 45);
+		back.setLayoutX(150);
+		back.setLayoutY(870);
 		
 		TableView<String> tableResults = new TableView();
 		tableResults.setPrefSize(750, 500);
@@ -56,11 +56,7 @@ public class Results {
 		
 		tableResults.getColumns().addAll(homeTeam, column, awayTeam, column2, Score);
 		
-		back.setFont(new Font("Arial", 25));
-		back.setLayoutX(80);
-		back.setLayoutY(870);
-		
-		root.getChildren().addAll(back, tableResults, line);
+		root.getChildren().addAll(back, tableResults);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

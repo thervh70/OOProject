@@ -19,29 +19,41 @@ public class TeamManagement {
 
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
+		
 		Button back = new Button("Back to Management Center");
+		Style.setButtonStyle(back, 45);
+		back.setLayoutX(150);
+		back.setLayoutY(870);
 		
 		Image background = new Image("/GUI/Resources/background_team-management.png");
 		ImageView imgView = new ImageView(background);
 		root.getChildren().add(imgView);
 		
-		Text t1 = new Text(400,50,"Set-up");
-		Text t2 = new Text(400,500, "Bench");
+		Text setup = new Text("Set-up");
+		Text bench = new Text("Bench");
+		
+		Style.setTextStyle(setup, 45);
+		setup.setLayoutX(475);
+		setup.setLayoutY(230);
+		
+		Style.setTextStyle(bench, 45);
+		bench.setLayoutX(1325);
+		bench.setLayoutY(230);
 		
 		//Create a table for the setup with fixed columns
 		TableView<String> tableSetup = new TableView();
 		tableSetup.setEditable(false);
 		tableSetup.setPrefSize(700, 540);
-		tableSetup.setLayoutX(125);
-		tableSetup.setLayoutY(200);
+		tableSetup.setLayoutX(175);
+		tableSetup.setLayoutY(250);
 		tableSetup.setEditable(false);
 
 		//Create a table for the bench with fixed columns
 		TableView<String> tableBench = new TableView();
 		tableBench.setEditable(false);
 		tableBench.setPrefSize(700, 540);
-		tableBench.setLayoutX(1000);
-		tableBench.setLayoutY(200);
+		tableBench.setLayoutX(1025);
+		tableBench.setLayoutY(250);
 		tableBench.setEditable(false);
 		
 		//Creat columns for both tables
@@ -77,19 +89,13 @@ public class TeamManagement {
 
 		physical.setPrefWidth(50);
 
-		
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
-		
-		
-		
-		back.setFont(new Font("Arial", 25));
-		back.setLayoutX(80);
-		back.setLayoutY(870);
+
 		
 		//Add elements to the canvas
-		root.getChildren().addAll(back, tableSetup, tableBench);
+		root.getChildren().addAll(back, tableSetup, tableBench, setup, bench);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

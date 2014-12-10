@@ -9,12 +9,13 @@ import org.xml.sax.SAXException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.Font;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class StartupMenu {
@@ -29,15 +30,25 @@ public class StartupMenu {
 		Button newGame = new Button("NEW GAME");
 		Button loadGame = new Button("LOAD GAME");
 		Button exit = new Button("EXIT");
-		newGame.setFont(new Font("Arial", 35));
-		loadGame.setFont(new Font("Arial", 35));
-		exit.setFont(new Font("Arial", 35));
+		
+		Style.setButtonStyle(newGame, 55);
+		Style.setButtonStyle(loadGame, 55);
+		Style.setButtonStyle(exit, 55);
+
+		/*
 		newGame.setLayoutX(1400);
 		newGame.setLayoutY(600);
 		loadGame.setLayoutX(1400);
 		loadGame.setLayoutY(700);
 		exit.setLayoutX(1400);
 		exit.setLayoutY(800);
+		*/
+		
+		VBox vbox = new VBox(5);
+		vbox.getChildren().addAll(newGame,loadGame,exit);
+		vbox.setLayoutX(1360);
+		vbox.setLayoutY(590);
+		vbox.setAlignment(Pos.CENTER);
 		
 		Image background = new Image("/GUI/Resources/background_splashscreen.png");
 		ImageView imgView = new ImageView(background);
@@ -72,8 +83,9 @@ public class StartupMenu {
 			}
 		});
 		
-		root.getChildren().addAll(newGame, loadGame, exit);
+		root.getChildren().addAll(vbox);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
+
 	}
 }
