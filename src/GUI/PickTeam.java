@@ -33,47 +33,43 @@ public class PickTeam{
 	 */
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
+		int size = 25;
 		
 		//Declare a bunch of buttons
-		Button ADO = new Button("ADO");
-		Button Ajax = new Button("Ajax");
-		Button AZ = new Button("AZ");
-		Button Excelsior = new Button("Excelsior");
-		Button Dordrecht = new Button("FC Dordrecht");
-		Button Groningen = new Button("FC Groningen");
-		Button Twente = new Button("FC Twente");
-		Button Utrecht = new Button("FC Utrecht");
-		Button Feyenoord = new Button("Feyenoord");
-		Button Eagles = new Button("Go Ahead Eagles");
-		Button Heracles = new Button("Heracles Almelo");
-		Button NAC = new Button("NAC Breda");
-		Button PEC = new Button("PEC Zwolle");
-		Button PSV = new Button("PSV");
-		Button Cambuur = new Button("SC Cambuur");
-		Button Heerenveen = new Button("SC Heerenveen");
-		Button Vitesse = new Button("Vitesse");
-		Button Willem = new Button("Willem II");
+		Button ADO = new Button("ADO");								Style.setButtonStyle(ADO, size);
+		Button Ajax = new Button("Ajax");							Style.setButtonStyle(Ajax, size);
+		Button AZ = new Button("AZ");								Style.setButtonStyle(AZ, size);
+		Button Excelsior = new Button("Excelsior");					Style.setButtonStyle(Excelsior, size);
+		Button Dordrecht = new Button("FC Dordrecht");				Style.setButtonStyle(Dordrecht, size);
+		Button Groningen = new Button("FC Groningen");				Style.setButtonStyle(Groningen, size);
+		Button Twente = new Button("FC Twente");					Style.setButtonStyle(Twente, size);
+		Button Utrecht = new Button("FC Utrecht");					Style.setButtonStyle(Utrecht, size);
+		Button Feyenoord = new Button("Feyenoord");					Style.setButtonStyle(Feyenoord, size);
+		Button Eagles = new Button("Go Ahead Eagles");				Style.setButtonStyle(Eagles, size);
+		Button Heracles = new Button("Heracles Almelo");			Style.setButtonStyle(Heracles, size);
+		Button NAC = new Button("NAC Breda");						Style.setButtonStyle(NAC, size);
+		Button PEC = new Button("PEC Zwolle");						Style.setButtonStyle(PEC, size);
+		Button PSV = new Button("PSV");								Style.setButtonStyle(PSV, size);
+		Button Cambuur = new Button("SC Cambuur");					Style.setButtonStyle(Cambuur, size);
+		Button Heerenveen = new Button("SC Heerenveen");			Style.setButtonStyle(Heerenveen, size);
+		Button Vitesse = new Button("Vitesse");						Style.setButtonStyle(Vitesse, size);
+		Button Willem = new Button("Willem II");					Style.setButtonStyle(Willem, size);
 		
 		Button Continue = new Button("Continue");
 		Button Back = new Button("Back");
 		
-		Line line = new Line();
-		
-		line.setEndX(1770);
-		line.setLayoutY(820);
-		
-		Continue.setFont(new Font("Arial", 35));
+		Style.setButtonStyle(Continue, 45);
 		Continue.setLayoutX(1480);
 		Continue.setLayoutY(850);
 		
-		Back.setFont(new Font("Arial", 35));
-		Back.setLayoutX(50);
-		Back.setLayoutY(850);
+		Style.setButtonStyle(Back, 45);
+		Back.setLayoutX(150);
+		Back.setLayoutY(870);
 		
 		//Add the team buttons to an HBox, so they are set on 1 line
-		HBox hbox = new HBox(5);
-		HBox hbox2 = new HBox(5);
-		HBox hbox3 = new HBox(5);
+		HBox hbox = new HBox(2);
+		HBox hbox2 = new HBox(2);
+		HBox hbox3 = new HBox(2);
 		hbox2.setLayoutY(100);
 		hbox3.setLayoutY(200);
 		hbox.setStyle("-fx-padding: 10;");
@@ -125,7 +121,7 @@ public class PickTeam{
 		});
 		
 		//Add everything to the window and show it
-		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back, line,players);
+		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back,players);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}

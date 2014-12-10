@@ -33,18 +33,23 @@ public class SplashScreen extends Application {
 		Pane root = new Pane();
 		Scene scene = new Scene(root,1920, 1080);
 
-
+/*
 		//import css file
 		scene.getStylesheets().add(getClass().getResource("/GUI/Resources/splash_screen.css").toExternalForm());
+		
+		//add css
+        t.getStyleClass().add("custom-text");
+*/
+		
+		Text t = new Text("PRESS ANY KEY TO START");
+		Style.setTextStyle(t,70);
+		t.setLayoutX(1220);
+		t.setLayoutY(700);
 		
 		//create background image
 		Image background = new Image("/GUI/Resources/background_splashscreen.png");
 		ImageView imgView = new ImageView(background);
 		root.getChildren().add(imgView);
-        
-		//create text and add css
-        Text t = new Text(1250, 700, "PRESS ANY KEY TO START");
-        t.getStyleClass().add("custom-text");
         
         //When the mouse button is pressed, go to the next StartupMenu screen
         root.setOnMouseClicked(new EventHandler<MouseEvent>()
