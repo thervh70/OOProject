@@ -70,7 +70,7 @@ public class DBmain {
 	 */
 	
 	public Team getTeam(int i) {
-		return d.get(i);
+		return d.get(i); 
 	}
 	
 	/**
