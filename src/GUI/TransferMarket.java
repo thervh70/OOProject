@@ -1,6 +1,19 @@
 package GUI;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
+import Database.DBmain;
+import Database.Player;
+import Database.Team;
+import Database.XmlParser;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -17,7 +30,7 @@ import javafx.stage.Stage;
 
 public class TransferMarket {
 
-	public static void start(Stage primaryStage) {
+	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
 		Image background = new Image("/GUI/Resources/background_transfer-market.png");
@@ -79,6 +92,15 @@ public class TransferMarket {
 		tableForSale.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 
+		/*
+		DBmain d = XmlParser.parseDB();
+		Team t = d.getTeam(PickTeam.choice);
+		
+		ObservableList<Player> user = FXCollections.observableArrayList(t.getT());
+		
+		tableMyPlayers.setItems((ObservableList<Player>) user);
+		System.out.println(t.getT().toString());
+		*/
 		
 		root.getChildren().addAll(back, tableForSale, forSale, tableMyPlayers, myProducts);
 		

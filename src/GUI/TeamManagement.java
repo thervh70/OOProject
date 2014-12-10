@@ -47,7 +47,7 @@ public class TeamManagement {
 		tableSetup.setLayoutX(175);
 		tableSetup.setLayoutY(250);
 		tableSetup.setEditable(false);
-
+		
 		//Create a table for the bench with fixed columns
 		TableView<String> tableBench = new TableView();
 		tableBench.setEditable(false);

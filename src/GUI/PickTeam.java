@@ -14,6 +14,8 @@ import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -24,6 +26,8 @@ import javafx.stage.Stage;
 
 public class PickTeam{
 	
+	public static int choice = Integer.MAX_VALUE;
+	
 	/* The start method shows the starting team picking screen
 	 * 
 	 * @param primaryStage - The window shown
@@ -33,6 +37,11 @@ public class PickTeam{
 	 */
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
+		
+		Image background = new Image("/GUI/Resources/background_pick-team.png");
+		ImageView imgView = new ImageView(background);
+		root.getChildren().add(imgView);
+		
 		int size = 25;
 		
 		//Declare a bunch of buttons
@@ -139,29 +148,28 @@ public class PickTeam{
 				players.getChildren().clear();
 				Team team = new Team(null, 0, 0);
 				switch(name.getText().toString()){
-				case "ADO": team = teams.getTeam(0); break;
-				case "Ajax": team = teams.getTeam(1); break;
-				case "AZ": team = teams.getTeam(2); break;
-				case "Excelsior": team = teams.getTeam(3); break;
-				case "FC Dordrecht": team = teams.getTeam(4); break;
-				case "FC Groningen": team = teams.getTeam(5); break;
-				case "FC Twente": team = teams.getTeam(6); break;
-				case "FC Utrecht": team = teams.getTeam(7); break;
-				case "Feyenoord": team = teams.getTeam(8); break;
-				case "Go Ahead Eagles": team = teams.getTeam(9); break;
-				case "Heracles Almelo": team = teams.getTeam(10); break;
-				case "NAC Breda": team = teams.getTeam(11); break;
-				case "PEC Zwolle": team = teams.getTeam(12); break;
-				case "PSV": team = teams.getTeam(13); break;
-				case "SC Cambuur": team = teams.getTeam(14); break;
-				case "SC Heerenveen": team = teams.getTeam(15); break;
-				case "Vitesse": team = teams.getTeam(16); break;
-				case "Willem II": team = teams.getTeam(17); break;
+				case "ADO": team = teams.getTeam(0); choice=0; break;
+				case "Ajax": team = teams.getTeam(1); choice=1; break;
+				case "AZ": team = teams.getTeam(2); choice=2; break;
+				case "Excelsior": team = teams.getTeam(3); choice=3; break;
+				case "FC Dordrecht": team = teams.getTeam(4); choice=4; break;
+				case "FC Groningen": team = teams.getTeam(5); choice=5; break;
+				case "FC Twente": team = teams.getTeam(6); choice=6; break;
+				case "FC Utrecht": team = teams.getTeam(7); choice=7; break;
+				case "Feyenoord": team = teams.getTeam(8); choice=8; break;
+				case "Go Ahead Eagles": team = teams.getTeam(9); choice=9; break;
+				case "Heracles Almelo": team = teams.getTeam(10); choice=10; break;
+				case "NAC Breda": team = teams.getTeam(11); choice=11; break;
+				case "PEC Zwolle": team = teams.getTeam(12); choice=12; break;
+				case "PSV": team = teams.getTeam(13); choice=13; break;
+				case "SC Cambuur": team = teams.getTeam(14); choice=14; break;
+				case "SC Heerenveen": team = teams.getTeam(15); choice=15; break;
+				case "Vitesse": team = teams.getTeam(16); choice=16; break;
+				case "Willem II": team = teams.getTeam(17); choice=17; break;
 				}
 				for(int i = 0; i < team.getSize(); i++){
 					players.getChildren().add(new Text(team.getPlayer(i).toString()));
 				}
-				
 			}
 		});
 		return players;

@@ -1,5 +1,11 @@
 package GUI;
 
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -24,7 +30,7 @@ public class ManagementCenter {
 		Button match = new Button("Match Center");
 		Button market = new Button("Transfer Market");
 		Button save = new Button("Save Game");
-		Button menu = new Button("Back to main menu");
+		Button menu = new Button("Back to Main Menu");
 		
 		Style.setButtonStyle(manage, 50);
 		Style.setButtonStyle(table, 50);
@@ -71,7 +77,18 @@ public class ManagementCenter {
 		market.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				TransferMarket.start(primaryStage);
+				try {
+					TransferMarket.start(primaryStage);
+				} catch (SAXException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ParserConfigurationException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		
