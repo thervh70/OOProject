@@ -26,7 +26,7 @@ import javafx.stage.Stage;
 
 public class PickTeam{
 	
-	public static int choice = Integer.MAX_VALUE;
+	public static int choice = 0;
 	
 	/* The start method shows the starting team picking screen
 	 * 
@@ -42,7 +42,7 @@ public class PickTeam{
 		ImageView imgView = new ImageView(background);
 		root.getChildren().add(imgView);
 		
-		int size = 25;
+		int size = 35;
 		
 		//Declare a bunch of buttons
 		Button ADO = new Button("ADO");								Style.setButtonStyle(ADO, size);
@@ -75,18 +75,17 @@ public class PickTeam{
 		Back.setLayoutX(150);
 		Back.setLayoutY(870);
 		
-		//Add the team buttons to an HBox, so they are set on 1 line
-		HBox hbox = new HBox(2);
-		HBox hbox2 = new HBox(2);
-		HBox hbox3 = new HBox(2);
-		hbox2.setLayoutY(100);
-		hbox3.setLayoutY(200);
-		hbox.setStyle("-fx-padding: 10;");
-		hbox2.setStyle("-fx-padding: 10;");
-		hbox3.setStyle("-fx-padding: 10;");
-		hbox.getChildren().addAll(ADO, Ajax, AZ, Excelsior, Dordrecht, Groningen); 
-		hbox2.getChildren().addAll(Twente, Utrecht, Feyenoord, Eagles, Heracles, NAC);
-		hbox3.getChildren().addAll(PEC, PSV, Cambuur, Heerenveen, Vitesse, Willem);
+		//Add the team buttons to an VBox
+		VBox vbox = new VBox(2);
+		vbox.setLayoutX(150);
+		vbox.setLayoutY(200);
+		
+		VBox vbox2 = new VBox(2);
+		vbox2.setLayoutX(400);
+		vbox2.setLayoutY(200);
+		
+		vbox.getChildren().addAll(ADO, Ajax, AZ, Excelsior, Dordrecht, Groningen,Twente, Utrecht, Feyenoord); 
+		vbox2.getChildren().addAll(Eagles, Heracles, NAC,PEC, PSV, Cambuur, Heerenveen, Vitesse, Willem);
 		
 		//initialize a VBox to list the players per team, get the database to get the players
 		VBox players = new VBox(5);
@@ -130,7 +129,7 @@ public class PickTeam{
 		});
 		
 		//Add everything to the window and show it
-		root.getChildren().addAll(hbox, hbox2, hbox3, Continue, Back,players);
+		root.getChildren().addAll(vbox, vbox2, Continue, Back,players);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
