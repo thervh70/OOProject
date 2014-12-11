@@ -52,13 +52,12 @@ public class SplashScreen extends Application {
 		root.getChildren().add(imgView);
         
         //When the mouse button is pressed, go to the next StartupMenu screen
-        root.setOnMouseClicked(new EventHandler<MouseEvent>()
-                {
-                    @Override
-                    public void handle(MouseEvent t) {
-                        StartupMenu.start(primaryStage);
-                    }
-                });
+        root.setOnMouseClicked(new EventHandler<MouseEvent>() {
+             @Override
+             public void handle(MouseEvent t) {
+                StartupMenu.start(primaryStage);
+             }
+        });
         
         //Same for when a key is pressed
         root.setOnKeyPressed(new EventHandler<KeyEvent>() {
@@ -77,6 +76,8 @@ public class SplashScreen extends Application {
 	     ft.play();
 	     
 	     	//Make this scene the primary stage
+
+	     	primaryStage.setFullScreenExitHint("");
 			primaryStage.setScene(scene);
 			primaryStage.setFullScreen(true);
 			primaryStage.show();
