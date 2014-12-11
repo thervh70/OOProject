@@ -8,6 +8,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 import Database.DBmain;
+import Database.Fieldplayer;
 import Database.Player;
 import Database.Team;
 import Database.XmlParser;
@@ -54,14 +55,14 @@ public class TransferMarket {
 		myProducts.setLayoutY(230);
 
 		
-		TableView<String> tableForSale = new TableView();
+		TableView<Player> tableForSale = new TableView();
 		tableForSale.setEditable(false);
 		tableForSale.setPrefSize(800, 540);
 		tableForSale.setLayoutX(125);
 		tableForSale.setLayoutY(250);
 		tableForSale.setEditable(false);
 		
-		TableView<String> tableMyPlayers = new TableView();
+		TableView<Player> tableMyPlayers = new TableView();
 		tableMyPlayers.setPrefSize(800, 540);
 		tableMyPlayers.setLayoutX(990);
 		tableMyPlayers.setLayoutY(250);
@@ -92,15 +93,18 @@ public class TransferMarket {
 		tableForSale.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 
-		/*
 		DBmain d = XmlParser.parseDB();
 		Team t = d.getTeam(PickTeam.choice);
 		
-		ObservableList<Player> user = FXCollections.observableArrayList(t.getT());
+		ObservableList<Player> user = FXCollections.observableArrayList(t.getPlayer(0));
 		
-		tableMyPlayers.setItems((ObservableList<Player>) user);
-		System.out.println(t.getT().toString());
-		*/
+		for(int i = 0; i < t.getSize(); i++){
+			Player p = t.getPlayer(i);
+			name.getCellData(p.getFnm());
+			age.getCellData(p.getAge());
+		}
+		
+		tableMyPlayers.setItems((ObservableList<Player>) user);		
 		
 		root.getChildren().addAll(back, tableForSale, forSale, tableMyPlayers, myProducts);
 		
