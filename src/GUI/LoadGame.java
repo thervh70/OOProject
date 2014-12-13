@@ -9,6 +9,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import Game.saveGame;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
@@ -64,14 +65,18 @@ public class LoadGame {
 		Button[] buttons = new Button[files.size()];
 		Text[] text = new Text[files.size()];
 		for (int i = 0; i < files.size(); i++) {
+			final String infile = files.get(i);
 			buttons[i] = new Button("Load game");
 			buttons[i].setLayoutX(700);
 			buttons[i].setLayoutY(150 + i*55);
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
-				@Override
 				public void handle(ActionEvent e){
+					saveGame.read(infile);
+					System.out.println(saveGame.getMyTeam());
 					ManagementCenter.start(primaryStage);
 				}
+
+				
 			});
 			Style.setButtonStyle(buttons[i], 30);
 			

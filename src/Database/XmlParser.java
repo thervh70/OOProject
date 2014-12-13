@@ -54,6 +54,25 @@ public class XmlParser {
 	    return d;
 	}
 	
+	public static DBmain parseDB(String infile) throws SAXException, IOException, ParserConfigurationException {
+		//Get the DOM Builder Factory and DOM Builder
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		//Load and Parse the XML document. Document contains the complete XML as a Tree.
+		Document document = builder.parse("src/Saves/" + infile);
+		    
+	    NodeList division = document.getDocumentElement().getChildNodes();
+		DBmain d = new DBmain();
+	    for(int i=1;i<division.getLength();i+=2) {
+	    	Node team = division.item(i);
+//	    	System.out.println("item "+i+": "+team);
+	    	NodeList teamattrs = team.getChildNodes();
+	    	Team t = parseTeam(teamattrs);
+	    	d.addTeam(t);
+	    }
+	    return d;
+	}
+	
 	/**
 	 * Method parseTeam is called from parseDB and is given a NodeList teamattrs.
 	 * It parses a Team from a xml-file to an object, using Method parsePlayer and parseKeeper.
