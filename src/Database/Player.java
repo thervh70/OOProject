@@ -1,6 +1,7 @@
 package Database;
 
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 public abstract class Player {
 	
@@ -34,11 +35,12 @@ public abstract class Player {
 	 * @return
 	 */
 	
-	public String getFnm() {return firstname;	}
+	public String getFnm() {return firstname; }
 	public String getLnm() {return lastname; }
 	public String getPos() {return pos;	}
 	public int getAge() {return age; }
 	public int getPri() {return pri; }
+	public StringProperty getfirstProperty(){return first;}
 
 	/**
 	 * Setters
@@ -51,7 +53,9 @@ public abstract class Player {
 	public void setAge(int age) {this.age = age; }
 	public void setPri(int pri) {this.pri = pri; }
 
-	public SimpleStringProperty getFirst() {
+	public SimpleStringProperty getFirstProperty() {
 		return first;
 	}
+	public void setFirst(String fName) { first.set(fName); }
+	public String getFirst(){return first.get();}
 }

@@ -2,6 +2,7 @@ package GUI;
 
 import Database.Fieldplayer;
 import Database.Player;
+import Database.*;
 import Game.saveGame;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -24,10 +25,8 @@ import javafx.stage.Stage;
 public class TeamManagement {
 
 	public static void start(Stage primaryStage) {
-		final ObservableList<Player> data = FXCollections.observableArrayList();
-		for (int i = 0; i < saveGame.myteam.getSize(); i++) {
-			data.add(saveGame.myteam.getPlayer(i));
-		}
+		final ObservableList<Player> data = FXCollections.observableArrayList(new Fieldplayer("Hendrik", "Janssen", "cm", 20, 20, 20, 20, 20, 20, 20, 20));
+
 		Pane root = new Pane();
 		
 		Button back = new Button("Back to Management Center");
@@ -58,6 +57,11 @@ public class TeamManagement {
 		tableSetup.setLayoutY(250);
 		tableSetup.setEditable(false);
 		
+		tableSetup.setItems(data);
+		TableColumn name = new TableColumn("Name");
+		name.setCellValueFactory(new PropertyValueFactory<Player, String>("first"));
+		tableSetup.getColumns().add(name);
+		
 		//Create a table for the bench with fixed columns
 		TableView<String> tableBench = new TableView();
 		tableBench.setEditable(false);
@@ -67,17 +71,25 @@ public class TeamManagement {
 		tableBench.setEditable(false);
 		
 		//Creat columns for both tables
-		TableColumn name = new TableColumn("Name");
-		name.setCellFactory(new PropertyValueFactory<Player, String>("first"));
-        TableColumn position = new TableColumn("Position");
+		
+        /*TableColumn position = new TableColumn("Position");
+        position.setCellFactory(new PropertyValueFactory<Player, String>("pos"));
 		TableColumn age = new TableColumn("Age");
+        age.setCellFactory(new PropertyValueFactory<Player, Integer>("age"));
 		TableColumn worth = new TableColumn("Worth");
+        worth.setCellFactory(new PropertyValueFactory<Player, Integer>("pri"));
 		TableColumn pace = new TableColumn("PAC");
+        pace.setCellFactory(new PropertyValueFactory<Player, Integer>("pac"));
 		TableColumn shooting = new TableColumn("SHO");
+        shooting.setCellFactory(new PropertyValueFactory<Player, Integer>("sho"));
 		TableColumn passing = new TableColumn("PAS");
+        passing.setCellFactory(new PropertyValueFactory<Player, Integer>("pas"));
 		TableColumn dribbling = new TableColumn("DRI");
+        dribbling.setCellFactory(new PropertyValueFactory<Player, Integer>("dri"));
 		TableColumn defending = new TableColumn("DEF");
+        defending.setCellFactory(new PropertyValueFactory<Player, Integer>("def"));
 		TableColumn physical = new TableColumn("PHY");
+        physical.setCellFactory(new PropertyValueFactory<Player, Integer>("phy"));
 		name.setResizable(false);
 		name.setPrefWidth(200);
 		position.setResizable(false);
@@ -101,9 +113,10 @@ public class TeamManagement {
 		physical.setPrefWidth(50);
 
 		//Add columns to table
-		tableSetup.getColumns().addAll(name/*,position,age,worth,shooting,passing,dribbling,defending,physical */);
-		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
-
+		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);*/
+		
+	
 		
 		//Add elements to the canvas
 		root.getChildren().addAll(back, tableSetup, tableBench, setup, bench);
