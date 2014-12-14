@@ -5,7 +5,8 @@ import javafx.beans.property.StringProperty;
 
 public abstract class Player {
 	
-	private final SimpleStringProperty first;
+	private final SimpleStringProperty name;
+	private final SimpleStringProperty Tpos;
 	
 	private String firstname, lastname, pos;
 	private int age, pri;
@@ -27,7 +28,8 @@ public abstract class Player {
 		this.pos = pos;
 		this.age = age;
 		this.pri = pri;
-		this.first = new SimpleStringProperty(firstname);
+		this.name = new SimpleStringProperty(lastname + ", " + firstname);
+		this.Tpos = new SimpleStringProperty(pos);
 	}
 
 	/**
@@ -40,7 +42,10 @@ public abstract class Player {
 	public String getPos() {return pos;	}
 	public int getAge() {return age; }
 	public int getPri() {return pri; }
-	public StringProperty getfirstProperty(){return first;}
+	public SimpleStringProperty getNameProperty() {return name; }
+	public String getName(){return name.get(); }
+	public SimpleStringProperty getTposProperty() {return Tpos; }
+	public String getTpos() {return Tpos.get(); }
 
 	/**
 	 * Setters
@@ -52,10 +57,7 @@ public abstract class Player {
 	public void setPos(String pos) {this.pos = pos; }
 	public void setAge(int age) {this.age = age; }
 	public void setPri(int pri) {this.pri = pri; }
-
-	public SimpleStringProperty getFirstProperty() {
-		return first;
-	}
-	public void setFirst(String fName) { first.set(fName); }
-	public String getFirst(){return first.get();}
+	public void setName(String fName) { name.set(fName); }
+	public void setTpos(String pos) {Tpos.set(pos); }
+	
 }

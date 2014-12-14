@@ -25,8 +25,10 @@ import javafx.stage.Stage;
 public class TeamManagement {
 
 	public static void start(Stage primaryStage) {
-		final ObservableList<Player> data = FXCollections.observableArrayList(new Fieldplayer("Hendrik", "Janssen", "cm", 20, 20, 20, 20, 20, 20, 20, 20));
-
+		final ObservableList<Player> data = FXCollections.observableArrayList();
+		for (int i = 0; i < saveGame.myteam.getSize(); i++) {
+			data.add(saveGame.myteam.getPlayer(i));
+		}
 		Pane root = new Pane();
 		
 		Button back = new Button("Back to Management Center");
@@ -58,9 +60,7 @@ public class TeamManagement {
 		tableSetup.setEditable(false);
 		
 		tableSetup.setItems(data);
-		TableColumn name = new TableColumn("Name");
-		name.setCellValueFactory(new PropertyValueFactory<Player, String>("first"));
-		tableSetup.getColumns().add(name);
+
 		
 		//Create a table for the bench with fixed columns
 		TableView<String> tableBench = new TableView();
@@ -71,9 +71,12 @@ public class TeamManagement {
 		tableBench.setEditable(false);
 		
 		//Creat columns for both tables
-		
-        /*TableColumn position = new TableColumn("Position");
-        position.setCellFactory(new PropertyValueFactory<Player, String>("pos"));
+		TableColumn name = new TableColumn("Name");
+		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn position = new TableColumn("Position");
+        position.setCellValueFactory(new PropertyValueFactory<Player, String>("Tpos"));
+        tableSetup.getColumns().addAll(name, position);
+        /*
 		TableColumn age = new TableColumn("Age");
         age.setCellFactory(new PropertyValueFactory<Player, Integer>("age"));
 		TableColumn worth = new TableColumn("Worth");
