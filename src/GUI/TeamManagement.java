@@ -1,12 +1,18 @@
 package GUI;
 
+import Database.Fieldplayer;
+import Database.Player;
+import Game.saveGame;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -18,6 +24,10 @@ import javafx.stage.Stage;
 public class TeamManagement {
 
 	public static void start(Stage primaryStage) {
+		final ObservableList<Player> data = FXCollections.observableArrayList();
+		for (int i = 0; i < saveGame.myteam.getSize(); i++) {
+			data.add(saveGame.myteam.getPlayer(i));
+		}
 		Pane root = new Pane();
 		
 		Button back = new Button("Back to Management Center");
@@ -41,7 +51,7 @@ public class TeamManagement {
 		bench.setLayoutY(230);
 		
 		//Create a table for the setup with fixed columns
-		TableView<String> tableSetup = new TableView();
+		TableView<Player> tableSetup = new TableView<Player>();
 		tableSetup.setEditable(false);
 		tableSetup.setPrefSize(700, 540);
 		tableSetup.setLayoutX(175);
@@ -58,6 +68,7 @@ public class TeamManagement {
 		
 		//Creat columns for both tables
 		TableColumn name = new TableColumn("Name");
+		name.setCellFactory(new PropertyValueFactory<Player, String>("first"));
         TableColumn position = new TableColumn("Position");
 		TableColumn age = new TableColumn("Age");
 		TableColumn worth = new TableColumn("Worth");
@@ -90,7 +101,7 @@ public class TeamManagement {
 		physical.setPrefWidth(50);
 
 		//Add columns to table
-		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableSetup.getColumns().addAll(name/*,position,age,worth,shooting,passing,dribbling,defending,physical */);
 		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 
 		
@@ -106,5 +117,7 @@ public class TeamManagement {
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
+		
+		System.out.println(saveGame.getMyTeam().getPlayer(1).getFnm());
 	}
 }

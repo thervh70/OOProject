@@ -72,7 +72,6 @@ public class LoadGame {
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
 				public void handle(ActionEvent e){
 					saveGame.read(infile);
-					System.out.println(saveGame.getMyTeam());
 					ManagementCenter.start(primaryStage);
 				}
 
