@@ -75,24 +75,23 @@ public class TeamManagement {
 		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
         TableColumn position = new TableColumn("Position");
         position.setCellValueFactory(new PropertyValueFactory<Player, String>("Tpos"));
-        tableSetup.getColumns().addAll(name, position);
-        /*
 		TableColumn age = new TableColumn("Age");
-        age.setCellFactory(new PropertyValueFactory<Player, Integer>("age"));
+        age.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableAge"));
+
 		TableColumn worth = new TableColumn("Worth");
-        worth.setCellFactory(new PropertyValueFactory<Player, Integer>("pri"));
-		TableColumn pace = new TableColumn("PAC");
-        pace.setCellFactory(new PropertyValueFactory<Player, Integer>("pac"));
+        worth.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePrice"));
+        TableColumn pace = new TableColumn("PAC");
+        pace.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePac"));
 		TableColumn shooting = new TableColumn("SHO");
-        shooting.setCellFactory(new PropertyValueFactory<Player, Integer>("sho"));
+        shooting.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableSho"));
 		TableColumn passing = new TableColumn("PAS");
-        passing.setCellFactory(new PropertyValueFactory<Player, Integer>("pas"));
+        passing.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePas"));
 		TableColumn dribbling = new TableColumn("DRI");
-        dribbling.setCellFactory(new PropertyValueFactory<Player, Integer>("dri"));
+        dribbling.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableDri"));
 		TableColumn defending = new TableColumn("DEF");
-        defending.setCellFactory(new PropertyValueFactory<Player, Integer>("def"));
+        defending.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableDef"));
 		TableColumn physical = new TableColumn("PHY");
-        physical.setCellFactory(new PropertyValueFactory<Player, Integer>("phy"));
+        physical.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePhy"));
 		name.setResizable(false);
 		name.setPrefWidth(200);
 		position.setResizable(false);
@@ -117,7 +116,7 @@ public class TeamManagement {
 
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
-		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);*/
+		//tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		
 	
 		
