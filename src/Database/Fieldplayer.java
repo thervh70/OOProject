@@ -57,7 +57,7 @@ public class Fieldplayer extends Player {
 				+ " Passing: "+this.getPas()
 				+ " Dribbling: "+this.getDri()
 				+ " Defending: "+this.getDef()
-				+ " Physical "+this.getPhy();
+				+ " Physical: "+this.getPhy();
 	}
 	
 	/**

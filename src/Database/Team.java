@@ -22,7 +22,7 @@ public class Team {
 	}
 	
 	/**
-	 * Method addPlayer adds a Player to a Team given the Player isn't already in the Team
+	 * Method addPlayer adds a Player (Fieldplayer or Goalkeeper) to a Team given the Player isn't already in the Team
 	 * @param p Player
 	 */
 	
@@ -38,12 +38,11 @@ public class Team {
 	 */
 	
 	public String toString() {
-		String res = "Team: " + nm + "(" + t.size() + ") Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n  ";
+		String res = "Team: " + nm + "(" + t.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n  ";
 		for (int i = 0; i < t.size(); i++) {
 			res += t.get(i) + "\n  ";
 		}
-		res.substring(0,res.length() - 3);
-		res += "\n";
+		res.substring(0,res.length() - 2);
 		return res;
 	}
 	

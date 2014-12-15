@@ -46,7 +46,7 @@ public class Goalkeeper extends Player {
 				+ " Reflexes: "+this.getRef()
 				+ " Speed: "+this.getSpd()
 				+ " Positioning: "+this.getPing()
-				+ " Height "+this.getHei();
+				+ " Height: "+this.getHei();
 	}
 	
 	/**
@@ -68,7 +68,7 @@ public class Goalkeeper extends Player {
 		res+="         <POSITIONING>"+this.getPing()+"</POSITIONING>\r\n";
 		res+="         <HEIGHT>"+this.getHei()+"</HEIGHT>\r\n";
 		res+="         <TYPE>GK</TYPE>\r\n";
-		res+="      </PLAYER>\r\n";
+		res+="      </KEEPER>\r\n";
 		return res;
 	}
 	
