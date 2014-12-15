@@ -1,6 +1,5 @@
 package Database;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -8,8 +7,6 @@ public abstract class Player {
 	
 	private final SimpleStringProperty name;
 	private final SimpleStringProperty Tpos;
-	private final SimpleIntegerProperty tableAge;
-	private final SimpleIntegerProperty tablePrice;
 	
 	private String firstname, lastname, pos;
 	private int age, pri;
@@ -33,8 +30,6 @@ public abstract class Player {
 		this.pri = pri;
 		this.name = new SimpleStringProperty(lastname + ", " + firstname);
 		this.Tpos = new SimpleStringProperty(pos);
-		this.tableAge = new SimpleIntegerProperty(age);
-		this.tablePrice = new SimpleIntegerProperty(pri);
 	}
 
 	/**
@@ -51,10 +46,6 @@ public abstract class Player {
 	public String getName(){return name.get(); }
 	public SimpleStringProperty getTposProperty() {return Tpos; }
 	public String getTpos() {return Tpos.get(); }
-	public SimpleIntegerProperty getTableAgeProperty() {return tableAge; }
-	public int getTableAge() {return tableAge.get(); }
-	public SimpleIntegerProperty getTablePriceProperty() {return tablePrice; }
-	public int getTablePrice() {return tablePrice.get(); }
 
 	/**
 	 * Setters
@@ -68,7 +59,5 @@ public abstract class Player {
 	public void setPri(int pri) {this.pri = pri; }
 	public void setName(String fName) { name.set(fName); }
 	public void setTpos(String pos) {Tpos.set(pos); }
-	public void setTableAge(int age) {tableAge.set(age); }
-	public void setTablePrice(int pri) {tablePrice.set(pri); }
 	
 }

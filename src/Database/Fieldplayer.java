@@ -1,14 +1,6 @@
 package Database;
 
-import javafx.beans.property.SimpleIntegerProperty;
-
 public class Fieldplayer extends Player {
-	private SimpleIntegerProperty tablePac;
-	private SimpleIntegerProperty tableSho;
-	private SimpleIntegerProperty tablePas;
-	private SimpleIntegerProperty tableDri;
-	private SimpleIntegerProperty tableDef;
-	private SimpleIntegerProperty tablePhy;
 	
 	private int pac, sho, pas, dri, def, phy;
 	
@@ -36,12 +28,6 @@ public class Fieldplayer extends Player {
 		this.dri = dri;
 		this.def = def;
 		this.phy = phy;
-		this.tablePac = new SimpleIntegerProperty(pac);
-		this.tableSho = new SimpleIntegerProperty(sho);
-		this.tablePas = new SimpleIntegerProperty(pas);
-		this.tableDri = new SimpleIntegerProperty(dri);
-		this.tableDef = new SimpleIntegerProperty(def);
-		this.tablePhy = new SimpleIntegerProperty(phy);
 	}
 	
 	/**
@@ -174,18 +160,6 @@ public class Fieldplayer extends Player {
 	public int getDri() {return dri;}
 	public int getDef() {return def;}
 	public int getPhy() {return phy;}
-	public SimpleIntegerProperty getTablePacProperty() {return tablePac; }
-	public int getTablePac() {return tablePac.get(); }
-	public SimpleIntegerProperty getTableShoProperty() {return tableSho; }
-	public int getTableSho() {return tableSho.get(); }
-	public SimpleIntegerProperty getTablePasProperty() {return tablePas; }
-	public int getTablePas() {return tablePas.get(); }
-	public SimpleIntegerProperty getTableDriProperty() {return tableDri; }
-	public int getTableDri() {return tableDri.get(); }
-	public SimpleIntegerProperty getTableDefProperty() {return tableDef; }
-	public int getTableDef() {return tableDef.get(); }
-	public SimpleIntegerProperty getTablePhyProperty() {return tablePhy; }
-	public int getTablePhy() {return tablePhy.get(); }
 	
 	/**
 	 * Setters
@@ -197,10 +171,4 @@ public class Fieldplayer extends Player {
 	public void setDri(int dri) {this.dri = dri;}
 	public void setDef(int def) {this.def = def;}
 	public void setPhy(int phy) {this.phy = phy;}
-	public void setTablePac(int pac) {this.tablePac.set(pac);}
-	public void setTableSho(int sho) {this.tablePac.set(sho);}
-	public void setTablePas(int pas) {this.tablePac.set(pas);}
-	public void setTableDri(int dri) {this.tablePac.set(dri);}
-	public void setTableDef(int def) {this.tablePac.set(def);}
-	public void setTablePhy(int phy) {this.tablePac.set(phy);}
 }
