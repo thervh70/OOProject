@@ -23,10 +23,8 @@ public class MatchCenter {
 		Style.setButtonStyle(results, 50);
 		Style.setButtonStyle(start, 60);
 		Style.setButtonStyle(back, 45);
-
-		Image background = new Image("/GUI/Resources/background_match-center.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_match-center.png"));
 
 		back.setLayoutX(150);
 		back.setLayoutY(870);

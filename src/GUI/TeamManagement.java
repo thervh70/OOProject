@@ -1,7 +1,5 @@
 package GUI;
 
-import Database.Fieldplayer;
-import Database.Player;
 import Database.*;
 import Game.saveGame;
 import javafx.application.Application;
@@ -36,9 +34,8 @@ public class TeamManagement {
 		back.setLayoutX(150);
 		back.setLayoutY(870);
 		
-		Image background = new Image("/GUI/Resources/background_team-management.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_team-management.png"));
+
 		
 		Text setup = new Text("Set-up");
 		Text bench = new Text("Bench");

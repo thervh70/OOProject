@@ -34,9 +34,7 @@ public class TransferMarket {
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
-		Image background = new Image("/GUI/Resources/background_transfer-market.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_transfer-market.png"));
 		
 		Button back = new Button("Back to Management Center");
 		Text forSale = new Text("For Sale");

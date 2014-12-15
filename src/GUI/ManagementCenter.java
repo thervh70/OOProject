@@ -40,10 +40,8 @@ public class ManagementCenter {
 		
 		Style.setButtonStyle(menu, 45);
 
-		Image background = new Image("/GUI/Resources/background_managementcenter.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
-		
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_managementcenter.png"));
+
 		menu.setLayoutX(150);
 		menu.setLayoutY(870);
 		

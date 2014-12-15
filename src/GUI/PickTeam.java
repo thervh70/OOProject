@@ -38,10 +38,8 @@ public class PickTeam{
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
-		Image background = new Image("/GUI/Resources/background_pick-team.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
-		
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_pick-team.png"));
+
 		int size = 35;
 		
 		//Declare a bunch of buttons
@@ -116,7 +114,7 @@ public class PickTeam{
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e){
-				ManagementCenter.start(primaryStage);
+				LoadingScreen.start(primaryStage);
 			}
 		});
 

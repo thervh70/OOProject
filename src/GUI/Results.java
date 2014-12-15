@@ -58,9 +58,7 @@ public class Results {
 		
 		tableResults.getColumns().addAll(homeTeam, column, awayTeam, column2, Score);
 		
-		Image background = new Image("/GUI/Resources/background_results.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_results.png"));
 		
 		root.getChildren().addAll(back, tableResults);
 		

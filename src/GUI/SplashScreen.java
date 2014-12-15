@@ -1,5 +1,7 @@
 package GUI;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.IOException;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -25,13 +27,21 @@ import javafx.util.Duration;
 
 
 public class SplashScreen extends Application {
-
-
+	
+	protected static double width, height;
+	
 	public void start(Stage primaryStage) throws SAXException,IOException {
+		
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		width = screenSize.getWidth();
+		height = screenSize.getHeight();
 		
 		//set up window
 		Pane root = new Pane();
-		Scene scene = new Scene(root,1920, 1080);
+		Scene scene = new Scene(root,width, height);
+		
+		//create background image
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
 
 /*
 		//import css file
@@ -46,11 +56,6 @@ public class SplashScreen extends Application {
 		t.setLayoutX(1220);
 		t.setLayoutY(700);
 		
-		//create background image
-		Image background = new Image("/GUI/Resources/background_splashscreen.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
-        
         //When the mouse button is pressed, go to the next StartupMenu screen
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
              @Override

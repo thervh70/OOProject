@@ -55,7 +55,7 @@ public class LoadingScreen {
                 {
                     @Override
                     public void handle(MouseEvent t) {
-						StartupMenu.start(primaryStage);
+						ManagementCenter.start(primaryStage);
 					}
                 });
 		};
