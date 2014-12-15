@@ -65,5 +65,13 @@ public class LoadingScreen {
 						ManagementCenter.start(primaryStage);
 					}
                 });
+		
+		root.setOnMouseClicked(new EventHandler<MouseEvent>()
+				{
+					@Override
+					public void handle(MouseEvent t2) {
+						ManagementCenter.start(primaryStage);
+					}
+ 				});
 		};
 }
