@@ -16,13 +16,8 @@ public class saveGame {
 	public static Team myteam;
 	
 	public static void read(String infile){
-		try {
-			teams = XmlParser.parseDB(infile);
-			myteam = teams.getTeam(0);
-		} catch (SAXException | IOException | ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		teams = XmlParser.parseDB(infile);
+		myteam = teams.getTeam(0);
 		
 	}
 	
