@@ -72,7 +72,7 @@ public class StartupMenu {
 				primaryStage.close();
 			}
 		});
-		
+		primaryStage.getScene().setOnKeyPressed(null);
 		root.getChildren().addAll(vbox);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();

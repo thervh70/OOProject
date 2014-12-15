@@ -39,6 +39,7 @@ public class SplashScreen extends Application {
 		//set up window
 		Pane root = new Pane();
 		Scene scene = new Scene(root,width, height);
+		root.setFocusTraversable(true);
 		
 		//create background image
 		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
@@ -65,7 +66,7 @@ public class SplashScreen extends Application {
         });
         
         //Same for when a key is pressed
-        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             public void handle(KeyEvent ke) {
             	StartupMenu.start(primaryStage);
             }
