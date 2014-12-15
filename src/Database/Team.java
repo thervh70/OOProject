@@ -114,7 +114,8 @@ public class Team {
 		int count = this.count(3) + this.count(4);
 				
 		score /= count;
-	//	score *= 1000;
+		//score *= 1000;
+		score = Math.round(score);
 		
 		return score;
 	}
@@ -130,7 +131,7 @@ public class Team {
 	
 	public double calcDefScore(){
 		double score = 0;
-		
+	
 		for(int i = 0; i < this.getSize(); i++){
 			if(this.getPlayer(i) instanceof Fieldplayer) {
 				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
@@ -141,7 +142,8 @@ public class Team {
 		int count = this.count(1) + this.count(2);
 		
 		score /= count;
-	//	score *= 1000;
+		//score *= 1000;
+		score = Math.round(score);
 		
 		return score;
 	}

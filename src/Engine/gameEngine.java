@@ -22,6 +22,7 @@ public class gameEngine {
 	private static int targB = 0;
 	
 	private static int attempts = 0;
+	private static int goals = 0;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -47,40 +48,30 @@ public class gameEngine {
 		int A = 0;
 		int B = 0;
 		
-		for(int i = 0; i < 10; i++){
-			A = attack(alpha.calcAttScore(), beta.calcDefScore());
-			targA = attempts;
-			B = attack(beta.calcAttScore(), alpha.calcDefScore());
-			targB = attempts;
+		for(int i = 0; i < 1000; i++){
+			double alphaAttMap =  map(alpha.calcAttScore(),50,70,0,100);
+			double betaAttMap = map(beta.calcAttScore(),50,70,0,100);
 			
+			double alphaDefMap = map(alpha.calcDefScore(),50,70,0,100);
+			double betaDefMap = map(alpha.calcDefScore(),50,70,0,100);
+			
+			A = attack(alphaAttMap, betaDefMap);
+			targA = attempts;
+			B = attack(betaAttMap, alphaDefMap);
+			targB = attempts;
+		
 			if(A>B) psv++;
 			else if(B>A) cam++;
 			else if(B==A) gel++;
 			
-			System.out.println(A + "-" + B);
+			System.out.println(targA + "\t" + A + "-" + B + "\t" + targB);
 		}
 		
-		//System.out.println(alpha.getNm()+ ": " + A);
-		//System.out.println(beta.getNm()+ ": " + B);
-		//System.out.println("Gelijk: " + gel);
-		
-		
-		/*
-		if(A>B){
-			System.out.print(alpha.getNm() + " won: ");
-		}
-		else if(B>A){
-			System.out.print(beta.getNm() + " won: ");
-		}
-		else{
-			System.out.print("It's a tie: ");
-		}
-		
-		System.out.println(A + "-" + B);
-		
-		System.out.println("Attempts A: " + targA);
-		System.out.println("Attempts B: " + targB);
-		*/
+		System.out.println("\n");
+		System.out.println("Wins psv: " + psv);
+		System.out.println("Wins Cambuur: " + cam + "\n");
+		System.out.println("Ties: " + gel + "\n");
+		System.out.println("Total Goals: " + goals);
 	}
 	
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
@@ -102,22 +93,21 @@ public class gameEngine {
 		double a = 0,b = 0;
 		int c = 0;
 		
-		attempts = (int) Math.round((Math.random()*(att/6))+1);
+		attempts = (int) Math.round((Math.random()*(att/6)+1));
 		
 		for(int i = 0; i < attempts; i++){
-			a = att*(Math.random()-0.3); //correction ensures not too much goals are made
+			a = att*(Math.random()-.2); //correction ensures not too much goals are made
 			b = def*(Math.random()); //correction ensures not too much ties are made
 			
 			if(a>b){ 
 				c++;
 			}		
 		}
-		
+		goals += c;
 		return c;
 	}
 	
-	public static double map(double x, double in_min, double in_max, double out_min, double out_max)
-	{
-	  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+	public static double map(double x, double in_min, double in_max, int out_min, int out_max) {
+		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 	}
 }
