@@ -14,6 +14,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -41,12 +42,18 @@ public class LoadingScreen {
 		logo_img.setFitHeight(200);
 		logo_img.setFitWidth(200);
 		
-		RotateTransition frits = new RotateTransition(Duration.millis(2500), logo_img);
+		Text text = new Text("LOADING...");
+		Style.setTextStyle(text, 38);
+		text.setLayoutX(150);
+		text.setLayoutY(750);
+		
+		RotateTransition frits = new RotateTransition(Duration.millis(1700), logo_img);
 	    frits.setByAngle(360);
 	    frits.setCycleCount(Integer.MAX_VALUE);
 	    frits.setAutoReverse(false);
 		frits.play();
-		root.getChildren().add(logo_img);
+		
+		root.getChildren().addAll(logo_img,text);
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
