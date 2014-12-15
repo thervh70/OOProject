@@ -39,7 +39,6 @@ public class SplashScreen extends Application {
 		//set up window
 		Pane root = new Pane();
 		Scene scene = new Scene(root,width, height);
-		root.setFocusTraversable(true);
 		
 		//create background image
 		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
