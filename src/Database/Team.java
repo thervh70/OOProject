@@ -40,9 +40,10 @@ public class Team {
 	public String toString() {
 		String res = "Team: " + nm + "(" + t.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n  ";
 		for (int i = 0; i < t.size(); i++) {
-			res += t.get(i) + "\n  ";
+			res += t.get(i) + "\n";
 		}
 		res.substring(0,res.length() - 2);
+		res += "\n";
 		return res;
 	}
 	
@@ -134,7 +135,7 @@ public class Team {
 			
 			switch(a){
 			case 0:
-				if(pos.equals("KP")) count++;
+				if(pos.equals("GK")) count++;
 				break;
 			case 1:
 				if(pos.equals("RB") || pos.equals("CB") || pos.equals("LB")) count++;

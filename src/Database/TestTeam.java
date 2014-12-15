@@ -11,8 +11,29 @@ public class TestTeam {
 	Goalkeeper p3 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
 	Goalkeeper p4 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, 33, 86, 16, 46, 71, 46, 22);
 	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-
 	Team t1 = new Team("Ajax", 100000, 150000);
+	Team t2 = new Team("Feyenoord", 100000, 150000);
+	Team t3 = new Team("Ajax", 100000, 150000);
+	String res = "   <TEAM>\r\n"
+			+ "      <TEAMNAME>Ajax</TEAMNAME>\r\n"
+			+ "      <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>\r\n"
+			+ "      <BUDGET>150000</BUDGET>\r\n"
+			+ "      <PLAYER>\r\n"
+			+ "         <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "         <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "         <AGE>21</AGE>\r\n"
+			+ "         <PRICE>182556</PRICE>\r\n"
+			+ "         <PACE>44</PACE>\r\n"
+			+ "         <SHOOTING>56</SHOOTING>\r\n"
+			+ "         <PASSING>81</PASSING>\r\n"
+			+ "         <DRIBBLING>39</DRIBBLING>\r\n"
+			+ "         <DEFENDING>72</DEFENDING>\r\n"
+			+ "         <PHYSICAL>58</PHYSICAL>\r\n"
+			+ "         <TYPE>RB</TYPE>\r\n"
+			+ "      </PLAYER>\r\n"
+			+ "   </TEAM>\r\n";
+
+	
 	
 	@Test
 	public void addPlayerTest() {
@@ -34,13 +55,14 @@ public class TestTeam {
 	
 	@Test
 	public void toWriteTest() {
-		
+		t1.addPlayer(p1);
+		assertEquals(t1.toWrite(), res);
 	}
 	
 	@Test
 	public void equalsTest() {
-		assertTrue(p1.equals(p1));
-		assertTrue(p1.equals(p5));
-		assertFalse(p2.equals(p3));
+		assertTrue(t1.equals(t1));
+		assertTrue(t1.equals(t3));
+		assertFalse(t2.equals(t3));
 	}
 }

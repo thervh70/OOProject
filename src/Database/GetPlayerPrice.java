@@ -19,6 +19,11 @@ public class GetPlayerPrice {
 					Fieldplayer resP = definePlayerPrice(p);
 					resT.addPlayer(resP);
 				}
+				else if(t.getPlayer(j) instanceof Goalkeeper) {
+					Goalkeeper gk = (Goalkeeper)(t.getPlayer(j));
+					Goalkeeper resGk = defineKeeperPrice(gk);
+					resT.addPlayer(resGk);
+				}
 			}
 			res.addTeam(resT);
 			System.out.println(res);
@@ -53,6 +58,23 @@ public class GetPlayerPrice {
 		else if(pos.equals("ST")) {
 			score = (pac*10 + sho*25 + pas*15 + dri*15 + def*10 + phy*25)/100;
 		}
+		float percentage = (float) (score*0.5/100 + Math.random()*5/10);
+		if(percentage > 1) System.out.println("percentage te groot!");
+		pri += Math.round(percentage*125000);
+		p.setPri(pri);
+		return p;
+	}
+	
+	public static Goalkeeper defineKeeperPrice(Goalkeeper p) {
+		int pri = 75000;
+		int div = p.getDiv();
+		int han = p.getHan();
+		int kick = p.getKick();
+		int ref = p.getRef();
+		int spd = p.getSpd();
+		int ping = p.getPing();
+		int hei = p.getHei();
+		int score = (div + han + kick + ref + spd + ping + hei)/7;
 		float percentage = (float) (score*0.5/100 + Math.random()*5/10);
 		if(percentage > 1) System.out.println("percentage te groot!");
 		pri += Math.round(percentage*125000);

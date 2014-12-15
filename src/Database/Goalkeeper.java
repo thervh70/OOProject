@@ -38,7 +38,7 @@ public class Goalkeeper extends Player {
 	 */
 	
 	public String toString() {
-		return "Name: "+this.getFnm()+" "+this.getLnm()
+		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
 				+ "    Diving: "+this.getDiv()
 				+ " Handling: "+this.getHan()

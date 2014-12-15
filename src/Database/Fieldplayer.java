@@ -50,7 +50,7 @@ public class Fieldplayer extends Player {
 	 */
 	
 	public String toString() {
-		return "Name: "+this.getFnm()+" "+this.getLnm()
+		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
 				+ "    Pace: "+this.getPac()
 				+ " Shooting: "+this.getSho()

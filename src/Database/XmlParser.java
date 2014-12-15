@@ -18,6 +18,10 @@ public class XmlParser {
 	 */
 	
 	public static void main(String[] args) throws Exception {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Filename:");
+//		String infile = sc.next();
+//		sc.close();
 		DBmain d = parseDB();
 		System.out.println(d);
 		
@@ -35,26 +39,53 @@ public class XmlParser {
 	 * @throws ParserConfigurationException 
 	 */
 	
-	public static DBmain parseDB() throws SAXException, IOException, ParserConfigurationException {
-		//Get the DOM Builder Factory and DOM Builder
+	public static DBmain parseDB() {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder = factory.newDocumentBuilder();
-		//Load and Parse the XML document. Document contains the complete XML as a Tree.
-		Document document = builder.parse("src/Database/Database_v5.xml");
-		    
-	    NodeList division = document.getDocumentElement().getChildNodes();
+		DocumentBuilder builder;
 		DBmain d = new DBmain();
-	    for(int i=1;i<division.getLength();i+=2) {
-	    	Node team = division.item(i);
-//	    	System.out.println("item "+i+": "+team);
-	    	NodeList teamattrs = team.getChildNodes();
-	    	Team t = parseTeam(teamattrs);
-	    	d.addTeam(t);
-	    }
-	    return d;
+		try {
+			builder = factory.newDocumentBuilder(); 
+			Document document = builder.parse("src/Database/Database_v5.xml");   
+			NodeList division = document.getDocumentElement().getChildNodes();
+		
+			
+		    for(int i=1;i<division.getLength();i+=2) {
+		    	Node team = division.item(i);
+		//	    	System.out.println("item "+i+": "+team);
+		    	NodeList teamattrs = team.getChildNodes();
+		    	Team t = parseTeam(teamattrs);
+		    	d.addTeam(t);
+		    }
+		}
+		catch (ParserConfigurationException | SAXException | IOException e) {
+			e.printStackTrace();
+		}
+		return d;
 	}
 	
-	public static DBmain parseDB(String infile) throws SAXException, IOException, ParserConfigurationException {
+	public static DBmain parseDB(String infile) {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder;
+		DBmain d = new DBmain();
+		try {
+			builder = factory.newDocumentBuilder(); 
+			Document document = builder.parse("src/Saves/" + infile);   
+			NodeList division = document.getDocumentElement().getChildNodes();
+			
+		    for(int i=1;i<division.getLength();i+=2) {
+		    	Node team = division.item(i);
+		    	NodeList teamattrs = team.getChildNodes();
+		    	Team t = parseTeam(teamattrs);
+		    	d.addTeam(t);
+		    }
+		}
+		catch (ParserConfigurationException | SAXException | IOException e) {
+			e.printStackTrace();
+		}
+		return d;
+	}
+	
+	/*public static DBmain parseDB(String infile) throws SAXException, IOException, ParserConfigurationException {
 		//Get the DOM Builder Factory and DOM Builder
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
@@ -71,7 +102,7 @@ public class XmlParser {
 	    	d.addTeam(t);
 	    }
 	    return d;
-	}
+	}*/
 	
 	/**
 	 * Method parseTeam is called from parseDB and is given a NodeList teamattrs.
