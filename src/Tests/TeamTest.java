@@ -8,7 +8,7 @@ import Database.Fieldplayer;
 import Database.Goalkeeper;
 import Database.Team;
 
-public class TestTeam {
+public class TeamTest{
 	
 	Fieldplayer p1 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
 	Fieldplayer p2 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, 33, 86, 16, 46, 71, 22);

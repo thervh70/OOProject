@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import Database.Goalkeeper;
 
-public class TestGoalkeeper {
+public class GoalkeeperTest {
 	
 	Goalkeeper fp1 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
 	Goalkeeper fp2 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);

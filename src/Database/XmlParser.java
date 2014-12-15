@@ -34,9 +34,6 @@ public class XmlParser {
 	 * 
 	 * @param division NodeList of all teams
 	 * @return DBmain
-	 * @throws IOException 
-	 * @throws SAXException 
-	 * @throws ParserConfigurationException 
 	 */
 	
 	public static DBmain parseDB() {
@@ -61,6 +58,18 @@ public class XmlParser {
 		}
 		return d;
 	}
+	
+	/**
+	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
+	 * parserPlayer and parseKeeper are called during this process.
+	 * 
+	 * Only difference is the ability to take a file-name as origin for parsing the data
+	 * 
+	 * @param division NodeList of all teams
+	 * @return DBmain
+	 *
+	 * @param infile
+	 */
 	
 	public static DBmain parseDB(String infile) {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

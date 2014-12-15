@@ -4,13 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Database.XmlParser;
-
-public class TestXmlParser {
+public class DBmainTest {
 
 	@Test
 	public void test() {
-		
+		fail("Not yet implemented");
 	}
 
 }

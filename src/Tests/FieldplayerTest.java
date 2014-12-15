@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import Database.Fieldplayer;
 
-public class TestFieldplayer {
+public class FieldplayerTest {
 	
 	Fieldplayer fp1 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
 	Fieldplayer fp2 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
