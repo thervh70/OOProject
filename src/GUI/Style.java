@@ -1,8 +1,13 @@
 package GUI;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
@@ -55,5 +60,15 @@ public abstract class Style {
 		Color color = Color.WHITESMOKE;
 		t.setFont(textFont);
 		t.setFill(color);
+	}
+	
+	public static ImageView setBackground(String image){		
+		Image background = new Image(image);
+		ImageView imgView = new ImageView(background);
+
+		imgView.setFitHeight(SplashScreen.height);
+		imgView.setFitWidth(SplashScreen.width);
+		
+		return imgView;
 	}
 }
