@@ -51,7 +51,6 @@ public class XmlParser {
 			
 		    for(int i=1;i<division.getLength();i+=2) {
 		    	Node team = division.item(i);
-		//	    	System.out.println("item "+i+": "+team);
 		    	NodeList teamattrs = team.getChildNodes();
 		    	Team t = parseTeam(teamattrs);
 		    	d.addTeam(t);

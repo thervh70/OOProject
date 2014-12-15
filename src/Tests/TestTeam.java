@@ -1,8 +1,12 @@
-package Database;
+package Tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import Database.Fieldplayer;
+import Database.Goalkeeper;
+import Database.Team;
 
 public class TestTeam {
 	
