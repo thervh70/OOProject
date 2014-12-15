@@ -6,7 +6,7 @@ public class Team {
 	
 	private ArrayList<Player> t;
 	private String nm;
-	int bdgt_vir, bdgt_rel;
+	private int bdgt_vir, bdgt_rel;
 	
 	/**
 	 * Constructor creates a Team with a budget, teamname and an ArrayList of Players
@@ -30,6 +30,31 @@ public class Team {
 		if(!t.contains(p)) {
 			t.add(p);
 		}
+	}
+	
+	public boolean containsPlayer(Player p){
+		return t.contains(p);
+	}
+	
+	public void removePlayer(Player p){
+		if(t.contains(p)){
+			t.remove(p);
+		}
+	}
+	
+	public void addBudget_vir(int i){
+		this.bdgt_vir+=i;
+	}
+	
+	public void subtractBudget_vir(int i){
+		this.bdgt_vir-=i;
+	}
+	public void addBudget_rel(int i){
+		this.bdgt_rel+=i;
+	}
+	
+	public void subtractBudget_rel(int i){
+		this.bdgt_rel-=i;
 	}
 	
 	/**
