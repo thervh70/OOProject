@@ -39,6 +39,9 @@ public class SplashScreen extends Application {
 		//set up window
 		Pane root = new Pane();
 		Scene scene = new Scene(root,width, height);
+		
+		//create background image
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
 
 /*
 		//import css file
@@ -53,9 +56,6 @@ public class SplashScreen extends Application {
 		t.setLayoutX(1220);
 		t.setLayoutY(700);
 		
-		//create background image
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
-        
         //When the mouse button is pressed, go to the next StartupMenu screen
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
              @Override

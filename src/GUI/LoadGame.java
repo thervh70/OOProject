@@ -28,10 +28,8 @@ public class LoadGame {
 		
 		Pane root = new Pane();
 		
-		Image background = new Image("/GUI/Resources/background_splashscreen.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
-		
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
+
 		Rectangle r = new Rectangle();
 		r.setX(150);
 		r.setY(150);
@@ -72,7 +70,7 @@ public class LoadGame {
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
 				public void handle(ActionEvent e){
 					saveGame.read(infile);
-					ManagementCenter.start(primaryStage);
+					LoadingScreen.start(primaryStage);
 				}
 
 				

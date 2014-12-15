@@ -41,9 +41,8 @@ public class StartupMenu {
 		vbox.setLayoutY(590);
 		vbox.setAlignment(Pos.CENTER);
 		
-		Image background = new Image("/GUI/Resources/background_splashscreen.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
+
 		
 		//Give click functionality to "New Game", directs to Team Picking 
 		newGame.setOnAction(new EventHandler<ActionEvent>(){

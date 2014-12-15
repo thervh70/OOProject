@@ -29,9 +29,7 @@ public class CompetitionTable {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
-		Image background = new Image("/GUI/Resources/background_competition-table.png");
-		ImageView imgView = new ImageView(background);
-		root.getChildren().add(imgView);
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_competition-table.png"));
 		
 		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");
