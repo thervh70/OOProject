@@ -50,8 +50,47 @@ public class TestTeam {
 	}
 	
 	@Test
+	public void removePlayer() {
+		t1.addPlayer(p1);
+		t1.addPlayer(p2);
+		t1.addPlayer(p3);
+		t1.addPlayer(p4);
+		assertEquals(t1.getSize(), 4);
+		t1.removePlayer(p3);
+		assertEquals(t1.getSize(), 3);
+	}
+	
+	@Test
+	public void addBudget_virTest() {
+		assertEquals(t1.getBdgt_vir(), 100000);
+		t1.addBudget_vir(50000);
+		assertEquals(t1.getBdgt_vir(), 150000);
+	}
+	
+	@Test
+	public void subtractBudget_virTest() {
+		assertEquals(t1.getBdgt_vir(), 100000);
+		t1.subtractBudget_vir(50000);
+		assertEquals(t1.getBdgt_vir(), 50000);
+	}
+	
+	@Test
+	public void addBudget_relTest() {
+		assertEquals(t1.getBdgt_rel(), 150000);
+		t1.addBudget_rel(50000);
+		assertEquals(t1.getBdgt_rel(), 200000);
+	}
+	
+	@Test
+	public void substractBudget_relTest() {
+		assertEquals(t1.getBdgt_rel(), 150000);
+		t1.subtractBudget_rel(50000);
+		assertEquals(t1.getBdgt_rel(), 100000);
+	}
+	
+	@Test
 	public void toStringTest() {
-		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\n  ");
+		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\n\n  ");
 		t1.addPlayer(p1);
 		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\n  ");
