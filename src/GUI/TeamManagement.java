@@ -27,6 +27,7 @@ public class TeamManagement {
 		for (int i = 0; i < saveGame.myteam.getSize(); i++) {
 			data.add(saveGame.myteam.getPlayer(i));
 		}
+		final ObservableList<Player> data2 = FXCollections.observableArrayList(new Fieldplayer("Bankspeler", "ViezeVuile", "bank", 80, 80, 1, 1, 1, 1, 1, 1));
 		Pane root = new Pane();
 		
 		Button back = new Button("Back to Management Center");
@@ -57,15 +58,18 @@ public class TeamManagement {
 		tableSetup.setEditable(false);
 		
 		tableSetup.setItems(data);
+		
 
 		
 		//Create a table for the bench with fixed columns
-		TableView<String> tableBench = new TableView();
+		TableView<Player> tableBench = new TableView();
 		tableBench.setEditable(false);
 		tableBench.setPrefSize(700, 540);
 		tableBench.setLayoutX(1025);
 		tableBench.setLayoutY(250);
 		tableBench.setEditable(false);
+		
+		tableBench.setItems(data2);
 		
 		//Creat columns for both tables
 		TableColumn name = new TableColumn("Name");
@@ -113,7 +117,7 @@ public class TeamManagement {
 
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
-		//tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		
 	
 		
