@@ -51,7 +51,7 @@ public class LoadingScreen {
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 		
-        root.setOnMouseClicked(new EventHandler<MouseEvent>()
+        root.setOnMouseMoved(new EventHandler<MouseEvent>()
                 {
                     @Override
                     public void handle(MouseEvent t) {

@@ -114,7 +114,7 @@ public class PickTeam{
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e){
-				LoadingScreen.start(primaryStage);
+				ManagementCenter.start(primaryStage);
 			}
 		});
 
