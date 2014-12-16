@@ -56,10 +56,9 @@ public class DBmain {
 	public String toString() {
 		String res = "Divisie: ("+d.size()+")\n";
 		for(int i=0;i<d.size();i++) {
-			res += d.get(i);
+			res += d.get(i) + "\n\n";
 		}
-		res.substring(0,res.length() - 1);
-		res += "\n";
+		res.substring(0,res.length()-2);
 		return res;
 	}
 	

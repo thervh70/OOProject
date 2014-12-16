@@ -8,6 +8,7 @@ public class Team {
 	private String nm;
 	private int bdgt_vir, bdgt_rel;
 	
+	
 	/**
 	 * Constructor creates a Team with a budget, teamname and an ArrayList of Players
 	 * @param name
@@ -32,9 +33,20 @@ public class Team {
 		}
 	}
 	
+	/**
+	 * Method containsPlayer checks if a Team contains a Player
+	 * @param p Player
+	 * @return boolean
+	 */
+	
 	public boolean containsPlayer(Player p){
 		return t.contains(p);
 	}
+	
+	/**
+	 * Method removePlayer removes a Player from a Team
+	 * @param p Player
+	 */
 	
 	public void removePlayer(Player p){
 		if(t.contains(p)){
@@ -42,16 +54,37 @@ public class Team {
 		}
 	}
 	
+	/**
+	 * Method addBudget_vir takes an integer and adds it to the virtual budget of a Team
+	 * @param i
+	 */
+	
 	public void addBudget_vir(int i){
 		this.bdgt_vir+=i;
 	}
 	
+	/**
+	 * Method subtractBudget_vir takes an integer and subtracts it from the virtual budget of a Team
+	 * @param i
+	 */
+	
 	public void subtractBudget_vir(int i){
 		this.bdgt_vir-=i;
 	}
+	
+	/**3
+	 * Method addBudget_rel takes an integer and adds it to the actual budget of a Team
+	 * @param i
+	 */
+	
 	public void addBudget_rel(int i){
 		this.bdgt_rel+=i;
 	}
+	
+	/**
+	 * Method subtractBudget_rel takes an integer and subtracts it from the actual budget of a Team
+	 * @param i
+	 */
 	
 	public void subtractBudget_rel(int i){
 		this.bdgt_rel-=i;
@@ -63,12 +96,11 @@ public class Team {
 	 */
 	
 	public String toString() {
-		String res = "Team: " + nm + "(" + t.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n  ";
+		String res = "Team: " + nm + "(" + t.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n";
 		for (int i = 0; i < t.size(); i++) {
 			res += t.get(i) + "\n";
 		}
-		res.substring(0,res.length() - 2);
-		res += "\n";
+		res = res.substring(0, res.length()-1);
 		return res;
 	}
 	
@@ -197,7 +229,7 @@ public class Team {
 				return false;
 			}
 			for(int i=0; i<this.getSize(); i++) {
-				if(!(this.getPlayer(i).equals(that.getPlayer(i)))) {
+				if(!(this.containsPlayer(that.getPlayer(i)))) {
 					return false;
 				}
 			}
@@ -211,7 +243,6 @@ public class Team {
 	 */
 	
 	public String getNm() {return this.nm;}
-	public ArrayList<Player> getT() {return this.t;}
 	public int getBdgt_vir() {return this.bdgt_vir;}
 	public int getBdgt_rel() {return this.bdgt_rel;}
 	public int getSize() {return t.size();}

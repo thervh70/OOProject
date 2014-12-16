@@ -88,7 +88,7 @@ public class Fieldplayer extends Player {
 	 * @return Attacking score for 1 player
 	 */
 	
-	public double calcAttScore(){
+	public double calcAttScore() {
 		double score = 0;
 		String pos = this.getPos();
 		int pac = this.getPac();
@@ -114,7 +114,7 @@ public class Fieldplayer extends Player {
 	 * @return Defending score for 1 player
 	 */
 	
-	public double calcDefScore(){
+	public double calcDefScore() {
 		double score = 0;
 		String pos = this.getPos();
 		int pac = this.getPac();
