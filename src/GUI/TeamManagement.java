@@ -35,41 +35,84 @@ public class TeamManagement {
 		back.setLayoutX(150);
 		back.setLayoutY(870);
 		
+		Button switchLeftPlayer = new Button("-->");
+		Style.setButtonStyle(switchLeftPlayer, 45);
+		switchLeftPlayer.setLayoutX(900);
+		switchLeftPlayer.setLayoutY(375);
+		
+		Button switchRightPlayer = new Button("<--");
+		Style.setButtonStyle(switchRightPlayer, 45);
+		switchRightPlayer.setLayoutX(900);
+		switchRightPlayer.setLayoutY(450);
+		
+		Button switchLeftKeeper = new Button("-->");
+		Style.setButtonStyle(switchLeftKeeper, 45);
+		switchLeftKeeper.setLayoutX(900);
+		switchLeftKeeper.setLayoutY(700);
+		
+		Button switchRightKeeper = new Button("<--");
+		Style.setButtonStyle(switchRightKeeper, 45);
+		switchRightKeeper.setLayoutX(900);
+		switchRightKeeper.setLayoutY(775);
+		
 		root.getChildren().add(Style.setBackground("/GUI/Resources/background_team-management.png"));
 
 		
 		Text setup = new Text("Set-up");
 		Text bench = new Text("Bench");
+		Text setupKeeper = new Text("Keepers");
+		Text benchKeeper = new Text("Keepers");
 		
 		Style.setTextStyle(setup, 45);
-		setup.setLayoutX(475);
+		setup.setLayoutX(455);
 		setup.setLayoutY(230);
 		
 		Style.setTextStyle(bench, 45);
-		bench.setLayoutX(1325);
+		bench.setLayoutX(1365);
 		bench.setLayoutY(230);
 		
+		Style.setTextStyle(setupKeeper, 45);
+		setupKeeper.setLayoutX(450);
+		setupKeeper.setLayoutY(680);
+		
+		Style.setTextStyle(benchKeeper, 45);
+		benchKeeper.setLayoutX(1350);
+		benchKeeper.setLayoutY(680);
+		
+		
+		
 		//Create a table for the setup with fixed columns
-		TableView<Player> tableSetup = new TableView<Player>();
-		tableSetup.setEditable(false);
-		tableSetup.setPrefSize(700, 540);
-		tableSetup.setLayoutX(175);
-		tableSetup.setLayoutY(250);
-		tableSetup.setEditable(false);
+		TableView<Player> tableSetupField = new TableView<Player>();
+		tableSetupField.setEditable(false);
+		tableSetupField.setPrefSize(700, 375);
+		tableSetupField.setLayoutX(150);
+		tableSetupField.setLayoutY(250);
 		
-		tableSetup.setItems(data);
+		tableSetupField.setItems(data);
 		
-
+		//Separate table for Keepers in Field
+		TableView<Player> tableSetupKeeper = new TableView<Player>();
+		tableSetupKeeper.setEditable(false);
+		tableSetupKeeper.setPrefSize(700, 150);
+		tableSetupKeeper.setLayoutX(150);
+		tableSetupKeeper.setLayoutY(700);
 		
 		//Create a table for the bench with fixed columns
-		TableView<Player> tableBench = new TableView();
+		TableView<Player> tableBench = new TableView<Player>();
 		tableBench.setEditable(false);
-		tableBench.setPrefSize(700, 540);
-		tableBench.setLayoutX(1025);
+		tableBench.setPrefSize(700, 375);
+		tableBench.setLayoutX(1050);
 		tableBench.setLayoutY(250);
 		tableBench.setEditable(false);
 		
 		tableBench.setItems(data2);
+
+		//Additional table for keepers
+		TableView<Player> tableBenchKeeper = new TableView<Player>();
+		tableBenchKeeper.setEditable(false);
+		tableBenchKeeper.setPrefSize(700, 150);
+		tableBenchKeeper.setLayoutX(1050);
+		tableBenchKeeper.setLayoutY(700);
 		
 		//Creat columns for both tables
 		TableColumn name = new TableColumn("Name");
@@ -116,13 +159,14 @@ public class TeamManagement {
 		physical.setPrefWidth(50);
 
 		//Add columns to table
-		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableSetupField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		
 	
 		
 		//Add elements to the canvas
-		root.getChildren().addAll(back, tableSetup, tableBench, setup, bench);
+		root.getChildren().addAll(back, tableSetupField, tableBench, setup, bench, tableSetupKeeper,tableBenchKeeper, setupKeeper,benchKeeper);
+		root.getChildren().addAll(switchLeftPlayer,switchRightPlayer,switchLeftKeeper,switchRightKeeper);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -133,7 +177,5 @@ public class TeamManagement {
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
-		
-		System.out.println(saveGame.getMyTeam().getPlayer(1).getFnm());
 	}
 }
