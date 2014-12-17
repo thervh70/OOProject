@@ -17,7 +17,7 @@ public class XmlParser {
 	 * @throws Exception
 	 */
 	
-	public static void main(String[] args) throws Exception {
+/*	public static void main(String[] args) throws Exception {
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Filename:");
 //		String infile = sc.next();
@@ -25,31 +25,7 @@ public class XmlParser {
 		
 //		DBmain d = parseDB();
 //		System.out.println(d);
-//		Fieldplayer p1 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-//		Fieldplayer p2 = new Fieldplayer("Guus", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-
-		Team t1 = new Team("Ajax", 1000000, 150000);
-//		t.addPlayer(p1);
-//		t.addPlayer(p2);
-		System.out.println(t1);
-//		writeToXML(d);
-		Fieldplayer p2 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, 33, 86, 16, 46, 71, 22);
-		Goalkeeper p3 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
-		Goalkeeper p4 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, 33, 86, 16, 46, 71, 46, 22);
-		Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-		Fieldplayer p6 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, 66, 52, 39, 48, 56, 87);
-		Fieldplayer p7 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, 65, 49, 87, 55, 69, 47);
-
-		t1.addPlayer(p2);
-		t1.addPlayer(p3);
-		t1.addPlayer(p4);
-		t1.addPlayer(p5);
-		t1.addPlayer(p6);
-		t1.addPlayer(p7);
-		
-		double score = t1.calcDefScore();
-		System.out.println(score);
-	}
+	}*/
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
@@ -100,7 +76,7 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Saves/" + infile);   
+			Document document = builder.parse("src/saves/" + infile);   
 			NodeList division = document.getDocumentElement().getChildNodes();
 			
 		    for(int i=1;i<division.getLength();i+=2) {
@@ -231,12 +207,17 @@ public class XmlParser {
 	 * @throws FileNotFoundException
 	 */
 	
-	public static void writeToXML(DBmain db) throws FileNotFoundException {
+	public static void writeToXML(DBmain db) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
 		String file = sc.next();
 		sc.close();
-		PrintWriter pw = new PrintWriter(file);
+		PrintWriter pw = null;
+		try {
+			pw = new PrintWriter(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		String wrt = db.toWrite();
 		pw.print(wrt);
 		pw.close();

@@ -33,6 +33,19 @@ public class DBmain {
 			d.add(t);
 		}
 	}
+
+	/**
+	 * Method toString returns a String-representation of a Database
+	 */
+	
+	public String toString() {
+		String res = "Divisie: ("+d.size()+")\n";
+		for(int i=0;i<d.size();i++) {
+			res += d.get(i) + "\n\n";
+		}
+		res.substring(0,res.length()-2);
+		return res;
+	}
 	
 	/**
 	 * Method toWrite Stringifies a Database so it can be written in xml-file
@@ -45,20 +58,7 @@ public class DBmain {
 			Team t = d.get(i);
 			res += t.toWrite();
 		}
-		res += "</DATABASE>";
-		return res;
-	}
-	
-	/**
-	 * Method toString returns a String-representation of a Database
-	 */
-	
-	public String toString() {
-		String res = "Divisie: ("+d.size()+")\n";
-		for(int i=0;i<d.size();i++) {
-			res += d.get(i) + "\n\n";
-		}
-		res.substring(0,res.length()-2);
+		res += "</DATABASE>\r\n";
 		return res;
 	}
 	
