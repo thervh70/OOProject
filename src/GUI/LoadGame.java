@@ -28,7 +28,7 @@ public class LoadGame {
 		
 		Pane root = new Pane();
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
+		root.getChildren().add(Style.setBackground("/GUI/Resources/background_savegame.png"));
 
 		Rectangle r = new Rectangle();
 		r.setX(150);
