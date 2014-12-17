@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseDragEvent;
@@ -60,6 +61,13 @@ public abstract class Style {
 		Color color = Color.WHITESMOKE;
 		t.setFont(textFont);
 		t.setFill(color);
+	}
+	
+	public static void setLabelStyle(Label l, int size){
+	   	Font textFont = new Font("Agency FB", size);
+	   	Color color = Color.WHITESMOKE;
+		l.setFont(textFont);
+		l.setTextFill(color);
 	}
 	
 	public static ImageView setBackground(String image){		

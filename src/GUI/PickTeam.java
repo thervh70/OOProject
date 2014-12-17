@@ -67,7 +67,7 @@ public class PickTeam{
 		
 		Style.setButtonStyle(Continue, 45);
 		Continue.setLayoutX(1480);
-		Continue.setLayoutY(850);
+		Continue.setLayoutY(870);
 		
 		Style.setButtonStyle(Back, 45);
 		Back.setLayoutX(150);
