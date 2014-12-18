@@ -31,19 +31,23 @@ public class DBmainTest {
 			+ "      <TEAMNAME>Ajax</TEAMNAME>\r\n"
 			+ "      <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>\r\n"
 			+ "      <BUDGET>150000</BUDGET>\r\n"
-			+ "      <PLAYER>\r\n"
-			+ "         <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "         <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "         <AGE>21</AGE>\r\n"
-			+ "         <PRICE>182556</PRICE>\r\n"
-			+ "         <PACE>44</PACE>\r\n"
-			+ "         <SHOOTING>56</SHOOTING>\r\n"
-			+ "         <PASSING>81</PASSING>\r\n"
-			+ "         <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "         <DEFENDING>72</DEFENDING>\r\n"
-			+ "         <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "         <TYPE>RB</TYPE>\r\n"
-			+ "      </PLAYER>\r\n"
+			+ "      <SELECTION>\r\n"
+			+ "      </SELECTION>\r\n"
+			+ "      <SUBSTITUTES>\r\n"
+			+ "         <PLAYER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <PACE>44</PACE>\r\n"
+			+ "            <SHOOTING>56</SHOOTING>\r\n"
+			+ "            <PASSING>81</PASSING>\r\n"
+			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
+			+ "            <DEFENDING>72</DEFENDING>\r\n"
+			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
+			+ "            <TYPE>RB</TYPE>\r\n"
+			+ "         </PLAYER>\r\n"
+			+ "      </SUBSTITUTES>\r\n"
 			+ "   </TEAM>\r\n"
 			+ "</DATABASE>\r\n";
 
@@ -66,7 +70,7 @@ public class DBmainTest {
 		t1.addPlayer(p1);
 		d1.addTeam(t1);
 		String string = "Divisie: (1)\n"
-				+ "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+				+ "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\n\n";
 		assertEquals(d1.toString(), string);
 	}

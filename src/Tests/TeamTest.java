@@ -25,19 +25,23 @@ public class TeamTest{
 			+ "      <TEAMNAME>Ajax</TEAMNAME>\r\n"
 			+ "      <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>\r\n"
 			+ "      <BUDGET>150000</BUDGET>\r\n"
-			+ "      <PLAYER>\r\n"
-			+ "         <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "         <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "         <AGE>21</AGE>\r\n"
-			+ "         <PRICE>182556</PRICE>\r\n"
-			+ "         <PACE>44</PACE>\r\n"
-			+ "         <SHOOTING>56</SHOOTING>\r\n"
-			+ "         <PASSING>81</PASSING>\r\n"
-			+ "         <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "         <DEFENDING>72</DEFENDING>\r\n"
-			+ "         <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "         <TYPE>RB</TYPE>\r\n"
-			+ "      </PLAYER>\r\n"
+			+ "      <SELECTION>\r\n"
+			+ "      </SELECTION>\r\n"
+			+ "      <SUBSTITUTES>\r\n"
+			+ "         <PLAYER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <PACE>44</PACE>\r\n"
+			+ "            <SHOOTING>56</SHOOTING>\r\n"
+			+ "            <PASSING>81</PASSING>\r\n"
+			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
+			+ "            <DEFENDING>72</DEFENDING>\r\n"
+			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
+			+ "            <TYPE>RB</TYPE>\r\n"
+			+ "         </PLAYER>\r\n"
+			+ "      </SUBSTITUTES>\r\n"
 			+ "   </TEAM>\r\n";
 
 	
@@ -100,9 +104,9 @@ public class TeamTest{
 	
 	@Test
 	public void toStringTest() {
-		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000");
+		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:");
 		t1.addPlayer(p1);
-		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
 	}
 	
@@ -115,12 +119,12 @@ public class TeamTest{
 	@Test
 	public void calcAttScoreTest() {
 		assertEquals(t1.calcAttScore(), 0, 0.001);
-		t1.addPlayer(p2);
-		t1.addPlayer(p3);
-		t1.addPlayer(p4);
-		t1.addPlayer(p5);
-		t1.addPlayer(p6);
-		t1.addPlayer(p7);
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p3);t1.toSelection(p3);
+		t1.addPlayer(p4);t1.toSelection(p4);
+		t1.addPlayer(p5);t1.toSelection(p5);
+		t1.addPlayer(p6);t1.toSelection(p6);
+		t1.addPlayer(p7);t1.toSelection(p7);
 		assertEquals(t1.calcAttScore(), 52.0, 0.001);
 		t1.removePlayer(p2);
 		assertNotEquals(t1.calcAttScore(), 52.0, 0.001);
@@ -129,12 +133,12 @@ public class TeamTest{
 	@Test
 	public void calcDefScoreTest() {
 		assertEquals(t1.calcDefScore(), 0, 0.001);
-		t1.addPlayer(p2);
-		t1.addPlayer(p3);
-		t1.addPlayer(p4);
-		t1.addPlayer(p5);
-		t1.addPlayer(p6);
-		t1.addPlayer(p7);
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p3);t1.toSelection(p3);
+		t1.addPlayer(p4);t1.toSelection(p4);
+		t1.addPlayer(p5);t1.toSelection(p5);
+		t1.addPlayer(p6);t1.toSelection(p6);
+		t1.addPlayer(p7);t1.toSelection(p7);
 		assertEquals(t1.calcDefScore(), 64.0, 0.001);
 		t1.removePlayer(p7);
 		assertNotEquals(t1.calcDefScore(), 64.0, 0.001);

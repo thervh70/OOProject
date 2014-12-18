@@ -63,7 +63,7 @@ public class DBmain {
 	}
 	
 	/**
-	 * Method getT returns a given Team from the Database
+	 * Method getTeam returns a given Team from the Database
 	 * @param i
 	 * @return
 	 */

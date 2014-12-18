@@ -17,15 +17,14 @@ public class XmlParser {
 	 * @throws Exception
 	 */
 	
-/*	public static void main(String[] args) throws Exception {
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("Filename:");
-//		String infile = sc.next();
-//		sc.close();
-		
-//		DBmain d = parseDB();
-//		System.out.println(d);
-	}*/
+	public static void main(String[] args) throws Exception {
+		DBmain d = parseDB();
+		Team t = d.getTeam(0);
+		for(int i=0;i<11;i++) {
+			t.toSelection(t.getPlayer(0));
+		}
+		System.out.println(t);
+	}
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
@@ -91,25 +90,6 @@ public class XmlParser {
 		}
 		return d;
 	}
-	
-	/*public static DBmain parseDB(String infile) throws SAXException, IOException, ParserConfigurationException {
-		//Get the DOM Builder Factory and DOM Builder
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder = factory.newDocumentBuilder();
-		//Load and Parse the XML document. Document contains the complete XML as a Tree.
-		Document document = builder.parse("src/Saves/" + infile);
-		    
-	    NodeList division = document.getDocumentElement().getChildNodes();
-		DBmain d = new DBmain();
-	    for(int i=1;i<division.getLength();i+=2) {
-	    	Node team = division.item(i);
-//	    	System.out.println("item "+i+": "+team);
-	    	NodeList teamattrs = team.getChildNodes();
-	    	Team t = parseTeam(teamattrs);
-	    	d.addTeam(t);
-	    }
-	    return d;
-	}*/
 	
 	/**
 	 * Method parseTeam is called from parseDB and is given a NodeList teamattrs.

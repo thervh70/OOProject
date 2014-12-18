@@ -14,19 +14,19 @@ public class FieldplayerTest {
 	Fieldplayer fp4 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, 66, 52, 39, 48, 56, 87);
 	Fieldplayer fp5 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, 65, 49, 87, 55, 69, 47);
 
-	String res="      <PLAYER>\r\n"
-			+ "         <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "         <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "         <AGE>21</AGE>\r\n"
-			+ "         <PRICE>182556</PRICE>\r\n"
-			+ "         <PACE>44</PACE>\r\n"
-			+ "         <SHOOTING>56</SHOOTING>\r\n"
-			+ "         <PASSING>81</PASSING>\r\n"
-			+ "         <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "         <DEFENDING>72</DEFENDING>\r\n"
-			+ "         <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "         <TYPE>RB</TYPE>\r\n"
-			+ "      </PLAYER>\r\n";
+	String res="         <PLAYER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <PACE>44</PACE>\r\n"
+			+ "            <SHOOTING>56</SHOOTING>\r\n"
+			+ "            <PASSING>81</PASSING>\r\n"
+			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
+			+ "            <DEFENDING>72</DEFENDING>\r\n"
+			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
+			+ "            <TYPE>RB</TYPE>\r\n"
+			+ "         </PLAYER>\r\n";
 	@Test
 	public void toStringTest() {
 		assertEquals(fp1.toString(),"  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");

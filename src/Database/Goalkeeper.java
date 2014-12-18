@@ -55,20 +55,20 @@ public class Goalkeeper extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="      <KEEPER>\r\n";
-		res+="         <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
-		res+="         <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
-		res+="         <AGE>"+this.getAge()+"</AGE>\r\n";
-		res+="         <PRICE>"+this.getPri()+"</PRICE>\r\n";
-		res+="         <DIVING>"+this.getDiv()+"</DIVING>\r\n";
-		res+="         <HANDLING>"+this.getHan()+"</HANDLING>\r\n";
-		res+="         <KICKING>"+this.getKick()+"</KICKING>\r\n";
-		res+="         <REFLEXES>"+this.getRef()+"</REFLEXES>\r\n";
-		res+="         <SPEED>"+this.getSpd()+"</SPEED>\r\n";
-		res+="         <POSITIONING>"+this.getPing()+"</POSITIONING>\r\n";
-		res+="         <HEIGHT>"+this.getHei()+"</HEIGHT>\r\n";
-		res+="         <TYPE>GK</TYPE>\r\n";
-		res+="      </KEEPER>\r\n";
+		String res="         <KEEPER>\r\n";
+		res+="            <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
+		res+="            <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
+		res+="            <AGE>"+this.getAge()+"</AGE>\r\n";
+		res+="            <PRICE>"+this.getPri()+"</PRICE>\r\n";
+		res+="            <DIVING>"+this.getDiv()+"</DIVING>\r\n";
+		res+="            <HANDLING>"+this.getHan()+"</HANDLING>\r\n";
+		res+="            <KICKING>"+this.getKick()+"</KICKING>\r\n";
+		res+="            <REFLEXES>"+this.getRef()+"</REFLEXES>\r\n";
+		res+="            <SPEED>"+this.getSpd()+"</SPEED>\r\n";
+		res+="            <POSITIONING>"+this.getPing()+"</POSITIONING>\r\n";
+		res+="            <HEIGHT>"+this.getHei()+"</HEIGHT>\r\n";
+		res+="            <TYPE>GK</TYPE>\r\n";
+		res+="         </KEEPER>\r\n";
 		return res;
 	}
 	

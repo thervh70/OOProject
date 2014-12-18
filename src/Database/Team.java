@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Team {
 	
-	private ArrayList<Player> t;
+	private ArrayList<Player> team, selection;
 	private String nm;
 	private int bdgt_vir, bdgt_rel;
 	
@@ -16,7 +16,8 @@ public class Team {
 	 */
 	
 	public Team(String name, int budget_vir, int budget_rel) {
-		t = new ArrayList<Player>();
+		team = new ArrayList<Player>();
+		selection = new ArrayList<Player>();
 		nm = name;
 		bdgt_vir = budget_vir;
 		bdgt_rel = budget_rel;
@@ -28,8 +29,8 @@ public class Team {
 	 */
 	
 	public void addPlayer(Player p) {
-		if(!t.contains(p)) {
-			t.add(p);
+		if(!(this.containsPlayer(p))) {
+			team.add(p);
 		}
 	}
 	
@@ -40,7 +41,7 @@ public class Team {
 	 */
 	
 	public boolean containsPlayer(Player p){
-		return t.contains(p);
+		return team.contains(p) || selection.contains(p);
 	}
 	
 	/**
@@ -49,9 +50,32 @@ public class Team {
 	 */
 	
 	public void removePlayer(Player p){
-		if(t.contains(p)){
-			t.remove(p);
+		if(team.contains(p)){
+			team.remove(p);
 		}
+		if(selection.contains(p)){
+			selection.remove(p);
+		}
+	}
+	
+	/**
+	 * Method toSelection moves a Player to the Selection (and removes it from Team)
+	 * @param p Player
+	 */
+	
+	public void toSelection(Player p) {
+		if(!selection.contains(p)) {
+			selection.add(p);
+		}
+	}
+	
+	/**
+	 * Method toTeam moves a Player to the Team (and removes it from Selection)
+	 * @param p Player
+	 */
+	
+	public void toTeam(Player p) {
+		selection.remove(p);
 	}
 	
 	/**
@@ -96,11 +120,16 @@ public class Team {
 	 */
 	
 	public String toString() {
-		String res = "Team: " + nm + "(" + t.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n";
-		for (int i = 0; i < t.size(); i++) {
-			res += t.get(i) + "\n";
+		String res = "Team: " + nm + "(" + team.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n";
+		res += "Selection:\n";
+		for(int i=0;i<selection.size();i++) {
+			res += selection.get(i) + "\n";
 		}
-		res = res.substring(0, res.length()-1);
+		res += "Substitutes:\n";
+		for (int i = 0; i < team.size(); i++) {
+			res += team.get(i) + "\n";
+		}
+ 		res = res.substring(0, res.length()-1);
 		return res;
 	}
 	
@@ -114,7 +143,8 @@ public class Team {
 		res += "      <TEAMNAME>" + this.nm + "</TEAMNAME>\r\n";
 		res += "      <VIRTUAL_BUDGET>" + this.bdgt_vir + "</VIRTUAL_BUDGET>\r\n";
 		res += "      <BUDGET>" + this.bdgt_rel + "</BUDGET>\r\n";
-		for(int i=0;i<t.size();i++) {
+		res += "      <SELECTION>\r\n";
+		for(int i=0;i<selection.size();i++) {
 			if(this.getPlayer(i) instanceof Fieldplayer) {
 				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
 				res += p.toWrite();
@@ -124,6 +154,19 @@ public class Team {
 				res += g.toWrite();
 			}
 		}
+		res += "      </SELECTION>\r\n";
+		res	+= "      <SUBSTITUTES>\r\n";
+		for(int i=0;i<team.size();i++) {
+			if(this.getPlayer(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+				res += p.toWrite();
+			}
+			else if(this.getPlayer(i) instanceof Goalkeeper) {
+				Goalkeeper g = (Goalkeeper)(this.getPlayer(i));
+				res += g.toWrite();
+			}
+		}
+		res += "      </SUBSTITUTES>\r\n";
 		res += "   </TEAM>\r\n";
 		return res;
 	}
@@ -140,9 +183,9 @@ public class Team {
 	public double calcAttScore(){
 		double score = 0;
 		
-		for(int i = 0; i < this.getSize(); i++){
-			if(this.getPlayer(i) instanceof Fieldplayer) {
-				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+		for(int i = 0; i < selection.size(); i++){
+			if(selection.get(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(selection.get(i));
 				score += p.calcAttScore();
 			}
 		}
@@ -168,9 +211,9 @@ public class Team {
 	public double calcDefScore(){
 		double score = 0;
 	
-		for(int i = 0; i < this.getSize(); i++){
-			if(this.getPlayer(i) instanceof Fieldplayer) {
-				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+		for(int i = 0; i < selection.size(); i++){
+			if(selection.get(i) instanceof Fieldplayer) {
+				Fieldplayer p = (Fieldplayer)(selection.get(i));
 				score += p.calcDefScore();
 			}
 		}
@@ -249,8 +292,9 @@ public class Team {
 	public String getNm() {return this.nm;}
 	public int getBdgt_vir() {return this.bdgt_vir;}
 	public int getBdgt_rel() {return this.bdgt_rel;}
-	public int getSize() {return t.size();}
-	public Player getPlayer(int i) {return t.get(i);}
+	public int getSize() {return team.size();}
+	public Player getPlayer(int i) {return team.get(i);}
+	public Player getSelectionPlayer(int i) {return selection.get(i);}
 	
 	/**
 	 * Setters

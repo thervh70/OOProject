@@ -66,19 +66,19 @@ public class Fieldplayer extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="      <PLAYER>\r\n";
-		res+="         <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
-		res+="         <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
-		res+="         <AGE>"+this.getAge()+"</AGE>\r\n";
-		res+="         <PRICE>"+this.getPri()+"</PRICE>\r\n";
-		res+="         <PACE>"+this.getPac()+"</PACE>\r\n";
-		res+="         <SHOOTING>"+this.getSho()+"</SHOOTING>\r\n";
-		res+="         <PASSING>"+this.getPas()+"</PASSING>\r\n";
-		res+="         <DRIBBLING>"+this.getDri()+"</DRIBBLING>\r\n";
-		res+="         <DEFENDING>"+this.getDef()+"</DEFENDING>\r\n";
-		res+="         <PHYSICAL>"+this.getPhy()+"</PHYSICAL>\r\n";
-		res+="         <TYPE>"+this.getPos()+"</TYPE>\r\n";
-		res+="      </PLAYER>\r\n";
+		String res="         <PLAYER>\r\n";
+		res+="            <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
+		res+="            <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
+		res+="            <AGE>"+this.getAge()+"</AGE>\r\n";
+		res+="            <PRICE>"+this.getPri()+"</PRICE>\r\n";
+		res+="            <PACE>"+this.getPac()+"</PACE>\r\n";
+		res+="            <SHOOTING>"+this.getSho()+"</SHOOTING>\r\n";
+		res+="            <PASSING>"+this.getPas()+"</PASSING>\r\n";
+		res+="            <DRIBBLING>"+this.getDri()+"</DRIBBLING>\r\n";
+		res+="            <DEFENDING>"+this.getDef()+"</DEFENDING>\r\n";
+		res+="            <PHYSICAL>"+this.getPhy()+"</PHYSICAL>\r\n";
+		res+="            <TYPE>"+this.getPos()+"</TYPE>\r\n";
+		res+="         </PLAYER>\r\n";
 		return res;
 	}
 	
