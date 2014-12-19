@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Boy</FIRSTNAME>
+            <LASTNAME>Jong</LASTNAME>
+            <AGE>20</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>62</DIVING>
+            <HANDLING>58</HANDLING>
+            <KICKING>66</KICKING>
+            <REFLEXES>67</REFLEXES>
+            <SPEED>55</SPEED>
+            <POSITIONING>64</POSITIONING>
+            <HEIGHT>180</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Warner</FIRSTNAME>
+            <LASTNAME>Hahn</LASTNAME>
+            <AGE>22</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>73</DIVING>
+            <HANDLING>63</HANDLING>
+            <KICKING>66</KICKING>
+            <REFLEXES>71</REFLEXES>
+            <SPEED>45</SPEED>
+            <POSITIONING>66</POSITIONING>
+            <HEIGHT>199</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Kevin</FIRSTNAME>
+            <LASTNAME>Begois</LASTNAME>
+            <AGE>32</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>63</DIVING>
+            <HANDLING>65</HANDLING>
+            <KICKING>64</KICKING>
+            <REFLEXES>65</REFLEXES>
+            <SPEED>43</SPEED>
+            <POSITIONING>66</POSITIONING>
+            <HEIGHT>185</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

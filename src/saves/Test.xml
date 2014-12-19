@@ -4,8 +4,6 @@
       <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>
       <BUDGET>150000</BUDGET>
       <SELECTION>
-      </SELECTION>
-      <SUBSTITUTES>
          <PLAYER>
             <FIRSTNAME>Frits</FIRSTNAME>
             <LASTNAME>Fritsmans</LASTNAME>
@@ -19,6 +17,8 @@
             <PHYSICAL>58</PHYSICAL>
             <TYPE>RB</TYPE>
          </PLAYER>
+      </SELECTION>
+      <SUBSTITUTES>
          <PLAYER>
             <FIRSTNAME>Guus</FIRSTNAME>
             <LASTNAME>Meeuwis</LASTNAME>

@@ -25,6 +25,7 @@ public class DBmainTest {
 	
 	DBmain d1 = new DBmain();
 	DBmain d2 = new DBmain();
+	DBmain d3 = new DBmain();
 	
 	String write = "<DATABASE>\r\n"
 			+ "   <TEAM>\r\n"
@@ -63,13 +64,15 @@ public class DBmainTest {
 		assertEquals(d1.getSize(), 0);
 		d1.addTeam(t1);
 		assertEquals(d1.getSize(), 1);
+		d1.addTeam(t1);
+		assertEquals(d1.getSize(), 1);
 	}
 	
 	@Test
 	public void toStringTest() {
 		t1.addPlayer(p1);
 		d1.addTeam(t1);
-		String string = "Divisie: (1)\n"
+		String string = "Divisie: (1)\n----------\n"
 				+ "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\n\n";
 		assertEquals(d1.toString(), string);
@@ -95,12 +98,17 @@ public class DBmainTest {
 		t1.addPlayer(p1);
 		t1.addPlayer(p2);
 		t2.addPlayer(p1);
-		t2.addPlayer(p1);
+		t2.addPlayer(p5);
+		t3.addPlayer(p3);
+		t3.addPlayer(p4);
 		d1.addTeam(t1);
 		d1.addTeam(t2);
 		d2.addTeam(t1);
 		d2.addTeam(t2);
 		assertTrue(d1.equals(d2));
+		d1.addTeam(t1);
+		d3.addTeam(t3);
+		assertFalse(d1.equals(d3));
 		assertFalse(d1.equals(write));
 	}
 

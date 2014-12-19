@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+import Creators_REMOVE_FROM_FINAL_PROJECT.*;
 
 import javax.xml.parsers.*;
 
@@ -12,18 +13,20 @@ import org.xml.sax.SAXException;
 public class XmlParser {
 
 	/**
-	 * Method main executes stuff
+	 * Method main executes stuff (only for testing purposes)
 	 * @param args
 	 * @throws Exception
 	 */
 	
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
-		Team t = d.getTeam(0);
-		for(int i=0;i<11;i++) {
-			t.toSelection(t.getPlayer(0));
+		DBmain db = new DBmain();
+		for(int i=0;i<d.getSize();i++) {
+			Team t = editDatabase.createSelection(d.getTeam(i));
+			db.addTeam(t);
 		}
-		System.out.println(t);
+		System.out.println(db);
+		writeToXML(db);
 	}
 	
 	/**
@@ -40,10 +43,9 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Database/Database_v5.xml");   
+			Document document = builder.parse("src/Database/Database_v7.xml");   
 			NodeList division = document.getDocumentElement().getChildNodes();
 		
-			
 		    for(int i=1;i<division.getLength();i+=2) {
 		    	Node team = division.item(i);
 		    	NodeList teamattrs = team.getChildNodes();
@@ -107,16 +109,32 @@ public class XmlParser {
 	    int budget_vir = Integer.parseInt(bdgtString);
 	    int budget_rel = Integer.parseInt(bdgtString_rel);
 	    Team t = new Team(teamname, budget_vir, budget_rel);
-	    for(int i=7;i<teamattributes.getLength();i+=2) {
-	    	
-	    	Node player = teamattributes.item(i);
+	    NodeList selection = teamattributes.item(7).getChildNodes();
+	    NodeList team = teamattributes.item(9).getChildNodes();
+	   
+	    for(int i=1;i<selection.getLength();i+=2) {
+	    	Node player = selection.item(i);
+	    	NodeList playerattributes = player.getChildNodes();
 	    	if(player.getNodeName().equals("PLAYER")) {
-	    		NodeList playerattributes = player.getChildNodes();
+	    		Fieldplayer p = parsePlayer(playerattributes);
+	    		t.addPlayer(p);
+	    		t.toSelection(p);
+	    	}
+	    	else if(player.getNodeName().equals("KEEPER")) {
+	    		Goalkeeper p = parseKeeper(playerattributes);
+	    		t.addPlayer(p);
+	    		t.toSelection(p);
+	    	}
+	    }
+	    
+	    for(int i=1;i<team.getLength();i+=2) {
+	    	Node player = team.item(i);
+	    	NodeList playerattributes = player.getChildNodes();
+	    	if(player.getNodeName().equals("PLAYER")) {
 	    		Fieldplayer p = parsePlayer(playerattributes);
 	    		t.addPlayer(p);
 	    	}
 	    	else if(player.getNodeName().equals("KEEPER")) {
-	    		NodeList playerattributes = player.getChildNodes();
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    	}

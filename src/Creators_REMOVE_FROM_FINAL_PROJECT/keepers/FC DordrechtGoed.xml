@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Virgil</FIRSTNAME>
+            <LASTNAME>Deen</LASTNAME>
+            <AGE>18</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>59</DIVING>
+            <HANDLING>55</HANDLING>
+            <KICKING>58</KICKING>
+            <REFLEXES>60</REFLEXES>
+            <SPEED>47</SPEED>
+            <POSITIONING>58</POSITIONING>
+            <HEIGHT>186</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Filip</FIRSTNAME>
+            <LASTNAME>Kurto</LASTNAME>
+            <AGE>23</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>67</DIVING>
+            <HANDLING>61</HANDLING>
+            <KICKING>59</KICKING>
+            <REFLEXES>66</REFLEXES>
+            <SPEED>59</SPEED>
+            <POSITIONING>60</POSITIONING>
+            <HEIGHT>192</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Robbert</FIRSTNAME>
+            <LASTNAME>Loeke</LASTNAME>
+            <AGE>26</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>65</DIVING>
+            <HANDLING>63</HANDLING>
+            <KICKING>59</KICKING>
+            <REFLEXES>62</REFLEXES>
+            <SPEED>42</SPEED>
+            <POSITIONING>59</POSITIONING>
+            <HEIGHT>193</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

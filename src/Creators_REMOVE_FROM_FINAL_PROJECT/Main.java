@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import Database.*;
 
 
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Wat is de teamnaam? ");
 		String teamnaam = sc.nextLine();
-		ArrayList<Keeper> k = new ArrayList<Keeper>();
+		ArrayList<Goalkeeper> k = new ArrayList<Goalkeeper>();
 		String km = "1";
 		do {
 			System.out.print("Wat is de voornaam? ");
@@ -19,22 +20,22 @@ public class Main {
 			System.out.print("Wat is de achternaam? ");
 			String an = sc.next();
 			System.out.print("Wat is de DIV? ");
-			String div = sc.next();
+			int div = Integer.parseInt(sc.next());
 			System.out.print("Wat is de HAN? ");
-			String han = sc.next();
+			int han = Integer.parseInt(sc.next());
 			System.out.print("Wat is de KIC? ");
-			String kic = sc.next();
+			int kic = Integer.parseInt(sc.next());
 			System.out.print("Wat is de REF? ");
-			String ref = sc.next();
-			System.out.print("Wat is de SPE? ");
-			String spe = sc.next();
+			int ref = Integer.parseInt(sc.next());
+			System.out.print("Wat is de SPD? ");
+			int spe = Integer.parseInt(sc.next());
 			System.out.print("Wat is de POS? ");
-			String pos = sc.next();
+			int pos = Integer.parseInt(sc.next());
 			System.out.print("Wat is de HEI? ");
-			String hei = sc.next();
+			int hei = Integer.parseInt(sc.next());
 			System.out.print("Wat is de Age? ");
-			String age = sc.next();
-			Keeper keeper = new Keeper(vn,an,div,han,kic,ref,spe,pos,hei,age);
+			int age = Integer.parseInt(sc.next());
+			Goalkeeper keeper = new Goalkeeper(vn,an,"GK",age,0,div,han,kic,ref,spe,pos,hei);
 			k.add(keeper);
 			System.out.print("Zijn er nog meer keepers in dit team (1 voor ja, 0 voor nee) ");
 			km = sc.next();

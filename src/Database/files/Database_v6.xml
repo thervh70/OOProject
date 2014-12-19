@@ -3,6 +3,48 @@
       <TEAMNAME>ADO Den Haag</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Tim</FIRSTNAME>
+         <LASTNAME>Coremans</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>63</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>61</KICKING>
+         <REFLEXES>62</REFLEXES>
+         <SPEED>38</SPEED>
+         <POSITIONING>60</POSITIONING>
+         <HEIGHT>186</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Martin</FIRSTNAME>
+         <LASTNAME>Hansen</LASTNAME>
+         <AGE>24</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>58</DIVING>
+         <HANDLING>61</HANDLING>
+         <KICKING>65</KICKING>
+         <REFLEXES>62</REFLEXES>
+         <SPEED>61</SPEED>
+         <POSITIONING>54</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Robert</FIRSTNAME>
+         <LASTNAME>Zwinkels</LASTNAME>
+         <AGE>31</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>65</DIVING>
+         <HANDLING>60</HANDLING>
+         <KICKING>65</KICKING>
+         <REFLEXES>68</REFLEXES>
+         <SPEED>44</SPEED>
+         <POSITIONING>67</POSITIONING>
+         <HEIGHT>186</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Tyronne</FIRSTNAME>
          <LASTNAME>Ebuehi</LASTNAME>
@@ -268,6 +310,48 @@
       <TEAMNAME>Ajax</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Peter</FIRSTNAME>
+         <LASTNAME>Leeuwenburgh</LASTNAME>
+         <AGE>20</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>70</DIVING>
+         <HANDLING>62</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>68</REFLEXES>
+         <SPEED>44</SPEED>
+         <POSITIONING>58</POSITIONING>
+         <HEIGHT>196</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Jasper</FIRSTNAME>
+         <LASTNAME>Cillessen</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>77</DIVING>
+         <HANDLING>80</HANDLING>
+         <KICKING>74</KICKING>
+         <REFLEXES>78</REFLEXES>
+         <SPEED>54</SPEED>
+         <POSITIONING>81</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Diederik</FIRSTNAME>
+         <LASTNAME>Boer</LASTNAME>
+         <AGE>34</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>68</DIVING>
+         <HANDLING>68</HANDLING>
+         <KICKING>57</KICKING>
+         <REFLEXES>75</REFLEXES>
+         <SPEED>31</SPEED>
+         <POSITIONING>71</POSITIONING>
+         <HEIGHT>194</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Riechedly</FIRSTNAME>
          <LASTNAME>Bazoer</LASTNAME>
@@ -598,6 +682,48 @@
       <TEAMNAME>AZ</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Esteban</FIRSTNAME>
+         <LASTNAME>Alvarado</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>77</DIVING>
+         <HANDLING>70</HANDLING>
+         <KICKING>69</KICKING>
+         <REFLEXES>77</REFLEXES>
+         <SPEED>45</SPEED>
+         <POSITIONING>68</POSITIONING>
+         <HEIGHT>192</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Yves</FIRSTNAME>
+         <LASTNAME>Winter</LASTNAME>
+         <AGE>27</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>71</DIVING>
+         <HANDLING>65</HANDLING>
+         <KICKING>60</KICKING>
+         <REFLEXES>69</REFLEXES>
+         <SPEED>48</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Sergio</FIRSTNAME>
+         <LASTNAME>Rochet</LASTNAME>
+         <AGE>21</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>68</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>67</KICKING>
+         <REFLEXES>69</REFLEXES>
+         <SPEED>49</SPEED>
+         <POSITIONING>64</POSITIONING>
+         <HEIGHT>190</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Derrick</FIRSTNAME>
          <LASTNAME>Luckassen</LASTNAME>
@@ -889,6 +1015,34 @@
       <TEAMNAME>Excelsior</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Alessandro</FIRSTNAME>
+         <LASTNAME>Damen</LASTNAME>
+         <AGE>24</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>55</HANDLING>
+         <KICKING>63</KICKING>
+         <REFLEXES>65</REFLEXES>
+         <SPEED>53</SPEED>
+         <POSITIONING>53</POSITIONING>
+         <HEIGHT>186</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Jordy</FIRSTNAME>
+         <LASTNAME>Deckers</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>66</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>66</KICKING>
+         <REFLEXES>67</REFLEXES>
+         <SPEED>55</SPEED>
+         <POSITIONING>62</POSITIONING>
+         <HEIGHT>193</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Carlo</FIRSTNAME>
          <LASTNAME>Reuver</LASTNAME>
@@ -1167,6 +1321,48 @@
       <TEAMNAME>FC Dordrecht</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Virgil</FIRSTNAME>
+         <LASTNAME>Deen</LASTNAME>
+         <AGE>18</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>59</DIVING>
+         <HANDLING>55</HANDLING>
+         <KICKING>58</KICKING>
+         <REFLEXES>60</REFLEXES>
+         <SPEED>47</SPEED>
+         <POSITIONING>58</POSITIONING>
+         <HEIGHT>186</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Filip</FIRSTNAME>
+         <LASTNAME>Kurto</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>67</DIVING>
+         <HANDLING>61</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>66</REFLEXES>
+         <SPEED>59</SPEED>
+         <POSITIONING>60</POSITIONING>
+         <HEIGHT>192</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Robbert</FIRSTNAME>
+         <LASTNAME>Loeke</LASTNAME>
+         <AGE>26</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>65</DIVING>
+         <HANDLING>63</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>62</REFLEXES>
+         <SPEED>42</SPEED>
+         <POSITIONING>59</POSITIONING>
+         <HEIGHT>193</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Sem</FIRSTNAME>
          <LASTNAME>Wit</LASTNAME>
@@ -1432,6 +1628,20 @@
       <TEAMNAME>FC Groningen</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Sergio</FIRSTNAME>
+         <LASTNAME>Padt</LASTNAME>
+         <AGE>24</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>77</DIVING>
+         <HANDLING>67</HANDLING>
+         <KICKING>70</KICKING>
+         <REFLEXES>77</REFLEXES>
+         <SPEED>41</SPEED>
+         <POSITIONING>68</POSITIONING>
+         <HEIGHT>197</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Burak</FIRSTNAME>
          <LASTNAME>Saban</LASTNAME>
@@ -1697,6 +1907,48 @@
       <TEAMNAME>FC Twente</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Filip</FIRSTNAME>
+         <LASTNAME>Bednarek</LASTNAME>
+         <AGE>22</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>64</DIVING>
+         <HANDLING>56</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>63</REFLEXES>
+         <SPEED>47</SPEED>
+         <POSITIONING>60</POSITIONING>
+         <HEIGHT>187</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Sonny</FIRSTNAME>
+         <LASTNAME>Stevens</LASTNAME>
+         <AGE>22</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>69</DIVING>
+         <HANDLING>70</HANDLING>
+         <KICKING>64</KICKING>
+         <REFLEXES>71</REFLEXES>
+         <SPEED>48</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>194</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Nick</FIRSTNAME>
+         <LASTNAME>Marsman</LASTNAME>
+         <AGE>24</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>69</DIVING>
+         <HANDLING>68</HANDLING>
+         <KICKING>81</KICKING>
+         <REFLEXES>72</REFLEXES>
+         <SPEED>42</SPEED>
+         <POSITIONING>68</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Bilal</FIRSTNAME>
          <LASTNAME>Ould-Chikh</LASTNAME>
@@ -1988,6 +2240,34 @@
       <TEAMNAME>FC Utrecht</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Robbin</FIRSTNAME>
+         <LASTNAME>Ruiter</LASTNAME>
+         <AGE>27</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>73</DIVING>
+         <HANDLING>76</HANDLING>
+         <KICKING>72</KICKING>
+         <REFLEXES>77</REFLEXES>
+         <SPEED>55</SPEED>
+         <POSITIONING>75</POSITIONING>
+         <HEIGHT>196</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Jeroen</FIRSTNAME>
+         <LASTNAME>Verhoeven</LASTNAME>
+         <AGE>34</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>57</DIVING>
+         <HANDLING>67</HANDLING>
+         <KICKING>70</KICKING>
+         <REFLEXES>71</REFLEXES>
+         <SPEED>28</SPEED>
+         <POSITIONING>65</POSITIONING>
+         <HEIGHT>197</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Rubio</FIRSTNAME>
          <LASTNAME>Rubin</LASTNAME>
@@ -2318,6 +2598,48 @@
       <TEAMNAME>Feyenoord</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Erwin</FIRSTNAME>
+         <LASTNAME>Mulder</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>73</DIVING>
+         <HANDLING>66</HANDLING>
+         <KICKING>79</KICKING>
+         <REFLEXES>74</REFLEXES>
+         <SPEED>35</SPEED>
+         <POSITIONING>71</POSITIONING>
+         <HEIGHT>193</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Kenneth</FIRSTNAME>
+         <LASTNAME>Vermeer</LASTNAME>
+         <AGE>28</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>82</DIVING>
+         <HANDLING>66</HANDLING>
+         <KICKING>67</KICKING>
+         <REFLEXES>84</REFLEXES>
+         <SPEED>60</SPEED>
+         <POSITIONING>76</POSITIONING>
+         <HEIGHT>182</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Ronald</FIRSTNAME>
+         <LASTNAME>Graafland</LASTNAME>
+         <AGE>35</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>67</DIVING>
+         <HANDLING>64</HANDLING>
+         <KICKING>65</KICKING>
+         <REFLEXES>64</REFLEXES>
+         <SPEED>22</SPEED>
+         <POSITIONING>53</POSITIONING>
+         <HEIGHT>190</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Bilal</FIRSTNAME>
          <LASTNAME>Basacikoglu</LASTNAME>
@@ -2648,6 +2970,48 @@
       <TEAMNAME>Go Ahead Eagles</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Ruben</FIRSTNAME>
+         <LASTNAME>Lucas</LASTNAME>
+         <AGE>20</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>52</HANDLING>
+         <KICKING>56</KICKING>
+         <REFLEXES>61</REFLEXES>
+         <SPEED>48</SPEED>
+         <POSITIONING>53</POSITIONING>
+         <HEIGHT>196</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Mickey</FIRSTNAME>
+         <LASTNAME>Hart</LASTNAME>
+         <AGE>20</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>69</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>74</KICKING>
+         <REFLEXES>70</REFLEXES>
+         <SPEED>41</SPEED>
+         <POSITIONING>62</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Erik</FIRSTNAME>
+         <LASTNAME>Cummins</LASTNAME>
+         <AGE>26</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>68</DIVING>
+         <HANDLING>63</HANDLING>
+         <KICKING>69</KICKING>
+         <REFLEXES>63</REFLEXES>
+         <SPEED>51</SPEED>
+         <POSITIONING>60</POSITIONING>
+         <HEIGHT>183</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Puck</FIRSTNAME>
          <LASTNAME>Posthuma</LASTNAME>
@@ -2926,6 +3290,62 @@
       <TEAMNAME>Heracles Almelo</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Michael</FIRSTNAME>
+         <LASTNAME>Brouwer</LASTNAME>
+         <AGE>21</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>63</DIVING>
+         <HANDLING>58</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>60</REFLEXES>
+         <SPEED>40</SPEED>
+         <POSITIONING>55</POSITIONING>
+         <HEIGHT>187</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Renze</FIRSTNAME>
+         <LASTNAME>Fij</LASTNAME>
+         <AGE>22</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>56</DIVING>
+         <HANDLING>55</HANDLING>
+         <KICKING>68</KICKING>
+         <REFLEXES>70</REFLEXES>
+         <SPEED>31</SPEED>
+         <POSITIONING>55</POSITIONING>
+         <HEIGHT>187</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Dennis</FIRSTNAME>
+         <LASTNAME>Telgenkamp</LASTNAME>
+         <AGE>27</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>67</DIVING>
+         <HANDLING>62</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>65</REFLEXES>
+         <SPEED>49</SPEED>
+         <POSITIONING>68</POSITIONING>
+         <HEIGHT>192</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Bram</FIRSTNAME>
+         <LASTNAME>Castro</LASTNAME>
+         <AGE>32</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>64</DIVING>
+         <HANDLING>65</HANDLING>
+         <KICKING>66</KICKING>
+         <REFLEXES>64</REFLEXES>
+         <SPEED>54</SPEED>
+         <POSITIONING>64</POSITIONING>
+         <HEIGHT>191</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Oussama</FIRSTNAME>
          <LASTNAME>Tannane</LASTNAME>
@@ -3269,6 +3689,48 @@
       <TEAMNAME>NAC Breda</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Andries</FIRSTNAME>
+         <LASTNAME>Noppert</LASTNAME>
+         <AGE>20</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>59</DIVING>
+         <HANDLING>63</HANDLING>
+         <KICKING>60</KICKING>
+         <REFLEXES>59</REFLEXES>
+         <SPEED>45</SPEED>
+         <POSITIONING>63</POSITIONING>
+         <HEIGHT>190</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Jelle</FIRSTNAME>
+         <LASTNAME>Rouwelaar</LASTNAME>
+         <AGE>34</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>67</DIVING>
+         <HANDLING>69</HANDLING>
+         <KICKING>63</KICKING>
+         <REFLEXES>73</REFLEXES>
+         <SPEED>34</SPEED>
+         <POSITIONING>72</POSITIONING>
+         <HEIGHT>186</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Gabor</FIRSTNAME>
+         <LASTNAME>Babos</LASTNAME>
+         <AGE>40</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>70</DIVING>
+         <HANDLING>62</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>67</REFLEXES>
+         <SPEED>23</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>196</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Isak</FIRSTNAME>
          <LASTNAME>Ssewankambo</LASTNAME>
@@ -3508,6 +3970,48 @@
       <TEAMNAME>PEC Zwolle</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Boy</FIRSTNAME>
+         <LASTNAME>Jong</LASTNAME>
+         <AGE>20</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>58</HANDLING>
+         <KICKING>66</KICKING>
+         <REFLEXES>67</REFLEXES>
+         <SPEED>55</SPEED>
+         <POSITIONING>64</POSITIONING>
+         <HEIGHT>180</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Warner</FIRSTNAME>
+         <LASTNAME>Hahn</LASTNAME>
+         <AGE>22</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>73</DIVING>
+         <HANDLING>63</HANDLING>
+         <KICKING>66</KICKING>
+         <REFLEXES>71</REFLEXES>
+         <SPEED>45</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>199</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Kevin</FIRSTNAME>
+         <LASTNAME>Begois</LASTNAME>
+         <AGE>32</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>63</DIVING>
+         <HANDLING>65</HANDLING>
+         <KICKING>64</KICKING>
+         <REFLEXES>65</REFLEXES>
+         <SPEED>43</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>185</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Rick</FIRSTNAME>
          <LASTNAME>Dekker</LASTNAME>
@@ -3773,6 +4277,48 @@
       <TEAMNAME>PSV</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Nigel</FIRSTNAME>
+         <LASTNAME>Bertrams</LASTNAME>
+         <AGE>21</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>66</DIVING>
+         <HANDLING>67</HANDLING>
+         <KICKING>56</KICKING>
+         <REFLEXES>60</REFLEXES>
+         <SPEED>65</SPEED>
+         <POSITIONING>56</POSITIONING>
+         <HEIGHT>185</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Jeroen</FIRSTNAME>
+         <LASTNAME>Zoet</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>77</DIVING>
+         <HANDLING>76</HANDLING>
+         <KICKING>72</KICKING>
+         <REFLEXES>80</REFLEXES>
+         <SPEED>57</SPEED>
+         <POSITIONING>76</POSITIONING>
+         <HEIGHT>189</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Remko</FIRSTNAME>
+         <LASTNAME>Pasveer</LASTNAME>
+         <AGE>31</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>72</DIVING>
+         <HANDLING>66</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>71</REFLEXES>
+         <SPEED>46</SPEED>
+         <POSITIONING>76</POSITIONING>
+         <HEIGHT>187</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Zakaria</FIRSTNAME>
          <LASTNAME>Bakkali</LASTNAME>
@@ -4090,6 +4636,48 @@
       <TEAMNAME>SC Cambuur</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Jurjan</FIRSTNAME>
+         <LASTNAME>Wouda</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>57</HANDLING>
+         <KICKING>58</KICKING>
+         <REFLEXES>63</REFLEXES>
+         <SPEED>41</SPEED>
+         <POSITIONING>62</POSITIONING>
+         <HEIGHT>183</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Leonard</FIRSTNAME>
+         <LASTNAME>Nienhuis</LASTNAME>
+         <AGE>24</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>67</DIVING>
+         <HANDLING>69</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>70</REFLEXES>
+         <SPEED>30</SPEED>
+         <POSITIONING>63</POSITIONING>
+         <HEIGHT>184</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Harm</FIRSTNAME>
+         <LASTNAME>Zeinstra</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>55</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>65</REFLEXES>
+         <SPEED>32</SPEED>
+         <POSITIONING>62</POSITIONING>
+         <HEIGHT>192</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Berend</FIRSTNAME>
          <LASTNAME>Schootstra</LASTNAME>
@@ -4381,6 +4969,62 @@
       <TEAMNAME>sc Heerenveen</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Maarten</FIRSTNAME>
+         <LASTNAME>Fockert</LASTNAME>
+         <AGE>19</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>58</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>60</KICKING>
+         <REFLEXES>62</REFLEXES>
+         <SPEED>48</SPEED>
+         <POSITIONING>63</POSITIONING>
+         <HEIGHT>182</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Robin</FIRSTNAME>
+         <LASTNAME>Kist</LASTNAME>
+         <AGE>19</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>62</DIVING>
+         <HANDLING>58</HANDLING>
+         <KICKING>51</KICKING>
+         <REFLEXES>58</REFLEXES>
+         <SPEED>41</SPEED>
+         <POSITIONING>56</POSITIONING>
+         <HEIGHT>177</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Viktor</FIRSTNAME>
+         <LASTNAME>Noring</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>68</DIVING>
+         <HANDLING>68</HANDLING>
+         <KICKING>58</KICKING>
+         <REFLEXES>73</REFLEXES>
+         <SPEED>30</SPEED>
+         <POSITIONING>63</POSITIONING>
+         <HEIGHT>196</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Kristoffer</FIRSTNAME>
+         <LASTNAME>Nordfeldt</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>72</DIVING>
+         <HANDLING>65</HANDLING>
+         <KICKING>65</KICKING>
+         <REFLEXES>77</REFLEXES>
+         <SPEED>60</SPEED>
+         <POSITIONING>73</POSITIONING>
+         <HEIGHT>190</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Morten</FIRSTNAME>
          <LASTNAME>Thorsby</LASTNAME>
@@ -4685,6 +5329,48 @@
       <TEAMNAME>Vitesse</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Jeroen</FIRSTNAME>
+         <LASTNAME>Houwen</LASTNAME>
+         <AGE>18</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>60</DIVING>
+         <HANDLING>61</HANDLING>
+         <KICKING>58</KICKING>
+         <REFLEXES>63</REFLEXES>
+         <SPEED>46</SPEED>
+         <POSITIONING>58</POSITIONING>
+         <HEIGHT>184</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Eloy</FIRSTNAME>
+         <LASTNAME>Room</LASTNAME>
+         <AGE>25</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>65</DIVING>
+         <HANDLING>68</HANDLING>
+         <KICKING>75</KICKING>
+         <REFLEXES>66</REFLEXES>
+         <SPEED>51</SPEED>
+         <POSITIONING>66</POSITIONING>
+         <HEIGHT>188</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Piet</FIRSTNAME>
+         <LASTNAME>Velthuizen</LASTNAME>
+         <AGE>28</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>74</DIVING>
+         <HANDLING>73</HANDLING>
+         <KICKING>83</KICKING>
+         <REFLEXES>82</REFLEXES>
+         <SPEED>57</SPEED>
+         <POSITIONING>72</POSITIONING>
+         <HEIGHT>189</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Kevin</FIRSTNAME>
          <LASTNAME>Diks</LASTNAME>
@@ -4924,6 +5610,48 @@
       <TEAMNAME>Willem II</TEAMNAME>
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
+      <KEEPER>
+         <FIRSTNAME>Mattijs</FIRSTNAME>
+         <LASTNAME>Branderhorst</LASTNAME>
+         <AGE>21</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>60</DIVING>
+         <HANDLING>58</HANDLING>
+         <KICKING>55</KICKING>
+         <REFLEXES>60</REFLEXES>
+         <SPEED>40</SPEED>
+         <POSITIONING>57</POSITIONING>
+         <HEIGHT>192</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>Konstantinos</FIRSTNAME>
+         <LASTNAME>Lamprou</LASTNAME>
+         <AGE>23</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>72</DIVING>
+         <HANDLING>58</HANDLING>
+         <KICKING>68</KICKING>
+         <REFLEXES>75</REFLEXES>
+         <SPEED>51</SPEED>
+         <POSITIONING>61</POSITIONING>
+         <HEIGHT>176</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
+      <KEEPER>
+         <FIRSTNAME>David</FIRSTNAME>
+         <LASTNAME>Meul</LASTNAME>
+         <AGE>33</AGE>
+         <PRICE>0</PRICE>
+         <DIVING>61</DIVING>
+         <HANDLING>59</HANDLING>
+         <KICKING>59</KICKING>
+         <REFLEXES>66</REFLEXES>
+         <SPEED>39</SPEED>
+         <POSITIONING>62</POSITIONING>
+         <HEIGHT>194</HEIGHT>
+         <TYPE>GK</TYPE>
+      </KEEPER>
       <PLAYER>
          <FIRSTNAME>Simon</FIRSTNAME>
          <LASTNAME>Zeelst</LASTNAME>

@@ -39,7 +39,7 @@ public class DBmain {
 	 */
 	
 	public String toString() {
-		String res = "Divisie: ("+d.size()+")\n";
+		String res = "Divisie: ("+d.size()+")\n----------\n";
 		for(int i=0;i<d.size();i++) {
 			res += d.get(i) + "\n\n";
 		}
@@ -89,5 +89,11 @@ public class DBmain {
 			return true;
 		}
 		return false;
+	}
+
+	public void removeTeam(Team t) {
+		if(d.contains(t)) {
+			d.remove(t);
+		}
 	}
 }

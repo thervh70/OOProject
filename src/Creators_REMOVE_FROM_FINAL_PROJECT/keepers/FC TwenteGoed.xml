@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Filip</FIRSTNAME>
+            <LASTNAME>Bednarek</LASTNAME>
+            <AGE>22</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>64</DIVING>
+            <HANDLING>56</HANDLING>
+            <KICKING>59</KICKING>
+            <REFLEXES>63</REFLEXES>
+            <SPEED>47</SPEED>
+            <POSITIONING>60</POSITIONING>
+            <HEIGHT>187</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Sonny</FIRSTNAME>
+            <LASTNAME>Stevens</LASTNAME>
+            <AGE>22</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>69</DIVING>
+            <HANDLING>70</HANDLING>
+            <KICKING>64</KICKING>
+            <REFLEXES>71</REFLEXES>
+            <SPEED>48</SPEED>
+            <POSITIONING>66</POSITIONING>
+            <HEIGHT>194</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Nick</FIRSTNAME>
+            <LASTNAME>Marsman</LASTNAME>
+            <AGE>24</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>69</DIVING>
+            <HANDLING>68</HANDLING>
+            <KICKING>81</KICKING>
+            <REFLEXES>72</REFLEXES>
+            <SPEED>42</SPEED>
+            <POSITIONING>68</POSITIONING>
+            <HEIGHT>188</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

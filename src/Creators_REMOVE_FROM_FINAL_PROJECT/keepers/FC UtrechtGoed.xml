@@ -1,0 +1,31 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Robbin</FIRSTNAME>
+            <LASTNAME>Ruiter</LASTNAME>
+            <AGE>27</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>73</DIVING>
+            <HANDLING>76</HANDLING>
+            <KICKING>72</KICKING>
+            <REFLEXES>77</REFLEXES>
+            <SPEED>55</SPEED>
+            <POSITIONING>75</POSITIONING>
+            <HEIGHT>196</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Jeroen</FIRSTNAME>
+            <LASTNAME>Verhoeven</LASTNAME>
+            <AGE>34</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>57</DIVING>
+            <HANDLING>67</HANDLING>
+            <KICKING>70</KICKING>
+            <REFLEXES>71</REFLEXES>
+            <SPEED>28</SPEED>
+            <POSITIONING>65</POSITIONING>
+            <HEIGHT>197</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

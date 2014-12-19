@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Ruben</FIRSTNAME>
+            <LASTNAME>Lucas</LASTNAME>
+            <AGE>20</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>62</DIVING>
+            <HANDLING>52</HANDLING>
+            <KICKING>56</KICKING>
+            <REFLEXES>61</REFLEXES>
+            <SPEED>48</SPEED>
+            <POSITIONING>53</POSITIONING>
+            <HEIGHT>196</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Mickey</FIRSTNAME>
+            <LASTNAME>Hart</LASTNAME>
+            <AGE>20</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>69</DIVING>
+            <HANDLING>59</HANDLING>
+            <KICKING>74</KICKING>
+            <REFLEXES>70</REFLEXES>
+            <SPEED>41</SPEED>
+            <POSITIONING>62</POSITIONING>
+            <HEIGHT>188</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Erik</FIRSTNAME>
+            <LASTNAME>Cummins</LASTNAME>
+            <AGE>26</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>68</DIVING>
+            <HANDLING>63</HANDLING>
+            <KICKING>69</KICKING>
+            <REFLEXES>63</REFLEXES>
+            <SPEED>51</SPEED>
+            <POSITIONING>60</POSITIONING>
+            <HEIGHT>183</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

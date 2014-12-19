@@ -29,7 +29,7 @@ public class Team {
 	 */
 	
 	public void addPlayer(Player p) {
-		if(!(this.containsPlayer(p))) {
+		if(!(team.contains(p))) {
 			team.add(p);
 		}
 	}
@@ -41,7 +41,7 @@ public class Team {
 	 */
 	
 	public boolean containsPlayer(Player p){
-		return team.contains(p) || selection.contains(p);
+		return team.contains(p);
 	}
 	
 	/**
@@ -74,8 +74,10 @@ public class Team {
 	 * @param p Player
 	 */
 	
-	public void toTeam(Player p) {
-		selection.remove(p);
+	public void fromSelection(Player p) {
+		if(selection.contains(p)) {
+			selection.remove(p);
+		}
 	}
 	
 	/**
@@ -127,7 +129,9 @@ public class Team {
 		}
 		res += "Substitutes:\n";
 		for (int i = 0; i < team.size(); i++) {
-			res += team.get(i) + "\n";
+			if(!selection.contains(team.get(i))) {
+				res += team.get(i) + "\n";
+			}
 		}
  		res = res.substring(0, res.length()-1);
 		return res;
@@ -135,7 +139,7 @@ public class Team {
 	
 	/**
 	 * Method toWrite Stringifies a Team so it can be written in xml-file
-	 * @return
+	 * @return 
 	 */
 	
 	public String toWrite() {
@@ -155,7 +159,7 @@ public class Team {
 			}
 		}
 		res += "      </SELECTION>\r\n";
-		res	+= "      <SUBSTITUTES>\r\n";
+		res	+= "      <TEAMMEMBERS>\r\n";
 		for(int i=0;i<team.size();i++) {
 			if(this.getPlayer(i) instanceof Fieldplayer) {
 				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
@@ -166,7 +170,7 @@ public class Team {
 				res += g.toWrite();
 			}
 		}
-		res += "      </SUBSTITUTES>\r\n";
+		res += "      </TEAMMEMBERS>\r\n";
 		res += "   </TEAM>\r\n";
 		return res;
 	}
