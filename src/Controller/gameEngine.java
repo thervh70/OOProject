@@ -1,15 +1,15 @@
-package Engine;
+package Controller;
+
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import Database.DBmain;
-import Database.Team; 
-import Database.XmlParser;
+import Model.DBmain;
+import Model.Team;
+import Model.XmlParser;
 
 /**The root of our game.
  * This class calculates the score for a match along with the stats of a match.
@@ -20,8 +20,8 @@ import Database.XmlParser;
 
 public class gameEngine {
 	
-	public static int attemptsA, attemptsB, goalsA, goalsB, attempts, goals;
-	public static int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
+	private int attemptsA, attemptsB, goalsA, goalsB, attempts, goals;
+	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -36,32 +36,37 @@ public class gameEngine {
 		DBmain d = XmlParser.parseDB();
 		Team alpha = d.getTeam(13);
 		Team beta = d.getTeam(14);
+		gameEngine match = new gameEngine();
 		
-		play(alpha,beta);
-		System.out.println(alpha.getNm() + " " + goalsA + " - " + goalsB + " " + beta.getNm());
-		System.out.println("\n\nGoals " + alpha.getNm() + ": " + goalsA);
+		match.play(alpha,beta);
+		System.out.println(alpha.getNm() + " " + match.getGoalsA() + " - " + match.getGoalsB() + " " + beta.getNm());
+		System.out.println("\n\nGoals " + alpha.getNm() + ": " + match.getGoalsA());
 		
-		for(int h = 0; h<goalsA; h++){
-			System.out.print(goalminutesA[h] + "   ");
+		for(int h = 0; h<match.getGoalsA(); h++){
+			System.out.print(match.getGoalminutesA()[h] + "   ");
 		}
 		
-		System.out.println("\n\nGoals " + beta.getNm() + ": " + goalsB);
+		System.out.println("\n\nGoals " + beta.getNm() + ": " + match.getGoalsB());
 		
-		for(int i = 0; i<goalsB; i++){
-			System.out.print(goalminutesB[i] + "   ");
+		for(int i = 0; i<match.getGoalsB(); i++){
+			System.out.print(match.getGoalminutesB()[i] + "   ");
 		}
 		
-		System.out.println("\n\nAttempts " + alpha.getNm() + ": " + attemptsA);
+		System.out.println("\n\nAttempts " + alpha.getNm() + ": " + match.getAttemptsA());
 		
-		for(int j = 0; j<attemptsA; j++){
-			System.out.print(attemptminutesA[j] + "  ");
+		for(int j = 0; j<match.getAttemptsA(); j++){
+			System.out.print(match.getAttemptminutesA()[j] + "  ");
 		}
 		
-		System.out.println("\n\nAttempts " + beta.getNm() + ": " + attemptsB);
+		System.out.println("\n\nAttempts " + beta.getNm() + ": " + match.getAttemptsB());
 		
-		for(int k = 0; k<attemptsB; k++){
-			System.out.print(attemptminutesB[k] + "  ");
+		for(int k = 0; k<match.getAttemptsB(); k++){
+			System.out.print(match.getAttemptminutesB()[k] + "  ");
 		}
+	}
+	
+	public gameEngine(){
+		
 	}
 	
 	/**This method plays a match.
@@ -71,12 +76,12 @@ public class gameEngine {
 	 * @param beta Team B
 	 */
 	
-	public static void play(Team alpha, Team beta){
-		double alphaAttMap =  map(alpha.calcAttScore(),50,70,0,100);
-		double betaAttMap = map(beta.calcAttScore(),50,70,0,100);
+	public void play(Team alpha, Team beta){
+		double alphaAttMap =  map(alpha.calcAttScore(),0,40,0,100);
+		double betaAttMap = map(beta.calcAttScore(),0,40,0,100);
 		
-		double alphaDefMap = map(alpha.calcDefScore(),50,70,0,100);
-		double betaDefMap = map(alpha.calcDefScore(),50,70,0,100);
+		double alphaDefMap = map(alpha.calcDefScore(),0,40,0,100);
+		double betaDefMap = map(alpha.calcDefScore(),0,40,0,100);
 		
 		goalsA = attack(alphaAttMap, betaDefMap);
 		attemptsA = attempts;
@@ -108,7 +113,7 @@ public class gameEngine {
 	 * @return The amount of goals scored by attacking team
 	 */
 	
-	public static int attack(double att, double def){
+	public int attack(double att, double def){
 		double a = 0,b = 0;
 		int c = 0;
 		
@@ -132,7 +137,7 @@ public class gameEngine {
 	 * @return array with integers (minutes)
 	 */
 	
-	public static int[] minutes(int c){
+	public int[] minutes(int c){
 		int[] minutes = new int[c];
 		
 		for(int i = 0; i < c; i++){
@@ -156,4 +161,14 @@ public class gameEngine {
 	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
 		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 	}
+	
+	
+	public int getAttemptsA(){ return attemptsA; }
+	public int getAttemptsB(){ return attemptsB; }
+	public int getGoalsA(){ return goalsA; }
+	public int getGoalsB(){ return goalsB; }
+	public int[] getGoalminutesA(){ return goalminutesA; }
+	public int[] getGoalminutesB(){ return goalminutesB; }
+	public int[] getAttemptminutesA(){ return attemptminutesA; }
+	public int[] getAttemptminutesB(){ return attemptminutesB; }
 }

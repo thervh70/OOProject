@@ -1,20 +1,14 @@
-package GUI;
+package View;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import Game.saveGame;
+import Controller.saveGame;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -28,7 +22,7 @@ public class LoadGame {
 		
 		Pane root = new Pane();
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_savegame.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_savegame.png"));
 
 		Rectangle r = new Rectangle();
 		r.setX(150);
@@ -48,11 +42,11 @@ public class LoadGame {
 		
 		ArrayList<String> files = new ArrayList<String>();
 		try {
-			Files.walk(Paths.get("src/saves")).forEach(filePath -> {
+			Files.walk(Paths.get("src/Controller/Resources/")).forEach(filePath -> {
 			    if (Files.isRegularFile(filePath)) {
 			    	String file = filePath.toString();
 			    	String[] parts = file.split("\\\\");
-			    	String end = parts[2];
+			    	String end = parts[3];
 			    	files.add(end);
 			    }
 			});

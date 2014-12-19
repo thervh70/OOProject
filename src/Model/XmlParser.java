@@ -1,4 +1,4 @@
-package Database;
+package Model;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -43,7 +43,7 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Database/files/Database_v7.xml");   
+			Document document = builder.parse("src/Model/Resources/Database_v7.xml");   
 			NodeList division = document.getDocumentElement().getChildNodes();
 		
 		    for(int i=1;i<division.getLength();i+=2) {
@@ -77,7 +77,7 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/saves/" + infile);   
+			Document document = builder.parse("src/Controller/Resources/" + infile);   
 			NodeList division = document.getDocumentElement().getChildNodes();
 			
 		    for(int i=1;i<division.getLength();i+=2) {

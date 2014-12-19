@@ -1,26 +1,19 @@
-package GUI;
+package View;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.IOException;
 
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -41,16 +34,8 @@ public class SplashScreen extends Application {
 		Scene scene = new Scene(root,width, height);
 		
 		//create background image
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_splashscreen.png"));
 
-/*
-		//import css file
-		scene.getStylesheets().add(getClass().getResource("/GUI/Resources/splash_screen.css").toExternalForm());
-		
-		//add css
-        t.getStyleClass().add("custom-text");
-*/
-		
 		Text t = new Text("PRESS ANY KEY TO START");
 		Style.setTextStyle(t,70);
 		t.setLayoutX(1220);

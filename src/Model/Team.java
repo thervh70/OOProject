@@ -1,4 +1,4 @@
-package Database;
+package Model;
 
 import java.util.ArrayList;
 
@@ -240,6 +240,33 @@ public class Team {
 	public int count(int a){
 		int count = 0;
 		for(int i = 0; i < this.getSize(); i++){
+			Player p = this.getPlayer(i);
+			String pos = p.getPos();
+			
+			switch(a){
+			case 0:
+				if(pos.equals("GK")) count++;
+				break;
+			case 1:
+				if(pos.equals("RB") || pos.equals("CB") || pos.equals("LB")) count++;
+				break;
+			case 2:
+				if(pos.equals("CDM") || pos.equals("CM")) count++;
+				break;
+			case 3:
+				if(pos.equals("CAM") || pos.equals("LW") || pos.equals("RW")) count++;
+				break;
+			case 4:
+				if(pos.equals("ST")) count++;
+				break;
+			}
+		}
+		return count;
+	}
+	
+	public int countSelection(int a){
+		int count = 0;
+		for(int i = 0; i < selection.size(); i++){
 			Player p = this.getPlayer(i);
 			String pos = p.getPos();
 			

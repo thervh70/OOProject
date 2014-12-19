@@ -1,35 +1,20 @@
-package GUI;
+package View;
 
-
-
-
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class CompetitionTable {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_competition-table.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
 		
 		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");

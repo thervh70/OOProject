@@ -1,30 +1,17 @@
-package GUI;
+package View;
 
-import GUI.ManagementCenter;
-import javafx.application.Application;
+import View.ManagementCenter;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Cell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Results {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		Button back = new Button("Back to Management Center");
@@ -58,7 +45,7 @@ public class Results {
 		
 		tableResults.getColumns().addAll(homeTeam, column, awayTeam, column2, Score);
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_results.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_results.png"));
 		
 		root.getChildren().addAll(back, tableResults);
 		

@@ -1,9 +1,9 @@
-package GUI;
+package View;
 
-import Database.DBmain;
-import Database.Team;
-import Database.XmlParser;
-import Engine.gameEngine;
+import Controller.gameEngine;
+import Model.DBmain;
+import Model.Team;
+import Model.XmlParser;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -30,7 +30,7 @@ public class MatchCenter {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_match-center.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
 
 		timerLabel.setText(timeSeconds.toString());
 		timerLabel.setLayoutX(950);
@@ -40,8 +40,9 @@ public class MatchCenter {
 		DBmain d = XmlParser.parseDB();
 		Team alpha = d.getTeam(1);
 		Team player = d.getTeam(8);
+		gameEngine match = new gameEngine();
 		
-		gameEngine.play(player, alpha);
+		match.play(player, alpha);
 		
 		VBox vboxLeft = new VBox(5);
 		VBox vboxRight = new VBox(5);
@@ -127,8 +128,8 @@ public class MatchCenter {
 			            	results.setDisable(false);
 			            }
 			            
-			            for(int i = 0; i < gameEngine.goalminutesA.length; i++){
-			            	if(timeSeconds.intValue() == gameEngine.goalminutesA[i]){
+			            for(int i = 0; i < match.getGoalminutesA().length; i++){
+			            	if(timeSeconds.intValue() == match.getGoalminutesA()[i]){
 			            		goalA++;
 			            		goalsA.setText(goalA.toString());
 			            		attA++;
@@ -136,15 +137,15 @@ public class MatchCenter {
 			            	}
 			            }
 			            
-			            for(int j = 0; j < gameEngine.attemptminutesA.length; j++){
-			            	if(timeSeconds.intValue() == gameEngine.attemptminutesA[j]){
+			            for(int j = 0; j < match.getAttemptminutesA().length; j++){
+			            	if(timeSeconds.intValue() == match.getAttemptminutesA()[j]){
 			            		attA++;
 			            		attemptsA.setText(attA.toString());
 			            	}
 			            }
 			     
-			            for(int k = 0; k < gameEngine.goalminutesB.length; k++){
-			            	if(timeSeconds.intValue() == gameEngine.goalminutesB[k]){
+			            for(int k = 0; k < match.getGoalminutesB().length; k++){
+			            	if(timeSeconds.intValue() == match.getGoalminutesB()[k]){
 			            		goalB++;
 			            		goalsB.setText(goalB.toString());
 			            		attB++;
@@ -152,8 +153,8 @@ public class MatchCenter {
 			            	}
 			            }
 			            
-			            for(int l = 0; l < gameEngine.attemptminutesB.length; l++){
-			            	if(timeSeconds.intValue() == gameEngine.attemptminutesB[l]){
+			            for(int l = 0; l < match.getAttemptminutesB().length; l++){
+			            	if(timeSeconds.intValue() == match.getAttemptminutesB()[l]){
 			            		attB++;
 			            		attemptsB.setText(attB.toString());
 			            	}
@@ -169,6 +170,7 @@ public class MatchCenter {
        results.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
+				timeSeconds = 0;
 				Results.start(primaryStage);
 			}
 		});

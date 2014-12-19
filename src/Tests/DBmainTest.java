@@ -4,10 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Database.Fieldplayer;
-import Database.Goalkeeper;
-import Database.Team;
-import Database.DBmain;
+import Model.DBmain;
+import Model.Fieldplayer;
+import Model.Goalkeeper;
+import Model.Team;
 
 public class DBmainTest {
 	

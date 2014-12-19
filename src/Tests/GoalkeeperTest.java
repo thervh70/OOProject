@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Database.Goalkeeper;
+import Model.Goalkeeper;
 
 public class GoalkeeperTest {
 	

@@ -2,7 +2,6 @@ package Creators_REMOVE_FROM_FINAL_PROJECT;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Scanner;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -13,14 +12,15 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import Database.*;
+import Model.Goalkeeper;
+import Model.Team;
+import Model.XmlParser;
 
 public class editDatabase {
 	
 	public static Team parseKeeper() {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Teamnaam:");
 		String filename = "Willem II";
 		Team t = new Team(filename, 100000, 100000);
@@ -28,7 +28,6 @@ public class editDatabase {
 			builder = factory.newDocumentBuilder(); 
 			Document document = builder.parse("src/Creators_REMOVE_FROM_FINAL_PROJECT/keepers/" + filename + ".xml");   
 			NodeList keepers = document.getDocumentElement().getChildNodes();
-			Node teamname = keepers.item(1);
 			for(int i=3;i<keepers.getLength();i+=2) {
 				Node keeper = keepers.item(i);
 		    	NodeList keeperattr = keeper.getChildNodes();

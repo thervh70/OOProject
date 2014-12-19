@@ -1,4 +1,4 @@
-package GUI;
+package View;
 
 import java.io.IOException;
 
@@ -6,14 +6,10 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -41,7 +37,7 @@ public class StartupMenu {
 		vbox.setLayoutY(590);
 		vbox.setAlignment(Pos.CENTER);
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_splashscreen.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_splashscreen.png"));
 
 		
 		//Give click functionality to "New Game", directs to Team Picking 

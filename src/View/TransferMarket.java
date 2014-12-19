@@ -1,40 +1,33 @@
-package GUI;
+package View;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import Database.DBmain;
-import Database.Fieldplayer;
-import Database.Player;
-import Database.Team;
-import Database.XmlParser;
-import javafx.application.Application;
+import Model.DBmain;
+import Model.Player;
+import Model.Team;
+import Model.XmlParser;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Line;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class TransferMarket {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_transfer-market.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_transfer-market.png"));
 		
 		Button back = new Button("Back to Management Center");
 		Text forSale = new Text("For Sale");

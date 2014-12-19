@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Database.Fieldplayer;
+import Model.Fieldplayer;
 
 public class FieldplayerTest {
 	

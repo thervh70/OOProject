@@ -1,9 +1,9 @@
 
 
-import Database.DBmain;
-import Database.Fieldplayer;
-import Database.Goalkeeper;
-import Database.Team;
+import Model.DBmain;
+import Model.Fieldplayer;
+import Model.Goalkeeper;
+import Model.Team;
 
 public class GetPlayerPrice {
 

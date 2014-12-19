@@ -1,11 +1,8 @@
-package GUI;
+package View;
 
-import javafx.animation.FadeTransition;
 import javafx.animation.RotateTransition;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -22,8 +19,6 @@ import javafx.util.Duration;
 public class LoadingScreen {
 
 
-	private static boolean done = false;
-
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 
@@ -35,7 +30,7 @@ public class LoadingScreen {
 		
 		root.setBackground(black);
 		
-		Image logo = new Image("/GUI/Resources/Frits_logo.png");
+		Image logo = new Image("/View/Resources/Frits_logo.png");
 		ImageView logo_img = new ImageView(logo);
 		logo_img.setLayoutX(100);
 		logo_img.setLayoutY(800);

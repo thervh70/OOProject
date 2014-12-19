@@ -1,4 +1,4 @@
-package GUI;
+package View;
 
 import java.io.IOException;
 
@@ -6,19 +6,14 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
-import javafx.stage.PopupBuilder;
 import javafx.stage.Stage;
 
 public class ManagementCenter {
@@ -40,7 +35,7 @@ public class ManagementCenter {
 		
 		Style.setButtonStyle(menu, 45);
 
-		root.getChildren().add(Style.setBackground("/GUI/Resources/background_managementcenter.png"));
+		root.getChildren().add(Style.setBackground("/View/Resources/background_managementcenter.png"));
 
 		menu.setLayoutX(150);
 		menu.setLayoutY(870);
@@ -77,14 +72,7 @@ public class ManagementCenter {
 			public void handle(ActionEvent e) {
 				try {
 					TransferMarket.start(primaryStage);
-				} catch (SAXException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				} catch (ParserConfigurationException e1) {
-					// TODO Auto-generated catch block
+				} catch (SAXException | IOException | ParserConfigurationException e1) {
 					e1.printStackTrace();
 				}
 			}

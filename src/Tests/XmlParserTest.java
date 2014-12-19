@@ -2,11 +2,14 @@ package Tests;
 
 import static org.junit.Assert.*;
 
-import java.util.Scanner;
 
 import org.junit.Test;
 
-import Database.*;
+import Model.DBmain;
+import Model.Fieldplayer;
+import Model.Goalkeeper;
+import Model.Team;
+import Model.XmlParser;
 
 public class XmlParserTest {
 	

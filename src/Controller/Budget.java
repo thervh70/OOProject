@@ -1,9 +1,10 @@
-package Engine;
+package Controller;
 /**Our budget class, handles bidding on players
  * @author Bram
  */
 
-import Database.*;
+import Model.Player;
+import Model.Team;
 public class Budget {
 	
 	/**

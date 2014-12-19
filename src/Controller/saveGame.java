@@ -1,14 +1,8 @@
-package Game;
+package Controller;
 
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import Database.DBmain;
-import Database.Team;
-import Database.XmlParser;
+import Model.DBmain;
+import Model.Team;
+import Model.XmlParser;
 
 public class saveGame {
 
