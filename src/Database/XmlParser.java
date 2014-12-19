@@ -43,7 +43,7 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Database/Database_v7.xml");   
+			Document document = builder.parse("src/Database/files/Database_v7.xml");   
 			NodeList division = document.getDocumentElement().getChildNodes();
 		
 		    for(int i=1;i<division.getLength();i+=2) {
