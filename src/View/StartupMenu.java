@@ -33,8 +33,9 @@ public class StartupMenu {
 
 		VBox vbox = new VBox(5);
 		vbox.getChildren().addAll(newGame,loadGame,exit);
-		vbox.setLayoutX(1360);
-		vbox.setLayoutY(590);
+		
+		Style.setLocation(vbox, 1360, 590);
+		
 		vbox.setAlignment(Pos.CENTER);
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_splashscreen.png"));

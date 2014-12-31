@@ -34,7 +34,7 @@ public class PickTeam{
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_pick-team.png"));
 
-		int size = 35;
+		double size = 45;
 		
 		//Declare a bunch of buttons
 		Button ADO = new Button("ADO");								Style.setButtonStyle(ADO, size);
@@ -60,28 +60,24 @@ public class PickTeam{
 		Button Back = new Button("Back");
 		
 		Style.setButtonStyle(Continue, 45);
-		Continue.setLayoutX(1480);
-		Continue.setLayoutY(870);
+		Style.setLocation(Continue, 1480, 870);
 		
 		Style.setButtonStyle(Back, 45);
-		Back.setLayoutX(150);
-		Back.setLayoutY(870);
+		Style.setLocation(Back, 150, 870);
 		
 		//Add the team buttons to an VBox
-		VBox vbox = new VBox(2);
-		vbox.setLayoutX(150);
-		vbox.setLayoutY(200);
+		VBox vbox = new VBox(-13);
+		Style.setLocation(vbox, 150, 200);
 		
-		VBox vbox2 = new VBox(2);
-		vbox2.setLayoutX(400);
-		vbox2.setLayoutY(200);
+		VBox vbox2 = new VBox(-13);
+		Style.setLocation(vbox2, 400, 200);
 		
 		vbox.getChildren().addAll(ADO, Ajax, AZ, Excelsior, Dordrecht, Groningen,Twente, Utrecht, Feyenoord); 
 		vbox2.getChildren().addAll(Eagles, Heracles, NAC,PEC, PSV, Cambuur, Heerenveen, Vitesse, Willem);
 		
 		//initialize a VBox to list the players per team, get the database to get the players
 		VBox players = new VBox(5);
-		players.setLayoutX(1000);
+		players.setLayoutX(Style.getNewSize(1000));
 		DBmain teams = XmlParser.parseDB();
 				
 		//Give the buttons functionality and show the players of each team

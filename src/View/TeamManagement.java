@@ -28,28 +28,23 @@ public class TeamManagement {
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
-		back.setLayoutX(150);
-		back.setLayoutY(870);
+		Style.setLocation(back, 150, 870);
 		
 		Button switchLeftPlayer = new Button("-->");
 		Style.setButtonStyle(switchLeftPlayer, 45);
-		switchLeftPlayer.setLayoutX(900);
-		switchLeftPlayer.setLayoutY(375);
+		Style.setLocation(switchLeftPlayer, 900, 375);
 		
 		Button switchRightPlayer = new Button("<--");
 		Style.setButtonStyle(switchRightPlayer, 45);
-		switchRightPlayer.setLayoutX(900);
-		switchRightPlayer.setLayoutY(450);
+		Style.setLocation(switchRightPlayer, 900, 450);
 		
 		Button switchLeftKeeper = new Button("-->");
 		Style.setButtonStyle(switchLeftKeeper, 45);
-		switchLeftKeeper.setLayoutX(900);
-		switchLeftKeeper.setLayoutY(700);
+		Style.setLocation(switchLeftKeeper, 900, 700);
 		
 		Button switchRightKeeper = new Button("<--");
 		Style.setButtonStyle(switchRightKeeper, 45);
-		switchRightKeeper.setLayoutX(900);
-		switchRightKeeper.setLayoutY(775);
+		Style.setLocation(switchRightKeeper, 900, 775);
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_team-management.png"));
 
@@ -60,45 +55,38 @@ public class TeamManagement {
 		Text benchKeeper = new Text("Keepers");
 		
 		Style.setTextStyle(setup, 45);
-		setup.setLayoutX(455);
-		setup.setLayoutY(230);
+		Style.setLocation(setup, 455, 230);
 		
 		Style.setTextStyle(bench, 45);
-		bench.setLayoutX(1365);
-		bench.setLayoutY(230);
+		Style.setLocation(bench, 1365, 230);
 		
 		Style.setTextStyle(setupKeeper, 45);
-		setupKeeper.setLayoutX(450);
-		setupKeeper.setLayoutY(680);
+		Style.setLocation(setupKeeper, 450, 680);
 		
 		Style.setTextStyle(benchKeeper, 45);
-		benchKeeper.setLayoutX(1350);
-		benchKeeper.setLayoutY(680);
+		Style.setLocation(benchKeeper, 1350, 680);
 		
 		
 		
 		//Create a table for the setup with fixed columns
 		TableView<Player> tableSetupField = new TableView<Player>();
 		tableSetupField.setEditable(false);
-		tableSetupField.setPrefSize(700, 375);
-		tableSetupField.setLayoutX(150);
-		tableSetupField.setLayoutY(250);
+		tableSetupField.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
+		Style.setLocation(tableSetupField, 150, 250);
 		
 		tableSetupField.setItems(data);
 		
 		//Separate table for Keepers in Field
 		TableView<Player> tableSetupKeeper = new TableView<Player>();
 		tableSetupKeeper.setEditable(false);
-		tableSetupKeeper.setPrefSize(700, 150);
-		tableSetupKeeper.setLayoutX(150);
-		tableSetupKeeper.setLayoutY(700);
+		tableSetupKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
+		Style.setLocation(tableSetupKeeper, 150, 700);
 		
 		//Create a table for the bench with fixed columns
 		TableView<Player> tableBench = new TableView<Player>();
 		tableBench.setEditable(false);
-		tableBench.setPrefSize(700, 375);
-		tableBench.setLayoutX(1050);
-		tableBench.setLayoutY(250);
+		tableBench.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
+		Style.setLocation(tableBench, 1050, 250);
 		tableBench.setEditable(false);
 		
 		tableBench.setItems(data2);
@@ -106,9 +94,8 @@ public class TeamManagement {
 		//Additional table for keepers
 		TableView<Player> tableBenchKeeper = new TableView<Player>();
 		tableBenchKeeper.setEditable(false);
-		tableBenchKeeper.setPrefSize(700, 150);
-		tableBenchKeeper.setLayoutX(1050);
-		tableBenchKeeper.setLayoutY(700);
+		tableBenchKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
+		Style.setLocation(tableBenchKeeper, 1050, 700);
 		
 		//Creat columns for both tables
 		TableColumn name = new TableColumn("Name");
@@ -133,26 +120,26 @@ public class TeamManagement {
 		TableColumn physical = new TableColumn("PHY");
         physical.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePhy"));
 		name.setResizable(false);
-		name.setPrefWidth(200);
+		name.setPrefWidth(Style.getNewSize(200));
 		position.setResizable(false);
-		position.setPrefWidth(100);
+		position.setPrefWidth(Style.getNewSize(100));
 		age.setResizable(false);
-		age.setPrefWidth(50);
+		age.setPrefWidth(Style.getNewSize(50));
 		worth.setResizable(false);
-		worth.setPrefWidth(100);
+		worth.setPrefWidth(Style.getNewSize(100));
 		shooting.setResizable(false);
-		shooting.setPrefWidth(50);
+		shooting.setPrefWidth(Style.getNewSize(50));
 		passing.setResizable(false);
-		passing.setPrefWidth(50);
+		passing.setPrefWidth(Style.getNewSize(50));
 		dribbling.setResizable(false);
-		dribbling.setPrefWidth(50);
+		dribbling.setPrefWidth(Style.getNewSize(50));
 		defending.setResizable(false);
-		defending.setPrefWidth(50);
+		defending.setPrefWidth(Style.getNewSize(50));
 		physical.setResizable(false);
 
 		name.setEditable(false);
 
-		physical.setPrefWidth(50);
+		physical.setPrefWidth(Style.getNewSize(50));
 
 		//Add columns to table
 		tableSetupField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);

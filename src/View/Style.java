@@ -1,7 +1,11 @@
 package View;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -16,14 +20,17 @@ import javafx.scene.text.Text;
 
 public abstract class Style {
 	
-	public static void setButtonStyle(Button b, int size){
+	private static double width;
+	private static double height;
+	
+	public static void setButtonStyle(Button b, double size){
 		Color color = Color.WHITESMOKE;
 		CornerRadii corner = new CornerRadii(10);
 		Insets inset = new Insets(10);
 		BackgroundFill fill = new BackgroundFill(color, corner, inset);
 		Background buttonBack = new Background(fill);
 		
-		Font buttonFont = new Font("Agency FB", size);
+		Font buttonFont = new Font("Agency FB", getNewSize(size));
 		
 		b.setBackground(buttonBack);
 		b.setFont(buttonFont);
@@ -48,19 +55,18 @@ public abstract class Style {
 				b.setBackground(buttonBack);
 			}
 			
-		});
-		
+		});		
 	}
 	
 	public static void setTextStyle(Text t, int size){
-		Font textFont = new Font("Agency FB", size);
+		Font textFont = new Font("Agency FB", getNewSize(size));
 		Color color = Color.WHITESMOKE;
 		t.setFont(textFont);
 		t.setFill(color);
 	}
 	
 	public static void setLabelStyle(Label l, int size){
-	   	Font textFont = new Font("Agency FB", size);
+	   	Font textFont = new Font("Agency FB", getNewSize(size));
 	   	Color color = Color.WHITESMOKE;
 		l.setFont(textFont);
 		l.setTextFill(color);
@@ -70,9 +76,34 @@ public abstract class Style {
 		Image background = new Image(image);
 		ImageView imgView = new ImageView(background);
 
-		imgView.setFitHeight(SplashScreen.height);
-		imgView.setFitWidth(SplashScreen.width);
+		imgView.setFitHeight(height);
+		imgView.setFitWidth(width);
 		
 		return imgView;
+	}
+	
+	public static double getNewSize(double size){
+		return (width/1920)*size;
+	}
+	
+	public static void setLocation(Node n, double x, double y){
+		double ratioX = x/1920;
+		double ratioY = y/1080;
+		n.setLayoutX(ratioX*width);
+		n.setLayoutY(ratioY*height);
+	}
+
+	public static void setScreen() {
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		width = screenSize.getWidth();
+		height = screenSize.getHeight();
+	}
+
+	public static double getWidth() {
+		return width;
+	}
+	
+	public static double getHeight() {
+		return height;
 	}
 }

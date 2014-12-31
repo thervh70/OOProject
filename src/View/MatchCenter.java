@@ -33,8 +33,7 @@ public class MatchCenter {
 		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
 
 		timerLabel.setText(timeSeconds.toString());
-		timerLabel.setLayoutX(950);
-		timerLabel.setLayoutY(400);
+		Style.setLocation(timerLabel, 950, 400);
 		Style.setLabelStyle(timerLabel, 60);
        
 		DBmain d = XmlParser.parseDB();
@@ -60,9 +59,7 @@ public class MatchCenter {
        
 		vboxLeft.getChildren().addAll(teamA,goalsA,attemptsA);
 		vboxLeft.setAlignment(Pos.CENTER);
-		vboxLeft.setLayoutX(320);
-		vboxLeft.setLayoutY(250);
-       
+		Style.setLocation(vboxLeft, 320, 250);
        
 		
 		Text teamB = new Text(alpha.getNm());
@@ -78,27 +75,22 @@ public class MatchCenter {
        
 		vboxRight.getChildren().addAll(teamB,goalsB,attemptsB);
 		vboxRight.setAlignment(Pos.CENTER);
-		vboxRight.setLayoutX(1350);
-		vboxRight.setLayoutY(250);
-       
+		Style.setLocation(vboxRight, 1350, 250);
        
        
 	    Button start = new Button("Start Match");
 	    Style.setButtonStyle(start, 60);
-	    start.setLayoutX(820);
-	    start.setLayoutY(280);
+	    Style.setLocation(start, 820, 280);
        
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
-		results.setLayoutX(1500);
-		results.setLayoutY(870);
+		Style.setLocation(results, 1500, 870);
 		results.setDisable(true);
 		results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
-		back.setLayoutX(150);
-		back.setLayoutY(870);
+		Style.setLocation(back, 150, 870);
        
 		start.setOnAction(new EventHandler() {
        	

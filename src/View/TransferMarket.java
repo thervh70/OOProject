@@ -34,29 +34,24 @@ public class TransferMarket {
 		Text myProducts = new Text("My Products :)");
 		
 		Style.setButtonStyle(back, 45);
-		back.setLayoutX(150);
-		back.setLayoutY(870);
+		Style.setLocation(back, 150, 870);
 		
 		Style.setTextStyle(forSale, 45);
-		forSale.setLayoutX(475);
-		forSale.setLayoutY(230);
+		Style.setLocation(forSale, 475, 230);
 
 		Style.setTextStyle(myProducts, 45);
-		myProducts.setLayoutX(1275);
-		myProducts.setLayoutY(230);
+		Style.setLocation(myProducts, 1275, 230);
 
 		
 		TableView<Player> tableForSale = new TableView();
 		tableForSale.setEditable(false);
-		tableForSale.setPrefSize(800, 540);
-		tableForSale.setLayoutX(125);
-		tableForSale.setLayoutY(250);
+		tableForSale.setPrefSize(Style.getNewSize(800), Style.getNewSize(540));
+		Style.setLocation(tableForSale, 125, 250);
 		tableForSale.setEditable(false);
 		
 		TableView<Player> tableMyPlayers = new TableView();
-		tableMyPlayers.setPrefSize(800, 540);
-		tableMyPlayers.setLayoutX(990);
-		tableMyPlayers.setLayoutY(250);
+		tableMyPlayers.setPrefSize(Style.getNewSize(800), Style.getNewSize(540));
+		Style.setLocation(tableMyPlayers, 990, 250);
 		tableMyPlayers.setEditable(false);
 		
 		TableColumn name = new TableColumn("Name");

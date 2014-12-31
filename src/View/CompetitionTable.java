@@ -19,19 +19,18 @@ public class CompetitionTable {
 		//Create a button to go back to the management center screen
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
-		back.setLayoutX(150);
-		back.setLayoutY(870);
+		Style.setLocation(back,150,870);
 		
 		//Create a table with fixed columns
 		TableView<String> table = new TableView();
 		table.setEditable(false);
-		table.setPrefSize(700, 540);
-		table.setLayoutX(600);
-		table.setLayoutY(225);
+		table.setPrefSize(Style.getNewSize(700), Style.getNewSize(540));
+		Style.setLocation(table,600,225);
+		
 		TableColumn rank = new TableColumn("Rank");
-		rank.setPrefWidth(50);
+		rank.setPrefWidth(Style.getNewSize(50));
         TableColumn name = new TableColumn("Team Name");
-		name.setPrefWidth(550);
+		name.setPrefWidth(Style.getNewSize(550));
 		TableColumn points = new TableColumn("Points");
 		points.setPrefWidth(100);
         rank.setResizable(false);

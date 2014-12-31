@@ -37,13 +37,11 @@ public class ManagementCenter {
 
 		root.getChildren().add(Style.setBackground("/View/Resources/background_managementcenter.png"));
 
-		menu.setLayoutX(150);
-		menu.setLayoutY(870);
+		Style.setLocation(menu, 150, 870);
 		
 		VBox vbox = new VBox(15);
 		vbox.getChildren().addAll(manage, table, match, market, save);
-		vbox.setLayoutX(775);
-		vbox.setLayoutY(220);
+		Style.setLocation(vbox, 775, 220);
 		vbox.setAlignment(Pos.CENTER);
 		
 		manage.setOnAction(new EventHandler<ActionEvent>() {
@@ -93,6 +91,7 @@ public class ManagementCenter {
 				Button yes = new Button("Yes");
 				Button no = new Button("No");
 				
+				//Not in new location format!!
 				overwrite.setLayoutY(200);
 				overwrite2.setLayoutY(250);
 				yes.setLayoutX(10);

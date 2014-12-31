@@ -17,13 +17,11 @@ public class Results {
 		Button back = new Button("Back to Management Center");
 		
 		Style.setButtonStyle(back, 45);
-		back.setLayoutX(150);
-		back.setLayoutY(870);
+		Style.setLocation(back, 150, 870);
 		
 		TableView<String> tableResults = new TableView();
-		tableResults.setPrefSize(750, 500);
-		tableResults.setLayoutX(200);
-		tableResults.setLayoutY(150);
+		tableResults.setPrefSize(Style.getNewSize(750), Style.getNewSize(500));
+		Style.setLocation(tableResults, 200, 150);
 		tableResults.setEditable(false);
 		
 		TableColumn homeTeam = new TableColumn("Home");
@@ -32,10 +30,10 @@ public class Results {
 		TableColumn column2 = new TableColumn("");
 		TableColumn Score = new TableColumn("Score");
 		
-		homeTeam.setPrefWidth(200);
-		awayTeam.setPrefWidth(200);
-		column2.setPrefWidth(100);
-		Score.setPrefWidth(150);
+		homeTeam.setPrefWidth(Style.getNewSize(200));
+		awayTeam.setPrefWidth(Style.getNewSize(200));
+		column2.setPrefWidth(Style.getNewSize(100));
+		Score.setPrefWidth(Style.getNewSize(150));
 		
 		homeTeam.setResizable(false);
 		awayTeam.setResizable(false);

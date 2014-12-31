@@ -25,20 +25,13 @@ public class LoadGame {
 		root.getChildren().add(Style.setBackground("/View/Resources/background_savegame.png"));
 
 		Rectangle r = new Rectangle();
-		r.setX(150);
-		r.setY(150);
-		r.setWidth(700);
-		r.setHeight(800);
+		Style.setLocation(r,150, 200);
+		r.setWidth(Style.getNewSize(700));
+		r.setHeight(Style.getNewSize(800));
 		r.setArcWidth(20);
 		r.setArcHeight(20);
 		r.setFill(Color.WHITE);
 		root.getChildren().add(r);
-		
-		Text t = new Text("Choose your game");
-		t.setLayoutX(100);
-		t.setLayoutY(100);
-		Style.setTextStyle(t, 70);
-		root.getChildren().add(t);
 		
 		ArrayList<String> files = new ArrayList<String>();
 		try {
@@ -59,8 +52,7 @@ public class LoadGame {
 		for (int i = 0; i < files.size(); i++) {
 			final String infile = files.get(i);
 			buttons[i] = new Button("Load game");
-			buttons[i].setLayoutX(700);
-			buttons[i].setLayoutY(150 + i*55);
+			Style.setLocation(buttons[i], 700, (200 + i*55));
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
 				public void handle(ActionEvent e){
 					saveGame.read(infile);
@@ -73,15 +65,12 @@ public class LoadGame {
 			
 			
 			text[i] =new Text(files.get(i));
-			Font textFont = new Font("Agency FB", 50);
-			text[i].setFont(textFont);
-			text[i].setLayoutX(170);
-			text[i].setLayoutY(200 + i*55);
+			Font font = new Font("Agency FB", Style.getNewSize(50));
+			text[i].setFont(font);
+			Style.setLocation(text[i], 170, (250 + i*55));
 			root.getChildren().add(buttons[i]);
 			root.getChildren().add(text[i]);
 		}
-		
-		
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();

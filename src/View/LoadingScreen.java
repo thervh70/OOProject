@@ -32,15 +32,13 @@ public class LoadingScreen {
 		
 		Image logo = new Image("/View/Resources/Frits_logo.png");
 		ImageView logo_img = new ImageView(logo);
-		logo_img.setLayoutX(100);
-		logo_img.setLayoutY(800);
-		logo_img.setFitHeight(200);
-		logo_img.setFitWidth(200);
+		Style.setLocation(logo_img, 100, 800);
+		logo_img.setFitHeight(Style.getNewSize(200));
+		logo_img.setFitWidth(Style.getNewSize(200));
 		
 		Text text = new Text("LOADING...");
 		Style.setTextStyle(text, 38);
-		text.setLayoutX(150);
-		text.setLayoutY(750);
+		Style.setLocation(text, 150, 750);
 		
 		RotateTransition frits = new RotateTransition(Duration.millis(1700), logo_img);
 	    frits.setByAngle(360);

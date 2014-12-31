@@ -21,25 +21,20 @@ import javafx.util.Duration;
 
 public class SplashScreen extends Application {
 	
-	protected static double width, height;
-	
 	public void start(Stage primaryStage) throws SAXException,IOException {
 		
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		width = screenSize.getWidth();
-		height = screenSize.getHeight();
+		Style.setScreen();
 		
 		//set up window
 		Pane root = new Pane();
-		Scene scene = new Scene(root,width, height);
+		Scene scene = new Scene(root,Style.getWidth(), Style.getHeight());
 		
 		//create background image
 		root.getChildren().add(Style.setBackground("/View/Resources/background_splashscreen.png"));
 
 		Text t = new Text("PRESS ANY KEY TO START");
 		Style.setTextStyle(t,70);
-		t.setLayoutX(1220);
-		t.setLayoutY(700);
+		Style.setLocation(t,1220,700);
 		
         //When the mouse button is pressed, go to the next StartupMenu screen
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
