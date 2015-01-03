@@ -2,6 +2,7 @@ package Controller;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Scanner;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -20,8 +21,12 @@ import Model.XmlParser;
 
 public class gameEngine {
 	
-	private int attemptsA, attemptsB, goalsA, goalsB, attempts, goals;
+	private int attemptsA, attemptsB, goalsA, goalsB, attempts, goals, toto;
 	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
+	
+	private static double amount = 1000;
+	private static int a = 1;
+	private static int b= 2;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -32,36 +37,87 @@ public class gameEngine {
 	 * @throws SAXException 
 	 */
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args){
-		DBmain d = XmlParser.parseDB();
-		Team alpha = d.getTeam(13);
-		Team beta = d.getTeam(14);
-		gameEngine match = new gameEngine();
+		int choice;
+		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0;
 		
-		match.play(alpha,beta);
-		System.out.println(alpha.getNm() + " " + match.getGoalsA() + " - " + match.getGoalsB() + " " + beta.getNm());
-		System.out.println("\n\nGoals " + alpha.getNm() + ": " + match.getGoalsA());
+		Scanner input = new Scanner(System.in);
+		System.out.println("1 game (0) or multiple games (1)?");
 		
-		for(int h = 0; h<match.getGoalsA(); h++){
-			System.out.print(match.getGoalminutesA()[h] + "   ");
+		choice = input.nextInt();
+		if(choice == 0){
+			DBmain d = XmlParser.parseDB();
+			Team alpha = d.getTeam(a);
+			Team beta = d.getTeam(b);
+			gameEngine match = new gameEngine();
+			
+			match.play(alpha,beta);
+			System.out.println(alpha.getNm() + " " + match.getGoalsA() + " - " + match.getGoalsB() + " " + beta.getNm());
+			System.out.println("\n\nGoals " + alpha.getNm() + ": " + match.getGoalsA());
+			
+			for(int h = 0; h<match.getGoalsA(); h++){
+				System.out.print(match.getGoalminutesA()[h] + "   ");
+			}
+			
+			System.out.println("\n\nGoals " + beta.getNm() + ": " + match.getGoalsB());
+			
+			for(int i = 0; i<match.getGoalsB(); i++){
+				System.out.print(match.getGoalminutesB()[i] + "   ");
+			}
+			
+			System.out.println("\n\nAttempts " + alpha.getNm() + ": " + match.getAttemptsA());
+			
+			for(int j = 0; j<match.getAttemptsA(); j++){
+				System.out.print(match.getAttemptminutesA()[j] + "  ");
+			}
+			
+			System.out.println("\n\nAttempts " + beta.getNm() + ": " + match.getAttemptsB());
+			
+			for(int k = 0; k<match.getAttemptsB(); k++){
+				System.out.print(match.getAttemptminutesB()[k] + "  ");
+			}
 		}
 		
-		System.out.println("\n\nGoals " + beta.getNm() + ": " + match.getGoalsB());
-		
-		for(int i = 0; i<match.getGoalsB(); i++){
-			System.out.print(match.getGoalminutesB()[i] + "   ");
-		}
-		
-		System.out.println("\n\nAttempts " + alpha.getNm() + ": " + match.getAttemptsA());
-		
-		for(int j = 0; j<match.getAttemptsA(); j++){
-			System.out.print(match.getAttemptminutesA()[j] + "  ");
-		}
-		
-		System.out.println("\n\nAttempts " + beta.getNm() + ": " + match.getAttemptsB());
-		
-		for(int k = 0; k<match.getAttemptsB(); k++){
-			System.out.print(match.getAttemptminutesB()[k] + "  ");
+		else if(choice == 1){
+			DBmain d = XmlParser.parseDB();
+			Team alpha = d.getTeam(a);
+			Team beta = d.getTeam(b);
+			gameEngine match = new gameEngine();
+			
+			int winsA = 0, winsB = 0, ties = 0;
+			
+			for(int i = 0; i < amount; i++){
+				match.play(alpha,beta);
+				
+				if(match.getGoalsA() > match.getGoalsB()){
+					winsA++;
+				}
+				
+				else if(match.getGoalsB() > match.getGoalsA()){
+					winsB++;
+				}
+				
+				else if(match.getGoalsA() == match.getGoalsB()){
+					ties++;
+				}
+				
+				totalGoalA += match.getGoalsA();
+				totalGoalB += match.getGoalsB();
+				totalAttA += match.getAttemptsA();
+				totalAttB += match.getAttemptsB();
+			}
+			
+			System.out.println("Amount of Wins from " + alpha.getNm() + ": " + winsA);
+			System.out.println("Amount of Wins from " + beta.getNm() + ": " + winsB);
+			System.out.println("Amount of Ties: " + ties);
+			
+			System.out.println("\nAverage Goals from " + alpha.getNm() + ": " + (double) (totalGoalA/amount));
+			System.out.println("Average Goals from " + beta.getNm() + ": " + (double) (totalGoalB/amount));
+			
+			System.out.println("\nAverage Attempts from " + alpha.getNm() + ": " + (double) (totalAttA/amount));
+			System.out.println("Average Attempts from " + beta.getNm() + ": " + (double) (totalAttB/amount));
+			
 		}
 	}
 	
@@ -96,6 +152,14 @@ public class gameEngine {
 		goalminutesB = minutes(goals);
 		Arrays.sort(attemptminutesB);
 		Arrays.sort(goalminutesB);
+		
+		if(goalsA > goalsB){toto = 1;}
+		else if(goalsB > goalsA){toto = 2;}
+		else if(goalsA == goalsB){toto = 0;}
+		
+		
+		//System.out.println(alpha.getNm() + "\t" + alphaAttMap + "\t" + alphaDefMap);
+		//System.out.println(beta.getNm() + "\t" + betaAttMap + "\t" + betaDefMap);
 	}
 	
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
@@ -171,4 +235,5 @@ public class gameEngine {
 	public int[] getGoalminutesB(){ return goalminutesB; }
 	public int[] getAttemptminutesA(){ return attemptminutesA; }
 	public int[] getAttemptminutesB(){ return attemptminutesB; }
+	public int getToto() {return toto;}
 }
