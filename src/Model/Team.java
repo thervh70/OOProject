@@ -197,7 +197,6 @@ public class Team {
 		int count = this.count(3) + this.count(4);
 				
 		score /= count;
-		//score *= 1000;
 		score = Math.round(score);
 		
 		return score;
@@ -222,7 +221,12 @@ public class Team {
 			}
 		}
 		
-		int count = this.count(1) + this.count(2);
+		Goalkeeper k = this.getSelectionKeeper();
+		if(!(k == null)){
+			score += k.calcScore();		
+		}
+		
+		int count = 1 + this.count(1) + this.count(2);
 		
 		score /= count;
 		//score *= 1000;
@@ -324,8 +328,22 @@ public class Team {
 	public int getBdgt_vir() {return this.bdgt_vir;}
 	public int getBdgt_rel() {return this.bdgt_rel;}
 	public int getSize() {return team.size();}
+	public int getSelectionSize() {return selection.size();}
 	public Player getPlayer(int i) {return team.get(i);}
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
+	
+	/**
+	 *  Method assumes selection has 1 keeper
+	 */
+	
+	public Goalkeeper getSelectionKeeper() {
+		for(int i = 0; i < getSelectionSize(); i++){
+			Player p = getSelectionPlayer(i);
+			if(p.getPos().equals("GK"))
+				return (Goalkeeper) p;
+		}
+		return null;
+	}
 	
 	/**
 	 * Setters

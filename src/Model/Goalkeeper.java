@@ -32,6 +32,21 @@ public class Goalkeeper extends Player {
 		this.hei = height;
 	}
 	
+	public double calcScore() {
+		double score = 0;
+		int diving = this.div;
+		int handling = this.han;
+		int kicking = this.kick;
+		int reflexes = this.ref;
+		int speed = this.spd;
+		int positioning = this.ping;
+		int height = this.hei;
+		
+		score= (diving*25 + handling*15 + kicking*10 + reflexes*15 + speed*15 + positioning*10 + height*10)/100;
+		
+		return score;
+	}
+	
 	/**
 	 * Method toString gives a String-representation of a Goalkeeper
 	 * @return String
