@@ -48,27 +48,6 @@ public class MatchCenter {
 		Team beta = d.getTeam(1);
 		gameEngine match = new gameEngine();
 		
-		match.play(alpha, beta);
-		
-		System.out.print("\n" + match.getGoalsA() + ": ");
-		
-		for(int i = 0; i<match.getGoalminutesA().length; i++){
-			int[] min = match.getGoalminutesA();
-			System.out.print(min[i] + ", ");
-		}
-		
-		System.out.println("\nAtt: "+ match.getAttemptsA());
-	
-		System.out.print("\n" + match.getGoalsB() + ": ");
-	 
-		for(int i = 0; i<match.getGoalminutesB().length; i++){
-			int[] min = match.getGoalminutesB();
-			System.out.print(min[i] + ", ");
-		}
-		
-		System.out.println("\nAtt: "+ match.getAttemptsB());
-		
-		
 		VBox vboxLeft = new VBox(5);
 		VBox vboxRight = new VBox(5);
 	    
@@ -180,10 +159,8 @@ public class MatchCenter {
 	        	back.setDisable(true);
 	        	back.setVisible(false);
 	        	
-	        	if (timeline != null) {
-	        		timeline.stop();
-		        }
-			 
+	    		match.play(alpha, beta);
+	        	
 			    timerLabel.setText(timeSeconds.toString());
 			    timeline = new Timeline();
 			    timeline.setCycleCount(Timeline.INDEFINITE);
