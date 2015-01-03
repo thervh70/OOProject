@@ -32,6 +32,13 @@ public class GoalkeeperTest {
 	}
 	
 	@Test
+	public void calcDefScoreTest() {
+		assertEquals(55.0, fp1.calcScore(), 0.001);
+		assertEquals(fp1.calcScore(), fp2.calcScore(), 0.001);
+		assertEquals(47.0, fp3.calcScore(), 0.001);
+	}
+	
+	@Test
 	public void toWriteTest() {
 		assertEquals(fp1.toWrite(), res);
 		assertNotEquals(fp3.toWrite(), res);
