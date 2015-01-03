@@ -139,7 +139,7 @@ public class TeamTest{
 		t1.addPlayer(p5);t1.toSelection(p5);
 		t1.addPlayer(p6);t1.toSelection(p6);
 		t1.addPlayer(p7);t1.toSelection(p7);
-		assertEquals(t1.calcDefScore(), 64.0, 0.001);
+		assertEquals(t1.calcDefScore(), 61.0, 0.001);
 		t1.removePlayer(p7);
 		assertNotEquals(t1.calcDefScore(), 64.0, 0.001);
 	}
