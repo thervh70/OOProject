@@ -15,6 +15,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
@@ -29,7 +30,7 @@ public abstract class Style {
 		Insets inset = new Insets(10);
 		BackgroundFill fill = new BackgroundFill(color, corner, inset);
 		Background buttonBack = new Background(fill);
-		
+	 
 		Font buttonFont = new Font("Agency FB", getNewSize(size));
 		
 		b.setBackground(buttonBack);
@@ -70,6 +71,14 @@ public abstract class Style {
 	   	Color color = Color.WHITESMOKE;
 		l.setFont(textFont);
 		l.setTextFill(color);
+	}
+	
+	public static void setRectangleStyle(Rectangle r){
+		Color color = Color.YELLOW;
+		r.setFill(color);
+		r.setArcHeight(10);
+		r.setArcWidth(10);
+		r.setOpacity(0.7);
 	}
 	
 	public static ImageView setBackground(String image){		

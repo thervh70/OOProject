@@ -2,7 +2,9 @@ package Controller;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -21,7 +23,7 @@ import Model.XmlParser;
 
 public class gameEngine {
 	
-	private int attemptsA, attemptsB, goalsA, goalsB, attempts, goals, toto;
+	private int attemptsA, attemptsB, goalsA, goalsB, attempts, toto;
 	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
 	
 	private static double amount = 1000;
@@ -139,17 +141,23 @@ public class gameEngine {
 		double alphaDefMap = map(alpha.calcDefScore(),0,40,0,100);
 		double betaDefMap = map(alpha.calcDefScore(),0,40,0,100);
 		
+		final Set<Integer> availableMin = new HashSet<>(); {
+		    for (int i = 0; i <= 90; i++) {
+		        availableMin.add(i);
+		    }
+		}
+		
 		goalsA = attack(alphaAttMap, betaDefMap);
 		attemptsA = attempts;
-		attemptminutesA = minutes(attemptsA);
-		goalminutesA = minutes(goals);
+		attemptminutesA = minutes(attemptsA, availableMin);
+		goalminutesA = minutes(goalsA, availableMin);
 		Arrays.sort(attemptminutesA);
 		Arrays.sort(goalminutesA);
 		
 		goalsB = attack(betaAttMap, alphaDefMap);
 		attemptsB = attempts;
-		attemptminutesB = minutes(attemptsB);		
-		goalminutesB = minutes(goals);
+		attemptminutesB = minutes(attemptsB, availableMin);		
+		goalminutesB = minutes(goalsB, availableMin);
 		Arrays.sort(attemptminutesB);
 		Arrays.sort(goalminutesB);
 		
@@ -191,24 +199,49 @@ public class gameEngine {
 				c++;
 			}		
 		}
-		goals += c;
 		return c;
 	}
 	
 	/**Method to determine the minute an action was made
+	 * The chosen minute is deleted from 
 	 * 
 	 * @param c Amount of things
 	 * @return array with integers (minutes)
 	 */
 	
-	public int[] minutes(int c){
+	public int[] minutes(int c, Set<Integer> not){
+		
 		int[] minutes = new int[c];
 		
-		for(int i = 0; i < c; i++){
-			minutes[i]=(int)Math.round(Math.random()*90);
+		while(contains(minutes,0)){
+			int i =0;
+			pick:
+				while(i < c){
+					int a = (int) Math.round((Math.random()*89) + 1);
+					
+					if(not.contains(a)){
+						minutes[i] = a;
+						not.remove(a);
+					}
+					
+					else if(!not.contains(a)){
+						continue pick;
+					}	
+					
+					i++;
+				}
 		}
 		
 		return minutes;
+	}
+	
+	public static boolean contains(int[] set, int x){
+		for(int i = 0; i < set.length; i++){
+			if(set[i] == x){
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**This method enlarges the difference between 2 teams.
