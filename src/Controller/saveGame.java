@@ -17,7 +17,6 @@ public class saveGame {
 	
 	public static String getMyTeamName(){
 		return myteam.getNm();
-		
 	}
 	
 	public static Team getMyTeam(){
