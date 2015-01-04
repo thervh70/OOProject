@@ -23,6 +23,7 @@ import Model.XmlParser;
 
 public class gameEngine {
 	
+	private Team teamA, teamB;
 	private int attemptsA, attemptsB, goalsA, goalsB, attempts, toto;
 	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
 	
@@ -135,6 +136,9 @@ public class gameEngine {
 	 */
 	
 	public void play(Team alpha, Team beta){
+		teamA = alpha;
+		teamB = beta;
+		
 		double alphaAttMap =  map(alpha.calcAttScore(),0,40,0,100);
 		double betaAttMap = map(beta.calcAttScore(),0,40,0,100);
 		
@@ -259,7 +263,8 @@ public class gameEngine {
 		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 	}
 	
-	
+	public Team getTeamA(){ return teamA;}
+	public Team getTeamB(){ return teamB;}
 	public int getAttemptsA(){ return attemptsA; }
 	public int getAttemptsB(){ return attemptsB; }
 	public int getGoalsA(){ return goalsA; }

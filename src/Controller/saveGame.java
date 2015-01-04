@@ -8,10 +8,10 @@ public class saveGame {
 
 	public static DBmain teams;
 	public static Team myteam;
-	
+
 	public static void read(String infile){
 		teams = XmlParser.parseDB(infile);
-		myteam = teams.getTeam(0);
+		myteam = teams.getTeam(8);
 		
 	}
 	

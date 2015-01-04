@@ -2,6 +2,7 @@ package View;
 
 import Controller.gameEngine;
 import Model.DBmain;
+import Model.Result;
 import Model.Team;
 import Model.XmlParser;
 import javafx.animation.FadeTransition;
@@ -10,7 +11,6 @@ import javafx.animation.RotateTransition;
 import javafx.animation.ScaleTransition;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -31,11 +31,10 @@ public class MatchCenter {
 	public static Integer attA,goalA = 0,attB,goalB = 0;
 	
 	private static Text goalsA;
-	private static Text goalsB;
+	private static Text goalsB; 
 	    
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
-		Pane root = new Pane();
+		Pane root = new Pane(); 
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
 
@@ -143,17 +142,17 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		results.setDisable(true);
-		results.setVisible(false);
+		//results.setDisable(true);
+		//results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
        
-		start.setOnAction(new EventHandler() {
+		start.setOnAction(new EventHandler<ActionEvent>() {
        	
 	        @Override
-			public void handle(Event event) {
+			public void handle(ActionEvent event) {
 	        	start.setDisable(true);
 	        	start.setVisible(false);
 	        	back.setDisable(true);
@@ -164,9 +163,9 @@ public class MatchCenter {
 			    timerLabel.setText(timeSeconds.toString());
 			    timeline = new Timeline();
 			    timeline.setCycleCount(Timeline.INDEFINITE);
-		        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(0.2),new EventHandler() {
+		        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(0.2),new EventHandler<ActionEvent>() {
 		        	
-			        public void handle(Event event) {
+			        public void handle(ActionEvent event) {
 			        	timeSeconds++;
 			        	r.setWidth(Style.getNewSize(timeSeconds*18));
 			        	timerLabel.setText(timeSeconds.toString());
@@ -179,7 +178,7 @@ public class MatchCenter {
 			            	if(match.getToto() == 1){won.setVisible(true);}
 			            	else if(match.getToto() == 2){lost.setVisible(true);}
 			            	else if(match.getToto() == 0){tie.setVisible(true);}
-			            	
+			            			            	
 			            }
 			            
 			            for(int i = 0; i < match.getGoalminutesA().length; i++){
@@ -231,7 +230,7 @@ public class MatchCenter {
 			@Override
 			public void handle(ActionEvent e) {
 				timeSeconds = 0;
-				Results.start(primaryStage);
+				Results.start(primaryStage,match);
 			}
 		});
        

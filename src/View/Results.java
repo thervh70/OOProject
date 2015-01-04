@@ -1,34 +1,49 @@
 package View;
 
+import Controller.gameEngine;
+import Model.Result;
 import View.ManagementCenter;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Results {
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static void start(Stage primaryStage) {
-		Pane root = new Pane();
+	public static void start(Stage primaryStage, gameEngine match) {
+		Pane root = new Pane(); 
 		Button back = new Button("Back to Management Center");
 		
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
 		
-		TableView<String> tableResults = new TableView();
-		tableResults.setPrefSize(Style.getNewSize(750), Style.getNewSize(500));
+		Result save = new Result(match.getTeamA(),match.getTeamB(),match.getGoalsA(),match.getGoalsB());
+		
+		final ObservableList<Result> resultTable = FXCollections.observableArrayList();
+		resultTable.add(save);
+		
+		TableView<Result> tableResults = new TableView();
+		tableResults.setPrefSize(Style.getNewSize(750), Style.getNewSize(500)); 
 		Style.setLocation(tableResults, 200, 150);
 		tableResults.setEditable(false);
 		
+		tableResults.setItems(resultTable);
+		
 		TableColumn homeTeam = new TableColumn("Home");
+		homeTeam.setCellValueFactory(new PropertyValueFactory<Result, String>("A"));
 		TableColumn column = new TableColumn("");
 		TableColumn awayTeam = new TableColumn("Away");
+		awayTeam.setCellValueFactory(new PropertyValueFactory<Result, String>("B"));
 		TableColumn column2 = new TableColumn("");
 		TableColumn Score = new TableColumn("Score");
+		Score.setCellValueFactory(new PropertyValueFactory<Result, String>("score"));
 		
 		homeTeam.setPrefWidth(Style.getNewSize(200));
 		awayTeam.setPrefWidth(Style.getNewSize(200));
