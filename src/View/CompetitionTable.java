@@ -32,10 +32,12 @@ public class CompetitionTable {
         TableColumn name = new TableColumn("Team Name");
 		name.setPrefWidth(Style.getNewSize(550));
 		TableColumn points = new TableColumn("Points");
-		points.setPrefWidth(100);
+		
+		points.setPrefWidth(Style.getNewSize(100));
         rank.setResizable(false);
         name.setResizable(false);
         points.setResizable(false);
+        
         table.getColumns().addAll(rank,name,points);
         
         

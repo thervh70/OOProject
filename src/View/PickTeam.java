@@ -1,5 +1,6 @@
 package View;
 
+import Controller.saveGame;
 import Model.DBmain;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
@@ -81,6 +82,7 @@ public class PickTeam{
 		name.setPrefWidth(Style.getNewSize(197));
 		position.setResizable(false);
 		position.setPrefWidth(Style.getNewSize(100));
+		System.out.println(position.getSortType());
 		age.setResizable(false);
 		age.setPrefWidth(Style.getNewSize(50));
 		worth.setResizable(false);
@@ -281,6 +283,7 @@ public class PickTeam{
 				}
 				
 				Team t = teams.getTeam(choice);
+				saveGame.myteam = t;
 				
 				ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
 				for (int j = 0; j < t.getSize(); j++) {

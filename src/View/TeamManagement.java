@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -89,7 +90,15 @@ public class TeamManagement {
 		Style.setTextStyle(benchKeeper, 45);
 		Style.setLocation(benchKeeper, 1350, 680);
 		
+		Text att = new Text("Att: " + saveGame.myteam.calcAttScore());
+		Style.setTextStyle(att, 60);
 		
+		Text def = new Text("Def: " + saveGame.myteam.calcDefScore());
+		Style.setTextStyle(def, 60);
+		
+		HBox hbox = new HBox(40);
+		hbox.getChildren().addAll(att,def);
+		Style.setLocation(hbox, 780, 870);
 		
 		//Create a table for the setup with fixed columns
 		TableView<Fieldplayer> tableSelectionField = new TableView<Fieldplayer>();
@@ -308,7 +317,7 @@ public class TeamManagement {
 		
 		//Add elements to the canvas
 		root.getChildren().addAll(back, tableSelectionField, tableTeamField, tableSelectionKeeper, tableTeamKeeper, setup, bench, setupKeeper,benchKeeper);
-		root.getChildren().addAll(switchLeftPlayer,switchRightPlayer,switchLeftKeeper,switchRightKeeper);
+		root.getChildren().addAll(switchLeftPlayer,switchRightPlayer,switchLeftKeeper,switchRightKeeper,hbox);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
