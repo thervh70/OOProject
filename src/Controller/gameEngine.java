@@ -28,8 +28,8 @@ public class gameEngine {
 	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
 	
 	private static double amount = 1000;
-	private static int a = 1;
-	private static int b= 2;
+	private static int a = 10;
+	private static int b= 16;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -46,7 +46,7 @@ public class gameEngine {
 		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0;
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("1 game (0) or multiple games (1)?");
+		System.out.println("1 game (0) or multiple games (1)? Or (2) show scores?");
 		
 		choice = input.nextInt();
 		if(choice == 0){
@@ -122,6 +122,14 @@ public class gameEngine {
 			System.out.println("Average Attempts from " + beta.getNm() + ": " + (double) (totalAttB/amount));
 			
 		}
+		
+		else if(choice == 2){
+			DBmain d = XmlParser.parseDB();
+			for(int i = 0; i < 18; i++){
+				Team t = d.getTeam(i);
+				System.out.println(t.calcAttScore() + "\t" + t.calcDefScore() + "\t" + t.getNm());
+			}
+		}
 	}
 	
 	public gameEngine(){
@@ -139,11 +147,11 @@ public class gameEngine {
 		teamA = alpha;
 		teamB = beta;
 		
-		double alphaAttMap =  map(alpha.calcAttScore(),0,40,0,100);
-		double betaAttMap = map(beta.calcAttScore(),0,40,0,100);
+		double alphaAtt =  alpha.calcAttScore();
+		double betaAtt = beta.calcAttScore();
 		
-		double alphaDefMap = map(alpha.calcDefScore(),0,40,0,100);
-		double betaDefMap = map(alpha.calcDefScore(),0,40,0,100);
+		double alphaDef = alpha.calcDefScore();
+		double betaDef = beta.calcDefScore();
 		
 		final Set<Integer> availableMin = new HashSet<>(); {
 		    for (int i = 0; i <= 90; i++) {
@@ -151,14 +159,14 @@ public class gameEngine {
 		    }
 		}
 		
-		goalsA = attack(alphaAttMap, betaDefMap);
+		goalsA = attack(alphaAtt, betaDef);
 		attemptsA = attempts;
 		attemptminutesA = minutes(attemptsA, availableMin);
 		goalminutesA = minutes(goalsA, availableMin);
 		Arrays.sort(attemptminutesA);
 		Arrays.sort(goalminutesA);
 		
-		goalsB = attack(betaAttMap, alphaDefMap);
+		goalsB = attack(betaAtt, alphaDef);
 		attemptsB = attempts;
 		attemptminutesB = minutes(attemptsB, availableMin);		
 		goalminutesB = minutes(goalsB, availableMin);
@@ -196,8 +204,8 @@ public class gameEngine {
 		attempts = (int) Math.round((Math.random()*(att/6)+1));
 		
 		for(int i = 0; i < attempts; i++){
-			a = att*(Math.random()-.2); //correction ensures not too much goals are made
-			b = def*(Math.random());
+			a = att*(Math.random()); 
+			b = def*(Math.random()+.2); //correction ensures not too much goals are made
 			
 			if(a>b){ 
 				c++;
@@ -258,10 +266,6 @@ public class gameEngine {
 	 * @param out_max output maximum
 	 * @return
 	 */
-	
-	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
-		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	}
 	
 	public Team getTeamA(){ return teamA;}
 	public Team getTeamB(){ return teamB;}

@@ -90,10 +90,10 @@ public class TeamManagement {
 		Style.setTextStyle(benchKeeper, 45);
 		Style.setLocation(benchKeeper, 1350, 680);
 		
-		Text att = new Text("Att: " + saveGame.myteam.calcAttScore());
+		Text att = new Text("Att: " + Math.round(saveGame.myteam.calcAttScore()));
 		Style.setTextStyle(att, 60);
 		
-		Text def = new Text("Def: " + saveGame.myteam.calcDefScore());
+		Text def = new Text("Def: " + Math.round(saveGame.myteam.calcDefScore()));
 		Style.setTextStyle(def, 60);
 		
 		HBox hbox = new HBox(40);

@@ -1,8 +1,8 @@
 package View;
 
 import Controller.gameEngine;
+import Controller.saveGame;
 import Model.DBmain;
-import Model.Result;
 import Model.Team;
 import Model.XmlParser;
 import javafx.animation.FadeTransition;
@@ -43,9 +43,11 @@ public class MatchCenter {
 		Style.setLabelStyle(timerLabel, 60);
        
 		DBmain d = XmlParser.parseDB();
-		Team alpha = d.getTeam(8);
-		Team beta = d.getTeam(1);
+		Team alpha = saveGame.myteam;
+		Team beta = d.getTeam(0);
 		gameEngine match = new gameEngine();
+		
+		match.play(alpha, beta);
 		
 		VBox vboxLeft = new VBox(5);
 		VBox vboxRight = new VBox(5);
@@ -142,8 +144,8 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		results.setDisable(true);
-		results.setVisible(false);
+		//results.setDisable(true);
+		//results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -157,8 +159,8 @@ public class MatchCenter {
 	        	start.setVisible(false);
 	        	back.setDisable(true);
 	        	back.setVisible(false);
-	        	
-	    		match.play(alpha, beta);
+	        	results.setDisable(true);
+	        	results.setVisible(false);
 	        	
 			    timerLabel.setText(timeSeconds.toString());
 			    timeline = new Timeline();

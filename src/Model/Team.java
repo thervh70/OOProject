@@ -205,6 +205,8 @@ public class Team {
 		score /= count;
 		score = Math.round(score);
 		
+		score = map(score, 0, 60, 0, 100);
+		
 		return score;
 	}
 	
@@ -232,13 +234,18 @@ public class Team {
 			score += k.calcScore();		
 		}
 		
-		int count = 1 + this.count(1) + this.count(2);
+		int count = this.count(0) + this.count(1) + this.count(2);
 		
 		score /= count;
-		//score *= 1000;
 		score = Math.round(score);
 		
+		score = map(score, 0, 60, 0, 100);
+		
 		return score;
+	}
+	
+	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
+		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 	}
 	
 	/**Count the amount of players of a certain type
@@ -339,11 +346,6 @@ public class Team {
 	public int getSelectionSize() {return selection.size();}
 	public Player getPlayer(int i) {return team.get(i);}
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
-	
-	/**
-	 *  Method assumes selection has 1 keeper
-	 */
-	
 	public Goalkeeper getSelectionKeeper() {
 		for(int i = 0; i < getSelectionSize(); i++){
 			Player p = getSelectionPlayer(i);

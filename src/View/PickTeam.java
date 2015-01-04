@@ -82,7 +82,6 @@ public class PickTeam{
 		name.setPrefWidth(Style.getNewSize(197));
 		position.setResizable(false);
 		position.setPrefWidth(Style.getNewSize(100));
-		System.out.println(position.getSortType());
 		age.setResizable(false);
 		age.setPrefWidth(Style.getNewSize(50));
 		worth.setResizable(false);
