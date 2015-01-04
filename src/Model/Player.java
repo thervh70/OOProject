@@ -4,13 +4,8 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public abstract class Player {
-	
-	private final SimpleStringProperty name;
-	private final SimpleStringProperty Tpos;
-	private final SimpleIntegerProperty tableAge;
-	private final SimpleIntegerProperty tablePrice;
-	
-	private String firstname, lastname, pos;
+		
+	private String firstname, lastname, pos, name;
 	private int age, pri;
 	
 	/**
@@ -30,10 +25,7 @@ public abstract class Player {
 		this.pos = pos;
 		this.age = age;
 		this.pri = pri;
-		this.name = new SimpleStringProperty(lastname + ", " + firstname);
-		this.Tpos = new SimpleStringProperty(pos);
-		this.tableAge = new SimpleIntegerProperty(age);
-		this.tablePrice = new SimpleIntegerProperty(pri);
+		name = firstname + " " + lastname; 
 	}
 
 	/**
@@ -41,19 +33,12 @@ public abstract class Player {
 	 * @return
 	 */
 	
+	public String getName() {return name; }
 	public String getFnm() {return firstname; }
 	public String getLnm() {return lastname; }
 	public String getPos() {return pos;	}
 	public int getAge() {return age; }
 	public int getPri() {return pri; }
-	public SimpleStringProperty getNameProperty() {return name; }
-	public String getName(){return name.get(); }
-	public SimpleStringProperty getTposProperty() {return Tpos; }
-	public String getTpos() {return Tpos.get(); }
-	public SimpleIntegerProperty getTableAgeProperty() {return tableAge; }
-	public int getTableAge() {return tableAge.get(); }
-	public SimpleIntegerProperty getTablePriceProperty() {return tablePrice; }
-	public int getTablePrice() {return tablePrice.get(); }
 
 	/**
 	 * Setters
@@ -65,9 +50,5 @@ public abstract class Player {
 	public void setPos(String pos) {this.pos = pos; }
 	public void setAge(int age) {this.age = age; }
 	public void setPri(int pri) {this.pri = pri; }
-	public void setName(String fName) { name.set(fName); }
-	public void setTpos(String pos) {Tpos.set(pos); }
-	public void setTableAge(int age) {tableAge.set(age); }
-	public void setTablePrice(int pri) {tablePrice.set(pri); }
 	
 }

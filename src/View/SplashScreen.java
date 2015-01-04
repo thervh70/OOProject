@@ -1,9 +1,6 @@
 package View;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.io.IOException;
-
 
 import org.xml.sax.SAXException;
 
@@ -17,7 +14,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 
 public class SplashScreen extends Application {
 	
@@ -67,7 +63,6 @@ public class SplashScreen extends Application {
 			primaryStage.setFullScreen(true);
 			primaryStage.show();
 			primaryStage.setResizable(false);
-			primaryStage.setFullScreen(true);
 	}
 			
 	

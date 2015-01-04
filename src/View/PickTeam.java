@@ -1,6 +1,9 @@
 package View;
 
 import Model.DBmain;
+import Model.Fieldplayer;
+import Model.Goalkeeper;
+import Model.Player;
 import Model.Team;
 import Model.XmlParser;
 
@@ -10,9 +13,14 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -21,22 +29,137 @@ import javafx.stage.Stage;
 public class PickTeam{
 	
 	public static int choice = 0;
+	private static TableView<Fieldplayer> tableTeamField;
+	private static TableView<Goalkeeper> tableTeamKeeper;
 	
 	/* The start method shows the starting team picking screen
 	 * 
-	 * @param primaryStage - The window shown
+	 * @param primaryStage - The window shown 
 	 * @throws SAXException
 	 * @throws IOException
 	 * @throws ParserConfigurationException
 	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
+		//Create a table for the bench with fixed columns
+		tableTeamField = new TableView<Fieldplayer>();
+		tableTeamField.setEditable(false);
+		tableTeamField.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
+		Style.setLocation(tableTeamField, 1050, 250);
+
+		//Additional table for keepers
+		tableTeamKeeper = new TableView<Goalkeeper>();
+		tableTeamKeeper.setEditable(false);
+		tableTeamKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
+		Style.setLocation(tableTeamKeeper, 1050, 700);
+		
+		//Columns for Team Fieldplayers
+		TableColumn name = new TableColumn("Name");
+		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn position = new TableColumn("Position");
+        position.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
+		TableColumn age = new TableColumn("Age");
+        age.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
+		TableColumn worth = new TableColumn("Worth");
+        worth.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
+        TableColumn pace = new TableColumn("PAC");
+        pace.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pac"));
+		TableColumn shooting = new TableColumn("SHO");
+		shooting.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("sho"));
+		TableColumn passing = new TableColumn("PAS");
+		passing.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pas"));
+		TableColumn dribbling = new TableColumn("DRI");
+		dribbling.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("dri"));
+		TableColumn defending = new TableColumn("DEF");
+		defending.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
+		TableColumn physical = new TableColumn("PHY");
+        physical.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
+        
+        name.setResizable(false);
+		name.setPrefWidth(Style.getNewSize(197));
+		position.setResizable(false);
+		position.setPrefWidth(Style.getNewSize(100));
+		age.setResizable(false);
+		age.setPrefWidth(Style.getNewSize(50));
+		worth.setResizable(false);
+		worth.setPrefWidth(Style.getNewSize(100));
+		shooting.setResizable(false);
+		shooting.setPrefWidth(Style.getNewSize(50));
+		passing.setResizable(false);
+		passing.setPrefWidth(Style.getNewSize(50));
+		dribbling.setResizable(false);
+		dribbling.setPrefWidth(Style.getNewSize(50));
+		defending.setResizable(false);
+		defending.setPrefWidth(Style.getNewSize(50));
+		physical.setResizable(false);
+		physical.setPrefWidth(Style.getNewSize(50));
+		
+		//Columns for Team Goalkeepers
+        TableColumn nameK = new TableColumn("Name");
+		nameK.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn positionK = new TableColumn("Position");
+        positionK.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
+		TableColumn ageK = new TableColumn("Age");
+        ageK.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
+		TableColumn worthK = new TableColumn("Worth");
+        worthK.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
+        TableColumn divingK = new TableColumn("DIV");
+        divingK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("div"));
+        TableColumn handlingK = new TableColumn("HAN");
+        handlingK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("han"));
+        TableColumn kickingK = new TableColumn("KICK");
+        kickingK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("kick"));
+        TableColumn reflexK = new TableColumn("REF");
+        reflexK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ref"));
+        TableColumn speedK = new TableColumn("SPD");
+        speedK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("spd"));
+        TableColumn posK = new TableColumn("PING");
+        posK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
+        TableColumn heightK = new TableColumn("HEI");
+        heightK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));
+        
+        nameK.setResizable(false);
+		nameK.setPrefWidth(Style.getNewSize(202));
+		positionK.setResizable(false);
+		positionK.setPrefWidth(Style.getNewSize(100));
+		ageK.setResizable(false);
+		ageK.setPrefWidth(Style.getNewSize(50));
+		worthK.setResizable(false);
+		worthK.setPrefWidth(Style.getNewSize(100));
+		divingK.setResizable(false);
+		divingK.setPrefWidth(Style.getNewSize(35));
+		handlingK.setResizable(false);
+		handlingK.setPrefWidth(Style.getNewSize(35));
+		kickingK.setResizable(false);
+		kickingK.setPrefWidth(Style.getNewSize(35));
+		reflexK.setResizable(false);
+		reflexK.setPrefWidth(Style.getNewSize(35));
+		speedK.setResizable(false);
+		speedK.setPrefWidth(Style.getNewSize(35));
+		posK.setResizable(false);
+		posK.setPrefWidth(Style.getNewSize(35));
+		heightK.setResizable(false);
+		heightK.setPrefWidth(Style.getNewSize(35));
+		
+		tableTeamField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		tableTeamKeeper.getColumns().addAll(nameK,positionK,ageK,worthK,divingK,handlingK,kickingK,reflexK,speedK,posK,heightK);
+		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_pick-team.png"));
+		
+
+		Text Fieldplayers = new Text("Fieldplayers");
+		Style.setTextStyle(Fieldplayers, 45);
+		Style.setLocation(Fieldplayers, 1320, 230);
+		
+		Text Keepers = new Text("Keepers");
+		Style.setTextStyle(Keepers, 45);
+		Style.setLocation(Keepers, 1350, 680);
 
 		double size = 45;
 		
-		//Declare a bunch of buttons
+		//Declare a bunch of buttons 
 		Button ADO = new Button("ADO");								Style.setButtonStyle(ADO, size);
 		Button Ajax = new Button("Ajax");							Style.setButtonStyle(Ajax, size);
 		Button AZ = new Button("AZ");								Style.setButtonStyle(AZ, size);
@@ -117,12 +240,12 @@ public class PickTeam{
 		});
 		
 		//Add everything to the window and show it
-		root.getChildren().addAll(vbox, vbox2, Continue, Back,players);
+		root.getChildren().addAll(vbox, vbox2, Continue, Back,players,tableTeamField,tableTeamKeeper,Keepers,Fieldplayers);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
 	
-	/* showPlayers(DBmain, Pane, VBox, Button) shows the players from the 
+	/** showPlayers(DBmain, Pane, VBox, Button) shows the players from the 
 	 * team that is selected by taking the players out of the DBmain
 	 * and adding them to a VBox which is added to the Pane.
 	 * The method also returns the VBox containing all the players,
@@ -130,6 +253,8 @@ public class PickTeam{
 	 */
 	public static VBox showPlayers(DBmain teams, Pane root, VBox players, Button name) {
 		name.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@SuppressWarnings("unused")
 			@Override
 			public void handle(ActionEvent e) {
 				players.getChildren().clear();
@@ -154,9 +279,28 @@ public class PickTeam{
 				case "Vitesse": team = teams.getTeam(16); choice=16; break;
 				case "Willem II": team = teams.getTeam(17); choice=17; break;
 				}
-				for(int i = 0; i < team.getSize(); i++){
-					players.getChildren().add(new Text(team.getPlayer(i).toString()));
+				
+				Team t = teams.getTeam(choice);
+				
+				ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
+				for (int j = 0; j < t.getSize(); j++) {
+					Player p = t.getPlayer(j);
+					if(p instanceof Fieldplayer){
+						teamField.add((Fieldplayer) p);
+					}
 				}
+				
+				tableTeamField.setItems(teamField);
+				
+				ObservableList<Goalkeeper> teamKeeper = FXCollections.observableArrayList();
+				for(int i = 0; i < t.getSize(); i++){
+					Player p = t.getPlayer(i);
+					if(p instanceof Goalkeeper){
+						teamKeeper.add((Goalkeeper) p);
+					}
+				}
+				
+				tableTeamKeeper.setItems(teamKeeper);
 			}
 		});
 		return players;

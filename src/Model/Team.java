@@ -223,7 +223,7 @@ public class Team {
 				Fieldplayer p = (Fieldplayer)(selection.get(i));
 				score += p.calcDefScore();
 			}
-		}
+		} 
 		
 		Goalkeeper k = this.getSelectionKeeper();
 		if(!(k == null)){
@@ -328,6 +328,8 @@ public class Team {
 	 * Getters
 	 */
 	
+	public ArrayList<Player> getTeam() {return this.team;}
+	public ArrayList<Player> getSelection() {return this.selection; }
 	public String getNm() {return this.nm;}
 	public int getBdgt_vir() {return this.bdgt_vir;}
 	public int getBdgt_rel() {return this.bdgt_rel;}
