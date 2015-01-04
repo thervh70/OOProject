@@ -22,15 +22,15 @@ public class XmlParser {
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
-//		DBmain db = new DBmain();
-//		for(int i=0;i<18;i++) {
-//			Team t = d.getTeam(i);
-////			t.removeSelection();
-//			t = CreateSelection.create(t);
-//			db.addTeam(t);
-//		}
-//		System.out.println(db);
-//		writeToXML(db);
+		DBmain db = new DBmain();
+		for(int i=0;i<18;i++) {
+			Team t = d.getTeam(i);
+			t.removeSelection();
+			t = CreateSelection.create(t);
+			db.addTeam(t);
+		}
+		System.out.println(db);
+		writeToXML(db);
 	}
 	
 	/**
@@ -212,7 +212,7 @@ public class XmlParser {
 	public static void writeToXML(DBmain db) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
-		String file = sc.next();
+		String file = "src/Model/Resources/" + sc.next();
 		sc.close();
 		PrintWriter pw = null;
 		try {

@@ -152,14 +152,16 @@ public class Team {
 		res += "      <VIRTUAL_BUDGET>" + this.bdgt_vir + "</VIRTUAL_BUDGET>\r\n";
 		res += "      <BUDGET>" + this.bdgt_rel + "</BUDGET>\r\n";
 		res += "      <SELECTION>\r\n";
-		for(int i=0;i<selection.size();i++) {
-			if(this.getPlayer(i) instanceof Fieldplayer) {
-				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
-				res += p.toWrite();
-			}
-			else if(this.getPlayer(i) instanceof Goalkeeper) {
-				Goalkeeper g = (Goalkeeper)(this.getPlayer(i));
-				res += g.toWrite();
+		for(int i=0;i<this.getSize();i++) {
+			if(selection.contains(this.getPlayer(i))) {
+				if(this.getPlayer(i) instanceof Fieldplayer) {
+					Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
+					res += p.toWrite();
+				}
+				else if(this.getPlayer(i) instanceof Goalkeeper) {
+					Goalkeeper g = (Goalkeeper)(this.getPlayer(i));
+					res += g.toWrite();
+				}
 			}
 		}
 		res += "      </SELECTION>\r\n";
