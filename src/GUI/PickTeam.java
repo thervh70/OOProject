@@ -9,11 +9,16 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -26,7 +31,7 @@ import javafx.stage.Stage;
 
 public class PickTeam{
 	
-	public static int choice = 0;
+	public static int choice;
 	
 	/* The start method shows the starting team picking screen
 	 * 
@@ -85,30 +90,84 @@ public class PickTeam{
 		vbox.getChildren().addAll(ADO, Ajax, AZ, Excelsior, Dordrecht, Groningen,Twente, Utrecht, Feyenoord); 
 		vbox2.getChildren().addAll(Eagles, Heracles, NAC,PEC, PSV, Cambuur, Heerenveen, Vitesse, Willem);
 		
-		//initialize a VBox to list the players per team, get the database to get the players
-		VBox players = new VBox(5);
-		players.setLayoutX(1000);
+		//call the database of teams
 		DBmain teams = XmlParser.parseDB();
-				
+		
+		final ObservableList<Player> data = FXCollections.observableArrayList();
+		
+		TableView<Player> players = new TableView<Player>();
+		players.setEditable(false);
+		players.setPrefSize(700, 540);
+		players.setLayoutX(1000);
+		players.setLayoutY(200);
+		players.setEditable(false);
+		
+		players.setItems(data);
+		
+		TableColumn name = new TableColumn("Name");
+		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn position = new TableColumn("Position");
+        position.setCellValueFactory(new PropertyValueFactory<Player, String>("Tpos"));
+		TableColumn age = new TableColumn("Age");
+        age.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableAge"));
+
+		TableColumn worth = new TableColumn("Worth");
+        worth.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePrice"));
+        TableColumn pace = new TableColumn("PAC");
+        pace.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePac"));
+		TableColumn shooting = new TableColumn("SHO");
+        shooting.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableSho"));
+		TableColumn passing = new TableColumn("PAS");
+        passing.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePas"));
+		TableColumn dribbling = new TableColumn("DRI");
+        dribbling.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableDri"));
+		TableColumn defending = new TableColumn("DEF");
+        defending.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableDef"));
+		TableColumn physical = new TableColumn("PHY");
+        physical.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePhy"));
+		name.setResizable(false);
+		name.setPrefWidth(200);
+		position.setResizable(false);
+		position.setPrefWidth(100);
+		age.setResizable(false);
+		age.setPrefWidth(50);
+		worth.setResizable(false);
+		worth.setPrefWidth(100);
+		shooting.setResizable(false);
+		shooting.setPrefWidth(50);
+		passing.setResizable(false);
+		passing.setPrefWidth(50);
+		dribbling.setResizable(false);
+		dribbling.setPrefWidth(50);
+		defending.setResizable(false);
+		defending.setPrefWidth(50);
+		physical.setResizable(false);
+		name.setEditable(false);
+
+		physical.setPrefWidth(50);
+		
 		//Give the buttons functionality and show the players of each team
-		players = showPlayers(teams, root, players, ADO);
-		players = showPlayers(teams, root, players, Ajax);
-		players = showPlayers(teams, root, players, AZ);
-		players = showPlayers(teams, root, players, Excelsior);
-		players = showPlayers(teams, root, players, Dordrecht);
-		players = showPlayers(teams, root, players, Groningen);
-		players = showPlayers(teams, root, players, Twente);
-		players = showPlayers(teams, root, players, Utrecht);
-		players = showPlayers(teams, root, players, Feyenoord);
-		players = showPlayers(teams, root, players, Eagles);
-		players = showPlayers(teams, root, players, Heracles);
-		players = showPlayers(teams, root, players, NAC);
-		players = showPlayers(teams, root, players, PEC);
-		players = showPlayers(teams, root, players, PSV);
-		players = showPlayers(teams, root, players, Cambuur);
-		players = showPlayers(teams, root, players, Heerenveen);
-		players = showPlayers(teams, root, players, Vitesse);
-		players = showPlayers(teams, root, players, Willem);
+				choice = showPlayers(teams, data, ADO);
+				choice = showPlayers(teams, data, Ajax);
+				choice = showPlayers(teams, data, AZ);
+				choice = showPlayers(teams, data, Excelsior);
+				choice = showPlayers(teams, data, Dordrecht);
+				choice = showPlayers(teams, data, Groningen);
+				choice = showPlayers(teams, data, Twente);
+				choice = showPlayers(teams, data, Utrecht);
+				choice = showPlayers(teams, data, Feyenoord);
+				choice = showPlayers(teams, data, Eagles);
+				choice = showPlayers(teams, data, Heracles);
+				choice = showPlayers(teams, data, NAC);
+				choice = showPlayers(teams, data, PEC);
+				choice = showPlayers(teams, data, PSV);
+				choice = showPlayers(teams, data, Cambuur);
+				choice = showPlayers(teams, data, Heerenveen);
+				choice = showPlayers(teams, data, Vitesse);
+				choice = showPlayers(teams, data, Willem);
+
+		//Add columns to table
+		players.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		
 		//Give click functionality to "Continue", directs to "Management Center"
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
@@ -127,7 +186,7 @@ public class PickTeam{
 		});
 		
 		//Add everything to the window and show it
-		root.getChildren().addAll(vbox, vbox2, Continue, Back,players);
+		root.getChildren().addAll(vbox, vbox2, Continue, Back, players);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
@@ -138,37 +197,36 @@ public class PickTeam{
 	 * The method also returns the VBox containing all the players,
 	 * names and attributes
 	 */
-	public static VBox showPlayers(DBmain teams, Pane root, VBox players, Button name) {
+	public static int showPlayers(DBmain teams, ObservableList data, Button name) {
 		name.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				players.getChildren().clear();
-				Team team = new Team(null, 0, 0);
+				data.clear();
 				switch(name.getText().toString()){
-				case "ADO": team = teams.getTeam(0); choice=0; break;
-				case "Ajax": team = teams.getTeam(1); choice=1; break;
-				case "AZ": team = teams.getTeam(2); choice=2; break;
-				case "Excelsior": team = teams.getTeam(3); choice=3; break;
-				case "FC Dordrecht": team = teams.getTeam(4); choice=4; break;
-				case "FC Groningen": team = teams.getTeam(5); choice=5; break;
-				case "FC Twente": team = teams.getTeam(6); choice=6; break;
-				case "FC Utrecht": team = teams.getTeam(7); choice=7; break;
-				case "Feyenoord": team = teams.getTeam(8); choice=8; break;
-				case "Go Ahead Eagles": team = teams.getTeam(9); choice=9; break;
-				case "Heracles Almelo": team = teams.getTeam(10); choice=10; break;
-				case "NAC Breda": team = teams.getTeam(11); choice=11; break;
-				case "PEC Zwolle": team = teams.getTeam(12); choice=12; break;
-				case "PSV": team = teams.getTeam(13); choice=13; break;
-				case "SC Cambuur": team = teams.getTeam(14); choice=14; break;
-				case "SC Heerenveen": team = teams.getTeam(15); choice=15; break;
-				case "Vitesse": team = teams.getTeam(16); choice=16; break;
-				case "Willem II": team = teams.getTeam(17); choice=17; break;
+				case "ADO": choice=0; break;
+				case "Ajax": choice=1; break;
+				case "AZ": choice=2; break;
+				case "Excelsior":  choice=3; break;
+				case "FC Dordrecht": choice=4; break;
+				case "FC Groningen": choice=5; break;
+				case "FC Twente": choice=6; break;
+				case "FC Utrecht": choice=7; break;
+				case "Feyenoord": choice=8; break;
+				case "Go Ahead Eagles": choice=9; break;
+				case "Heracles Almelo": choice=10; break;
+				case "NAC Breda": choice=11; break;
+				case "PEC Zwolle": choice=12; break;
+				case "PSV": choice=13; break;
+				case "SC Cambuur": choice=14; break;
+				case "SC Heerenveen": choice=15; break;
+				case "Vitesse": choice=16; break;
+				case "Willem II": choice=17; break;
 				}
-				for(int i = 0; i < team.getSize(); i++){
-					players.getChildren().add(new Text(team.getPlayer(i).toString()));
+				for (int i = 0; i < teams.getTeam(choice).getSize(); i++){
+					data.add(teams.getTeam(choice).getPlayer(i));
 				}
 			}
 		});
-		return players;
+		return choice;
 	}
 }

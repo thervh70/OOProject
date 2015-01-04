@@ -1,5 +1,7 @@
 package GUI;
 
+import java.util.ArrayList;
+
 import Database.*;
 import Game.saveGame;
 import javafx.application.Application;
@@ -21,13 +23,14 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class TeamManagement {
-
+	public static ArrayList<Player> basePlayers;
+	public static ArrayList<Player> benchPlayers;
+	
 	public static void start(Stage primaryStage) {
 		final ObservableList<Player> data = FXCollections.observableArrayList();
 		for (int i = 0; i < saveGame.myteam.getSize(); i++) {
 			data.add(saveGame.myteam.getPlayer(i));
 		}
-		final ObservableList<Player> data2 = FXCollections.observableArrayList(new Fieldplayer("Bankspeler", "ViezeVuile", "bank", 80, 80, 1, 1, 1, 1, 1, 1));
 		Pane root = new Pane();
 		
 		Button back = new Button("Back to Management Center");
@@ -59,27 +62,14 @@ public class TeamManagement {
 		
 		tableSetup.setItems(data);
 		
-
-		
-		//Create a table for the bench with fixed columns
-		TableView<Player> tableBench = new TableView();
-		tableBench.setEditable(false);
-		tableBench.setPrefSize(700, 540);
-		tableBench.setLayoutX(1025);
-		tableBench.setLayoutY(250);
-		tableBench.setEditable(false);
-		
-		tableBench.setItems(data2);
-		
-		//Creat columns for both tables
+		//Create columns for both tables
 		TableColumn name = new TableColumn("Name");
 		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
         TableColumn position = new TableColumn("Position");
         position.setCellValueFactory(new PropertyValueFactory<Player, String>("Tpos"));
 		TableColumn age = new TableColumn("Age");
         age.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tableAge"));
-
-		TableColumn worth = new TableColumn("Worth");
+        TableColumn worth = new TableColumn("Worth");
         worth.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePrice"));
         TableColumn pace = new TableColumn("PAC");
         pace.setCellValueFactory(new PropertyValueFactory<Player, Integer>("tablePac"));
@@ -117,6 +107,19 @@ public class TeamManagement {
 
 		//Add columns to table
 		tableSetup.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
+		
+		final ObservableList<Player> data2 = FXCollections.observableArrayList(new Fieldplayer("Bankspeler", "ViezeVuile", "bank", 80, 80, 1, 1, 1, 1, 1, 1));
+
+		//Create a table for the bench with fixed columns
+				TableView<Player> tableBench = new TableView();
+				tableBench.setEditable(false);
+				tableBench.setPrefSize(700, 540);
+				tableBench.setLayoutX(1025);
+				tableBench.setLayoutY(250);
+				tableBench.setEditable(false);
+				
+				tableBench.setItems(data2);
+				
 		tableBench.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		
 	
