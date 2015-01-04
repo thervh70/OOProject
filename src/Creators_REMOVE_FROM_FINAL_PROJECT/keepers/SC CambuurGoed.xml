@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Jurjan</FIRSTNAME>
+            <LASTNAME>Wouda</LASTNAME>
+            <AGE>23</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>62</DIVING>
+            <HANDLING>57</HANDLING>
+            <KICKING>58</KICKING>
+            <REFLEXES>63</REFLEXES>
+            <SPEED>41</SPEED>
+            <POSITIONING>62</POSITIONING>
+            <HEIGHT>183</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Leonard</FIRSTNAME>
+            <LASTNAME>Nienhuis</LASTNAME>
+            <AGE>24</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>67</DIVING>
+            <HANDLING>69</HANDLING>
+            <KICKING>59</KICKING>
+            <REFLEXES>70</REFLEXES>
+            <SPEED>30</SPEED>
+            <POSITIONING>63</POSITIONING>
+            <HEIGHT>184</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Harm</FIRSTNAME>
+            <LASTNAME>Zeinstra</LASTNAME>
+            <AGE>25</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>62</DIVING>
+            <HANDLING>55</HANDLING>
+            <KICKING>59</KICKING>
+            <REFLEXES>65</REFLEXES>
+            <SPEED>32</SPEED>
+            <POSITIONING>62</POSITIONING>
+            <HEIGHT>192</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

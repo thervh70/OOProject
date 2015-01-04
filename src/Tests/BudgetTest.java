@@ -3,11 +3,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Database.DBmain;
-import Database.Player;
-import Database.Team;
-import Database.XmlParser;
-import Engine.*;
+import Controller.Budget;
+import Model.DBmain;
+import Model.Player;
+import Model.Team;
+import Model.XmlParser;
 
 
 public class BudgetTest {

@@ -1,0 +1,45 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Esteban</FIRSTNAME>
+            <LASTNAME>Alvarado</LASTNAME>
+            <AGE>25</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>77</DIVING>
+            <HANDLING>70</HANDLING>
+            <KICKING>69</KICKING>
+            <REFLEXES>77</REFLEXES>
+            <SPEED>45</SPEED>
+            <POSITIONING>68</POSITIONING>
+            <HEIGHT>192</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Yves</FIRSTNAME>
+            <LASTNAME>Winter</LASTNAME>
+            <AGE>27</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>71</DIVING>
+            <HANDLING>65</HANDLING>
+            <KICKING>60</KICKING>
+            <REFLEXES>69</REFLEXES>
+            <SPEED>48</SPEED>
+            <POSITIONING>66</POSITIONING>
+            <HEIGHT>188</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Sergio</FIRSTNAME>
+            <LASTNAME>Rochet</LASTNAME>
+            <AGE>21</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>68</DIVING>
+            <HANDLING>59</HANDLING>
+            <KICKING>67</KICKING>
+            <REFLEXES>69</REFLEXES>
+            <SPEED>49</SPEED>
+            <POSITIONING>64</POSITIONING>
+            <HEIGHT>190</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+

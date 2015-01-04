@@ -1,0 +1,31 @@
+<KEEPERS>
+         <KEEPER>
+            <FIRSTNAME>Alessandro</FIRSTNAME>
+            <LASTNAME>Damen</LASTNAME>
+            <AGE>24</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>62</DIVING>
+            <HANDLING>55</HANDLING>
+            <KICKING>63</KICKING>
+            <REFLEXES>65</REFLEXES>
+            <SPEED>53</SPEED>
+            <POSITIONING>53</POSITIONING>
+            <HEIGHT>186</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Jordy</FIRSTNAME>
+            <LASTNAME>Deckers</LASTNAME>
+            <AGE>25</AGE>
+            <PRICE>0</PRICE>
+            <DIVING>66</DIVING>
+            <HANDLING>59</HANDLING>
+            <KICKING>66</KICKING>
+            <REFLEXES>67</REFLEXES>
+            <SPEED>55</SPEED>
+            <POSITIONING>62</POSITIONING>
+            <HEIGHT>193</HEIGHT>
+            <TYPE>GK</TYPE>
+         </KEEPER>
+</KEEPERS>
+
