@@ -221,7 +221,7 @@ public class gameEngine {
 			int i =0;
 			pick:
 				while(i < c){
-					int a = (int) Math.round((Math.random()*89) + 1);
+					int a = (int) Math.round((Math.random()*88) + 1);
 					
 					if(not.contains(a)){
 						minutes[i] = a;

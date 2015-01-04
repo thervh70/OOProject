@@ -142,8 +142,8 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		//results.setDisable(true);
-		//results.setVisible(false);
+		results.setDisable(true);
+		results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
