@@ -13,6 +13,8 @@ public class FieldplayerTest {
 	Fieldplayer fp3 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, 33, 86, 16, 46, 71, 22);
 	Fieldplayer fp4 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, 66, 52, 39, 48, 56, 87);
 	Fieldplayer fp5 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, 65, 49, 87, 55, 69, 47);
+	Fieldplayer fp6 = new Fieldplayer("Guus", "Meeuwis", "RW", 35, 19546, 33, 86, 16, 46, 71, 22);
+	Fieldplayer fp7 = new Fieldplayer("Guus", "Meeuwis", "CAM", 35, 19546, 33, 86, 16, 46, 71, 22);
 
 	String res="         <PLAYER>\r\n"
 			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
@@ -44,6 +46,8 @@ public class FieldplayerTest {
 		assertEquals(fp1.calcAttScore(), 0, 0.001);
 		double score = (33*15 + 86*15 + 16*15 + 46*15 + 71*15 + 22*25)/100;
 		assertEquals(fp3.calcAttScore(), score, 0.001);
+		assertEquals(fp6.calcAttScore(), score, 0.001);
+		assertEquals(fp7.calcAttScore(), score, 0.001);
 		score = (66*10 + 52*25 + 39*15 + 48*15 + 56*10 + 87*25)/100;
 		assertEquals(fp4.calcAttScore(), score, 0.001);
 	}

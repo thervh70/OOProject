@@ -3,7 +3,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
-import Creators_REMOVE_FROM_FINAL_PROJECT.*;
+
+import Controller.CreateSelection;
 
 import javax.xml.parsers.*;
 
@@ -20,13 +21,16 @@ public class XmlParser {
 	
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
-		DBmain db = new DBmain();
-		for(int i=0;i<d.getSize();i++) {
-			Team t = editDatabase.createSelection(d.getTeam(i));
-			db.addTeam(t);
-		}
-		System.out.println(db);
-		writeToXML(db);
+		System.out.println(d);
+//		DBmain db = new DBmain();
+//		for(int i=0;i<18;i++) {
+//			Team t = d.getTeam(i);
+////			t.removeSelection();
+//			t = CreateSelection.create(t);
+//			db.addTeam(t);
+//		}
+//		System.out.println(db);
+//		writeToXML(db);
 	}
 	
 	/**

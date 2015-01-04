@@ -23,6 +23,10 @@ public class Team {
 		bdgt_rel = budget_rel;
 	}
 	
+	public void removeSelection() {
+		selection.clear();
+	}
+	
 	/**
 	 * Method addPlayer adds a Player (Fieldplayer or Goalkeeper) to a Team given the Player isn't already in the Team
 	 * @param p Player
