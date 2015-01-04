@@ -24,14 +24,19 @@ public class LoadGame {
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_savegame.png"));
 
+		Button Back = new Button("Back");
+		Style.setButtonStyle(Back, 45);
+		Style.setLocation(Back, 150, 870);
+		
 		Rectangle r = new Rectangle();
 		Style.setLocation(r,150, 200);
 		r.setWidth(Style.getNewSize(700));
-		r.setHeight(Style.getNewSize(800));
+		r.setHeight(Style.getNewSize(600));
 		r.setArcWidth(20);
 		r.setArcHeight(20);
 		r.setFill(Color.WHITE);
-		root.getChildren().add(r);
+		
+		root.getChildren().addAll(r,Back);
 		
 		ArrayList<String> files = new ArrayList<String>();
 		try {
@@ -71,6 +76,14 @@ public class LoadGame {
 			root.getChildren().add(buttons[i]);
 			root.getChildren().add(text[i]);
 		}
+		
+		//Give click functionality to "Back", directs to "Startup Menu"
+		Back.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e){
+				StartupMenu.start(primaryStage);
+			}
+		});
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
