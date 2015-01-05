@@ -6,6 +6,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import Controller.saveGame;
 import Model.DBmain;
 import Model.Player;
 import Model.Team;
@@ -80,7 +81,7 @@ public class TransferMarket {
 		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 
 		DBmain d = XmlParser.parseDB();
-		Team t = d.getTeam(PickTeam.choice);
+		Team t = saveGame.myteam;
 		
 		ObservableList<Player> user = FXCollections.observableArrayList(t.getPlayer(0));
 		

@@ -206,7 +206,7 @@ public class Team {
 		score = Math.round(score);
 		//score = map(score, 300, 700, 0, 100);
 		
-		score = map(score, 0, 60, 0, 100);
+		//score = map(score, 0, 60, 0, 100);
 		
 		
 		return (int) score;

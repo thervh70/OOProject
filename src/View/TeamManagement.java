@@ -23,6 +23,9 @@ import Model.Team;
 
 public class TeamManagement {
 
+	private static HBox hbox;
+	private static Text att,def;
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
@@ -58,13 +61,12 @@ public class TeamManagement {
 		Style.setTextStyle(benchKeeper, 45);
 		Style.setLocation(benchKeeper, 1350, 680);
 		
-		Text att = new Text("Att: " + Math.round(saveGame.myteam.calcAttScore()));
+		att = new Text();
+		def = new Text();
 		Style.setTextStyle(att, 60);
-		
-		Text def = new Text("Def: " + Math.round(saveGame.myteam.calcDefScore()));
 		Style.setTextStyle(def, 60);
 		
-		HBox hbox = new HBox(40);
+		hbox = new HBox(40);
 		hbox.getChildren().addAll(att,def);
 		Style.setLocation(hbox, 780, 870);
 		
@@ -94,6 +96,8 @@ public class TeamManagement {
 		Style.setLocation(tableTeamKeeper, 1050, 700);
 		
 		refreshPlayers(tableSelectionField,tableSelectionKeeper,tableTeamField,tableTeamKeeper);
+		
+		
 		
 		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -295,7 +299,7 @@ public class TeamManagement {
 		
 		//Add elements to the canvas
 		root.getChildren().addAll(back, tableSelectionField, tableTeamField, tableSelectionKeeper, tableTeamKeeper, setup, bench, setupKeeper,benchKeeper);
-		root.getChildren().addAll(switchPlayer,switchKeeper,hbox);
+		root.getChildren().addAll(switchPlayer,switchKeeper, hbox);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -377,5 +381,10 @@ public class TeamManagement {
 		}
 		
 		tableTeamKeeper.setItems(teamKeeper);
+		
+		att.setText("Att: " + Math.round(saveGame.myteam.calcAttScore()));
+		
+		def.setText("Def: " + Math.round(saveGame.myteam.calcDefScore()));
+		
 	}
 }
