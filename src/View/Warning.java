@@ -3,6 +3,7 @@ package View;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
@@ -10,7 +11,8 @@ import javafx.stage.Popup;
 
 public abstract class Warning {
 	
-	public static Popup makeWarning(String t) {
+	public static Popup makeWarning(String t, Pane root) {
+		root.setDisable(true);
 		Popup warning = new Popup();
 		warning.centerOnScreen();
 		warning.setWidth(200);
@@ -30,8 +32,10 @@ public abstract class Warning {
 			@Override
 			public void handle(MouseEvent m){
 				warning.hide();
+				root.setDisable(false);
 			}
 		});
+		
 		warning.getContent().addAll(rect, text, confirm);
 		return warning;
 	}

@@ -24,4 +24,8 @@ public class saveGame {
 		return myteam;
 	}
 	
+	public static void write(String infile){
+		
+	}
+	
 }

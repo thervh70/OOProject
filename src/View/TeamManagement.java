@@ -98,7 +98,7 @@ public class TeamManagement {
 		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				movePlayer(tableSelectionField, tableTeamField, primaryStage);
+				movePlayer(tableSelectionField, tableTeamField, primaryStage, root);
 				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
@@ -106,7 +106,7 @@ public class TeamManagement {
 		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				moveKeeper(tableSelectionKeeper, tableTeamKeeper, primaryStage);
+				moveKeeper(tableSelectionKeeper, tableTeamKeeper, primaryStage, root);
 				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
@@ -310,7 +310,7 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
-	public static void movePlayer(TableView tableL, TableView tableR, Stage ps){
+	public static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
@@ -321,12 +321,12 @@ public class TeamManagement {
 			tableR.getSelectionModel().clearSelection();
 		}
 		else{
-			Popup wr = Warning.makeWarning("Nothing selected.");
+			Popup wr = Warning.makeWarning("Nothing selected.", root);
 			wr.show(ps);
 		}
 	}
 	
-	public static void moveKeeper(TableView tableL, TableView tableR, Stage ps){
+	public static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
@@ -337,7 +337,7 @@ public class TeamManagement {
 			tableR.getSelectionModel().clearSelection();
 		}
 		else{
-			Popup wr = Warning.makeWarning("Nothing selected.");
+			Popup wr = Warning.makeWarning("Nothing selected.", root);
 			wr.show(ps);
 		}
 	}
