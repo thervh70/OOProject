@@ -96,8 +96,8 @@ public class TeamManagement {
 		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				movePlayer(tableSelectionField);
-				refreshPlayers(tableTeamField, tableTeamKeeper, tableTeamField, tableTeamKeeper);
+				movePlayer(tableSelectionField, tableTeamField);
+				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
 		
@@ -300,12 +300,14 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
-	public static void movePlayer(TableView table){
-		Player p = (Player)table.getSelectionModel().getSelectedItem();
+	public static void movePlayer(TableView tableL, TableView tableR){
+		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
+		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
-		myTeam.fromSelection(p);
-		System.out.println(p.toString());
-		
+		myTeam.fromSelection(pL);
+		myTeam.toSelection(pR);
+		System.out.println(pL.toString());
+		System.out.println(pR.toString());
 	}
 	
 	public static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
