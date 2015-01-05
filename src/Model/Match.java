@@ -9,15 +9,15 @@ public class Match {
 	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
 	boolean played;
 	
-	public Match(int day, int homeIndex, int awayIndex){
-		this.setHomeIndex(homeIndex);
-		this.setAwayIndex(awayIndex);
+	public Match(int day, Team teamHome, Team teamAway){
+		this.setTeamHome(teamHome);
+		this.setTeamAway(teamAway);
 		this.day = day;
 		this.played = false;
 	}
 	
 	public String toString(){
-		String txt = "Match( Home: " + teamHome.getNm()+ ", Away: " + teamAway.getNm()+ ")";  
+		String txt = "Match( Day: "+ day + ", Home: " + teamHome.getNm()+ ", Away: " + teamAway.getNm()+ ")";  
 		//String txt= Integer.toString(homeIndex) + " " + Integer.toString(awayIndex) + " "+ Integer.toString(day);
 		
 		return txt;
@@ -45,5 +45,9 @@ public class Match {
 	
 	public void setTeamAway(Team team){
 		this.teamAway = team; 
+	}
+	
+	public int getDay(){
+		return this.day;
 	}
 }
