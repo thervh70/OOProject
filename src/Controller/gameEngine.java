@@ -28,8 +28,8 @@ public class gameEngine {
 	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
 	
 	private static double amount = 1000;
-	private static int a = 10;
-	private static int b= 16;
+	private static int a = 7;
+	private static int b= 5;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -201,11 +201,11 @@ public class gameEngine {
 		double a = 0,b = 0;
 		int c = 0;
 		
-		attempts = (int) Math.round((Math.random()*(att/6)+1));
+		attempts = (int) Math.round((Math.random()*(att/30)+1));
 		
 		for(int i = 0; i < attempts; i++){
-			a = att*(Math.random()); 
-			b = def*(Math.random()+.2); //correction ensures not too much goals are made
+			a = att*(Math.random()+.2); 
+			b = def*(Math.random()); //correction ensures not too much goals are made
 			
 			if(a>b){ 
 				c++;

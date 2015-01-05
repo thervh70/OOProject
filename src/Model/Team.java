@@ -192,7 +192,7 @@ public class Team {
 	 * @return An attacking score value
 	 */
 	
-	public double calcAttScore(){
+	public int calcAttScore(){
 		double score = 0;
 		
 		for(int i = 0; i < selection.size(); i++){
@@ -202,14 +202,10 @@ public class Team {
 			}
 		}
 		
-		int count = this.count(3) + this.count(4);
-				
-		score /= count;
 		score = Math.round(score);
+		//score = map(score, 300, 700, 0, 100);
 		
-		score = map(score, 0, 60, 0, 100);
-		
-		return score;
+		return (int) score;
 	}
 	
 	/**The defending score of a team is calculated.
@@ -221,7 +217,7 @@ public class Team {
 	 * @return A defending score value
 	 */
 	
-	public double calcDefScore(){
+	public int calcDefScore(){
 		double score = 0;
 	
 		for(int i = 0; i < selection.size(); i++){
@@ -236,14 +232,10 @@ public class Team {
 			score += k.calcScore();		
 		}
 		
-		int count = this.count(0) + this.count(1) + this.count(2);
-		
-		score /= count;
 		score = Math.round(score);
+		//score = map(score, 100, 400, 0, 100);
 		
-		score = map(score, 0, 60, 0, 100);
-		
-		return score;
+		return (int) score;
 	}
 	
 	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
