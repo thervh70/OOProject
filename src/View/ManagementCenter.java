@@ -12,6 +12,8 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
@@ -81,34 +83,42 @@ public class ManagementCenter {
 			@Override
 			public void handle(ActionEvent e) {
 				
+				
 				Popup save = new Popup();
 				save.setHeight(200);
 				save.setWidth(500);
 				save.centerOnScreen();
-				
+				Rectangle rect = new Rectangle(500, 300, Color.WHITESMOKE);
+				rect.setLayoutX(-62);
+				rect.setLayoutY(110);
+				rect.setArcHeight(30);
+				rect.setArcWidth(30);
 				Text overwrite = new Text("Saving the game will overwrite your previous save state");
 				Text overwrite2 = new Text("Are you sure you want to overwrite?");
 				Button yes = new Button("Yes");
 				Button no = new Button("No");
-				
+				root.setDisable(true);
 				//Not in new location format!!
 				overwrite.setLayoutY(200);
+				overwrite.setStyle("-fx-text-alignment: CENTER;");
 				overwrite2.setLayoutY(250);
+				overwrite2.setStyle("-fx-text-alignment: CENTER;");
+				
 				yes.setLayoutX(10);
 				yes.setLayoutY(300);
 				no.setLayoutX(310);
 				no.setLayoutY(300);
 				
-				save.getContent().addAll(overwrite, overwrite2, yes, no);
-				root.setVisible(false);
-				
+				save.getContent().addAll(rect, overwrite, overwrite2, yes, no);
+				Popup warning = Warning.makeWarning("Hoi");
+				warning.show(primaryStage);
 				save.show(primaryStage);
 				
 				yes.setOnAction(new EventHandler<ActionEvent>() {
 					@Override
 					public void handle(ActionEvent e) {
 						save.hide();
-						root.setVisible(true);
+						root.setDisable(false);
 					}
 				});
 				
@@ -116,7 +126,7 @@ public class ManagementCenter {
 					@Override
 					public void handle(ActionEvent e) {
 						save.hide();
-						root.setVisible(true);
+						root.setDisable(false);
 					}
 				});
 				
