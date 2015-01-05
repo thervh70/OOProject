@@ -40,7 +40,7 @@ public class LoadGame {
 		
 		ArrayList<String> files = new ArrayList<String>();
 		try {
-			Files.walk(Paths.get("src/Controller/Resources/")).forEach(filePath -> {
+			Files.walk(Paths.get("src/Model/Resources/")).forEach(filePath -> {
 			    if (Files.isRegularFile(filePath)) {
 			    	String file = filePath.toString();
 			    	String[] parts = file.split("\\\\");
