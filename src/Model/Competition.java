@@ -28,10 +28,13 @@ public class Competition {
 	}
 	
 	public ArrayList<Match> GetMatchesForDay(int day){
-		ArrayList<Match> matches= new ArrayList<Match>()
+		ArrayList<Match> matches= new ArrayList<Match>();
 		Competition comp = Scheduler.generate();
 		for (int i = 0; i < comp.getSize(); i++) {
-			if(comp.get(i).)
+			if(comp.get(i).getDay() == i){
+				matches.add(comp.get(i));
+			}
 		}
+		return matches;
 	}
 }
