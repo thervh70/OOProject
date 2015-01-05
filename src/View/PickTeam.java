@@ -290,7 +290,7 @@ public class PickTeam{
 				}
 				
 				Team t = teams.getTeam(choice);
-				saveGame.myteam = t;
+				saveGame.setMyteam(t);
 				
 				ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
 				for (int j = 0; j < t.getSize(); j++) {

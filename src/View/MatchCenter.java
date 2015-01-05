@@ -43,7 +43,7 @@ public class MatchCenter {
 		Style.setLabelStyle(timerLabel, 60);
        
 		DBmain d = XmlParser.parseDB();
-		Team alpha = saveGame.myteam;
+		Team alpha = saveGame.getMyTeam();
 		Team beta = d.getTeam(0);
 		gameEngine match = new gameEngine();
 		
