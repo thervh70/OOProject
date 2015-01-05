@@ -12,7 +12,11 @@ public class Competition {
 	}
 	
 	public String toString(){
-		return matches.toString();
+		String txt = "";
+		for(int i=0;i < matches.size();i++){
+		txt+=matches.get(i).toString();
+		}
+		return txt;
 	}
 	
 	public int getSize(){
@@ -23,4 +27,14 @@ public class Competition {
 		return matches.get(index);
 	}
 	
+	public ArrayList<Match> GetMatchesForDay(int day){
+		ArrayList<Match> matches= new ArrayList<Match>();
+		Competition comp = Scheduler.generate();
+		for (int i = 0; i < comp.getSize(); i++) {
+			if(comp.get(i).getDay() == i){
+				matches.add(comp.get(i));
+			}
+		}
+		return matches;
+	}
 }
