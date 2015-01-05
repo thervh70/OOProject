@@ -16,6 +16,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.scene.control.TableView;
+import Model.Team;
 
 public class TeamManagement {
 
@@ -57,6 +59,8 @@ public class TeamManagement {
 		Button switchLeftPlayer = new Button("-->");
 		Style.setButtonStyle(switchLeftPlayer, 45);
 		Style.setLocation(switchLeftPlayer, 900, 375);
+		
+
 		
 		Button switchRightPlayer = new Button("<--");
 		Style.setButtonStyle(switchRightPlayer, 45);
@@ -132,6 +136,12 @@ public class TeamManagement {
 		
 		tableTeamKeeper.setItems(teamKeeper);
 		
+		switchLeftPlayer.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				movePlayer(tableSelectionField);
+			}
+		});
 		
 		//Columns for Team Fieldplayers
 		TableColumn name = new TableColumn("Name");
@@ -326,7 +336,17 @@ public class TeamManagement {
 			}
 		});
 		
+		
+		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
+	}
+	
+	public static void movePlayer(TableView table){
+		Player p = (Player)table.getSelectionModel().getSelectedItem();
+		Team myTeam = saveGame.myteam;
+		myTeam.fromSelection(p);
+		System.out.println(p.toString());
+		
 	}
 }
