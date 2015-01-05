@@ -18,6 +18,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
 import javafx.scene.control.TableView;
+import View.Warning;
 import Model.Team;
 
 public class TeamManagement {
@@ -97,7 +98,7 @@ public class TeamManagement {
 		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				movePlayer(tableSelectionField, tableTeamField);
+				movePlayer(tableSelectionField, tableTeamField, primaryStage);
 				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
@@ -105,7 +106,7 @@ public class TeamManagement {
 		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				moveKeeper(tableSelectionKeeper, tableTeamKeeper);
+				moveKeeper(tableSelectionKeeper, tableTeamKeeper, primaryStage);
 				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
@@ -309,7 +310,7 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
-	public static void movePlayer(TableView tableL, TableView tableR){
+	public static void movePlayer(TableView tableL, TableView tableR, Stage ps){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
@@ -320,11 +321,12 @@ public class TeamManagement {
 			tableR.getSelectionModel().clearSelection();
 		}
 		else{
-			System.out.println("Nothing selected.");
+			Popup wr = Warning.makeWarning("Nothing selected.");
+			wr.show(ps);
 		}
 	}
 	
-	public static void moveKeeper(TableView tableL, TableView tableR){
+	public static void moveKeeper(TableView tableL, TableView tableR, Stage ps){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
@@ -335,8 +337,8 @@ public class TeamManagement {
 			tableR.getSelectionModel().clearSelection();
 		}
 		else{
-			Popup warning = new Popup(Warning.makeWarning("Nothing selected."));
-			System.out.println("Nothing selected.");
+			Popup wr = Warning.makeWarning("Nothing selected.");
+			wr.show(ps);
 		}
 	}
 	
