@@ -340,21 +340,21 @@ public class MatchCenter {
 			Style.setLocation(text, 1350, 600);
 		}
 		
-		ScaleTransition st = new ScaleTransition(Duration.millis(750), text);
+		ScaleTransition st = new ScaleTransition(Duration.millis(1000), text);
 		st.setByX(1);
 	    st.setByY(1);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();
 	    
-		FadeTransition ft = new FadeTransition(Duration.millis(750), text);
+		FadeTransition ft = new FadeTransition(Duration.millis(1000), text);
 		ft.setAutoReverse(true);
 		ft.setCycleCount(2);
 		ft.setToValue(1);
 		ft.setFromValue(0);
 		ft.play();
 	    
-	    RotateTransition rt = new RotateTransition(Duration.millis(750), text);
+	    RotateTransition rt = new RotateTransition(Duration.millis(1000), text);
 	    rt.setByAngle(720);
 	    rt.setCycleCount(2);
 	    rt.setAutoReverse(true);
