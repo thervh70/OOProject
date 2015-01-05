@@ -9,7 +9,7 @@ public class saveGame {
 	public static DBmain teams;
 	public static Team myteam;
 
-	public static void read(String infile){
+	public static void read(String infile) throws NullPointerException{
 		teams = XmlParser.parseDB(infile);
 		myteam = teams.getTeam(8);
 		

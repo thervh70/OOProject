@@ -78,7 +78,7 @@ public class XmlParser {
 	 * @param infile
 	 */
 	
-	public static DBmain parseDB(String infile) {
+	public static DBmain parseDB(String infile) throws NullPointerException {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
 		DBmain d = new DBmain();
@@ -107,7 +107,7 @@ public class XmlParser {
 	 * @return
 	 */
 	
-	public static Team parseTeam(NodeList teamattrs) {
+	public static Team parseTeam(NodeList teamattrs) throws NullPointerException {
 		//Iterating through the nodes and extracting the data. Because of I don't know, only the odd items contain players
 	    NodeList teamattributes = teamattrs;
 	    String teamname = teamattributes.item(1).getTextContent();

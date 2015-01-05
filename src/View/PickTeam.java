@@ -25,11 +25,12 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class PickTeam{
 	
-	public static int choice = 0;
+	private static int choice = -1;
 	private static TableView<Fieldplayer> tableTeamField;
 	private static TableView<Goalkeeper> tableTeamKeeper;
 	
@@ -228,7 +229,13 @@ public class PickTeam{
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e){
-				ManagementCenter.start(primaryStage);
+				if(choice == -1){
+					Popup warning = Warning.makeWarning("No team selected", root);
+					warning.show(primaryStage);
+				}
+				else{
+					ManagementCenter.start(primaryStage);
+				}
 			}
 		});
 
@@ -236,6 +243,7 @@ public class PickTeam{
 		Back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e){
+				choice = -1;
 				StartupMenu.start(primaryStage);
 			}
 		});

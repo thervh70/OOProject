@@ -14,6 +14,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class LoadGame {
@@ -60,8 +61,14 @@ public class LoadGame {
 			Style.setLocation(buttons[i], 700, (200 + i*55));
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
 				public void handle(ActionEvent e){
-					saveGame.read(infile);
-					LoadingScreen.start(primaryStage);
+					try{
+						saveGame.read(infile);
+						LoadingScreen.start(primaryStage);
+					} catch (NullPointerException e1){
+						Popup warning = Warning.makeWarning("Invalid File", root);
+						warning.show(primaryStage);
+					}
+					
 				}
 
 				

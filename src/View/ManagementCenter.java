@@ -110,8 +110,6 @@ public class ManagementCenter {
 				no.setLayoutY(300);
 				
 				save.getContent().addAll(rect, overwrite, overwrite2, yes, no);
-				Popup warning = Warning.makeWarning("Hoi", root);
-				warning.show(primaryStage);
 				save.show(primaryStage);
 				
 				yes.setOnAction(new EventHandler<ActionEvent>() {
