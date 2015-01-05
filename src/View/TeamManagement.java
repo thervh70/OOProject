@@ -29,23 +29,13 @@ public class TeamManagement {
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
 		
-		Button switchLeftPlayer = new Button("-->");
-		Style.setButtonStyle(switchLeftPlayer, 45);
-		Style.setLocation(switchLeftPlayer, 900, 375);
+		Button switchPlayer = new Button("<->");
+		Style.setButtonStyle(switchPlayer, 45);
+		Style.setLocation(switchPlayer, 900, 375);
 		
-
-		
-		Button switchRightPlayer = new Button("<--");
-		Style.setButtonStyle(switchRightPlayer, 45);
-		Style.setLocation(switchRightPlayer, 900, 450);
-		
-		Button switchLeftKeeper = new Button("-->");
-		Style.setButtonStyle(switchLeftKeeper, 45);
-		Style.setLocation(switchLeftKeeper, 900, 700);
-		
-		Button switchRightKeeper = new Button("<--");
-		Style.setButtonStyle(switchRightKeeper, 45);
-		Style.setLocation(switchRightKeeper, 900, 775);
+		Button switchKeeper = new Button("<->");
+		Style.setButtonStyle(switchKeeper, 45);
+		Style.setLocation(switchKeeper, 900, 750);
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_team-management.png"));
 		
@@ -103,7 +93,7 @@ public class TeamManagement {
 		
 		refreshPlayers(tableSelectionField,tableSelectionKeeper,tableTeamField,tableTeamKeeper);
 		
-		switchLeftPlayer.setOnAction(new EventHandler<ActionEvent>() {
+		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
 				movePlayer(tableSelectionField);
@@ -295,7 +285,7 @@ public class TeamManagement {
 		
 		//Add elements to the canvas
 		root.getChildren().addAll(back, tableSelectionField, tableTeamField, tableSelectionKeeper, tableTeamKeeper, setup, bench, setupKeeper,benchKeeper);
-		root.getChildren().addAll(switchLeftPlayer,switchRightPlayer,switchLeftKeeper,switchRightKeeper,hbox);
+		root.getChildren().addAll(switchPlayer,switchKeeper,hbox);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
