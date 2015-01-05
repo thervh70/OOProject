@@ -25,33 +25,6 @@ public class TeamManagement {
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
-		ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
-		for (int i = 0; i < 11; i++) {
-			Player p = saveGame.myteam.getSelectionPlayer(i);
-			if(p instanceof Fieldplayer)
-				selectionField.add((Fieldplayer) p);
-		}
-		
-		ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
-		for (int j = 0; j < saveGame.myteam.getSize(); j++) {
-			Player p = saveGame.myteam.getPlayer(j);
-			if(!saveGame.myteam.getSelection().contains(p) && p instanceof Fieldplayer){
-				teamField.add((Fieldplayer) p);
-			}
-		}
-		
-		ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
-		Goalkeeper g = saveGame.myteam.getSelectionKeeper();
-		selectionKeeper.add(g);
-		
-		ObservableList<Goalkeeper> teamKeeper = FXCollections.observableArrayList();
-		for(int i = 0; i < saveGame.myteam.getSize(); i++){
-			Player p = saveGame.myteam.getPlayer(i);
-			if(!saveGame.myteam.getSelection().contains(p) && p instanceof Goalkeeper){
-				teamKeeper.add((Goalkeeper) p);
-			}
-		}
-		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
@@ -75,7 +48,6 @@ public class TeamManagement {
 		Style.setLocation(switchRightKeeper, 900, 775);
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_team-management.png"));
-
 		
 		Text setup = new Text("Set-up");
 		Text bench = new Text("Bench");
@@ -110,7 +82,6 @@ public class TeamManagement {
 		tableSelectionField.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
 		Style.setLocation(tableSelectionField, 150, 250);
 		
-		tableSelectionField.setItems(selectionField);
 		
 		//Separate table for Keepers in Field
 		TableView<Goalkeeper> tableSelectionKeeper = new TableView<Goalkeeper>();
@@ -118,28 +89,25 @@ public class TeamManagement {
 		tableSelectionKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
 		Style.setLocation(tableSelectionKeeper, 150, 700);
 		
-		tableSelectionKeeper.setItems(selectionKeeper);
-		
 		//Create a table for the bench with fixed columns
 		TableView<Fieldplayer> tableTeamField = new TableView<Fieldplayer>();
 		tableTeamField.setEditable(false);
 		tableTeamField.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
 		Style.setLocation(tableTeamField, 1050, 250);
 		
-		tableTeamField.setItems(teamField);
-
 		//Additional table for keepers
 		TableView<Goalkeeper> tableTeamKeeper = new TableView<Goalkeeper>();
 		tableTeamKeeper.setEditable(false);
 		tableTeamKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
 		Style.setLocation(tableTeamKeeper, 1050, 700);
 		
-		tableTeamKeeper.setItems(teamKeeper);
+		refreshPlayers(tableSelectionField,tableSelectionKeeper,tableTeamField,tableTeamKeeper);
 		
 		switchLeftPlayer.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
 				movePlayer(tableSelectionField);
+				refreshPlayers(tableTeamField, tableTeamKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
 		
@@ -348,5 +316,42 @@ public class TeamManagement {
 		myTeam.fromSelection(p);
 		System.out.println(p.toString());
 		
+	}
+	
+	public static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
+		ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
+		for (int i = 0; i < 11; i++) {
+			Player p = saveGame.myteam.getSelectionPlayer(i);
+			if(p instanceof Fieldplayer)
+				selectionField.add((Fieldplayer) p);
+		}
+		
+		tableSelectionField.setItems(selectionField);
+		
+		ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
+		for (int j = 0; j < saveGame.myteam.getSize(); j++) {
+			Player p = saveGame.myteam.getPlayer(j);
+			if(!saveGame.myteam.getSelection().contains(p) && p instanceof Fieldplayer){
+				teamField.add((Fieldplayer) p);
+			}
+		}
+		
+		tableTeamField.setItems(teamField);
+		
+		ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
+		Goalkeeper g = saveGame.myteam.getSelectionKeeper();
+		selectionKeeper.add(g);
+		
+		tableSelectionKeeper.setItems(selectionKeeper);
+		
+		ObservableList<Goalkeeper> teamKeeper = FXCollections.observableArrayList();
+		for(int i = 0; i < saveGame.myteam.getSize(); i++){
+			Player p = saveGame.myteam.getPlayer(i);
+			if(!saveGame.myteam.getSelection().contains(p) && p instanceof Goalkeeper){
+				teamKeeper.add((Goalkeeper) p);
+			}
+		}
+		
+		tableTeamKeeper.setItems(teamKeeper);
 	}
 }
