@@ -15,6 +15,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 import javafx.scene.control.TableView;
 import Model.Team;
@@ -97,6 +98,14 @@ public class TeamManagement {
 			@Override
 			public void handle(ActionEvent e) {
 				movePlayer(tableSelectionField, tableTeamField);
+				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
+			}
+		});
+		
+		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				moveKeeper(tableSelectionKeeper, tableTeamKeeper);
 				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
 			}
 		});
@@ -304,10 +313,31 @@ public class TeamManagement {
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.myteam;
-		myTeam.fromSelection(pL);
-		myTeam.toSelection(pR);
-		System.out.println(pL.toString());
-		System.out.println(pR.toString());
+		if(pL instanceof Fieldplayer & pR instanceof Fieldplayer){
+			myTeam.fromSelection(pL);
+			myTeam.toSelection(pR);
+			tableL.getSelectionModel().clearSelection();
+			tableR.getSelectionModel().clearSelection();
+		}
+		else{
+			System.out.println("Nothing selected.");
+		}
+	}
+	
+	public static void moveKeeper(TableView tableL, TableView tableR){
+		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
+		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
+		Team myTeam = saveGame.myteam;
+		if(pL instanceof Goalkeeper & pR instanceof Goalkeeper){
+			myTeam.fromSelection(pL);
+			myTeam.toSelection(pR);
+			tableL.getSelectionModel().clearSelection();
+			tableR.getSelectionModel().clearSelection();
+		}
+		else{
+			Popup warning = new Popup(Warning.makeWarning("Nothing selected."));
+			System.out.println("Nothing selected.");
+		}
 	}
 	
 	public static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
