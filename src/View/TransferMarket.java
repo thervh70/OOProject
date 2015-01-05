@@ -81,7 +81,7 @@ public class TransferMarket {
 		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
 
 		DBmain d = XmlParser.parseDB();
-		Team t = saveGame.myteam;
+		Team t = saveGame.getMyTeam();
 		
 		ObservableList<Player> user = FXCollections.observableArrayList(t.getPlayer(0));
 		
