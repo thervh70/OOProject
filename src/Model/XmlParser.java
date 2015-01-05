@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import Controller.CreateSelection;
+import Controller.*;
 
 import javax.xml.parsers.*;
 
@@ -21,16 +21,17 @@ public class XmlParser {
 	
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
-		System.out.println(d);
-		DBmain db = new DBmain();
-		for(int i=0;i<18;i++) {
+//		System.out.println(d);
+		GetPlayerPrice.playerPriceInXML(d);
+		DBmain res = new DBmain();
+		for(int i=0;i<d.getSize();i++) {
 			Team t = d.getTeam(i);
-			t.removeSelection();
-			t = CreateSelection.create(t);
-			db.addTeam(t);
+			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
+			resT = CreateSelection.create(t);
+			res.addTeam(resT);
 		}
-		System.out.println(db);
-		writeToXML(db);
+		System.out.println(res);
+		writeToXML(res);
 	}
 	
 	/**

@@ -1,3 +1,4 @@
+package Controller;
 
 
 import Model.DBmain;
@@ -13,7 +14,7 @@ public class GetPlayerPrice {
 	 * @return DBmain
 	 */
 	
-	public static DBmain priceInXML(DBmain db) {
+	public static DBmain playerPriceInXML(DBmain db) {
 		DBmain res = new DBmain();
 		for(int i=0;i<db.getSize();i++) {
 			Team t = db.getTeam(i);
@@ -25,6 +26,24 @@ public class GetPlayerPrice {
 					resT.addPlayer(resP);
 				}
 				else if(t.getPlayer(j) instanceof Goalkeeper) {
+					Goalkeeper gk = (Goalkeeper)(t.getPlayer(j));
+					Goalkeeper resGk = defineKeeperPrice(gk);
+					resT.addPlayer(resGk);
+				}
+			}
+			res.addTeam(resT);
+//			System.out.println(res);
+		}
+		return res;
+	}
+	
+	public static DBmain keeperPriceInXML(DBmain db) {
+		DBmain res = new DBmain();
+		for(int i=0;i<db.getSize();i++) {
+			Team t = db.getTeam(i);
+			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
+			for(int j=0;j<t.getSize();j++) {
+				if(t.getPlayer(j) instanceof Goalkeeper) {
 					Goalkeeper gk = (Goalkeeper)(t.getPlayer(j));
 					Goalkeeper resGk = defineKeeperPrice(gk);
 					resT.addPlayer(resGk);
