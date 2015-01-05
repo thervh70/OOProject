@@ -15,18 +15,20 @@ public abstract class Warning {
 		root.setDisable(true);
 		Popup warning = new Popup();
 		warning.centerOnScreen();
-		warning.setWidth(200);
-		warning.setHeight(500);
-		Rectangle rect = new Rectangle(500, 300, Color.WHITESMOKE);
-		rect.setLayoutX(-62);
-		rect.setLayoutY(110);
+		warning.setWidth(Style.getNewSize(200));
+		warning.setHeight(Style.getNewSize(500));
+		Rectangle rect = new Rectangle(Style.getNewSize(500), Style.getNewSize(300), Color.WHITESMOKE);
+		Style.setLocation(rect, -62, 110);
 		rect.setArcHeight(30);
 		rect.setArcWidth(30);
 		Text text = new Text(t);
-		text.setLayoutY(250);
+		Style.setLocation(text, 0, 250);
+		Style.setTextStyle(text, 40);
+		text.setFill(Color.BLACK);
 		Button confirm = new Button("OK");
-		confirm.setLayoutX(165);
-		confirm.setLayoutY(300);
+		Style.setLocation(confirm, 165, 300);
+		Style.setButtonStyle(confirm, 40);
+		
 		
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
