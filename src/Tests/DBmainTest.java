@@ -34,7 +34,7 @@ public class DBmainTest {
 			+ "      <BUDGET>150000</BUDGET>\r\n"
 			+ "      <SELECTION>\r\n"
 			+ "      </SELECTION>\r\n"
-			+ "      <SUBSTITUTES>\r\n"
+			+ "      <TEAMMEMBERS>\r\n"
 			+ "         <PLAYER>\r\n"
 			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
 			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
@@ -48,7 +48,7 @@ public class DBmainTest {
 			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
 			+ "            <TYPE>RB</TYPE>\r\n"
 			+ "         </PLAYER>\r\n"
-			+ "      </SUBSTITUTES>\r\n"
+			+ "      </TEAMMEMBERS>\r\n"
 			+ "   </TEAM>\r\n"
 			+ "</DATABASE>\r\n";
 
@@ -107,9 +107,22 @@ public class DBmainTest {
 		d2.addTeam(t2);
 		assertTrue(d1.equals(d2));
 		d1.addTeam(t1);
+		d3.addTeam(t2);
 		d3.addTeam(t3);
 		assertFalse(d1.equals(d3));
+		d3.removeTeam(t3);
+		assertFalse(d1.equals(d3));
 		assertFalse(d1.equals(write));
+	}
+	
+	@Test
+	public void removeTeamTest() {
+		d1.addTeam(t1);
+		assertEquals(d1.getSize(), 1);
+		d1.removeTeam(t2);
+		assertEquals(d1.getSize(), 1);
+		d1.removeTeam(t1);
+		assertEquals(d1.getSize(), 0);
 	}
 
 }

@@ -189,7 +189,9 @@ public class TeamTest{
 	@Test
 	public void toWriteTest() {
 		t1.addPlayer(p1);t1.toSelection(p1);
-		t1.addPlayer(p3);t1.toSelection(p3);
+		t1.addPlayer(p3);
+		assertNotEquals(t1.toWrite(), res);
+		t1.toSelection(p3);
 		assertEquals(t1.toWrite(), res);
 	}
 	
@@ -244,7 +246,22 @@ public class TeamTest{
 	
 	@Test
 	public void countSelectionTest() {
-		
+		t1.addPlayer(p1);t1.toSelection(p1);
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p3);t1.toSelection(p3);
+		t1.addPlayer(p4);t1.toSelection(p4);
+		t1.addPlayer(p5);t1.toSelection(p5);
+		t1.addPlayer(p6);t1.toSelection(p6);
+		t1.addPlayer(p7);t1.toSelection(p7);
+		t1.addPlayer(p8);t1.toSelection(p8);
+		t1.addPlayer(p9);t1.toSelection(p9);
+		t1.addPlayer(p10);t1.toSelection(p10);
+		t1.addPlayer(p11);t1.toSelection(p11);
+		assertEquals(t1.countSelection(0), 2);
+		assertEquals(t1.countSelection(1), 3);
+		assertEquals(t1.countSelection(2), 2);
+		assertEquals(t1.countSelection(3), 3);
+		assertEquals(t1.countSelection(4), 1);
 	}
 	
 	@Test
@@ -261,6 +278,83 @@ public class TeamTest{
 		t1.addPlayer(p4);
 		t2.setNm("Ajax");
 		assertFalse(t1.equals(t2));
+		t2.setBdgt_rel(1000000);
+		t2.setBdgt_vir(1000000);
+		assertFalse(t1.equals(t2));
+	}
+	
+	@Test
+	public void getTeamTest() {
+		assertEquals(t1.getTeam().size(), 0);
+		t1.addPlayer(p1);
+		assertEquals(t1.getTeam().size(), 1);
+	}
+	
+	@Test
+	public void getSelectionTest() {
+		assertEquals(t1.getSelection().size(), 0);
+		t1.addPlayer(p1);
+		assertEquals(t1.getSelection().size(), 0);
+		t1.toSelection(p1);
+		assertEquals(t1.getSelection().size(), 1);
+	}
+	
+	@Test
+	public void getNmTest() {
+		assertEquals(t1.getNm(), "Ajax");
+		assertNotEquals(t2.getNm(), "Ajax");
+	}
+	
+	@Test
+	public void getBdgt_virTest() {
+		assertEquals(t1.getBdgt_vir(), 100000);
+		assertNotEquals(t2.getBdgt_vir(), 1500000);
+	}
+	
+	@Test
+	public void getBdgt_relTest() {
+		assertEquals(t1.getBdgt_rel(), 150000);
+		assertNotEquals(t2.getBdgt_rel(), 1000000);
+	}
+	
+	@Test
+	public void getSizeTest() {
+		assertEquals(t1.getSize(), 0);
+		t1.addPlayer(p1);
+		assertEquals(t1.getSize(), 1);
+	}
+	
+	@Test
+	public void getSelectionSizeTest() {
+		assertEquals(t1.getSelectionSize(), 0);
+		t1.addPlayer(p1);
+		assertEquals(t1.getSelectionSize(), 0);
+		t1.toSelection(p1);
+		assertEquals(t1.getSelectionSize(), 1);
+	}
+	
+	@Test
+	public void getPlayerTest() {
+		t1.addPlayer(p1);
+		assertEquals(p1, t1.getPlayer(0));
+	}
+	
+	@Test
+	public void getSelectionPlayerTest() {
+		t1.addPlayer(p1);t1.toSelection(p1);
+		assertEquals(p1, t1.getSelectionPlayer(0));
+		t1.addPlayer(p2);t1.toSelection(p2);
+		assertNotEquals(p1, t1.getSelectionPlayer(1));
+	}
+	
+	@Test
+	public void getSelectionKeeper() {
+		t1.addPlayer(p1);t1.toSelection(p1);
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p3);
+		assertEquals(t1.getSelectionKeeper(), null);
+		t1.toSelection(p3);
+		assertEquals(t1.getSelectionKeeper(), p3);
 	}
 	
 	@Test

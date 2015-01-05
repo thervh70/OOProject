@@ -160,7 +160,7 @@ public class Team {
 					Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
 					res += p.toWrite();
 				}
-				else if(this.getPlayer(i) instanceof Goalkeeper) {
+				if(this.getPlayer(i) instanceof Goalkeeper) {
 					Goalkeeper g = (Goalkeeper)(this.getPlayer(i));
 					res += g.toWrite();
 				}
@@ -173,7 +173,7 @@ public class Team {
 				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
 				res += p.toWrite();
 			}
-			else if(this.getPlayer(i) instanceof Goalkeeper) {
+			if(this.getPlayer(i) instanceof Goalkeeper) {
 				Goalkeeper g = (Goalkeeper)(this.getPlayer(i));
 				res += g.toWrite();
 			}

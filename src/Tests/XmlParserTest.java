@@ -32,7 +32,7 @@ public class XmlParserTest {
 		assertTrue(d1.getSize() == 0);
 		d1 = XmlParser.parseDB();
 		assertFalse(d1.getSize() == 0);
-		d2 = XmlParser.parseDB("Database_v5.xml");
+		d2 = XmlParser.parseDB("Database_v8.xml");
 	}
 	
 	@Test
