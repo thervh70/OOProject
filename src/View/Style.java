@@ -31,7 +31,7 @@ public abstract class Style {
 		BackgroundFill fill = new BackgroundFill(color, corner, inset);
 		Background buttonBack = new Background(fill);
 	 
-		Font buttonFont = new Font("Agency FB", getNewSize(size));
+		Font buttonFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
 		
 		b.setBackground(buttonBack);
 		b.setFont(buttonFont);
@@ -60,14 +60,14 @@ public abstract class Style {
 	}
 	
 	public static void setTextStyle(Text t, int size){
-		Font textFont = new Font("Agency FB", getNewSize(size));
+		Font textFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
 		Color color = Color.WHITESMOKE;
 		t.setFont(textFont);
 		t.setFill(color);
 	}
 	
 	public static void setLabelStyle(Label l, int size){
-	   	Font textFont = new Font("Agency FB", getNewSize(size));
+	   	Font textFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
 	   	Color color = Color.WHITESMOKE;
 		l.setFont(textFont);
 		l.setTextFill(color);
