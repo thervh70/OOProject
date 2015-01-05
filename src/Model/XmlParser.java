@@ -20,7 +20,9 @@ public class XmlParser {
 	 */
 	
 	public static void main(String[] args) throws Exception {
-		DBmain d = parseDB();
+		
+
+/*		DBmain d = parseDB();
 //		System.out.println(d);
 		GetPlayerPrice.playerPriceInXML(d);
 		DBmain res = new DBmain();
@@ -31,7 +33,7 @@ public class XmlParser {
 			res.addTeam(resT);
 		}
 		System.out.println(res);
-		writeToXML(res);
+		writeToXML(res);*/
 	}
 	
 	/**

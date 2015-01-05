@@ -14,9 +14,13 @@ public class TeamTest{
 	Fieldplayer p2 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, 33, 86, 16, 46, 71, 22);
 	Goalkeeper p3 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
 	Goalkeeper p4 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, 33, 86, 16, 46, 71, 46, 22);
-	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
+	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "LB", 21, 182556, 44, 56, 81, 39, 72, 58);
 	Fieldplayer p6 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, 66, 52, 39, 48, 56, 87);
 	Fieldplayer p7 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CB", 25, 154679, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p9 = new Fieldplayer("Gijsje", "Truusje", "CM", 25, 154679, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p10 = new Fieldplayer("Gijsje", "Truusje", "CAM", 25, 154679, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p11 = new Fieldplayer("Gijsje", "Truusje", "RW", 25, 154679, 65, 49, 87, 55, 69, 47);
 
 	Team t1 = new Team("Ajax", 100000, 150000);
 	Team t2 = new Team("Feyenoord", 100000, 150000);
@@ -26,8 +30,6 @@ public class TeamTest{
 			+ "      <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>\r\n"
 			+ "      <BUDGET>150000</BUDGET>\r\n"
 			+ "      <SELECTION>\r\n"
-			+ "      </SELECTION>\r\n"
-			+ "      <SUBSTITUTES>\r\n"
 			+ "         <PLAYER>\r\n"
 			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
 			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
@@ -41,10 +43,61 @@ public class TeamTest{
 			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
 			+ "            <TYPE>RB</TYPE>\r\n"
 			+ "         </PLAYER>\r\n"
-			+ "      </SUBSTITUTES>\r\n"
+			+ "         <KEEPER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <DIVING>44</DIVING>\r\n"
+			+ "            <HANDLING>56</HANDLING>\r\n"
+			+ "            <KICKING>81</KICKING>\r\n"
+			+ "            <REFLEXES>39</REFLEXES>\r\n"
+			+ "            <SPEED>72</SPEED>\r\n"
+			+ "            <POSITIONING>55</POSITIONING>\r\n"
+			+ "            <HEIGHT>58</HEIGHT>\r\n"
+			+ "            <TYPE>GK</TYPE>\r\n"
+			+ "         </KEEPER>\r\n"
+			+ "      </SELECTION>\r\n"
+			+ "      <TEAMMEMBERS>\r\n"
+			+ "         <PLAYER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <PACE>44</PACE>\r\n"
+			+ "            <SHOOTING>56</SHOOTING>\r\n"
+			+ "            <PASSING>81</PASSING>\r\n"
+			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
+			+ "            <DEFENDING>72</DEFENDING>\r\n"
+			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
+			+ "            <TYPE>RB</TYPE>\r\n"
+			+ "         </PLAYER>\r\n"
+			+ "         <KEEPER>\r\n"
+			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
+			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
+			+ "            <AGE>21</AGE>\r\n"
+			+ "            <PRICE>182556</PRICE>\r\n"
+			+ "            <DIVING>44</DIVING>\r\n"
+			+ "            <HANDLING>56</HANDLING>\r\n"
+			+ "            <KICKING>81</KICKING>\r\n"
+			+ "            <REFLEXES>39</REFLEXES>\r\n"
+			+ "            <SPEED>72</SPEED>\r\n"
+			+ "            <POSITIONING>55</POSITIONING>\r\n"
+			+ "            <HEIGHT>58</HEIGHT>\r\n"
+			+ "            <TYPE>GK</TYPE>\r\n"
+			+ "         </KEEPER>\r\n"
+			+ "      </TEAMMEMBERS>\r\n"
 			+ "   </TEAM>\r\n";
-
 	
+	@Test
+	public void removeSelectionTest() {
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p3);t1.toSelection(p3);
+		t1.addPlayer(p4);t1.toSelection(p4);
+		assertTrue(t1.getSelection() != null);
+		t1.removeSelection();
+		assertTrue(t1.getSelection().size() == 0);
+	}
 	
 	@Test
 	public void addPlayerTest() {
@@ -65,13 +118,33 @@ public class TeamTest{
 	
 	@Test
 	public void removePlayer() {
-		t1.addPlayer(p1);
+		t1.addPlayer(p1);t1.toSelection(p1);
 		t1.addPlayer(p2);
 		t1.addPlayer(p3);
 		t1.addPlayer(p4);
 		assertEquals(t1.getSize(), 4);
+		t1.removePlayer(p1);
 		t1.removePlayer(p3);
-		assertEquals(t1.getSize(), 3);
+		t1.removePlayer(p5);
+		assertEquals(t1.getSize(), 2);
+	}
+	
+	@Test
+	public void toSelectionTest() {
+		t1.addPlayer(p1);
+		t1.toSelection(p1);
+		assertEquals(t1.getSize(), 1);
+		t1.toSelection(p1);
+		assertEquals(t1.getSize(), 1);
+	}
+	
+	@Test
+	public void fromSelectionTest() {
+		t1.addPlayer(p1);
+		t1.toSelection(p1);
+		assertEquals(t1.getSize(), 1);
+		t1.fromSelection(p1);
+		t1.fromSelection(p2);
 	}
 	
 	@Test
@@ -108,15 +181,19 @@ public class TeamTest{
 		t1.addPlayer(p1);
 		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
+		t1.toSelection(p1);
+		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\nSubstitutes:");
 	}
 	
 	@Test
 	public void toWriteTest() {
-		t1.addPlayer(p1);
+		t1.addPlayer(p1);t1.toSelection(p1);
+		t1.addPlayer(p3);t1.toSelection(p3);
 		assertEquals(t1.toWrite(), res);
 	}
 	
-	@Test
+/*	@Test
 	public void calcAttScoreTest() {
 		assertEquals(t1.calcAttScore(), 0, 0.001);
 		t1.addPlayer(p2);t1.toSelection(p2);
@@ -125,10 +202,11 @@ public class TeamTest{
 		t1.addPlayer(p5);t1.toSelection(p5);
 		t1.addPlayer(p6);t1.toSelection(p6);
 		t1.addPlayer(p7);t1.toSelection(p7);
-		assertEquals(t1.calcAttScore(), 52.0, 0.001);
+		assertEquals(t1.calcAttScore(), 86.7, 0.001);
 		t1.removePlayer(p2);
-		assertNotEquals(t1.calcAttScore(), 52.0, 0.001);
+		assertNotEquals(t1.calcAttScore(), 100.0, 0.001);
 	}
+
 	
 	@Test
 	public void calcDefScoreTest() {
@@ -142,22 +220,30 @@ public class TeamTest{
 		assertEquals(t1.calcDefScore(), 61.0, 0.001);
 		t1.removePlayer(p7);
 		assertNotEquals(t1.calcDefScore(), 64.0, 0.001);
-	}
+	}*/
 	
 	@Test
 	public void countTest() {
-		assertEquals(t1.count(0), 0);
-		t1.addPlayer(p3);
-		t1.addPlayer(p4);
-		assertEquals(t1.count(0), 2);
-		assertEquals(t1.count(1), 0);
-		t1.addPlayer(p5);
-		assertEquals(t1.count(1), 1);
-		t1.addPlayer(p2);
-		t1.addPlayer(p6);
+		t1.addPlayer(p1);	
+		t1.addPlayer(p2);	
+		t1.addPlayer(p3);	
+		t1.addPlayer(p4);	
+		t1.addPlayer(p5);	
+		t1.addPlayer(p6);	
 		t1.addPlayer(p7);
-		assertEquals(t1.count(3), 1);
-		assertEquals(t1.count(2), 1);
+		t1.addPlayer(p8);
+		t1.addPlayer(p9);
+		t1.addPlayer(p10);
+		t1.addPlayer(p11);
+		assertEquals(t1.count(0), 2);
+		assertEquals(t1.count(1), 3);
+		assertEquals(t1.count(2), 2);
+		assertEquals(t1.count(3), 3);
+		assertEquals(t1.count(4), 1);
+	}
+	
+	@Test
+	public void countSelectionTest() {
 		
 	}
 	

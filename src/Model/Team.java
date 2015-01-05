@@ -190,7 +190,7 @@ public class Team {
 	 * @return An attacking score value
 	 */
 	
-	public double calcAttScore(){
+/*	public double calcAttScore(){
 		double score = 0;
 		
 		for(int i = 0; i < selection.size(); i++){
@@ -208,7 +208,7 @@ public class Team {
 		score = map(score, 0, 60, 0, 100);
 		
 		return score;
-	}
+	}*/
 	
 	/**The defending score of a team is calculated.
 	 * This is done by adding all of the defending score of a player.
@@ -219,7 +219,7 @@ public class Team {
 	 * @return A defending score value
 	 */
 	
-	public double calcDefScore(){
+	/*public double calcDefScore(){
 		double score = 0;
 	
 		for(int i = 0; i < selection.size(); i++){
@@ -246,7 +246,7 @@ public class Team {
 	
 	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
 		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	}
+	}*/
 	
 	/**Count the amount of players of a certain type
 	 * 
@@ -276,6 +276,7 @@ public class Team {
 			case 4:
 				if(pos.equals("ST")) count++;
 				break;
+			default: break;
 			}
 		}
 		return count;
@@ -320,7 +321,7 @@ public class Team {
 	public boolean equals(Object other) {
 		if(other instanceof Team) {
 			Team that = (Team)(other);
-			if(!(this.getSize() == that.getSize() && this.getNm().equals(that.getNm()) && this.getBdgt_rel() == that.getBdgt_rel() && this.getBdgt_vir() == that.getBdgt_vir())) {
+			if(!(this.getSize() == that.getSize() & this.getNm().equals(that.getNm()) & this.getBdgt_rel() == that.getBdgt_rel() & this.getBdgt_vir() == that.getBdgt_vir())) {
 				return false;
 			}
 			for(int i=0; i<this.getSize(); i++) {

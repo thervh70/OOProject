@@ -103,16 +103,16 @@ public class Goalkeeper extends Player {
 	public boolean equals(Object other) {
 		if(other instanceof Goalkeeper) {
 			Goalkeeper that = (Goalkeeper)(other);
-			return this.getFnm().equals(that.getFnm()) &&
-					this.getLnm().equals(that.getLnm()) &&
-					this.getPos().equals(that.getPos()) &&
-					this.getPri() == that.getPri() &&
-					this.getAge() == that.getAge() &&
-					this.getDiv() == that.getDiv() &&
-					this.getHan() == that.getHan() &&
-					this.getKick() == that.getKick() &&
-					this.getRef() == that.getRef() &&
-					this.getPing() == that.getPing() &&
+			return this.getFnm().equals(that.getFnm()) &
+					this.getLnm().equals(that.getLnm()) &
+					this.getPos().equals(that.getPos()) &
+					this.getPri() == that.getPri() &
+					this.getAge() == that.getAge() &
+					this.getDiv() == that.getDiv() &
+					this.getHan() == that.getHan() &
+					this.getKick() == that.getKick() &
+					this.getRef() == that.getRef() &
+					this.getPing() == that.getPing() &
 					this.getHei() == that.getHei();
 		}
 		return false;

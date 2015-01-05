@@ -136,16 +136,16 @@ public class Fieldplayer extends Player {
 	public boolean equals(Object other) {
 		if(other instanceof Fieldplayer) {
 			Fieldplayer that = (Fieldplayer)(other);
-			return this.getFnm().equals(that.getFnm()) &&
-					this.getLnm().equals(that.getLnm()) &&
-					this.getPos().equals(that.getPos()) &&
-					this.getPri() == that.getPri() &&
-					this.getAge() == that.getAge() &&
-					this.getPac() == that.getPac() &&
-					this.getSho() == that.getSho() &&
-					this.getPas() == that.getPas() &&
-					this.getDri() == that.getDri() &&
-					this.getDef() == that.getDef() &&
+			return this.getFnm().equals(that.getFnm()) &
+					this.getLnm().equals(that.getLnm()) &
+					this.getPos().equals(that.getPos()) &
+					this.getPri() == that.getPri() &
+					this.getAge() == that.getAge() &
+					this.getPac() == that.getPac() &
+					this.getSho() == that.getSho() &
+					this.getPas() == that.getPas() &
+					this.getDri() == that.getDri() &
+					this.getDef() == that.getDef() &
 					this.getPhy() == that.getPhy();
 		}
 		return false;
