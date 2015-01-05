@@ -258,14 +258,14 @@ public class MatchCenter {
 			Style.setLocation(attempt, 1350, 600);
 		}
 		
-		ScaleTransition st = new ScaleTransition(Duration.millis(800), attempt);
+		ScaleTransition st = new ScaleTransition(Duration.millis(400), attempt);
 		st.setByX(1);
 	    st.setByY(1);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();
 		
-		FadeTransition ft = new FadeTransition(Duration.millis(800), attempt);
+		FadeTransition ft = new FadeTransition(Duration.millis(400), attempt);
 		ft.setAutoReverse(true);
 		ft.setCycleCount(2);
 		ft.setToValue(1);
@@ -306,14 +306,14 @@ public class MatchCenter {
 			Style.setLocation(text, 1350, 600);
 		}
 		
-		ScaleTransition st = new ScaleTransition(Duration.millis(800), text);
+		ScaleTransition st = new ScaleTransition(Duration.millis(400), text);
 		st.setByX(1);
 	    st.setByY(1);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();
 		
-		FadeTransition ft = new FadeTransition(Duration.millis(800), text);
+		FadeTransition ft = new FadeTransition(Duration.millis(400), text);
 		ft.setAutoReverse(true);
 		ft.setCycleCount(2);
 		ft.setToValue(1);
@@ -340,21 +340,21 @@ public class MatchCenter {
 			Style.setLocation(text, 1350, 600);
 		}
 		
-		ScaleTransition st = new ScaleTransition(Duration.millis(1500), text);
+		ScaleTransition st = new ScaleTransition(Duration.millis(1000), text);
 		st.setByX(1);
 	    st.setByY(1);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();
 	    
-		FadeTransition ft = new FadeTransition(Duration.millis(1500), text);
+		FadeTransition ft = new FadeTransition(Duration.millis(1000), text);
 		ft.setAutoReverse(true);
 		ft.setCycleCount(2);
 		ft.setToValue(1);
 		ft.setFromValue(0);
 		ft.play();
 	    
-	    RotateTransition rt = new RotateTransition(Duration.millis(1500), text);
+	    RotateTransition rt = new RotateTransition(Duration.millis(1000), text);
 	    rt.setByAngle(720);
 	    rt.setCycleCount(2);
 	    rt.setAutoReverse(true);
