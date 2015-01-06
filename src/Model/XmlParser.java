@@ -173,7 +173,7 @@ public class XmlParser {
 	  		case "PHYSICAL": phy = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		}
 	  	}
-	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, pac, sho, pas, dri, def, phy);
+	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, true, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
 	
@@ -202,7 +202,7 @@ public class XmlParser {
 
 	  		}
 	  	}
-	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, div, han, kick, ref, spd, ping, hei);
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, true, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	

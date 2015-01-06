@@ -20,9 +20,9 @@ public class Goalkeeper extends Player {
 	 * @param height
 	 */
 	
-	public Goalkeeper(String firstname, String lastname, String pos, int age, int price, int diving, int handling, int kicking,
+	public Goalkeeper(String firstname, String lastname, String pos, int age, int price, boolean play, int diving, int handling, int kicking,
 			int reflexes, int speed, int positioning, int height) {
-		super(firstname, lastname, pos, age, price);
+		super(firstname, lastname, pos, age, price, play);
 		this.div = diving;
 		this.han = handling;
 		this.kick = kicking;

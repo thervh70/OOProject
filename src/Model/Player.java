@@ -4,6 +4,7 @@ public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
 	private int age, pri;
+	private boolean play;
 	
 	/**
 	 * Since Player is abstract, no instances can be made of Player.
@@ -15,13 +16,14 @@ public abstract class Player {
 	 * @param pri
 	 */
 	
-	public Player(String firstname, String lastname, String pos, int age, int pri) {
+	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.pos = pos;
 		this.age = age;
 		this.pri = pri;
+		this.play = play;
 		name = firstname + " " + lastname; 
 	}
 
@@ -36,6 +38,7 @@ public abstract class Player {
 	public String getPos() {return pos;	}
 	public int getAge() {return age; }
 	public int getPri() {return pri; }
+	public boolean getPlay() {return play; }
 
 	/**
 	 * Setters
@@ -47,5 +50,6 @@ public abstract class Player {
 	public void setPos(String pos) {this.pos = pos; }
 	public void setAge(int age) {this.age = age; }
 	public void setPri(int pri) {this.pri = pri; }
+	public void setPlay(boolean play) {this.play = play; }
 	
 }

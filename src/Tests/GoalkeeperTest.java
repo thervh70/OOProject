@@ -8,9 +8,9 @@ import Model.Goalkeeper;
 
 public class GoalkeeperTest {
 	
-	Goalkeeper fp1 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
-	Goalkeeper fp2 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, 44, 56, 81, 39, 72, 55, 58);
-	Goalkeeper fp3 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, 33, 86, 16, 46, 71, 46, 22);
+	Goalkeeper fp1 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, true, 44, 56, 81, 39, 72, 55, 58);
+	Goalkeeper fp2 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, true, 44, 56, 81, 39, 72, 55, 58);
+	Goalkeeper fp3 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, true, 33, 86, 16, 46, 71, 46, 22);
 	String res ="         <KEEPER>\r\n"
 			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
 			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"

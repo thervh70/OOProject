@@ -8,16 +8,16 @@ import Model.Fieldplayer;
 
 public class FieldplayerTest {
 	
-	Fieldplayer fp1 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-	Fieldplayer fp2 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, 44, 56, 81, 39, 72, 58);
-	Fieldplayer fp3 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, 33, 86, 16, 46, 71, 22);
-	Fieldplayer fp4 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, 66, 52, 39, 48, 56, 87);
-	Fieldplayer fp5 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, 65, 49, 87, 55, 69, 47);
-	Fieldplayer fp6 = new Fieldplayer("Guus", "Meeuwis", "RW", 35, 19546, 33, 86, 16, 46, 71, 22);
-	Fieldplayer fp7 = new Fieldplayer("Guus", "Meeuwis", "CAM", 35, 19546, 33, 86, 16, 46, 71, 22);
-	Fieldplayer fp8 = new Fieldplayer("Edward", "Stutjes", "CM", 29, 169745, 66, 52, 39, 48, 56, 87);
-	Fieldplayer fp9 = new Fieldplayer("Edward", "Stutjes", "LB", 29, 169745, 66, 52, 39, 48, 56, 87);
-	Fieldplayer fp10 = new Fieldplayer("Edward", "Stutjes", "CB", 29, 169745, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp1 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, true, 44, 56, 81, 39, 72, 58);
+	Fieldplayer fp2 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, true, 44, 56, 81, 39, 72, 58);
+	Fieldplayer fp3 = new Fieldplayer("Guus", "Meeuwis", "LW", 35, 19546, true, 33, 86, 16, 46, 71, 22);
+	Fieldplayer fp4 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp5 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, true, 65, 49, 87, 55, 69, 47);
+	Fieldplayer fp6 = new Fieldplayer("Guus", "Meeuwis", "RW", 35, 19546, true, 33, 86, 16, 46, 71, 22);
+	Fieldplayer fp7 = new Fieldplayer("Guus", "Meeuwis", "CAM", 35, 19546, true, 33, 86, 16, 46, 71, 22);
+	Fieldplayer fp8 = new Fieldplayer("Edward", "Stutjes", "CM", 29, 169745, true, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp9 = new Fieldplayer("Edward", "Stutjes", "LB", 29, 169745, true, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp10 = new Fieldplayer("Edward", "Stutjes", "CB", 29, 169745, true, 66, 52, 39, 48, 56, 87);
 
 
 

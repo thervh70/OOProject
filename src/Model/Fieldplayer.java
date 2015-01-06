@@ -19,9 +19,9 @@ public class Fieldplayer extends Player {
 	 * @param phy Physical
 	 */
 	
-	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, int pac,
+	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, boolean play, int pac,
 			int sho, int pas, int dri, int def, int phy) {
-		super(fnm, lnm, pos, age, pri);
+		super(fnm, lnm, pos, age, pri, play);
 		this.pac = pac;
 		this.sho = sho;
 		this.pas = pas;
