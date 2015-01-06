@@ -1,10 +1,12 @@
 package View;
 
+import java.util.ArrayList;
+
 import Controller.gameEngine;
 import Controller.saveGame;
-import Model.DBmain;
+import Model.Competition;
+import Model.Match;
 import Model.Team;
-import Model.XmlParser;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
 import javafx.animation.RotateTransition;
@@ -33,7 +35,7 @@ public class MatchCenter {
 	private static Text goalsA;
 	private static Text goalsB; 
 	    
-	public static void start(Stage primaryStage) {
+	public static void start(Stage primaryStage) throws NullPointerException {
 		Pane root = new Pane(); 
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
@@ -42,17 +44,28 @@ public class MatchCenter {
 		Style.setLocation(timerLabel, 950, 890);
 		Style.setLabelStyle(timerLabel, 60);
        
-		DBmain d = XmlParser.parseDB();
-		Team alpha = saveGame.getMyTeam();
-		Team beta = d.getTeam(0);
+		Competition comp = saveGame.getCompetition();
+		int day = saveGame.getDay();
+		
+		Team alpha = null,beta = null;
+		
+		ArrayList<Match> gamesToday = comp.getMatchesForDay(day);
+		for(Match game : gamesToday){
+			Team home = game.getTeamHome();
+			Team away = game.getTeamAway();
+			
+			if(home.getNm().equals(saveGame.getMyTeamName()) | away.getNm().equals(saveGame.getMyTeamName())){
+				alpha = home;
+				beta = away;
+			}
+		}
+				
 		gameEngine match = new gameEngine();
 		
 		match.play(alpha, beta);
 		
 		VBox vboxLeft = new VBox(5);
 		VBox vboxRight = new VBox(5);
-	    
-		
 		
 		Text teamA = new Text(alpha.getNm());
 		Style.setTextStyle(teamA, 80);

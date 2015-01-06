@@ -1,8 +1,5 @@
 package Model;
 
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-
 public class Match {
 
 	private Team teamHome, teamAway;
@@ -47,6 +44,14 @@ public class Match {
 		this.teamAway = team; 
 	}
 	
+	public Team getTeamHome() {
+		return teamHome;
+	}
+
+	public Team getTeamAway() {
+		return teamAway;
+	}
+
 	public int getDay(){
 		return this.day;
 	}

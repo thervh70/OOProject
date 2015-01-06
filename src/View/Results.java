@@ -1,10 +1,13 @@
 package View;
 
+import java.util.ArrayList;
+
 import Controller.gameEngine;
-import Model.DBmain;
+import Controller.saveGame;
+import Model.Competition;
+import Model.Match;
 import Model.Result;
 import Model.Team;
-import Model.XmlParser;
 import View.ManagementCenter;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,7 +25,6 @@ public class Results {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage, gameEngine match) {
 		Pane root = new Pane(); 
-		DBmain d = XmlParser.parseDB();
 		
 		Button back = new Button("Back to Management Center");
 		
@@ -34,15 +36,29 @@ public class Results {
 		Result save = new Result(match.getTeamA(),match.getTeamB(),match.getGoalsA(),match.getGoalsB());
 		resultTable.add(save);
 		
-		for(int i = 0; i < 18; i += 2){
-			Team alpha = d.getTeam(i);
-			Team beta = d.getTeam(i+1);
-			gameEngine other = new gameEngine();
-			other.play(alpha, beta);
+		Competition comp = saveGame.getCompetition();
+		int day = saveGame.getDay();
+		
+		ArrayList<Match> gamesToday = comp.getMatchesForDay(day);
+		
+		for(Match game : gamesToday){
 			
-			Result othermatch = new Result(alpha,beta,other.getGoalsA(),other.getGoalsB());
+			if(match.getTeamA().getNm().equals(game.getTeamHome().getNm())){
+				;
+			}
 			
-			resultTable.add(othermatch);
+			else {
+				Team alpha = game.getTeamHome();
+				Team beta = game.getTeamAway();
+				
+				gameEngine other = new gameEngine();
+				
+				other.play(alpha, beta);
+				
+				Result othermatch = new Result(alpha,beta,other.getGoalsA(),other.getGoalsB());
+				
+				resultTable.add(othermatch);
+			}
 		}
 	
 		TableView<Result> tableResults = new TableView();
@@ -81,6 +97,7 @@ public class Results {
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
+				saveGame.nextDay();
 				ManagementCenter.start(primaryStage);
 			}
 		});

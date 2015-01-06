@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Competition;
 import Model.DBmain;
+import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
 
@@ -24,6 +25,8 @@ public class saveGame {
 	public static void read(String infile) throws NullPointerException{
 		teams = XmlParser.parseDB(infile);
 		myteam = teams.getTeam(8);
+		day = 1;
+		competition = Scheduler.generate();
 		
 	}
 	
@@ -46,6 +49,27 @@ public class saveGame {
 	
 	public static void setDay(int day) {
 		saveGame.day = day;
+	}
+	
+	public static void nextDay(){
+		if(day < 34){
+			day++;
+		}
+	}
+	
+	public static void setDefaults(){
+		teams = null;
+		myteam = null;
+		competition = null;
+		day = 1;
+	}
+	
+	public static void newSave(Team t){
+		Competition competition = Scheduler.generate();
+		
+		saveGame.competition = competition;
+		saveGame.setDay(1);
+		myteam = t;
 	}
 
 	public static void write(String infile){

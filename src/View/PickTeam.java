@@ -234,6 +234,7 @@ public class PickTeam{
 					warning.show(primaryStage);
 				}
 				else{
+					saveGame.newSave(teams.getTeam(choice));
 					ManagementCenter.start(primaryStage);
 				}
 			}
@@ -290,7 +291,6 @@ public class PickTeam{
 				}
 				
 				Team t = teams.getTeam(choice);
-				saveGame.setMyteam(t);
 				
 				ObservableList<Fieldplayer> teamField = FXCollections.observableArrayList();
 				for (int j = 0; j < t.getSize(); j++) {
