@@ -18,7 +18,7 @@ public abstract class Warning {
 		warning.setWidth(Style.getNewSize(200));
 		warning.setHeight(Style.getNewSize(500));
 		Rectangle rect = new Rectangle(Style.getNewSize(500), Style.getNewSize(300), Color.WHITESMOKE);
-		Style.setLocation(rect, -62, 110);
+		Style.setLocation(rect, -40, 110);
 		rect.setArcHeight(30);
 		rect.setArcWidth(30);
 		Text text = new Text(t);
@@ -33,6 +33,39 @@ public abstract class Warning {
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
 			public void handle(MouseEvent m){
+				warning.hide();
+				root.setDisable(false);
+			}
+		});
+		
+		warning.getContent().addAll(rect, text, confirm);
+		return warning;
+	}
+	
+	public static Popup makeWarning(String t, Pane root, Rectangle r) {
+		root.setDisable(true);
+		Popup warning = new Popup();
+		r.setOpacity(0.5);
+		warning.centerOnScreen();
+		warning.setWidth(Style.getNewSize(200));
+		warning.setHeight(Style.getNewSize(500));
+		Rectangle rect = new Rectangle(Style.getNewSize(500), Style.getNewSize(300), Color.WHITESMOKE);
+		Style.setLocation(rect, -40, 110);
+		rect.setArcHeight(30);
+		rect.setArcWidth(30);
+		Text text = new Text(t);
+		Style.setLocation(text, 0, 250);
+		Style.setTextStyle(text, 40);
+		text.setFill(Color.BLACK);
+		Button confirm = new Button("OK");
+		Style.setLocation(confirm, 165, 300);
+		Style.setButtonStyle(confirm, 40);
+		
+		
+		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
+			@Override
+			public void handle(MouseEvent m){
+				r.setOpacity(1);
 				warning.hide();
 				root.setDisable(false);
 			}

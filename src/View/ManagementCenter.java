@@ -6,6 +6,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import Controller.saveGame;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -63,7 +64,13 @@ public class ManagementCenter {
 		match.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				MatchCenter.start(primaryStage);
+				
+				try{
+					MatchCenter.start(primaryStage);
+				} catch(NullPointerException e1){
+					Popup warning = Warning.makeWarning("Competition cannot be loaded", root);
+					warning.show(primaryStage);
+				}
 			}
 		});
 		
@@ -135,6 +142,7 @@ public class ManagementCenter {
 		menu.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
+				saveGame.setDefaults();
 				StartupMenu.start(primaryStage);
 			}
 		});

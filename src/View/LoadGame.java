@@ -65,7 +65,7 @@ public class LoadGame {
 						saveGame.read(infile);
 						LoadingScreen.start(primaryStage);
 					} catch (NullPointerException e1){
-						Popup warning = Warning.makeWarning("Invalid File", root);
+						Popup warning = Warning.makeWarning("Invalid File", root, r);
 						warning.show(primaryStage);
 					}
 					
@@ -77,7 +77,7 @@ public class LoadGame {
 			
 			
 			text[i] =new Text(files.get(i));
-			Font font = new Font("Agency FB", Style.getNewSize(50));
+			Font font = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(),Style.getNewSize(50));
 			text[i].setFont(font);
 			Style.setLocation(text[i], 170, (250 + i*55));
 			root.getChildren().add(buttons[i]);
