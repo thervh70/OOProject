@@ -3,7 +3,7 @@ package Model;
 public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
-	private int age, pri;
+	private int age, pri, card;
 	private boolean play;
 	
 	/**
@@ -16,7 +16,7 @@ public abstract class Player {
 	 * @param pri
 	 */
 	
-	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play) {
+	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play, int card) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -24,6 +24,7 @@ public abstract class Player {
 		this.age = age;
 		this.pri = pri;
 		this.play = play;
+		this.card = card;
 		name = firstname + " " + lastname; 
 	}
 
@@ -39,6 +40,7 @@ public abstract class Player {
 	public int getAge() {return age; }
 	public int getPri() {return pri; }
 	public boolean getPlay() {return play; }
+	public int getCard() {return card; }
 
 	/**
 	 * Setters
@@ -51,5 +53,7 @@ public abstract class Player {
 	public void setAge(int age) {this.age = age; }
 	public void setPri(int pri) {this.pri = pri; }
 	public void setPlay(boolean play) {this.play = play; }
+	public void setCard(int card) {this.card = card; }
+	public void setAvail() {this.card = 0; this.play = true; }
 	
 }

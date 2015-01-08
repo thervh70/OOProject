@@ -36,7 +36,7 @@ public class Main {
 			int hei = Integer.parseInt(sc.next());
 			System.out.print("Wat is de Age? ");
 			int age = Integer.parseInt(sc.next());
-			Goalkeeper keeper = new Goalkeeper(vn,an,"GK",age,0,true,div,han,kic,ref,spe,pos,hei);
+			Goalkeeper keeper = new Goalkeeper(vn,an,"GK",age,0,true,0,div,han,kic,ref,spe,pos,hei);
 			k.add(keeper);
 			System.out.print("Zijn er nog meer keepers in dit team (1 voor ja, 0 voor nee) ");
 			km = sc.next();

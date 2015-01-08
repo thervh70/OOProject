@@ -12,7 +12,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import Model.DBmain;
 import Model.Goalkeeper;
+import Model.Player;
 import Model.Team;
 import Model.XmlParser;
 
@@ -63,6 +65,17 @@ public class editDatabase {
 			t.toSelection(t.getPlayer(i));
 		}
 		return t;
+	}
+	
+	public static DBmain createAvail(DBmain d) {
+		for(int i=0;i<d.getSize();i++) {
+			Team t = d.getTeam(i);
+			for(int j=0;j<t.getSize();j++) {
+				Player p = t.getPlayer(i);
+				p.setAvail();
+			}
+		}
+		return d;
 	}
 
 }

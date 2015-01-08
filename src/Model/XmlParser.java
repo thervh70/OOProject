@@ -19,20 +19,9 @@ public class XmlParser {
 	 */
 	
 	public static void main(String[] args) throws Exception {
-		
-
-/*		DBmain d = parseDB();
-//		System.out.println(d);
-		GetPlayerPrice.playerPriceInXML(d);
-		DBmain res = new DBmain();
-		for(int i=0;i<d.getSize();i++) {
-			Team t = d.getTeam(i);
-			Team resT = new Team(t.getNm(), t.getBdgt_vir(), t.getBdgt_rel());
-			resT = CreateSelection.create(t);
-			res.addTeam(resT);
-		}
-		System.out.println(res);
-		writeToXML(res);*/
+		DBmain d = parseDB();
+		System.out.println(d);
+		writeToXML(d);
 	}
 	
 	/**
@@ -49,7 +38,7 @@ public class XmlParser {
 		DBmain d = new DBmain();
 		try {
 			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Model/Resources/Database_v8.xml");   
+			Document document = builder.parse("src/Model/Resources/Database_v9.xml");   
 			NodeList division = document.getDocumentElement().getChildNodes();
 		
 		    for(int i=1;i<division.getLength();i+=2) {
@@ -172,7 +161,7 @@ public class XmlParser {
 	  		case "PHYSICAL": phy = Integer.parseInt(playerattributes.item(j).getTextContent()); break;
 	  		}
 	  	}
-	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, true, pac, sho, pas, dri, def, phy);
+	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, true, 0, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
 	
@@ -201,7 +190,7 @@ public class XmlParser {
 
 	  		}
 	  	}
-	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, true, div, han, kick, ref, spd, ping, hei);
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, true, 0, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	

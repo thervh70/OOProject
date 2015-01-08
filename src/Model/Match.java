@@ -13,11 +13,21 @@ public class Match {
 		this.played = false;
 	}
 	
-	public String toString(){
+	public String toString() {
 		String txt = "Match( Day: "+ day + ", Home: " + teamHome.getNm()+ ", Away: " + teamAway.getNm()+ ")";  
 		//String txt= Integer.toString(homeIndex) + " " + Integer.toString(awayIndex) + " "+ Integer.toString(day);
 		
 		return txt;
+	}
+	
+	public String toWrite() {
+		String write = "<MATCH>\r\n"
+				+ "   <HOME>" + getTeamHome() + "</HOME>\r\n"
+				+ "   <AWAY>" + getTeamAway() + "</AWAY>\r\n"
+				+ "   <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
+				+ "   <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
+				+ "</MATCH>\r\n";
+		return write;
 	}
 
 	public int getHomeIndex() {
@@ -54,5 +64,21 @@ public class Match {
 
 	public int getDay(){
 		return this.day;
+	}
+
+	public int getGoalsHome() {
+		return goalsHome;
+	}
+
+	public int getGoalsAway() {
+		return goalsAway;
+	}
+
+	public void setGoalsHome(int goalsHome) {
+		this.goalsHome = goalsHome;
+	}
+
+	public void setGoalsAway(int goalsAway) {
+		this.goalsAway = goalsAway;
 	}
 }
