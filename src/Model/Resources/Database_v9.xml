@@ -2723,6 +2723,38 @@
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
       <SELECTION>
+          <KEEPER>
+             <FIRSTNAME>Marco</FIRSTNAME>
+             <LASTNAME>Bizot</LASTNAME>
+             <AGE>24</AGE>
+             <PRICE>0</PRICE>
+             <DIVING>71</DIVING>
+             <HANDLING>72</HANDLING>
+             <KICKING>65</KICKING>
+             <REFLEXES>74</REFLEXES>
+             <SPEED>47</SPEED>
+             <POSITIONING>70</POSITIONING>
+             <HEIGHT>184</HEIGHT>
+             <TYPE>GK</TYPE>
+             <AVAILABLE>true</AVAILABLE>
+             <CARD>0</CARD>
+          </KEEPER>
+          <KEEPER>
+             <FIRSTNAME>Luciano</FIRSTNAME>
+             <LASTNAME>Silva</LASTNAME>
+             <AGE>35</AGE>
+             <PRICE>0</PRICE>
+             <DIVING>70</DIVING>
+             <HANDLING>56</HANDLING>
+             <KICKING>64</KICKING>
+             <REFLEXES>74</REFLEXES>
+             <SPEED>60</SPEED>
+             <POSITIONING>64</POSITIONING>
+             <HEIGHT>174</HEIGHT>
+             <TYPE>GK</TYPE>
+             <AVAILABLE>true</AVAILABLE>
+             <CARD>0</CARD>
+          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Sergio</FIRSTNAME>
             <LASTNAME>Padt</LASTNAME>
