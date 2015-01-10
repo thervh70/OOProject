@@ -54,9 +54,14 @@ public class MatchCenter {
 			Team home = game.getTeamHome();
 			Team away = game.getTeamAway();
 			
-			if(home.getNm().equals(saveGame.getMyTeamName()) | away.getNm().equals(saveGame.getMyTeamName())){
-				alpha = home;
+			if(home.getNm().equals(saveGame.getMyTeamName())){
+				alpha = saveGame.getMyTeam();
 				beta = away;
+			}
+			
+			else if(away.getNm().equals(saveGame.getMyTeamName())){
+				alpha = home;
+				beta = saveGame.getMyTeam();
 			}
 		}
 				

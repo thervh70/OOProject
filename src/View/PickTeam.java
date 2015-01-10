@@ -45,6 +45,8 @@ public class PickTeam{
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
 		
+		choice = -1;
+		
 		//Create a table for the bench with fixed columns
 		tableTeamField = new TableView<Fieldplayer>();
 		tableTeamField.setEditable(false);

@@ -8,7 +8,7 @@ import Model.XmlParser;
 
 public class saveGame {
 
-	private static DBmain teams;
+	private static DBmain DB;
 	private static Team myteam;
 	private static Competition competition;
 	private static int day = 0;
@@ -22,9 +22,17 @@ public class saveGame {
 		saveGame.competition = competition;
 	}
 
+	public static DBmain getDB() {
+		return DB;
+	}
+
+	public static void setDB(DBmain db) {
+		saveGame.DB = db;
+	}
+
 	public static void read(String infile) throws NullPointerException{
-		teams = XmlParser.parseDB(infile);
-		myteam = teams.getTeam(8);
+		DB = XmlParser.parseDB(infile);
+		myteam = DB.getTeam(8);
 		day = 1;
 		competition = Scheduler.generate();
 		
@@ -58,7 +66,7 @@ public class saveGame {
 	}
 	
 	public static void setDefaults(){
-		teams = null;
+		DB = null;
 		myteam = null;
 		competition = null;
 		day = 1;

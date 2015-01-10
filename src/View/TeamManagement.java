@@ -4,6 +4,7 @@ import Controller.saveGame;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
 import Model.Player;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,7 +18,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
-import javafx.scene.control.TableView;
 import View.Warning;
 import Model.Team;
 
@@ -314,6 +314,7 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
@@ -330,6 +331,7 @@ public class TeamManagement {
 		}
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
@@ -384,7 +386,11 @@ public class TeamManagement {
 		
 		att.setText("Att: " + Math.round(saveGame.getMyTeam().calcAttScore()));
 		
+		System.out.print(saveGame.getMyTeam().calcAttScore()+ " ");
+		
 		def.setText("Def: " + Math.round(saveGame.getMyTeam().calcDefScore()));
+		
+		System.out.println(saveGame.getMyTeam().calcDefScore());
 		
 	}
 }
