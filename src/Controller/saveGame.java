@@ -77,7 +77,7 @@ public class saveGame {
 		
 		saveGame.DB = XmlParser.parseDB();
 		saveGame.competition = competition;
-		saveGame.setDay(1);
+		saveGame.day = 1;
 		saveGame.myteam = t;
 	}
 

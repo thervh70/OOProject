@@ -91,6 +91,10 @@ public abstract class Style {
 		return imgView;
 	}
 	
+	public static Font getFont(int size){
+		return Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), size);
+	}
+	
 	public static double getNewSize(double size){
 		return (width/1920)*size;
 	}
