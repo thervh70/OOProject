@@ -33,6 +33,12 @@ public class DBmain {
 			d.add(t);
 		}
 	}
+	
+	public void clearAllCards(){
+		for(Team t : d){
+			t.clearCards();
+		}
+	}
 
 	/**
 	 * Method toString returns a String-representation of a Database

@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 import Model.DBmain;
+import Model.Player;
 import Model.Team;
 import Model.XmlParser;
 
@@ -24,29 +26,33 @@ import Model.XmlParser;
 public class gameEngine {
 	
 	private Team teamA, teamB;
-	private int attemptsA, attemptsB, goalsA, goalsB, attempts, toto;
-	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB;
+	private int attemptsA, attemptsB, goalsA, goalsB, yellowcardsA, yellowcardsB,redcardsA, redcardsB, injuriesA, injuriesB, attempts, toto;
+	private int[] goalminutesA, goalminutesB, attemptminutesA, attemptminutesB, yellowcardminutesA, redcardminutesA, yellowcardminutesB, redcardminutesB, injuryminutesA, injuryminutesB;
 	
-	private static double amount = 1000;
+	private static ArrayList<Player> yellowPlayerA = new ArrayList<Player>();
+	private static ArrayList<Player> yellowPlayerB = new ArrayList<Player>();
+	private static ArrayList<Player> redPlayerA = new ArrayList<Player>();
+	private static ArrayList<Player> redPlayerB = new ArrayList<Player>();
+	
+	private static double amount = 5000;
 	private static int a = 7;
 	private static int b= 5;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
 	 * A syso is then displayed with the score
-	 * 
-	 * @throws ParserConfigurationException 
-	 * @throws IOException 
-	 * @throws SAXException 
 	 */
 	
 	@SuppressWarnings("resource")
 	public static void main(String[] args){
 		int choice;
-		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0;
+		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0, totalYelA = 0, totalYelB = 0, totalRedA = 0, totalRedB = 0;
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("1 game (0) or multiple games (1)? Or (2) show scores?");
+		
+		DBmain db = XmlParser.parseDB();
+		saveGame.setDB(db);
 		
 		choice = input.nextInt();
 		if(choice == 0){
@@ -80,13 +86,36 @@ public class gameEngine {
 			for(int k = 0; k<match.getAttemptsB(); k++){
 				System.out.print(match.getAttemptminutesB()[k] + "  ");
 			}
+			
+			System.out.println("\n\nCards " + alpha.getNm());
+			
+			System.out.print("Yellow: ");
+			for(Player p : yellowPlayerA){
+				System.out.print(p.getName() + " ");;
+			}
+			System.out.print("\nRed: ");
+			for(Player p : redPlayerA){
+				System.out.print(p.getName() + " ");;
+			}
+			
+			System.out.println("\n\nCards " + beta.getNm());
+			
+			System.out.print("Yellow: ");
+			for(Player p : yellowPlayerB){
+				System.out.print(p.getName() + " ");;
+			}
+			System.out.print("\nRed: ");
+			for(Player p : redPlayerB){
+				System.out.print(p.getName() + " ");;
+			}
 		}
 		
 		else if(choice == 1){
-			DBmain d = XmlParser.parseDB();
+			DBmain d = saveGame.getDB();
 			Team alpha = d.getTeam(a);
 			Team beta = d.getTeam(b);
 			gameEngine match = new gameEngine();
+			saveGame.setDay(1);
 			
 			int winsA = 0, winsB = 0, ties = 0;
 			
@@ -109,6 +138,13 @@ public class gameEngine {
 				totalGoalB += match.getGoalsB();
 				totalAttA += match.getAttemptsA();
 				totalAttB += match.getAttemptsB();
+				totalYelA += match.getYellowcardsA();
+				totalYelB += match.getYellowcardsB();
+				totalRedA += match.getRedcardsA();
+				totalRedB += match.getRedcardsB();
+			
+				d.clearAllCards();
+				saveGame.nextDay();
 			}
 			
 			System.out.println("Amount of Wins from " + alpha.getNm() + ": " + winsA);
@@ -120,6 +156,12 @@ public class gameEngine {
 			
 			System.out.println("\nAverage Attempts from " + alpha.getNm() + ": " + (double) (totalAttA/amount));
 			System.out.println("Average Attempts from " + beta.getNm() + ": " + (double) (totalAttB/amount));
+			
+			System.out.println("\nAverage Yellow from " + alpha.getNm() + ": " + (double) (totalYelA/amount));
+			System.out.println("Average Yellow from " + beta.getNm() + ": " + (double) (totalYelB/amount));
+			
+			System.out.println("\nAverage Red from " + alpha.getNm() + ": " + (double) (totalRedA/amount));
+			System.out.println("Average Red from " + beta.getNm() + ": " + (double) (totalRedB/amount));
 			
 		}
 		
@@ -146,6 +188,10 @@ public class gameEngine {
 	public void play(Team alpha, Team beta){
 		teamA = alpha;
 		teamB = beta;
+		yellowcardsA = 0;
+		yellowcardsB = 0;
+		redcardsA = 0;
+		redcardsB = 0;
 		
 		double alphaAtt =  alpha.calcAttScore();
 		double betaAtt = beta.calcAttScore();
@@ -157,19 +203,55 @@ public class gameEngine {
 		    for (int i = 0; i <= 90; i++) {
 		        availableMin.add(i);
 		    }
+		}		
+		
+		for(int i = 0; i < 11; i++){
+			Player p = alpha.getSelectionPlayer(i);
+			int card = p.card();
+			if(card == 1){
+				yellowcardsA++;
+				yellowPlayerA.add(p);
+			}
+			else if(card == 2){
+				redcardsA++;
+				redPlayerA.add(p);
+			}
 		}
 		
 		goalsA = attack(alphaAtt, betaDef);
 		attemptsA = attempts;
+		
+		yellowcardminutesA = minutes(yellowcardsA, availableMin);
+		redcardminutesA = minutes(redcardsA, availableMin);
 		attemptminutesA = minutes(attemptsA, availableMin);
 		goalminutesA = minutes(goalsA, availableMin);
+		Arrays.sort(yellowcardminutesA);
+		Arrays.sort(redcardminutesA);
 		Arrays.sort(attemptminutesA);
 		Arrays.sort(goalminutesA);
 		
+		for(int i = 0; i < 11; i++){
+			Player p = beta.getSelectionPlayer(i);
+			int card = p.card();
+			if(card == 1){
+				yellowcardsB++;
+				yellowPlayerB.add(p);
+			}
+			else if(card == 2){
+				redcardsB++;
+				redPlayerB.add(p);
+			}
+		}
+		
 		goalsB = attack(betaAtt, alphaDef);
 		attemptsB = attempts;
+		
+		yellowcardminutesB = minutes(yellowcardsB, availableMin);
+		redcardminutesB = minutes(redcardsB, availableMin);
 		attemptminutesB = minutes(attemptsB, availableMin);		
 		goalminutesB = minutes(goalsB, availableMin);
+		Arrays.sort(yellowcardminutesB);
+		Arrays.sort(redcardminutesB);
 		Arrays.sort(attemptminutesB);
 		Arrays.sort(goalminutesB);
 		
@@ -204,8 +286,8 @@ public class gameEngine {
 		attempts = (int) Math.round((Math.random()*(att/30)+1));
 		
 		for(int i = 0; i < attempts; i++){
-			a = att*(Math.random()+.2); 
-			b = def*(Math.random()); //correction ensures not too much goals are made
+			a = att*(Math.random()+.2);
+			b = def*(Math.random()); 
 			
 			if(a>b){ 
 				c++;
@@ -255,17 +337,7 @@ public class gameEngine {
 		}
 		return false;
 	}
-	
-	/**This method enlarges the difference between 2 teams.
-	 * That way we are able to make realistic scores.
-	 * 
-	 * @param x The number to be mapped
-	 * @param in_min input minimum
-	 * @param in_max input maximum
-	 * @param out_min output maximum
-	 * @param out_max output maximum
-	 * @return
-	 */
+
 	
 	public Team getTeamA(){ return teamA;}
 	public Team getTeamB(){ return teamB;}
@@ -278,4 +350,16 @@ public class gameEngine {
 	public int[] getAttemptminutesA(){ return attemptminutesA; }
 	public int[] getAttemptminutesB(){ return attemptminutesB; }
 	public int getToto() {return toto;}
+	public int getYellowcardsA() {return yellowcardsA;}
+	public int getYellowcardsB() {return yellowcardsB;}
+	public int getRedcardsA() {	return redcardsA;}
+	public int getRedcardsB() {	return redcardsB;}
+	public int[] getYellowcardminutesA() {return yellowcardminutesA;}
+	public int[] getRedcardminutesA() {return redcardminutesA;}
+	public int[] getYellowcardminutesB() {return yellowcardminutesB;}
+	public int[] getRedcardminutesB() {return redcardminutesB;}
+	public ArrayList<Player> getYellowPlayerA() {return yellowPlayerA;}
+	public ArrayList<Player> getYellowPlayerB() {return yellowPlayerB;}
+	public ArrayList<Player> getRedPlayerA() {return redPlayerA;}
+	public ArrayList<Player> getRedPlayerB() {return redPlayerB;}
 }

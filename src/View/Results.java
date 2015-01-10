@@ -98,6 +98,7 @@ public class Results {
 			@Override
 			public void handle(ActionEvent e) {
 				saveGame.nextDay();
+				saveGame.clearDBcards();
 				ManagementCenter.start(primaryStage);
 			}
 		});

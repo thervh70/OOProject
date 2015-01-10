@@ -29,6 +29,10 @@ public class saveGame {
 	public static void setDB(DBmain db) {
 		saveGame.DB = db;
 	}
+	
+	public static void clearDBcards(){
+		DB.clearAllCards();
+	}
 
 	public static void read(String infile) throws NullPointerException{
 		DB = XmlParser.parseDB(infile);

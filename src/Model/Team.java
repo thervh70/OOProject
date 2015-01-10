@@ -309,6 +309,12 @@ public class Team {
 		return count;
 	}
 	
+	public void clearCards(){
+		for(Player p : team){
+			p.clearCard();
+		}
+	}
+	
 	/**
 	 * Methode equals checks if two Teams are equal to each other. 
 	 * Criteria:

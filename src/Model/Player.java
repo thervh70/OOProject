@@ -1,9 +1,11 @@
 package Model;
 
+import Controller.saveGame;
+
 public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
-	private int age, pri, card;
+	private int age, pri, card, cardTime;
 	private boolean play;
 	
 	/**
@@ -26,6 +28,35 @@ public abstract class Player {
 		this.play = play;
 		this.card = card;
 		name = firstname + " " + lastname; 
+	}
+	
+	public int card(){
+		double chance = Math.random();
+		
+		if(chance>0.98){
+			this.card = 2;
+			this.cardTime = saveGame.getDay();
+			return 2;
+		}
+		else if(chance>0.90){
+			if(this.card == 1){
+				this.card = 2;
+				this.cardTime = saveGame.getDay();
+			}
+			else if(this.card == 0){
+				this.card = 1;
+			}
+			return 1;
+		}
+		return 0;
+	}
+	
+	public void clearCard(){
+		int time = saveGame.getDay() - cardTime;
+		if(this.card == 2 & time >= 1){
+			this.card = 0;
+			this.cardTime = 0;
+		}
 	}
 
 	/**

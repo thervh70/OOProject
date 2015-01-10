@@ -6,6 +6,7 @@ import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
+import Model.Player;
 import Model.Team;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
@@ -19,6 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -30,7 +32,7 @@ public class MatchCenter {
 	private static Label timerLabel = new Label();
 	private static Integer timeSeconds = 0;
 	 
-	public static Integer attA,goalA = 0,attB,goalB = 0;
+	public static Integer attA,goalA = 0,attB,goalB = 0,yelA,yelB,redA,redB;
 	
 	private static Text goalsA;
 	private static Text goalsB; 
@@ -41,7 +43,7 @@ public class MatchCenter {
 		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
 
 		timerLabel.setText(timeSeconds.toString());
-		Style.setLocation(timerLabel, 950, 890);
+		Style.setLocation(timerLabel, 950, 920);
 		Style.setLabelStyle(timerLabel, 60);
        
 		Competition comp = saveGame.getCompetition();
@@ -83,9 +85,17 @@ public class MatchCenter {
 		Text attemptsA = new Text(attA.toString());
 		Style.setTextStyle(attemptsA, 50);
        
-		vboxLeft.getChildren().addAll(teamA,goalsA,attemptsA);
+		yelA = 0;
+		Text yellowA = new Text(yelA.toString());
+		Style.setTextStyle(yellowA, 50);
+		
+		redA = 0;
+		Text redsA = new Text(redA.toString());
+		Style.setTextStyle(redsA, 50);
+		
+		vboxLeft.getChildren().addAll(teamA,goalsA,attemptsA,yellowA,redsA);
 		vboxLeft.setAlignment(Pos.CENTER);
-		Style.setLocation(vboxLeft, 320, 250);
+		Style.setLocation(vboxLeft, 320, 150);
        
 		
 		
@@ -99,17 +109,25 @@ public class MatchCenter {
 		attB = 0;
 		Text attemptsB = new Text(attB.toString());
 		Style.setTextStyle(attemptsB, 50);
+		
+		yelB = 0;
+		Text yellowB = new Text(yelB.toString());
+		Style.setTextStyle(yellowB, 50);
+		
+		redB = 0;
+		Text redsB = new Text(redB.toString());
+		Style.setTextStyle(redsB, 50);
        
-		vboxRight.getChildren().addAll(teamB,goalsB,attemptsB);
+		vboxRight.getChildren().addAll(teamB,goalsB,attemptsB,yellowB, redsB);
 		vboxRight.setAlignment(Pos.CENTER);
-		Style.setLocation(vboxRight, 1350, 250);
+		Style.setLocation(vboxRight, 1350, 150);
        
 		
 		
 		Rectangle r = new Rectangle();
 		r.setHeight(Style.getNewSize(50));
 		Style.setRectangleStyle(r);
-		Style.setLocation(r, 150, 700);
+		Style.setLocation(r, 150, 780);
 		
 		
 		
@@ -118,6 +136,13 @@ public class MatchCenter {
 		
 		Text attempts = new Text("Attempts");
 		Style.setTextStyle(attempts, 50);
+		
+		Text yellow = new Text("Yellow Cards");
+		Style.setTextStyle(yellow, 50);
+
+		Text red = new Text("Red Cards");
+		Style.setTextStyle(red, 50);
+		
 		
 		Text attemptAnimation = new Text("Attempt");
 		Style.setTextStyle(attemptAnimation, 70);
@@ -130,34 +155,39 @@ public class MatchCenter {
 		Text goalAnimation = new Text("GOAL!!");
 		Style.setTextStyle(goalAnimation, 70);
 		goalAnimation.setVisible(false);
+		
+		Text cardAnimation = new Text("");
+		Style.setTextStyle(cardAnimation, 70);
+		cardAnimation.setVisible(false);
+		
 	
 		Text won = new Text(alpha.getNm() + " won!");
 		Style.setTextStyle(won, 90);
-		Style.setLocation(won, 850, 620);
+		Style.setLocation(won, 750, 700);
 		won.setVisible(false);
 		
 		Text lost = new Text(beta.getNm() + " won!");
 		Style.setTextStyle(lost, 90);
-		Style.setLocation(lost, 850, 620);
+		Style.setLocation(lost, 750, 700);
 		lost.setVisible(false);
 		
 		Text tie = new Text("It's a tie.");
 		Style.setTextStyle(tie, 90);
-		Style.setLocation(tie, 850, 620);
+		Style.setLocation(tie, 750, 700);
 		tie.setVisible(false);
 		
 		
 		
 		VBox vboxMiddle = new VBox(5);
-		vboxMiddle.getChildren().addAll(goals,attempts);
+		vboxMiddle.getChildren().addAll(goals,attempts,yellow,red);
 		vboxMiddle.setAlignment(Pos.CENTER);
-		Style.setLocation(vboxMiddle, 890, 340);
+		Style.setLocation(vboxMiddle, 890, 240);
 		       
 		
 		
 	    Button start = new Button("Start Match");
 	    Style.setButtonStyle(start, 60);
-	    Style.setLocation(start, 820, 500);
+	    Style.setLocation(start, 820, 600);
       
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
@@ -238,6 +268,46 @@ public class MatchCenter {
 			            		attemptAnimation(false,false,attemptAnimation,goalAnimation,missAnimation);
 			            	}
 			            }
+			            
+			            for(int m = 0; m < match.getYellowcardminutesA().length; m++){
+			            	if(timeSeconds.intValue() == match.getYellowcardminutesA()[m]){
+			            		yelA++;
+			            		yellowA.setText(yelA.toString());
+			            		Player p = match.getYellowPlayerA().get(m);
+			            		cardAnimation.setText(p.getName());
+			            		cardAnimation(true,false,cardAnimation);
+			            	}
+			            }
+			            
+			            for(int n = 0; n < match.getYellowcardminutesB().length; n++){
+			            	if(timeSeconds.intValue() == match.getYellowcardminutesB()[n]){
+			            		yelB++;
+			            		yellowB.setText(yelB.toString());
+			            		Player p = match.getYellowPlayerB().get(n);
+			            		cardAnimation.setText(p.getName());
+			            		cardAnimation(false,false,cardAnimation);
+			            	}
+			            }
+			            
+			            for(int o = 0; o < match.getRedcardminutesA().length; o++){
+			            	if(timeSeconds.intValue() == match.getRedcardminutesA()[o]){
+			            		redA++;
+			            		redsA.setText(redA.toString());
+			            		Player p = match.getRedPlayerA().get(o);
+			            		cardAnimation.setText(p.getName());
+			            		cardAnimation(true,true,cardAnimation);
+			            	}
+			            }
+			            
+			            for(int q = 0; q < match.getRedcardminutesB().length; q++){
+			            	if(timeSeconds.intValue() == match.getRedcardminutesB()[q]){
+			            		redB++;
+			            		redsB.setText(redB.toString());
+			            		Player p = match.getRedPlayerB().get(q);
+			            		cardAnimation.setText(p.getName());
+			            		cardAnimation(false,true,cardAnimation);
+			            	}
+			            }
 			        }
 		        }));
 			        
@@ -261,7 +331,7 @@ public class MatchCenter {
 			}
 		});
       
-       root.getChildren().addAll(start,timerLabel,vboxLeft,vboxRight,results,back,r,vboxMiddle,attemptAnimation,goalAnimation,missAnimation,won,lost,tie);
+       root.getChildren().addAll(start,timerLabel,vboxLeft,vboxRight,results,back,r,vboxMiddle,attemptAnimation,goalAnimation,missAnimation,cardAnimation,won,lost,tie);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
@@ -270,10 +340,10 @@ public class MatchCenter {
 		timeline.pause();
 		attempt.setVisible(true);
 		if(user){
-			Style.setLocation(attempt, 320, 600);
+			Style.setLocation(attempt, 320, 700);
 		}
 		else if(!user){
-			Style.setLocation(attempt, 1350, 600);
+			Style.setLocation(attempt, 1350, 700);
 		}
 		
 		ScaleTransition st = new ScaleTransition(Duration.millis(400), attempt);
@@ -318,10 +388,10 @@ public class MatchCenter {
 	public static void missAnimation(boolean user, Text text){
 		text.setVisible(true);
 		if(user){
-			Style.setLocation(text, 320, 600);
+			Style.setLocation(text, 320, 700);
 		}
 		else if(!user){
-			Style.setLocation(text, 1350, 600);
+			Style.setLocation(text, 1350, 700);
 		}
 		
 		ScaleTransition st = new ScaleTransition(Duration.millis(400), text);
@@ -352,10 +422,10 @@ public class MatchCenter {
 	public static void goalAnimation(boolean user,Text text){
 		text.setVisible(true);
 		if(user){
-			Style.setLocation(text, 320, 600);
+			Style.setLocation(text, 320, 700);
 		}
 		else if(!user){
-			Style.setLocation(text, 1350, 600);
+			Style.setLocation(text, 1350, 700);
 		}
 		
 		ScaleTransition st = new ScaleTransition(Duration.millis(1000), text);
@@ -398,5 +468,48 @@ public class MatchCenter {
 			
 		});		
 		
+	}
+	
+	//color: false is yellow, true is red
+	public static void cardAnimation(boolean user, boolean color, Text name){
+		timeline.pause();
+		name.setVisible(true);
+		if(user){
+			Style.setLocation(name, 320, 700);
+		}
+		else if(!user){
+			Style.setLocation(name, 1350, 700);
+		}
+		
+		if(!color){
+			name.setFill(Color.YELLOW);
+		}
+		else if(color){
+			name.setFill(Color.RED);
+		}
+		
+		ScaleTransition st = new ScaleTransition(Duration.millis(800), name);
+		st.setByX(1);
+	    st.setByY(1);
+	    st.setCycleCount(2);
+	    st.setAutoReverse(true);
+	    st.play();
+		
+		FadeTransition ft = new FadeTransition(Duration.millis(800), name);
+		ft.setAutoReverse(true);
+		ft.setCycleCount(2);
+		ft.setToValue(1);
+		ft.setFromValue(0);
+		ft.play();
+		
+		st.setOnFinished(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent event) {
+				name.setVisible(false);
+				timeline.play();
+			}
+			
+		});		
 	}
 }
