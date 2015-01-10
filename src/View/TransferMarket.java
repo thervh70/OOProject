@@ -8,16 +8,20 @@ import org.xml.sax.SAXException;
 
 import Controller.saveGame;
 import Model.DBmain;
+import Model.Fieldplayer;
+import Model.Goalkeeper;
 import Model.Player;
 import Model.Team;
-import Model.XmlParser;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -31,69 +35,148 @@ public class TransferMarket {
 		root.getChildren().add(Style.setBackground("/View/Resources/background_transfer-market.png"));
 		
 		Button back = new Button("Back to Management Center");
-		Text forSale = new Text("For Sale");
-		Text myProducts = new Text("My Products :)");
+		Text players = new Text("Players");
+		Text keepers = new Text("Keepers");
 		
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
 		
-		Style.setTextStyle(forSale, 45);
-		Style.setLocation(forSale, 475, 230);
+		Style.setTextStyle(players, 45);
+		Style.setLocation(players, 450, 230);
+		
+		Style.setTextStyle(keepers, 45);
+		Style.setLocation(keepers, 450, 680);
+		
+		//Create a table for the setup with fixed columns
+		TableView<Fieldplayer> tableSelectionField = new TableView<Fieldplayer>();
+		tableSelectionField.setEditable(false);
+		tableSelectionField.setPrefSize(Style.getNewSize(700), Style.getNewSize(375));
+		Style.setLocation(tableSelectionField, 150, 250);
+				
+		//Separate table for Keepers in Field
+		TableView<Goalkeeper> tableSelectionKeeper = new TableView<Goalkeeper>();
+		tableSelectionKeeper.setEditable(false);
+		tableSelectionKeeper.setPrefSize(Style.getNewSize(700), Style.getNewSize(150));
+		Style.setLocation(tableSelectionKeeper, 150, 700);
+		
+		 //Columns for Selection Fieldplayers
+        TableColumn nameS = new TableColumn("Name");
+		nameS.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn positionS = new TableColumn("Position");
+        positionS.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
+		TableColumn ageS = new TableColumn("Age");
+        ageS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
+		TableColumn worthS = new TableColumn("Worth");
+        worthS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
+        TableColumn paceS = new TableColumn("PAC");
+        paceS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pac"));
+		TableColumn shootingS = new TableColumn("SHO");
+        shootingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("sho"));
+		TableColumn passingS = new TableColumn("PAS");
+        passingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pas"));
+		TableColumn dribblingS = new TableColumn("DRI");
+        dribblingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("dri"));
+		TableColumn defendingS = new TableColumn("DEF");
+        defendingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
+		TableColumn physicalS = new TableColumn("PHY");
+        physicalS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
+        
+        nameS.setResizable(false);
+		nameS.setPrefWidth(Style.getNewSize(197));
+		positionS.setResizable(false);
+		positionS.setPrefWidth(Style.getNewSize(100));
+		ageS.setResizable(false);
+		ageS.setPrefWidth(Style.getNewSize(50));
+		worthS.setResizable(false);
+		worthS.setPrefWidth(Style.getNewSize(100));
+		shootingS.setResizable(false);
+		shootingS.setPrefWidth(Style.getNewSize(50));
+		passingS.setResizable(false);
+		passingS.setPrefWidth(Style.getNewSize(50));
+		dribblingS.setResizable(false);
+		dribblingS.setPrefWidth(Style.getNewSize(50));
+		defendingS.setResizable(false);
+		defendingS.setPrefWidth(Style.getNewSize(50));
+		physicalS.setResizable(false);
+		physicalS.setPrefWidth(Style.getNewSize(50));
+		
+		 //Columns for Selection Goalkeepers
+        TableColumn nameKS = new TableColumn("Name");
+		nameKS.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
+        TableColumn positionKS = new TableColumn("Position");
+        positionKS.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
+		TableColumn ageKS = new TableColumn("Age");
+        ageKS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
+		TableColumn worthKS = new TableColumn("Worth");
+        worthKS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
+        TableColumn divingKS = new TableColumn("DIV");
+        divingKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("div"));
+        TableColumn handlingKS = new TableColumn("HAN");
+        handlingKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("han"));
+        TableColumn kickingKS = new TableColumn("KICK");
+        kickingKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("kick"));
+        TableColumn reflexKS = new TableColumn("REF");
+        reflexKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ref"));
+        TableColumn speedKS = new TableColumn("SPD");
+        speedKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("spd"));
+        TableColumn posKS = new TableColumn("PING");
+        posKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
+        TableColumn heightKS = new TableColumn("HEI");
+        heightKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));		
+        
+        nameKS.setResizable(false);
+		nameKS.setPrefWidth(Style.getNewSize(202));
+		positionKS.setResizable(false);
+		positionKS.setPrefWidth(Style.getNewSize(100));
+		ageKS.setResizable(false);
+		ageKS.setPrefWidth(Style.getNewSize(50));
+		worthKS.setResizable(false);
+		worthKS.setPrefWidth(Style.getNewSize(100));
+		divingKS.setResizable(false);
+		divingKS.setPrefWidth(Style.getNewSize(35));
+		handlingKS.setResizable(false);
+		handlingKS.setPrefWidth(Style.getNewSize(35));
+		kickingKS.setResizable(false);
+		kickingKS.setPrefWidth(Style.getNewSize(35));
+		reflexKS.setResizable(false);
+		reflexKS.setPrefWidth(Style.getNewSize(35));
+		speedKS.setResizable(false);
+		speedKS.setPrefWidth(Style.getNewSize(35));
+		posKS.setResizable(false);
+		posKS.setPrefWidth(Style.getNewSize(35));
+		heightKS.setResizable(false);
+		heightKS.setPrefWidth(Style.getNewSize(35));
+		
+		//Add columns to table
+		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
+		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS);	
 
-		Style.setTextStyle(myProducts, 45);
-		Style.setLocation(myProducts, 1275, 230);
+		ComboBox comboBox = new ComboBox();
+		DBmain DB = saveGame.getDB();
 
+		ObservableList<String> teamList = FXCollections.observableArrayList();
 		
-		TableView<Player> tableForSale = new TableView();
-		tableForSale.setEditable(false);
-		tableForSale.setPrefSize(Style.getNewSize(800), Style.getNewSize(540));
-		Style.setLocation(tableForSale, 125, 250);
-		tableForSale.setEditable(false);
-		
-		TableView<Player> tableMyPlayers = new TableView();
-		tableMyPlayers.setPrefSize(Style.getNewSize(800), Style.getNewSize(540));
-		Style.setLocation(tableMyPlayers, 990, 250);
-		tableMyPlayers.setEditable(false);
-		
-		TableColumn name = new TableColumn("Name");
-        TableColumn position = new TableColumn("Position");
-		TableColumn age = new TableColumn("Age");
-		TableColumn worth = new TableColumn("Worth");
-		TableColumn shooting = new TableColumn("Shooting");
-		TableColumn passing = new TableColumn("Passing");
-		TableColumn dribbling = new TableColumn("Dribbling");
-		TableColumn defending = new TableColumn("Defending");
-		TableColumn physical = new TableColumn("Physical");
-		TableColumn price = new TableColumn("Price");
-		TableColumn team = new TableColumn("Team");
-		name.setResizable(false);
-		position.setResizable(false);
-		age.setResizable(false);
-		worth.setResizable(false);
-		shooting.setResizable(false);
-		passing.setResizable(false);
-		dribbling.setResizable(false);
-		defending.setResizable(false);
-		physical.setResizable(false);
-		price.setResizable(false);
-		
-		tableForSale.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
-		tableMyPlayers.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical, team);
-
-		DBmain d = XmlParser.parseDB();
-		Team t = saveGame.getMyTeam();
-		
-		ObservableList<Player> user = FXCollections.observableArrayList(t.getPlayer(0));
-		
-		for(int i = 0; i < t.getSize(); i++){
-			Player p = t.getPlayer(i);
-			name.getCellData(p.getFnm());
-			age.getCellData(p.getAge());
+		for(int i = 0; i < 18; i++){
+			Team t = DB.getTeam(i);
+			if(!t.getNm().equals(saveGame.getMyTeamName())){
+				teamList.add(t.getNm());
+			}
 		}
 		
-		tableMyPlayers.setItems((ObservableList<Player>) user);		
+		comboBox.setItems(teamList);
 		
-		root.getChildren().addAll(back, tableForSale, forSale, tableMyPlayers, myProducts);
+		if(!saveGame.getMyTeamName().equals("ADO Den Haag")){
+			comboBox.setValue("ADO Den Haag");
+		}
+		else {
+			comboBox.setValue("Ajax");
+		}
+		
+		refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+		
+		Style.setLocation(comboBox, 700, 205);
+		
+		root.getChildren().addAll(back, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -102,8 +185,44 @@ public class TransferMarket {
 			}
 		});
 		
+		comboBox.setOnAction(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent event) {
+				refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+			}
+		});
+		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
+	}
+	
+	public static void refreshPlayers(String s, TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper){
+		
+		for(int i = 0; i < 18; i++){
+			Team t = saveGame.getDB().getTeam(i);
+			if(s.equals(t.getNm())){
+				ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
+				for (int j = 0; j < t.getSize(); j++) {
+					Player p = t.getPlayer(j);
+					if(p instanceof Fieldplayer)
+						selectionField.add((Fieldplayer) p);
+				}
+				
+				tableSelectionField.setItems(selectionField);		
+				
+				ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
+				for(int k = 0; k < t.getSize(); k++){
+					Player p = t.getPlayer(k);
+					if(p instanceof Goalkeeper){
+						selectionKeeper.add((Goalkeeper) p);
+					}
+				}
+				
+				tableSelectionKeeper.setItems(selectionKeeper);
+			}
+		}
+		
 	}
 
 }
