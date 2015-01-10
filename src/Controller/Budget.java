@@ -7,41 +7,56 @@ import Model.Player;
 import Model.Team;
 public class Budget {
 	
-	/**
-	 * Allows a team to bid on players from a different team
-	 * @param p - The player Team t1 wants to bid on
-	 * @param t1 - t1
-	 * @param t2 - t2
-	 * @return boolean, we need this for testing purposes. Used to be void.
-	 */
-	public static boolean bid(Player p, Team t1, Team t2){
+	public static void buy(Player p, Team buyTeam, int bid, Team myTeam){
+		myTeam.subtractBudget_rel(bid);
+		myTeam.addPlayer(p);
+		buyTeam.removePlayer(p);
+		buyTeam.addBudget_rel(bid);
+		buyTeam.addBudget_vir(bid);
+	}
+	
+	public static boolean bid(Player p, Team buyTeam, int bid){
 		//Checks Team t1 can afford the player
-		if(!(t1.getBdgt_vir()<p.getPri())){
+		Team myTeam = saveGame.getMyTeam();
+		if(!(bid>myTeam.getBdgt_vir())){
 			//subtracts the price of the player from the virtual budget, this will be used in the main product
-			t1.subtractBudget_vir(p.getPri());
-			if (p.getPri()<t1.getBdgt_rel()){
-				//Uses a random function so you can't buy every player, we decided 0.6 seems like a fair number
-				if(Math.random()>0.6){
-					//Fixes all the budgets and players in a team
-					t1.subtractBudget_rel(p.getPri());
-					t1.addPlayer(p);
-					t2.removePlayer(p);
-					t2.addBudget_rel(p.getPri());
-					t2.addBudget_vir(p.getPri());
-					return true;
+			myTeam.subtractBudget_vir(bid);
+			if(!(bid<(0.8*p.getPri()))){
+				if(bid<=0.9*p.getPri()){
+					if(Math.random()>0.6){
+						buy(p,buyTeam,bid,myTeam);
+						return true;
+					}
 				}
-				//If team t1 isn't allowed to buy the player it resets the virtual budget
+				else if((0.9*p.getPri())<bid & bid<=p.getPri()){
+					if(Math.random()>0.5){
+						buy(p,buyTeam,bid,myTeam);
+						return true;
+					}
+				}
+				else if((p.getPri()<bid & bid<=(1.5*p.getPri()))){
+					if(Math.random()>0.3){
+						buy(p,buyTeam,bid,myTeam);
+						return true;
+					}
+				}
+				else if((1.5*p.getPri())<bid & bid<=(1.9*p.getPri())){
+					if(Math.random()>0.2){
+						buy(p,buyTeam,bid,myTeam);
+						return true;
+					}
+				}
+				else if((1.9*p.getPri())<bid & bid<=(2*p.getPri())){
+					if(Math.random()>0.1){
+						buy(p,buyTeam,bid,myTeam);
+						return true;
+					}
+				}
 				else{
-					t1.addBudget_vir(p.getPri());
-					return false;
-				}
-			}
-			//If team t1 isn't allowed to buy the player it resets the virtual budget
-			else{
-				t1.addBudget_vir(p.getPri());
-				return false;
+					myTeam.addBudget_vir(bid);
+				}	
 			}
 		}
 		return false;
-	}
+	}	
 }
