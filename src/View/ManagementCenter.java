@@ -79,8 +79,11 @@ public class ManagementCenter {
 		Text budget = new Text("Budget: " + saveGame.getMyTeam().getBdgt_vir());
 		Style.setTextStyle(budget, 60);
 		
+		Text rank = new Text("Rank: ");
+		Style.setTextStyle(rank, 60);
+		
 		VBox vbox2 = new VBox(10);
-		vbox2.getChildren().addAll(day, opponent,space,budget);
+		vbox2.getChildren().addAll(day, opponent,space,budget,rank);
 		Style.setLocation(vbox2, 1100, 240);
 		vbox2.setAlignment(Pos.CENTER);
 		

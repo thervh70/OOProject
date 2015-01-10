@@ -22,7 +22,7 @@ public abstract class Warning {
 		rect.setArcHeight(30);
 		rect.setArcWidth(30);
 		Text text = new Text(t);
-		Style.setLocation(text, 0, 250);
+		Style.setLocation(text, 0, 210);
 		Style.setTextStyle(text, 40);
 		text.setFill(Color.BLACK);
 		Button confirm = new Button("OK");

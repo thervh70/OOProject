@@ -6,6 +6,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import Controller.Budget;
 import Controller.saveGame;
 import Model.DBmain;
 import Model.Fieldplayer;
@@ -27,13 +28,21 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class TransferMarket {
 
+	private static Player playerSelect = null;
+	private static Team teamSelect = null;
+	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage) throws SAXException, IOException, ParserConfigurationException {
 		Pane root = new Pane();
+		
+		//Reset select
+		playerSelect = null;
+		teamSelect = null;
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_transfer-market.png"));
 		
@@ -192,7 +201,7 @@ public class TransferMarket {
 		Style.setButtonStyle(confirm, 45);
 		
 		VBox vbox = new VBox(15);
-		Style.setLocation(vbox, 1200, 200);
+		Style.setLocation(vbox, 900, 200);
 		vbox.setAlignment(Pos.CENTER);
 		
 		Text selected = new Text("You have selected: ");
@@ -203,7 +212,20 @@ public class TransferMarket {
 		
 		vbox.getChildren().addAll(selected,pName,pPrice,input,confirm);
 		
-		root.getChildren().addAll(back, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,budget);
+		VBox vbox2 = new VBox(15);
+		Style.setLocation(vbox2, 1350, 200);
+		vbox2.setAlignment(Pos.CENTER);
+		
+		Text bids = new Text("Bids being evaluated: ");
+		Style.setTextStyle(bids, 60);
+		
+		Text bid1 = new Text("");
+		Text bid2 = new Text("");
+		Text bid3 = new Text("");
+		
+		vbox2.getChildren().addAll(bids,bid1,bid2,bid3);
+		
+		root.getChildren().addAll(back, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,vbox2,budget);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -220,6 +242,70 @@ public class TransferMarket {
 			}
 		});
 		
+		confirm.setOnAction(new EventHandler <ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent event) {
+				if(playerSelect == null){
+					Popup warning = Warning.makeWarning("No player selected", root);
+					warning.show(primaryStage);
+				}
+				else{
+					try{
+						int bid = Integer.parseInt(input.getText());
+						
+						if(bid < 0){
+							Popup low = Warning.makeWarning("Please enter a positive number", root);
+							low.show(primaryStage);
+						}
+						
+						else{
+							boolean b = Budget.bid(playerSelect, teamSelect, bid);
+							
+							if(b){
+								Popup congratz = Warning.makeWarning("Congratulations! \nYou have bought " + playerSelect.getName(), root);
+								congratz.show(primaryStage);
+								refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+								budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
+								
+								
+								if(bid1.getText().equals("")){
+									Player p = playerSelect;
+									bid1.setText(p.getName() + " " + bid);
+									Style.setTextStyle(bid1, 40);
+								}
+								else if(bid2.getText().equals("")){
+									Player p = playerSelect;
+									bid2.setText(p.getName() + " " + bid);
+									Style.setTextStyle(bid2, 40);
+								}
+								else if(bid3.getText().equals("")){
+									Player p = playerSelect;
+									bid3.setText(p.getName() + " " + bid);
+									Style.setTextStyle(bid3, 40);
+								}
+								
+								input.clear();
+							}
+							
+							else if(!b){
+								Popup toobad = Warning.makeWarning("Too bad... \n" + teamSelect.getNm() + " refused your offer.", root);
+								toobad.show(primaryStage);
+								refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+								input.clear();
+							}
+						}
+						
+					} catch( NumberFormatException e){
+						Popup warning2 = Warning.makeWarning("Please insert a number", root);
+						input.clear();
+						warning2.show(primaryStage);
+					}
+				}
+			}
+			
+		});
+		
 		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
 
 			@Override
@@ -230,6 +316,8 @@ public class TransferMarket {
 				
 				pPrice.setText("\u20ac" + " " + p.getPri());
 				Style.setTextStyle(pPrice, 45);
+				
+				playerSelect = p;
 			}
 		});
 		
@@ -243,6 +331,8 @@ public class TransferMarket {
 				
 				pPrice.setText("\u20ac" + " " + p.getPri());
 				Style.setTextStyle(pPrice, 45);
+				
+				playerSelect = p;
 			}
 		});
 		
@@ -255,6 +345,9 @@ public class TransferMarket {
 		for(int i = 0; i < 18; i++){
 			Team t = saveGame.getDB().getTeam(i);
 			if(s.equals(t.getNm())){
+				
+				teamSelect = t;
+				
 				ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
 				for (int j = 0; j < t.getSize(); j++) {
 					Player p = t.getPlayer(j);

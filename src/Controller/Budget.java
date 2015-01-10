@@ -7,7 +7,7 @@ import Model.Player;
 import Model.Team;
 public class Budget {
 	
-	public static void buy(Player p, Team buyTeam, int bid, Team myTeam){
+	private static void buy(Player p, Team buyTeam, int bid, Team myTeam){
 		myTeam.subtractBudget_rel(bid);
 		myTeam.addPlayer(p);
 		buyTeam.removePlayer(p);
