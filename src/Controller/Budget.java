@@ -54,6 +54,7 @@ public class Budget {
 				}
 				else{
 					myTeam.addBudget_vir(bid);
+					return false;
 				}	
 			}
 		}
