@@ -75,9 +75,10 @@ public class saveGame {
 	public static void newSave(Team t){
 		Competition competition = Scheduler.generate();
 		
+		saveGame.DB = XmlParser.parseDB();
 		saveGame.competition = competition;
 		saveGame.setDay(1);
-		myteam = t;
+		saveGame.myteam = t;
 	}
 
 	public static void write(String infile){

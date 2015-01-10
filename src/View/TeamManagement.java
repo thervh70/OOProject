@@ -384,13 +384,8 @@ public class TeamManagement {
 		
 		tableTeamKeeper.setItems(teamKeeper);
 		
-		att.setText("Att: " + Math.round(saveGame.getMyTeam().calcAttScore()));
-		
-		System.out.print(saveGame.getMyTeam().calcAttScore()+ " ");
-		
+		att.setText("Att: " + Math.round(saveGame.getMyTeam().calcAttScore()));		
 		def.setText("Def: " + Math.round(saveGame.getMyTeam().calcDefScore()));
-		
-		System.out.println(saveGame.getMyTeam().calcDefScore());
 		
 	}
 }
