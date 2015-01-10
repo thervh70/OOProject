@@ -22,7 +22,7 @@ public class Budget {
 			//subtracts the price of the player from the virtual budget, this will be used in the main product
 			myTeam.subtractBudget_vir(bid);
 			if(!(bid<(0.8*p.getPri()))){
-				if(bid<=0.9*p.getPri()){
+				if(bid<=(0.9*p.getPri())){
 					if(Math.random()>0.6){
 						buy(p,buyTeam,bid,myTeam);
 						return true;
