@@ -6,7 +6,8 @@ public class Team {
 	
 	private ArrayList<Player> team, selection;
 	private String nm;
-	private int bdgt_vir, bdgt_rel;
+	private int bdgt_vir, bdgt_rel, rank;
+	private int points, goalsFor, goalsAgainst, goalDifference = 0;
 	
 	
 	/**
@@ -351,6 +352,10 @@ public class Team {
 	public int getBdgt_rel() {return this.bdgt_rel;}
 	public int getSize() {return team.size();}
 	public int getSelectionSize() {return selection.size();}
+	public int getPoints() {return this.points;}
+	public int getGoalsFor() {return this.goalsFor;}
+	public int getGoalsAgainst() {return this.goalsAgainst;}
+	public int getGoalDifference() {return this.goalDifference;}
 	public Player getPlayer(int i) {return team.get(i);}
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
 	public Goalkeeper getSelectionKeeper() {
@@ -369,4 +374,22 @@ public class Team {
 	public void setNm(String name) {this.nm = name;}
 	public void setBdgt_vir(int budget_vir) {this.bdgt_vir = budget_vir;}
 	public void setBdgt_rel(int budget_rel) {this.bdgt_rel = budget_rel;}
+	public void incPoints(int p){
+		this.points += p;
+	}
+	public void incGoalsFor(int g){
+		this.goalsFor += g;
+	}
+	public void incGoalsAgainst(int g){
+		this.goalsAgainst += g;
+	}
+	public void calcGoalDifference(){
+		this.goalDifference = goalsFor - goalsAgainst;
+	}
+	public void addPoints(int p, int GF, int GA){
+		this.points = p;
+		this.goalsFor = GF;
+		this.goalsAgainst = GA;
+		this.goalDifference = GF - GA;
+	}
 }

@@ -1,10 +1,15 @@
 package View;
 
+import Model.Player;
+import Model.Standing;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -21,24 +26,40 @@ public class CompetitionTable {
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back,150,870);
 		
+		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
+		competitionTable = Results.getCompetitionTable();
+		
 		//Create a table with fixed columns
 		TableView<String> table = new TableView();
 		table.setEditable(false);
-		table.setPrefSize(Style.getNewSize(700), Style.getNewSize(540));
-		Style.setLocation(table,600,225);
+		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
+		Style.setLocation(table,550,225);
+		
+		//table.setItems(competitionTable);
 		
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));
         TableColumn name = new TableColumn("Team Name");
-		name.setPrefWidth(Style.getNewSize(550));
+		name.setPrefWidth(Style.getNewSize(390));
+		name.setCellValueFactory(new PropertyValueFactory<Standing, String>("teamName"));
 		TableColumn points = new TableColumn("Points");
-		
 		points.setPrefWidth(Style.getNewSize(100));
+		points.setCellValueFactory(new PropertyValueFactory<Player, Integer>("points"));
+		TableColumn goalsFor = new TableColumn("GF");
+		goalsFor.setPrefWidth(Style.getNewSize(100));
+		goalsFor.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalsFor"));
+		TableColumn goalsAgainst = new TableColumn("GA");
+		goalsAgainst.setPrefWidth(Style.getNewSize(100));
+		goalsAgainst.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalsAgainst"));
+		TableColumn goalDifference = new TableColumn("GDA");
+		goalDifference.setPrefWidth(Style.getNewSize(100));
+		goalDifference.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalDifference"));
+		
         rank.setResizable(false);
         name.setResizable(false);
         points.setResizable(false);
         
-        table.getColumns().addAll(rank,name,points);
+        table.getColumns().addAll(rank,name,points,goalsFor,goalsAgainst,goalDifference);
         
         
 		root.getChildren().addAll(back, table);

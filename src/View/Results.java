@@ -7,6 +7,7 @@ import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
 import Model.Result;
+import Model.Standing;
 import Model.Team;
 import View.ManagementCenter;
 import javafx.collections.FXCollections;
@@ -21,6 +22,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Results {
+	public static ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage, gameEngine match) {
@@ -33,8 +35,33 @@ public class Results {
 		
 		ObservableList<Result> resultTable = FXCollections.observableArrayList();
 		
-		Result save = new Result(match.getTeamA(),match.getTeamB(),match.getGoalsA(),match.getGoalsB());
+		Team TeamA1 = match.getTeamA();
+		Team TeamB1 = match.getTeamB();
+		Result save = new Result(TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
 		resultTable.add(save);
+		
+		if(match.getToto() == 1){
+			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
+			Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+			competitionTable.add(standingA);
+			TeamB1.addPoints(0, match.getGoalsA(), match.getGoalsB());
+			Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+			competitionTable.add(standingB);
+		} else if(match.getToto() == 2){
+			TeamA1.addPoints(0, match.getGoalsA(), match.getGoalsB());
+			Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+			competitionTable.add(standingA);
+			TeamB1.addPoints(3, match.getGoalsA(), match.getGoalsB());
+			Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+			competitionTable.add(standingB);
+		} else if(match.getToto() == 0){
+			TeamA1.addPoints(1, match.getGoalsA(), match.getGoalsB());
+			Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+			competitionTable.add(standingA);
+			TeamB1.addPoints(1, match.getGoalsA(), match.getGoalsB());
+			Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+			competitionTable.add(standingB);
+		}
 		
 		Competition comp = saveGame.getCompetition();
 		int day = saveGame.getDay();
@@ -58,6 +85,31 @@ public class Results {
 				Result othermatch = new Result(alpha,beta,other.getGoalsA(),other.getGoalsB());
 				
 				resultTable.add(othermatch);
+				Team TeamA2 = other.getTeamA();
+				Team TeamB2 = other.getTeamB();
+				if(other.getToto() == 1){
+					TeamA2.addPoints(3, match.getGoalsA(), match.getGoalsB());
+					Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(0, match.getGoalsA(), match.getGoalsB());
+					Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+					competitionTable.add(standingB);
+					TeamB2.addPoints(0, match.getGoalsA(), match.getGoalsB());
+				} else if(match.getToto() == 2){
+					TeamA2.addPoints(0, match.getGoalsA(), match.getGoalsB());
+					Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(3, match.getGoalsA(), match.getGoalsB());
+					Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+					competitionTable.add(standingB);
+				} else if(match.getToto() == 0){
+					TeamA2.addPoints(1, match.getGoalsA(), match.getGoalsB());
+					Standing standingA = new Standing(TeamA1.getPoints(), TeamA1, TeamA1.getGoalsFor(), TeamA1.getGoalsAgainst(), TeamA1.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(1, match.getGoalsA(), match.getGoalsB());
+					Standing standingB = new Standing(TeamB1.getPoints(), TeamB1, TeamB1.getGoalsFor(), TeamB1.getGoalsAgainst(), TeamB1.getGoalDifference());
+					competitionTable.add(standingB);
+				}
 			}
 		}
 	
@@ -105,6 +157,10 @@ public class Results {
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
+	}
+	
+	public static ObservableList<Standing> getCompetitionTable(){
+		return competitionTable;
 	}
 
 }
