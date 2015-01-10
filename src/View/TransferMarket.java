@@ -12,17 +12,20 @@ import Model.Fieldplayer;
 import Model.Goalkeeper;
 import Model.Player;
 import Model.Team;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -37,6 +40,7 @@ public class TransferMarket {
 		Button back = new Button("Back to Management Center");
 		Text players = new Text("Players");
 		Text keepers = new Text("Keepers");
+		Text budget = new Text("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
 		
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
@@ -46,6 +50,9 @@ public class TransferMarket {
 		
 		Style.setTextStyle(keepers, 45);
 		Style.setLocation(keepers, 450, 680);
+		
+		Style.setTextStyle(budget, 60);
+		Style.setLocation(budget, 730, 940);
 		
 		//Create a table for the setup with fixed columns
 		TableView<Fieldplayer> tableSelectionField = new TableView<Fieldplayer>();
@@ -173,10 +180,30 @@ public class TransferMarket {
 		}
 		
 		refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
-		
 		Style.setLocation(comboBox, 700, 205);
 		
-		root.getChildren().addAll(back, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox);
+		TextField input = new TextField();
+		input.setMaxWidth(Style.getNewSize(400));
+		input.setPromptText("Enter Bid");
+		input.setAlignment(Pos.CENTER);
+		input.setFont(Style.getFont(45));
+		
+		Button confirm = new Button("Place Bid");
+		Style.setButtonStyle(confirm, 45);
+		
+		VBox vbox = new VBox(15);
+		Style.setLocation(vbox, 1200, 200);
+		vbox.setAlignment(Pos.CENTER);
+		
+		Text selected = new Text("You have selected: ");
+		Style.setTextStyle(selected, 60);
+		
+		Text pName = new Text("");
+		Text pPrice = new Text("");
+		
+		vbox.getChildren().addAll(selected,pName,pPrice,input,confirm);
+		
+		root.getChildren().addAll(back, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,budget);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -190,6 +217,32 @@ public class TransferMarket {
 			@Override
 			public void handle(ActionEvent event) {
 				refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+			}
+		});
+		
+		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
+
+			@Override
+			public void handle(MouseEvent event) {
+				Player p = (Player)tableSelectionField.getSelectionModel().getSelectedItem();
+				pName.setText(p.getName() + ", " + p.getPos());
+				Style.setTextStyle(pName, 45);
+				
+				pPrice.setText("\u20ac" + " " + p.getPri());
+				Style.setTextStyle(pPrice, 45);
+			}
+		});
+		
+		tableSelectionKeeper.setOnMouseClicked(new EventHandler <MouseEvent>(){
+
+			@Override
+			public void handle(MouseEvent event) {
+				Player p = (Player)tableSelectionKeeper.getSelectionModel().getSelectedItem();
+				pName.setText(p.getName() + ", " + p.getPos());
+				Style.setTextStyle(pName, 45);
+				
+				pPrice.setText("\u20ac" + " " + p.getPri());
+				Style.setTextStyle(pPrice, 45);
 			}
 		});
 		
@@ -209,7 +262,8 @@ public class TransferMarket {
 						selectionField.add((Fieldplayer) p);
 				}
 				
-				tableSelectionField.setItems(selectionField);		
+				tableSelectionField.setItems(selectionField);
+				tableSelectionField.getSelectionModel().select(0);
 				
 				ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
 				for(int k = 0; k < t.getSize(); k++){
@@ -220,6 +274,7 @@ public class TransferMarket {
 				}
 				
 				tableSelectionKeeper.setItems(selectionKeeper);
+				tableSelectionKeeper.getSelectionModel().select(0);
 			}
 		}
 		
