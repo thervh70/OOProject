@@ -5,7 +5,7 @@ import Controller.saveGame;
 public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
-	private int age, pri, card = 0, cardTime;
+	private int age, pri, card, cardTime;
 	private boolean play;
 	
 	/**
@@ -36,19 +36,19 @@ public abstract class Player {
 		if(chance>0.98){
 			card = 2;
 			cardTime = saveGame.getDay();
+			play = false;
 
-			System.out.println("Red for: " + getName());
 			return 2;
 		}
 		else if(chance>0.90){
 			if(card == 1){
-				setCard(2);;
+				card = 2;
 				cardTime = saveGame.getDay();
+				play = false;
 			}
 			else if(card == 0){
 				card = 1;
 			}
-			System.out.println("Yellow for: " + getName());
 			return 1;
 		}
 		return 0;
@@ -56,9 +56,10 @@ public abstract class Player {
 	
 	public void clearCard(){
 		int time = saveGame.getDay() - cardTime;
-		if(this.card == 2 & time >= 1){
-			this.card = 0;
-			this.cardTime = 0;
+		if(this.card == 2 & time > 1){
+			card = 0;
+			cardTime = 0;
+			play = true;
 		}
 	}
 	

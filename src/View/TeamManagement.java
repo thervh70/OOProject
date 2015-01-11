@@ -8,11 +8,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -31,6 +35,8 @@ public class TeamManagement {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
+		
+		Team backup = saveGame.getMyTeam();
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -311,6 +317,7 @@ public class TeamManagement {
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
+				saveGame.refreshTeam(backup, saveGame.getMyTeam());
 				ManagementCenter.start(primaryStage);
 			}
 		});
@@ -330,14 +337,13 @@ public class TeamManagement {
 			        public void updateItem(String item, boolean empty) {
 			        	super.updateItem(item, empty);
 			            if (!isEmpty()) {
-			            	this.setTextFill(Color.BLUE);
+			            	this.setTextFill(Color.BLACK);
 			            	Player p = saveGame.getDB().lookForPlayer(this.getItem());
-			            	System.out.println(p.getFnm() +" "+ p.checkYellowCard() + " " + p.getCard());
 			            	if(p.checkRedCard()) {
 			            		this.setTextFill(Color.RED);
 			            	}
 			            	else if(p.checkYellowCard()){
-			            		this.setTextFill(Color.YELLOW);
+			            		this.setTextFill(Color.GOLD);
 			            	}
 			            	
 			            	setText(item);

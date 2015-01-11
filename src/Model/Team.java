@@ -332,6 +332,14 @@ public class Team {
 		return false;
 	}
 	
+	public boolean checkAvail(){
+		for(Player p : selection){
+			if(!p.getPlay())
+				return false;
+		}
+		return true;
+	}
+	
 	/**
 	 * Methode equals checks if two Teams are equal to each other. 
 	 * Criteria:

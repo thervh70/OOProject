@@ -67,6 +67,7 @@ public class saveGame {
 		if(day < 34){
 			day++;
 		}
+		clearDBcards();
 	}
 	
 	public static void setDefaults(){
@@ -87,6 +88,11 @@ public class saveGame {
 
 	public static void write(String infile){
 		
+	}
+	
+	public static void refreshTeam(Team old, Team fresh){
+		DB.removeTeam(old);
+		DB.addTeam(fresh);
 	}
 	
 }

@@ -172,6 +172,14 @@ public class gameEngine {
 				System.out.println(t.calcAttScore() + "\t" + t.calcDefScore() + "\t" + t.getNm());
 			}
 		}
+		
+		else if(choice == 3){
+			DBmain d = XmlParser.parseDB();
+			for(int i = 0; i < d.getSize(); i++){
+				Team t = d.getTeam(i);
+				System.out.println(CreateSelection.checkSize(t) + " " + t.getNm());
+			}
+		}
 	}
 	
 	public gameEngine(){
@@ -181,8 +189,8 @@ public class gameEngine {
 	/**This method plays a match.
 	 * All stats are stored into static values within this class
 	 * 
-	 * @param alpha Team A
-	 * @param beta Team B
+	 * @param alpha Original Team A
+	 * @param beta Original Team B
 	 */
 	
 	public void play(Team alpha, Team beta){
@@ -193,11 +201,16 @@ public class gameEngine {
 		redcardsA = 0;
 		redcardsB = 0;
 		
-		double alphaAtt =  alpha.calcAttScore();
-		double betaAtt = beta.calcAttScore();
+		yellowPlayerA.clear();
+		yellowPlayerB.clear();
+		redPlayerA.clear();
+		redPlayerB.clear();
 		
-		double alphaDef = alpha.calcDefScore();
-		double betaDef = beta.calcDefScore();
+		double aAtt =  teamA.calcAttScore();
+		double bAtt = teamB.calcAttScore();
+		
+		double aDef = teamA.calcDefScore();
+		double bDef = teamB.calcDefScore();
 		
 		final Set<Integer> availableMin = new HashSet<>(); {
 		    for (int i = 0; i <= 90; i++) {
@@ -206,7 +219,7 @@ public class gameEngine {
 		}		
 		
 		for(int i = 0; i < 11; i++){
-			Player p = alpha.getSelectionPlayer(i);
+			Player p = teamA.getSelectionPlayer(i);
 			int card = p.card();
 			if(card == 1){
 				yellowcardsA++;
@@ -218,7 +231,7 @@ public class gameEngine {
 			}
 		}
 		
-		goalsA = attack(alphaAtt, betaDef);
+		goalsA = attack(aAtt, bDef);
 		attemptsA = attempts;
 		
 		yellowcardminutesA = minutes(yellowcardsA, availableMin);
@@ -231,7 +244,7 @@ public class gameEngine {
 		Arrays.sort(goalminutesA);
 		
 		for(int i = 0; i < 11; i++){
-			Player p = beta.getSelectionPlayer(i);
+			Player p = teamB.getSelectionPlayer(i);
 			int card = p.card();
 			if(card == 1){
 				yellowcardsB++;
@@ -243,7 +256,7 @@ public class gameEngine {
 			}
 		}
 		
-		goalsB = attack(betaAtt, alphaDef);
+		goalsB = attack(bAtt, aDef);
 		attemptsB = attempts;
 		
 		yellowcardminutesB = minutes(yellowcardsB, availableMin);
@@ -259,7 +272,8 @@ public class gameEngine {
 		else if(goalsB > goalsA){toto = 2;}
 		else if(goalsA == goalsB){toto = 0;}
 		
-		
+		saveGame.refreshTeam(alpha, teamA);
+		saveGame.refreshTeam(beta, teamB);
 		//System.out.println(alpha.getNm() + "\t" + alphaAttMap + "\t" + alphaDefMap);
 		//System.out.println(beta.getNm() + "\t" + betaAttMap + "\t" + betaDefMap);
 	}
