@@ -1,6 +1,5 @@
 package View;
 
-import Model.Player;
 import Model.Standing;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -30,12 +29,12 @@ public class CompetitionTable {
 		competitionTable = Results.getCompetitionTable();
 		
 		//Create a table with fixed columns
-		TableView<String> table = new TableView();
+		TableView<Standing> table = new TableView();
 		table.setEditable(false);
 		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
 		Style.setLocation(table,550,225);
 		
-		//table.setItems(competitionTable);
+		table.setItems(competitionTable);
 		
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));
@@ -44,16 +43,16 @@ public class CompetitionTable {
 		name.setCellValueFactory(new PropertyValueFactory<Standing, String>("teamName"));
 		TableColumn points = new TableColumn("Points");
 		points.setPrefWidth(Style.getNewSize(100));
-		points.setCellValueFactory(new PropertyValueFactory<Player, Integer>("points"));
+		points.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("points"));
 		TableColumn goalsFor = new TableColumn("GF");
 		goalsFor.setPrefWidth(Style.getNewSize(100));
-		goalsFor.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalsFor"));
+		goalsFor.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("goalsFor"));
 		TableColumn goalsAgainst = new TableColumn("GA");
 		goalsAgainst.setPrefWidth(Style.getNewSize(100));
-		goalsAgainst.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalsAgainst"));
-		TableColumn goalDifference = new TableColumn("GDA");
+		goalsAgainst.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("goalsAgainst"));
+		TableColumn goalDifference = new TableColumn("GD");
 		goalDifference.setPrefWidth(Style.getNewSize(100));
-		goalDifference.setCellValueFactory(new PropertyValueFactory<Player, Integer>("goalDifference"));
+		goalDifference.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("goalDifference"));
 		
         rank.setResizable(false);
         name.setResizable(false);
