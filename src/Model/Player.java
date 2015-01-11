@@ -5,7 +5,7 @@ import Controller.saveGame;
 public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
-	private int age, pri, card, cardTime;
+	private int age, pri, card = 0, cardTime, dur;
 	private boolean play;
 	
 	/**
@@ -18,7 +18,7 @@ public abstract class Player {
 	 * @param pri
 	 */
 	
-	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play, int card) {
+	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play, int card, int dur) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -27,6 +27,7 @@ public abstract class Player {
 		this.pri = pri;
 		this.play = play;
 		this.card = card;
+		this.dur = dur;
 		name = firstname + " " + lastname; 
 	}
 	
@@ -84,6 +85,7 @@ public abstract class Player {
 	public int getPri() {return pri; }
 	public boolean getPlay() {return play; }
 	public int getCard() {return card; }
+	public int getDur() {return dur; }
 
 	/**
 	 * Setters
@@ -98,5 +100,6 @@ public abstract class Player {
 	public void setPlay(boolean play) {this.play = play; }
 	public void setCard(int card) {this.card = card; }
 	public void setAvail() {this.card = 0; this.play = true; }
+	public void setDur(int dur) {this.dur = dur; }
 	
 }

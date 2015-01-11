@@ -20,9 +20,9 @@ public class Goalkeeper extends Player {
 	 * @param height
 	 */
 	
-	public Goalkeeper(String firstname, String lastname, String pos, int age, int price, boolean play, int card, int diving, int handling, int kicking,
+	public Goalkeeper(String firstname, String lastname, String pos, int age, int price, boolean play, int card, int dur, int diving, int handling, int kicking,
 			int reflexes, int speed, int positioning, int height) {
-		super(firstname, lastname, pos, age, price, play, card);
+		super(firstname, lastname, pos, age, price, play, card, dur);
 		this.div = diving;
 		this.han = handling;
 		this.kick = kicking;
@@ -66,7 +66,7 @@ public class Goalkeeper extends Player {
 		
 		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
-				+ "    Available: "+play+" Card: "+card+"\n"
+				+ "    Available: "+play+" Card: "+card+" Duration: "+this.getDur()+"\n"
 				+ "    Diving: "+this.getDiv()
 				+ " Handling: "+this.getHan()
 				+ " Kicking: "+this.getKick()
@@ -97,6 +97,7 @@ public class Goalkeeper extends Player {
 		res+="            <TYPE>GK</TYPE>\r\n";
 		res+="            <AVAILABLE>"+this.getPlay()+"</AVAILABLE>\r\n";
 		res+="            <CARD>"+this.getCard()+"</CARD>\r\n";
+		res+="            <DURATION>"+this.getDur()+"</DURATION>\r\n";
 		res+="         </KEEPER>\r\n";
 		return res;
 	}

@@ -21,12 +21,12 @@ public class Match {
 	}
 	
 	public String toWrite() {
-		String write = "<MATCH>\r\n"
-				+ "   <HOME>" + getTeamHome() + "</HOME>\r\n"
-				+ "   <AWAY>" + getTeamAway() + "</AWAY>\r\n"
-				+ "   <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
-				+ "   <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
-				+ "</MATCH>\r\n";
+		String write = "   <MATCH>\r\n"
+				+ "      <HOME>" + getTeamHome() + "</HOME>\r\n"
+				+ "      <AWAY>" + getTeamAway() + "</AWAY>\r\n"
+				+ "      <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
+				+ "      <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
+				+ "   </MATCH>\r\n";
 		return write;
 	}
 

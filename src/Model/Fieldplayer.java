@@ -19,9 +19,9 @@ public class Fieldplayer extends Player {
 	 * @param phy Physical
 	 */
 	
-	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, boolean play, int card, int pac,
+	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, boolean play, int dur, int card, int pac,
 			int sho, int pas, int dri, int def, int phy) {
-		super(fnm, lnm, pos, age, pri, play, card);
+		super(fnm, lnm, pos, age, pri, play, card, dur);
 		this.pac = pac;
 		this.sho = sho;
 		this.pas = pas;
@@ -49,7 +49,7 @@ public class Fieldplayer extends Player {
 		
 		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
-				+ "    Card: "+card+" Available: "+play+"\n"
+				+ "    Card: "+card+" Available: "+play+" Duration: "+this.getDur()+"\n"
 				+ "    Pace: "+this.getPac()
 				+ " Shooting: "+this.getSho()
 				+ " Passing: "+this.getPas()
@@ -78,6 +78,7 @@ public class Fieldplayer extends Player {
 		res+="            <TYPE>"+this.getPos()+"</TYPE>\r\n";
 		res+="            <AVAILABLE>"+this.getPlay()+"</AVAILABLE>\r\n";
 		res+="            <CARD>"+this.getCard()+"</CARD>\r\n";
+		res+="            <DURATION>"+this.getDur()+"</DURATION>\r\n";
 		res+="         </PLAYER>\r\n";
 		return res;
 	}
