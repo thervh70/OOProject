@@ -1,6 +1,5 @@
 package View;
 
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -105,7 +104,6 @@ public class Warning{
 			public void handle(MouseEvent y){
 				warning.hide();
 				event.handle(y);
-				root.setDisable(false);
 			}
 		});
 		

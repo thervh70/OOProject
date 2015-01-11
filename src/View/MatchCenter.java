@@ -191,8 +191,8 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		//results.setDisable(true);
-		//results.setVisible(false);
+		results.setDisable(true);
+		results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -204,7 +204,7 @@ public class MatchCenter {
 			public void handle(ActionEvent event) {
 	        	
 	        	
-	        	if(saveGame.getMyTeam().checkRedCards()){
+	        	if(!saveGame.getMyTeam().checkAvail()){
 	        		Popup cardwarning = Warning.makeWarning("Selection contains \nunavailable players", root);
 	        		cardwarning.show(primaryStage);
 	        	}
@@ -479,13 +479,13 @@ public class MatchCenter {
 	}
 	
 	//color: false is yellow, true is red
-	public static void cardAnimation(boolean user, boolean color, Text name){
+	public static void cardAnimation(boolean loc, boolean color, Text name){
 		timeline.pause();
 		name.setVisible(true);
-		if(user){
+		if(loc){
 			Style.setLocation(name, 320, 700);
 		}
-		else if(!user){
+		else if(!loc){
 			Style.setLocation(name, 1350, 700);
 		}
 		
@@ -497,8 +497,8 @@ public class MatchCenter {
 		}
 		
 		ScaleTransition st = new ScaleTransition(Duration.millis(800), name);
-		st.setByX(1);
-	    st.setByY(1);
+		st.setByX(.8);
+	    st.setByY(.8);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();

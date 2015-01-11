@@ -1,11 +1,6 @@
 package View;
 
-import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
 
 import Controller.saveGame;
 import Model.Competition;
@@ -18,8 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
@@ -129,14 +122,14 @@ public class ManagementCenter {
 				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
 					
 					public void handle(MouseEvent e) {
-						System.out.println("Game saved");
+						root.setDisable(false);
 					}
 				};
 				
 				EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
 					
 					public void handle(MouseEvent e) {
-						System.out.println("Game not saved");
+						
 					}
 				};
 				
