@@ -7,15 +7,34 @@ import Model.Player;
 import Model.Team;
 public class Budget {
 	
-	private static void buy(Player p, Team buyTeam, int bid, Team myTeam){
-		myTeam.subtractBudget_rel(bid);
+	private static void buy(Player p, Team buyTeam, int bid, Team myTeam) throws Exception {
+		Team oldBuy = buyTeam;
+		Team oldMy = myTeam;
 		myTeam.addPlayer(p);
 		buyTeam.removePlayer(p);
-		buyTeam.addBudget_rel(bid);
-		buyTeam.addBudget_vir(bid);
+		
+		if(CreateSelection.checkSize(buyTeam)){
+			myTeam.subtractBudget_rel(bid);
+			buyTeam.addBudget_rel(bid);
+			buyTeam.addBudget_vir(bid);
+			
+			CreateSelection.create(buyTeam);
+		}
+		else{
+			myTeam.removePlayer(p);
+			buyTeam.addPlayer(p);
+			throw new Exception();
+		}
+		
+		saveGame.refreshTeam(oldBuy, buyTeam);
+		saveGame.refreshTeam(oldMy, myTeam);
 	}
 	
-	public static boolean bid(Player p, Team buyTeam, int bid){
+	private static void refund(int bid, Team myTeam){
+		myTeam.addBudget_vir(bid);
+	}
+	
+	public static boolean bid(Player p, Team buyTeam, int bid) throws Exception {
 		//Checks Team t1 can afford the player
 		Team myTeam = saveGame.getMyTeam();
 		if(!(bid>myTeam.getBdgt_vir())){
@@ -27,11 +46,19 @@ public class Budget {
 						buy(p,buyTeam,bid,myTeam);
 						return true;
 					}
+					else{
+						refund(bid,myTeam);
+						return false;
+					}
 				}
 				else if((0.9*p.getPri())<bid & bid<=p.getPri()){
 					if(Math.random()>0.5){
 						buy(p,buyTeam,bid,myTeam);
 						return true;
+					}
+					else{
+						refund(bid,myTeam);
+						return false;
 					}
 				}
 				else if((p.getPri()<bid & bid<=(1.5*p.getPri()))){
@@ -39,11 +66,19 @@ public class Budget {
 						buy(p,buyTeam,bid,myTeam);
 						return true;
 					}
+					else{
+						refund(bid,myTeam);
+						return false;
+					}
 				}
 				else if((1.5*p.getPri())<bid & bid<=(1.9*p.getPri())){
 					if(Math.random()>0.2){
 						buy(p,buyTeam,bid,myTeam);
 						return true;
+					}
+					else{
+						refund(bid,myTeam);
+						return false;
 					}
 				}
 				else if((1.9*p.getPri())<bid & bid<=(2*p.getPri())){
@@ -51,11 +86,19 @@ public class Budget {
 						buy(p,buyTeam,bid,myTeam);
 						return true;
 					}
+					else{
+						refund(bid,myTeam);
+						return false;
+					}
 				}
 				else{
-					myTeam.addBudget_vir(bid);
+					refund(bid,myTeam);
 					return false;
-				}	
+				}
+			}
+			else{
+				refund(bid,myTeam);
+				return false;
 			}
 		}
 		return false;
