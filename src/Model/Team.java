@@ -316,6 +316,22 @@ public class Team {
 		}
 	}
 	
+	public boolean checkRedCards(){
+		for(Player p : team){
+			if(p.checkRedCard())
+				return true;
+		}
+		return false;
+	}
+	
+	public boolean checkYellowCards(){
+		for(Player p : team){
+			if(p.checkYellowCard())
+				return true;
+		}
+		return false;
+	}
+	
 	/**
 	 * Methode equals checks if two Teams are equal to each other. 
 	 * Criteria:

@@ -102,4 +102,19 @@ public class DBmain {
 			d.remove(t);
 		}
 	}
+	
+	/**Method to look for a player based on its name (String)
+	 * 
+	 * @param s String representing Full name of player
+	 * @return Player object
+	 */
+	public Player lookForPlayer(String s){
+		for(Team t : d){
+			for(Player p : t.getTeam()){
+				if(p.getName().equals(s))
+					return p;
+			}
+		}
+		return null;
+	}
 }
