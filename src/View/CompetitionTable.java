@@ -30,12 +30,12 @@ public class CompetitionTable {
 		competitionTable = Results.getCompetitionTable();
 		
 		//Create a table with fixed columns
-		TableView<String> table = new TableView();
+		TableView<Standing> table = new TableView();
 		table.setEditable(false);
 		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
 		Style.setLocation(table,550,225);
 		
-		//table.setItems(competitionTable);
+		table.setItems(competitionTable);
 		
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));

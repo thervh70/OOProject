@@ -8,6 +8,7 @@ public class Team {
 	private String nm;
 	private int bdgt_vir, bdgt_rel, rank;
 	private int points, goalsFor, goalsAgainst, goalDifference = 0;
+	private Standing standing = new Standing(0, this, 0, 0, 0);
 	
 	
 	/**
@@ -356,6 +357,7 @@ public class Team {
 	public int getGoalsFor() {return this.goalsFor;}
 	public int getGoalsAgainst() {return this.goalsAgainst;}
 	public int getGoalDifference() {return this.goalDifference;}
+	public Standing getStanding() {return this.standing;}
 	public Player getPlayer(int i) {return team.get(i);}
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
 	public Goalkeeper getSelectionKeeper() {
@@ -391,5 +393,9 @@ public class Team {
 		this.goalsFor = GF;
 		this.goalsAgainst = GA;
 		this.goalDifference = GF - GA;
+		updateStanding();
+	}
+	public void updateStanding(){
+		standing = new Standing(points, this, goalsFor, goalsAgainst, goalDifference);
 	}
 }
