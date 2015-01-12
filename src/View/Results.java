@@ -2,6 +2,7 @@ package View;
 
 import java.util.ArrayList;
 
+import Controller.CreateSelection;
 import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
@@ -76,7 +77,9 @@ public class Results {
 			
 			else {
 				Team alpha = game.getTeamHome();
+				CreateSelection.create(alpha);
 				Team beta = game.getTeamAway();
+				CreateSelection.create(beta);
 				
 				gameEngine other = new gameEngine();
 				

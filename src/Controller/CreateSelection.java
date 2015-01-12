@@ -37,7 +37,7 @@ public class CreateSelection {
 	}
 	
 	public static Team create(Team t) {
-		
+		Team backup = t;
 		t.removeSelection();
 		for(int type=0;type<3;type++) {
 			int aantal = 0;
@@ -63,6 +63,8 @@ public class CreateSelection {
 				list.remove(p);
 			}
 		}
+		
+		saveGame.refreshTeam(backup, t);
 		return t;
 	}
 	

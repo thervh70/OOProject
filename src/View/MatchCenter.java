@@ -2,6 +2,7 @@ package View;
 
 import java.util.ArrayList;
 
+import Controller.CreateSelection;
 import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
@@ -60,10 +61,12 @@ public class MatchCenter {
 			if(home.getNm().equals(saveGame.getMyTeamName())){
 				alpha = saveGame.getMyTeam();
 				beta = away;
+				CreateSelection.create(beta);
 			}
 			
 			else if(away.getNm().equals(saveGame.getMyTeamName())){
 				alpha = home;
+				CreateSelection.create(alpha);
 				beta = saveGame.getMyTeam();
 			}
 		}
