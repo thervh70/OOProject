@@ -3,8 +3,11 @@ package Controller;
  * @author Bram
  */
 
+import java.util.Random;
+
 import Model.Player;
 import Model.Team;
+import Model.DBmain;
 public class Budget {
 	
 	private static void buy(Player p, Team buyTeam, int bid, Team myTeam) throws Exception {
@@ -102,5 +105,27 @@ public class Budget {
 			}
 		}
 		return false;
-	}	
+	}
+	
+	public static boolean tosell(Player p){
+		Team myTeam = saveGame.getMyTeam();
+		if(Math.random()>0.4){
+			DBmain d = saveGame.getDB();
+			Random R = new Random();
+			int startr = R.nextInt(d.getSize());
+			Team sellTeam = d.getTeam(startr);
+			while(sellTeam.getNm()==myTeam.getNm() | sellTeam.getBdgt_rel()<p.getPri()){
+				int r = R.nextInt(d.getSize());
+				sellTeam = d.getTeam(r);
+			}
+			myTeam.addBudget_rel(p.getPri());
+			myTeam.addBudget_vir(p.getPri());
+			sellTeam.subtractBudget_rel(p.getPri());
+			sellTeam.subtractBudget_vir(p.getPri());
+			myTeam.removePlayer(p);
+			sellTeam.addPlayer(p);
+			return true;			
+		}
+		return false;
+	}
 }
