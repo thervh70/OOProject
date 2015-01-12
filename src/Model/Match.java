@@ -20,6 +20,17 @@ public class Match {
 		return txt;
 	}
 	
+	public boolean equals(Object obj){
+		if(!(obj instanceof Match)){
+			return false;
+		}
+		Match that = (Match)obj;
+		if(this.getTeamHome().equals(that.getTeamHome()) && this.getTeamAway().equals(that.getTeamAway()) && this.getGoalsHome() == that.getGoalsHome() && this.getGoalsAway() == that.getGoalsAway() && this.getDay() == that.getDay() && this.getAwayIndex() == that.getAwayIndex() && this.getHomeIndex() == that.getHomeIndex()){
+			return true;
+		}
+		return false;
+	}
+	
 	public String toWrite() {
 		String write = "   <MATCH>\r\n"
 				+ "      <HOME>" + getTeamHome() + "</HOME>\r\n"
