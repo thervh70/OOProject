@@ -413,10 +413,10 @@ public class Team {
 		this.goalDifference = goalsFor - goalsAgainst;
 	}
 	public void addPoints(int p, int GF, int GA){
-		this.points = p;
-		this.goalsFor = GF;
-		this.goalsAgainst = GA;
-		this.goalDifference = GF - GA;
+		this.points += p;
+		this.goalsFor += GF;
+		this.goalsAgainst += GA;
+		this.goalDifference += GF - GA;
 		updateStanding();
 	}
 	public void updateStanding(){

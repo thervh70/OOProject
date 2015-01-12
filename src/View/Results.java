@@ -41,6 +41,7 @@ public class Results {
 		Result save = new Result(TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
 		resultTable.add(save);
 		
+		competitionTable.clear();
 		if(match.getToto() == 1){
 			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
 			competitionTable.add(TeamA1.getStanding());
