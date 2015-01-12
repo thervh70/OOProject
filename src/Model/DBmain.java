@@ -34,9 +34,9 @@ public class DBmain {
 		}
 	}
 	
-	public void clearAllCards(){
+	public void clearAllCardsInjuries(){
 		for(Team t : d){
-			t.clearCards();
+			t.clearCardsInjuries();
 		}
 	}
 

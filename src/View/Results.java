@@ -106,7 +106,7 @@ public class Results {
 	
 		TableView<Result> tableResults = new TableView();
 		tableResults.setPrefSize(Style.getNewSize(750), Style.getNewSize(500)); 
-		Style.setLocation(tableResults, 200, 150);
+		Style.setLocation(tableResults, 575, 200);
 		tableResults.setEditable(false);
 		
 		tableResults.setItems(resultTable);
@@ -141,7 +141,6 @@ public class Results {
 			@Override
 			public void handle(ActionEvent e) {
 				saveGame.nextDay();
-				saveGame.clearDBcards();
 				ManagementCenter.start(primaryStage);
 			}
 		});

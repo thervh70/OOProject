@@ -210,10 +210,6 @@ public class Team {
 		}
 		
 		score = Math.round(score);
-		//score = map(score, 300, 700, 0, 100);
-		
-		//score = map(score, 0, 60, 0, 100);
-		
 		
 		return (int) score;
 	}
@@ -245,7 +241,6 @@ public class Team {
 		}
 		
 		score = Math.round(score);
-		//score = map(score, 100, 400, 0, 100);
 		
 		return (int) score;
 	}
@@ -315,9 +310,9 @@ public class Team {
 		return count;
 	}
 	
-	public void clearCards(){
+	public void clearCardsInjuries(){
 		for(Player p : team){
-			p.clearCard();
+			p.clearCardInjury();
 		}
 	}
 	
@@ -332,6 +327,14 @@ public class Team {
 	public boolean checkYellowCards(){
 		for(Player p : team){
 			if(p.checkYellowCard())
+				return true;
+		}
+		return false;
+	}
+	
+	public boolean checkInjuries(){
+		for(Player p : team){
+			if(p.checkInjury())
 				return true;
 		}
 		return false;

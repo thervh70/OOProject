@@ -105,24 +105,6 @@ public class TeamManagement {
 		
 		refreshPlayers(tableSelectionField,tableSelectionKeeper,tableTeamField,tableTeamKeeper);
 		
-		
-		
-		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent e) {
-				movePlayer(tableSelectionField, tableTeamField, primaryStage, root);
-				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
-			}
-		});
-		
-		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent e) {
-				moveKeeper(tableSelectionKeeper, tableTeamKeeper, primaryStage, root);
-				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
-			}
-		});
-		
 		//Columns for Team Fieldplayers
 		TableColumn name = new TableColumn("Name");
 		name.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
@@ -144,15 +126,17 @@ public class TeamManagement {
         defending.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
 		TableColumn physical = new TableColumn("PHY");
         physical.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
+        TableColumn injury = new TableColumn("Injury");
+        injury.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
         
         name.setResizable(false);
-		name.setPrefWidth(Style.getNewSize(197));
+		name.setPrefWidth(Style.getNewSize(190));
 		position.setResizable(false);
-		position.setPrefWidth(Style.getNewSize(100));
+		position.setPrefWidth(Style.getNewSize(75));
 		age.setResizable(false);
 		age.setPrefWidth(Style.getNewSize(50));
 		worth.setResizable(false);
-		worth.setPrefWidth(Style.getNewSize(100));
+		worth.setPrefWidth(Style.getNewSize(75));
 		shooting.setResizable(false);
 		shooting.setPrefWidth(Style.getNewSize(50));
 		passing.setResizable(false);
@@ -163,6 +147,9 @@ public class TeamManagement {
 		defending.setPrefWidth(Style.getNewSize(50));
 		physical.setResizable(false);
 		physical.setPrefWidth(Style.getNewSize(50));
+		injury.setResizable(false);
+		injury.setPrefWidth(Style.getNewSize(50));
+		
         
         //Columns for Selection Fieldplayers
         TableColumn nameS = new TableColumn("Name");
@@ -185,15 +172,17 @@ public class TeamManagement {
         defendingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
 		TableColumn physicalS = new TableColumn("PHY");
         physicalS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
+        TableColumn injuryS = new TableColumn("Injury");
+        injuryS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
         
         nameS.setResizable(false);
-		nameS.setPrefWidth(Style.getNewSize(197));
+		nameS.setPrefWidth(Style.getNewSize(190));
 		positionS.setResizable(false);
-		positionS.setPrefWidth(Style.getNewSize(100));
+		positionS.setPrefWidth(Style.getNewSize(75));
 		ageS.setResizable(false);
 		ageS.setPrefWidth(Style.getNewSize(50));
 		worthS.setResizable(false);
-		worthS.setPrefWidth(Style.getNewSize(100));
+		worthS.setPrefWidth(Style.getNewSize(75));
 		shootingS.setResizable(false);
 		shootingS.setPrefWidth(Style.getNewSize(50));
 		passingS.setResizable(false);
@@ -204,6 +193,8 @@ public class TeamManagement {
 		defendingS.setPrefWidth(Style.getNewSize(50));
 		physicalS.setResizable(false);
 		physicalS.setPrefWidth(Style.getNewSize(50));
+		injuryS.setResizable(false);
+		injuryS.setPrefWidth(Style.getNewSize(50));
         
         //Columns for Team Goalkeepers
         TableColumn nameK = new TableColumn("Name");
@@ -228,15 +219,17 @@ public class TeamManagement {
         posK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
         TableColumn heightK = new TableColumn("HEI");
         heightK.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));
+        TableColumn injuryK = new TableColumn("Injury");
+        injuryK.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
         
         nameK.setResizable(false);
-		nameK.setPrefWidth(Style.getNewSize(202));
+		nameK.setPrefWidth(Style.getNewSize(175));
 		positionK.setResizable(false);
-		positionK.setPrefWidth(Style.getNewSize(100));
+		positionK.setPrefWidth(Style.getNewSize(75));
 		ageK.setResizable(false);
 		ageK.setPrefWidth(Style.getNewSize(50));
 		worthK.setResizable(false);
-		worthK.setPrefWidth(Style.getNewSize(100));
+		worthK.setPrefWidth(Style.getNewSize(75));
 		divingK.setResizable(false);
 		divingK.setPrefWidth(Style.getNewSize(35));
 		handlingK.setResizable(false);
@@ -251,6 +244,8 @@ public class TeamManagement {
 		posK.setPrefWidth(Style.getNewSize(35));
 		heightK.setResizable(false);
 		heightK.setPrefWidth(Style.getNewSize(35));
+		injuryK.setResizable(false);
+		injuryK.setPrefWidth(Style.getNewSize(50));
         		
         //Columns for Selection Goalkeepers
         TableColumn nameKS = new TableColumn("Name");
@@ -275,15 +270,17 @@ public class TeamManagement {
         posKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
         TableColumn heightKS = new TableColumn("HEI");
         heightKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));		
+        TableColumn injuryKS = new TableColumn("Injury");
+        injuryKS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
         
         nameKS.setResizable(false);
-		nameKS.setPrefWidth(Style.getNewSize(202));
+		nameKS.setPrefWidth(Style.getNewSize(175));
 		positionKS.setResizable(false);
-		positionKS.setPrefWidth(Style.getNewSize(100));
+		positionKS.setPrefWidth(Style.getNewSize(75));
 		ageKS.setResizable(false);
 		ageKS.setPrefWidth(Style.getNewSize(50));
 		worthKS.setResizable(false);
-		worthKS.setPrefWidth(Style.getNewSize(100));
+		worthKS.setPrefWidth(Style.getNewSize(75));
 		divingKS.setResizable(false);
 		divingKS.setPrefWidth(Style.getNewSize(35));
 		handlingKS.setResizable(false);
@@ -298,6 +295,8 @@ public class TeamManagement {
 		posKS.setPrefWidth(Style.getNewSize(35));
 		heightKS.setResizable(false);
 		heightKS.setPrefWidth(Style.getNewSize(35));
+		injuryKS.setResizable(false);
+		injuryKS.setPrefWidth(Style.getNewSize(50));
 
 		setColor(name);
 		setColor(nameS);
@@ -305,10 +304,10 @@ public class TeamManagement {
 		setColor(nameKS);
 		 
 		//Add columns to table
-		tableTeamField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
-		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
-		tableTeamKeeper.getColumns().addAll(nameK,positionK,ageK,worthK,divingK,handlingK,kickingK,reflexK,speedK,posK,heightK);
-		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS);	
+		tableTeamField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical,injury);
+		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS,injuryS);
+		tableTeamKeeper.getColumns().addAll(nameK,positionK,ageK,worthK,divingK,handlingK,kickingK,reflexK,speedK,posK,heightK,injuryK);
+		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS,injuryKS);	
 		
 		//Add elements to the canvas
 		root.getChildren().addAll(back, tableSelectionField, tableTeamField, tableSelectionKeeper, tableTeamKeeper, setup, bench, setupKeeper,benchKeeper);
@@ -322,7 +321,29 @@ public class TeamManagement {
 			}
 		});
 		
+		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				setColor(name);
+				setColor(nameS);
+				setColor(nameK);
+				setColor(nameKS);
+				movePlayer(tableSelectionField, tableTeamField, primaryStage, root);
+				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
+			}
+		});
 		
+		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent e) {
+				setColor(name);
+				setColor(nameS);
+				setColor(nameK);
+				setColor(nameKS);
+				moveKeeper(tableSelectionKeeper, tableTeamKeeper, primaryStage, root);
+				refreshPlayers(tableSelectionField, tableSelectionKeeper, tableTeamField, tableTeamKeeper);
+			}
+		});		
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
@@ -344,6 +365,9 @@ public class TeamManagement {
 			            	}
 			            	else if(p.checkYellowCard()){
 			            		this.setTextFill(Color.GOLD);
+			            	}
+			            	else if(p.checkInjury()){
+			            		this.setTextFill(Color.LIMEGREEN);
 			            	}
 			            	
 			            	setText(item);

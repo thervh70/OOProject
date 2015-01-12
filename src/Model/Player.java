@@ -4,8 +4,9 @@ import Controller.saveGame;
 
 public abstract class Player {
 		
-	private String firstname, lastname, pos, name;
-	private int age, pri, card = 0, cardTime, dur;
+	private String firstname, lastname, pos, name, injury;
+	private int age, pri, card = 0, cardTime;
+	private Integer dur;
 	private boolean play;
 	
 	/**
@@ -28,7 +29,8 @@ public abstract class Player {
 		this.play = play;
 		this.card = card;
 		this.dur = dur;
-		name = firstname + " " + lastname; 
+		this.name = firstname + " " + lastname;
+		this.injury = "";
 	}
 	
 	public int card(){
@@ -41,7 +43,7 @@ public abstract class Player {
 
 			return 2;
 		}
-		else if(chance>0.90){
+		else if(chance>0.94){
 			if(card == 1){
 				card = 2;
 				cardTime = saveGame.getDay();
@@ -55,21 +57,52 @@ public abstract class Player {
 		return 0;
 	}
 	
-	public void clearCard(){
+	/**Method to calculate injuries
+	 * 
+	 * @return the length of an injury (0 if no injury was made)
+	 */
+	public int injury(){
+		double chance = Math.random();
+		
+		if(chance > 0.98){
+			int length = (int) Math.round((4*Math.random()) + 2);
+			dur = length;
+			play = false;
+			return length;
+		}
+		return 0;
+	}
+	
+	/**Clears player from cards and injury if he has any
+	 * 
+	 */
+	public void clearCardInjury(){
 		int time = saveGame.getDay() - cardTime;
-		if(this.card == 2 & time > 1){
+		if(card == 2 & time > 1){
 			card = 0;
 			cardTime = 0;
 			play = true;
 		}
+		
+		if(dur > 0){
+			dur--;
+			if(dur == 0){
+				play = true;
+			}
+		}
+		
 	}
 	
 	public boolean checkRedCard(){
-		return this.card == 2;
+		return card == 2;
 	}
 	
 	public boolean checkYellowCard(){
-		return this.card == 1;
+		return card == 1;
+	}
+	
+	public boolean checkInjury(){
+		return !(dur == 0);
 	}
 
 	/**
@@ -86,6 +119,14 @@ public abstract class Player {
 	public boolean getPlay() {return play; }
 	public int getCard() {return card; }
 	public int getDur() {return dur; }
+	public String getInjury() {
+		if(this.dur == 0){
+			return "";
+		}
+		else{
+			return dur.toString();
+		}
+	}
 
 	/**
 	 * Setters

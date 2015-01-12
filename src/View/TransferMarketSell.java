@@ -404,6 +404,9 @@ public class TransferMarketSell {
 			            	else if(p.checkYellowCard()){
 			            		this.setTextFill(Color.GOLD);
 			            	}
+			            	else if(p.checkInjury()){
+			            		this.setTextFill(Color.LIMEGREEN);
+			            	}
 			            	
 			            	setText(item);
 			            }

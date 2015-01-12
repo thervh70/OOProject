@@ -79,45 +79,49 @@ public class TransferMarket {
 		Style.setLocation(tableSelectionKeeper, 150, 700);
 		
 		 //Columns for Selection Fieldplayers
-        TableColumn nameS = new TableColumn("Name");
+	    TableColumn nameS = new TableColumn("Name");
 		nameS.setCellValueFactory(new PropertyValueFactory<Player, String>("name"));
-        TableColumn positionS = new TableColumn("Position");
-        positionS.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
+	    TableColumn positionS = new TableColumn("Position");
+	    positionS.setCellValueFactory(new PropertyValueFactory<Player, String>("pos"));
 		TableColumn ageS = new TableColumn("Age");
-        ageS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
-		TableColumn worthS = new TableColumn("Worth");
-        worthS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
-        TableColumn paceS = new TableColumn("PAC");
-        paceS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pac"));
-		TableColumn shootingS = new TableColumn("SHO");
-        shootingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("sho"));
-		TableColumn passingS = new TableColumn("PAS");
-        passingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pas"));
-		TableColumn dribblingS = new TableColumn("DRI");
-        dribblingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("dri"));
-		TableColumn defendingS = new TableColumn("DEF");
-        defendingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
-		TableColumn physicalS = new TableColumn("PHY");
-        physicalS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
-        
-        nameS.setResizable(false);
-		nameS.setPrefWidth(Style.getNewSize(197));
-		positionS.setResizable(false);
-		positionS.setPrefWidth(Style.getNewSize(100));
-		ageS.setResizable(false);
-		ageS.setPrefWidth(Style.getNewSize(50));
-		worthS.setResizable(false);
-		worthS.setPrefWidth(Style.getNewSize(100));
-		shootingS.setResizable(false);
-		shootingS.setPrefWidth(Style.getNewSize(50));
-		passingS.setResizable(false);
-		passingS.setPrefWidth(Style.getNewSize(50));
-		dribblingS.setResizable(false);
-		dribblingS.setPrefWidth(Style.getNewSize(50));
-		defendingS.setResizable(false);
-		defendingS.setPrefWidth(Style.getNewSize(50));
-		physicalS.setResizable(false);
-		physicalS.setPrefWidth(Style.getNewSize(50));
+	    ageS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("age"));
+	    TableColumn worthS = new TableColumn("Worth");
+	    worthS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("pri"));
+	    TableColumn paceS = new TableColumn("PAC");
+	    paceS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pac"));
+	    TableColumn shootingS = new TableColumn("SHO");
+	    shootingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("sho"));
+	    TableColumn passingS = new TableColumn("PAS");
+	    passingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("pas"));
+	    TableColumn dribblingS = new TableColumn("DRI");
+	    dribblingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("dri"));
+	    TableColumn defendingS = new TableColumn("DEF");
+	    defendingS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("def"));
+	    TableColumn physicalS = new TableColumn("PHY");
+	    physicalS.setCellValueFactory(new PropertyValueFactory<Fieldplayer, Integer>("phy"));
+	    TableColumn injuryS = new TableColumn("Injury");
+	    injuryS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
+	    
+	    nameS.setResizable(false);
+	    nameS.setPrefWidth(Style.getNewSize(190));
+	    positionS.setResizable(false);
+	    positionS.setPrefWidth(Style.getNewSize(75));
+	    ageS.setResizable(false);
+	    ageS.setPrefWidth(Style.getNewSize(50));
+	    worthS.setResizable(false);
+	    worthS.setPrefWidth(Style.getNewSize(75));
+	    shootingS.setResizable(false);
+	    shootingS.setPrefWidth(Style.getNewSize(50));
+	    passingS.setResizable(false);
+	    passingS.setPrefWidth(Style.getNewSize(50));
+	    dribblingS.setResizable(false);
+	    dribblingS.setPrefWidth(Style.getNewSize(50));
+	    defendingS.setResizable(false);
+	    defendingS.setPrefWidth(Style.getNewSize(50));
+	    physicalS.setResizable(false);
+	    physicalS.setPrefWidth(Style.getNewSize(50));
+	    injuryS.setResizable(false);
+	    injuryS.setPrefWidth(Style.getNewSize(50));
 		
 		 //Columns for Selection Goalkeepers
         TableColumn nameKS = new TableColumn("Name");
@@ -142,15 +146,17 @@ public class TransferMarket {
         posKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
         TableColumn heightKS = new TableColumn("HEI");
         heightKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));		
+        TableColumn injuryKS = new TableColumn("Injury");
+        injuryKS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
         
         nameKS.setResizable(false);
-		nameKS.setPrefWidth(Style.getNewSize(202));
+		nameKS.setPrefWidth(Style.getNewSize(175));
 		positionKS.setResizable(false);
-		positionKS.setPrefWidth(Style.getNewSize(100));
+		positionKS.setPrefWidth(Style.getNewSize(75));
 		ageKS.setResizable(false);
 		ageKS.setPrefWidth(Style.getNewSize(50));
 		worthKS.setResizable(false);
-		worthKS.setPrefWidth(Style.getNewSize(100));
+		worthKS.setPrefWidth(Style.getNewSize(75));
 		divingKS.setResizable(false);
 		divingKS.setPrefWidth(Style.getNewSize(35));
 		handlingKS.setResizable(false);
@@ -165,13 +171,15 @@ public class TransferMarket {
 		posKS.setPrefWidth(Style.getNewSize(35));
 		heightKS.setResizable(false);
 		heightKS.setPrefWidth(Style.getNewSize(35));
+		injuryKS.setResizable(false);
+		injuryKS.setPrefWidth(Style.getNewSize(50));
 		
 		setColor(nameS);
 		setColor(nameKS);
 		
 		//Add columns to table
-		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
-		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS);	
+		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS,injuryS);
+		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS,injuryKS);	
 
 		ComboBox comboBox = new ComboBox();
 		DBmain DB = saveGame.getDB();
@@ -256,6 +264,8 @@ public class TransferMarket {
 				teamSelect = null;
 				pName.setText("");
 				pPrice.setText("");
+				setColor(nameS);
+				setColor(nameKS);
 				refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
 			}
 		});
@@ -288,6 +298,8 @@ public class TransferMarket {
 											if(b){
 												Popup congratz = Warning.makeWarning("Congratulations! \nYou have bought " + playerSelect.getName(), root);
 												congratz.show(primaryStage);
+												setColor(nameS);
+												setColor(nameKS);
 												refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
 												budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
 												pName.setText("");
@@ -317,6 +329,8 @@ public class TransferMarket {
 											else if(!b){
 												Popup toobad = Warning.makeWarning("Too bad... \n" + teamSelect.getNm() + " refused your offer.", root);
 												toobad.show(primaryStage);
+												setColor(nameS);
+												setColor(nameKS);
 												refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
 												input.clear();
 											}
@@ -397,6 +411,8 @@ public class TransferMarket {
 				teamSelect = t;
 				
 				ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
+				selectionField.removeAll(selectionField);
+				
 				for (int j = 0; j < t.getSize(); j++) {
 					Player p = t.getPlayer(j);
 					if(p instanceof Fieldplayer)
@@ -407,6 +423,8 @@ public class TransferMarket {
 				tableSelectionField.getSelectionModel().select(0);
 				
 				ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
+				selectionKeeper.removeAll(selectionKeeper);
+				
 				for(int k = 0; k < t.getSize(); k++){
 					Player p = t.getPlayer(k);
 					if(p instanceof Goalkeeper){
@@ -438,6 +456,9 @@ public class TransferMarket {
 			            	else if(p.checkYellowCard()){
 			            		this.setTextFill(Color.GOLD);
 			            	}
+			            	else if(p.checkInjury()){
+			            		this.setTextFill(Color.LIMEGREEN);
+			            	}
 			            	
 			            	setText(item);
 			            }
@@ -446,5 +467,4 @@ public class TransferMarket {
 		     }
 		 });
 	}
-
 }

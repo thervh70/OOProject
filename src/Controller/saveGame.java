@@ -31,8 +31,8 @@ public class saveGame {
 		saveGame.DB = db;
 	}
 	
-	public static void clearDBcards(){
-		DB.clearAllCards();
+	public static void clearDBcardsInjuries(){
+		DB.clearAllCardsInjuries();
 	}
 
 	public static void read(String infile) throws NullPointerException{
@@ -68,7 +68,7 @@ public class saveGame {
 		if(day < 34){
 			day++;
 		}
-		clearDBcards();
+		clearDBcardsInjuries();
 	}
 	
 	public static void setDefaults(){

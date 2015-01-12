@@ -33,10 +33,12 @@ public class gameEngine {
 	private static ArrayList<Player> yellowPlayerB = new ArrayList<Player>();
 	private static ArrayList<Player> redPlayerA = new ArrayList<Player>();
 	private static ArrayList<Player> redPlayerB = new ArrayList<Player>();
+	private static ArrayList<Player> injuredPlayerA = new ArrayList<Player>();
+	private static ArrayList<Player> injuredPlayerB = new ArrayList<Player>();
 	
-	private static double amount = 5000;
+	private static double amount = 10000;
 	private static int a = 7;
-	private static int b= 5;
+	private static int b= 1;
 	
 	/**For now, the main contains the excecution of the attack-method
 	 * Each team get's the chance to attack --> the attack method is called
@@ -46,7 +48,8 @@ public class gameEngine {
 	@SuppressWarnings("resource")
 	public static void main(String[] args){
 		int choice;
-		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0, totalYelA = 0, totalYelB = 0, totalRedA = 0, totalRedB = 0;
+		double totalAttA = 0, totalAttB = 0, totalGoalA = 0, totalGoalB = 0, totalYelA = 0, totalYelB = 0, totalRedA = 0, 
+				totalRedB = 0, totalInjA = 0, totalInjB = 0;
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("1 game (0) or multiple games (1)? Or (2) show scores?");
@@ -108,6 +111,16 @@ public class gameEngine {
 			for(Player p : redPlayerB){
 				System.out.print(p.getName() + " ");;
 			}
+			
+			System.out.println("\n\nInjuries " + alpha.getNm());
+			for(Player p : injuredPlayerA){
+				System.out.print(p.getName() + " " + p.getDur());;
+			}
+			
+			System.out.println("\n\nInjuries " + beta.getNm());
+			for(Player p : injuredPlayerB){
+				System.out.print(p.getName() + " " + p.getDur());;
+			}
 		}
 		
 		else if(choice == 1){
@@ -117,6 +130,7 @@ public class gameEngine {
 			gameEngine match = new gameEngine();
 			saveGame.setDay(1);
 			
+			double begin = System.currentTimeMillis();
 			int winsA = 0, winsB = 0, ties = 0;
 			
 			for(int i = 0; i < amount; i++){
@@ -142,12 +156,21 @@ public class gameEngine {
 				totalYelB += match.getYellowcardsB();
 				totalRedA += match.getRedcardsA();
 				totalRedB += match.getRedcardsB();
+				totalInjA += match.getInjuriesA();
+				totalInjB += match.getInjuriesB();
 			
-				d.clearAllCards();
+				d.clearAllCardsInjuries();
 				saveGame.nextDay();
 			}
 			
-			System.out.println("Amount of Wins from " + alpha.getNm() + ": " + winsA);
+			double end = System.currentTimeMillis();
+			double totalMillies = ((end - begin)/amount);
+			double total = ((end - begin)/1000);
+			
+			System.out.println("(Calculation Time) Total time: " + total + " seconds");
+			System.out.println("(Calculation Time) Time per game: " + totalMillies + " milliseconds");
+			
+			System.out.println("\nAmount of Wins from " + alpha.getNm() + ": " + winsA);
 			System.out.println("Amount of Wins from " + beta.getNm() + ": " + winsB);
 			System.out.println("Amount of Ties: " + ties);
 			
@@ -163,6 +186,8 @@ public class gameEngine {
 			System.out.println("\nAverage Red from " + alpha.getNm() + ": " + (double) (totalRedA/amount));
 			System.out.println("Average Red from " + beta.getNm() + ": " + (double) (totalRedB/amount));
 			
+			System.out.println("\nAverage Injuries from: " + alpha.getNm() + ": " + (double) (totalInjA/amount));
+			System.out.println("Average Injuries from: " + beta.getNm() + ": " + (double) (totalInjB/amount));
 		}
 		
 		else if(choice == 2){
@@ -200,11 +225,15 @@ public class gameEngine {
 		yellowcardsB = 0;
 		redcardsA = 0;
 		redcardsB = 0;
+		injuriesA = 0;
+		injuriesB = 0;
 		
 		yellowPlayerA.clear();
 		yellowPlayerB.clear();
 		redPlayerA.clear();
 		redPlayerB.clear();
+		injuredPlayerA.clear();
+		injuredPlayerB.clear();
 		
 		double aAtt =  teamA.calcAttScore();
 		double bAtt = teamB.calcAttScore();
@@ -229,19 +258,29 @@ public class gameEngine {
 				redcardsA++;
 				redPlayerA.add(p);
 			}
-		}
+			else if(card == 0){
+				int injury = p.injury();
+				if(injury != 0){
+					injuriesA++;
+					injuredPlayerA.add(p);
+				}
+			}
+		}		
 		
-		goalsA = attack(aAtt, bDef);
-		attemptsA = attempts;
+		gameEngine A = new gameEngine();
+		goalsA = A.attack(aAtt, bDef);
+		attemptsA = A.attempts;
 		
 		yellowcardminutesA = minutes(yellowcardsA, availableMin);
 		redcardminutesA = minutes(redcardsA, availableMin);
 		attemptminutesA = minutes(attemptsA, availableMin);
 		goalminutesA = minutes(goalsA, availableMin);
+		injuryminutesA = minutes(injuriesA, availableMin);
 		Arrays.sort(yellowcardminutesA);
 		Arrays.sort(redcardminutesA);
 		Arrays.sort(attemptminutesA);
 		Arrays.sort(goalminutesA);
+		Arrays.sort(injuryminutesA);
 		
 		for(int i = 0; i < 11; i++){
 			Player p = teamB.getSelectionPlayer(i);
@@ -254,19 +293,29 @@ public class gameEngine {
 				redcardsB++;
 				redPlayerB.add(p);
 			}
+			else if(card == 0){
+				int injury = p.injury();
+				if(injury != 0){
+					injuriesB++;
+					injuredPlayerB.add(p);
+				}
+			}
 		}
 		
-		goalsB = attack(bAtt, aDef);
-		attemptsB = attempts;
+		gameEngine B = new gameEngine();
+		goalsB = B.attack(bAtt, aDef);
+		attemptsB = B.attempts;
 		
 		yellowcardminutesB = minutes(yellowcardsB, availableMin);
 		redcardminutesB = minutes(redcardsB, availableMin);
 		attemptminutesB = minutes(attemptsB, availableMin);		
 		goalminutesB = minutes(goalsB, availableMin);
+		injuryminutesB = minutes(injuriesB, availableMin);
 		Arrays.sort(yellowcardminutesB);
 		Arrays.sort(redcardminutesB);
 		Arrays.sort(attemptminutesB);
 		Arrays.sort(goalminutesB);
+		Arrays.sort(injuryminutesB);
 		
 		if(goalsA > goalsB){toto = 1;}
 		else if(goalsB > goalsA){toto = 2;}
@@ -274,8 +323,6 @@ public class gameEngine {
 		
 		saveGame.refreshTeam(alpha, teamA);
 		saveGame.refreshTeam(beta, teamB);
-		//System.out.println(alpha.getNm() + "\t" + alphaAttMap + "\t" + alphaDefMap);
-		//System.out.println(beta.getNm() + "\t" + betaAttMap + "\t" + betaDefMap);
 	}
 	
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
@@ -285,7 +332,7 @@ public class gameEngine {
 	 * This happens randomly, with the teamscore as a basis.
 	 * If the attacking team is lucky, they score the highest.
 	 * 
-	 * Within the attacking mechanism is a -0.2, this is a numerical correction.
+	 * Within the attacking mechanism is a +0.2, this is a numerical correction.
 	 * That way the program is able to reproduce reliable scores.
 	 * 
 	 * @param att Attacking score of team A
@@ -376,4 +423,10 @@ public class gameEngine {
 	public ArrayList<Player> getYellowPlayerB() {return yellowPlayerB;}
 	public ArrayList<Player> getRedPlayerA() {return redPlayerA;}
 	public ArrayList<Player> getRedPlayerB() {return redPlayerB;}
+	public int getInjuriesA() {return injuriesA;}
+	public int getInjuriesB() {return injuriesB;}
+	public int[] getInjuryminutesA() {return injuryminutesA;}
+	public int[] getInjuryminutesB() {return injuryminutesB;}
+	public ArrayList<Player> getInjuredPlayerA() {return injuredPlayerA;}
+	public ArrayList<Player> getInjuredPlayerB() {return injuredPlayerB;}
 }

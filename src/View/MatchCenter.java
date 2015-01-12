@@ -34,7 +34,7 @@ public class MatchCenter {
 	private static Label timerLabel = new Label();
 	private static Integer timeSeconds = 0;
 	 
-	public static Integer attA,goalA = 0,attB,goalB = 0,yelA,yelB,redA,redB;
+	public static Integer attA,goalA = 0,attB,goalB = 0,yelA,yelB,redA,redB,injA,injB;
 	
 	private static Team alpha = null, beta = null;
 	
@@ -95,7 +95,11 @@ public class MatchCenter {
 		Text redsA = new Text(redA.toString());
 		Style.setTextStyle(redsA, 50);
 		
-		vboxLeft.getChildren().addAll(teamA,goalsA,attemptsA,yellowA,redsA);
+		injA = 0;
+		Text injuryA = new Text(injA.toString());
+		Style.setTextStyle(injuryA, 50);
+		
+		vboxLeft.getChildren().addAll(teamA,goalsA,attemptsA,yellowA,redsA,injuryA);
 		vboxLeft.setAlignment(Pos.CENTER);
 		Style.setLocation(vboxLeft, 320, 150);
        
@@ -119,8 +123,12 @@ public class MatchCenter {
 		redB = 0;
 		Text redsB = new Text(redB.toString());
 		Style.setTextStyle(redsB, 50);
+		
+		injB = 0;
+		Text injuryB = new Text(injB.toString());
+		Style.setTextStyle(injuryB, 50);
        
-		vboxRight.getChildren().addAll(teamB,goalsB,attemptsB,yellowB, redsB);
+		vboxRight.getChildren().addAll(teamB,goalsB,attemptsB,yellowB, redsB,injuryB);
 		vboxRight.setAlignment(Pos.CENTER);
 		Style.setLocation(vboxRight, 1350, 150);
        
@@ -151,7 +159,7 @@ public class MatchCenter {
 		VBox vboxMiddle = new VBox(5);
 		vboxMiddle.getChildren().addAll(goals,attempts,yellow,red,injury);
 		vboxMiddle.setAlignment(Pos.CENTER);
-		Style.setLocation(vboxMiddle, 890, 240);
+		Style.setLocation(vboxMiddle, 875, 240);
 		
 		
 		Text attemptAnimation = new Text("Attempt");
@@ -170,6 +178,9 @@ public class MatchCenter {
 		Style.setTextStyle(cardAnimation, 70);
 		cardAnimation.setVisible(false);
 		
+		Text injuryAnimation = new Text("");
+		Style.setTextStyle(injuryAnimation, 70);
+		injuryAnimation.setVisible(false);
 	
 		Text won = new Text(alpha.getNm() + " won!");
 		Style.setTextStyle(won, 90);
@@ -319,6 +330,27 @@ public class MatchCenter {
 				            		cardAnimation(false,true,cardAnimation);
 				            	}
 				            }
+				            
+				            for(int r = 0; r < match.getInjuryminutesA().length; r++){
+				            	if(timeSeconds.intValue() == match.getInjuryminutesA()[r]){
+				            		injA++;
+				            		injuryA.setText(injA.toString());
+				            		Player p = match.getInjuredPlayerA().get(r);
+				            		injuryAnimation.setText(p.getName());
+				            		injuryAnimation(true,injuryAnimation);
+				            	}				            	
+				            }
+				            
+				            for(int s = 0; s < match.getInjuryminutesB().length; s++){
+				            	if(timeSeconds.intValue() == match.getInjuryminutesB()[s]){
+				            		injA++;
+				            		injuryB.setText(injA.toString());
+				            		Player p = match.getInjuredPlayerB().get(s);
+				            		injuryAnimation.setText(p.getName());
+				            		injuryAnimation(false,injuryAnimation);
+				            	}	
+				            }
+				            	
 				        }
 			        }));
 				        
@@ -342,7 +374,7 @@ public class MatchCenter {
 			}
 		});
       
-       root.getChildren().addAll(start,timerLabel,vboxLeft,vboxRight,results,back,r,vboxMiddle,attemptAnimation,goalAnimation,missAnimation,cardAnimation,won,lost,tie);
+       root.getChildren().addAll(start,timerLabel,vboxLeft,vboxRight,results,back,r,vboxMiddle,attemptAnimation,goalAnimation,missAnimation,cardAnimation,injuryAnimation,won,lost,tie);
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
@@ -522,5 +554,42 @@ public class MatchCenter {
 			}
 			
 		});		
+	}
+	
+	public static void injuryAnimation(boolean loc, Text name){
+		timeline.pause();
+		name.setVisible(true);
+		if(loc){
+			Style.setLocation(name, 320, 700);
+		}
+		else if(!loc){
+			Style.setLocation(name, 1350, 700);
+		}
+		
+		name.setFill(Color.LIME);
+		
+		ScaleTransition st = new ScaleTransition(Duration.millis(800), name);
+		st.setByX(.8);
+	    st.setByY(.8);
+	    st.setCycleCount(2);
+	    st.setAutoReverse(true);
+	    st.play();
+		
+		FadeTransition ft = new FadeTransition(Duration.millis(800), name);
+		ft.setAutoReverse(true);
+		ft.setCycleCount(2);
+		ft.setToValue(1);
+		ft.setFromValue(0);
+		ft.play();
+		
+		st.setOnFinished(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent event) {
+				name.setVisible(false);
+				timeline.play();
+			}
+			
+		});				
 	}
 }
