@@ -241,33 +241,117 @@ public class TransferMarketSell {
 			}
 		});
 		
+		/*
 		confirm.setOnAction(new EventHandler <ActionEvent>(){
 
 			@Override
 			public void handle(ActionEvent event) {
-				try{
-					Budget.tosell(playerSelect);
+				if(playerSelect == null){
+					Popup warning = Warning.makeWarning("No player selected", root);
+					warning.show(primaryStage);
+				}
+				else{
 					
-					if(bid1.getText().equals("")){
-						Player p = playerSelect;
-						bid1.setText(p.getName());
-						Style.setTextStyle(bid1, 40);
+					EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
+						
+						@Override
+						public void handle(MouseEvent event) {
+							
+								try{
+									Budget.tosell(playerSelect);
+									
+									if(bid1.getText().equals("")){
+										Player p = playerSelect;
+										bid1.setText(p.getName());
+										Style.setTextStyle(bid1, 40);
+									}
+									else if(bid2.getText().equals("")){
+										Player p = playerSelect;
+										bid2.setText(p.getName());
+										Style.setTextStyle(bid2, 40);
+									}
+									else if(bid3.getText().equals("")){
+										Player p = playerSelect;
+										bid3.setText(p.getName());
+										Style.setTextStyle(bid3, 40);
+									}
+									
+									refreshPlayers(tableSelectionField, tableSelectionKeeper);
+								} catch (Exception e){
+									Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
+									emptyTeam.show(primaryStage);
+								}
+							}
+							else{
+								Popup availWarning = Warning.makeWarning("You cannot sell a player \nwith  a card or injury", root);
+								availWarning.show(primaryStage);
+							}
+						
+						}		
+					};
+				
+			}
+		});
+		*/
+		
+	confirm.setOnAction(new EventHandler <ActionEvent>(){
+
+		@Override
+		public void handle(ActionEvent event) {
+			if(playerSelect == null){
+				Popup warning = Warning.makeWarning("No player selected", root);
+				warning.show(primaryStage);
+			}
+			else{
+				if(playerSelect.getPlay()){
+						EventHandler<MouseEvent> mouse = new EventHandler<MouseEvent>() {
+							
+							public void handle(MouseEvent y) {
+								try{
+									root.setDisable(false);
+									Budget.tosell(playerSelect);
+									
+									if(bid1.getText().equals("")){
+										Player p = playerSelect;
+										bid1.setText(p.getName());
+										Style.setTextStyle(bid1, 40);
+									}
+									else if(bid2.getText().equals("")){
+										Player p = playerSelect;
+										bid2.setText(p.getName());
+										Style.setTextStyle(bid2, 40);
+									}
+									else if(bid3.getText().equals("")){
+										Player p = playerSelect;
+										bid3.setText(p.getName());
+										Style.setTextStyle(bid3, 40);
+									}
+									
+									refreshPlayers(tableSelectionField, tableSelectionKeeper);
+									
+								} catch (Exception e){
+									Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
+									emptyTeam.show(primaryStage);
+								}
+							}
+						};
+						
+						EventHandler<MouseEvent> mouse2 = new EventHandler<MouseEvent>() {
+							
+							public void handle(MouseEvent n) {
+								;
+							}
+						};
+						
+						Popup confirm = Warning.makeWarning("Are you sure you \nwant to sell this player?", root, mouse,mouse2);
+						confirm.show(primaryStage);
+						
 					}
-					else if(bid2.getText().equals("")){
-						Player p = playerSelect;
-						bid2.setText(p.getName());
-						Style.setTextStyle(bid2, 40);
+				
+					else{
+						Popup availWarning = Warning.makeWarning("You cannot buy a player \nwith  a card or injury", root);
+						availWarning.show(primaryStage);
 					}
-					else if(bid3.getText().equals("")){
-						Player p = playerSelect;
-						bid3.setText(p.getName());
-						Style.setTextStyle(bid3, 40);
-					}
-					
-					refreshPlayers(tableSelectionField, tableSelectionKeeper);
-				} catch (Exception e){
-					Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
-					emptyTeam.show(primaryStage);
 				}
 			}
 			
