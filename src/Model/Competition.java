@@ -15,10 +15,14 @@ public class Competition {
 	}
 	
 	public String toString(){
-		String txt = "";
+		String txt = "Competition[";
 		for(int i=0;i < matches.size();i++){
-		txt+=matches.get(i).toString();
+			txt+=matches.get(i).toString();
+			if(i < (matches.size() - 1)){
+				txt+=", ";
+			}
 		}
+		txt+="]";
 		return txt;
 	}
 	
