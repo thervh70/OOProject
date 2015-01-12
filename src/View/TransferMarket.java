@@ -214,8 +214,8 @@ public class TransferMarket {
 		Text selected = new Text("You have selected: ");
 		Style.setTextStyle(selected, 60);
 		
-		Text pName = new Text("");
-		Text pPrice = new Text("");
+		Text pName = new Text(" ");
+		Text pPrice = new Text(" ");
 		
 		vbox.getChildren().addAll(selected,pName,pPrice,input,confirm);
 		
@@ -223,7 +223,7 @@ public class TransferMarket {
 		Style.setLocation(vbox2, 1350, 200);
 		vbox2.setAlignment(Pos.CENTER);
 		
-		Text bids = new Text("Bids being evaluated: ");
+		Text bids = new Text("Pending bids: ");
 		Style.setTextStyle(bids, 60);
 		
 		Text bid1 = new Text("");
@@ -252,6 +252,10 @@ public class TransferMarket {
 
 			@Override
 			public void handle(ActionEvent event) {
+				playerSelect = null;
+				teamSelect = null;
+				pName.setText("");
+				pPrice.setText("");
 				refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
 			}
 		});
@@ -286,6 +290,8 @@ public class TransferMarket {
 												congratz.show(primaryStage);
 												refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
 												budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
+												pName.setText("");
+												pPrice.setText("");
 												
 												
 												if(bid1.getText().equals("")){

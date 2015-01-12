@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Budget;
 import Controller.saveGame;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
@@ -9,23 +10,32 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
 public class TransferMarketSell {
 
+	private static Player playerSelect = null;
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		root.getChildren().add(Style.setBackground("/View/Resources/background_transfer-market.png"));
+		
+		//Reset select
+		playerSelect = null;
 		
 		Button back = new Button("Back to Management Center");
 		Button toBuy = new Button("Buy");
@@ -49,7 +59,34 @@ public class TransferMarketSell {
 		Style.setTextStyle(budget, 60);
 		Style.setLocation(budget, 730, 940);
 		
-		root.getChildren().addAll(back,toBuy,players,keepers,budget);
+		Text selected = new Text("You have selected: ");
+		Style.setTextStyle(selected, 60);
+		
+		Text pName = new Text(" ");
+		Text pPrice = new Text(" ");
+
+		Button confirm = new Button("Sell this player");
+		Style.setButtonStyle(confirm, 45);
+		
+		VBox vbox = new VBox(15);
+		Style.setLocation(vbox, 900, 200);
+		vbox.setAlignment(Pos.CENTER);
+		
+		vbox.getChildren().addAll(selected,pName,pPrice,confirm);
+		
+		Text bids = new Text("Pending sells: ");
+		Style.setTextStyle(bids, 60);
+		
+		Text bid1 = new Text("");
+		Text bid2 = new Text("");
+		Text bid3 = new Text("");
+		
+		VBox vbox2 = new VBox(15);
+		Style.setLocation(vbox2, 1350, 200);
+		vbox2.setAlignment(Pos.CENTER);
+		vbox2.getChildren().addAll(bids,bid1,bid2,bid3);
+		
+		root.getChildren().addAll(back,toBuy,players,keepers,budget,vbox,vbox2);
 		
 		//Create a table for the setup with fixed columns
 		TableView<Fieldplayer> tableSelectionField = new TableView<Fieldplayer>();
@@ -173,6 +210,68 @@ public class TransferMarketSell {
 		});
 		
 		refreshPlayers(tableSelectionField, tableSelectionKeeper);
+		
+		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
+
+			@Override
+			public void handle(MouseEvent event) {
+				Player p = (Player)tableSelectionField.getSelectionModel().getSelectedItem();
+				pName.setText(p.getName() + ", " + p.getPos());
+				Style.setTextStyle(pName, 45);
+				
+				pPrice.setText("\u20ac" + " " + p.getPri());
+				Style.setTextStyle(pPrice, 45);
+				
+				playerSelect = p;
+			}
+		});
+		
+		tableSelectionKeeper.setOnMouseClicked(new EventHandler <MouseEvent>(){
+
+			@Override
+			public void handle(MouseEvent event) {
+				Player p = (Player)tableSelectionKeeper.getSelectionModel().getSelectedItem();
+				pName.setText(p.getName() + ", " + p.getPos());
+				Style.setTextStyle(pName, 45);
+				
+				pPrice.setText("\u20ac" + " " + p.getPri());
+				Style.setTextStyle(pPrice, 45);
+				
+				playerSelect = p;
+			}
+		});
+		
+		confirm.setOnAction(new EventHandler <ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent event) {
+				try{
+					Budget.tosell(playerSelect);
+					
+					if(bid1.getText().equals("")){
+						Player p = playerSelect;
+						bid1.setText(p.getName());
+						Style.setTextStyle(bid1, 40);
+					}
+					else if(bid2.getText().equals("")){
+						Player p = playerSelect;
+						bid2.setText(p.getName());
+						Style.setTextStyle(bid2, 40);
+					}
+					else if(bid3.getText().equals("")){
+						Player p = playerSelect;
+						bid3.setText(p.getName());
+						Style.setTextStyle(bid3, 40);
+					}
+					
+					refreshPlayers(tableSelectionField, tableSelectionKeeper);
+				} catch (Exception e){
+					Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
+					emptyTeam.show(primaryStage);
+				}
+			}
+			
+		});
 		
 		root.getChildren().addAll(tableSelectionKeeper,tableSelectionField);
 		primaryStage.getScene().setRoot(root);
