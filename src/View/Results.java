@@ -87,25 +87,19 @@ public class Results {
 				Team TeamB2 = other.getTeamB();
 				if(other.getToto() == 1){
 					TeamA2.addPoints(3, other.getGoalsA(), other.getGoalsB());
-					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
-					competitionTable.add(standingA);
+					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(0, other.getGoalsB(), other.getGoalsA());
-					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
-					competitionTable.add(standingB);
+					competitionTable.add(TeamB2.getStanding());
 				} else if(other.getToto() == 2){
 					TeamA2.addPoints(0, other.getGoalsA(), other.getGoalsB());
-					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
-					competitionTable.add(standingA);
+					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(3, other.getGoalsB(), other.getGoalsA());
-					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
-					competitionTable.add(standingB);
+					competitionTable.add(TeamB2.getStanding());
 				} else if(other.getToto() == 0){
 					TeamA2.addPoints(1, other.getGoalsA(), other.getGoalsB());
-					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
-					competitionTable.add(standingA);
+					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(1, other.getGoalsB(), other.getGoalsA());
-					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
-					competitionTable.add(standingB);
+					competitionTable.add(TeamB2.getStanding());
 				}
 			}
 		}
@@ -159,5 +153,12 @@ public class Results {
 	public static ObservableList<Standing> getCompetitionTable(){
 		return competitionTable;
 	}
-
+	
+	public static ObservableList<Standing> initialCompetitionTable(){
+		competitionTable.clear();
+		for(int i = 0; i < saveGame.getDB().getSize(); i++){
+			competitionTable.add(saveGame.getDB().getTeam(i).getStanding());
+		}
+		return competitionTable;
+	}
 }

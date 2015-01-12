@@ -5,6 +5,7 @@ import Model.DBmain;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
+import View.Results;
 
 public class saveGame {
 
@@ -83,7 +84,7 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
-		
+		Results.initialCompetitionTable();
 	}
 
 	public static void write(String infile){

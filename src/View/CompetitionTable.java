@@ -60,7 +60,6 @@ public class CompetitionTable {
         
         table.getColumns().addAll(rank,name,points,goalsFor,goalsAgainst,goalDifference);
         
-        
 		root.getChildren().addAll(back, table);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {

@@ -8,7 +8,7 @@ public class Team {
 	private String nm;
 	private int bdgt_vir, bdgt_rel, rank;
 	private int points, goalsFor, goalsAgainst, goalDifference = 0;
-	private Standing standing = new Standing(0, this, 0, 0, 0);
+	private Standing standing = new Standing(0, this.nm, 0, 0, 0);
 	
 	
 	/**
@@ -420,6 +420,6 @@ public class Team {
 		updateStanding();
 	}
 	public void updateStanding(){
-		standing = new Standing(points, this, goalsFor, goalsAgainst, goalDifference);
+		standing = new Standing(points, this.nm, goalsFor, goalsAgainst, goalDifference);
 	}
 }

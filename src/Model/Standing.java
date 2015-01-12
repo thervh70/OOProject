@@ -7,9 +7,9 @@ public class Standing {
 	private int goalsAgainst = 0;
 	private int goalDifference = 0;
 	
-	public Standing(int p, Team t, int gf, int ga, int gd){
+	public Standing(int p, String t, int gf, int ga, int gd){
 		this.points = p;
-		this.teamName = t.getNm();
+		this.teamName = t;
 		this.goalsFor = gf;
 		this.goalsAgainst = ga;
 		this.goalDifference = gd;
