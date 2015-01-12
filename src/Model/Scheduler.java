@@ -26,7 +26,7 @@ public class Scheduler {
 	public static Competition generate(){
 		List<Team> TeamOrder = new ArrayList<Team>();
 		int number;
-		DBmain d = XmlParser.parseDB();
+		DBmain d = saveGame.getDB();
 		Competition comp = new Competition();
 		
 		//add all teams in a random order to an ordered list

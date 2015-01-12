@@ -5,7 +5,7 @@ import Controller.saveGame;
 public abstract class Player {
 		
 	private String firstname, lastname, pos, name;
-	private int age, pri, card, cardTime;
+	private int age, pri, card = 0, cardTime, dur;
 	private boolean play;
 	
 	/**
@@ -18,7 +18,7 @@ public abstract class Player {
 	 * @param pri
 	 */
 	
-	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play, int card) {
+	public Player(String firstname, String lastname, String pos, int age, int pri, boolean play, int card, int dur) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -27,6 +27,7 @@ public abstract class Player {
 		this.pri = pri;
 		this.play = play;
 		this.card = card;
+		this.dur = dur;
 		name = firstname + " " + lastname; 
 	}
 	
@@ -34,17 +35,20 @@ public abstract class Player {
 		double chance = Math.random();
 		
 		if(chance>0.98){
-			this.card = 2;
-			this.cardTime = saveGame.getDay();
+			card = 2;
+			cardTime = saveGame.getDay();
+			play = false;
+
 			return 2;
 		}
 		else if(chance>0.90){
-			if(this.card == 1){
-				this.card = 2;
-				this.cardTime = saveGame.getDay();
+			if(card == 1){
+				card = 2;
+				cardTime = saveGame.getDay();
+				play = false;
 			}
-			else if(this.card == 0){
-				this.card = 1;
+			else if(card == 0){
+				card = 1;
 			}
 			return 1;
 		}
@@ -53,10 +57,19 @@ public abstract class Player {
 	
 	public void clearCard(){
 		int time = saveGame.getDay() - cardTime;
-		if(this.card == 2 & time >= 1){
-			this.card = 0;
-			this.cardTime = 0;
+		if(this.card == 2 & time > 1){
+			card = 0;
+			cardTime = 0;
+			play = true;
 		}
+	}
+	
+	public boolean checkRedCard(){
+		return this.card == 2;
+	}
+	
+	public boolean checkYellowCard(){
+		return this.card == 1;
 	}
 
 	/**
@@ -72,6 +85,7 @@ public abstract class Player {
 	public int getPri() {return pri; }
 	public boolean getPlay() {return play; }
 	public int getCard() {return card; }
+	public int getDur() {return dur; }
 
 	/**
 	 * Setters
@@ -86,5 +100,6 @@ public abstract class Player {
 	public void setPlay(boolean play) {this.play = play; }
 	public void setCard(int card) {this.card = card; }
 	public void setAvail() {this.card = 0; this.play = true; }
+	public void setDur(int dur) {this.dur = dur; }
 	
 }

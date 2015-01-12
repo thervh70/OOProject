@@ -2,6 +2,7 @@ package View;
 
 import java.util.ArrayList;
 
+import Controller.CreateSelection;
 import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
@@ -23,6 +24,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -33,6 +35,8 @@ public class MatchCenter {
 	private static Integer timeSeconds = 0;
 	 
 	public static Integer attA,goalA = 0,attB,goalB = 0,yelA,yelB,redA,redB;
+	
+	private static Team alpha = null, beta = null;
 	
 	private static Text goalsA;
 	private static Text goalsB; 
@@ -49,8 +53,6 @@ public class MatchCenter {
 		Competition comp = saveGame.getCompetition();
 		int day = saveGame.getDay();
 		
-		Team alpha = null,beta = null;
-		
 		ArrayList<Match> gamesToday = comp.getMatchesForDay(day);
 		for(Match game : gamesToday){
 			Team home = game.getTeamHome();
@@ -59,17 +61,17 @@ public class MatchCenter {
 			if(home.getNm().equals(saveGame.getMyTeamName())){
 				alpha = saveGame.getMyTeam();
 				beta = away;
+				CreateSelection.create(beta);
 			}
 			
 			else if(away.getNm().equals(saveGame.getMyTeamName())){
 				alpha = home;
+				CreateSelection.create(alpha);
 				beta = saveGame.getMyTeam();
 			}
 		}
-				
-		gameEngine match = new gameEngine();
 		
-		match.play(alpha, beta);
+		gameEngine match = new gameEngine();
 		
 		VBox vboxLeft = new VBox(5);
 		VBox vboxRight = new VBox(5);
@@ -143,6 +145,14 @@ public class MatchCenter {
 		Text red = new Text("Red Cards");
 		Style.setTextStyle(red, 50);
 		
+		Text injury = new Text("Injuries");
+		Style.setTextStyle(injury, 50);
+		
+		VBox vboxMiddle = new VBox(5);
+		vboxMiddle.getChildren().addAll(goals,attempts,yellow,red,injury);
+		vboxMiddle.setAlignment(Pos.CENTER);
+		Style.setLocation(vboxMiddle, 890, 240);
+		
 		
 		Text attemptAnimation = new Text("Attempt");
 		Style.setTextStyle(attemptAnimation, 70);
@@ -174,15 +184,7 @@ public class MatchCenter {
 		Text tie = new Text("It's a tie.");
 		Style.setTextStyle(tie, 90);
 		Style.setLocation(tie, 750, 700);
-		tie.setVisible(false);
-		
-		
-		
-		VBox vboxMiddle = new VBox(5);
-		vboxMiddle.getChildren().addAll(goals,attempts,yellow,red);
-		vboxMiddle.setAlignment(Pos.CENTER);
-		Style.setLocation(vboxMiddle, 890, 240);
-		       
+		tie.setVisible(false);		       
 		
 		
 	    Button start = new Button("Start Match");
@@ -192,8 +194,8 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		//results.setDisable(true);
-		//results.setVisible(false);
+		results.setDisable(true);
+		results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -203,116 +205,125 @@ public class MatchCenter {
        	
 	        @Override
 			public void handle(ActionEvent event) {
-	        	start.setDisable(true);
-	        	start.setVisible(false);
-	        	back.setDisable(true);
-	        	back.setVisible(false);
-	        	results.setDisable(true);
-	        	results.setVisible(false);
 	        	
-			    timerLabel.setText(timeSeconds.toString());
-			    timeline = new Timeline();
-			    timeline.setCycleCount(Timeline.INDEFINITE);
-		        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(0.2),new EventHandler<ActionEvent>() {
+	        	
+	        	if(!saveGame.getMyTeam().checkAvail()){
+	        		Popup cardwarning = Warning.makeWarning("Selection contains \nunavailable players", root);
+	        		cardwarning.show(primaryStage);
+	        	}
+	        	else{
+		        	start.setDisable(true);
+		        	start.setVisible(false);
+		        	back.setDisable(true);
+		        	back.setVisible(false);
+		        	results.setDisable(true);
+		        	results.setVisible(false);
 		        	
-			        public void handle(ActionEvent event) {
-			        	timeSeconds++;
-			        	r.setWidth(Style.getNewSize(timeSeconds*18));
-			        	timerLabel.setText(timeSeconds.toString());
+		        	match.play(alpha, beta);
+		        	
+				    timerLabel.setText(timeSeconds.toString());
+				    timeline = new Timeline();
+				    timeline.setCycleCount(Timeline.INDEFINITE);
+			        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(0.2),new EventHandler<ActionEvent>() {
 			        	
-			            if (timeSeconds >=90) {
-			            	timeline.stop();
-			            	results.setVisible(true);
-			            	results.setDisable(false);
-			            	
-			            	if(match.getToto() == 1){won.setVisible(true);}
-			            	else if(match.getToto() == 2){lost.setVisible(true);}
-			            	else if(match.getToto() == 0){tie.setVisible(true);}
-			            			            	
-			            }
-			            
-			            for(int i = 0; i < match.getGoalminutesA().length; i++){
-			            	if(timeSeconds.intValue() == match.getGoalminutesA()[i]){
-			            		attA++;
-			            		attemptsA.setText(attA.toString());
-			            		attemptAnimation(true,true,attemptAnimation,goalAnimation,missAnimation);
-			            
-			            		goalsA.setText(goalA.toString());
-			            	}
-			            }
-			            
-			            for(int j = 0; j < match.getAttemptminutesA().length; j++){
-			            	if(timeSeconds.intValue() == match.getAttemptminutesA()[j]){
-			            		attA++;
-			            		attemptsA.setText(attA.toString());
-			            		attemptAnimation(true,false,attemptAnimation,goalAnimation,missAnimation);
-			            		
-			            	}
-			            }
-			     
-			            for(int k = 0; k < match.getGoalminutesB().length; k++){
-			            	if(timeSeconds.intValue() == match.getGoalminutesB()[k]){
-			            		attB++;
-			            		attemptsB.setText(attB.toString());
-			            		attemptAnimation(false,true,attemptAnimation,goalAnimation,missAnimation);
-			            		
-			            		goalsB.setText(goalB.toString());
-			            		
-			            	}
-			            }
-			            
-			            for(int l = 0; l < match.getAttemptminutesB().length; l++){
-			            	if(timeSeconds.intValue() == match.getAttemptminutesB()[l]){
-			            		attB++;
-			            		attemptsB.setText(attB.toString());
-			            		attemptAnimation(false,false,attemptAnimation,goalAnimation,missAnimation);
-			            	}
-			            }
-			            
-			            for(int m = 0; m < match.getYellowcardminutesA().length; m++){
-			            	if(timeSeconds.intValue() == match.getYellowcardminutesA()[m]){
-			            		yelA++;
-			            		yellowA.setText(yelA.toString());
-			            		Player p = match.getYellowPlayerA().get(m);
-			            		cardAnimation.setText(p.getName());
-			            		cardAnimation(true,false,cardAnimation);
-			            	}
-			            }
-			            
-			            for(int n = 0; n < match.getYellowcardminutesB().length; n++){
-			            	if(timeSeconds.intValue() == match.getYellowcardminutesB()[n]){
-			            		yelB++;
-			            		yellowB.setText(yelB.toString());
-			            		Player p = match.getYellowPlayerB().get(n);
-			            		cardAnimation.setText(p.getName());
-			            		cardAnimation(false,false,cardAnimation);
-			            	}
-			            }
-			            
-			            for(int o = 0; o < match.getRedcardminutesA().length; o++){
-			            	if(timeSeconds.intValue() == match.getRedcardminutesA()[o]){
-			            		redA++;
-			            		redsA.setText(redA.toString());
-			            		Player p = match.getRedPlayerA().get(o);
-			            		cardAnimation.setText(p.getName());
-			            		cardAnimation(true,true,cardAnimation);
-			            	}
-			            }
-			            
-			            for(int q = 0; q < match.getRedcardminutesB().length; q++){
-			            	if(timeSeconds.intValue() == match.getRedcardminutesB()[q]){
-			            		redB++;
-			            		redsB.setText(redB.toString());
-			            		Player p = match.getRedPlayerB().get(q);
-			            		cardAnimation.setText(p.getName());
-			            		cardAnimation(false,true,cardAnimation);
-			            	}
-			            }
-			        }
-		        }));
-			        
-			    timeline.playFromStart();
-					
+				        public void handle(ActionEvent event) {
+				        	timeSeconds++;
+				        	r.setWidth(Style.getNewSize(timeSeconds*18));
+				        	timerLabel.setText(timeSeconds.toString());
+				        	
+				            if (timeSeconds >=90) {
+				            	timeline.stop();
+				            	results.setVisible(true);
+				            	results.setDisable(false);
+				            	
+				            	if(match.getToto() == 1){won.setVisible(true);}
+				            	else if(match.getToto() == 2){lost.setVisible(true);}
+				            	else if(match.getToto() == 0){tie.setVisible(true);}
+				            			            	
+				            }
+				            
+				            for(int i = 0; i < match.getGoalminutesA().length; i++){
+				            	if(timeSeconds.intValue() == match.getGoalminutesA()[i]){
+				            		attA++;
+				            		attemptsA.setText(attA.toString());
+				            		attemptAnimation(true,true,attemptAnimation,goalAnimation,missAnimation);
+				            
+				            		goalsA.setText(goalA.toString());
+				            	}
+				            }
+				            
+				            for(int j = 0; j < match.getAttemptminutesA().length; j++){
+				            	if(timeSeconds.intValue() == match.getAttemptminutesA()[j]){
+				            		attA++;
+				            		attemptsA.setText(attA.toString());
+				            		attemptAnimation(true,false,attemptAnimation,goalAnimation,missAnimation);
+				            		
+				            	}
+				            }
+				     
+				            for(int k = 0; k < match.getGoalminutesB().length; k++){
+				            	if(timeSeconds.intValue() == match.getGoalminutesB()[k]){
+				            		attB++;
+				            		attemptsB.setText(attB.toString());
+				            		attemptAnimation(false,true,attemptAnimation,goalAnimation,missAnimation);
+				            		
+				            		goalsB.setText(goalB.toString());
+				            		
+				            	}
+				            }
+				            
+				            for(int l = 0; l < match.getAttemptminutesB().length; l++){
+				            	if(timeSeconds.intValue() == match.getAttemptminutesB()[l]){
+				            		attB++;
+				            		attemptsB.setText(attB.toString());
+				            		attemptAnimation(false,false,attemptAnimation,goalAnimation,missAnimation);
+				            	}
+				            }
+				            
+				            for(int m = 0; m < match.getYellowcardminutesA().length; m++){
+				            	if(timeSeconds.intValue() == match.getYellowcardminutesA()[m]){
+				            		yelA++;
+				            		yellowA.setText(yelA.toString());
+				            		Player p = match.getYellowPlayerA().get(m);
+				            		cardAnimation.setText(p.getName());
+				            		cardAnimation(true,false,cardAnimation);
+				            	}
+				            }
+				            
+				            for(int n = 0; n < match.getYellowcardminutesB().length; n++){
+				            	if(timeSeconds.intValue() == match.getYellowcardminutesB()[n]){
+				            		yelB++;
+				            		yellowB.setText(yelB.toString());
+				            		Player p = match.getYellowPlayerB().get(n);
+				            		cardAnimation.setText(p.getName());
+				            		cardAnimation(false,false,cardAnimation);
+				            	}
+				            }
+				            
+				            for(int o = 0; o < match.getRedcardminutesA().length; o++){
+				            	if(timeSeconds.intValue() == match.getRedcardminutesA()[o]){
+				            		redA++;
+				            		redsA.setText(redA.toString());
+				            		Player p = match.getRedPlayerA().get(o);
+				            		cardAnimation.setText(p.getName());
+				            		cardAnimation(true,true,cardAnimation);
+				            	}
+				            }
+				            
+				            for(int q = 0; q < match.getRedcardminutesB().length; q++){
+				            	if(timeSeconds.intValue() == match.getRedcardminutesB()[q]){
+				            		redB++;
+				            		redsB.setText(redB.toString());
+				            		Player p = match.getRedPlayerB().get(q);
+				            		cardAnimation.setText(p.getName());
+				            		cardAnimation(false,true,cardAnimation);
+				            	}
+				            }
+				        }
+			        }));
+				        
+				    timeline.playFromStart();
+	        	}
 	        }
        });
        
@@ -471,13 +482,13 @@ public class MatchCenter {
 	}
 	
 	//color: false is yellow, true is red
-	public static void cardAnimation(boolean user, boolean color, Text name){
+	public static void cardAnimation(boolean loc, boolean color, Text name){
 		timeline.pause();
 		name.setVisible(true);
-		if(user){
+		if(loc){
 			Style.setLocation(name, 320, 700);
 		}
-		else if(!user){
+		else if(!loc){
 			Style.setLocation(name, 1350, 700);
 		}
 		
@@ -489,8 +500,8 @@ public class MatchCenter {
 		}
 		
 		ScaleTransition st = new ScaleTransition(Duration.millis(800), name);
-		st.setByX(1);
-	    st.setByY(1);
+		st.setByX(.8);
+	    st.setByY(.8);
 	    st.setCycleCount(2);
 	    st.setAutoReverse(true);
 	    st.play();

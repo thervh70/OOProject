@@ -145,7 +145,7 @@ public class XmlParser {
 	
 	public static Fieldplayer parsePlayer(NodeList playerattributes) {
 		String fname = null, lname = null, type = null;
-		int age = 0, pri = 0, pac = 0, sho = 0, pas = 0, dri = 0, def = 0, phy = 0, card = 0;
+		int age = 0, pri = 0, pac = 0, sho = 0, pas = 0, dri = 0, def = 0, phy = 0, card = 0, dur = 0;
 		boolean play = false;
 	  	for(int j=0;j<playerattributes.getLength();j++) {
 	  		String content = playerattributes.item(j).getTextContent();
@@ -163,9 +163,10 @@ public class XmlParser {
 	  		case "PHYSICAL": phy = Integer.parseInt(content); break;
 	  		case "AVAILABLE": play = Boolean.parseBoolean(content); break;
 	  		case "CARD": card = Integer.parseInt(content); break;
+	  		case "DURATION": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
-	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, play, card, pac, sho, pas, dri, def, phy);
+	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, play, card, 0, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
 	
@@ -177,7 +178,7 @@ public class XmlParser {
 	
 	public static Goalkeeper parseKeeper(NodeList playerattributes) {
 		String fname = null, lname = null;
-		int age = 0, pri = 0, div = 0, han = 0, kick = 0, ref = 0, spd = 0, ping = 0, hei = 0, card = 0;
+		int age = 0, pri = 0, div = 0, han = 0, kick = 0, ref = 0, spd = 0, ping = 0, hei = 0, card = 0, dur = 0;
 		boolean play = false;
 	  	for(int j=0;j<playerattributes.getLength();j++) {
 	  		String content = playerattributes.item(j).getTextContent();
@@ -195,9 +196,10 @@ public class XmlParser {
 	  		case "HEIGHT": hei = Integer.parseInt(content); break;
 	  		case "AVAILABLE": play = Boolean.parseBoolean(content); break;
 	  		case "CARD": card = Integer.parseInt(content); break;
+	  		case "DURATION": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
-	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, div, han, kick, ref, spd, ping, hei);
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, 0, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	
@@ -219,6 +221,22 @@ public class XmlParser {
 			e.printStackTrace();
 		}
 		String wrt = db.toWrite();
+		pw.print(wrt);
+		pw.close();
+	}
+	
+	public static void writeToXML(Competition c) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bestandsnaam?");
+		String file = "src/Model/Resources/" + sc.next();
+		sc.close();
+		PrintWriter pw = null;
+		try {
+			pw = new PrintWriter(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		String wrt = c.toWrite();
 		pw.print(wrt);
 		pw.close();
 	}

@@ -10,12 +10,15 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 public class TransferMarketSell {
 
@@ -148,6 +151,9 @@ public class TransferMarketSell {
 		heightKS.setResizable(false);
 		heightKS.setPrefWidth(Style.getNewSize(35));
 		
+		setColor(nameS);
+		setColor(nameKS);
+		
 		//Add columns to table
 		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
 		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS);	
@@ -196,6 +202,32 @@ public class TransferMarketSell {
 				
 		tableSelectionKeeper.setItems(selectionKeeper);
 		tableSelectionKeeper.getSelectionModel().select(0);
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private static void setColor(TableColumn t){
+		t.setCellFactory(new Callback<TableColumn, TableCell>() {
+			public TableCell call(TableColumn param) {
+				return new TableCell<Player, String>() {
+
+			        public void updateItem(String item, boolean empty) {
+			        	super.updateItem(item, empty);
+			            if (!isEmpty()) {
+			            	this.setTextFill(Color.BLACK);
+			            	Player p = saveGame.getDB().lookForPlayer(this.getItem());
+			            	if(p.checkRedCard()) {
+			            		this.setTextFill(Color.RED);
+			            	}
+			            	else if(p.checkYellowCard()){
+			            		this.setTextFill(Color.GOLD);
+			            	}
+			            	
+			            	setText(item);
+			            }
+			        }
+				};
+		     }
+		 });
 	}
 
 

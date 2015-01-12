@@ -19,6 +19,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -34,6 +35,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mike</FIRSTNAME>
@@ -49,6 +51,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Xander</FIRSTNAME>
@@ -64,6 +67,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michiel</FIRSTNAME>
@@ -79,6 +83,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aaron</FIRSTNAME>
@@ -94,6 +99,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Timothy</FIRSTNAME>
@@ -109,6 +115,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gianni</FIRSTNAME>
@@ -124,6 +131,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -139,6 +147,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Roland</FIRSTNAME>
@@ -154,6 +163,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dion</FIRSTNAME>
@@ -169,6 +179,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -187,6 +198,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -202,6 +214,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mike</FIRSTNAME>
@@ -217,6 +230,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Xander</FIRSTNAME>
@@ -232,6 +246,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michiel</FIRSTNAME>
@@ -247,6 +262,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aaron</FIRSTNAME>
@@ -262,6 +278,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Timothy</FIRSTNAME>
@@ -277,6 +294,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gianni</FIRSTNAME>
@@ -292,6 +310,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -307,6 +326,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Roland</FIRSTNAME>
@@ -322,6 +342,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dion</FIRSTNAME>
@@ -337,6 +358,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Vito</FIRSTNAME>
@@ -352,6 +374,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -367,6 +390,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Tim</FIRSTNAME>
@@ -383,6 +407,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Martin</FIRSTNAME>
@@ -399,6 +424,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Tyronne</FIRSTNAME>
@@ -414,6 +440,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Richelo</FIRSTNAME>
@@ -429,6 +456,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Danny</FIRSTNAME>
@@ -444,6 +472,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robin</FIRSTNAME>
@@ -459,6 +488,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Vidarell</FIRSTNAME>
@@ -474,6 +504,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -489,6 +520,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wilfried</FIRSTNAME>
@@ -504,6 +536,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mathias</FIRSTNAME>
@@ -519,6 +552,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -541,6 +575,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nicolai</FIRSTNAME>
@@ -556,6 +591,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joel</FIRSTNAME>
@@ -571,6 +607,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricardo</FIRSTNAME>
@@ -586,6 +623,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kolbeinn</FIRSTNAME>
@@ -601,6 +639,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Niklas</FIRSTNAME>
@@ -616,6 +655,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Niki</FIRSTNAME>
@@ -631,6 +671,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jasper</FIRSTNAME>
@@ -647,6 +688,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Davy</FIRSTNAME>
@@ -662,6 +704,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lerin</FIRSTNAME>
@@ -677,6 +720,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thulani</FIRSTNAME>
@@ -692,6 +736,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -709,6 +754,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nicolai</FIRSTNAME>
@@ -724,6 +770,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joel</FIRSTNAME>
@@ -739,6 +786,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricardo</FIRSTNAME>
@@ -754,6 +802,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kolbeinn</FIRSTNAME>
@@ -769,6 +818,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Niklas</FIRSTNAME>
@@ -784,6 +834,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Niki</FIRSTNAME>
@@ -799,6 +850,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jasper</FIRSTNAME>
@@ -815,6 +867,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Davy</FIRSTNAME>
@@ -830,6 +883,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lerin</FIRSTNAME>
@@ -845,6 +899,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thulani</FIRSTNAME>
@@ -860,6 +915,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Diederik</FIRSTNAME>
@@ -876,6 +932,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Nick</FIRSTNAME>
@@ -891,6 +948,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tobias</FIRSTNAME>
@@ -906,6 +964,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lasse</FIRSTNAME>
@@ -921,6 +980,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Peter</FIRSTNAME>
@@ -937,6 +997,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Riechedly</FIRSTNAME>
@@ -952,6 +1013,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jairo</FIRSTNAME>
@@ -967,6 +1029,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Richairo</FIRSTNAME>
@@ -982,6 +1045,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robert</FIRSTNAME>
@@ -997,6 +1061,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kenny</FIRSTNAME>
@@ -1012,6 +1077,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Anwar</FIRSTNAME>
@@ -1027,6 +1093,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Richardo</FIRSTNAME>
@@ -1042,6 +1109,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lucas</FIRSTNAME>
@@ -1057,6 +1125,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Viktor</FIRSTNAME>
@@ -1072,6 +1141,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stefano</FIRSTNAME>
@@ -1087,6 +1157,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mike</FIRSTNAME>
@@ -1102,6 +1173,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ruben</FIRSTNAME>
@@ -1117,6 +1189,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -1140,6 +1213,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Muamer</FIRSTNAME>
@@ -1155,6 +1229,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Markus</FIRSTNAME>
@@ -1170,6 +1245,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Guus</FIRSTNAME>
@@ -1185,6 +1261,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mattias</FIRSTNAME>
@@ -1200,6 +1277,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Steven</FIRSTNAME>
@@ -1215,6 +1293,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nemanja</FIRSTNAME>
@@ -1230,6 +1309,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -1245,6 +1325,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aron</FIRSTNAME>
@@ -1260,6 +1341,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jan</FIRSTNAME>
@@ -1275,6 +1357,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Simon</FIRSTNAME>
@@ -1290,6 +1373,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -1308,6 +1392,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Muamer</FIRSTNAME>
@@ -1323,6 +1408,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Markus</FIRSTNAME>
@@ -1338,6 +1424,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Guus</FIRSTNAME>
@@ -1353,6 +1440,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mattias</FIRSTNAME>
@@ -1368,6 +1456,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Steven</FIRSTNAME>
@@ -1383,6 +1472,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nemanja</FIRSTNAME>
@@ -1398,6 +1488,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -1413,6 +1504,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aron</FIRSTNAME>
@@ -1428,6 +1520,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jan</FIRSTNAME>
@@ -1443,6 +1536,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Simon</FIRSTNAME>
@@ -1458,6 +1552,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Yves</FIRSTNAME>
@@ -1474,6 +1569,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Sergio</FIRSTNAME>
@@ -1490,6 +1586,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Derrick</FIRSTNAME>
@@ -1505,6 +1602,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Djavan</FIRSTNAME>
@@ -1520,6 +1618,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thom</FIRSTNAME>
@@ -1535,6 +1634,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wesley</FIRSTNAME>
@@ -1550,6 +1650,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ridgeciano</FIRSTNAME>
@@ -1565,6 +1666,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sergio</FIRSTNAME>
@@ -1580,6 +1682,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Eli</FIRSTNAME>
@@ -1595,6 +1698,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mikhail</FIRSTNAME>
@@ -1610,6 +1714,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Esteban</FIRSTNAME>
@@ -1625,6 +1730,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Celso</FIRSTNAME>
@@ -1640,6 +1746,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Yves</FIRSTNAME>
@@ -1655,6 +1762,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Viktor</FIRSTNAME>
@@ -1670,6 +1778,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -1693,6 +1802,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Bas</FIRSTNAME>
@@ -1708,6 +1818,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Elso</FIRSTNAME>
@@ -1723,6 +1834,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marko</FIRSTNAME>
@@ -1738,6 +1850,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ninos</FIRSTNAME>
@@ -1753,6 +1866,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tom</FIRSTNAME>
@@ -1768,6 +1882,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeff</FIRSTNAME>
@@ -1783,6 +1898,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lars</FIRSTNAME>
@@ -1798,6 +1914,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Khalid</FIRSTNAME>
@@ -1813,6 +1930,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daan</FIRSTNAME>
@@ -1828,6 +1946,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adil</FIRSTNAME>
@@ -1843,6 +1962,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -1861,6 +1981,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Bas</FIRSTNAME>
@@ -1876,6 +1997,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Elso</FIRSTNAME>
@@ -1891,6 +2013,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marko</FIRSTNAME>
@@ -1906,6 +2029,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ninos</FIRSTNAME>
@@ -1921,6 +2045,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tom</FIRSTNAME>
@@ -1936,6 +2061,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeff</FIRSTNAME>
@@ -1951,6 +2077,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lars</FIRSTNAME>
@@ -1966,6 +2093,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Khalid</FIRSTNAME>
@@ -1981,6 +2109,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daan</FIRSTNAME>
@@ -1996,6 +2125,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adil</FIRSTNAME>
@@ -2011,6 +2141,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Alessandro</FIRSTNAME>
@@ -2027,6 +2158,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Carlo</FIRSTNAME>
@@ -2042,6 +2174,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daan</FIRSTNAME>
@@ -2057,6 +2190,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordan</FIRSTNAME>
@@ -2072,6 +2206,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jurgen</FIRSTNAME>
@@ -2087,6 +2222,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daan</FIRSTNAME>
@@ -2102,6 +2238,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -2117,6 +2254,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Richard</FIRSTNAME>
@@ -2132,6 +2270,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daryl</FIRSTNAME>
@@ -2147,6 +2286,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -2162,6 +2302,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sander</FIRSTNAME>
@@ -2177,6 +2318,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -2192,6 +2334,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -2214,6 +2357,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Giovanni</FIRSTNAME>
@@ -2229,6 +2373,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordy</FIRSTNAME>
@@ -2244,6 +2389,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricky</FIRSTNAME>
@@ -2259,6 +2405,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -2274,6 +2421,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marvin</FIRSTNAME>
@@ -2289,6 +2437,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mart</FIRSTNAME>
@@ -2304,6 +2453,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -2319,6 +2469,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ilias</FIRSTNAME>
@@ -2334,6 +2485,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Filip</FIRSTNAME>
@@ -2350,6 +2502,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Funso</FIRSTNAME>
@@ -2365,6 +2518,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -2382,6 +2536,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Giovanni</FIRSTNAME>
@@ -2397,6 +2552,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordy</FIRSTNAME>
@@ -2412,6 +2568,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricky</FIRSTNAME>
@@ -2427,6 +2584,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -2442,6 +2600,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marvin</FIRSTNAME>
@@ -2457,6 +2616,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mart</FIRSTNAME>
@@ -2472,6 +2632,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -2487,6 +2648,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ilias</FIRSTNAME>
@@ -2502,6 +2664,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Filip</FIRSTNAME>
@@ -2518,6 +2681,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Funso</FIRSTNAME>
@@ -2533,6 +2697,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Robbert</FIRSTNAME>
@@ -2549,6 +2714,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Giovanno</FIRSTNAME>
@@ -2564,6 +2730,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Virgil</FIRSTNAME>
@@ -2580,6 +2747,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Sem</FIRSTNAME>
@@ -2595,6 +2763,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robin</FIRSTNAME>
@@ -2610,6 +2779,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joris</FIRSTNAME>
@@ -2625,6 +2795,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Javier</FIRSTNAME>
@@ -2640,6 +2811,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>William</FIRSTNAME>
@@ -2655,6 +2827,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mohamed</FIRSTNAME>
@@ -2670,6 +2843,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nando</FIRSTNAME>
@@ -2685,6 +2859,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rihairo</FIRSTNAME>
@@ -2700,6 +2875,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adnan</FIRSTNAME>
@@ -2715,6 +2891,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -2723,7 +2900,7 @@
       <VIRTUAL_BUDGET>1500000</VIRTUAL_BUDGET>
       <BUDGET>1500000</BUDGET>
       <SELECTION>
-          <KEEPER>
+         <KEEPER>
             <FIRSTNAME>Sergio</FIRSTNAME>
             <LASTNAME>Padt</LASTNAME>
             <AGE>24</AGE>
@@ -2738,6 +2915,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Hans</FIRSTNAME>
@@ -2753,6 +2931,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lorenzo</FIRSTNAME>
@@ -2768,6 +2947,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Johan</FIRSTNAME>
@@ -2783,6 +2963,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Martijn</FIRSTNAME>
@@ -2798,6 +2979,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tom</FIRSTNAME>
@@ -2813,6 +2995,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tjaronn</FIRSTNAME>
@@ -2828,6 +3011,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -2843,6 +3027,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nick</FIRSTNAME>
@@ -2858,6 +3043,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Danny</FIRSTNAME>
@@ -2873,6 +3059,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Maikel</FIRSTNAME>
@@ -2888,6 +3075,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -2906,38 +3094,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
-         </KEEPER>
-         <KEEPER>
-             <FIRSTNAME>Marco</FIRSTNAME>
-             <LASTNAME>Bizot</LASTNAME>
-             <AGE>24</AGE>
-             <PRICE>136035</PRICE>
-             <DIVING>71</DIVING>
-             <HANDLING>72</HANDLING>
-             <KICKING>65</KICKING>
-             <REFLEXES>74</REFLEXES>
-             <SPEED>47</SPEED>
-             <POSITIONING>70</POSITIONING>
-             <HEIGHT>184</HEIGHT>
-             <TYPE>GK</TYPE>
-             <AVAILABLE>true</AVAILABLE>
-             <CARD>0</CARD>
-          </KEEPER>
-          <KEEPER>
-             <FIRSTNAME>Luciano</FIRSTNAME>
-             <LASTNAME>Silva</LASTNAME>
-             <AGE>35</AGE>
-             <PRICE>155326</PRICE>
-             <DIVING>70</DIVING>
-             <HANDLING>56</HANDLING>
-             <KICKING>64</KICKING>
-             <REFLEXES>74</REFLEXES>
-             <SPEED>60</SPEED>
-             <POSITIONING>64</POSITIONING>
-             <HEIGHT>174</HEIGHT>
-             <TYPE>GK</TYPE>
-             <AVAILABLE>true</AVAILABLE>
-             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Hans</FIRSTNAME>
@@ -2953,6 +3110,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lorenzo</FIRSTNAME>
@@ -2968,6 +3126,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Johan</FIRSTNAME>
@@ -2983,6 +3142,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Martijn</FIRSTNAME>
@@ -2998,6 +3158,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tom</FIRSTNAME>
@@ -3013,6 +3174,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tjaronn</FIRSTNAME>
@@ -3028,6 +3190,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -3043,6 +3206,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nick</FIRSTNAME>
@@ -3058,6 +3222,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Danny</FIRSTNAME>
@@ -3073,6 +3238,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Maikel</FIRSTNAME>
@@ -3088,7 +3254,42 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
+         <KEEPER>
+            <FIRSTNAME>Marco</FIRSTNAME>
+            <LASTNAME>Bizot</LASTNAME>
+            <AGE>24</AGE>
+            <PRICE>136035</PRICE>
+            <DIVING>71</DIVING>
+            <HANDLING>72</HANDLING>
+            <KICKING>65</KICKING>
+            <REFLEXES>74</REFLEXES>
+            <SPEED>47</SPEED>
+            <POSITIONING>70</POSITIONING>
+            <HEIGHT>184</HEIGHT>
+            <TYPE>GK</TYPE>
+            <AVAILABLE>true</AVAILABLE>
+            <CARD>0</CARD>
+            <DURATION>0</DURATION>
+         </KEEPER>
+         <KEEPER>
+            <FIRSTNAME>Luciano</FIRSTNAME>
+            <LASTNAME>Silva</LASTNAME>
+            <AGE>35</AGE>
+            <PRICE>155326</PRICE>
+            <DIVING>70</DIVING>
+            <HANDLING>56</HANDLING>
+            <KICKING>64</KICKING>
+            <REFLEXES>74</REFLEXES>
+            <SPEED>60</SPEED>
+            <POSITIONING>64</POSITIONING>
+            <HEIGHT>174</HEIGHT>
+            <TYPE>GK</TYPE>
+            <AVAILABLE>true</AVAILABLE>
+            <CARD>0</CARD>
+            <DURATION>0</DURATION>
+         </KEEPER>
          <PLAYER>
             <FIRSTNAME>Genero</FIRSTNAME>
             <LASTNAME>Zeefuik</LASTNAME>
@@ -3103,6 +3304,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rasmus</FIRSTNAME>
@@ -3118,6 +3320,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Burak</FIRSTNAME>
@@ -3133,6 +3336,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dino</FIRSTNAME>
@@ -3148,6 +3352,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Yoell</FIRSTNAME>
@@ -3163,6 +3368,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Henk</FIRSTNAME>
@@ -3178,6 +3384,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nick</FIRSTNAME>
@@ -3193,6 +3400,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Hilal</FIRSTNAME>
@@ -3208,6 +3416,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jarchinio</FIRSTNAME>
@@ -3223,6 +3432,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Eric</FIRSTNAME>
@@ -3238,6 +3448,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -3261,6 +3472,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Luc</FIRSTNAME>
@@ -3276,6 +3488,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Torgeir</FIRSTNAME>
@@ -3291,6 +3504,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kasper</FIRSTNAME>
@@ -3306,6 +3520,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kamohelo</FIRSTNAME>
@@ -3321,6 +3536,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Andreas</FIRSTNAME>
@@ -3336,6 +3552,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robbert</FIRSTNAME>
@@ -3351,6 +3568,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kyle</FIRSTNAME>
@@ -3366,6 +3584,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Hakim</FIRSTNAME>
@@ -3381,6 +3600,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Darryl</FIRSTNAME>
@@ -3396,6 +3616,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Cuco</FIRSTNAME>
@@ -3411,6 +3632,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -3429,6 +3651,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Luc</FIRSTNAME>
@@ -3444,6 +3667,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Torgeir</FIRSTNAME>
@@ -3459,6 +3683,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kasper</FIRSTNAME>
@@ -3474,6 +3699,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kamohelo</FIRSTNAME>
@@ -3489,6 +3715,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Andreas</FIRSTNAME>
@@ -3504,6 +3731,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robbert</FIRSTNAME>
@@ -3519,6 +3747,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kyle</FIRSTNAME>
@@ -3534,6 +3763,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Hakim</FIRSTNAME>
@@ -3549,6 +3779,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Darryl</FIRSTNAME>
@@ -3564,6 +3795,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Cuco</FIRSTNAME>
@@ -3579,6 +3811,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Youness</FIRSTNAME>
@@ -3594,6 +3827,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Felipe</FIRSTNAME>
@@ -3609,6 +3843,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tim</FIRSTNAME>
@@ -3624,6 +3859,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rasmus</FIRSTNAME>
@@ -3639,6 +3875,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Filip</FIRSTNAME>
@@ -3655,6 +3892,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Sonny</FIRSTNAME>
@@ -3671,6 +3909,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Bilal</FIRSTNAME>
@@ -3686,6 +3925,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joachim</FIRSTNAME>
@@ -3701,6 +3941,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Renato</FIRSTNAME>
@@ -3716,6 +3957,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tim</FIRSTNAME>
@@ -3731,6 +3973,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Shadrach</FIRSTNAME>
@@ -3746,6 +3989,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jesus</FIRSTNAME>
@@ -3761,6 +4005,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ryo</FIRSTNAME>
@@ -3776,6 +4021,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dico</FIRSTNAME>
@@ -3791,6 +4037,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -3814,6 +4061,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Yassin</FIRSTNAME>
@@ -3829,6 +4077,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fernando</FIRSTNAME>
@@ -3844,6 +4093,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Leon</FIRSTNAME>
@@ -3859,6 +4109,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -3874,6 +4125,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ruud</FIRSTNAME>
@@ -3889,6 +4141,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -3904,6 +4157,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ramon</FIRSTNAME>
@@ -3919,6 +4173,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Willem</FIRSTNAME>
@@ -3934,6 +4189,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Chris</FIRSTNAME>
@@ -3949,6 +4205,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nacer</FIRSTNAME>
@@ -3964,6 +4221,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -3982,6 +4240,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Yassin</FIRSTNAME>
@@ -3997,6 +4256,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fernando</FIRSTNAME>
@@ -4012,6 +4272,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Leon</FIRSTNAME>
@@ -4027,6 +4288,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -4042,6 +4304,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ruud</FIRSTNAME>
@@ -4057,6 +4320,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -4072,6 +4336,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ramon</FIRSTNAME>
@@ -4087,6 +4352,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Willem</FIRSTNAME>
@@ -4102,6 +4368,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Chris</FIRSTNAME>
@@ -4117,6 +4384,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nacer</FIRSTNAME>
@@ -4132,6 +4400,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Edouard</FIRSTNAME>
@@ -4147,6 +4416,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -4163,6 +4433,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Rubio</FIRSTNAME>
@@ -4178,6 +4449,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rodney</FIRSTNAME>
@@ -4193,6 +4465,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeff</FIRSTNAME>
@@ -4208,6 +4481,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kristoffer</FIRSTNAME>
@@ -4223,6 +4497,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sean</FIRSTNAME>
@@ -4238,6 +4513,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gyliano</FIRSTNAME>
@@ -4253,6 +4529,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -4268,6 +4545,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Yannick</FIRSTNAME>
@@ -4283,6 +4561,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -4298,6 +4577,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Anouar</FIRSTNAME>
@@ -4313,6 +4593,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gevero</FIRSTNAME>
@@ -4328,6 +4609,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Danny</FIRSTNAME>
@@ -4343,6 +4625,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kai</FIRSTNAME>
@@ -4358,6 +4641,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adam</FIRSTNAME>
@@ -4373,6 +4657,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -4396,6 +4681,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Tonny</FIRSTNAME>
@@ -4411,6 +4697,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -4426,6 +4713,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordy</FIRSTNAME>
@@ -4441,6 +4729,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Miquel</FIRSTNAME>
@@ -4456,6 +4745,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Colin</FIRSTNAME>
@@ -4471,6 +4761,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lex</FIRSTNAME>
@@ -4486,6 +4777,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Khalid</FIRSTNAME>
@@ -4501,6 +4793,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luke</FIRSTNAME>
@@ -4516,6 +4809,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Terence</FIRSTNAME>
@@ -4531,6 +4825,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jens</FIRSTNAME>
@@ -4546,6 +4841,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -4564,6 +4860,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Tonny</FIRSTNAME>
@@ -4579,6 +4876,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -4594,6 +4892,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordy</FIRSTNAME>
@@ -4609,6 +4908,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Miquel</FIRSTNAME>
@@ -4624,6 +4924,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Colin</FIRSTNAME>
@@ -4639,6 +4940,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lex</FIRSTNAME>
@@ -4654,6 +4956,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Khalid</FIRSTNAME>
@@ -4669,6 +4972,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luke</FIRSTNAME>
@@ -4684,6 +4988,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Terence</FIRSTNAME>
@@ -4699,6 +5004,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jens</FIRSTNAME>
@@ -4714,6 +5020,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ruben</FIRSTNAME>
@@ -4729,6 +5036,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joris</FIRSTNAME>
@@ -4744,6 +5052,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Erwin</FIRSTNAME>
@@ -4760,6 +5069,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Ronald</FIRSTNAME>
@@ -4776,6 +5086,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Bilal</FIRSTNAME>
@@ -4791,6 +5102,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wessel</FIRSTNAME>
@@ -4806,6 +5118,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -4821,6 +5134,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rodny</FIRSTNAME>
@@ -4836,6 +5150,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sven</FIRSTNAME>
@@ -4851,6 +5166,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joey</FIRSTNAME>
@@ -4866,6 +5182,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lucas</FIRSTNAME>
@@ -4881,6 +5198,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jean-Paul</FIRSTNAME>
@@ -4896,6 +5214,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Anass</FIRSTNAME>
@@ -4911,6 +5230,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Elvis</FIRSTNAME>
@@ -4926,6 +5246,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Matthew</FIRSTNAME>
@@ -4941,6 +5262,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wesley</FIRSTNAME>
@@ -4956,6 +5278,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Karim</FIRSTNAME>
@@ -4971,6 +5294,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -4993,6 +5317,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Giliano</FIRSTNAME>
@@ -5008,6 +5333,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Alex</FIRSTNAME>
@@ -5023,6 +5349,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mawouna</FIRSTNAME>
@@ -5038,6 +5365,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sander</FIRSTNAME>
@@ -5053,6 +5381,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marnix</FIRSTNAME>
@@ -5068,6 +5397,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Mickey</FIRSTNAME>
@@ -5084,6 +5414,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Xandro</FIRSTNAME>
@@ -5099,6 +5430,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sven</FIRSTNAME>
@@ -5114,6 +5446,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lesly</FIRSTNAME>
@@ -5129,6 +5462,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fernando</FIRSTNAME>
@@ -5144,6 +5478,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -5161,6 +5496,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Giliano</FIRSTNAME>
@@ -5176,6 +5512,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Alex</FIRSTNAME>
@@ -5191,6 +5528,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mawouna</FIRSTNAME>
@@ -5206,6 +5544,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sander</FIRSTNAME>
@@ -5221,6 +5560,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marnix</FIRSTNAME>
@@ -5236,6 +5576,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Mickey</FIRSTNAME>
@@ -5252,6 +5593,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Xandro</FIRSTNAME>
@@ -5267,6 +5609,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sven</FIRSTNAME>
@@ -5282,6 +5625,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lesly</FIRSTNAME>
@@ -5297,6 +5641,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fernando</FIRSTNAME>
@@ -5312,6 +5657,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Erik</FIRSTNAME>
@@ -5328,6 +5674,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Bart</FIRSTNAME>
@@ -5343,6 +5690,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jop</FIRSTNAME>
@@ -5358,6 +5706,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jules</FIRSTNAME>
@@ -5373,6 +5722,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -5388,6 +5738,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Ruben</FIRSTNAME>
@@ -5404,6 +5755,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Puck</FIRSTNAME>
@@ -5419,6 +5771,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robin</FIRSTNAME>
@@ -5434,6 +5787,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nick</FIRSTNAME>
@@ -5449,6 +5803,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Teije</FIRSTNAME>
@@ -5464,6 +5819,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Peter</FIRSTNAME>
@@ -5479,6 +5835,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lars</FIRSTNAME>
@@ -5494,6 +5851,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sjoerd</FIRSTNAME>
@@ -5509,6 +5867,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -5532,6 +5891,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Oussama</FIRSTNAME>
@@ -5547,6 +5907,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -5562,6 +5923,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bart</FIRSTNAME>
@@ -5577,6 +5939,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bryan</FIRSTNAME>
@@ -5592,6 +5955,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aleksei</FIRSTNAME>
@@ -5607,6 +5971,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Denni</FIRSTNAME>
@@ -5622,6 +5987,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ramon</FIRSTNAME>
@@ -5637,6 +6003,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark-Jan</FIRSTNAME>
@@ -5652,6 +6019,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fahd</FIRSTNAME>
@@ -5667,6 +6035,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mike</FIRSTNAME>
@@ -5682,6 +6051,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -5700,6 +6070,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Oussama</FIRSTNAME>
@@ -5715,6 +6086,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -5730,6 +6102,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bart</FIRSTNAME>
@@ -5745,6 +6118,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bryan</FIRSTNAME>
@@ -5760,6 +6134,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aleksei</FIRSTNAME>
@@ -5775,6 +6150,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Denni</FIRSTNAME>
@@ -5790,6 +6166,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ramon</FIRSTNAME>
@@ -5805,6 +6182,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark-Jan</FIRSTNAME>
@@ -5820,6 +6198,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Fahd</FIRSTNAME>
@@ -5835,6 +6214,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mike</FIRSTNAME>
@@ -5850,6 +6230,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -5865,6 +6246,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Milano</FIRSTNAME>
@@ -5880,6 +6262,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -5896,6 +6279,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Renze</FIRSTNAME>
@@ -5912,6 +6296,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Dennis</FIRSTNAME>
@@ -5928,6 +6313,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Coen</FIRSTNAME>
@@ -5943,6 +6329,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Menno</FIRSTNAME>
@@ -5958,6 +6345,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joey</FIRSTNAME>
@@ -5973,6 +6361,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -5988,6 +6377,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daan</FIRSTNAME>
@@ -6003,6 +6393,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Illiass</FIRSTNAME>
@@ -6018,6 +6409,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -6033,6 +6425,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wout</FIRSTNAME>
@@ -6048,6 +6441,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jaroslav</FIRSTNAME>
@@ -6063,6 +6457,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Edwin</FIRSTNAME>
@@ -6078,6 +6473,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dario</FIRSTNAME>
@@ -6093,6 +6489,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dragan</FIRSTNAME>
@@ -6108,6 +6505,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bas</FIRSTNAME>
@@ -6123,6 +6521,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Simon</FIRSTNAME>
@@ -6138,6 +6537,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -6161,6 +6561,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Isak</FIRSTNAME>
@@ -6176,6 +6577,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stipe</FIRSTNAME>
@@ -6191,6 +6593,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joeri</FIRSTNAME>
@@ -6206,6 +6609,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Uros</FIRSTNAME>
@@ -6221,6 +6625,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Erik</FIRSTNAME>
@@ -6236,6 +6641,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Henrico</FIRSTNAME>
@@ -6251,6 +6657,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Remy</FIRSTNAME>
@@ -6266,6 +6673,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sepp</FIRSTNAME>
@@ -6281,6 +6689,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kingsley</FIRSTNAME>
@@ -6296,6 +6705,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adnane</FIRSTNAME>
@@ -6311,6 +6721,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -6329,6 +6740,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Isak</FIRSTNAME>
@@ -6344,6 +6756,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stipe</FIRSTNAME>
@@ -6359,6 +6772,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joeri</FIRSTNAME>
@@ -6374,6 +6788,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Uros</FIRSTNAME>
@@ -6389,6 +6804,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Erik</FIRSTNAME>
@@ -6404,6 +6820,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Henrico</FIRSTNAME>
@@ -6419,6 +6836,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Remy</FIRSTNAME>
@@ -6434,6 +6852,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sepp</FIRSTNAME>
@@ -6449,6 +6868,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kingsley</FIRSTNAME>
@@ -6464,6 +6884,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adnane</FIRSTNAME>
@@ -6479,6 +6900,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Elson</FIRSTNAME>
@@ -6494,6 +6916,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -6509,6 +6932,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Andries</FIRSTNAME>
@@ -6525,6 +6949,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Gabor</FIRSTNAME>
@@ -6541,6 +6966,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Mounir</FIRSTNAME>
@@ -6556,6 +6982,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aleksandar</FIRSTNAME>
@@ -6571,6 +6998,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mats</FIRSTNAME>
@@ -6586,6 +7014,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kenny</FIRSTNAME>
@@ -6601,6 +7030,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joey</FIRSTNAME>
@@ -6616,6 +7046,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gill</FIRSTNAME>
@@ -6631,6 +7062,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -6654,6 +7086,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -6669,6 +7102,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nikolaos</FIRSTNAME>
@@ -6684,6 +7118,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ben</FIRSTNAME>
@@ -6699,6 +7134,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Toman</FIRSTNAME>
@@ -6714,6 +7150,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Maikel</FIRSTNAME>
@@ -6729,6 +7166,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stef</FIRSTNAME>
@@ -6744,6 +7182,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bart</FIRSTNAME>
@@ -6759,6 +7198,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bram</FIRSTNAME>
@@ -6774,6 +7214,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jesper</FIRSTNAME>
@@ -6789,6 +7230,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Trent</FIRSTNAME>
@@ -6804,6 +7246,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -6822,6 +7265,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Rick</FIRSTNAME>
@@ -6837,6 +7281,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nikolaos</FIRSTNAME>
@@ -6852,6 +7297,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ben</FIRSTNAME>
@@ -6867,6 +7313,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Toman</FIRSTNAME>
@@ -6882,6 +7329,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Maikel</FIRSTNAME>
@@ -6897,6 +7345,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stef</FIRSTNAME>
@@ -6912,6 +7361,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bart</FIRSTNAME>
@@ -6927,6 +7377,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bram</FIRSTNAME>
@@ -6942,6 +7393,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jesper</FIRSTNAME>
@@ -6957,6 +7409,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Trent</FIRSTNAME>
@@ -6972,6 +7425,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Leroy</FIRSTNAME>
@@ -6987,6 +7441,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joost</FIRSTNAME>
@@ -7002,6 +7457,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Boy</FIRSTNAME>
@@ -7018,6 +7474,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -7034,6 +7491,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Wouter</FIRSTNAME>
@@ -7049,6 +7507,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ryan</FIRSTNAME>
@@ -7064,6 +7523,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Steven</FIRSTNAME>
@@ -7079,6 +7539,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -7094,6 +7555,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Soufian</FIRSTNAME>
@@ -7109,6 +7571,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mustafa</FIRSTNAME>
@@ -7124,6 +7587,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jody</FIRSTNAME>
@@ -7139,6 +7603,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thanasis</FIRSTNAME>
@@ -7154,6 +7619,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -7176,6 +7642,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Oscar</FIRSTNAME>
@@ -7191,6 +7658,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Santiago</FIRSTNAME>
@@ -7206,6 +7674,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -7221,6 +7690,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Georginio</FIRSTNAME>
@@ -7236,6 +7706,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luuk</FIRSTNAME>
@@ -7251,6 +7722,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Andres</FIRSTNAME>
@@ -7266,6 +7738,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stijn</FIRSTNAME>
@@ -7281,6 +7754,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -7297,6 +7771,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Jetro</FIRSTNAME>
@@ -7312,6 +7787,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Memphis</FIRSTNAME>
@@ -7327,6 +7803,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -7344,6 +7821,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Oscar</FIRSTNAME>
@@ -7359,6 +7837,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Santiago</FIRSTNAME>
@@ -7374,6 +7853,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeffrey</FIRSTNAME>
@@ -7389,6 +7869,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Georginio</FIRSTNAME>
@@ -7404,6 +7885,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luuk</FIRSTNAME>
@@ -7419,6 +7901,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Andres</FIRSTNAME>
@@ -7434,6 +7917,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stijn</FIRSTNAME>
@@ -7449,6 +7933,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -7465,6 +7950,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Jetro</FIRSTNAME>
@@ -7480,6 +7966,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Memphis</FIRSTNAME>
@@ -7495,6 +7982,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Remko</FIRSTNAME>
@@ -7511,6 +7999,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Abel</FIRSTNAME>
@@ -7526,6 +8015,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luciano</FIRSTNAME>
@@ -7541,6 +8031,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Nigel</FIRSTNAME>
@@ -7557,6 +8048,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Zakaria</FIRSTNAME>
@@ -7572,6 +8064,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Aleksandar</FIRSTNAME>
@@ -7587,6 +8080,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Clint</FIRSTNAME>
@@ -7602,6 +8096,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rai</FIRSTNAME>
@@ -7617,6 +8112,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jorrit</FIRSTNAME>
@@ -7632,6 +8128,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Karim</FIRSTNAME>
@@ -7647,6 +8144,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Menno</FIRSTNAME>
@@ -7662,6 +8160,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joshua</FIRSTNAME>
@@ -7677,6 +8176,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Adam</FIRSTNAME>
@@ -7692,6 +8192,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marcel</FIRSTNAME>
@@ -7707,6 +8208,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Nicolas</FIRSTNAME>
@@ -7722,6 +8224,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Florian</FIRSTNAME>
@@ -7737,6 +8240,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -7760,6 +8264,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Berend</FIRSTNAME>
@@ -7775,6 +8280,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Erik</FIRSTNAME>
@@ -7790,6 +8296,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Calvin</FIRSTNAME>
@@ -7805,6 +8312,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wout</FIRSTNAME>
@@ -7820,6 +8328,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mohammed</FIRSTNAME>
@@ -7835,6 +8344,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michiel</FIRSTNAME>
@@ -7850,6 +8360,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bartholomew</FIRSTNAME>
@@ -7865,6 +8376,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daniel</FIRSTNAME>
@@ -7880,6 +8392,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lucas</FIRSTNAME>
@@ -7895,6 +8408,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Vytautas</FIRSTNAME>
@@ -7910,6 +8424,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -7928,6 +8443,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Berend</FIRSTNAME>
@@ -7943,6 +8459,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Erik</FIRSTNAME>
@@ -7958,6 +8475,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Calvin</FIRSTNAME>
@@ -7973,6 +8491,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Wout</FIRSTNAME>
@@ -7988,6 +8507,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mohammed</FIRSTNAME>
@@ -8003,6 +8523,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michiel</FIRSTNAME>
@@ -8018,6 +8539,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bartholomew</FIRSTNAME>
@@ -8033,6 +8555,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daniel</FIRSTNAME>
@@ -8048,6 +8571,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Lucas</FIRSTNAME>
@@ -8063,6 +8587,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Vytautas</FIRSTNAME>
@@ -8078,6 +8603,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Etienne</FIRSTNAME>
@@ -8093,6 +8619,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marlon</FIRSTNAME>
@@ -8108,6 +8635,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jurjan</FIRSTNAME>
@@ -8124,6 +8652,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Harm</FIRSTNAME>
@@ -8140,6 +8669,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Dejan</FIRSTNAME>
@@ -8155,6 +8685,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Albert</FIRSTNAME>
@@ -8170,6 +8701,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ron</FIRSTNAME>
@@ -8185,6 +8717,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sander</FIRSTNAME>
@@ -8200,6 +8733,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bob</FIRSTNAME>
@@ -8215,6 +8749,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Sebastian</FIRSTNAME>
@@ -8230,6 +8765,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mart</FIRSTNAME>
@@ -8245,6 +8781,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Furdjel</FIRSTNAME>
@@ -8260,6 +8797,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Oebele</FIRSTNAME>
@@ -8275,6 +8813,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Martijn</FIRSTNAME>
@@ -8290,6 +8829,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -8313,6 +8853,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Sam</FIRSTNAME>
@@ -8328,6 +8869,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -8343,6 +8885,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Pele</FIRSTNAME>
@@ -8358,6 +8901,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marten</FIRSTNAME>
@@ -8373,6 +8917,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jukka</FIRSTNAME>
@@ -8388,6 +8933,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joey</FIRSTNAME>
@@ -8403,6 +8949,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -8418,6 +8965,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daley</FIRSTNAME>
@@ -8433,6 +8981,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kenneth</FIRSTNAME>
@@ -8448,6 +8997,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Doke</FIRSTNAME>
@@ -8463,6 +9013,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -8481,6 +9032,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Sam</FIRSTNAME>
@@ -8496,6 +9048,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mark</FIRSTNAME>
@@ -8511,6 +9064,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Pele</FIRSTNAME>
@@ -8526,6 +9080,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marten</FIRSTNAME>
@@ -8541,6 +9096,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jukka</FIRSTNAME>
@@ -8556,6 +9112,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joey</FIRSTNAME>
@@ -8571,6 +9128,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Thomas</FIRSTNAME>
@@ -8586,6 +9144,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Daley</FIRSTNAME>
@@ -8601,6 +9160,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kenneth</FIRSTNAME>
@@ -8616,6 +9176,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Doke</FIRSTNAME>
@@ -8631,6 +9192,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Luciano</FIRSTNAME>
@@ -8646,6 +9208,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stefano</FIRSTNAME>
@@ -8661,6 +9224,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordy</FIRSTNAME>
@@ -8676,6 +9240,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Maarten</FIRSTNAME>
@@ -8692,6 +9257,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Robin</FIRSTNAME>
@@ -8708,6 +9274,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Viktor</FIRSTNAME>
@@ -8724,6 +9291,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Morten</FIRSTNAME>
@@ -8739,6 +9307,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Janio</FIRSTNAME>
@@ -8754,6 +9323,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -8769,6 +9339,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Pascal</FIRSTNAME>
@@ -8784,6 +9355,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Willem</FIRSTNAME>
@@ -8799,6 +9371,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joris</FIRSTNAME>
@@ -8814,6 +9387,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Joost</FIRSTNAME>
@@ -8829,6 +9403,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Michael</FIRSTNAME>
@@ -8844,6 +9419,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Stephen</FIRSTNAME>
@@ -8859,6 +9435,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jens</FIRSTNAME>
@@ -8874,6 +9451,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -8897,6 +9475,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Uros</FIRSTNAME>
@@ -8912,6 +9491,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Davy</FIRSTNAME>
@@ -8927,6 +9507,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Renato</FIRSTNAME>
@@ -8942,6 +9523,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kelvin</FIRSTNAME>
@@ -8957,6 +9539,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marko</FIRSTNAME>
@@ -8972,6 +9555,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rochdi</FIRSTNAME>
@@ -8987,6 +9571,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jan-Arie</FIRSTNAME>
@@ -9002,6 +9587,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Guram</FIRSTNAME>
@@ -9017,6 +9603,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Denys</FIRSTNAME>
@@ -9032,6 +9619,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>W.</FIRSTNAME>
@@ -9047,6 +9635,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -9065,6 +9654,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Uros</FIRSTNAME>
@@ -9080,6 +9670,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Davy</FIRSTNAME>
@@ -9095,6 +9686,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Renato</FIRSTNAME>
@@ -9110,6 +9702,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Kelvin</FIRSTNAME>
@@ -9125,6 +9718,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Marko</FIRSTNAME>
@@ -9140,6 +9734,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Rochdi</FIRSTNAME>
@@ -9155,6 +9750,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jan-Arie</FIRSTNAME>
@@ -9170,6 +9766,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Guram</FIRSTNAME>
@@ -9185,6 +9782,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Denys</FIRSTNAME>
@@ -9200,6 +9798,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>W.</FIRSTNAME>
@@ -9215,6 +9814,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Arnold</FIRSTNAME>
@@ -9230,6 +9830,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Jeroen</FIRSTNAME>
@@ -9246,6 +9847,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <KEEPER>
             <FIRSTNAME>Eloy</FIRSTNAME>
@@ -9262,6 +9864,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Kevin</FIRSTNAME>
@@ -9277,6 +9880,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bertrand</FIRSTNAME>
@@ -9292,6 +9896,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Gino</FIRSTNAME>
@@ -9307,6 +9912,7 @@
             <TYPE>CDM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Zakaria</FIRSTNAME>
@@ -9322,6 +9928,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Josh</FIRSTNAME>
@@ -9337,6 +9944,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Valeri</FIRSTNAME>
@@ -9352,6 +9960,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dan</FIRSTNAME>
@@ -9367,6 +9976,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>
@@ -9389,6 +9999,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -9404,6 +10015,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jonas</FIRSTNAME>
@@ -9419,6 +10031,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Samuel</FIRSTNAME>
@@ -9434,6 +10047,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ben</FIRSTNAME>
@@ -9449,6 +10063,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bruno</FIRSTNAME>
@@ -9464,6 +10079,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Frank</FIRSTNAME>
@@ -9479,6 +10095,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Konstantinos</FIRSTNAME>
@@ -9495,6 +10112,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Fabian</FIRSTNAME>
@@ -9510,6 +10128,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricardo</FIRSTNAME>
@@ -9525,6 +10144,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordens</FIRSTNAME>
@@ -9540,6 +10160,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </SELECTION>
       <TEAMMEMBERS>
@@ -9557,6 +10178,7 @@
             <TYPE>RW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Mitchell</FIRSTNAME>
@@ -9572,6 +10194,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jonas</FIRSTNAME>
@@ -9587,6 +10210,7 @@
             <TYPE>LB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Samuel</FIRSTNAME>
@@ -9602,6 +10226,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ben</FIRSTNAME>
@@ -9617,6 +10242,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Bruno</FIRSTNAME>
@@ -9632,6 +10258,7 @@
             <TYPE>ST</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Frank</FIRSTNAME>
@@ -9647,6 +10274,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Konstantinos</FIRSTNAME>
@@ -9663,6 +10291,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Fabian</FIRSTNAME>
@@ -9678,6 +10307,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ricardo</FIRSTNAME>
@@ -9693,6 +10323,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jordens</FIRSTNAME>
@@ -9708,6 +10339,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>David</FIRSTNAME>
@@ -9724,6 +10356,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Stijn</FIRSTNAME>
@@ -9739,6 +10372,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Robbie</FIRSTNAME>
@@ -9754,6 +10388,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Tim</FIRSTNAME>
@@ -9769,6 +10404,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <KEEPER>
             <FIRSTNAME>Mattijs</FIRSTNAME>
@@ -9785,6 +10421,7 @@
             <TYPE>GK</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </KEEPER>
          <PLAYER>
             <FIRSTNAME>Simon</FIRSTNAME>
@@ -9800,6 +10437,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Renan</FIRSTNAME>
@@ -9815,6 +10453,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Niek</FIRSTNAME>
@@ -9830,6 +10469,7 @@
             <TYPE>CM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Ali</FIRSTNAME>
@@ -9845,6 +10485,7 @@
             <TYPE>CAM</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Dries</FIRSTNAME>
@@ -9860,6 +10501,7 @@
             <TYPE>CB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Charlton</FIRSTNAME>
@@ -9875,6 +10517,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Jerson</FIRSTNAME>
@@ -9890,6 +10533,7 @@
             <TYPE>LW</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
          <PLAYER>
             <FIRSTNAME>Freek</FIRSTNAME>
@@ -9905,6 +10549,7 @@
             <TYPE>RB</TYPE>
             <AVAILABLE>true</AVAILABLE>
             <CARD>0</CARD>
+            <DURATION>0</DURATION>
          </PLAYER>
       </TEAMMEMBERS>
    </TEAM>

@@ -2,6 +2,7 @@ package View;
 
 import java.util.ArrayList;
 
+import Controller.CreateSelection;
 import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
@@ -43,17 +44,17 @@ public class Results {
 		if(match.getToto() == 1){
 			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
 			competitionTable.add(TeamA1.getStanding());
-			TeamB1.addPoints(0, match.getGoalsA(), match.getGoalsB());
+			TeamB1.addPoints(0, match.getGoalsB(), match.getGoalsA());
 			competitionTable.add(TeamB1.getStanding());
 		} else if(match.getToto() == 2){
 			TeamA1.addPoints(0, match.getGoalsA(), match.getGoalsB());
 			competitionTable.add(TeamA1.getStanding());
-			TeamB1.addPoints(3, match.getGoalsA(), match.getGoalsB());
+			TeamB1.addPoints(3, match.getGoalsB(), match.getGoalsA());
 			competitionTable.add(TeamB1.getStanding());
 		} else if(match.getToto() == 0){
 			TeamA1.addPoints(1, match.getGoalsA(), match.getGoalsB());
 			competitionTable.add(TeamA1.getStanding());
-			TeamB1.addPoints(1, match.getGoalsA(), match.getGoalsB());
+			TeamB1.addPoints(1, match.getGoalsB(), match.getGoalsA());
 			competitionTable.add(TeamB1.getStanding());
 		}
 		
@@ -70,7 +71,9 @@ public class Results {
 			
 			else {
 				Team alpha = game.getTeamHome();
+				CreateSelection.create(alpha);
 				Team beta = game.getTeamAway();
+				CreateSelection.create(beta);
 				
 				gameEngine other = new gameEngine();
 				
@@ -82,21 +85,26 @@ public class Results {
 				Team TeamA2 = other.getTeamA();
 				Team TeamB2 = other.getTeamB();
 				if(other.getToto() == 1){
-					TeamA2.addPoints(3, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
-					TeamB2.addPoints(0, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamB2.getStanding());
-					TeamB2.addPoints(0, match.getGoalsA(), match.getGoalsB());
-				} else if(match.getToto() == 2){
-					TeamA2.addPoints(0, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
-					TeamB2.addPoints(3, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamB2.getStanding());
-				} else if(match.getToto() == 0){
-					TeamA2.addPoints(1, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
-					TeamB2.addPoints(1, match.getGoalsA(), match.getGoalsB());
-					competitionTable.add(TeamB2.getStanding());
+					TeamA2.addPoints(3, other.getGoalsA(), other.getGoalsB());
+					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(0, other.getGoalsB(), other.getGoalsA());
+					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
+					competitionTable.add(standingB);
+				} else if(other.getToto() == 2){
+					TeamA2.addPoints(0, other.getGoalsA(), other.getGoalsB());
+					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(3, other.getGoalsB(), other.getGoalsA());
+					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
+					competitionTable.add(standingB);
+				} else if(other.getToto() == 0){
+					TeamA2.addPoints(1, other.getGoalsA(), other.getGoalsB());
+					Standing standingA = new Standing(TeamA2.getPoints(), TeamA2, TeamA2.getGoalsFor(), TeamA2.getGoalsAgainst(), TeamA2.getGoalDifference());
+					competitionTable.add(standingA);
+					TeamB2.addPoints(1, other.getGoalsB(), other.getGoalsA());
+					Standing standingB = new Standing(TeamB2.getPoints(), TeamB2, TeamB2.getGoalsFor(), TeamB2.getGoalsAgainst(), TeamB2.getGoalDifference());
+					competitionTable.add(standingB);
 				}
 			}
 		}

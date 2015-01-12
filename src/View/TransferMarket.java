@@ -1,10 +1,6 @@
 package View;
 
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
+import java.util.Collections;
 
 import Controller.Budget;
 import Controller.saveGame;
@@ -20,6 +16,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -27,9 +24,11 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 public class TransferMarket {
 
@@ -167,6 +166,9 @@ public class TransferMarket {
 		heightKS.setResizable(false);
 		heightKS.setPrefWidth(Style.getNewSize(35));
 		
+		setColor(nameS);
+		setColor(nameKS);
+		
 		//Add columns to table
 		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
 		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS);	
@@ -183,6 +185,7 @@ public class TransferMarket {
 			}
 		}
 		
+		Collections.sort(teamList);
 		comboBox.setItems(teamList);
 		
 		if(!saveGame.getMyTeamName().equals("ADO Den Haag")){
@@ -262,81 +265,83 @@ public class TransferMarket {
 					warning.show(primaryStage);
 				}
 				else{
-					try{
-						int bid = Integer.parseInt(input.getText());
-						
-						if(bid < 0){
-							Popup negative = Warning.makeWarning("Please enter a positive number", root);
-							negative.show(primaryStage);
-						}
-						
-						else{
-							EventHandler<MouseEvent> mouse = new EventHandler<MouseEvent>() {
-								
-								public void handle(MouseEvent y) {
-									boolean b = Budget.bid(playerSelect, teamSelect, bid);
+					if(playerSelect.getPlay()){
+						try{
+							int bid = Integer.parseInt(input.getText());
+							
+							if(bid < 0){
+								Popup negative = Warning.makeWarning("Please enter a positive number", root);
+								negative.show(primaryStage);
+							}
+							
+							else{
+								EventHandler<MouseEvent> mouse = new EventHandler<MouseEvent>() {
 									
-									if(b){
-										try {
-											Thread.sleep(10);
-										} catch (InterruptedException e) {
-											;
+									public void handle(MouseEvent y) {
+										try{
+											boolean b = Budget.bid(playerSelect, teamSelect, bid);
+											
+											if(b){
+												Popup congratz = Warning.makeWarning("Congratulations! \nYou have bought " + playerSelect.getName(), root);
+												congratz.show(primaryStage);
+												refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+												budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
+												
+												
+												if(bid1.getText().equals("")){
+													Player p = playerSelect;
+													bid1.setText(p.getName() + " " + bid);
+													Style.setTextStyle(bid1, 40);
+												}
+												else if(bid2.getText().equals("")){
+													Player p = playerSelect;
+													bid2.setText(p.getName() + " " + bid);
+													Style.setTextStyle(bid2, 40);
+												}
+												else if(bid3.getText().equals("")){
+													Player p = playerSelect;
+													bid3.setText(p.getName() + " " + bid);
+													Style.setTextStyle(bid3, 40);
+												}
+												
+												input.clear();
+												playerSelect = null;
+											}
+											
+											else if(!b){
+												Popup toobad = Warning.makeWarning("Too bad... \n" + teamSelect.getNm() + " refused your offer.", root);
+												toobad.show(primaryStage);
+												refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
+												input.clear();
+											}
+										} catch (Exception e){
+											Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
+											emptyTeam.show(primaryStage);
 										}
-										Popup congratz = Warning.makeWarning("Congratulations! \nYou have bought " + playerSelect.getName(), root);
-										congratz.show(primaryStage);
-										refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
-										budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
-										
-										
-										if(bid1.getText().equals("")){
-											Player p = playerSelect;
-											bid1.setText(p.getName() + " " + bid);
-											Style.setTextStyle(bid1, 40);
-										}
-										else if(bid2.getText().equals("")){
-											Player p = playerSelect;
-											bid2.setText(p.getName() + " " + bid);
-											Style.setTextStyle(bid2, 40);
-										}
-										else if(bid3.getText().equals("")){
-											Player p = playerSelect;
-											bid3.setText(p.getName() + " " + bid);
-											Style.setTextStyle(bid3, 40);
-										}
-										
-										input.clear();
 									}
-									
-									else if(!b){
-										try {
-											Thread.sleep(10);
-										} catch (InterruptedException e) {
-											;
-										}
-										Popup toobad = Warning.makeWarning("Too bad... \n" + teamSelect.getNm() + " refused your offer.", root);
-										toobad.show(primaryStage);
-										refreshPlayers(comboBox.getValue().toString(),tableSelectionField,tableSelectionKeeper);
-										input.clear();
-									}
-								}
-							};
-							
-							EventHandler<MouseEvent> mouse2 = new EventHandler<MouseEvent>() {
+								};
 								
-								public void handle(MouseEvent n) {
-									;
-								}
-							};
+								EventHandler<MouseEvent> mouse2 = new EventHandler<MouseEvent>() {
+									
+									public void handle(MouseEvent n) {
+										;
+									}
+								};
+								
+								Popup confirm = Warning.makeWarning("Are you sure you \nwant to place this bid?", root, mouse,mouse2);
+								confirm.show(primaryStage);
+								
+							}
 							
-							Popup confirm = Warning.makeWarning("Are you sure you \nwant to place this bid?", root, mouse,mouse2);
-							confirm.show(primaryStage);
-							
+						} catch( NumberFormatException e){
+							Popup warning2 = Warning.makeWarning("Please insert a number", root);
+							input.clear();
+							warning2.show(primaryStage);
 						}
-						
-					} catch( NumberFormatException e){
-						Popup warning2 = Warning.makeWarning("Please insert a number", root);
-						input.clear();
-						warning2.show(primaryStage);
+					}
+					else{
+						Popup availWarning = Warning.makeWarning("You cannot buy a player \nwith  a card or injury", root);
+						availWarning.show(primaryStage);
 					}
 				}
 			}
@@ -408,6 +413,32 @@ public class TransferMarket {
 			}
 		}
 		
+	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private static void setColor(TableColumn t){
+		t.setCellFactory(new Callback<TableColumn, TableCell>() {
+			public TableCell call(TableColumn param) {
+				return new TableCell<Player, String>() {
+
+			        public void updateItem(String item, boolean empty) {
+			        	super.updateItem(item, empty);
+			            if (!isEmpty()) {
+			            	this.setTextFill(Color.BLACK);
+			            	Player p = saveGame.getDB().lookForPlayer(this.getItem());
+			            	if(p.checkRedCard()) {
+			            		this.setTextFill(Color.RED);
+			            	}
+			            	else if(p.checkYellowCard()){
+			            		this.setTextFill(Color.GOLD);
+			            	}
+			            	
+			            	setText(item);
+			            }
+			        }
+				};
+		     }
+		 });
 	}
 
 }

@@ -4,20 +4,26 @@ import Controller.saveGame;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
 import Model.Player;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 import View.Warning;
 import Model.Team;
 
@@ -29,6 +35,8 @@ public class TeamManagement {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
+		
+		Team backup = saveGame.getMyTeam();
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -291,6 +299,11 @@ public class TeamManagement {
 		heightKS.setResizable(false);
 		heightKS.setPrefWidth(Style.getNewSize(35));
 
+		setColor(name);
+		setColor(nameS);
+		setColor(nameK);
+		setColor(nameKS);
+		 
 		//Add columns to table
 		tableTeamField.getColumns().addAll(name,position,age,worth,shooting,passing,dribbling,defending,physical);
 		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS);
@@ -304,6 +317,7 @@ public class TeamManagement {
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
+				saveGame.refreshTeam(backup, saveGame.getMyTeam());
 				ManagementCenter.start(primaryStage);
 			}
 		});
@@ -314,8 +328,34 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private static void setColor(TableColumn t){
+		t.setCellFactory(new Callback<TableColumn, TableCell>() {
+			public TableCell call(TableColumn param) {
+				return new TableCell<Player, String>() {
+
+			        public void updateItem(String item, boolean empty) {
+			        	super.updateItem(item, empty);
+			            if (!isEmpty()) {
+			            	this.setTextFill(Color.BLACK);
+			            	Player p = saveGame.getDB().lookForPlayer(this.getItem());
+			            	if(p.checkRedCard()) {
+			            		this.setTextFill(Color.RED);
+			            	}
+			            	else if(p.checkYellowCard()){
+			            		this.setTextFill(Color.GOLD);
+			            	}
+			            	
+			            	setText(item);
+			            }
+			        }
+				};
+		     }
+		 });
+	}
+	
 	@SuppressWarnings("rawtypes")
-	public static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
+	private static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.getMyTeam();
@@ -332,7 +372,7 @@ public class TeamManagement {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	public static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
+	private static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
 		Player pR = (Player)tableR.getSelectionModel().getSelectedItem();
 		Team myTeam = saveGame.getMyTeam();
@@ -348,7 +388,7 @@ public class TeamManagement {
 		}
 	}
 	
-	public static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
+	private static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
 		ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
 		for (int i = 0; i < 11; i++) {
 			Player p = saveGame.getMyTeam().getSelectionPlayer(i);

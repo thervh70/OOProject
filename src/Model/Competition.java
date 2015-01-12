@@ -4,8 +4,11 @@ import java.util.ArrayList;
 
 public class Competition {
 
-	private ArrayList<Match> matches = new ArrayList<Match>();
+	private ArrayList<Match> matches;
 	
+	public Competition() {
+		matches = new ArrayList<Match>();
+	}
 	
 	public void add(Match match){
 		matches.add(match);
@@ -17,6 +20,15 @@ public class Competition {
 		txt+=matches.get(i).toString();
 		}
 		return txt;
+	}
+	
+	public String toWrite() {
+		String write = "<COMPETITION>\r\n";
+		for(int i=0;i<matches.size();i++) {
+			write += matches.get(i).toWrite();
+		}
+		write += "</COMPETITION>\r\n";
+		return write;
 	}
 	
 	public int getSize(){
