@@ -157,6 +157,7 @@ public class Results {
 	public static ObservableList<Standing> initialCompetitionTable(){
 		competitionTable.clear();
 		for(int i = 0; i < saveGame.getDB().getSize(); i++){
+			saveGame.getDB().getTeam(i).newStanding();
 			competitionTable.add(saveGame.getDB().getTeam(i).getStanding());
 		}
 		return competitionTable;
