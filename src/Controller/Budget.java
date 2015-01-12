@@ -81,7 +81,7 @@ public class Budget {
 						return false;
 					}
 				}
-				else if((1.9*p.getPri())<bid & bid<=(2*p.getPri())){
+				else if(bid>(1.9*p.getPri())){
 					if(Math.random()>0.1){
 						buy(p,buyTeam,bid,myTeam);
 						return true;
