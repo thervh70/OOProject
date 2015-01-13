@@ -62,7 +62,7 @@ public class LoadGame {
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
 				public void handle(ActionEvent e){
 					try{
-						saveGame.read(infile);
+						saveGame.loadSave(infile);
 						LoadingScreen.start(primaryStage);
 					} catch (NullPointerException e1){
 						Popup warning = Warning.makeWarning("Invalid File", root, r);

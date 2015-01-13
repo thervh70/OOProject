@@ -1,5 +1,9 @@
 package Controller;
 
+import java.io.File;
+import java.io.PrintWriter;
+import java.io.Writer;
+
 import Model.Competition;
 import Model.DBmain;
 import Model.Scheduler;
@@ -33,14 +37,6 @@ public class saveGame {
 	
 	public static void clearDBcardsInjuries(){
 		DB.clearAllCardsInjuries();
-	}
-
-	public static void read(String infile) throws NullPointerException{
-		DB = XmlParser.parseDB(infile);
-		myteam = DB.getTeam(8);
-		day = 1;
-		competition = Scheduler.generate();
-		
 	}
 	
 	public static String getMyTeamName(){
@@ -86,9 +82,29 @@ public class saveGame {
 		saveGame.myteam = t;
 		Results.initialCompetitionTable();
 	}
-
-	public static void write(String infile){
+	
+	public static void loadSave(String infile){
 		
+		DB = XmlParser.parseDB(infile);
+		myteam = DB.getTeam(8);
+		day = 1;
+		competition = XmlParser.parseCompetition(infile);
+	}
+
+	public static void write(String infile) {
+		File file = new File("src/Model/Resources/TestSave.xml");
+		PrintWriter wr;
+		try {
+			wr = new PrintWriter(file);
+			wr.print(DB.toWrite());
+			wr.print("<MYTEAM>"+myteam.getNm()+"</MYTEAM>\r\n");
+			wr.print("<CURRENTDAY>"+day+"</CURRENTDAY>\r\n");
+			wr.print(competition.toWrite());
+			wr.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void refreshTeam(Team old, Team fresh){

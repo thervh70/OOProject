@@ -10,6 +10,8 @@ import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
+import Controller.saveGame;
+
 public class XmlParser {
 
 	/**
@@ -21,7 +23,6 @@ public class XmlParser {
 	public static void main(String[] args) throws Exception {
 		DBmain d = parseDB();
 		System.out.println(d);
-		writeToXML(d);
 	}
 	
 	/**
@@ -32,24 +33,65 @@ public class XmlParser {
 	 * @return DBmain
 	 */
 	
-	public static DBmain parseDB() {
+	public static NodeList parseInit(String infile) {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
-		DBmain d = new DBmain();
+		NodeList init = null;
 		try {
-			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Model/Resources/Database_v9.xml");   
-			NodeList division = document.getDocumentElement().getChildNodes();
-		
-		    for(int i=1;i<division.getLength();i+=2) {
-		    	Node team = division.item(i);
-		    	NodeList teamattrs = team.getChildNodes();
-		    	Team t = parseTeam(teamattrs);
-		    	d.addTeam(t);
-		    }
-		}
-		catch (ParserConfigurationException | SAXException | IOException e) {
+			builder = factory.newDocumentBuilder();
+			Document document;
+			document = builder.parse(infile);
+			init = document.getDocumentElement().getChildNodes();
+			switch()
+		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
+		}
+		return init;
+	}
+	
+	public static Competition parseCompetition(String infile) {
+		NodeList comp = XmlParser.parseInit("src/Model/Resources/Database_v9.xml");
+		Competition c = new Competition();
+		for(int i=1;i<comp.getLength();i+=2) {
+			Node round = comp.item(i);
+			NodeList matches = round.getChildNodes();
+			int day = Integer.parseInt(matches.item(1).getTextContent());
+			for(int j=3;j<matches.getLength();j+=2) {
+				Node match = matches.item(i);
+				NodeList matchattr = match.getChildNodes();
+				Match m = parseMatch(matchattr, day);
+				c.add(m);
+			}
+		}
+		return c;
+	}
+	
+	public static Match parseMatch(NodeList matchattr, int day) {
+		String homename = null, awayname = null;
+		int homescore = -1, awayscore = -1;
+		for(int i=0;i<matchattr.getLength();i++) {
+			String content = matchattr.item(i).getTextContent();
+			switch(content) {
+			case "HOME": homename = content; break;
+			case "AWAY": awayname = content; break;
+			case "HOMESCORE": homescore = Integer.parseInt(content); break;
+			case "AWAYSCORE": awayscore = Integer.parseInt(content); break;
+			}
+		}
+		Team t1 = saveGame.getDB().findTeam(homename);
+		Team t2 = saveGame.getDB().findTeam(awayname);
+		Match m = new Match(day, t1, t2);
+		return m;
+	}
+	
+	public static DBmain parseDB() {
+		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v9.xml");
+		DBmain d = new DBmain();
+		for(int i=1;i<database.getLength();i+=2) {
+			Node team = database.item(i);
+			NodeList teamattrs = team.getChildNodes();
+			Team t = parseTeam(teamattrs);
+			d.addTeam(t);
 		}
 		return d;
 	}

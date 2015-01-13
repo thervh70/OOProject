@@ -117,4 +117,14 @@ public class DBmain {
 		}
 		return null;
 	}
+	
+	public Team findTeam(String name) {
+		for(int i=0;i<this.getSize();i++) {
+			Team t = this.getTeam(i);
+			if(t.getNm().equals(name)) {
+				return t;
+			}
+		}
+		return null;
+	}
 }

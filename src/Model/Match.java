@@ -3,7 +3,7 @@ package Model;
 public class Match {
 
 	private Team teamHome, teamAway;
-	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
+	private int goalsHome = -1, goalsAway = -1, day, homeIndex,awayIndex;
 	boolean played;
 	
 	public Match(int day, Team teamHome, Team teamAway){
@@ -32,12 +32,12 @@ public class Match {
 	}
 	
 	public String toWrite() {
-		String write = "   <MATCH>\r\n"
-				+ "      <HOME>" + getTeamHome() + "</HOME>\r\n"
-				+ "      <AWAY>" + getTeamAway() + "</AWAY>\r\n"
-				+ "      <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
-				+ "      <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
-				+ "   </MATCH>\r\n";
+		String write = "      <MATCH>\r\n"
+				+ "         <HOME>" + getTeamHome().getNm() + "</HOME>\r\n"
+				+ "         <AWAY>" + getTeamAway().getNm() + "</AWAY>\r\n"
+				+ "         <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
+				+ "         <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
+				+ "      </MATCH>\r\n";
 		return write;
 	}
 
