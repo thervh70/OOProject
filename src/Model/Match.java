@@ -13,8 +13,17 @@ public class Match {
 		this.played = false;
 	}
 	
+	public Match(int day, Team teamHome, Team teamAway, int goalsHome, int goalsAway){
+		this.setTeamHome(teamHome);
+		this.setTeamAway(teamAway);
+		this.day = day;
+		this.goalsHome = goalsHome;
+		this.goalsAway = goalsAway;
+		this.played = false;
+	}
+	
 	public String toString() {
-		String txt = "Match( Day: "+ day + ", Home: " + teamHome.getNm()+ ", Away: " + teamAway.getNm()+ ")";  
+		String txt = "Match( Day: "+ this.getDay() + ", Home: " + this.getTeamHome().getNm()+ ", Away: " + this.getTeamAway().getNm()+ ")";  
 		//String txt= Integer.toString(homeIndex) + " " + Integer.toString(awayIndex) + " "+ Integer.toString(day);
 		
 		return txt;

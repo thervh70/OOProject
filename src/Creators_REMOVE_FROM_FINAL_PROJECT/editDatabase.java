@@ -20,7 +20,7 @@ import Model.XmlParser;
 
 public class editDatabase {
 	
-	public static Team parseKeeper() {
+	/*public static Team parseKeeper() {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
 		System.out.println("Teamnaam:");
@@ -57,7 +57,7 @@ public class editDatabase {
 			e.printStackTrace();
 		}
 		return t;
-	}
+	}*/
 	
 	public static Team createSelection(Team t) {
 		t.toSelection(t.getPlayer(0));

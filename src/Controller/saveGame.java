@@ -2,14 +2,14 @@ package Controller;
 
 import java.io.File;
 import java.io.PrintWriter;
-import java.io.Writer;
 
 import Model.Competition;
 import Model.DBmain;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
-import View.Results;
+
+import org.w3c.dom.*;
 
 public class saveGame {
 
@@ -80,15 +80,24 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
-		Results.initialCompetitionTable();
+		
 	}
 	
 	public static void loadSave(String infile){
+		NodeList saveElements = XmlParser.parseInit(infile);
+		Node database = saveElements.item(1);
+		Node team = saveElements.item(3);
+		Node current = saveElements.item(5);
+		Node comp = saveElements.item(7);
 		
-		DB = XmlParser.parseDB(infile);
-		myteam = DB.getTeam(8);
-		day = 1;
-		competition = XmlParser.parseCompetition(infile);
+		DB = XmlParser.parseDB(database.getChildNodes());
+		myteam = DB.findTeam(team.getTextContent());
+		day = Integer.parseInt(current.getTextContent());
+		competition = XmlParser.parseCompetition(comp.getChildNodes());
+		/*System.out.println(DB);
+		System.out.println(myteam.getNm());
+		System.out.println(day);
+		System.out.println(competition);*/
 	}
 
 	public static void write(String infile) {

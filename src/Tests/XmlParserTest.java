@@ -32,7 +32,7 @@ public class XmlParserTest {
 		assertEquals(d1.getSize(), 0);
 		d1 = XmlParser.parseDB();
 		assertNotEquals(d1.getSize(), 0);
-		d2 = XmlParser.parseDB("Database_v8.xml");
+//		d2 = XmlParser.parseDB("Database_v8.xml");
 	}
 	
 	@Test
@@ -48,7 +48,7 @@ public class XmlParserTest {
 		d1.addTeam(t2);
 		XmlParser.writeToXML(d1);
 		String infile = "Test.xml";
-		d2 = XmlParser.parseDB(infile);
+//		d2 = XmlParser.parseDB(infile);
 		assertEquals(d1, d2);
 	}
 }

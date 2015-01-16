@@ -21,8 +21,7 @@ public class XmlParser {
 	 */
 	
 	public static void main(String[] args) throws Exception {
-		DBmain d = parseDB();
-		System.out.println(d);
+		saveGame.loadSave("TestSave.xml");
 	}
 	
 	/**
@@ -40,24 +39,23 @@ public class XmlParser {
 		try {
 			builder = factory.newDocumentBuilder();
 			Document document;
-			document = builder.parse(infile);
+			document = builder.parse("src/Model/Resources/" + infile);
 			init = document.getDocumentElement().getChildNodes();
-			switch()
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
 		}
 		return init;
 	}
 	
-	public static Competition parseCompetition(String infile) {
-		NodeList comp = XmlParser.parseInit("src/Model/Resources/Database_v9.xml");
+	public static Competition parseCompetition(NodeList competition) {
+		NodeList comp = competition;
 		Competition c = new Competition();
 		for(int i=1;i<comp.getLength();i+=2) {
 			Node round = comp.item(i);
 			NodeList matches = round.getChildNodes();
 			int day = Integer.parseInt(matches.item(1).getTextContent());
 			for(int j=3;j<matches.getLength();j+=2) {
-				Node match = matches.item(i);
+				Node match = matches.item(j);
 				NodeList matchattr = match.getChildNodes();
 				Match m = parseMatch(matchattr, day);
 				c.add(m);
@@ -66,12 +64,12 @@ public class XmlParser {
 		return c;
 	}
 	
-	public static Match parseMatch(NodeList matchattr, int day) {
+	private static Match parseMatch(NodeList matchattr, int day) {
 		String homename = null, awayname = null;
 		int homescore = -1, awayscore = -1;
-		for(int i=0;i<matchattr.getLength();i++) {
+		for(int i=1;i<matchattr.getLength();i+=2) {
 			String content = matchattr.item(i).getTextContent();
-			switch(content) {
+			switch(matchattr.item(i).getNodeName()) {
 			case "HOME": homename = content; break;
 			case "AWAY": awayname = content; break;
 			case "HOMESCORE": homescore = Integer.parseInt(content); break;
@@ -80,7 +78,7 @@ public class XmlParser {
 		}
 		Team t1 = saveGame.getDB().findTeam(homename);
 		Team t2 = saveGame.getDB().findTeam(awayname);
-		Match m = new Match(day, t1, t2);
+		Match m = new Match(day, t1, t2, homescore, awayscore);
 		return m;
 	}
 	
@@ -108,25 +106,14 @@ public class XmlParser {
 	 * @param infile
 	 */
 	
-	public static DBmain parseDB(String infile) throws NullPointerException {
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder;
+	public static DBmain parseDB(NodeList division) throws NullPointerException {
 		DBmain d = new DBmain();
-		try {
-			builder = factory.newDocumentBuilder(); 
-			Document document = builder.parse("src/Model/Resources/" + infile);   
-			NodeList division = document.getDocumentElement().getChildNodes();
-			
-		    for(int i=1;i<division.getLength();i+=2) {
-		    	Node team = division.item(i);
-		    	NodeList teamattrs = team.getChildNodes();
-		    	Team t = parseTeam(teamattrs);
-		    	d.addTeam(t);
-		    }
-		}
-		catch (ParserConfigurationException | SAXException | IOException e) {
-			e.printStackTrace();
-		}
+	    for(int i=1;i<division.getLength();i+=2) {
+	    	Node team = division.item(i);
+	    	NodeList teamattrs = team.getChildNodes();
+	    	Team t = parseTeam(teamattrs);
+	    	d.addTeam(t);
+	    }
 		return d;
 	}
 	
@@ -137,7 +124,7 @@ public class XmlParser {
 	 * @return
 	 */
 	
-	public static Team parseTeam(NodeList teamattrs) throws NullPointerException {
+	private static Team parseTeam(NodeList teamattrs) throws NullPointerException {
 		//Iterating through the nodes and extracting the data. Because of I don't know, only the odd items contain players
 	    NodeList teamattributes = teamattrs;
 	    String teamname = teamattributes.item(1).getTextContent();
@@ -185,7 +172,7 @@ public class XmlParser {
 	  * @return
 	  */
 	
-	public static Fieldplayer parsePlayer(NodeList playerattributes) {
+	private static Fieldplayer parsePlayer(NodeList playerattributes) {
 		String fname = null, lname = null, type = null;
 		int age = 0, pri = 0, pac = 0, sho = 0, pas = 0, dri = 0, def = 0, phy = 0, card = 0, dur = 0;
 		boolean play = false;
@@ -208,7 +195,7 @@ public class XmlParser {
 	  		case "DURATION": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
-	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, play, card, 0, pac, sho, pas, dri, def, phy);
+	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, play, card, dur, pac, sho, pas, dri, def, phy);
 	  	return p;
 	}
 	
@@ -218,7 +205,7 @@ public class XmlParser {
 	  * @return
 	  */
 	
-	public static Goalkeeper parseKeeper(NodeList playerattributes) {
+	private static Goalkeeper parseKeeper(NodeList playerattributes) {
 		String fname = null, lname = null;
 		int age = 0, pri = 0, div = 0, han = 0, kick = 0, ref = 0, spd = 0, ping = 0, hei = 0, card = 0, dur = 0;
 		boolean play = false;
@@ -241,7 +228,7 @@ public class XmlParser {
 	  		case "DURATION": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
-	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, 0, div, han, kick, ref, spd, ping, hei);
+	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, dur, div, han, kick, ref, spd, ping, hei);
 	  	return p;
 	}
 	
@@ -338,5 +325,3 @@ public class XmlParser {
 		return res;
 	}*/
 }
-	
-
