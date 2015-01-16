@@ -7,7 +7,6 @@ import Controller.gameEngine;
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
-import Model.Result;
 import Model.Standing;
 import Model.Team;
 import View.ManagementCenter;
@@ -34,11 +33,11 @@ public class Results {
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back, 150, 870);
 		
-		ObservableList<Result> resultTable = FXCollections.observableArrayList();
+		ObservableList<Match> resultTable = FXCollections.observableArrayList();
 		
 		Team TeamA1 = match.getTeamA();
 		Team TeamB1 = match.getTeamB();
-		Result save = new Result(TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
+		Match save = new Match(saveGame.getDay(),TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
 		resultTable.add(save);
 		
 		competitionTable.clear();
@@ -80,7 +79,7 @@ public class Results {
 				
 				other.play(alpha, beta);
 				
-				Result othermatch = new Result(alpha,beta,other.getGoalsA(),other.getGoalsB());
+				Match othermatch = new Match(saveGame.getDay(),alpha,beta,other.getGoalsA(),other.getGoalsB());
 				
 				resultTable.add(othermatch);
 				Team TeamA2 = other.getTeamA();
@@ -104,7 +103,7 @@ public class Results {
 			}
 		}
 	
-		TableView<Result> tableResults = new TableView();
+		TableView<Match> tableResults = new TableView();
 		tableResults.setPrefSize(Style.getNewSize(750), Style.getNewSize(500)); 
 		Style.setLocation(tableResults, 575, 200);
 		tableResults.setEditable(false);
@@ -112,13 +111,13 @@ public class Results {
 		tableResults.setItems(resultTable);
 		
 		TableColumn homeTeam = new TableColumn("Home");
-		homeTeam.setCellValueFactory(new PropertyValueFactory<Result, String>("A"));
+		homeTeam.setCellValueFactory(new PropertyValueFactory<Match, String>("teamHomeName"));
 		TableColumn column = new TableColumn("");
 		TableColumn awayTeam = new TableColumn("Away");
-		awayTeam.setCellValueFactory(new PropertyValueFactory<Result, String>("B"));
+		awayTeam.setCellValueFactory(new PropertyValueFactory<Match, String>("teamAwayName"));
 		TableColumn column2 = new TableColumn("");
 		TableColumn Score = new TableColumn("Score");
-		Score.setCellValueFactory(new PropertyValueFactory<Result, String>("score"));
+		Score.setCellValueFactory(new PropertyValueFactory<Match, String>("score"));
 		
 		homeTeam.setPrefWidth(Style.getNewSize(200));
 		awayTeam.setPrefWidth(Style.getNewSize(200));
