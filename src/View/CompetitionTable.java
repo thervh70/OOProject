@@ -25,6 +25,10 @@ public class CompetitionTable {
 		Style.setButtonStyle(back, 45);
 		Style.setLocation(back,150,870);
 		
+		Button toMatch = new Button("To Matches");
+		Style.setButtonStyle(toMatch, 45);
+		Style.setLocation(toMatch, 1550, 870);
+		
 		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
 		competitionTable = Results.getCompetitionTable();
 		
@@ -32,7 +36,7 @@ public class CompetitionTable {
 		TableView<Standing> table = new TableView();
 		table.setEditable(false);
 		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
-		Style.setLocation(table,550,225);
+		Style.setLocation(table,550,250);
 		
 		table.setItems(competitionTable);
 		
@@ -60,7 +64,7 @@ public class CompetitionTable {
         
         table.getColumns().addAll(rank,name,points,goalsFor,goalsAgainst,goalDifference);
         
-		root.getChildren().addAll(back, table);
+		root.getChildren().addAll(back, table,toMatch);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -68,6 +72,15 @@ public class CompetitionTable {
 				ManagementCenter.start(primaryStage);
 			}
 		}); 
+		
+		toMatch.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				CompetitionMatches.start(primaryStage);				
+			}
+			
+		});
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
