@@ -205,8 +205,8 @@ public class MatchCenter {
 		Button results = new Button("Go to Results");
 		Style.setButtonStyle(results, 45);
 		Style.setLocation(results, 1500, 870);
-		results.setDisable(true);
-		results.setVisible(false);
+		//results.setDisable(true);
+		//results.setVisible(false);
 		
 		Button back = new Button("Back to Management Center");
 		Style.setButtonStyle(back, 45);
@@ -216,7 +216,6 @@ public class MatchCenter {
        	
 	        @Override
 			public void handle(ActionEvent event) {
-	        	
 	        	
 	        	if(!saveGame.getMyTeam().checkAvail()){
 	        		Popup cardwarning = Warning.makeWarning("Selection contains \nunavailable players", root);
@@ -363,7 +362,16 @@ public class MatchCenter {
 			@Override
 			public void handle(ActionEvent e) {
 				timeSeconds = 0;
-				Results.start(primaryStage,match);
+				
+				if(!saveGame.getMyTeam().checkAvail()){
+	        		Popup cardwarning = Warning.makeWarning("Selection contains \nunavailable players", root);
+	        		cardwarning.show(primaryStage);
+	        	}
+				else{
+		        	match.play(alpha, beta);
+					Results.start(primaryStage,match);
+				}
+				
 			}
 		});
        
