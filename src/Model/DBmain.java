@@ -59,12 +59,12 @@ public class DBmain {
 	 */
 	
 	public String toWrite() {
-		String res = "<DATABASE>\r\n";
+		String res = "<Database>\r\n";
 		for(int i=0;i<d.size();i++) {
 			Team t = d.get(i);
 			res += t.toWrite();
 		}
-		res += "</DATABASE>\r\n";
+		res += "</Database>\r\n";
 		return res;
 	}
 	

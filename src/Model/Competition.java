@@ -23,20 +23,20 @@ public class Competition {
 	}
 	
 	public String toWrite() {
-		String write = "<COMPETITION>\r\n";
+		String write = "<Competition>\r\n";
 		for(int i=1;i<34;i++) {
-			write += "   <ROUND>\r\n";
-			write += "      <DAY>"+i+"</DAY>\r\n";
+			write += "   <Round>\r\n";
+			write += "      <Day>"+i+"</Day>\r\n";
 			ArrayList<Match> day = getMatchesForDay(i);
 			for(Match m : day) {
 				write += m.toWrite();
 			}
-			write += "   </ROUND>\r\n";
+			write += "   </Round>\r\n";
 		}
 		for(int i=0;i<matches.size();i++) {
 			write += matches.get(i).toWrite();
 		}
-		write += "</COMPETITION>\r\n";
+		write += "</Competition>\r\n";
 		return write;
 	}
 	

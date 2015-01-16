@@ -82,23 +82,23 @@ public class Goalkeeper extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="         <KEEPER>\r\n";
-		res+="            <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
-		res+="            <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
-		res+="            <AGE>"+this.getAge()+"</AGE>\r\n";
-		res+="            <PRICE>"+this.getPri()+"</PRICE>\r\n";
-		res+="            <DIVING>"+this.getDiv()+"</DIVING>\r\n";
-		res+="            <HANDLING>"+this.getHan()+"</HANDLING>\r\n";
-		res+="            <KICKING>"+this.getKick()+"</KICKING>\r\n";
-		res+="            <REFLEXES>"+this.getRef()+"</REFLEXES>\r\n";
-		res+="            <SPEED>"+this.getSpd()+"</SPEED>\r\n";
-		res+="            <POSITIONING>"+this.getPing()+"</POSITIONING>\r\n";
-		res+="            <HEIGHT>"+this.getHei()+"</HEIGHT>\r\n";
-		res+="            <TYPE>GK</TYPE>\r\n";
-		res+="            <AVAILABLE>"+this.getPlay()+"</AVAILABLE>\r\n";
-		res+="            <CARD>"+this.getCard()+"</CARD>\r\n";
-		res+="            <DURATION>"+this.getDur()+"</DURATION>\r\n";
-		res+="         </KEEPER>\r\n";
+		String res="         <Keeper>\r\n";
+		res+="            <Firstname>"+this.getFnm()+"</Firstname>\r\n";
+		res+="            <Lastname>"+this.getLnm()+"</Lastname>\r\n";
+		res+="            <Age>"+this.getAge()+"</Age>\r\n";
+		res+="            <Price>"+this.getPri()+"</Price>\r\n";
+		res+="            <Diving>"+this.getDiv()+"</Diving>\r\n";
+		res+="            <Handling>"+this.getHan()+"</Handling>\r\n";
+		res+="            <Kicking>"+this.getKick()+"</Kicking>\r\n";
+		res+="            <Reflexes>"+this.getRef()+"</Reflexes>\r\n";
+		res+="            <Speed>"+this.getSpd()+"</Speed>\r\n";
+		res+="            <Positioning>"+this.getPing()+"</Positioning>\r\n";
+		res+="            <Height>"+this.getHei()+"</Height>\r\n";
+		res+="            <Type>GK</Type>\r\n";
+		res+="            <Available>"+this.getPlay()+"</Available>\r\n";
+		res+="            <Card>"+this.getCard()+"</Card>\r\n";
+		res+="            <Duration>"+this.getDur()+"</Duration>\r\n";
+		res+="         </Keeper>\r\n";
 		return res;
 	}
 	

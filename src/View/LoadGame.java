@@ -41,7 +41,7 @@ public class LoadGame {
 		
 		ArrayList<String> files = new ArrayList<String>();
 		try {
-			Files.walk(Paths.get("src/Model/Resources/")).forEach(filePath -> {
+			Files.walk(Paths.get("src/Controller/Saves/")).forEach(filePath -> {
 			    if (Files.isRegularFile(filePath)) {
 			    	String file = filePath.toString();
 			    	String[] parts = file.split("\\\\");
@@ -65,8 +65,9 @@ public class LoadGame {
 						saveGame.loadSave(infile);
 						LoadingScreen.start(primaryStage);
 					} catch (NullPointerException e1){
-						Popup warning = Warning.makeWarning("Invalid File", root, r);
-						warning.show(primaryStage);
+						/*Popup warning = Warning.makeWarning("Invalid File", root, r);
+						warning.show(primaryStage);*/
+						e1.printStackTrace();
 					}
 					
 				}
