@@ -84,7 +84,7 @@ public class saveGame {
 	}
 	
 	public static void loadSave(String infile){
-		NodeList saveElements = XmlParser.parseInit(infile);
+		NodeList saveElements = XmlParser.parseInit("src/Controller/Saves/" +  infile);
 		Node database = saveElements.item(1);
 		Node team = saveElements.item(3);
 		Node current = saveElements.item(5);
@@ -94,20 +94,20 @@ public class saveGame {
 		myteam = DB.findTeam(team.getTextContent());
 		day = Integer.parseInt(current.getTextContent());
 		competition = XmlParser.parseCompetition(comp.getChildNodes());
-		/*System.out.println(DB);
-		System.out.println(myteam.getNm());
-		System.out.println(day);
-		System.out.println(competition);*/
+//		System.out.println(DB);
+//		System.out.println(myteam.getNm());
+//		System.out.println(day);
+//		System.out.println(competition);
 	}
 
 	public static void write(String infile) {
-		File file = new File("src/Model/Resources/TestSave.xml");
+		File file = new File("src/Model/Resources/" + infile);
 		PrintWriter wr;
 		try {
 			wr = new PrintWriter(file);
 			wr.print(DB.toWrite());
-			wr.print("<MYTEAM>"+myteam.getNm()+"</MYTEAM>\r\n");
-			wr.print("<CURRENTDAY>"+day+"</CURRENTDAY>\r\n");
+			wr.print("<Myteam>"+myteam.getNm()+"</Myteam>\r\n");
+			wr.print("<Currentday>"+day+"</Currentday>\r\n");
 			wr.print(competition.toWrite());
 			wr.close();
 		}

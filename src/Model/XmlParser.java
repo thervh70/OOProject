@@ -39,7 +39,7 @@ public class XmlParser {
 		try {
 			builder = factory.newDocumentBuilder();
 			Document document;
-			document = builder.parse("src/Model/Resources/" + infile);
+			document = builder.parse(infile);
 			init = document.getDocumentElement().getChildNodes();
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
@@ -70,10 +70,10 @@ public class XmlParser {
 		for(int i=1;i<matchattr.getLength();i+=2) {
 			String content = matchattr.item(i).getTextContent();
 			switch(matchattr.item(i).getNodeName()) {
-			case "HOME": homename = content; break;
-			case "AWAY": awayname = content; break;
-			case "HOMESCORE": homescore = Integer.parseInt(content); break;
-			case "AWAYSCORE": awayscore = Integer.parseInt(content); break;
+			case "Home": homename = content; break;
+			case "Away": awayname = content; break;
+			case "Homescore": homescore = Integer.parseInt(content); break;
+			case "Awayscore": awayscore = Integer.parseInt(content); break;
 			}
 		}
 		Team t1 = saveGame.getDB().findTeam(homename);
@@ -83,7 +83,7 @@ public class XmlParser {
 	}
 	
 	public static DBmain parseDB() {
-		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v9.xml");
+		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v10.xml");
 		DBmain d = new DBmain();
 		for(int i=1;i<database.getLength();i+=2) {
 			Node team = database.item(i);
@@ -139,12 +139,12 @@ public class XmlParser {
 	    for(int i=1;i<selection.getLength();i+=2) {
 	    	Node player = selection.item(i);
 	    	NodeList playerattributes = player.getChildNodes();
-	    	if(player.getNodeName().equals("PLAYER")) {
+	    	if(player.getNodeName().equals("Player")) {
 	    		Fieldplayer p = parsePlayer(playerattributes);
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
 	    	}
-	    	else if(player.getNodeName().equals("KEEPER")) {
+	    	else if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
@@ -154,11 +154,11 @@ public class XmlParser {
 	    for(int i=1;i<team.getLength();i+=2) {
 	    	Node player = team.item(i);
 	    	NodeList playerattributes = player.getChildNodes();
-	    	if(player.getNodeName().equals("PLAYER")) {
+	    	if(player.getNodeName().equals("Player")) {
 	    		Fieldplayer p = parsePlayer(playerattributes);
 	    		t.addPlayer(p);
 	    	}
-	    	else if(player.getNodeName().equals("KEEPER")) {
+	    	else if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    	}
@@ -179,20 +179,20 @@ public class XmlParser {
 	  	for(int j=0;j<playerattributes.getLength();j++) {
 	  		String content = playerattributes.item(j).getTextContent();
 	  		switch(playerattributes.item(j).getNodeName()) {
-	  		case "FIRSTNAME": fname = content; break;
-	  		case "LASTNAME": lname = content; break;
-	  		case "AGE": age = Integer.parseInt(content); break;
-	  		case "TYPE": type = content; break;
-	  		case "PRICE": pri = Integer.parseInt(content); break;
-	  		case "PACE": pac = Integer.parseInt(content); break;
-	  		case "SHOOTING": sho = 	Integer.parseInt(content); break;
-	  		case "PASSING": pas = Integer.parseInt(content); break;
-	  		case "DRIBBLING": dri = Integer.parseInt(content); break;
-	  		case "DEFENDING": def = Integer.parseInt(content); break;
-	  		case "PHYSICAL": phy = Integer.parseInt(content); break;
-	  		case "AVAILABLE": play = Boolean.parseBoolean(content); break;
-	  		case "CARD": card = Integer.parseInt(content); break;
-	  		case "DURATION": dur = Integer.parseInt(content); break;
+	  		case "Firstname": fname = content; break;
+	  		case "Lastname": lname = content; break;
+	  		case "Age": age = Integer.parseInt(content); break;
+	  		case "Type": type = content; break;
+	  		case "Price": pri = Integer.parseInt(content); break;
+	  		case "Pace": pac = Integer.parseInt(content); break;
+	  		case "Shooting": sho = 	Integer.parseInt(content); break;
+	  		case "Passing": pas = Integer.parseInt(content); break;
+	  		case "Dribbling": dri = Integer.parseInt(content); break;
+	  		case "Defending": def = Integer.parseInt(content); break;
+	  		case "Physical": phy = Integer.parseInt(content); break;
+	  		case "Available": play = Boolean.parseBoolean(content); break;
+	  		case "Card": card = Integer.parseInt(content); break;
+	  		case "Duration": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
 	  	Fieldplayer p = new Fieldplayer(fname, lname, type, age, pri, play, card, dur, pac, sho, pas, dri, def, phy);
@@ -212,20 +212,20 @@ public class XmlParser {
 	  	for(int j=0;j<playerattributes.getLength();j++) {
 	  		String content = playerattributes.item(j).getTextContent();
 	  		switch(playerattributes.item(j).getNodeName()) {
-	  		case "FIRSTNAME": fname = content; break;
-	  		case "LASTNAME": lname = content; break;
-	  		case "AGE": age = Integer.parseInt(content); break;
-	  		case "PRICE": pri = Integer.parseInt(content); break;
-	  		case "DIVING": div = Integer.parseInt(content); break;
-	  		case "HANDLING": han = 	Integer.parseInt(content); break;
-	  		case "KICKING": kick = Integer.parseInt(content); break;
-	  		case "REFLEXES": ref = Integer.parseInt(content); break;
-	  		case "SPEED": spd = Integer.parseInt(content); break;
-	  		case "POSITIONING": ping = Integer.parseInt(content); break;
-	  		case "HEIGHT": hei = Integer.parseInt(content); break;
-	  		case "AVAILABLE": play = Boolean.parseBoolean(content); break;
-	  		case "CARD": card = Integer.parseInt(content); break;
-	  		case "DURATION": dur = Integer.parseInt(content); break;
+	  		case "Firstname": fname = content; break;
+	  		case "Lastname": lname = content; break;
+	  		case "Age": age = Integer.parseInt(content); break;
+	  		case "Price": pri = Integer.parseInt(content); break;
+	  		case "Diving": div = Integer.parseInt(content); break;
+	  		case "Handling": han = 	Integer.parseInt(content); break;
+	  		case "Kicking": kick = Integer.parseInt(content); break;
+	  		case "Reflexes": ref = Integer.parseInt(content); break;
+	  		case "Speed": spd = Integer.parseInt(content); break;
+	  		case "Positioning": ping = Integer.parseInt(content); break;
+	  		case "Height": hei = Integer.parseInt(content); break;
+	  		case "Available": play = Boolean.parseBoolean(content); break;
+	  		case "Card": card = Integer.parseInt(content); break;
+	  		case "Duration": dur = Integer.parseInt(content); break;
 	  		}
 	  	}
 	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, dur, div, han, kick, ref, spd, ping, hei);

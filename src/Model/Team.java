@@ -155,11 +155,11 @@ public class Team {
 	 */
 	
 	public String toWrite() {
-		String res = "   <TEAM>\r\n";
-		res += "      <TEAMNAME>" + this.nm + "</TEAMNAME>\r\n";
-		res += "      <VIRTUAL_BUDGET>" + this.bdgt_vir + "</VIRTUAL_BUDGET>\r\n";
-		res += "      <BUDGET>" + this.bdgt_rel + "</BUDGET>\r\n";
-		res += "      <SELECTION>\r\n";
+		String res = "   <Team>\r\n";
+		res += "      <Teamname>" + this.nm + "</Teamname>\r\n";
+		res += "      <Virtual_budget>" + this.bdgt_vir + "</Virtual_budget>\r\n";
+		res += "      <Budget>" + this.bdgt_rel + "</Budget>\r\n";
+		res += "      <Selection>\r\n";
 		for(int i=0;i<this.getSize();i++) {
 			if(selection.contains(this.getPlayer(i))) {
 				if(this.getPlayer(i) instanceof Fieldplayer) {
@@ -172,8 +172,8 @@ public class Team {
 				}
 			}
 		}
-		res += "      </SELECTION>\r\n";
-		res	+= "      <TEAMMEMBERS>\r\n";
+		res += "      </Selection>\r\n";
+		res	+= "      <Teammembers>\r\n";
 		for(int i=0;i<team.size();i++) {
 			if(this.getPlayer(i) instanceof Fieldplayer) {
 				Fieldplayer p = (Fieldplayer)(this.getPlayer(i));
@@ -184,8 +184,8 @@ public class Team {
 				res += g.toWrite();
 			}
 		}
-		res += "      </TEAMMEMBERS>\r\n";
-		res += "   </TEAM>\r\n";
+		res += "      </Teammembers>\r\n";
+		res += "   </Team>\r\n";
 		return res;
 	}
 	

@@ -17,8 +17,8 @@ public class Match {
 	public Match(int day, Team teamHome, Team teamAway, int goalsHome, int goalsAway){
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
-		this.setTeamHomeName(teamHome.getNm());
-		this.setTeamAwayName(teamAway.getNm());
+		/*this.setTeamHomeName(teamHome.getNm());
+		this.setTeamAwayName(teamAway.getNm());*/
 		this.day = day;
 		this.goalsHome = goalsHome;
 		this.goalsAway = goalsAway;
@@ -38,19 +38,22 @@ public class Match {
 			return false;
 		}
 		Match that = (Match)obj;
-		if(this.getTeamHome().equals(that.getTeamHome()) && this.getTeamAway().equals(that.getTeamAway()) && this.getGoalsHome() == that.getGoalsHome() && this.getGoalsAway() == that.getGoalsAway() && this.getDay() == that.getDay() && this.getAwayIndex() == that.getAwayIndex() && this.getHomeIndex() == that.getHomeIndex()){
-			return true;
-		}
-		return false;
+		return this.getTeamHome().equals(that.getTeamHome()) &
+				this.getTeamAway().equals(that.getTeamAway()) &
+				this.getGoalsHome() == that.getGoalsHome() &
+				this.getGoalsAway() == that.getGoalsAway() &
+				this.getDay() == that.getDay() &
+				this.getAwayIndex() == that.getAwayIndex() &
+				this.getHomeIndex() == that.getHomeIndex(); 
 	}
 	
 	public String toWrite() {
-		String write = "      <MATCH>\r\n"
-				+ "         <HOME>" + getTeamHome().getNm() + "</HOME>\r\n"
-				+ "         <AWAY>" + getTeamAway().getNm() + "</AWAY>\r\n"
-				+ "         <HOMESCORE>" + getGoalsHome() + "</HOMESCORE>\r\n"
-				+ "         <AWAYSCORE>" + getGoalsAway() + "</AWAYSCORE>\r\n"
-				+ "      </MATCH>\r\n";
+		String write = "      <Match>\r\n"
+				+ "         <Home>" + getTeamHome().getNm() + "</Home>\r\n"
+				+ "         <Away>" + getTeamAway().getNm() + "</Away>\r\n"
+				+ "         <Homescore>" + getGoalsHome() + "</Homescore>\r\n"
+				+ "         <Awayscore>" + getGoalsAway() + "</Awayscore>\r\n"
+				+ "      </Match>\r\n";
 		return write;
 	}
 

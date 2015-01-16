@@ -64,22 +64,22 @@ public class Fieldplayer extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="         <PLAYER>\r\n";
-		res+="            <FIRSTNAME>"+this.getFnm()+"</FIRSTNAME>\r\n";
-		res+="            <LASTNAME>"+this.getLnm()+"</LASTNAME>\r\n";
-		res+="            <AGE>"+this.getAge()+"</AGE>\r\n";
-		res+="            <PRICE>"+this.getPri()+"</PRICE>\r\n";
-		res+="            <PACE>"+this.getPac()+"</PACE>\r\n";
-		res+="            <SHOOTING>"+this.getSho()+"</SHOOTING>\r\n";
-		res+="            <PASSING>"+this.getPas()+"</PASSING>\r\n";
-		res+="            <DRIBBLING>"+this.getDri()+"</DRIBBLING>\r\n";
-		res+="            <DEFENDING>"+this.getDef()+"</DEFENDING>\r\n";
-		res+="            <PHYSICAL>"+this.getPhy()+"</PHYSICAL>\r\n";
-		res+="            <TYPE>"+this.getPos()+"</TYPE>\r\n";
-		res+="            <AVAILABLE>"+this.getPlay()+"</AVAILABLE>\r\n";
-		res+="            <CARD>"+this.getCard()+"</CARD>\r\n";
-		res+="            <DURATION>"+this.getDur()+"</DURATION>\r\n";
-		res+="         </PLAYER>\r\n";
+		String res="         <Player>\r\n";
+		res+="            <Firstname>"+this.getFnm()+"</Firstname>\r\n";
+		res+="            <Lastname>"+this.getLnm()+"</Lastname>\r\n";
+		res+="            <Age>"+this.getAge()+"</Age>\r\n";
+		res+="            <Price>"+this.getPri()+"</Price>\r\n";
+		res+="            <Pace>"+this.getPac()+"</Pace>\r\n";
+		res+="            <Shooting>"+this.getSho()+"</Shooting>\r\n";
+		res+="            <Passing>"+this.getPas()+"</Passing>\r\n";
+		res+="            <Dribbling>"+this.getDri()+"</Dribbling>\r\n";
+		res+="            <Defending>"+this.getDef()+"</Defending>\r\n";
+		res+="            <Physical>"+this.getPhy()+"</Physical>\r\n";
+		res+="            <Type>"+this.getPos()+"</Type>\r\n";
+		res+="            <Available>"+this.getPlay()+"</Available>\r\n";
+		res+="            <Card>"+this.getCard()+"</Card>\r\n";
+		res+="            <Duration>"+this.getDur()+"</Duration>\r\n";
+		res+="         </Player>\r\n";
 		return res;
 	}
 	
