@@ -12,17 +12,22 @@ public class Match {
 		this.setTeamAway(teamAway);
 		this.day = day;
 		this.played = false;
+
+		this.setTeamHomeName(teamHome.getNm());
+		this.setTeamAwayName(teamAway.getNm());
+		this.setScore(goalsHome + " - " + goalsAway);
 	}
 	
 	public Match(int day, Team teamHome, Team teamAway, int goalsHome, int goalsAway){
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
-		/*this.setTeamHomeName(teamHome.getNm());
-		this.setTeamAwayName(teamAway.getNm());*/
 		this.day = day;
 		this.goalsHome = goalsHome;
 		this.goalsAway = goalsAway;
 		this.played = false;
+		
+		this.setTeamHomeName(teamHome.getNm());
+		this.setTeamAwayName(teamAway.getNm());
 		this.setScore(goalsHome + " - " + goalsAway);
 	}
 	

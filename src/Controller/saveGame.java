@@ -9,6 +9,7 @@ import Model.Match;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
+import View.Results;
 
 import org.w3c.dom.*;
 
@@ -90,6 +91,8 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
+		
+		Results.initialCompetitionTable();
 		
 	}
 	

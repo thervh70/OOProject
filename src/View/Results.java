@@ -22,7 +22,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Results {
-	public static ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
+	private static ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage, gameEngine match) {
@@ -152,12 +152,11 @@ public class Results {
 		return competitionTable;
 	}
 	
-	public static ObservableList<Standing> initialCompetitionTable(){
+	public static void initialCompetitionTable(){
 		competitionTable.clear();
 		for(int i = 0; i < saveGame.getDB().getSize(); i++){
 			saveGame.getDB().getTeam(i).newStanding();
 			competitionTable.add(saveGame.getDB().getTeam(i).getStanding());
 		}
-		return competitionTable;
 	}
 }

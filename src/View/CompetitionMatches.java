@@ -15,8 +15,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-	
+
 	public class CompetitionMatches {
+		
+		private static ObservableList<Match> matchList = FXCollections.observableArrayList();
+		
 		@SuppressWarnings({ "unchecked", "rawtypes" })
 		public static void start(Stage primaryStage) {
 
@@ -31,26 +34,24 @@ import javafx.stage.Stage;
 			Button toMatch = new Button("To Ranking");
 			Style.setButtonStyle(toMatch, 45);
 			Style.setLocation(toMatch, 1550, 870);
-		
-			ObservableList<Match> matchList = FXCollections.observableArrayList();
 			
 			TableView<Match> table = new TableView();
 			table.setEditable(false);
-			table.setPrefSize(Style.getNewSize(800), Style.getNewSize(540));
-			Style.setLocation(table, 500, 250);
+			table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
+			Style.setLocation(table,550,250);
 			
 			TableColumn day = new TableColumn("Day");
 			day.setPrefWidth(Style.getNewSize(50));
 			day.setCellValueFactory(new PropertyValueFactory<Match, Integer>("day"));
 	        TableColumn teamHome = new TableColumn("Team Home");
 			teamHome.setPrefWidth(Style.getNewSize(200));
-			teamHome.setCellValueFactory(new PropertyValueFactory<Match, String>("A"));
+			teamHome.setCellValueFactory(new PropertyValueFactory<Match, String>("teamHomeName"));
 			TableColumn teamAway = new TableColumn("Team Away");
 			teamAway.setPrefWidth(Style.getNewSize(200));
-			teamAway.setCellValueFactory(new PropertyValueFactory<Match, String>("B"));
+			teamAway.setCellValueFactory(new PropertyValueFactory<Match, String>("teamAwayName"));
 			TableColumn score = new TableColumn("Score");
 			score.setPrefWidth(Style.getNewSize(50));
-			score.setCellValueFactory(new PropertyValueFactory<Match, Integer>("score"));
+			score.setCellValueFactory(new PropertyValueFactory<Match, String>("score"));
 			
 			day.setResizable(false);
 			teamHome.setResizable(false);
@@ -66,6 +67,7 @@ import javafx.stage.Stage;
 				
 				for(Match m : matches){
 					matchList.add(m);
+					System.out.println(m.toString());
 				}
 			}
 			
@@ -90,4 +92,5 @@ import javafx.stage.Stage;
 			primaryStage.getScene().setRoot(root);
 			primaryStage.show();
 		}
+		
 }

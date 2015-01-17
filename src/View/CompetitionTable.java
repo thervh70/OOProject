@@ -43,7 +43,7 @@ public class CompetitionTable {
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));
         TableColumn name = new TableColumn("Team Name");
-		name.setPrefWidth(Style.getNewSize(390));
+		name.setPrefWidth(Style.getNewSize(380));
 		name.setCellValueFactory(new PropertyValueFactory<Standing, String>("teamName"));
 		TableColumn points = new TableColumn("Points");
 		points.setPrefWidth(Style.getNewSize(100));
