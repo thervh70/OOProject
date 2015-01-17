@@ -34,6 +34,20 @@ public class Competition {
 		return txt;
 	}
 	
+	public boolean equals(Object obj){
+		if(!(obj instanceof Competition)){
+			return false;
+		}
+		else{
+			Competition that = (Competition)obj;
+			if(this.matches.equals(that.matches)){
+				return true;
+			}
+			return false;
+		}
+		
+	}
+	
 	public String toWrite() {
 		String write = "   <Competition>\r\n";
 		for(int i=1;i<34;i++) {
@@ -78,4 +92,6 @@ public class Competition {
 		}
 		return matches;
 	}
+	
+	
 }

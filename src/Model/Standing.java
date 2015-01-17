@@ -15,6 +15,16 @@ public class Standing {
 		this.goalDifference = gd;
 	}
 	
+	public boolean equals(Object obj){
+		if(obj instanceof Standing){
+			Standing that = (Standing)obj;
+			if(this.points == that.points & this.teamName.equals(that.teamName) & this.goalsFor == that.goalsFor & this.goalsAgainst == that.goalsAgainst & this.goalDifference == that.goalDifference){
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public int getPoints() {return points;}
 	public String getTeamName() {return teamName;}
 	public int getGoalsFor() {return goalsFor;}
