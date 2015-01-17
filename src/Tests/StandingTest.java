@@ -12,6 +12,26 @@ import Model.XmlParser;
 public class StandingTest {
 
 	@Test
+	public void EqualsTest(){
+		Team t1 = new Team("Ajax", 100000, 150000);
+		Team t2 = new Team("hoi", 100000, 150000);
+		Standing s1 = new Standing(0,t1.getNm(),0,0,0);
+		Standing s2 = new Standing(0,t1.getNm(),0,0,0);
+		Standing s3 = new Standing(1,t1.getNm(),0,0,0);
+		Standing s4 = new Standing(0,t2.getNm(),0,0,0);
+		Standing s5 = new Standing(0,t1.getNm(),1,0,0);
+		Standing s6 = new Standing(0,t1.getNm(),0,1,0);
+		Standing s7 = new Standing(0,t1.getNm(),0,0,1);
+		assertTrue(s1.equals(s2));
+		assertFalse(s1.equals(s3));
+		assertFalse(s1.equals(t1));
+		assertFalse(s1.equals(s4));
+		assertFalse(s1.equals(s5));
+		assertFalse(s1.equals(s6));
+		assertFalse(s1.equals(s7));
+	}
+	
+	@Test
 	public void GetterTest() {
 
 		DBmain db = XmlParser.parseDB();

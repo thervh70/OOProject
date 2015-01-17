@@ -15,6 +15,31 @@ import Model.XmlParser;
 public class CompetitionTest {
 
 	@Test
+	public void testEquals(){
+
+		DBmain db = XmlParser.parseDB();
+		Team team = db.getTeam(0);
+		Team team2 = db.getTeam(1);
+		Match match = new Match(1,team, team2);
+		Competition comp = new Competition();
+		comp.add(match);
+		comp.add(match);
+		comp.add(match);
+		
+		Competition comp2 = new Competition();
+		comp2.add(match);
+		comp2.add(match);
+		comp2.add(match);
+		
+		Competition comp3 = new Competition();
+		comp3.add(match);
+		comp3.add(match);
+		assertTrue(comp.equals(comp2));
+		assertFalse(comp.equals(comp3));
+		assertFalse(comp.equals(team));
+	}
+	
+	@Test
 	public void testToString() {
 		DBmain db = XmlParser.parseDB();
 		Team team = db.getTeam(0);

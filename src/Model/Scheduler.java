@@ -26,7 +26,6 @@ public class Scheduler {
 	public static Competition generate(){
 		List<Team> TeamOrder = new ArrayList<Team>();
 		int number;
-		
 		//To be fixed!!
 		DBmain d = XmlParser.parseDB();
 		//!!!!

@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import Model.Fieldplayer;
 import Model.Goalkeeper;
+import Model.Standing;
 import Model.Team;
 
 public class TeamTest{
@@ -88,6 +89,13 @@ public class TeamTest{
 			+ "         </KEEPER>\r\n"
 			+ "      </TEAMMEMBERS>\r\n"
 			+ "   </TEAM>\r\n";
+	
+	@Test
+	public void NewStandingTest(){
+		t1.newStanding();
+		assertTrue(t1.getStanding().equals(new Standing(0, t1.getNm(), 0, 0, 0)));
+		
+	}
 	
 	@Test
 	public void removeSelectionTest() {
