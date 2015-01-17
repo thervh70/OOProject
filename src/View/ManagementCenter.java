@@ -123,6 +123,13 @@ public class ManagementCenter {
 					
 					public void handle(MouseEvent e) {
 						root.setDisable(false);
+						String file = saveGame.getFile();
+						if(file.equals(null)) {
+							//Fancy invoervakje
+							
+							//file = input_invoervakje;
+						}
+						saveGame.write(file);
 					}
 				};
 				

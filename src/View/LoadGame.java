@@ -65,9 +65,8 @@ public class LoadGame {
 						saveGame.loadSave(infile);
 						LoadingScreen.start(primaryStage);
 					} catch (NullPointerException e1){
-						/*Popup warning = Warning.makeWarning("Invalid File", root, r);
-						warning.show(primaryStage);*/
-						e1.printStackTrace();
+						Popup warning = Warning.makeWarning("Invalid File", root, r);
+						warning.show(primaryStage);
 					}
 					
 				}

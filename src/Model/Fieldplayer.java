@@ -64,22 +64,22 @@ public class Fieldplayer extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="         <Player>\r\n";
-		res+="            <Firstname>"+this.getFnm()+"</Firstname>\r\n";
-		res+="            <Lastname>"+this.getLnm()+"</Lastname>\r\n";
-		res+="            <Age>"+this.getAge()+"</Age>\r\n";
-		res+="            <Price>"+this.getPri()+"</Price>\r\n";
-		res+="            <Pace>"+this.getPac()+"</Pace>\r\n";
-		res+="            <Shooting>"+this.getSho()+"</Shooting>\r\n";
-		res+="            <Passing>"+this.getPas()+"</Passing>\r\n";
-		res+="            <Dribbling>"+this.getDri()+"</Dribbling>\r\n";
-		res+="            <Defending>"+this.getDef()+"</Defending>\r\n";
-		res+="            <Physical>"+this.getPhy()+"</Physical>\r\n";
-		res+="            <Type>"+this.getPos()+"</Type>\r\n";
-		res+="            <Available>"+this.getPlay()+"</Available>\r\n";
-		res+="            <Card>"+this.getCard()+"</Card>\r\n";
-		res+="            <Duration>"+this.getDur()+"</Duration>\r\n";
-		res+="         </Player>\r\n";
+		String res="            <Player>\r\n";
+		res+="               <Firstname>"+this.getFnm()+"</Firstname>\r\n";
+		res+="               <Lastname>"+this.getLnm()+"</Lastname>\r\n";
+		res+="               <Age>"+this.getAge()+"</Age>\r\n";
+		res+="               <Price>"+this.getPri()+"</Price>\r\n";
+		res+="               <Pace>"+this.getPac()+"</Pace>\r\n";
+		res+="               <Shooting>"+this.getSho()+"</Shooting>\r\n";
+		res+="               <Passing>"+this.getPas()+"</Passing>\r\n";
+		res+="               <Dribbling>"+this.getDri()+"</Dribbling>\r\n";
+		res+="               <Defending>"+this.getDef()+"</Defending>\r\n";
+		res+="               <Physical>"+this.getPhy()+"</Physical>\r\n";
+		res+="               <Type>"+this.getPos()+"</Type>\r\n";
+		res+="               <Available>"+this.getPlay()+"</Available>\r\n";
+		res+="               <Card>"+this.getCard()+"</Card>\r\n";
+		res+="               <Duration>"+this.getDur()+"</Duration>\r\n";
+		res+="            </Player>\r\n";
 		return res;
 	}
 	

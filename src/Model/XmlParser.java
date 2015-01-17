@@ -22,6 +22,7 @@ public class XmlParser {
 	
 	public static void main(String[] args) throws Exception {
 		saveGame.loadSave("TestSave.xml");
+		saveGame.write("TestSaveWrite.xml");
 	}
 	
 	/**

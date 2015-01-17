@@ -48,12 +48,12 @@ public class Match {
 	}
 	
 	public String toWrite() {
-		String write = "      <Match>\r\n"
-				+ "         <Home>" + getTeamHome().getNm() + "</Home>\r\n"
-				+ "         <Away>" + getTeamAway().getNm() + "</Away>\r\n"
-				+ "         <Homescore>" + getGoalsHome() + "</Homescore>\r\n"
-				+ "         <Awayscore>" + getGoalsAway() + "</Awayscore>\r\n"
-				+ "      </Match>\r\n";
+		String write = "         <Match>\r\n"
+				+ "            <Home>" + getTeamHome().getNm() + "</Home>\r\n"
+				+ "            <Away>" + getTeamAway().getNm() + "</Away>\r\n"
+				+ "            <Homescore>" + getGoalsHome() + "</Homescore>\r\n"
+				+ "            <Awayscore>" + getGoalsAway() + "</Awayscore>\r\n"
+				+ "         </Match>\r\n";
 		return write;
 	}
 

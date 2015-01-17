@@ -11,7 +11,19 @@ public class Competition {
 	}
 	
 	public void add(Match match){
-		matches.add(match);
+		if(!matches.contains(match)) {
+			matches.add(match);
+		}
+	}
+	
+	public void add(int i, Match match) {
+		if(!matches.get(i).equals(match)) {
+			matches.add(i, match);
+		}
+	}
+	
+	public void remove(Match match) {
+		matches.remove(match);
 	}
 	
 	public String toString(){
@@ -23,20 +35,17 @@ public class Competition {
 	}
 	
 	public String toWrite() {
-		String write = "<Competition>\r\n";
+		String write = "   <Competition>\r\n";
 		for(int i=1;i<34;i++) {
-			write += "   <Round>\r\n";
-			write += "      <Day>"+i+"</Day>\r\n";
+			write += "      <Round>\r\n";
+			write += "         <Day>"+i+"</Day>\r\n";
 			ArrayList<Match> day = getMatchesForDay(i);
 			for(Match m : day) {
 				write += m.toWrite();
 			}
-			write += "   </Round>\r\n";
+			write += "      </Round>\r\n";
 		}
-		for(int i=0;i<matches.size();i++) {
-			write += matches.get(i).toWrite();
-		}
-		write += "</Competition>\r\n";
+		write += "   </Competition>\r\n";
 		return write;
 	}
 	
@@ -46,6 +55,16 @@ public class Competition {
 	
 	public Match get(int index){
 		return matches.get(index);
+	}
+	
+	public int getIndex(Match m) {
+		for(int i=0;i<matches.size();i++) {
+			Match match = matches.get(i);
+			if(match.equals(m)) {
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 	public ArrayList<Match> getMatchesForDay(int day){

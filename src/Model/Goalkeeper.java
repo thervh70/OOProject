@@ -82,23 +82,23 @@ public class Goalkeeper extends Player {
 	 */
 	
 	public String toWrite(){
-		String res="         <Keeper>\r\n";
-		res+="            <Firstname>"+this.getFnm()+"</Firstname>\r\n";
-		res+="            <Lastname>"+this.getLnm()+"</Lastname>\r\n";
-		res+="            <Age>"+this.getAge()+"</Age>\r\n";
-		res+="            <Price>"+this.getPri()+"</Price>\r\n";
-		res+="            <Diving>"+this.getDiv()+"</Diving>\r\n";
-		res+="            <Handling>"+this.getHan()+"</Handling>\r\n";
-		res+="            <Kicking>"+this.getKick()+"</Kicking>\r\n";
-		res+="            <Reflexes>"+this.getRef()+"</Reflexes>\r\n";
-		res+="            <Speed>"+this.getSpd()+"</Speed>\r\n";
-		res+="            <Positioning>"+this.getPing()+"</Positioning>\r\n";
-		res+="            <Height>"+this.getHei()+"</Height>\r\n";
-		res+="            <Type>GK</Type>\r\n";
-		res+="            <Available>"+this.getPlay()+"</Available>\r\n";
-		res+="            <Card>"+this.getCard()+"</Card>\r\n";
-		res+="            <Duration>"+this.getDur()+"</Duration>\r\n";
-		res+="         </Keeper>\r\n";
+		String res="            <Keeper>\r\n";
+		res+="               <Firstname>"+this.getFnm()+"</Firstname>\r\n";
+		res+="               <Lastname>"+this.getLnm()+"</Lastname>\r\n";
+		res+="               <Age>"+this.getAge()+"</Age>\r\n";
+		res+="               <Price>"+this.getPri()+"</Price>\r\n";
+		res+="               <Diving>"+this.getDiv()+"</Diving>\r\n";
+		res+="               <Handling>"+this.getHan()+"</Handling>\r\n";
+		res+="               <Kicking>"+this.getKick()+"</Kicking>\r\n";
+		res+="               <Reflexes>"+this.getRef()+"</Reflexes>\r\n";
+		res+="               <Speed>"+this.getSpd()+"</Speed>\r\n";
+		res+="               <Positioning>"+this.getPing()+"</Positioning>\r\n";
+		res+="               <Height>"+this.getHei()+"</Height>\r\n";
+		res+="               <Type>GK</Type>\r\n";
+		res+="               <Available>"+this.getPlay()+"</Available>\r\n";
+		res+="               <Card>"+this.getCard()+"</Card>\r\n";
+		res+="               <Duration>"+this.getDur()+"</Duration>\r\n";
+		res+="            </Keeper>\r\n";
 		return res;
 	}
 	

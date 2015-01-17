@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import Model.Competition;
 import Model.DBmain;
+import Model.Match;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
@@ -17,6 +18,7 @@ public class saveGame {
 	private static Team myteam;
 	private static Competition competition;
 	private static int day = 0;
+	private static String file = null;
 
 
 	public static Competition getCompetition() {
@@ -59,6 +61,14 @@ public class saveGame {
 	public static void setDay(int day) {
 		saveGame.day = day;
 	}
+
+	public static String getFile() {
+		return file;
+	}
+
+	public static void setFile(String file) {
+		saveGame.file = file;
+	}
 	
 	public static void nextDay(){
 		if(day < 34){
@@ -85,6 +95,7 @@ public class saveGame {
 	
 	public static void loadSave(String infile){
 		NodeList saveElements = XmlParser.parseInit("src/Controller/Saves/" +  infile);
+		saveGame.setFile(infile);
 		Node database = saveElements.item(1);
 		Node team = saveElements.item(3);
 		Node current = saveElements.item(5);
@@ -101,14 +112,16 @@ public class saveGame {
 	}
 
 	public static void write(String infile) {
-		File file = new File("src/Model/Resources/" + infile);
+		File file = new File("src/Controller/Saves/" + infile);
 		PrintWriter wr;
 		try {
 			wr = new PrintWriter(file);
+			wr.println("<Save>");
 			wr.print(DB.toWrite());
-			wr.print("<Myteam>"+myteam.getNm()+"</Myteam>\r\n");
-			wr.print("<Currentday>"+day+"</Currentday>\r\n");
+			wr.print("   <Myteam>"+myteam.getNm()+"</Myteam>\r\n");
+			wr.print("   <Currentday>"+day+"</Currentday>\r\n");
 			wr.print(competition.toWrite());
+			wr.print("</Save>");
 			wr.close();
 		}
 		catch(Exception e) {
@@ -117,8 +130,18 @@ public class saveGame {
 	}
 	
 	public static void refreshTeam(Team old, Team fresh){
-		DB.removeTeam(old);
-		DB.addTeam(fresh);
+		int i = DB.getIndex(old.getNm());
+		if(!(i == -1)) {
+			DB.removeTeam(old);
+			DB.addTeam(i, fresh);
+		}
 	}
 	
+	public static void refreshMatch(Match old, Match fresh) {
+		int i = competition.getIndex(old);
+		if(!(i == -1)) {
+			competition.remove(old);
+			competition.add(i, fresh);
+		}
+	}	
 }

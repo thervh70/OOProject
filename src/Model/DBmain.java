@@ -34,6 +34,12 @@ public class DBmain {
 		}
 	}
 	
+	public void addTeam(int i, Team fresh) {
+		if(!d.get(i).equals(fresh)) {
+			d.add(i, fresh);
+		}
+	}
+	
 	public void clearAllCardsInjuries(){
 		for(Team t : d){
 			t.clearCardsInjuries();
@@ -59,12 +65,12 @@ public class DBmain {
 	 */
 	
 	public String toWrite() {
-		String res = "<Database>\r\n";
+		String res = "   <Database>\r\n";
 		for(int i=0;i<d.size();i++) {
 			Team t = d.get(i);
 			res += t.toWrite();
 		}
-		res += "</Database>\r\n";
+		res += "   </Database>\r\n";
 		return res;
 	}
 	
@@ -126,5 +132,15 @@ public class DBmain {
 			}
 		}
 		return null;
+	}
+	
+	public int getIndex(String teamName) {
+	    for (int i = 0; i < d.size(); i++) {
+	        Team t = d.get(i);
+	        if (teamName.equals(t.getNm())) {
+	            return i;
+	        }
+	    }
+	    return -1;
 	}
 }
