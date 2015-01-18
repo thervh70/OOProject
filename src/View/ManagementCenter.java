@@ -124,10 +124,12 @@ public class ManagementCenter {
 					public void handle(MouseEvent e) {
 						root.setDisable(false);
 						String file = saveGame.getFile();
-						if(file.equals(null)) {
+						if(file.equals("")) {
 							//Fancy invoervakje
-							
-							//file = input_invoervakje;
+							file = "NewGameSave.xml";
+							/*if(!input_voervakje.equals("") {
+								file = input_invoervakje;
+							}*/
 						}
 						saveGame.write(file);
 					}

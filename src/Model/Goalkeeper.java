@@ -53,12 +53,11 @@ public class Goalkeeper extends Player {
 	 */
 	
 	public String toString() {
-		String card, play = "unknown";
+		String card = "unknown", play = "unknown";
 		switch(this.getCard()) {
 		case 0: card = "None"; break;
 		case 1: card = "Yellow"; break;
 		case 2: card = "Red"; break;
-		default: card = "unknown"; break;
 		}
 		
 		if(this.getPlay()) {play = "Yes"; }
@@ -66,7 +65,7 @@ public class Goalkeeper extends Player {
 		
 		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"
-				+ "    Available: "+play+" Card: "+card+" Duration: "+this.getDur()+"\n"
+				+ "    Card: "+card+" Available: "+play+" Duration: "+this.getDur()+"\n"
 				+ "    Diving: "+this.getDiv()
 				+ " Handling: "+this.getHan()
 				+ " Kicking: "+this.getKick()

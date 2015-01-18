@@ -19,7 +19,7 @@ public class Fieldplayer extends Player {
 	 * @param phy Physical
 	 */
 	
-	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, boolean play, int dur, int card, int pac,
+	public Fieldplayer(String fnm, String lnm, String pos, int age, int pri, boolean play, int card, int dur, int pac,
 			int sho, int pas, int dri, int def, int phy) {
 		super(fnm, lnm, pos, age, pri, play, card, dur);
 		this.pac = pac;
@@ -36,12 +36,11 @@ public class Fieldplayer extends Player {
 	 */
 	
 	public String toString() {
-		String card, play = "unknown";
+		String card = "None", play = "unknown";
 		switch(this.getCard()) {
 		case 0: card = "None"; break;
 		case 1: card = "Yellow"; break;
 		case 2: card = "Red"; break;
-		default: card = "unknown"; break;
 		}
 		
 		if(this.getPlay()) {play = "Yes"; }

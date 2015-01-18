@@ -16,28 +16,34 @@ public class FieldplayerTest {
 	Fieldplayer fp6 = new Fieldplayer("Guus", "Meeuwis", "RW", 35, 19546, true, 0, 0, 33, 86, 16, 46, 71, 22);
 	Fieldplayer fp7 = new Fieldplayer("Guus", "Meeuwis", "CAM", 35, 19546, true, 0, 0, 33, 86, 16, 46, 71, 22);
 	Fieldplayer fp8 = new Fieldplayer("Edward", "Stutjes", "CM", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
-	Fieldplayer fp9 = new Fieldplayer("Edward", "Stutjes", "LB", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
-	Fieldplayer fp10 = new Fieldplayer("Edward", "Stutjes", "CB", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp9 = new Fieldplayer("Edward", "Stutjes", "LB", 29, 169745, true, 1, 0, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp10 = new Fieldplayer("Edward", "Stutjes", "CB", 29, 169745, false, 2, 0, 66, 52, 39, 48, 56, 87);
 
 
 
-	String res="         <PLAYER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <PACE>44</PACE>\r\n"
-			+ "            <SHOOTING>56</SHOOTING>\r\n"
-			+ "            <PASSING>81</PASSING>\r\n"
-			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "            <DEFENDING>72</DEFENDING>\r\n"
-			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "            <TYPE>RB</TYPE>\r\n"
-			+ "         </PLAYER>\r\n";
+	String res="            <Player>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Pace>44</Pace>\r\n"
+			+ "               <Shooting>56</Shooting>\r\n"
+			+ "               <Passing>81</Passing>\r\n"
+			+ "               <Dribbling>39</Dribbling>\r\n"
+			+ "               <Defending>72</Defending>\r\n"
+			+ "               <Physical>58</Physical>\r\n"
+			+ "               <Type>RB</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Player>\r\n";
 	@Test
 	public void toStringTest() {
-		assertEquals(fp1.toString(),"  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
-		assertNotEquals(fp3.toString(),"  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
+		assertEquals(fp1.toString(),"  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    Card: None Available: Yes Duration: 0\n    Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
+		assertNotEquals(fp3.toString(),"  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    Card: None Available: Yes Duration: 0\n    Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
+		assertEquals(fp9.toString(),"  Name: Edward Stutjes Position: LB age: 29 price: 169745\n    Card: Yellow Available: Yes Duration: 0\n    Pace: 66 Shooting: 52 Passing: 39 Dribbling: 48 Defending: 56 Physical: 87");
+		assertEquals(fp10.toString(),"  Name: Edward Stutjes Position: CB age: 29 price: 169745\n    Card: Red Available: No Duration: 0\n    Pace: 66 Shooting: 52 Passing: 39 Dribbling: 48 Defending: 56 Physical: 87");
+
 	}
 	
 	@Test

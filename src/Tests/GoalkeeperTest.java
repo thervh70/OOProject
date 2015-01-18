@@ -9,26 +9,31 @@ import Model.Goalkeeper;
 public class GoalkeeperTest {
 	
 	Goalkeeper fp1 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, true, 0, 0, 44, 56, 81, 39, 72, 55, 58);
-	Goalkeeper fp2 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, true, 0, 0, 44, 56, 81, 39, 72, 55, 58);
-	Goalkeeper fp3 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, true, 0, 0, 33, 86, 16, 46, 71, 46, 22);
-	String res ="         <KEEPER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <DIVING>44</DIVING>\r\n"
-			+ "            <HANDLING>56</HANDLING>\r\n"
-			+ "            <KICKING>81</KICKING>\r\n"
-			+ "            <REFLEXES>39</REFLEXES>\r\n"
-			+ "            <SPEED>72</SPEED>\r\n"
-			+ "            <POSITIONING>55</POSITIONING>\r\n"
-			+ "            <HEIGHT>58</HEIGHT>\r\n"
-			+ "            <TYPE>GK</TYPE>\r\n"
-			+ "         </KEEPER>\r\n";
+	Goalkeeper fp2 = new Goalkeeper("Frits", "Fritsmans", "GK", 21, 182556, true, 1, 0, 44, 56, 81, 39, 72, 55, 58);
+	Goalkeeper fp3 = new Goalkeeper("Guus", "Meeuwis", "GK", 35, 19546, false, 2, 0, 33, 86, 16, 46, 71, 46, 22);
+	String res ="            <Keeper>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Diving>44</Diving>\r\n"
+			+ "               <Handling>56</Handling>\r\n"
+			+ "               <Kicking>81</Kicking>\r\n"
+			+ "               <Reflexes>39</Reflexes>\r\n"
+			+ "               <Speed>72</Speed>\r\n"
+			+ "               <Positioning>55</Positioning>\r\n"
+			+ "               <Height>58</Height>\r\n"
+			+ "               <Type>GK</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Keeper>\r\n";
 	@Test
 	public void toStringTest() {
-		assertEquals(fp1.toString(),"  Name: Frits Fritsmans Position: GK age: 21 price: 182556\n    Diving: 44 Handling: 56 Kicking: 81 Reflexes: 39 Speed: 72 Positioning: 55 Height: 58");
-		assertNotEquals(fp3.toString(),"  Name: Frits Fritsmans Position: GK age: 21 price: 182556\n    Diving: 44 Handling: 56 Kicking: 81 Reflexes: 39 Speed: 72 Positioning: 55 Height: 58");
+		assertEquals(fp1.toString(),"  Name: Frits Fritsmans Position: GK age: 21 price: 182556\n    Card: None Available: Yes Duration: 0\n    Diving: 44 Handling: 56 Kicking: 81 Reflexes: 39 Speed: 72 Positioning: 55 Height: 58");
+		assertNotEquals(fp2.toString(),"  Name: Frits Fritsmans Position: GK age: 35 price: 182556\n    Card: Yellow Available: Yes Duration: 0\n    Diving: 44 Handling: 56 Kicking: 81 Reflexes: 39 Speed: 72 Positioning: 55 Height: 58");
+		assertEquals(fp2.toString(),"  Name: Frits Fritsmans Position: GK age: 21 price: 182556\n    Card: Yellow Available: Yes Duration: 0\n    Diving: 44 Handling: 56 Kicking: 81 Reflexes: 39 Speed: 72 Positioning: 55 Height: 58");
+		assertEquals(fp3.toString(),"  Name: Guus Meeuwis Position: GK age: 35 price: 19546\n    Card: Red Available: No Duration: 0\n    Diving: 33 Handling: 86 Kicking: 16 Reflexes: 46 Speed: 71 Positioning: 46 Height: 22");
 	}
 	
 	@Test

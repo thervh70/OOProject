@@ -19,7 +19,7 @@ public class saveGame {
 	private static Team myteam;
 	private static Competition competition;
 	private static int day = 0;
-	private static String file = null;
+	private static String file = "";
 
 
 	public static Competition getCompetition() {
@@ -91,7 +91,7 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
-		
+		 
 		Results.initialCompetitionTable();
 		
 	}
@@ -133,18 +133,7 @@ public class saveGame {
 	}
 	
 	public static void refreshTeam(Team old, Team fresh){
-		int i = DB.getIndex(old.getNm());
-		if(!(i == -1)) {
-			DB.removeTeam(old);
-			DB.addTeam(i, fresh);
-		}
+		DB.removeTeam(old);
+		DB.addTeam(fresh);
 	}
-	
-	public static void refreshMatch(Match old, Match fresh) {
-		int i = competition.getIndex(old);
-		if(!(i == -1)) {
-			competition.remove(old);
-			competition.add(i, fresh);
-		}
-	}	
 }

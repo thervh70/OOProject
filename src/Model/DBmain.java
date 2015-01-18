@@ -134,10 +134,10 @@ public class DBmain {
 		return null;
 	}
 	
-	public int getIndex(String teamName) {
+	public int getIndex(Team team) {
 	    for (int i = 0; i < d.size(); i++) {
 	        Team t = d.get(i);
-	        if (teamName.equals(t.getNm())) {
+	        if (team.equals(t)) {
 	            return i;
 	        }
 	    }

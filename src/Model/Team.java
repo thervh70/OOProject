@@ -147,7 +147,7 @@ public class Team {
 		}
  		res = res.substring(0, res.length()-1);
 		return res;
-	}
+	} 
 	
 	/**
 	 * Method toWrite Stringifies a Team so it can be written in xml-file
@@ -184,8 +184,8 @@ public class Team {
 				res += g.toWrite();
 			}
 		}
-		res += "      </Teammembers>\r\n";
-		res += "   </Team>\r\n";
+		res += "         </Teammembers>\r\n";
+		res += "      </Team>\r\n";
 		return res;
 	}
 	
