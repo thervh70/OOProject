@@ -4,11 +4,24 @@ package Controller;
  */
 
 import java.util.Random;
+import java.util.ArrayList;
 
 import Model.Player;
 import Model.Team;
 import Model.DBmain;
 public class Budget {
+	
+	private ArrayList<Buy> toBuy;
+	private ArrayList<Sell> toSell;
+	private int sellc, buyc, day;
+	
+	public Budget(int d){
+		toBuy = new ArrayList<Buy>();
+		toSell = new ArrayList<Sell>();
+		sellc = 0;
+		buyc = 0;
+		day = d;
+	}
 	
 	private static void buy(Player p, Team buyTeam, int bid, Team myTeam) throws Exception {
 		Team oldBuy = buyTeam;
@@ -140,4 +153,6 @@ public class Budget {
 		}
 		return false;
 	}
+
+	
 }
