@@ -6,12 +6,15 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
+import Controller.saveGame;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class StartupMenu {
@@ -66,7 +69,24 @@ public class StartupMenu {
 		exit.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				primaryStage.close();
+
+				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
+					
+					public void handle(MouseEvent e) {
+						root.setDisable(false);
+						primaryStage.close();
+					}
+				};
+				
+				EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
+					
+					public void handle(MouseEvent e) {
+						;
+					}
+				};
+				
+				Popup confirm = Warning.makeWarning("Do you really want to quit?", root, yes, no);
+				confirm.show(primaryStage);	
 			}
 		});
 		primaryStage.getScene().setOnKeyPressed(null);

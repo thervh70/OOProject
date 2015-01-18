@@ -119,31 +119,50 @@ public class ManagementCenter {
 		save.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
+				
 				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
 					
 					public void handle(MouseEvent e) {
 						root.setDisable(false);
 						String file = saveGame.getFile();
 						if(file.equals("")) {
-							//Fancy invoervakje
-							file = "NewGameSave.xml";
-							/*if(!input_voervakje.equals("") {
-								file = input_invoervakje;
-							}*/
+							
+							EventHandler<MouseEvent> save = new EventHandler<MouseEvent>() {
+								
+								public void handle(MouseEvent e) {
+									String newFile = saveGame.getFile();
+									saveGame.write(newFile);
+									root.setDisable(false);
+								}
+							};
+							
+							EventHandler<MouseEvent> back = new EventHandler<MouseEvent>() {
+								
+								public void handle(MouseEvent e) {
+									;
+								}
+							};
+							
+							Popup getText = Warning.getInput("Set File Name", root, save, back);
+							getText.show(primaryStage);
+							
 						}
-						saveGame.write(file);
+						else{
+							saveGame.write(file);
+						}
 					}
 				};
 				
 				EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
 					
 					public void handle(MouseEvent e) {
-						
+						;
 					}
 				};
 				
 				Popup confirm = Warning.makeWarning("Do you want to overwrite \nthe previous savegame?", root, yes, no);
-				confirm.show(primaryStage);				
+				confirm.show(primaryStage);		
+			
 			}
 
 		});
@@ -151,8 +170,24 @@ public class ManagementCenter {
 		menu.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				saveGame.setDefaults();
-				StartupMenu.start(primaryStage);
+				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
+					
+					public void handle(MouseEvent e) {
+						root.setDisable(false);
+						saveGame.setDefaults();
+						StartupMenu.start(primaryStage);
+					}
+				};
+				
+				EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
+					
+					public void handle(MouseEvent e) {
+						;
+					}
+				};
+				
+				Popup confirm = Warning.makeWarning("Do you really want to quit?", root, yes, no);
+				confirm.show(primaryStage);	
 			}
 		});
 		
