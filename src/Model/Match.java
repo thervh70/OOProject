@@ -1,5 +1,7 @@
 package Model;
 
+import Controller.saveGame;
+
 public class Match {
 
 	private Team teamHome, teamAway;
@@ -18,12 +20,18 @@ public class Match {
 		this.setScore(goalsHome + " - " + goalsAway);
 	}
 	
-	public Match(int day, Team teamHome, Team teamAway, int goalsHome, int goalsAway){
+	public Match(int day, Team teamHome, Team teamAway, Integer goalsHome, Integer goalsAway){
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
 		this.day = day;
 		this.goalsHome = goalsHome;
 		this.goalsAway = goalsAway;
+		
+		if(day < saveGame.getDay()){
+			this.goalsHomeS = goalsHome.toString();
+			this.goalsAwayS = goalsAway.toString();
+		}
+		
 		this.played = false;
 		
 		this.setTeamHomeName(teamHome.getNm());
