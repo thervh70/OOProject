@@ -104,6 +104,7 @@ public class saveGame {
 		Node current = saveElements.item(5);
 		Node comp = saveElements.item(7);
 		
+		file = infile;
 		DB = XmlParser.parseDB(database.getChildNodes());
 		myteam = DB.findTeam(team.getTextContent());
 		day = Integer.parseInt(current.getTextContent());

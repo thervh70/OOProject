@@ -40,9 +40,15 @@ public class MatchCenter {
 	
 	private static Text goalsA;
 	private static Text goalsB; 
+	
+	//boolean for disabling 2nd match after start match
+	private static boolean played = false;
 	    
 	public static void start(Stage primaryStage) throws NullPointerException {
 		Pane root = new Pane(); 
+		
+		//Set match to false, so the match skipping functions properly
+		played = false;
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_match-center.png"));
 
@@ -243,6 +249,7 @@ public class MatchCenter {
 				        	
 				            if (timeSeconds >=90) {
 				            	timeline.stop();
+				            	played = true;
 				            	results.setVisible(true);
 				            	results.setDisable(false);
 				            	
@@ -363,13 +370,19 @@ public class MatchCenter {
 			public void handle(ActionEvent e) {
 				timeSeconds = 0;
 				
-				if(!saveGame.getMyTeam().checkAvail()){
-	        		Popup cardwarning = Warning.makeWarning("Selection contains \nunavailable players", root);
-	        		cardwarning.show(primaryStage);
-	        	}
+				if (!played) {
+					if (!saveGame.getMyTeam().checkAvail()) {
+						Popup cardwarning = Warning.makeWarning(
+								"Selection contains \nunavailable players",
+								root);
+						cardwarning.show(primaryStage);
+					} else {
+						match.play(alpha, beta);
+						Results.start(primaryStage, match);
+					}
+				}
 				else{
-		        	match.play(alpha, beta);
-					Results.start(primaryStage,match);
+					Results.start(primaryStage, match);
 				}
 				
 			}
