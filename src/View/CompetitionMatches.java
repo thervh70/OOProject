@@ -49,16 +49,20 @@ import javafx.stage.Stage;
 			TableColumn teamAway = new TableColumn("Team Away");
 			teamAway.setPrefWidth(Style.getNewSize(200));
 			teamAway.setCellValueFactory(new PropertyValueFactory<Match, String>("teamAwayName"));
-			TableColumn score = new TableColumn("Score");
-			score.setPrefWidth(Style.getNewSize(50));
-			score.setCellValueFactory(new PropertyValueFactory<Match, String>("score"));
+			TableColumn homeScore = new TableColumn("");
+			homeScore.setPrefWidth(Style.getNewSize(50));
+			homeScore.setCellValueFactory(new PropertyValueFactory<Match, Integer>("goalsHomeS"));
+			TableColumn awayScore = new TableColumn("");
+			awayScore.setPrefWidth(Style.getNewSize(50));
+			awayScore.setCellValueFactory(new PropertyValueFactory<Match, Integer>("goalsAwayS"));
 			
 			day.setResizable(false);
 			teamHome.setResizable(false);
 			teamAway.setResizable(false);
-			score.setResizable(false);
+			homeScore.setResizable(false);
+			awayScore.setResizable(false);
 			
-			table.getColumns().addAll(day,teamHome,teamAway,score);
+			table.getColumns().addAll(day,teamHome,homeScore,awayScore,teamAway);
 			
 			Competition comp = saveGame.getCompetition();
 			
@@ -67,7 +71,6 @@ import javafx.stage.Stage;
 				
 				for(Match m : matches){
 					matchList.add(m);
-					System.out.println(m.toString());
 				}
 			}
 			

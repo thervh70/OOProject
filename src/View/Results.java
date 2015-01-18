@@ -38,6 +38,7 @@ public class Results {
 		Team TeamA1 = match.getTeamA();
 		Team TeamB1 = match.getTeamB();
 		Match save = new Match(saveGame.getDay(),TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
+		saveGame.setMatchResult(save);
 		resultTable.add(save);
 		
 		competitionTable.clear();
@@ -80,6 +81,8 @@ public class Results {
 				other.play(alpha, beta);
 				
 				Match othermatch = new Match(saveGame.getDay(),alpha,beta,other.getGoalsA(),other.getGoalsB());
+				
+				saveGame.setMatchResult(othermatch);
 				
 				resultTable.add(othermatch);
 				Team TeamA2 = other.getTeamA();

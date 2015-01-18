@@ -137,4 +137,9 @@ public class saveGame {
 		DB.removeTeam(old);
 		DB.addTeam(fresh);
 	}
+	
+	public static void setMatchResult(Match m){
+		competition.remove(m);
+		competition.setMatchesForDay(day, m);
+	}
 }

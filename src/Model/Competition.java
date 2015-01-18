@@ -93,5 +93,15 @@ public class Competition {
 		return matches;
 	}
 	
+	public void setMatchesForDay(int day, Match m){
+		for (int i = 0; i < this.matches.size(); i++) {
+			Match matchSchedule = this.matches.get(i);
+			if(m.getTeamHome().getNm().equals(matchSchedule.getTeamHome().getNm()) & m.getTeamAway().getNm().equals(matchSchedule.getTeamAway().getNm())){
+				matchSchedule.setGoalsHome(m.getGoalsHome());
+				matchSchedule.setGoalsAway(m.getGoalsAway());
+			}
+		}
+	}
+	
 	
 }

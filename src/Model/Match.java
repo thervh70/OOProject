@@ -3,8 +3,8 @@ package Model;
 public class Match {
 
 	private Team teamHome, teamAway;
-	private String teamHomeName, teamAwayName, score;
-	private int goalsHome = -1, goalsAway = -1, day, homeIndex,awayIndex;
+	private String teamHomeName, teamAwayName, score, goalsHomeS = "", goalsAwayS = "";
+	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
 	boolean played;
 	
 	public Match(int day, Team teamHome, Team teamAway){
@@ -32,7 +32,7 @@ public class Match {
 	}
 	
 	public String toString() {
-		String txt = "Match( Day: "+ this.getDay() + ", Home: " + this.getTeamHome().getNm()+ ", Away: " + this.getTeamAway().getNm()+ ")";  
+		String txt = "Match( Day: "+ this.getDay() + ", Home: " + this.getTeamHome().getNm()+ this.getGoalsHome()+ ", Away: " + this.getTeamAway().getNm()+ this.getGoalsAway()+")";  
 		//String txt= Integer.toString(homeIndex) + " " + Integer.toString(awayIndex) + " "+ Integer.toString(day);
 		
 		return txt;
@@ -106,12 +106,14 @@ public class Match {
 		return goalsAway;
 	}
 
-	public void setGoalsHome(int goalsHome) {
+	public void setGoalsHome(Integer goalsHome) {
 		this.goalsHome = goalsHome;
+		this.setGoalsHomeS(goalsHome.toString());
 	}
 
-	public void setGoalsAway(int goalsAway) {
+	public void setGoalsAway(Integer goalsAway) {
 		this.goalsAway = goalsAway;
+		this.setGoalsAwayS(goalsAway.toString());
 	}
 
 	public String getTeamHomeName() {
@@ -136,5 +138,21 @@ public class Match {
 
 	public void setScore(String score) {
 		this.score = score;
+	}
+
+	public String getGoalsHomeS() {
+		return goalsHomeS;
+	}
+
+	public void setGoalsHomeS(String goalsHomeS) {
+		this.goalsHomeS = goalsHomeS;
+	}
+
+	public String getGoalsAwayS() {
+		return goalsAwayS;
+	}
+
+	public void setGoalsAwayS(String goalsAwayS) {
+		this.goalsAwayS = goalsAwayS;
 	}
 }
