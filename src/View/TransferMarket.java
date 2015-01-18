@@ -179,7 +179,7 @@ public class TransferMarket {
 		
 		//Add columns to table
 		tableSelectionField.getColumns().addAll(nameS,positionS,ageS,worthS,shootingS,passingS,dribblingS,defendingS,physicalS,injuryS);
-		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS,injuryKS);	
+		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS,injuryKS);
 
 		ComboBox comboBox = new ComboBox();
 		DBmain DB = saveGame.getDB();
@@ -274,6 +274,7 @@ public class TransferMarket {
 
 			@Override
 			public void handle(ActionEvent event) {
+				System.out.println(tableSelectionField.getSelectionModel().getSelectedItem().toString());
 				if(playerSelect == null){
 					Popup warning = Warning.makeWarning("No player selected", root);
 					warning.show(primaryStage);
@@ -453,11 +454,11 @@ public class TransferMarket {
 			            	if(p.checkRedCard()) {
 			            		this.setTextFill(Color.RED);
 			            	}
-			            	else if(p.checkYellowCard()){
-			            		this.setTextFill(Color.GOLD);
-			            	}
 			            	else if(p.checkInjury()){
 			            		this.setTextFill(Color.LIMEGREEN);
+			            	}
+			            	else if(p.checkYellowCard()){
+			            		this.setTextFill(Color.GOLD);
 			            	}
 			            	
 			            	setText(item);

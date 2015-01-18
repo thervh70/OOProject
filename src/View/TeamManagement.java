@@ -363,11 +363,11 @@ public class TeamManagement {
 			            	if(p.checkRedCard()) {
 			            		this.setTextFill(Color.RED);
 			            	}
-			            	else if(p.checkYellowCard()){
-			            		this.setTextFill(Color.GOLD);
-			            	}
 			            	else if(p.checkInjury()){
 			            		this.setTextFill(Color.LIMEGREEN);
+			            	}
+			            	else if(p.checkYellowCard()){
+			            		this.setTextFill(Color.GOLD);
 			            	}
 			            	
 			            	setText(item);
