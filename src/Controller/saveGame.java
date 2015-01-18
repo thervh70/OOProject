@@ -139,7 +139,6 @@ public class saveGame {
 	}
 	
 	public static void setMatchResult(Match m){
-		competition.remove(m);
 		competition.setMatchesForDay(day, m);
 	}
 }
