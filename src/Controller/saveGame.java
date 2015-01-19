@@ -138,7 +138,11 @@ public class saveGame {
 		
 		file = infile;
 		DB = XmlParser.parseDB(database.getChildNodes());
-		myteam = DB.findTeam(team.getTextContent());
+		NodeList mine = team.getChildNodes();
+		Node name = mine.item(1);
+		Node rank = mine.item(3);
+		myteam = DB.findTeam(name.getTextContent());
+		myteam.getStanding().setRank(Integer.parseInt(rank.getTextContent()));
 		day = Integer.parseInt(current.getTextContent());
 		setBuyc(Integer.parseInt(buycounter.getTextContent()));
 		setSellc(Integer.parseInt(sellcounter.getTextContent()));
@@ -172,7 +176,10 @@ public class saveGame {
 			wr = new PrintWriter(file);
 			wr.println("<Save>");
 			wr.print(DB.toWrite());
-			wr.print("   <Myteam>"+myteam.getNm()+"</Myteam>\r\n");
+			wr.print("   <Myteam>\r\n"
+					+ "      <Name>"+myteam.getNm()+"</Name>\r\n"
+					+ "      <Rank>"+myteam.getStanding().getRank()+"</Rank>\r\n"
+					+ "   </Myteam>\r\n");
 			wr.print("   <Currentday>"+day+"</Currentday>\r\n");
 			wr.print("   <Buycounter>"+getBuyc()+"</Buycounter>\r\n");
 			wr.print("   <Sellcounter>"+getSellc()+"</Sellcounter>\r\n");
