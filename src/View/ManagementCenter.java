@@ -1,11 +1,16 @@
 package View;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
+import Model.Standing;
 import Model.Team;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -64,6 +69,18 @@ public class ManagementCenter {
 				opp = home.getNm();
 			}
 		}
+		List<Standing> standingList = new ArrayList<Standing>();
+		for(int i = 0; i < 18; i++){
+			standingList.add(saveGame.getDB().getTeam(i).getStanding());
+		}
+		Collections.sort(standingList, new Standing());
+		
+		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
+
+		for(int i = 0; i < 18; i++) {
+			standingList.get(i).setRank(i+1);
+			competitionTable.add(standingList.get(i));
+		}
 		
 		Text opponent = new Text("Next opponent: " + opp);
 		Style.setTextStyle(opponent, 60);
@@ -93,7 +110,7 @@ public class ManagementCenter {
 		table.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				CompetitionTable.start(primaryStage);
+				CompetitionTable.start(primaryStage, competitionTable);
 			}
 		});
 		
@@ -192,6 +209,8 @@ public class ManagementCenter {
 				confirm.show(primaryStage);	
 			}
 		});
+		
+		
 		
 		root.getChildren().addAll(vbox, vbox2, menu);
 		
