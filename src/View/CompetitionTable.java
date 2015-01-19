@@ -1,5 +1,10 @@
 package View;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import Controller.saveGame;
 import Model.Standing;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -29,19 +34,29 @@ public class CompetitionTable {
 		Style.setButtonStyle(toMatch, 45);
 		Style.setLocation(toMatch, 1550, 870);
 		
+		List<Standing> standingList = new ArrayList<Standing>();
+		for(int i = 0; i < 18; i++){
+			standingList.add(saveGame.getDB().getTeam(i).getStanding());
+		}
+		Collections.sort(standingList, new Standing());
+		
 		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
-		competitionTable = Results.getCompetitionTable();
+		for(int i = 0; i < 18; i++) {
+			standingList.get(i).setRank(i+1);
+			competitionTable.add(standingList.get(i));
+		}
 		
 		//Create a table with fixed columns
 		TableView<Standing> table = new TableView();
 		table.setEditable(false);
-		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
+		table.setPrefSize(Style.getNewSize(832), Style.getNewSize(554));
 		Style.setLocation(table,550,250);
 		
 		table.setItems(competitionTable);
 		
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));
+		rank.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("rank"));
         TableColumn name = new TableColumn("Team Name");
 		name.setPrefWidth(Style.getNewSize(380));
 		name.setCellValueFactory(new PropertyValueFactory<Standing, String>("teamName"));

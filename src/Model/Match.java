@@ -32,7 +32,7 @@ public class Match {
 			this.goalsAwayS = goalsAway.toString();
 		}
 		
-		this.played = false;
+		this.played = true;
 		
 		this.setTeamHomeName(teamHome.getNm());
 		this.setTeamAwayName(teamAway.getNm());
@@ -66,6 +66,7 @@ public class Match {
 				+ "            <Away>" + getTeamAway().getNm() + "</Away>\r\n"
 				+ "            <Homescore>" + getGoalsHome() + "</Homescore>\r\n"
 				+ "            <Awayscore>" + getGoalsAway() + "</Awayscore>\r\n"
+				+ "            <Played>" + played + "</Played>\r\n"
 				+ "         </Match>\r\n";
 		return write;
 	}
@@ -163,4 +164,6 @@ public class Match {
 	public void setGoalsAwayS(String goalsAwayS) {
 		this.goalsAwayS = goalsAwayS;
 	}
+	
+	public boolean getPlayed(){return this.played;}
 }

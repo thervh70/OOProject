@@ -2,6 +2,7 @@ package Controller;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import Model.Competition;
 import Model.DBmain;
@@ -91,9 +92,10 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
-		 
-		Results.initialCompetitionTable();
-		
+		saveGame.file = "";
+		for(int i = 0; i < 18; i++){
+			saveGame.getDB().getTeam(i).newStanding();
+		}
 	}
 	
 	public static void loadSave(String infile){
@@ -113,6 +115,25 @@ public class saveGame {
 //		System.out.println(myteam.getNm());
 //		System.out.println(day);
 //		System.out.println(competition);
+		for(int i = 1; i < 35; i++){
+			ArrayList<Match> matches = competition.getMatchesForDay(i);
+			for(Match m : matches){
+				if(m.getPlayed() == true){
+					if(m.getGoalsHome() > m.getGoalsAway()){
+						m.getTeamHome().addPoints(3, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(0, m.getGoalsAway(), m.getGoalsHome());
+					}
+					if(m.getGoalsHome() < m.getGoalsAway()){
+						m.getTeamHome().addPoints(0, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(3, m.getGoalsAway(), m.getGoalsHome());
+					}
+					if(m.getGoalsHome() == m.getGoalsAway()){
+						m.getTeamHome().addPoints(1, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(1, m.getGoalsAway(), m.getGoalsHome());
+					}
+				}
+			}
+		}
 	}
 
 	public static void write(String infile) {
