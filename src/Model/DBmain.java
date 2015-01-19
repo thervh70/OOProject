@@ -34,12 +34,20 @@ public class DBmain {
 		}
 	}
 	
+	/**
+	 * add a team at a given index
+	 * @param i index
+	 * @param fresh
+	 */
 	public void addTeam(int i, Team fresh) {
 		if(!d.get(i).equals(fresh)) {
 			d.add(i, fresh);
 		}
 	}
 	
+	/**
+	 * remove all cards and injuries for all teams
+	 */
 	public void clearAllCardsInjuries(){
 		for(Team t : d){
 			t.clearCardsInjuries();
@@ -124,6 +132,10 @@ public class DBmain {
 		return null;
 	}
 	
+	/**
+	 * @param name	Name of the team you are looking for
+	 * @return		The team you are looking for
+	 */
 	public Team findTeam(String name) {
 		for(int i=0;i<this.getSize();i++) {
 			Team t = this.getTeam(i);
@@ -134,6 +146,10 @@ public class DBmain {
 		return null;
 	}
 	
+	/**
+	 * @param team Team object
+	 * @return     The index of the given team in the arraylist
+	 */
 	public int getIndex(Team team) {
 	    for (int i = 0; i < d.size(); i++) {
 	        Team t = d.get(i);

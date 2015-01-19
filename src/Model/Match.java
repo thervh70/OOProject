@@ -4,11 +4,18 @@ import Controller.saveGame;
 
 public class Match {
 
+
 	private Team teamHome, teamAway;
 	private String teamHomeName, teamAwayName, score, goalsHomeS = "", goalsAwayS = "";
 	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
 	boolean played;
 	
+	/**
+	 * Constructor, create a Match, this match is not played yet
+	 * @param day		Day at which a match is played
+	 * @param teamHome	The Home team
+	 * @param teamAway	The Away team
+	 */
 	public Match(int day, Team teamHome, Team teamAway){
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
@@ -20,6 +27,14 @@ public class Match {
 		this.setScore(goalsHome + " - " + goalsAway);
 	}
 	
+	/**
+	 * Constructor for a match that has been played
+	 * @param day		Day of the match
+	 * @param teamHome	Home team
+	 * @param teamAway	Away team
+	 * @param goalsHome	Amount of goals the home team has scored
+	 * @param goalsAway	Amount of goals the away team has scored
+	 */
 	public Match(int day, Team teamHome, Team teamAway, Integer goalsHome, Integer goalsAway){
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
@@ -60,6 +75,9 @@ public class Match {
 				this.getHomeIndex() == that.getHomeIndex(); 
 	}
 	
+	/**
+	 * @return	A string representation of a match that can be written to the XML file
+	 */
 	public String toWrite() {
 		String write = "         <Match>\r\n"
 				+ "            <Home>" + getTeamHome().getNm() + "</Home>\r\n"

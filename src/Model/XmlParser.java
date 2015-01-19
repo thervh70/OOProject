@@ -47,6 +47,11 @@ public class XmlParser {
 		return init;
 	}
 	
+	/**
+	 * Parse a competition from a XML file
+	 * @param Part of the XML file that contains all matches in the competition
+	 * @return The competition
+	 */
 	public static Competition parseCompetition(NodeList competition) {
 		NodeList comp = competition;
 		Competition c = new Competition();
@@ -64,6 +69,12 @@ public class XmlParser {
 		return c;
 	}
 	
+	/**
+	 * Parse a match from an XML file
+	 * @param matchattr
+	 * @param day
+	 * @return Match object with the attributes that are written in the XMl file
+	 */
 	private static Match parseMatch(NodeList matchattr, int day) {
 		String homename = null, awayname = null;
 		int homescore = -1, awayscore = -1;
@@ -82,6 +93,7 @@ public class XmlParser {
 		return m;
 	}
 	
+
 	public static DBmain parseDB() {
 		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v11.xml");
 		DBmain d = new DBmain();
