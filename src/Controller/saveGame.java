@@ -83,7 +83,8 @@ public class saveGame {
 		myteam = null;
 		competition = null;
 		day = 1;
-	}
+		file = "";
+	}	
 	
 	public static void newSave(Team t){
 		saveGame.DB = XmlParser.parseDB();

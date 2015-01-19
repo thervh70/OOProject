@@ -42,22 +42,20 @@ public class Results {
 		resultTable.add(save);
 		
 		competitionTable.clear();
+		
 		if(match.getToto() == 1){
 			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
-			competitionTable.add(TeamA1.getStanding());
 			TeamB1.addPoints(0, match.getGoalsB(), match.getGoalsA());
-			competitionTable.add(TeamB1.getStanding());
 		} else if(match.getToto() == 2){
 			TeamA1.addPoints(0, match.getGoalsA(), match.getGoalsB());
-			competitionTable.add(TeamA1.getStanding());
 			TeamB1.addPoints(3, match.getGoalsB(), match.getGoalsA());
-			competitionTable.add(TeamB1.getStanding());
 		} else if(match.getToto() == 0){
 			TeamA1.addPoints(1, match.getGoalsA(), match.getGoalsB());
-			competitionTable.add(TeamA1.getStanding());
 			TeamB1.addPoints(1, match.getGoalsB(), match.getGoalsA());
-			competitionTable.add(TeamB1.getStanding());
 		}
+		
+		competitionTable.add(TeamA1.getStanding());
+		competitionTable.add(TeamB1.getStanding());
 		
 		Competition comp = saveGame.getCompetition();
 		int day = saveGame.getDay();
@@ -89,20 +87,17 @@ public class Results {
 				Team TeamB2 = other.getTeamB();
 				if(other.getToto() == 1){
 					TeamA2.addPoints(3, other.getGoalsA(), other.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(0, other.getGoalsB(), other.getGoalsA());
-					competitionTable.add(TeamB2.getStanding());
 				} else if(other.getToto() == 2){
 					TeamA2.addPoints(0, other.getGoalsA(), other.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(3, other.getGoalsB(), other.getGoalsA());
-					competitionTable.add(TeamB2.getStanding());
 				} else if(other.getToto() == 0){
 					TeamA2.addPoints(1, other.getGoalsA(), other.getGoalsB());
-					competitionTable.add(TeamA2.getStanding());
 					TeamB2.addPoints(1, other.getGoalsB(), other.getGoalsA());
-					competitionTable.add(TeamB2.getStanding());
 				}
+				
+				competitionTable.add(TeamA2.getStanding());
+				competitionTable.add(TeamB2.getStanding());
 			}
 		}
 	
@@ -149,10 +144,6 @@ public class Results {
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
-	}
-	
-	public static ObservableList<Standing> getCompetitionTable(){
-		return competitionTable;
 	}
 	
 	public static void initialCompetitionTable(){

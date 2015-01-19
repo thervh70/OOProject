@@ -25,6 +25,13 @@ public class Standing {
 		return false;
 	}
 	
+	@Override
+	public String toString() {
+		return "Standing [points=" + points + ", teamName=" + teamName
+				+ ", goalsFor=" + goalsFor + ", goalsAgainst=" + goalsAgainst
+				+ ", goalDifference=" + goalDifference + "]";
+	}
+
 	public int getPoints() {return points;}
 	public String getTeamName() {return teamName;}
 	public int getGoalsFor() {return goalsFor;}

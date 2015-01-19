@@ -65,7 +65,7 @@ import javafx.stage.Stage;
 			table.getColumns().addAll(day,teamHome,homeScore,awayScore,teamAway);
 			
 			Competition comp = saveGame.getCompetition();
-			
+			matchList.clear();
 			for(int i = 1; i < 35; i++){
 				ArrayList<Match> matches = comp.getMatchesForDay(i);
 				
