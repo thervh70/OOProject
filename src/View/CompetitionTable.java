@@ -127,7 +127,7 @@ public class CompetitionTable {
 			        public void updateItem(String item, boolean empty) {
 			        	super.updateItem(item, empty);
 			            if (!isEmpty()) {
-			            	this.setTextFill(Color.BLACK);
+			            	this.setUnderline(false);
 			            	Team t = saveGame.getDB().findTeam(this.getItem());
 			            	if(t.getNm().equals(saveGame.getMyTeam().getNm())){
 			            		this.setUnderline(true);

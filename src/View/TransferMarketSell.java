@@ -249,7 +249,7 @@ public class TransferMarketSell {
 								try{		
 									String sold = Budget.tosell(playerSelect);
 									if(!sold.equals(null)){
-										Popup soldpopup = Warning.makeWarning("Your player was sold to: " + sold, root);
+										Popup soldpopup = Warning.makeWarning("Your player was sold to: \n" + sold, root);
 										soldpopup.show(primaryStage);										
 									}
 									else{
