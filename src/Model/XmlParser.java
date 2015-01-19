@@ -67,15 +67,13 @@ public class XmlParser {
 	private static Match parseMatch(NodeList matchattr, int day) {
 		String homename = null, awayname = null;
 		int homescore = -1, awayscore = -1;
-		boolean played;
 		for(int i=1;i<matchattr.getLength();i+=2) {
 			String content = matchattr.item(i).getTextContent();
 			switch(matchattr.item(i).getNodeName()) {
 			case "Home": homename = content; break;
 			case "Away": awayname = content; break;
-			case "Homescore": homescore = Integer.parseInt(content); break;
-			case "Awayscore": awayscore = Integer.parseInt(content); break;
-			case "Played": played = Boolean.parseBoolean(content); break;
+			case "Homescore": if(content.equals("0")) {homescore = -1; }else {homescore = Integer.parseInt(content); }break;
+			case "Awayscore": if(content.equals("0")) {awayscore = -1; }else {awayscore = Integer.parseInt(content); }break;
 			}
 		}
 		Team t1 = saveGame.getDB().findTeam(homename);

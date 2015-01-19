@@ -6,7 +6,7 @@ public class Match {
 
 	private Team teamHome, teamAway;
 	private String teamHomeName, teamAwayName, score, goalsHomeS = "", goalsAwayS = "";
-	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
+	private int goalsHome = -1, goalsAway = -1, day, homeIndex,awayIndex;
 	
 	public Match(int day, Team teamHome, Team teamAway){
 		this.setTeamHome(teamHome);

@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import Controller.saveGame;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
 import Model.Standing;
@@ -298,26 +299,10 @@ public class TeamTest{
 	
 	@Test
 	public void clearCardsInjuriesTest() {
-		
-	}
-	
-	@Test
-	public void checkRedCards() {
 		t1.addPlayer(p8);
 		t1.addPlayer(p9);
-		t1.addPlayer(p10);
-		
-	}
-	
-	@Test
-	public void checkYellowCards() {
-		t1.addPlayer(p8);
-		t1.addPlayer(p9);
-		t1.addPlayer(p10);
-	}
-	
-	@Test
-	public void checkInjuriesTest() {
+		saveGame.setDay(1);
+		assertEquals(p8.getCard(), 1);
 		
 	}
 	

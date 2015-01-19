@@ -173,6 +173,8 @@ public class saveGame {
 			wr.print(DB.toWrite());
 			wr.print("   <Myteam>"+myteam.getNm()+"</Myteam>\r\n");
 			wr.print("   <Currentday>"+day+"</Currentday>\r\n");
+			wr.print("   <Buycounter>"+getBuyc()+"</Buycounter>\r\n");
+			wr.print("   <Sellcounter>"+getSellc()+"</Sellcounter>\r\n");
 			wr.print(competition.toWrite());
 			wr.print("</Save>");
 			wr.close();
