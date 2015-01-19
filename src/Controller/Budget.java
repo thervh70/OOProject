@@ -145,7 +145,7 @@ public class Budget {
 	 * @return - True or False (if the player is or isn't sold, respectively)
 	 * @throws Exception
 	 */
-	public static boolean tosell(Player p) throws Exception{
+	public static String tosell(Player p) throws Exception{
 		//Raises sellc in the savegame, this means you can only sell three players on one day
 		saveGame.csellUp();
 		//Gets your team from the savegame
@@ -192,8 +192,8 @@ public class Budget {
 			//Update the teams in the database to the edited teams
 			saveGame.refreshTeam(oldSell, sellTeam);
 			saveGame.refreshTeam(oldMy, myTeam);
-			return true;
+			return sellTeam.getNm();
 		}
-		return false;
+		return null;
 	}
 }
