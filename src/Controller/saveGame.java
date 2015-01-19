@@ -19,7 +19,8 @@ public class saveGame {
 	private static DBmain DB;
 	private static Team myteam;
 	private static Competition competition;
-	private static int day = 0;
+	private static int day,buyc,sellc = 0;
+
 	private static String file = "";
 
 
@@ -63,6 +64,22 @@ public class saveGame {
 	public static void setDay(int day) {
 		saveGame.day = day;
 	}
+	
+	public static int getBuyc() {
+		return buyc;
+	}
+
+	public static void setBuyc(int buyc) {
+		saveGame.buyc = buyc;
+	}
+
+	public static int getSellc() {
+		return sellc;
+	}
+
+	public static void setSellc(int sellc) {
+		saveGame.sellc = sellc;
+	}
 
 	public static String getFile() {
 		return file;
@@ -72,13 +89,23 @@ public class saveGame {
 		saveGame.file = file;
 	}
 	
+	public static void cbuyUp(){
+		buyc++;
+	}
+	
+	public static void csellUp(){
+		sellc++;
+	}
+	
 	public static void nextDay(){
 		if(day < 34){
 			day++;
 		}
 		clearDBcardsInjuries();
+		sellc=0;
+		buyc=0;
 	}
-	
+
 	public static void setDefaults(){
 		DB = null;
 		myteam = null;

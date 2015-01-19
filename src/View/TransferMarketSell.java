@@ -302,6 +302,10 @@ public class TransferMarketSell {
 				Popup warning = Warning.makeWarning("No player selected", root);
 				warning.show(primaryStage);
 			}
+			else if(saveGame.getSellc()>=3){
+				Popup three = Warning.makeWarning("You have already sold 3 players!", root);
+				three.show(primaryStage);
+			}
 			else{
 				if(playerSelect.getPlay()){
 						EventHandler<MouseEvent> mouse = new EventHandler<MouseEvent>() {
