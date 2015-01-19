@@ -43,18 +43,11 @@ public class CompetitionTable {
 		Collections.sort(standingList, new Standing());
 		
 		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
-<<<<<<< HEAD
+
 		for(int i = 0; i < 18; i++) {
 			standingList.get(i).setRank(i+1);
 			competitionTable.add(standingList.get(i));
 		}
-=======
-		
-        for(int i = 0; i < 18; i++){
-        	Team t = saveGame.getDB().getTeam(i);
-        	competitionTable.add(t.getStanding());
-        }
->>>>>>> origin/master
 		
 		//Create a table with fixed columns
 		TableView<Standing> table = new TableView();
