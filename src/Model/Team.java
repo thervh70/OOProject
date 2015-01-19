@@ -25,10 +25,16 @@ public class Team {
 		bdgt_rel = budget_rel;
 	}
 	
+	/**
+	 * Create the default standing for a team (before any games are played
+	 */
 	public void newStanding(){
 		standing = new Standing(0, this.nm, 0, 0, 0);
 	}
 	
+	/**
+	 * remove all players from the team
+	 */
 	public void removeSelection() {
 		selection.clear();
 	}
@@ -283,6 +289,12 @@ public class Team {
 		return count;
 	}
 	
+	/**
+	 * 4 types of players; counts the amount of players of a certain type
+	 * @param a Integer that defines the type of player you are selecting. 0 = goalkeeper; 1 = right back, center back and left back;
+	 *  2 = center defending midfielder and midfielder; 3 = center attacking midfielder, left winger and right winger; 4 = striker 
+	 * @return the amount of player for this particular position
+	 */
 	public int countSelection(int a){
 		int count = 0;
 		for(int i = 0; i < selection.size(); i++){
@@ -310,12 +322,52 @@ public class Team {
 		return count;
 	}
 	
+	/**
+	 * Remove all cards and injuries for this team
+	 */
 	public void clearCardsInjuries(){
 		for(Player p : team){
 			p.clearCardInjury();
 		}
 	}
+
+	/**
+	 * @return Is true a player in the team has a red card; return false if no player in the team has a red card.
+	 */
+	public boolean checkRedCards(){
+		for(Player p : team){
+			if(p.checkRedCard())
+				return true;
+		}
+		return false;
+	}
 	
+	/**
+	 * @return	Is true a player in the team has a yellow card; return false if no player in the team has a yellow card.
+	 */
+	public boolean checkYellowCards(){
+		for(Player p : team){
+			if(p.checkYellowCard())
+				return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * @return Is true if a player in the team has an injury; return false if no player in the team has an injury
+	 */
+	public boolean checkInjuries(){
+		for(Player p : team){
+			if(p.checkInjury())
+				return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * Checks for all players in the selection if they are available to play(no card or injury)
+	 * @return
+	 */
 	public boolean checkAvail(){
 		for(Player p : selection){
 			if(!p.getPlay())
@@ -383,18 +435,44 @@ public class Team {
 	public void setNm(String name) {this.nm = name;}
 	public void setBdgt_vir(int budget_vir) {this.bdgt_vir = budget_vir;}
 	public void setBdgt_rel(int budget_rel) {this.bdgt_rel = budget_rel;}
+	
+	/**
+	 * update the amount of point a team has
+	 * @param p	Amount of points a team gains
+	 */
 	public void incPoints(int p){
 		this.points += p;
 	}
+	
+	/**
+	 * update the amount of goals a team has scored
+	 * @param g	The amount of goals a team gains
+	 */
 	public void incGoalsFor(int g){
 		this.goalsFor += g;
 	}
+	
+	/**
+	 * update the amount of goals another team has scored against you
+	 * @param g The amount of goals against you gain
+	 */
 	public void incGoalsAgainst(int g){
 		this.goalsAgainst += g;
 	}
+	
+	/**
+	 * update the goal difference
+	 */
 	public void calcGoalDifference(){
 		this.goalDifference = goalsFor - goalsAgainst;
 	}
+	
+	/**
+	 * update the team
+	 * @param p		Points
+	 * @param GF	Goals for
+	 * @param GA	Goals against
+	 */
 	public void addPoints(int p, int GF, int GA){
 		this.points += p;
 		this.goalsFor += GF;
@@ -402,6 +480,9 @@ public class Team {
 		this.goalDifference += GF - GA;
 		updateStanding();
 	}
+	/**
+	 * update the standing
+	 */
 	public void updateStanding(){
 		standing = new Standing(points, this.nm, goalsFor, goalsAgainst, goalDifference);
 	}

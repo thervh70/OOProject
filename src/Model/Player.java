@@ -33,6 +33,10 @@ public abstract class Player {
 		this.injury = "";
 	}
 	
+	/**
+	 * give for each minute in the game either a yellow card, a red card or no card
+	 * @return 0 = no card; 1 = yellow card; 2 = red card
+	 */
 	public int card(){
 		double chance = Math.random();
 		
@@ -93,14 +97,23 @@ public abstract class Player {
 		
 	}
 	
+	/**
+	 * @return true if player has a red card; false if a player doesn't have a red card
+	 */
 	public boolean checkRedCard(){
 		return card == 2;
 	}
 	
+	/**
+	 * @return true if player has a yellow card; false if a player doesn't have a yellow card
+	 */
 	public boolean checkYellowCard(){
 		return card == 1;
 	}
 	
+	/**
+	 * @return true if player has an injury; false if a player doesn't have an injury
+	 */
 	public boolean checkInjury(){
 		return !(dur == 0);
 	}

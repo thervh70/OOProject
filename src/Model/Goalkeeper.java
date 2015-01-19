@@ -32,6 +32,10 @@ public class Goalkeeper extends Player {
 		this.hei = height;
 	}
 	
+	/**
+	 * assign a certain value to a team based on the cumulative scores of all players in a team for all of their properties
+	 * @return
+	 */
 	public double calcScore() {
 		double score = 0;
 		int diving = this.div;

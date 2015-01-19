@@ -25,6 +25,11 @@ import javafx.util.Callback;
 		
 		private static ObservableList<Match> matchList = FXCollections.observableArrayList();
 		
+		/**This shows the CompetitionMatches screen, displaying a table containing all past results.
+		 * 
+		 * @param primaryStage - The GUI of Frits
+		 * @param competitionTable - An ObservableList<Standing> used by CompetitionTable
+		 */
 		@SuppressWarnings({ "unchecked", "rawtypes" })
 		public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
 
