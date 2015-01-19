@@ -93,8 +93,6 @@ public class ManagementCenter {
 		Text rank = new Text("Rank: " + saveGame.getMyTeam().getStanding().getRank());
 		Style.setTextStyle(rank, 60);
 		
-		
-		
 		VBox vbox2 = new VBox(10);
 		vbox2.getChildren().addAll(day, opponent,space,budget,rank);
 		Style.setLocation(vbox2, 1100, 240);
