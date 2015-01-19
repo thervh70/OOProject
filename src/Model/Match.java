@@ -7,8 +7,7 @@ public class Match {
 
 	private Team teamHome, teamAway;
 	private String teamHomeName, teamAwayName, score, goalsHomeS = "", goalsAwayS = "";
-	private int goalsHome, goalsAway, day, homeIndex,awayIndex;
-	boolean played;
+	private int goalsHome = -1, goalsAway = -1, day, homeIndex,awayIndex;
 	
 	/**
 	 * Constructor, create a Match, this match is not played yet
@@ -20,7 +19,6 @@ public class Match {
 		this.setTeamHome(teamHome);
 		this.setTeamAway(teamAway);
 		this.day = day;
-		this.played = false;
 
 		this.setTeamHomeName(teamHome.getNm());
 		this.setTeamAwayName(teamAway.getNm());
@@ -46,8 +44,6 @@ public class Match {
 			this.goalsHomeS = goalsHome.toString();
 			this.goalsAwayS = goalsAway.toString();
 		}
-		
-		this.played = false;
 		
 		this.setTeamHomeName(teamHome.getNm());
 		this.setTeamAwayName(teamAway.getNm());
@@ -121,6 +117,7 @@ public class Match {
 		this.goalsAway = goalsAway;
 		this.setGoalsAwayS(goalsAway.toString());
 	}
+
 	public void setTeamHomeName(String teamHomeName) {this.teamHomeName = teamHomeName;	}
 	public void setTeamAwayName(String teamAwayName) {this.teamAwayName = teamAwayName; }
 	public void setScore(String score) {this.score = score;	}

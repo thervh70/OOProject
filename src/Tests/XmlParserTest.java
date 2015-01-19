@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.FileNotFoundException;
+
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
@@ -39,14 +41,12 @@ public class XmlParserTest {
 	Match m3 = new Match(2, t2, t1, 1, 4);
 	Match m4 = new Match(2, t2, t1, 3, 3);
 	
-	@Test//(expected = Exception.class)
+	@Test
 	public void DBmainParserTest() {
 		assertEquals(d1.getSize(), 0);
 		d1 = XmlParser.parseDB();
 		assertNotEquals(d1.getSize(), 0);
 		assertEquals(d2.getSize(), 0);
-//		String infilewrong = "rareinfile.xml";
-//		NodeList listwrong = XmlParser.parseInit(infilewrong);
 		String infile = "src/Model/Resources/DB_TEST_DO_NOT_REMOVE.xml";
 		NodeList list = XmlParser.parseInit(infile);
 		Node db = list.item(1);

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
+import Model.Standing;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -21,7 +22,7 @@ import javafx.stage.Stage;
 		private static ObservableList<Match> matchList = FXCollections.observableArrayList();
 		
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		public static void start(Stage primaryStage) {
+		public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
 
 			Pane root = new Pane();			
 			root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
@@ -86,7 +87,7 @@ import javafx.stage.Stage;
 			toMatch.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					CompetitionTable.start(primaryStage);				
+					CompetitionTable.start(primaryStage, competitionTable);				
 				}				
 			});
 			

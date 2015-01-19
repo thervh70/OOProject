@@ -22,7 +22,6 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Results {
-	private static ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage, gameEngine match) {
@@ -40,9 +39,7 @@ public class Results {
 		Match save = new Match(saveGame.getDay(),TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
 		saveGame.setMatchResult(save);
 		resultTable.add(save);
-		
-		competitionTable.clear();
-		
+
 		if(match.getToto() == 1){
 			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
 			TeamB1.addPoints(0, match.getGoalsB(), match.getGoalsA());
@@ -53,9 +50,6 @@ public class Results {
 			TeamA1.addPoints(1, match.getGoalsA(), match.getGoalsB());
 			TeamB1.addPoints(1, match.getGoalsB(), match.getGoalsA());
 		}
-		
-		competitionTable.add(TeamA1.getStanding());
-		competitionTable.add(TeamB1.getStanding());
 		
 		Competition comp = saveGame.getCompetition();
 		int day = saveGame.getDay();
@@ -95,9 +89,6 @@ public class Results {
 					TeamA2.addPoints(1, other.getGoalsA(), other.getGoalsB());
 					TeamB2.addPoints(1, other.getGoalsB(), other.getGoalsA());
 				}
-				
-				competitionTable.add(TeamA2.getStanding());
-				competitionTable.add(TeamB2.getStanding());
 			}
 		}
 	
@@ -144,13 +135,5 @@ public class Results {
 		
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
-	}
-	
-	public static void initialCompetitionTable(){
-		competitionTable.clear();
-		for(int i = 0; i < saveGame.getDB().getSize(); i++){
-			saveGame.getDB().getTeam(i).newStanding();
-			competitionTable.add(saveGame.getDB().getTeam(i).getStanding());
-		}
 	}
 }

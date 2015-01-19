@@ -1,5 +1,10 @@
 package View;
 
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import Controller.saveGame;
 import Model.Standing;
 import Model.Team;
@@ -15,9 +20,10 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class CompetitionTable {
-
+	private static List<Standing> standingList = new ArrayList<Standing>();
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void start(Stage primaryStage) {
+	public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
 		Pane root = new Pane();
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
@@ -31,23 +37,17 @@ public class CompetitionTable {
 		Style.setButtonStyle(toMatch, 45);
 		Style.setLocation(toMatch, 1550, 870);
 		
-		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
-		
-        for(int i = 0; i < 18; i++){
-        	Team t = saveGame.getDB().getTeam(i);
-        	competitionTable.add(t.getStanding());
-        }
-		
 		//Create a table with fixed columns
 		TableView<Standing> table = new TableView();
 		table.setEditable(false);
-		table.setPrefSize(Style.getNewSize(840), Style.getNewSize(540));
+		table.setPrefSize(Style.getNewSize(832), Style.getNewSize(554));
 		Style.setLocation(table,550,250);
 		
 		table.setItems(competitionTable);
 		
 		TableColumn rank = new TableColumn("Rank");
 		rank.setPrefWidth(Style.getNewSize(50));
+		rank.setCellValueFactory(new PropertyValueFactory<Standing, Integer>("rank"));
         TableColumn name = new TableColumn("Team Name");
 		name.setPrefWidth(Style.getNewSize(380));
 		name.setCellValueFactory(new PropertyValueFactory<Standing, String>("teamName"));
@@ -86,7 +86,7 @@ public class CompetitionTable {
 
 			@Override
 			public void handle(ActionEvent event) {
-				CompetitionMatches.start(primaryStage);				
+				CompetitionMatches.start(primaryStage, competitionTable);				
 			}
 			
 		});
@@ -94,4 +94,5 @@ public class CompetitionTable {
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
+	public static List<Standing> getStandingList(){return standingList;}
 }

@@ -2,6 +2,7 @@ package Controller;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import Model.Competition;
 import Model.DBmain;
@@ -18,7 +19,8 @@ public class saveGame {
 	private static DBmain DB;
 	private static Team myteam;
 	private static Competition competition;
-	private static int day = 0;
+	private static int day,buyc,sellc = 0;
+
 	private static String file = "";
 
 
@@ -62,6 +64,22 @@ public class saveGame {
 	public static void setDay(int day) {
 		saveGame.day = day;
 	}
+	
+	public static int getBuyc() {
+		return buyc;
+	}
+
+	public static void setBuyc(int buyc) {
+		saveGame.buyc = buyc;
+	}
+
+	public static int getSellc() {
+		return sellc;
+	}
+
+	public static void setSellc(int sellc) {
+		saveGame.sellc = sellc;
+	}
 
 	public static String getFile() {
 		return file;
@@ -71,13 +89,23 @@ public class saveGame {
 		saveGame.file = file;
 	}
 	
+	public static void cbuyUp(){
+		buyc++;
+	}
+	
+	public static void csellUp(){
+		sellc++;
+	}
+	
 	public static void nextDay(){
 		if(day < 34){
 			day++;
 		}
 		clearDBcardsInjuries();
+		sellc=0;
+		buyc=0;
 	}
-	
+
 	public static void setDefaults(){
 		DB = null;
 		myteam = null;
@@ -92,9 +120,10 @@ public class saveGame {
 		saveGame.competition = competition;
 		saveGame.day = 1;
 		saveGame.myteam = t;
-		 
-		Results.initialCompetitionTable();
-		
+		saveGame.file = "";
+		for(int i = 0; i < 18; i++){
+			saveGame.getDB().getTeam(i).newStanding();
+		}
 	}
 	
 	public static void loadSave(String infile){
@@ -114,6 +143,25 @@ public class saveGame {
 //		System.out.println(myteam.getNm());
 //		System.out.println(day);
 //		System.out.println(competition);
+		for(int i = 1; i < 35; i++){
+			ArrayList<Match> matches = competition.getMatchesForDay(i);
+			for(Match m : matches){
+				if(m.getGoalsHome() != -1){
+					if(m.getGoalsHome() > m.getGoalsAway()){
+						m.getTeamHome().addPoints(3, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(0, m.getGoalsAway(), m.getGoalsHome());
+					}
+					if(m.getGoalsHome() < m.getGoalsAway()){
+						m.getTeamHome().addPoints(0, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(3, m.getGoalsAway(), m.getGoalsHome());
+					}
+					if(m.getGoalsHome() == m.getGoalsAway()){
+						m.getTeamHome().addPoints(1, m.getGoalsHome(), m.getGoalsAway());
+						m.getTeamAway().addPoints(1, m.getGoalsAway(), m.getGoalsHome());
+					}
+				}
+			}
+		}
 	}
 
 	public static void write(String infile) {
@@ -125,6 +173,8 @@ public class saveGame {
 			wr.print(DB.toWrite());
 			wr.print("   <Myteam>"+myteam.getNm()+"</Myteam>\r\n");
 			wr.print("   <Currentday>"+day+"</Currentday>\r\n");
+			wr.print("   <Buycounter>"+getBuyc()+"</Buycounter>\r\n");
+			wr.print("   <Sellcounter>"+getSellc()+"</Sellcounter>\r\n");
 			wr.print(competition.toWrite());
 			wr.print("</Save>");
 			wr.close();

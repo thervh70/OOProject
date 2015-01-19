@@ -255,10 +255,6 @@ public class Team {
 		return (int) score;
 	}
 	
-	/*private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
-		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	}*/
-	
 	/**Count the amount of players of a certain type
 	 * 
 	 * @param a Type - 0=Keeper, 1=Defender, 2=Def/Mid, 3=Str/Mid, 4=Striker
@@ -334,7 +330,7 @@ public class Team {
 			p.clearCardInjury();
 		}
 	}
-	
+
 	/**
 	 * @return Is true a player in the team has a red card; return false if no player in the team has a red card.
 	 */

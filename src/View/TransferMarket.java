@@ -274,10 +274,14 @@ public class TransferMarket {
 
 			@Override
 			public void handle(ActionEvent event) {
-				System.out.println(tableSelectionField.getSelectionModel().getSelectedItem().toString());
+				System.out.println(tableSelectionField.getSelectionModel().getSelectedItem().toString());System.out.println(saveGame.getBuyc());
 				if(playerSelect == null){
 					Popup warning = Warning.makeWarning("No player selected", root);
 					warning.show(primaryStage);
+				}
+				else if(saveGame.getBuyc()>=3){
+					Popup three = Warning.makeWarning("You have already bid three times!", root);
+					three.show(primaryStage);
 				}
 				else{
 					if(playerSelect.getPlay()){
