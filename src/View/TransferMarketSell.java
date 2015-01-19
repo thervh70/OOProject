@@ -74,19 +74,7 @@ public class TransferMarketSell {
 		
 		vbox.getChildren().addAll(selected,pName,pPrice,confirm);
 		
-		Text bids = new Text("Pending sells: ");
-		Style.setTextStyle(bids, 60);
-		
-		Text bid1 = new Text("");
-		Text bid2 = new Text("");
-		Text bid3 = new Text("");
-		
-		VBox vbox2 = new VBox(15);
-		Style.setLocation(vbox2, 1350, 200);
-		vbox2.setAlignment(Pos.CENTER);
-		vbox2.getChildren().addAll(bids,bid1,bid2,bid3);
-		
-		root.getChildren().addAll(back,toBuy,players,keepers,budget,vbox,vbox2);
+		root.getChildren().addAll(back,toBuy,players,keepers,budget,vbox);
 		
 		//Create a table for the setup with fixed columns
 		TableView<Fieldplayer> tableSelectionField = new TableView<Fieldplayer>();
@@ -241,59 +229,6 @@ public class TransferMarketSell {
 			}
 		});
 		
-		/*
-		confirm.setOnAction(new EventHandler <ActionEvent>(){
-
-			@Override
-			public void handle(ActionEvent event) {
-				if(playerSelect == null){
-					Popup warning = Warning.makeWarning("No player selected", root);
-					warning.show(primaryStage);
-				}
-				else{
-					
-					EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
-						
-						@Override
-						public void handle(MouseEvent event) {
-							
-								try{
-									Budget.tosell(playerSelect);
-									
-									if(bid1.getText().equals("")){
-										Player p = playerSelect;
-										bid1.setText(p.getName());
-										Style.setTextStyle(bid1, 40);
-									}
-									else if(bid2.getText().equals("")){
-										Player p = playerSelect;
-										bid2.setText(p.getName());
-										Style.setTextStyle(bid2, 40);
-									}
-									else if(bid3.getText().equals("")){
-										Player p = playerSelect;
-										bid3.setText(p.getName());
-										Style.setTextStyle(bid3, 40);
-									}
-									
-									refreshPlayers(tableSelectionField, tableSelectionKeeper);
-								} catch (Exception e){
-									Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
-									emptyTeam.show(primaryStage);
-								}
-							}
-							else{
-								Popup availWarning = Warning.makeWarning("You cannot sell a player \nwith  a card or injury", root);
-								availWarning.show(primaryStage);
-							}
-						
-						}		
-					};
-				
-			}
-		});
-		*/
-		
 	confirm.setOnAction(new EventHandler <ActionEvent>(){
 
 		@Override
@@ -311,27 +246,20 @@ public class TransferMarketSell {
 						EventHandler<MouseEvent> mouse = new EventHandler<MouseEvent>() {
 							
 							public void handle(MouseEvent y) {
-								try{
-									root.setDisable(false);
-									Budget.tosell(playerSelect);
-									
-									if(bid1.getText().equals("")){
-										Player p = playerSelect;
-										bid1.setText(p.getName());
-										Style.setTextStyle(bid1, 40);
+								try{		
+									String sold = Budget.tosell(playerSelect);
+									if(!sold.equals(null)){
+										Popup soldpopup = Warning.makeWarning("Your player was sold to: " + sold, root);
+										soldpopup.show(primaryStage);										
 									}
-									else if(bid2.getText().equals("")){
-										Player p = playerSelect;
-										bid2.setText(p.getName());
-										Style.setTextStyle(bid2, 40);
+									else{
+										Popup notsold = Warning.makeWarning("Your player was not sold.", root);
+										notsold.show(primaryStage);
 									}
-									else if(bid3.getText().equals("")){
-										Player p = playerSelect;
-										bid3.setText(p.getName());
-										Style.setTextStyle(bid3, 40);
-									}
-									
 									refreshPlayers(tableSelectionField, tableSelectionKeeper);
+									setColor(nameS);
+									setColor(nameKS);
+									playerSelect = null;
 									
 								} catch (Exception e){
 									Popup emptyTeam = Warning.makeWarning("Transfer not approved \nTeam would become too small", root);
@@ -377,7 +305,7 @@ public class TransferMarketSell {
 		}
 				
 		tableSelectionField.setItems(selectionField);
-		tableSelectionField.getSelectionModel().select(0);
+		tableSelectionField.getSelectionModel().clearSelection();
 				
 		ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
 		for(int k = 0; k < t.getSize(); k++){
@@ -386,9 +314,8 @@ public class TransferMarketSell {
 				selectionKeeper.add((Goalkeeper) p);
 			}
 		}
-				
+		tableSelectionKeeper.getSelectionModel().clearSelection();
 		tableSelectionKeeper.setItems(selectionKeeper);
-		tableSelectionKeeper.getSelectionModel().select(0);
 	}
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })

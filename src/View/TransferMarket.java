@@ -226,21 +226,8 @@ public class TransferMarket {
 		Text pPrice = new Text(" ");
 		
 		vbox.getChildren().addAll(selected,pName,pPrice,input,confirm);
-		
-		VBox vbox2 = new VBox(15);
-		Style.setLocation(vbox2, 1350, 200);
-		vbox2.setAlignment(Pos.CENTER);
-		
-		Text bids = new Text("Pending bids: ");
-		Style.setTextStyle(bids, 60);
-		
-		Text bid1 = new Text("");
-		Text bid2 = new Text("");
-		Text bid3 = new Text("");
-		
-		vbox2.getChildren().addAll(bids,bid1,bid2,bid3);
-		
-		root.getChildren().addAll(back,toSell, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,vbox2,budget);
+				
+		root.getChildren().addAll(back,toSell, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,budget);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -274,7 +261,6 @@ public class TransferMarket {
 
 			@Override
 			public void handle(ActionEvent event) {
-				System.out.println(tableSelectionField.getSelectionModel().getSelectedItem().toString());System.out.println(saveGame.getBuyc());
 				if(playerSelect == null){
 					Popup warning = Warning.makeWarning("No player selected", root);
 					warning.show(primaryStage);
@@ -309,23 +295,6 @@ public class TransferMarket {
 												budget.setText("Current Budget: " + saveGame.getMyTeam().getBdgt_vir());
 												pName.setText("");
 												pPrice.setText("");
-												
-												
-												if(bid1.getText().equals("")){
-													Player p = playerSelect;
-													bid1.setText(p.getName() + " " + bid);
-													Style.setTextStyle(bid1, 40);
-												}
-												else if(bid2.getText().equals("")){
-													Player p = playerSelect;
-													bid2.setText(p.getName() + " " + bid);
-													Style.setTextStyle(bid2, 40);
-												}
-												else if(bid3.getText().equals("")){
-													Player p = playerSelect;
-													bid3.setText(p.getName() + " " + bid);
-													Style.setTextStyle(bid3, 40);
-												}
 												
 												input.clear();
 												playerSelect = null;
@@ -425,7 +394,7 @@ public class TransferMarket {
 				}
 				
 				tableSelectionField.setItems(selectionField);
-				tableSelectionField.getSelectionModel().select(0);
+				tableSelectionField.getSelectionModel().clearSelection();
 				
 				ObservableList<Goalkeeper> selectionKeeper = FXCollections.observableArrayList();
 				selectionKeeper.removeAll(selectionKeeper);
@@ -438,7 +407,7 @@ public class TransferMarket {
 				}
 				
 				tableSelectionKeeper.setItems(selectionKeeper);
-				tableSelectionKeeper.getSelectionModel().select(0);
+				tableSelectionKeeper.getSelectionModel().clearSelection();
 			}
 		}
 		
