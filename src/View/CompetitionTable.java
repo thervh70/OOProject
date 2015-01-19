@@ -31,7 +31,7 @@ public class CompetitionTable {
 	 * @param competitionTable - ObservableList<Standing> used in the table to display ranking.
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
+	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
@@ -50,6 +50,19 @@ public class CompetitionTable {
 		table.setEditable(false);
 		table.setPrefSize(Style.getNewSize(832), Style.getNewSize(554));
 		Style.setLocation(table,550,250);
+		
+		List<Standing> standingList = new ArrayList<Standing>();
+		for(int i = 0; i < 18; i++){
+			standingList.add(saveGame.getDB().getTeam(i).getStanding());
+		}
+		Collections.sort(standingList, new Standing());
+		
+		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
+
+		for(int i = 0; i < 18; i++) {
+			standingList.get(i).setRank(i+1);
+			competitionTable.add(standingList.get(i));
+		}
 		
 		table.setItems(competitionTable);
 		
@@ -96,7 +109,7 @@ public class CompetitionTable {
 
 			@Override
 			public void handle(ActionEvent event) {
-				CompetitionMatches.start(primaryStage, competitionTable);				
+				CompetitionMatches.start(primaryStage);				
 			}
 			
 		});

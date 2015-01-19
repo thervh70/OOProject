@@ -69,18 +69,6 @@ public class ManagementCenter {
 				opp = home.getNm();
 			}
 		}
-		List<Standing> standingList = new ArrayList<Standing>();
-		for(int i = 0; i < 18; i++){
-			standingList.add(saveGame.getDB().getTeam(i).getStanding());
-		}
-		Collections.sort(standingList, new Standing());
-		
-		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
-
-		for(int i = 0; i < 18; i++) {
-			standingList.get(i).setRank(i+1);
-			competitionTable.add(standingList.get(i));
-		}
 		
 		Text opponent = new Text("Next opponent: " + opp);
 		Style.setTextStyle(opponent, 60);
@@ -95,6 +83,9 @@ public class ManagementCenter {
 		for(int i = 0; i<18; i++){
 			if(saveGame.getMyTeam().getNm().equals(saveGame.getDB().getTeam(i).getNm())){
 				t = saveGame.getDB().getTeam(i);
+				if(t.getPoints() == 0 && t.getGoalsFor() == 0 && t.getGoalsAgainst() == 0){
+					t.getStanding().setRank(i+1);
+				}
 			}
 		}
 		Text rank = new Text("Rank: " + t.getStanding().getRank());
@@ -115,7 +106,7 @@ public class ManagementCenter {
 		table.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
-				CompetitionTable.start(primaryStage, competitionTable);
+				CompetitionTable.start(primaryStage);
 			}
 		});
 		

@@ -7,7 +7,7 @@ package Model;
 import java.util.Comparator;
 
 public class Standing implements Comparator<Standing>, Comparable<Standing>{
-	private int rank;
+	private int rank = 0;
 	private int points = 0;
 	private String teamName;
 	private int goalsFor = 0;
@@ -42,7 +42,7 @@ public class Standing implements Comparator<Standing>, Comparable<Standing>{
 	}
 	
 
-	public int getRank() {return this.rank;}
+	
 
 	@Override
 	public String toString() {
@@ -54,6 +54,7 @@ public class Standing implements Comparator<Standing>, Comparable<Standing>{
 	/**
 	 * Getters
 	 */
+	public int getRank() {return this.rank;}
 	public int getPoints() {return points;}
 	public String getTeamName() {return teamName;}
 	public int getGoalsFor() {return goalsFor;}

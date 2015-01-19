@@ -1,6 +1,8 @@
 package View;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import Controller.CreateSelection;
 import Controller.gameEngine;
@@ -94,6 +96,15 @@ public class Results {
 					TeamB2.addPoints(1, other.getGoalsB(), other.getGoalsA());
 				}
 			}
+		}
+		List<Standing> standingList = new ArrayList<Standing>();
+		for(int i = 0; i < 18; i++){
+			standingList.add(saveGame.getDB().getTeam(i).getStanding());
+		}
+		Collections.sort(standingList, new Standing());
+
+		for(int i = 0; i < 18; i++) {
+			standingList.get(i).setRank(i+1);
 		}
 	
 		TableView<Match> tableResults = new TableView();

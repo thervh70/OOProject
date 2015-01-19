@@ -67,8 +67,8 @@ public class SplashScreen extends Application {
 			
 	
 	
-	/**
-	 * Start the program by loading the first screen, the splash screen
+	/**Start the program by loading the first screen, the splash screen
+	 * 
 	 */
 	public static void main(String[] args) {
 		launch(args);

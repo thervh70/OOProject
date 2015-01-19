@@ -31,7 +31,7 @@ import javafx.util.Callback;
 		 * @param competitionTable - An ObservableList<Standing> used by CompetitionTable
 		 */
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
+		public static void start(Stage primaryStage) {
 
 			Pane root = new Pane();			
 			root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
@@ -99,7 +99,7 @@ import javafx.util.Callback;
 			toMatch.setOnAction(new EventHandler<ActionEvent>() {
 				@Override
 				public void handle(ActionEvent event) {
-					CompetitionTable.start(primaryStage, competitionTable);				
+					CompetitionTable.start(primaryStage);				
 				}				
 			});
 			

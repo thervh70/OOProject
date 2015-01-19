@@ -142,31 +142,12 @@ public class saveGame {
 		Node name = mine.item(1);
 		Node rank = mine.item(3);
 		myteam = DB.findTeam(name.getTextContent());
-		myteam.getStanding().setRank(Integer.parseInt(rank.getTextContent()));
+		myteam.getStanding().setRank(Integer.parseInt(rank.getTextContent()));	
+		myteam = DB.findTeam(team.getTextContent());
 		day = Integer.parseInt(current.getTextContent());
 		setBuyc(Integer.parseInt(buycounter.getTextContent()));
 		setSellc(Integer.parseInt(sellcounter.getTextContent()));
 		competition = XmlParser.parseCompetition(comp.getChildNodes());
-		
-		for(int i = 1; i < 35; i++){
-			ArrayList<Match> matches = competition.getMatchesForDay(i);
-			for(Match m : matches){
-				if(m.getGoalsHome() != -1){
-					if(m.getGoalsHome() > m.getGoalsAway()){
-						m.getTeamHome().addPoints(3, m.getGoalsHome(), m.getGoalsAway());
-						m.getTeamAway().addPoints(0, m.getGoalsAway(), m.getGoalsHome());
-					}
-					if(m.getGoalsHome() < m.getGoalsAway()){
-						m.getTeamHome().addPoints(0, m.getGoalsHome(), m.getGoalsAway());
-						m.getTeamAway().addPoints(3, m.getGoalsAway(), m.getGoalsHome());
-					}
-					if(m.getGoalsHome() == m.getGoalsAway()){
-						m.getTeamHome().addPoints(1, m.getGoalsHome(), m.getGoalsAway());
-						m.getTeamAway().addPoints(1, m.getGoalsAway(), m.getGoalsHome());
-					}
-				}
-			}
-		}
 	}
 
 	public static void write(String infile) {
@@ -176,10 +157,7 @@ public class saveGame {
 			wr = new PrintWriter(file);
 			wr.println("<Save>");
 			wr.print(DB.toWrite());
-			wr.print("   <Myteam>\r\n"
-					+ "      <Name>"+myteam.getNm()+"</Name>\r\n"
-					+ "      <Rank>"+myteam.getStanding().getRank()+"</Rank>\r\n"
-					+ "   </Myteam>\r\n");
+			wr.print("   <Myteam>"+myteam.getNm()+"</Myteam>\r\n");
 			wr.print("   <Currentday>"+day+"</Currentday>\r\n");
 			wr.print("   <Buycounter>"+getBuyc()+"</Buycounter>\r\n");
 			wr.print("   <Sellcounter>"+getSellc()+"</Sellcounter>\r\n");
