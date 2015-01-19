@@ -164,7 +164,6 @@ public class Team {
 	public String toWrite() {
 		String res = "      <Team>\r\n";
 		res += "         <Teamname>" + this.nm + "</Teamname>\r\n";
-		res += "         <Virtual_budget>" + this.bdgt_vir + "</Virtual_budget>\r\n";
 		res += "         <Budget>" + this.bdgt_rel + "</Budget>\r\n";
 		res += "         <Points>" + this.getPoints() + "</Points>\r\n";
 		res += "         <Goalsfor>" + this.getGoalsFor() + "</Goalsfor>\r\n";

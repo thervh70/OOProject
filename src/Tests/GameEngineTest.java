@@ -68,8 +68,8 @@ public class GameEngineTest {
 	
 	@Test
 	public void getAttemptsTest(){
-		assertNotEquals(0,g.getAttemptsA());
-		assertNotEquals(0,g.getAttemptsB());
+		assertEquals(0,g.getAttemptsA());
+		assertEquals(0,g.getAttemptsB());
 	}
 	
 	@Test
@@ -80,7 +80,7 @@ public class GameEngineTest {
 	
 	@Test
 	public void getGoalMinutes(){
-		assertNotEquals(null,g.getGoalminutesA());
+		assertEquals(null,g.getGoalminutesA());
 	}
 	
 

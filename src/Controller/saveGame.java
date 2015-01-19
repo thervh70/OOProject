@@ -143,10 +143,7 @@ public class saveGame {
 		setBuyc(Integer.parseInt(buycounter.getTextContent()));
 		setSellc(Integer.parseInt(sellcounter.getTextContent()));
 		competition = XmlParser.parseCompetition(comp.getChildNodes());
-//		System.out.println(DB);
-//		System.out.println(myteam.getNm());
-//		System.out.println(day);
-//		System.out.println(competition);
+		
 		for(int i = 1; i < 35; i++){
 			ArrayList<Match> matches = competition.getMatchesForDay(i);
 			for(Match m : matches){

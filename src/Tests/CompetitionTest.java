@@ -195,7 +195,7 @@ public class CompetitionTest {
 		comp.add(match);
 		comp.add(match);
 		String txt = comp.toString();
-		assertEquals(txt, "Competition\n===========\nMatch( Day: 1, Home: ADO Den Haag 0, Away: Ajax 0)\n");
+		assertEquals(txt, "Competition\n===========\nMatch( Day: 1, Home: ADO Den Haag -1, Away: Ajax -1)\n");
 		assertNotEquals(txt, "   Competition===========");
 	}
 	
