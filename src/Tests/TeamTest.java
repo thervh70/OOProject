@@ -30,6 +30,9 @@ public class TeamTest{
 			+ "         <Teamname>Ajax</Teamname>\r\n"
 			+ "         <Virtual_budget>100000</Virtual_budget>\r\n"
 			+ "         <Budget>150000</Budget>\r\n"
+			+ "         <Points>0</Points>\r\n"
+			+ "         <Goalsfor>0</Goalsfor>\r\n"
+			+ "         <Goalsagainst>0</Goalsagainst>\r\n"
 			+ "         <Selection>\r\n"
 			+ "            <Player>\r\n"
 			+ "               <Firstname>Frits</Firstname>\r\n"
@@ -197,15 +200,22 @@ public class TeamTest{
 	
 	@Test
 	public void toStringTest() {
-		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:");
+		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\n"
+				+ "Points: 0 GoalsFor: 0 GoalsAgainst: 0 GoalsDifference: 0\nSelection:\nSubstitutes:");
 		t1.addPlayer(p1);
-		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\n"
+				+ "Points: 0 GoalsFor: 0 GoalsAgainst: 0 GoalsDifference: 0\n"
+				+ "Selection:\n"
+				+ "Substitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Card: None Available: Yes Duration: 0\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
 		t1.toSelection(p1);
-		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\n"
+				+ "Points: 0 GoalsFor: 0 GoalsAgainst: 0 GoalsDifference: 0\n"
+				+ "Selection:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Card: None Available: Yes Duration: 0\n    "
-				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\nSubstitutes:");
+				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\n"
+				+ "Substitutes:");
 	}
 	
 	@Test
@@ -431,5 +441,45 @@ public class TeamTest{
 		assertEquals(t1.getBdgt_rel(), 150000);
 		t1.setBdgt_rel(200000);
 		assertEquals(t1.getBdgt_rel(), 200000);
+	}
+	
+	@Test
+	public void incPointsTest() {
+		assertEquals(t1.getPoints(), 0);
+		t1.incPoints(2);
+		assertEquals(t1.getPoints(), 2);
+	}
+	
+	@Test
+	public void incGoalsForTest() {
+		assertEquals(t1.getGoalsFor(), 0);
+		t1.incGoalsFor(3);
+		assertEquals(t1.getGoalsFor(), 3);
+	}
+	
+	@Test
+	public void incGoalsAgainstTest() {
+		assertEquals(t1.getGoalsAgainst(), 0);
+		t1.incGoalsAgainst(1);
+		assertEquals(t1.getGoalsAgainst(), 1);
+	}
+	
+	@Test
+	public void calcGoalDifferenceTest() {
+		t1.incGoalsFor(4);
+		t1.incGoalsAgainst(2);
+		t1.calcGoalDifference();
+		assertEquals(t1.getGoalDifference(), 2);
+	}
+	
+	@Test
+	public void addPointsTest() {
+		assertEquals(t1.getPoints(), 0);
+		assertEquals(t1.getGoalsFor(), 0);
+		assertEquals(t1.getGoalsAgainst(), 0);
+		t1.addPoints(3, 5, 2);
+		assertEquals(t1.getPoints(), 3);
+		assertEquals(t1.getGoalsFor(), 5);
+		assertEquals(t1.getGoalsAgainst(), 2);
 	}
 }

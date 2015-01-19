@@ -215,19 +215,8 @@ public class CompetitionTest {
 	}
 	
 	@Test
-	public void testGetIndex(){
-		DBmain db = XmlParser.parseDB();
-		Team team = db.getTeam(0);
-		Team team2 = db.getTeam(1);
-		Match match = new Match(1,team, team2);
-		Match match2 = new Match(2,team, team2);
-		Match match3 = new Match(9,team, team2);
-		Competition comp = new Competition();
-		comp.add(match);
-		comp.add(match2);
-		assertTrue(comp.getIndex(match2) == 1);
-		assertFalse(comp.getIndex(match2) == 2);
-		assertTrue(comp.getIndex(match3) == -1);
+	public void setMatchesForDayTest() {
+		
 	}
 
 }

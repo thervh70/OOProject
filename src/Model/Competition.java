@@ -33,7 +33,7 @@ public class Competition {
 			return false;
 		}
 		else{
-			Competition that = (Competition)obj;
+			Competition that = (Competition)(obj);
 			if(this.matches.equals(that.matches)){
 				return true;
 			}
@@ -63,16 +63,6 @@ public class Competition {
 	
 	public Match get(int index){
 		return matches.get(index);
-	}
-	
-	public int getIndex(Match m) {
-		for(int i=0;i<matches.size();i++) {
-			Match match = matches.get(i);
-			if(match.equals(m)) {
-				return i;
-			}
-		}
-		return -1;
 	}
 	
 	public ArrayList<Match> getMatchesForDay(int day){

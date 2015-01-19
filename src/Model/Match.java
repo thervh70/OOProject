@@ -70,97 +70,42 @@ public class Match {
 		return write;
 	}
 
-	public int getHomeIndex() {
-		return homeIndex;
-	}
-
-	public void setHomeIndex(int homeIndex) {
-		this.homeIndex = homeIndex;
-	}
-
-	public int getAwayIndex() {
-		return awayIndex;
-	}
-
-	public void setAwayIndex(int awayIndex) {
-		this.awayIndex = awayIndex;
-	}
+	/**
+	 * Getters
+	 */
 	
-	public void setTeamHome(Team team){
-		this.teamHome = team; 
-	}
+	public int getHomeIndex() {return homeIndex; }
+	public int getAwayIndex() {return awayIndex; }
+	public Team getTeamHome() {return teamHome; }
+	public Team getTeamAway() {return teamAway; }
+	public int getDay(){return this.day; }
+	public int getGoalsHome() {return goalsHome; }
+	public int getGoalsAway() {return goalsAway; }
+	public String getTeamHomeName() {return teamHomeName; }
+	public String getTeamAwayName() {return teamAwayName; }
+	public String getScore() {return score; }
+	public String getGoalsHomeS() {return goalsHomeS; }
+	public String getGoalsAwayS() {return goalsAwayS; }
 	
-	public void setTeamAway(Team team){
-		this.teamAway = team; 
-	}
+	/**
+	 * Setters
+	 */
 	
-	public Team getTeamHome() {
-		return teamHome;
-	}
-
-	public Team getTeamAway() {
-		return teamAway;
-	}
-
-	public int getDay(){
-		return this.day;
-	}
-
-	public int getGoalsHome() {
-		return goalsHome;
-	}
-
-	public int getGoalsAway() {
-		return goalsAway;
-	}
-
+	public void setHomeIndex(int homeIndex) {this.homeIndex = homeIndex; }
+	public void setAwayIndex(int awayIndex) {this.awayIndex = awayIndex; }
+	public void setTeamHome(Team team){this.teamHome = team; }
+	public void setTeamAway(Team team){this.teamAway = team; }
 	public void setGoalsHome(Integer goalsHome) {
 		this.goalsHome = goalsHome;
 		this.setGoalsHomeS(goalsHome.toString());
 	}
-
 	public void setGoalsAway(Integer goalsAway) {
 		this.goalsAway = goalsAway;
 		this.setGoalsAwayS(goalsAway.toString());
 	}
-
-	public String getTeamHomeName() {
-		return teamHomeName;
-	}
-
-	public void setTeamHomeName(String teamHomeName) {
-		this.teamHomeName = teamHomeName;
-	}
-
-	public String getTeamAwayName() {
-		return teamAwayName;
-	}
-
-	public void setTeamAwayName(String teamAwayName) {
-		this.teamAwayName = teamAwayName;
-	}
-
-	public String getScore() {
-		return score;
-	}
-
-	public void setScore(String score) {
-		this.score = score;
-	}
-
-	public String getGoalsHomeS() {
-		return goalsHomeS;
-	}
-
-	public void setGoalsHomeS(String goalsHomeS) {
-		this.goalsHomeS = goalsHomeS;
-	}
-
-	public String getGoalsAwayS() {
-		return goalsAwayS;
-	}
-
-	public void setGoalsAwayS(String goalsAwayS) {
-		this.goalsAwayS = goalsAwayS;
-	}
+	public void setTeamHomeName(String teamHomeName) {this.teamHomeName = teamHomeName;	}
+	public void setTeamAwayName(String teamAwayName) {this.teamAwayName = teamAwayName; }
+	public void setScore(String score) {this.score = score;	}
+	public void setGoalsHomeS(String goalsHomeS) {this.goalsHomeS = goalsHomeS;	}
+	public void setGoalsAwayS(String goalsAwayS) {this.goalsAwayS = goalsAwayS;	}
 }

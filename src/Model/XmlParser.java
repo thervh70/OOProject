@@ -20,10 +20,9 @@ public class XmlParser {
 	 * @throws Exception
 	 */
 	
-	public static void main(String[] args) throws Exception {
-		saveGame.loadSave("Test2.xml");
-		System.out.println(saveGame.getDB());
-	}
+	/*public static void main(String[] args) throws Exception {
+		
+	}*/
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
@@ -84,7 +83,7 @@ public class XmlParser {
 	}
 	
 	public static DBmain parseDB() {
-		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v10.xml");
+		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v11.xml");
 		DBmain d = new DBmain();
 		for(int i=1;i<database.getLength();i+=2) {
 			Node team = database.item(i);
@@ -152,7 +151,7 @@ public class XmlParser {
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
 	    	}
-	    	else if(player.getNodeName().equals("Keeper")) {
+	    	if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
@@ -166,7 +165,7 @@ public class XmlParser {
 	    		Fieldplayer p = parsePlayer(playerattributes);
 	    		t.addPlayer(p);
 	    	}
-	    	else if(player.getNodeName().equals("Keeper")) {
+	    	if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    	}
@@ -246,7 +245,7 @@ public class XmlParser {
 	 * @throws FileNotFoundException
 	 */
 	
-	public static void writeToXML(DBmain db) {
+	/*public static void writeToXML(DBmain db) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
 		String file = "src/Model/Resources/" + sc.next();
@@ -257,12 +256,12 @@ public class XmlParser {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		String wrt = db.toWrite();
+		String wrt = "<Save>\r\n" + db.toWrite() + "</Save>\r\n";
 		pw.print(wrt);
 		pw.close();
-	}
+	}*/
 	
-	public static void writeToXML(Competition c) {
+	/*public static void writeToXML(Competition c) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
 		String file = "src/Model/Resources/" + sc.next();
@@ -273,10 +272,10 @@ public class XmlParser {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		String wrt = c.toWrite();
+		String wrt = "<Save>\r\n" + c.toWrite() + "</Save>\r\n";
 		pw.print(wrt);
 		pw.close();
-	}
+	}*/
 	
 	/**
 	 * This methods only purpose was to fix a mistake in the xml-file!
