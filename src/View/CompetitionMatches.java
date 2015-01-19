@@ -6,16 +6,20 @@ import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
 import Model.Standing;
+import Model.Team;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 	public class CompetitionMatches {
 		
@@ -63,6 +67,9 @@ import javafx.stage.Stage;
 			homeScore.setResizable(false);
 			awayScore.setResizable(false);
 			
+			setColor(teamAway);
+			setColor(teamHome);
+			
 			table.getColumns().addAll(day,teamHome,homeScore,awayScore,teamAway);
 			
 			Competition comp = saveGame.getCompetition();
@@ -97,4 +104,25 @@ import javafx.stage.Stage;
 			primaryStage.show();
 		}
 		
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		private static void setColor(TableColumn t){
+			t.setCellFactory(new Callback<TableColumn, TableCell>() {
+				public TableCell call(TableColumn param) {
+					return new TableCell<Team, String>() {
+
+				        public void updateItem(String item, boolean empty) {
+				        	super.updateItem(item, empty);
+				            if (!isEmpty()) {
+				            	this.setTextFill(Color.BLACK);
+				            	Team t = saveGame.getDB().findTeam(this.getItem());
+				            	if(t.getNm().equals(saveGame.getMyTeam().getNm())){
+				            		this.setUnderline(true);
+				            	}		            	
+				            	setText(item);
+				            }
+				        }
+					};
+			     }
+			 });
+		}
 }

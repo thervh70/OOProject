@@ -90,7 +90,14 @@ public class ManagementCenter {
 		Text budget = new Text("Budget: " + saveGame.getMyTeam().getBdgt_vir());
 		Style.setTextStyle(budget, 60);
 		
-		Text rank = new Text("Rank: " + saveGame.getMyTeam().getStanding().getRank());
+		//Create local team to show ranking
+		Team t = null;
+		for(int i = 0; i<18; i++){
+			if(saveGame.getMyTeam().getNm().equals(saveGame.getDB().getTeam(i).getNm())){
+				t = saveGame.getDB().getTeam(i);
+			}
+		}
+		Text rank = new Text("Rank: " + t.getStanding().getRank());
 		Style.setTextStyle(rank, 60);
 		
 		VBox vbox2 = new VBox(10);
@@ -137,51 +144,49 @@ public class ManagementCenter {
 			@Override
 			public void handle(ActionEvent event) {
 				
-				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
+				String file = saveGame.getFile();
+				if(file.equals("")) {
 					
-					public void handle(MouseEvent e) {
-						root.setDisable(false);
-						String file = saveGame.getFile();
-						if(file.equals("")) {
-							
-							EventHandler<MouseEvent> save = new EventHandler<MouseEvent>() {
-								
-								public void handle(MouseEvent e) {
-									String newFile = saveGame.getFile();
-									saveGame.write(newFile);
-									root.setDisable(false);
-								}
-							};
-							
-							EventHandler<MouseEvent> back = new EventHandler<MouseEvent>() {
-								
-								public void handle(MouseEvent e) {
-									;
-								}
-							};
-							
-							Popup getText = Warning.getInput("Set File Name", root, save, back);
-							getText.show(primaryStage);
-							
+					EventHandler<MouseEvent> save = new EventHandler<MouseEvent>() {
+						
+						public void handle(MouseEvent e) {
+							String newFile = saveGame.getFile();
+							saveGame.write(newFile);
+							root.setDisable(false);
 						}
-						else{
+					};
+					
+					EventHandler<MouseEvent> back = new EventHandler<MouseEvent>() {
+						
+						public void handle(MouseEvent e) {
+							;
+						}
+					};
+					
+					Popup getText = Warning.getInput("Set File Name", root, save, back);
+					getText.show(primaryStage);
+					
+				}
+				else{
+					EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {
+						
+						public void handle(MouseEvent e) {
+							root.setDisable(false);
 							saveGame.write(file);
 						}
-					}
-				};
-				
-				EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
+					};
 					
-					public void handle(MouseEvent e) {
-						;
-					}
-				};
-				
-				Popup confirm = Warning.makeWarning("Do you want to overwrite \nthe previous savegame?", root, yes, no);
-				confirm.show(primaryStage);		
-			
+					EventHandler<MouseEvent> no = new EventHandler<MouseEvent>() {
+						
+						public void handle(MouseEvent e) {
+							;
+						}
+					};
+					
+					Popup confirm = Warning.makeWarning("Do you want to overwrite \nthe previous savegame?", root, yes, no);
+					confirm.show(primaryStage);	
+				}			
 			}
-
 		});
 		
 		menu.setOnAction(new EventHandler<ActionEvent>() {
