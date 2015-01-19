@@ -166,7 +166,7 @@ public class Budget {
 			//Checks to see if the randomly selected team isn't your own team
 			//Checks to see if the randomly selected team can afford the player you are selling
 			//If either of these checks fail, a new team will be randomly selected
-			while(oldSell.getNm()==myTeam.getNm() | oldSell.getBdgt_rel()<p.getPri()){
+			while(oldSell.getNm().equals(myTeam.getNm()) | oldSell.getBdgt_rel()<p.getPri()){
 				int r = R.nextInt(d.getSize());
 				oldSell = d.getTeam(r);
 				sellTeam = oldSell;
