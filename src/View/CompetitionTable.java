@@ -20,9 +20,10 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class CompetitionTable {
-
+	private static List<Standing> standingList = new ArrayList<Standing>();
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void start(Stage primaryStage) {
+	public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
 		Pane root = new Pane();
 		
 		root.getChildren().add(Style.setBackground("/View/Resources/background_competition-table.png"));
@@ -35,19 +36,6 @@ public class CompetitionTable {
 		Button toMatch = new Button("To Matches");
 		Style.setButtonStyle(toMatch, 45);
 		Style.setLocation(toMatch, 1550, 870);
-		
-		List<Standing> standingList = new ArrayList<Standing>();
-		for(int i = 0; i < 18; i++){
-			standingList.add(saveGame.getDB().getTeam(i).getStanding());
-		}
-		Collections.sort(standingList, new Standing());
-		
-		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
-
-		for(int i = 0; i < 18; i++) {
-			standingList.get(i).setRank(i+1);
-			competitionTable.add(standingList.get(i));
-		}
 		
 		//Create a table with fixed columns
 		TableView<Standing> table = new TableView();
@@ -98,7 +86,7 @@ public class CompetitionTable {
 
 			@Override
 			public void handle(ActionEvent event) {
-				CompetitionMatches.start(primaryStage);				
+				CompetitionMatches.start(primaryStage, competitionTable);				
 			}
 			
 		});
@@ -106,4 +94,5 @@ public class CompetitionTable {
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
+	public static List<Standing> getStandingList(){return standingList;}
 }
