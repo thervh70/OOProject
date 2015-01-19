@@ -20,8 +20,12 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class CompetitionTable {
-	private static List<Standing> standingList = new ArrayList<Standing>();
 	
+	/**This shows the CompetitionMatches screen, displaying a table showing the total ranking till now.
+	 * 
+	 * @param primaryStage - The GUI of Frits.
+	 * @param competitionTable - ObservableList<Standing> used in the table to display ranking.
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage, ObservableList<Standing> competitionTable) {
 		Pane root = new Pane();
@@ -94,5 +98,4 @@ public class CompetitionTable {
 		primaryStage.getScene().setRoot(root);
 		primaryStage.show();
 	}
-	public static List<Standing> getStandingList(){return standingList;}
 }
