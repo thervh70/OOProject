@@ -62,6 +62,9 @@ public class GameEngineTest {
 	
 	@Test
 	public void getTeamTest(){
+		//System.out.println(g.getTeamA().toString());
+		System.out.println("hoi");
+		System.out.println(alpha.toString());
 		assertEquals(alpha,g.getTeamA());
 		assertEquals(beta,g.getTeamB());
 	}
