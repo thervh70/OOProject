@@ -20,10 +20,9 @@ public class XmlParser {
 	 * @throws Exception
 	 */
 	
-	public static void main(String[] args) throws Exception {
-		saveGame.loadSave("TestSave.xml");
-		saveGame.write("TestSaveWrite.xml");
-	}
+	/*public static void main(String[] args) throws Exception {
+		
+	}*/
 	
 	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
@@ -86,7 +85,7 @@ public class XmlParser {
 	}
 	
 	public static DBmain parseDB() {
-		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v10.xml");
+		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v11.xml");
 		DBmain d = new DBmain();
 		for(int i=1;i<database.getLength();i+=2) {
 			Node team = database.item(i);
@@ -133,11 +132,18 @@ public class XmlParser {
 	    String teamname = teamattributes.item(1).getTextContent();
 	    String bdgtString = teamattributes.item(3).getTextContent();
 	    String bdgtString_rel = teamattributes.item(5).getTextContent();
+	    String pointsString = teamattributes.item(7).getTextContent();
+	    String goalsForString = teamattributes.item(9).getTextContent();
+	    String goalsAgainstString = teamattributes.item(11).getTextContent();
 	    int budget_vir = Integer.parseInt(bdgtString);
 	    int budget_rel = Integer.parseInt(bdgtString_rel);
+	    int points = Integer.parseInt(pointsString);
+	    int goalsFor = Integer.parseInt(goalsForString);
+	    int goalsAgainst = Integer.parseInt(goalsAgainstString);
 	    Team t = new Team(teamname, budget_vir, budget_rel);
-	    NodeList selection = teamattributes.item(7).getChildNodes();
-	    NodeList team = teamattributes.item(9).getChildNodes();
+	    t.addPoints(points, goalsFor, goalsAgainst);
+	    NodeList selection = teamattributes.item(13).getChildNodes();
+	    NodeList team = teamattributes.item(15).getChildNodes();
 	   
 	    for(int i=1;i<selection.getLength();i+=2) {
 	    	Node player = selection.item(i);
@@ -147,7 +153,7 @@ public class XmlParser {
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
 	    	}
-	    	else if(player.getNodeName().equals("Keeper")) {
+	    	if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    		t.toSelection(p);
@@ -161,7 +167,7 @@ public class XmlParser {
 	    		Fieldplayer p = parsePlayer(playerattributes);
 	    		t.addPlayer(p);
 	    	}
-	    	else if(player.getNodeName().equals("Keeper")) {
+	    	if(player.getNodeName().equals("Keeper")) {
 	    		Goalkeeper p = parseKeeper(playerattributes);
 	    		t.addPlayer(p);
 	    	}
@@ -241,7 +247,7 @@ public class XmlParser {
 	 * @throws FileNotFoundException
 	 */
 	
-	public static void writeToXML(DBmain db) {
+	/*public static void writeToXML(DBmain db) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
 		String file = "src/Model/Resources/" + sc.next();
@@ -252,12 +258,12 @@ public class XmlParser {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		String wrt = db.toWrite();
+		String wrt = "<Save>\r\n" + db.toWrite() + "</Save>\r\n";
 		pw.print(wrt);
 		pw.close();
-	}
+	}*/
 	
-	public static void writeToXML(Competition c) {
+	/*public static void writeToXML(Competition c) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bestandsnaam?");
 		String file = "src/Model/Resources/" + sc.next();
@@ -268,10 +274,10 @@ public class XmlParser {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		String wrt = c.toWrite();
+		String wrt = "<Save>\r\n" + c.toWrite() + "</Save>\r\n";
 		pw.print(wrt);
 		pw.close();
-	}
+	}*/
 	
 	/**
 	 * This methods only purpose was to fix a mistake in the xml-file!

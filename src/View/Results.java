@@ -39,7 +39,7 @@ public class Results {
 		Match save = new Match(saveGame.getDay(),TeamA1,TeamB1,match.getGoalsA(),match.getGoalsB());
 		saveGame.setMatchResult(save);
 		resultTable.add(save);
-		
+
 		if(match.getToto() == 1){
 			TeamA1.addPoints(3, match.getGoalsA(), match.getGoalsB());
 			TeamB1.addPoints(0, match.getGoalsB(), match.getGoalsA());

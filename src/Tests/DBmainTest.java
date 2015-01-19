@@ -19,8 +19,8 @@ public class DBmainTest {
 	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, true, 0, 0, 44, 56, 81, 39, 72, 58);
 	Fieldplayer p6 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
 	Fieldplayer p7 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47); 
-	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, false, 0, 0, 65, 49, 87, 55, 69, 47);
-	Fieldplayer p9 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 0, 1, 66, 52, 39, 48, 56, 87);
+	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, false, 2, 0, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p9 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 1, 0, 66, 52, 39, 48, 56, 87);
 
 	Team t1 = new Team("Ajax", 100000, 150000);
 	Team t2 = new Team("Feyenoord", 100000, 150000);
@@ -36,6 +36,9 @@ public class DBmainTest {
 			+ "         <Teamname>Ajax</Teamname>\r\n"
 			+ "         <Virtual_budget>100000</Virtual_budget>\r\n"
 			+ "         <Budget>150000</Budget>\r\n"
+			+ "         <Points>0</Points>\r\n"
+			+ "         <Goalsfor>0</Goalsfor>\r\n"
+			+ "         <Goalsagainst>0</Goalsagainst>\r\n"
 			+ "         <Selection>\r\n"
 			+ "         </Selection>\r\n"
 			+ "         <Teammembers>\r\n"
@@ -106,7 +109,7 @@ public class DBmainTest {
 		t1.addPlayer(p1);
 		d1.addTeam(t1);
 		String string = "Divisie: (1)\n----------\n"
-				+ "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+				+ "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nPoints: 0 GoalsFor: 0 GoalsAgainst: 0 GoalsDifference: 0\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
 				+ "Card: None Available: Yes Duration: 0\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\n\n";
 		assertEquals(d1.toString(), string);

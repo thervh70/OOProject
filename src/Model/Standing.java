@@ -29,7 +29,16 @@ public class Standing implements Comparator<Standing>, Comparable<Standing>{
 		return false;
 	}
 	
+
 	public int getRank() {return this.rank;}
+
+	@Override
+	public String toString() {
+		return "Standing [points=" + points + ", teamName=" + teamName
+				+ ", goalsFor=" + goalsFor + ", goalsAgainst=" + goalsAgainst
+				+ ", goalDifference=" + goalDifference + "]";
+	}
+
 	public int getPoints() {return points;}
 	public String getTeamName() {return teamName;}
 	public int getGoalsFor() {return goalsFor;}

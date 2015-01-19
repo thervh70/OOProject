@@ -1,11 +1,13 @@
 package View;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import Controller.saveGame;
 import Model.Standing;
+import Model.Team;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -41,10 +43,18 @@ public class CompetitionTable {
 		Collections.sort(standingList, new Standing());
 		
 		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
+<<<<<<< HEAD
 		for(int i = 0; i < 18; i++) {
 			standingList.get(i).setRank(i+1);
 			competitionTable.add(standingList.get(i));
 		}
+=======
+		
+        for(int i = 0; i < 18; i++){
+        	Team t = saveGame.getDB().getTeam(i);
+        	competitionTable.add(t.getStanding());
+        }
+>>>>>>> origin/master
 		
 		//Create a table with fixed columns
 		TableView<Standing> table = new TableView();
@@ -76,7 +86,10 @@ public class CompetitionTable {
         rank.setResizable(false);
         name.setResizable(false);
         points.setResizable(false);
-        
+        goalsAgainst.setResizable(false);
+        goalsFor.setResizable(false);
+        goalDifference.setResizable(false);
+               
         table.getColumns().addAll(rank,name,points,goalsFor,goalsAgainst,goalDifference);
         
 		root.getChildren().addAll(back, table,toMatch);

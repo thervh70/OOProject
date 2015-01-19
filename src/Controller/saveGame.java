@@ -84,7 +84,8 @@ public class saveGame {
 		myteam = null;
 		competition = null;
 		day = 1;
-	}
+		file = "";
+	}	
 	
 	public static void newSave(Team t){
 		saveGame.DB = XmlParser.parseDB();
@@ -118,7 +119,7 @@ public class saveGame {
 		for(int i = 1; i < 35; i++){
 			ArrayList<Match> matches = competition.getMatchesForDay(i);
 			for(Match m : matches){
-				if(m.getPlayed() == true){
+				if(m.getGoalsHome() != -1){
 					if(m.getGoalsHome() > m.getGoalsAway()){
 						m.getTeamHome().addPoints(3, m.getGoalsHome(), m.getGoalsAway());
 						m.getTeamAway().addPoints(0, m.getGoalsAway(), m.getGoalsHome());
