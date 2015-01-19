@@ -16,12 +16,6 @@ public class Competition {
 		}
 	}
 	
-	public void add(int i, Match match) {
-		if(!matches.get(i).equals(match)) {
-			matches.add(i, match);
-		}
-	}
-	
 	public void remove(Match match) {
 		matches.remove(match);
 	}

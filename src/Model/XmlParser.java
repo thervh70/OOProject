@@ -21,8 +21,8 @@ public class XmlParser {
 	 */
 	
 	public static void main(String[] args) throws Exception {
-		saveGame.loadSave("TestSave.xml");
-		saveGame.write("TestSaveWrite.xml");
+		saveGame.loadSave("Test2.xml");
+		System.out.println(saveGame.getDB());
 	}
 	
 	/**
@@ -131,11 +131,18 @@ public class XmlParser {
 	    String teamname = teamattributes.item(1).getTextContent();
 	    String bdgtString = teamattributes.item(3).getTextContent();
 	    String bdgtString_rel = teamattributes.item(5).getTextContent();
+	    String pointsString = teamattributes.item(7).getTextContent();
+	    String goalsForString = teamattributes.item(9).getTextContent();
+	    String goalsAgainstString = teamattributes.item(11).getTextContent();
 	    int budget_vir = Integer.parseInt(bdgtString);
 	    int budget_rel = Integer.parseInt(bdgtString_rel);
+	    int points = Integer.parseInt(pointsString);
+	    int goalsFor = Integer.parseInt(goalsForString);
+	    int goalsAgainst = Integer.parseInt(goalsAgainstString);
 	    Team t = new Team(teamname, budget_vir, budget_rel);
-	    NodeList selection = teamattributes.item(7).getChildNodes();
-	    NodeList team = teamattributes.item(9).getChildNodes();
+	    t.addPoints(points, goalsFor, goalsAgainst);
+	    NodeList selection = teamattributes.item(13).getChildNodes();
+	    NodeList team = teamattributes.item(15).getChildNodes();
 	   
 	    for(int i=1;i<selection.getLength();i+=2) {
 	    	Node player = selection.item(i);

@@ -61,7 +61,7 @@ public class Goalkeeper extends Player {
 		}
 		
 		if(this.getPlay()) {play = "Yes"; }
-		else if(!this.getPlay()) {play = "No"; }
+		if(!this.getPlay()) {play = "No"; }
 		
 		return "  Name: "+this.getFnm()+" "+this.getLnm()
 				+ " Position: "+this.getPos()+" age: "+this.getAge()+" price: "+this.getPri()+"\n"

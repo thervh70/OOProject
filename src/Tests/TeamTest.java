@@ -18,77 +18,89 @@ public class TeamTest{
 	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "LB", 21, 182556, true, 0, 0, 44, 56, 81, 39, 72, 58);
 	Fieldplayer p6 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
 	Fieldplayer p7 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
-	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CB", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
-	Fieldplayer p9 = new Fieldplayer("Gijsje", "Truusje", "CM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
-	Fieldplayer p10 = new Fieldplayer("Gijsje", "Truusje", "CAM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CB", 25, 154679, true, 1, 0, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p9 = new Fieldplayer("Gijsje", "Truusje", "CM", 25, 154679, false, 2, 0, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p10 = new Fieldplayer("Gijsje", "Truusje", "CAM", 25, 154679, false, 2, 2, 65, 49, 87, 55, 69, 47);
 	Fieldplayer p11 = new Fieldplayer("Gijsje", "Truusje", "RW", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
 
 	Team t1 = new Team("Ajax", 100000, 150000);
 	Team t2 = new Team("Feyenoord", 100000, 150000);
 	Team t3 = new Team("Ajax", 100000, 150000);
-	String res = "   <TEAM>\r\n"
-			+ "      <TEAMNAME>Ajax</TEAMNAME>\r\n"
-			+ "      <VIRTUAL_BUDGET>100000</VIRTUAL_BUDGET>\r\n"
-			+ "      <BUDGET>150000</BUDGET>\r\n"
-			+ "      <SELECTION>\r\n"
-			+ "         <PLAYER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <PACE>44</PACE>\r\n"
-			+ "            <SHOOTING>56</SHOOTING>\r\n"
-			+ "            <PASSING>81</PASSING>\r\n"
-			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "            <DEFENDING>72</DEFENDING>\r\n"
-			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "            <TYPE>RB</TYPE>\r\n"
-			+ "         </PLAYER>\r\n"
-			+ "         <KEEPER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <DIVING>44</DIVING>\r\n"
-			+ "            <HANDLING>56</HANDLING>\r\n"
-			+ "            <KICKING>81</KICKING>\r\n"
-			+ "            <REFLEXES>39</REFLEXES>\r\n"
-			+ "            <SPEED>72</SPEED>\r\n"
-			+ "            <POSITIONING>55</POSITIONING>\r\n"
-			+ "            <HEIGHT>58</HEIGHT>\r\n"
-			+ "            <TYPE>GK</TYPE>\r\n"
-			+ "         </KEEPER>\r\n"
-			+ "      </SELECTION>\r\n"
-			+ "      <TEAMMEMBERS>\r\n"
-			+ "         <PLAYER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <PACE>44</PACE>\r\n"
-			+ "            <SHOOTING>56</SHOOTING>\r\n"
-			+ "            <PASSING>81</PASSING>\r\n"
-			+ "            <DRIBBLING>39</DRIBBLING>\r\n"
-			+ "            <DEFENDING>72</DEFENDING>\r\n"
-			+ "            <PHYSICAL>58</PHYSICAL>\r\n"
-			+ "            <TYPE>RB</TYPE>\r\n"
-			+ "         </PLAYER>\r\n"
-			+ "         <KEEPER>\r\n"
-			+ "            <FIRSTNAME>Frits</FIRSTNAME>\r\n"
-			+ "            <LASTNAME>Fritsmans</LASTNAME>\r\n"
-			+ "            <AGE>21</AGE>\r\n"
-			+ "            <PRICE>182556</PRICE>\r\n"
-			+ "            <DIVING>44</DIVING>\r\n"
-			+ "            <HANDLING>56</HANDLING>\r\n"
-			+ "            <KICKING>81</KICKING>\r\n"
-			+ "            <REFLEXES>39</REFLEXES>\r\n"
-			+ "            <SPEED>72</SPEED>\r\n"
-			+ "            <POSITIONING>55</POSITIONING>\r\n"
-			+ "            <HEIGHT>58</HEIGHT>\r\n"
-			+ "            <TYPE>GK</TYPE>\r\n"
-			+ "         </KEEPER>\r\n"
-			+ "      </TEAMMEMBERS>\r\n"
-			+ "   </TEAM>\r\n";
+	String res = "      <Team>\r\n"
+			+ "         <Teamname>Ajax</Teamname>\r\n"
+			+ "         <Virtual_budget>100000</Virtual_budget>\r\n"
+			+ "         <Budget>150000</Budget>\r\n"
+			+ "         <Selection>\r\n"
+			+ "            <Player>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Pace>44</Pace>\r\n"
+			+ "               <Shooting>56</Shooting>\r\n"
+			+ "               <Passing>81</Passing>\r\n"
+			+ "               <Dribbling>39</Dribbling>\r\n"
+			+ "               <Defending>72</Defending>\r\n"
+			+ "               <Physical>58</Physical>\r\n"
+			+ "               <Type>RB</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Player>\r\n"
+			+ "            <Keeper>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Diving>44</Diving>\r\n"
+			+ "               <Handling>56</Handling>\r\n"
+			+ "               <Kicking>81</Kicking>\r\n"
+			+ "               <Reflexes>39</Reflexes>\r\n"
+			+ "               <Speed>72</Speed>\r\n"
+			+ "               <Positioning>55</Positioning>\r\n"
+			+ "               <Height>58</Height>\r\n"
+			+ "               <Type>GK</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Keeper>\r\n"
+			+ "         </Selection>\r\n"
+			+ "         <Teammembers>\r\n"
+			+ "            <Player>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Pace>44</Pace>\r\n"
+			+ "               <Shooting>56</Shooting>\r\n"
+			+ "               <Passing>81</Passing>\r\n"
+			+ "               <Dribbling>39</Dribbling>\r\n"
+			+ "               <Defending>72</Defending>\r\n"
+			+ "               <Physical>58</Physical>\r\n"
+			+ "               <Type>RB</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Player>\r\n"
+			+ "            <Keeper>\r\n"
+			+ "               <Firstname>Frits</Firstname>\r\n"
+			+ "               <Lastname>Fritsmans</Lastname>\r\n"
+			+ "               <Age>21</Age>\r\n"
+			+ "               <Price>182556</Price>\r\n"
+			+ "               <Diving>44</Diving>\r\n"
+			+ "               <Handling>56</Handling>\r\n"
+			+ "               <Kicking>81</Kicking>\r\n"
+			+ "               <Reflexes>39</Reflexes>\r\n"
+			+ "               <Speed>72</Speed>\r\n"
+			+ "               <Positioning>55</Positioning>\r\n"
+			+ "               <Height>58</Height>\r\n"
+			+ "               <Type>GK</Type>\r\n"
+			+ "               <Available>true</Available>\r\n"
+			+ "               <Card>0</Card>\r\n"
+			+ "               <Duration>0</Duration>\r\n"
+			+ "            </Keeper>\r\n"
+			+ "         </Teammembers>\r\n"
+			+ "      </Team>\r\n";
 	
 	@Test
 	public void NewStandingTest(){
@@ -188,9 +200,11 @@ public class TeamTest{
 		assertEquals(t1.toString(), "Team: Ajax(0), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:");
 		t1.addPlayer(p1);
 		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\nSubstitutes:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+				+ "Card: None Available: Yes Duration: 0\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58");
 		t1.toSelection(p1);
 		assertEquals(t1.toString(), "Team: Ajax(1), Virtual budget: 100000, Budget: 150000\nSelection:\n  Name: Frits Fritsmans Position: RB age: 21 price: 182556\n    "
+				+ "Card: None Available: Yes Duration: 0\n    "
 				+ "Pace: 44 Shooting: 56 Passing: 81 Dribbling: 39 Defending: 72 Physical: 58\nSubstitutes:");
 	}
 	
@@ -203,7 +217,7 @@ public class TeamTest{
 		assertEquals(t1.toWrite(), res);
 	}
 	
-/*	@Test
+	@Test
 	public void calcAttScoreTest() {
 		assertEquals(t1.calcAttScore(), 0, 0.001);
 		t1.addPlayer(p2);t1.toSelection(p2);
@@ -212,7 +226,7 @@ public class TeamTest{
 		t1.addPlayer(p5);t1.toSelection(p5);
 		t1.addPlayer(p6);t1.toSelection(p6);
 		t1.addPlayer(p7);t1.toSelection(p7);
-		assertEquals(t1.calcAttScore(), 86.7, 0.001);
+		assertEquals(t1.calcAttScore(), 103.0, 0.001);
 		t1.removePlayer(p2);
 		assertNotEquals(t1.calcAttScore(), 100.0, 0.001);
 	}
@@ -227,10 +241,10 @@ public class TeamTest{
 		t1.addPlayer(p5);t1.toSelection(p5);
 		t1.addPlayer(p6);t1.toSelection(p6);
 		t1.addPlayer(p7);t1.toSelection(p7);
-		assertEquals(t1.calcDefScore(), 61.0, 0.001);
+		assertEquals(t1.calcDefScore(), 182.0, 0.001);
 		t1.removePlayer(p7);
 		assertNotEquals(t1.calcDefScore(), 64.0, 0.001);
-	}*/
+	}
 	
 	@Test
 	public void countTest() {
@@ -270,6 +284,38 @@ public class TeamTest{
 		assertEquals(t1.countSelection(2), 2);
 		assertEquals(t1.countSelection(3), 3);
 		assertEquals(t1.countSelection(4), 1);
+	}	
+	
+	@Test
+	public void clearCardsInjuriesTest() {
+		
+	}
+	
+	@Test
+	public void checkRedCards() {
+		t1.addPlayer(p8);
+		t1.addPlayer(p9);
+		t1.addPlayer(p10);
+		
+	}
+	
+	@Test
+	public void checkYellowCards() {
+		t1.addPlayer(p8);
+		t1.addPlayer(p9);
+		t1.addPlayer(p10);
+	}
+	
+	@Test
+	public void checkInjuriesTest() {
+		
+	}
+	
+	@Test
+	public void checkAvailTest() {
+		t1.addPlayer(p8);
+		t1.addPlayer(p9);
+		t1.addPlayer(p10);
 	}
 	
 	@Test

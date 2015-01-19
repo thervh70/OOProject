@@ -135,6 +135,7 @@ public class Team {
 	
 	public String toString() {
 		String res = "Team: " + nm + "(" + team.size() + "), Virtual budget: "+this.getBdgt_vir()+", Budget: "+this.getBdgt_rel()+"\n";
+		res += "Points: " + this.getPoints() + " GoalsFor: " + this.getGoalsFor() + " GoalsAgainst: " + this.getGoalsAgainst() + " GoalsDifference: " + this.getGoalDifference() + "\n";
 		res += "Selection:\n";
 		for(int i=0;i<selection.size();i++) {
 			res += selection.get(i) + "\n";
@@ -159,6 +160,9 @@ public class Team {
 		res += "         <Teamname>" + this.nm + "</Teamname>\r\n";
 		res += "         <Virtual_budget>" + this.bdgt_vir + "</Virtual_budget>\r\n";
 		res += "         <Budget>" + this.bdgt_rel + "</Budget>\r\n";
+		res += "         <Points>" + this.getPoints() + "</Points>\r\n";
+		res += "         <Goalsfor>" + this.getGoalsFor() + "</Goalsfor>\r\n";
+		res += "         <Goalsagainst>" + this.getGoalsAgainst() + "</Goalsagainst>\r\n";
 		res += "         <Selection>\r\n";
 		for(int i=0;i<this.getSize();i++) {
 			if(selection.contains(this.getPlayer(i))) {
@@ -245,9 +249,9 @@ public class Team {
 		return (int) score;
 	}
 	
-	private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
+	/*private static double map(double x, double in_min, double in_max, int out_min, int out_max) {
 		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	}
+	}*/
 	
 	/**Count the amount of players of a certain type
 	 * 

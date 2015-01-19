@@ -40,7 +40,7 @@ public class Match {
 	}
 	
 	public String toString() {
-		String txt = "Match( Day: "+ this.getDay() + ", Home: " + this.getTeamHome().getNm()+ this.getGoalsHome()+ ", Away: " + this.getTeamAway().getNm()+ this.getGoalsAway()+")";  
+		String txt = "Match( Day: "+ this.getDay() + ", Home: " + this.getTeamHome().getNm()+" "+ this.getGoalsHome()+ ", Away: " + this.getTeamAway().getNm()+" "+ this.getGoalsAway()+")";  
 		//String txt= Integer.toString(homeIndex) + " " + Integer.toString(awayIndex) + " "+ Integer.toString(day);
 		
 		return txt;

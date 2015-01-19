@@ -19,8 +19,8 @@ public class DBmainTest {
 	Fieldplayer p5 = new Fieldplayer("Frits", "Fritsmans", "RB", 21, 182556, true, 0, 0, 44, 56, 81, 39, 72, 58);
 	Fieldplayer p6 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
 	Fieldplayer p7 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47); 
-	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, false, 0, 0, 65, 49, 87, 55, 69, 47);
-	Fieldplayer p9 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 0, 1, 66, 52, 39, 48, 56, 87);
+	Fieldplayer p8 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, false, 2, 0, 65, 49, 87, 55, 69, 47);
+	Fieldplayer p9 = new Fieldplayer("Edward", "Stutjes", "ST", 29, 169745, true, 1, 0, 66, 52, 39, 48, 56, 87);
 
 	Team t1 = new Team("Ajax", 100000, 150000);
 	Team t2 = new Team("Feyenoord", 100000, 150000);
