@@ -132,12 +132,16 @@ public class saveGame {
 		Node database = saveElements.item(1);
 		Node team = saveElements.item(3);
 		Node current = saveElements.item(5);
-		Node comp = saveElements.item(7);
+		Node buycounter = saveElements.item(7);
+		Node sellcounter = saveElements.item(9);
+		Node comp = saveElements.item(11);
 		
 		file = infile;
 		DB = XmlParser.parseDB(database.getChildNodes());
 		myteam = DB.findTeam(team.getTextContent());
 		day = Integer.parseInt(current.getTextContent());
+		setBuyc(Integer.parseInt(buycounter.getTextContent()));
+		setSellc(Integer.parseInt(sellcounter.getTextContent()));
 		competition = XmlParser.parseCompetition(comp.getChildNodes());
 //		System.out.println(DB);
 //		System.out.println(myteam.getNm());
