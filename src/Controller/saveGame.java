@@ -137,7 +137,12 @@ public class saveGame {
 		Node comp = saveElements.item(11);
 		
 		file = infile;
-		DB = XmlParser.parseDB(database.getChildNodes());	
+		DB = XmlParser.parseDB(database.getChildNodes());
+		NodeList mine = team.getChildNodes();
+		Node name = mine.item(1);
+		Node rank = mine.item(3);
+		myteam = DB.findTeam(name.getTextContent());
+		myteam.getStanding().setRank(Integer.parseInt(rank.getTextContent()));	
 		myteam = DB.findTeam(team.getTextContent());
 		day = Integer.parseInt(current.getTextContent());
 		setBuyc(Integer.parseInt(buycounter.getTextContent()));
