@@ -58,7 +58,7 @@ public class Competition {
 	 */
 	public String toWrite() {
 		String write = "   <Competition>\r\n";
-		for(int i=1;i<34;i++) {
+		for(int i=1;i<=34;i++) {
 			write += "      <Round>\r\n";
 			write += "         <Day>"+i+"</Day>\r\n";
 			ArrayList<Match> day = getMatchesForDay(i);
