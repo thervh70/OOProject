@@ -85,6 +85,7 @@ public class saveGameTest {
 	
 	@Test
 	public void csellUpTest() {
+		saveGame.setSellc(0);
 		saveGame.csellUp();
 		assertEquals(1, saveGame.getSellc());
 		saveGame.csellUp();
