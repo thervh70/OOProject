@@ -344,7 +344,7 @@ public class Team {
 	}
 	
 	/**
-	 * Methode equals checks if two Teams are equal to each other. 
+	 * Method equals checks if two Teams are equal to each other. 
 	 * Criteria:
 	 *  - Size of both Teams has to be the same
 	 *  - Name of both Teams has to be the same

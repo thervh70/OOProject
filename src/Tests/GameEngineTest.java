@@ -63,10 +63,10 @@ public class GameEngineTest {
 	@Test
 	public void getTeamTest(){
 		//System.out.println(g.getTeamA().toString());
-		System.out.println("hoi");
-		System.out.println(alpha.toString());
-		assertEquals(alpha,g.getTeamA());
-		assertEquals(beta,g.getTeamB());
+				System.out.println("hoi");
+				System.out.println(alpha.toString());
+				assertEquals(alpha,g.getTeamA());
+				assertEquals(beta,g.getTeamB());
 	}
 	
 	@Test
@@ -86,5 +86,12 @@ public class GameEngineTest {
 		assertEquals(null,g.getGoalminutesA());
 	}
 	
+	//Doesn't work yet
+	@Test
+	public void totoTest(){
+		g.setGoalsA(1);
+		g.setGoalsB(0);
+		assertEquals(g.getToto(), 1);
+	}
 
 }
