@@ -330,39 +330,6 @@ public class Team {
 			p.clearCardInjury();
 		}
 	}
-
-	/**
-	 * @return Is true a player in the team has a red card; return false if no player in the team has a red card.
-	 */
-	public boolean checkRedCards(){
-		for(Player p : team){
-			if(p.checkRedCard())
-				return true;
-		}
-		return false;
-	}
-	
-	/**
-	 * @return	Is true a player in the team has a yellow card; return false if no player in the team has a yellow card.
-	 */
-	public boolean checkYellowCards(){
-		for(Player p : team){
-			if(p.checkYellowCard())
-				return true;
-		}
-		return false;
-	}
-	
-	/**
-	 * @return Is true if a player in the team has an injury; return false if no player in the team has an injury
-	 */
-	public boolean checkInjuries(){
-		for(Player p : team){
-			if(p.checkInjury())
-				return true;
-		}
-		return false;
-	}
 	
 	/**
 	 * Checks for all players in the selection if they are available to play(no card or injury)

@@ -2,6 +2,7 @@ package Tests;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.junit.Test;
@@ -120,6 +121,9 @@ public class CompetitionTest {
 			+ "      <Round>\r\n"
 			+ "         <Day>33</Day>\r\n"
 			+ "      </Round>\r\n"
+			+ "      <Round>\r\n"
+			+ "         <Day>34</Day>\r\n"
+			+ "      </Round>\r\n"
 			+ "   </Competition>\r\n";
 
 
@@ -216,7 +220,18 @@ public class CompetitionTest {
 	
 	@Test
 	public void setMatchesForDayTest() {
+		Competition c1 = new Competition();
+		Team t1 = new Team("Ajax", 100, 200);
+		Team t2 = new Team("Feyenoord", 50, 78);
+		Match m1 = new Match(5, t1, t2, 3, 1);
+		Match m2 = new Match(7, t2, t1, 2, 4);
+		c1.add(m1);
+		c1.add(m2);
+		c1.setMatchesForDay(7, m2);
 		
+		ArrayList<Match> list = new ArrayList<Match>();
+		list.add(m2);
+		assertEquals(c1.getMatchesForDay(7), list);
 	}
 
 }

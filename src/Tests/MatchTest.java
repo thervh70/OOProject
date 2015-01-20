@@ -33,6 +33,19 @@ public class MatchTest {
 
 	@Test
 	public void testEquals(){
+		saveGame.setDay(3);
+		Match m1 = new Match(1, t1, t2, 1, 2);
+		Match m2 = new Match(2, t2, t3, 3, 2);
+		Match m3 = new Match(1, t1, t2, 1, 2);
+		Match m4 = new Match(2, t2, t3, 3, 4);
+		
+		Match m5 = new Match(4, t1, t2);
+		Match m6 = new Match(4, t1, t2);
+		
+		m1.setHomeIndex(2);
+		m1.setAwayIndex(8);
+		m3.setHomeIndex(2);
+		m3.setAwayIndex(8);
 		assertTrue(m1.equals(m3));
 		assertFalse(m1.equals(m2));
 		assertFalse(m1.equals(write));
@@ -134,9 +147,9 @@ public class MatchTest {
 	
 	@Test
 	public void getGoalsAwaySTest() {
-		assertEquals(m1.getGoalsAwayS(), "");
-		m1.setGoalsAwayS("2");
 		assertEquals(m1.getGoalsAwayS(), "2");
+		m1.setGoalsAwayS("3");
+		assertEquals(m1.getGoalsAwayS(), "3");
 	}
 	
 }

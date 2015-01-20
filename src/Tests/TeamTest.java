@@ -308,9 +308,13 @@ public class TeamTest{
 	
 	@Test
 	public void checkAvailTest() {
-		t1.addPlayer(p8);
-		t1.addPlayer(p9);
-		t1.addPlayer(p10);
+		t1.addPlayer(p2);t1.toSelection(p2);
+		t1.addPlayer(p5);t1.toSelection(p5);
+		t1.addPlayer(p8);t1.toSelection(p8);
+		assertEquals(t1.checkAvail(), true);
+		t1.addPlayer(p9);t1.toSelection(p9);
+		t1.addPlayer(p10);t1.toSelection(p10);
+		assertEquals(t1.checkAvail(), false);
 	}
 	
 	@Test

@@ -15,16 +15,6 @@ import Controller.saveGame;
 public class XmlParser {
 
 	/**
-	 * Method main executes stuff (only for testing purposes)
-	 * @param args
-	 * @throws Exception
-	 */
-	
-	/*public static void main(String[] args) throws Exception {
-		
-	}*/
-	
-	/**
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
 	 * parserPlayer and parseKeeper are called during this process.
 	 * 

@@ -2,7 +2,6 @@ package Controller;
 
 import java.io.File;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 import Model.Competition;
 import Model.DBmain;
@@ -10,7 +9,6 @@ import Model.Match;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
-import View.Results;
 
 import org.w3c.dom.*;
 
