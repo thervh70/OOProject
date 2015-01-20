@@ -4,6 +4,9 @@
          <Teamname>ADO Den Haag</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Robert</Firstname>
@@ -561,6 +564,9 @@
          <Teamname>Ajax</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Player>
                <Firstname>Arkadiusz</Firstname>
@@ -1198,6 +1204,9 @@
          <Teamname>AZ</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Esteban</Firstname>
@@ -1787,6 +1796,9 @@
          <Teamname>Excelsior</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Jordy</Firstname>
@@ -2343,6 +2355,9 @@
          <Teamname>FC Dordrecht</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Player>
                <Firstname>Everon</Firstname>
@@ -2900,6 +2915,9 @@
          <Teamname>FC Groningen</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Sergio</Firstname>
@@ -3457,6 +3475,9 @@
          <Teamname>FC Twente</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Nick</Firstname>
@@ -4046,6 +4067,9 @@
          <Teamname>FC Utrecht</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Robbin</Firstname>
@@ -4666,6 +4690,9 @@
          <Teamname>Feyenoord</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Kenneth</Firstname>
@@ -5303,6 +5330,9 @@
          <Teamname>Go Ahead Eagles</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Player>
                <Firstname>Deniz</Firstname>
@@ -5876,6 +5906,9 @@
          <Teamname>Heracles Almelo</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Bram</Firstname>
@@ -6546,6 +6579,9 @@
          <Teamname>NAC Breda</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Jelle</Firstname>
@@ -7071,6 +7107,9 @@
          <Teamname>PEC Zwolle</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Warner</Firstname>
@@ -7628,6 +7667,9 @@
          <Teamname>PSV</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Player>
                <Firstname>Jurgen</Firstname>
@@ -8249,6 +8291,9 @@
          <Teamname>SC Cambuur</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Leonard</Firstname>
@@ -8838,6 +8883,9 @@
          <Teamname>sc Heerenveen</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Kristoffer</Firstname>
@@ -9460,6 +9508,9 @@
          <Teamname>Vitesse</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Keeper>
                <Firstname>Piet</Firstname>
@@ -9985,6 +10036,9 @@
          <Teamname>Willem II</Teamname>
          <Virtual_budget>1500000</Virtual_budget>
          <Budget>1500000</Budget>
+         <Points>0</Points>
+         <Goalsfor>0</Goalsfor>
+         <Goalsagainst>0</Goalsagainst>
          <Selection>
             <Player>
                <Firstname>Terell</Firstname>
@@ -10555,799 +10609,693 @@
          </Teammembers>
       </Team>
    </Database>
-   <Myteam>NAC Breda</Myteam>
+   <Myteam>Go Ahead Eagles</Myteam>
    <Currentday>1</Currentday>
+   <Buycounter>0</Buycounter>
+   <Sellcounter>0</Sellcounter>
    <Competition>
       <Round>
          <Day>1</Day>
          <Match>
-            <Home>Excelsior</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
             <Home>FC Twente</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>AZ</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Utrecht</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Groningen</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
             <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Dordrecht</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Excelsior</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Utrecht</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>2</Day>
          <Match>
-            <Home>Feyenoord</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>NAC Breda</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Heracles Almelo</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Willem II</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
+            <Home>AZ</Home>
             <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Heracles Almelo</Home>
             <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Willem II</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>3</Day>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Groningen</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Utrecht</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Utrecht</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Excelsior</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>4</Day>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Dordrecht</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>NAC Breda</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
             <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>5</Day>
          <Match>
-            <Home>AZ</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Go Ahead Eagles</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Go Ahead Eagles</Home>
+            <Home>Vitesse</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
             <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Excelsior</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>AZ</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Twente</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>sc Heerenveen</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Dordrecht</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Feyenoord</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>6</Day>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
+            <Home>ADO Den Haag</Home>
             <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Heracles Almelo</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Willem II</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>NAC Breda</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
+            <Home>Excelsior</Home>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Heracles Almelo</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
             <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Willem II</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>7</Day>
          <Match>
-            <Home>PEC Zwolle</Home>
+            <Home>Feyenoord</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Ajax</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PEC Zwolle</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Twente</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Excelsior</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PSV</Home>
+            <Home>NAC Breda</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
             <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Groningen</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>8</Day>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Dordrecht</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>ADO Den Haag</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
+            <Home>sc Heerenveen</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Ajax</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
             <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>9</Day>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Groningen</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
             <Home>Ajax</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Utrecht</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>AZ</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Utrecht</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>10</Day>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Excelsior</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>AZ</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>PSV</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Dordrecht</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>11</Day>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>AZ</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Go Ahead Eagles</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>NAC Breda</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Willem II</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Groningen</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Willem II</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>12</Day>
          <Match>
-            <Home>PSV</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>NAC Breda</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Excelsior</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Heracles Almelo</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Groningen</Home>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Dordrecht</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Heracles Almelo</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
@@ -11355,131 +11303,113 @@
          <Match>
             <Home>Willem II</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
             <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Go Ahead Eagles</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Vitesse</Home>
+            <Home>ADO Den Haag</Home>
             <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>SC Cambuur</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>14</Day>
          <Match>
+            <Home>Feyenoord</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
             <Home>PEC Zwolle</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
+            <Home>FC Dordrecht</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Excelsior</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>NAC Breda</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Vitesse</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
@@ -11487,791 +11417,683 @@
          <Match>
             <Home>Willem II</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PSV</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>NAC Breda</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
+            <Home>FC Dordrecht</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
             <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>AZ</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Vitesse</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Twente</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>SC Cambuur</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>16</Day>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Ajax</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PEC Zwolle</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Utrecht</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Excelsior</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Vitesse</Home>
+            <Home>FC Utrecht</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Ajax</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>17</Day>
          <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
+            <Home>FC Groningen</Home>
             <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Dordrecht</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Willem II</Home>
+            <Home>Feyenoord</Home>
             <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Heracles Almelo</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Ajax</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Willem II</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Heracles Almelo</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Vitesse</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>18</Day>
          <Match>
-            <Home>AZ</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Go Ahead Eagles</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Twente</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Excelsior</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
+            <Home>ADO Den Haag</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>sc Heerenveen</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Feyenoord</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>AZ</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>19</Day>
          <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Vitesse</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
+            <Home>FC Dordrecht</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
             <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>PEC Zwolle</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>AZ</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Vitesse</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>20</Day>
          <Match>
-            <Home>Vitesse</Home>
+            <Home>SC Cambuur</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>NAC Breda</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Feyenoord</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
+            <Home>Vitesse</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
             <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>21</Day>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
             <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PEC Zwolle</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Excelsior</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Groningen</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Dordrecht</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>AZ</Home>
+            <Home>ADO Den Haag</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PSV</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>22</Day>
          <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>NAC Breda</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
             <Home>Feyenoord</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Utrecht</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Groningen</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>PEC Zwolle</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Utrecht</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>23</Day>
          <Match>
             <Home>Willem II</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>PSV</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Excelsior</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>AZ</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Dordrecht</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>24</Day>
          <Match>
-            <Home>Ajax</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PEC Zwolle</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Excelsior</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Ajax</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Vitesse</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Groningen</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>AZ</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>25</Day>
          <Match>
-            <Home>PEC Zwolle</Home>
+            <Home>Feyenoord</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Dordrecht</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>NAC Breda</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
             <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Ajax</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>26</Day>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Excelsior</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Vitesse</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>AZ</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Twente</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>SC Cambuur</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
@@ -12279,461 +12101,398 @@
          <Match>
             <Home>Heracles Almelo</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>NAC Breda</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Ajax</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>ADO Den Haag</Home>
             <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>FC Twente</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>PEC Zwolle</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Dordrecht</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Vitesse</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Excelsior</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Groningen</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>28</Day>
          <Match>
-            <Home>SC Cambuur</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>sc Heerenveen</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Go Ahead Eagles</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Vitesse</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
+            <Home>FC Twente</Home>
             <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>29</Day>
          <Match>
-            <Home>Excelsior</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Twente</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>sc Heerenveen</Home>
+            <Home>FC Groningen</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Vitesse</Home>
             <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PEC Zwolle</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>SC Cambuur</Home>
             <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>PSV</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>sc Heerenveen</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>ADO Den Haag</Home>
+            <Home>NAC Breda</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Dordrecht</Home>
             <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>30</Day>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
             <Home>Ajax</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>NAC Breda</Home>
+            <Away>Heracles Almelo</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PEC Zwolle</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Groningen</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Willem II</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Vitesse</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>ADO Den Haag</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Twente</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Excelsior</Home>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>31</Day>
          <Match>
-            <Home>ADO Den Haag</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Dordrecht</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Ajax</Home>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Heracles Almelo</Home>
-            <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>Vitesse</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Feyenoord</Home>
-            <Away>FC Utrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>SC Cambuur</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>AZ</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Utrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Dordrecht</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Go Ahead Eagles</Home>
+            <Away>PEC Zwolle</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>SC Cambuur</Home>
-            <Away>Go Ahead Eagles</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>PSV</Home>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>Vitesse</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>32</Day>
          <Match>
-            <Home>FC Twente</Home>
+            <Home>Excelsior</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>sc Heerenveen</Home>
-            <Away>FC Groningen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>FC Groningen</Home>
+            <Away>ADO Den Haag</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>SC Cambuur</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Ajax</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>PSV</Home>
-            <Away>NAC Breda</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>sc Heerenveen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>PEC Zwolle</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>NAC Breda</Home>
+            <Away>Ajax</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>Feyenoord</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>SC Cambuur</Home>
+            <Away>AZ</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>FC Twente</Home>
+            <Away>Go Ahead Eagles</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Vitesse</Home>
-            <Away>Feyenoord</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Excelsior</Home>
-            <Away>AZ</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
             <Away>Willem II</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
       <Round>
          <Day>33</Day>
          <Match>
-            <Home>AZ</Home>
-            <Away>ADO Den Haag</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Go Ahead Eagles</Home>
+            <Away>FC Dordrecht</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>Willem II</Home>
-            <Away>Ajax</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Vitesse</Home>
-            <Away>Excelsior</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
-         </Match>
-         <Match>
-            <Home>Go Ahead Eagles</Home>
             <Away>PEC Zwolle</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>SC Cambuur</Home>
-            <Away>PSV</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Twente</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>Feyenoord</Home>
+            <Home>Vitesse</Home>
+            <Away>Feyenoord</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>sc Heerenveen</Home>
+            <Away>NAC Breda</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
+         </Match>
+         <Match>
+            <Home>AZ</Home>
             <Away>Heracles Almelo</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
             <Home>FC Utrecht</Home>
-            <Away>sc Heerenveen</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Away>FC Groningen</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>NAC Breda</Home>
-            <Away>FC Dordrecht</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>Ajax</Home>
+            <Away>PSV</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
          <Match>
-            <Home>FC Groningen</Home>
-            <Away>FC Twente</Away>
-            <Homescore>0</Homescore>
-            <Awayscore>0</Awayscore>
-            <Played>true</Played>
+            <Home>ADO Den Haag</Home>
+            <Away>Excelsior</Away>
+            <Homescore>-1</Homescore>
+            <Awayscore>-1</Awayscore>
          </Match>
       </Round>
    </Competition>
