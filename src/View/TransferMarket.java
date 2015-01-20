@@ -216,7 +216,7 @@ public class TransferMarket {
 		Style.setButtonStyle(confirm, 45);
 		
 		VBox vbox = new VBox(15);
-		Style.setLocation(vbox, 900, 200);
+		Style.setLocation(vbox, 1200, 200);
 		vbox.setAlignment(Pos.CENTER);
 		
 		Text selected = new Text("You have selected: ");

@@ -30,6 +30,9 @@ public class Budget {
 			buyTeam.addBudget_rel(bid);
 			buyTeam.addBudget_vir(bid);
 			
+			//Raises buyc in the savegame, this means you can only bid on three players on one day
+			saveGame.cbuyUp();
+			
 			CreateSelection.create(buyTeam);
 		}
 		//If the team does become to small, the player gets returned to the original team and an exception is thrown
@@ -57,8 +60,6 @@ public class Budget {
 	 * @throws Exception
 	 */
 	public static boolean bid(Player p, Team buyTeam, int bid) throws Exception {
-		//Raises buyc in the savegame, this means you can only bid on three players on one day
-		saveGame.cbuyUp();
 		//Gets your team from the savegame
 		Team myTeam = saveGame.getMyTeam();
 		//Check to see if you can afford the player
@@ -146,8 +147,6 @@ public class Budget {
 	 * @throws Exception
 	 */
 	public static String tosell(Player p) throws Exception{
-		//Raises sellc in the savegame, this means you can only sell three players on one day
-		saveGame.csellUp();
 		//Gets your team from the savegame
 		Team myTeam = saveGame.getMyTeam();
 		//Makes a backup of your team in case something goes wrong
@@ -171,6 +170,11 @@ public class Budget {
 				oldSell = d.getTeam(r);
 				sellTeam = oldSell;
 			}
+			
+			//Moves the player from your team to the randomly selected team
+			myTeam.removePlayer(p);
+			sellTeam.addPlayer(p);
+			
 			//Checks to see if your team won't become too small if you sell the player you are trying to sell
 			if(CreateSelection.checkSize(myTeam)){
 				//Adds the price of the player to your budget
@@ -179,20 +183,21 @@ public class Budget {
 				//Subtracts the price of the player from the randomly selected teams budget
 				sellTeam.subtractBudget_rel(p.getPri());
 				sellTeam.subtractBudget_vir(p.getPri());
-				//Moves the player from your team to the randomly selected team
-				myTeam.removePlayer(p);
-				sellTeam.addPlayer(p);
 				//Creates a new selection for your team
 				CreateSelection.create(myTeam);
+				//Update the teams in the database to the edited teams
+				saveGame.refreshTeam(oldSell, sellTeam);
+				saveGame.refreshTeam(oldMy, myTeam);
+				//Raises sellc in the savegame, this means you can only sell three players on one day
+				saveGame.csellUp();
+				return sellTeam.getNm();
 			}
 			//If your team becomes too small an exception is thrown
 			else{
+				myTeam.addPlayer(p);
+				sellTeam.removePlayer(p);
 				throw new Exception();
-			}
-			//Update the teams in the database to the edited teams
-			saveGame.refreshTeam(oldSell, sellTeam);
-			saveGame.refreshTeam(oldMy, myTeam);
-			return sellTeam.getNm();
+			}			
 		}
 		return null;
 	}
