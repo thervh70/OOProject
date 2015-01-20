@@ -15,7 +15,7 @@ public class FieldplayerTest {
 	Fieldplayer fp5 = new Fieldplayer("Gijsje", "Truusje", "CDM", 25, 154679, true, 0, 0, 65, 49, 87, 55, 69, 47);
 	Fieldplayer fp6 = new Fieldplayer("Guus", "Meeuwis", "RW", 35, 19546, true, 0, 0, 33, 86, 16, 46, 71, 22);
 	Fieldplayer fp7 = new Fieldplayer("Guus", "Meeuwis", "CAM", 35, 19546, true, 0, 0, 33, 86, 16, 46, 71, 22);
-	Fieldplayer fp8 = new Fieldplayer("Edward", "Stutjes", "CM", 29, 169745, true, 0, 0, 66, 52, 39, 48, 56, 87);
+	Fieldplayer fp8 = new Fieldplayer("Edward", "Stutjes", "CM", 29, 169745, true, 0, 6, 66, 52, 39, 48, 56, 87);
 	Fieldplayer fp9 = new Fieldplayer("Edward", "Stutjes", "LB", 29, 169745, true, 1, 0, 66, 52, 39, 48, 56, 87);
 	Fieldplayer fp10 = new Fieldplayer("Edward", "Stutjes", "CB", 29, 169745, false, 2, 0, 66, 52, 39, 48, 56, 87);
 
@@ -85,6 +85,31 @@ public class FieldplayerTest {
 	}
 	
 	@Test
+	public void checkRedCardTest() {
+		assertEquals(fp1.checkRedCard(), false);
+		assertEquals(fp10.checkRedCard(), true);
+	}
+	
+	@Test
+	public void checkYellowCardTest() {
+		assertEquals(fp1.checkYellowCard(), false);
+		assertEquals(fp9.checkYellowCard(), true);
+	}
+	
+	@Test
+	public void checkInjuryTest() {
+		assertEquals(fp1.checkInjury(), false);
+		assertEquals(fp8.checkInjury(), true);
+	}
+	
+	@Test
+	public void getInjuryTest() {
+		assertEquals(fp1.getInjury(), "");
+		fp1.setDur(2);
+		assertEquals(fp1.getInjury(), "2");
+	}
+	
+	@Test
 	public void setPacTest() {
 		assertEquals(fp1.getPac(), 44);
 		fp1.setPac(55);
@@ -125,4 +150,64 @@ public class FieldplayerTest {
 		fp1.setPhy(55);
 		assertEquals(fp1.getPhy(), 55);
 	}
+	
+	@Test
+	public void setFnmTest() {
+		assertEquals(fp1.getFnm(), "Frits");
+		fp1.setFnm("Guus");
+		assertEquals(fp1.getFnm(), "Guus");
+	}
+	
+	@Test
+	public void setLnmTest() {
+		assertEquals(fp1.getLnm(), "Fritsmans");
+		fp1.setLnm("Guus");
+		assertEquals(fp1.getLnm(), "Guus");
+	}
+	
+	@Test
+	public void setPosTest() {
+		assertEquals(fp1.getPos(), "RB");
+		fp1.setPos("Guus");
+		assertEquals(fp1.getPos(), "Guus");
+	}
+	
+	@Test
+	public void setAgeTest() {
+		assertEquals(fp1.getAge(), 21);
+		fp1.setAge(23);
+		assertEquals(fp1.getAge(), 23);
+	}
+	
+	@Test
+	public void setPriTest() {
+		assertEquals(fp1.getPri(), 182556);
+		fp1.setPri(10000);
+		assertEquals(fp1.getPri(), 10000);
+	}
+	
+	@Test
+	public void setPlayTest() {
+		assertEquals(fp1.getPlay(), true);
+		fp1.setPlay(false);
+		assertEquals(fp1.getPlay(), false);
+	}
+	
+	@Test
+	public void setCardTest() {
+		assertEquals(fp1.getCard(), 0);
+		fp1.setCard(2);
+		assertEquals(fp1.getCard(), 2);
+		fp1.setAvail();
+		assertEquals(fp1.getCard(), 0);
+		assertEquals(fp1.getPlay(), true);
+	}
+	
+	@Test
+	public void setDurTest() {
+		assertEquals(fp1.getDur(), 0);
+		fp1.setDur(7);
+		assertEquals(fp1.getDur(), 7);
+	}
+	
 }

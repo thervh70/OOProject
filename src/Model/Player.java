@@ -131,6 +131,7 @@ public abstract class Player {
 	public int getPri() {return pri; }
 	public boolean getPlay() {return play; }
 	public int getCard() {return card; }
+	public int getCardTime() {return cardTime; }
 	public int getDur() {return dur; }
 	public String getInjury() {
 		if(this.dur == 0){
@@ -153,6 +154,7 @@ public abstract class Player {
 	public void setPri(int pri) {this.pri = pri; }
 	public void setPlay(boolean play) {this.play = play; }
 	public void setCard(int card) {this.card = card; }
+	public void setCardTime(int cardTime) {this.cardTime = cardTime; }
 	public void setAvail() {this.card = 0; this.play = true; }
 	public void setDur(int dur) {this.dur = dur; }
 	
