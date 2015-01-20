@@ -105,4 +105,63 @@ public class GoalkeeperTest {
 		assertEquals(fp1.getHei(), 55);
 	}
 
+	@Test
+	public void cardTest(){
+		assertTrue(fp1.card() >= 0 && fp1.card() <= 2);
+		int number = fp1.card();
+		while(number != 1){
+			number = fp1.card();
+		}
+		assertTrue(number == 1);
+		while(number != 2){
+			number = fp1.card();
+		}
+		assertTrue(number == 2);
+	}
+	
+	@Test
+	public void injuryTest(){
+		
+		int number = fp1.injury();
+		while(number != 0){
+			number = fp1.injury();
+		}
+		assertTrue(number  == 0);
+		while(number != 5){
+			number = fp1.injury();
+		}
+
+		assertTrue(number  == 5);
+	}
+	
+	@Test
+	public void clearCardInjuryTest(){
+		fp1.setPlay(false);
+		fp1.setDur(1);
+		fp1.clearCardInjury();
+		assertTrue(fp1.getPlay());
+		fp1.setDur(0);
+		fp1.clearCardInjury();
+		assertTrue(fp1.getPlay());
+		fp1.setPlay(false);
+		fp1.setDur(3);
+		fp1.clearCardInjury();
+		assertFalse(fp1.getPlay());
+	}
+	
+	@Test
+	public void checkRedCardTest(){
+		fp1.setCard(2);
+		assertTrue(fp1.checkRedCard());
+		fp1.setCard(1);
+		assertFalse(fp1.checkRedCard());
+	}
+	
+	@Test
+	public void checkYellowCardTest(){
+		fp1.setCard(1);
+		assertTrue(fp1.checkYellowCard());
+		fp1.setCard(2);
+		assertFalse(fp1.checkYellowCard());
+	}
 }
