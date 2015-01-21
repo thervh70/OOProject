@@ -46,26 +46,27 @@ public class BudgetTest {
 	
 	@SuppressWarnings("static-access")
 	@Test
-	public void bidTest(){
-		System.out.println(t2.getBdgt_vir());
-		for (int i = 0; i < 20; i++) {
-			s.setBuyc(0);
-			assertEquals(s.getBuyc(), 0);
-			s.setMyteam(t1);
-			assertFalse(t1.containsPlayer(p2));
-			assertTrue(t2.containsPlayer(p2));
+	public void bidTest0(){
+		s.setBuyc(0);
+		assertEquals(s.getBuyc(), 0);
+		s.setMyteam(t1);
+		assertFalse(t1.containsPlayer(p2));
+		assertTrue(t2.containsPlayer(p2));
+		double[] bids = {0.7,0.85,0.95,1.05,1.25,1.75,3};
+		for (int i = 0; i < bids.length+1; i++) {
+			boolean b;
 			try {
-				boolean b = Budget.bid(p2, t2, p2.getPri());
-				System.out.println(b);
+				b = Budget.bid(p2, t2, (int) (bids[i] * p2.getPri()));
 				if (!b) {
 					assertFalse(t1.containsPlayer(p2));
 					assertTrue(t2.containsPlayer(p2));
-				} 
-				else if(b) {
+				} else {
 					assertTrue(t1.containsPlayer(p2));
 					assertFalse(t2.containsPlayer(p2));
 				}
 			} catch (Exception e) {
+				assertFalse(t1.containsPlayer(p2));
+				assertTrue(t2.containsPlayer(p2));
 			}
 		}
 	}
@@ -78,6 +79,7 @@ public class BudgetTest {
 			Budget.buy(p1, t1, 200000, t2);	
 			assertTrue(t2.containsPlayer(p1));
 		} catch (Exception e) {
+			assertFalse(t2.containsPlayer(p1));
 		}
 	}
 }

@@ -166,4 +166,9 @@ public class GameEngineTest {
 		setDB();
 		g.play(alpha, beta);
 	}
+	
+	@Test
+	public void makeTotoTest(){
+		assertEquals(0,g.makeToto());
+	}
 }

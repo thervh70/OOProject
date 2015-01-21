@@ -1,20 +1,12 @@
 package Controller;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import Model.DBmain;
 import Model.Player;
 import Model.Team;
-import Model.XmlParser;
 
 /**The root of our game.
  * This class calculates the score for a match along with the stats of a match.
@@ -146,14 +138,20 @@ public class gameEngine {
 		Arrays.sort(goalminutesB);
 		Arrays.sort(injuryminutesB);
 		
-		if(goalsA > goalsB){toto = 1;}
-		else if(goalsB > goalsA){toto = 2;}
-		else if(goalsA == goalsB){toto = 0;}
+		makeToto();
 		
 		saveGame.refreshTeam(alpha, teamA);
 		saveGame.refreshTeam(beta, teamB);
 	}
 	
+	@SuppressWarnings("null")
+	public int makeToto() {
+		if(goalsA > goalsB){toto = 1; return toto;}
+		else if(goalsB > goalsA){toto = 2; return toto;}
+		else if(goalsA == goalsB){toto = 0; return toto;}
+		return (Integer) null;		
+	}
+
 	/**An attack needs 2 values: 1 attacking (Team A) and 1 defending (Team B)
 	 * Int d is calculated first. This value represents the amount of goal attempts.
 	 * The for loop is initiated, with the amount of attempts as max.
