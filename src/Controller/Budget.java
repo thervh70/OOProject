@@ -16,7 +16,7 @@ public class Budget {
  * @param myTeam - Your team
  * @throws Exception - Exception
  */
-	private static void buy(Player p, Team buyTeam, int bid, Team myTeam) throws Exception {
+	public static void buy(Player p, Team buyTeam, int bid, Team myTeam) throws Exception {
 		//Create backups of the teams in case something goes wrong
 		Team oldBuy = buyTeam;
 		Team oldMy = myTeam;
@@ -49,7 +49,7 @@ public class Budget {
 	 * @param bid - The amount of money you are bidding
 	 * @param myTeam - Your team
 	 */
-	private static void refund(int bid, Team myTeam){
+	public static void refund(int bid, Team myTeam){
 		myTeam.addBudget_vir(bid);
 	}
 	/**Method to bid on players
@@ -67,7 +67,7 @@ public class Budget {
 			//subtracts the price of the player from the virtual budget
 			myTeam.subtractBudget_vir(bid);
 			//If you bid under 80% of the player price your offer is automatically rejected
-			if(!(bid<(0.8*p.getPri()))){
+			if((bid>(0.8*p.getPri()))){
 				//If the bid is between 80% and 90% of the player price this branch is executed
 				if(bid<=(0.9*p.getPri())){
 					//There is a 40% chance your order is accepted

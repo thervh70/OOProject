@@ -1,8 +1,7 @@
 package Tests;
 
-import static org.junit.Assert.*;
 
-import java.util.Scanner;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 

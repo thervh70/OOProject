@@ -1,8 +1,8 @@
 package Tests;
 
+
 import static org.junit.Assert.*;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,7 +17,7 @@ import Model.XmlParser;
 public class GameEngineTest {
 	
 	gameEngine g = new gameEngine();
-	DBmain db = XmlParser.parseDB();
+	static DBmain db = XmlParser.parseDB();
 	Team alpha = XmlParser.parseDB().getTeam(0);
 	Team beta = XmlParser.parseDB().getTeam(1);
 	
@@ -26,6 +26,10 @@ public class GameEngineTest {
 	        min.add(i);
 	    }
 	}	
+	
+	public static void setDB(){
+		saveGame.setDB(db);
+	}
 
 	@Test
 	public void constructorTest(){
@@ -79,16 +83,87 @@ public class GameEngineTest {
 	}
 	
 	@Test
-	public void getGoalMinutes(){
-		assertEquals(null,g.getGoalminutesA());
+	public void getTotoTest(){
+		assertEquals(0, g.getToto());
 	}
 	
 	@Test
-	public void totoTest(){
-		g.setGoalsA(1);
-		g.setGoalsB(0);
-		assertEquals(0, g.getToto());
-		System.out.println(g.getToto());
+	public void getYellowCardsTest(){
+		assertEquals(0,g.getYellowcardsA());
+		assertEquals(0,g.getYellowcardsB());
+	}
+	
+	@Test
+	public void getRedCardsTest(){
+		assertEquals(0,g.getRedcardsA());
+		assertEquals(0,g.getRedcardsB());
+	}
+	
+	@Test
+	public void getInjuriesTest(){
+		assertEquals(0,g.getInjuriesA());
+		assertEquals(0,g.getInjuriesB());
+	}
+	
+	@Test
+	public void getAttempts(){
+		assertEquals(0,g.getAttempts());
+	}
+	
+	@Test
+	public void getGoalMinutesTest(){
+		assertEquals(null,g.getGoalminutesA());
+		assertEquals(null,g.getGoalminutesB());
+	}
+	
+	@Test
+	public void getAttemptMinutesTest(){
+		assertEquals(null,g.getAttemptminutesA());
+		assertEquals(null,g.getAttemptminutesB());
+	}
+	
+	@Test
+	public void getYellowCardMinutesTest(){
+		assertEquals(null,g.getYellowcardminutesA());
+		assertEquals(null,g.getYellowcardminutesB());
+	}
+	
+	@Test
+	public void getRedCardMinutesTest(){
+		assertEquals(null,g.getRedcardminutesA());
+		assertEquals(null,g.getRedcardminutesB());
+	}
+	
+	@Test
+	public void getInjuryMinutesTest(){
+		assertEquals(null,g.getInjuryminutesA());
+		assertEquals(null,g.getInjuryminutesB());
+	}
+	
+	@SuppressWarnings("static-access")
+	@Test
+	public void getYellowPlayer(){
+		assertNotEquals(null,g.getYellowPlayerA());
+		assertNotEquals(null,g.getYellowPlayerB());
 	}
 
+	@SuppressWarnings("static-access")
+	@Test
+	public void getRedPlayer(){
+		assertNotEquals(null,g.getRedPlayerA());
+		assertNotEquals(null,g.getRedPlayerB());
+	}
+	
+	@SuppressWarnings("static-access")
+	@Test
+	public void getInjuredPlayer(){
+		assertNotEquals(null,g.getInjuredPlayerA());
+		assertNotEquals(null,g.getInjuredPlayerB());
+	}
+	
+	@Test
+	public void playTest(){
+		setDB();
+		g.play(alpha, beta);
+	}
 }

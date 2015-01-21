@@ -228,246 +228,35 @@ public class gameEngine {
 		return false;
 	}
 
-	public Team getTeamA() {
-		return teamA;
-	}
-
-	public void setTeamA(Team teamA) {
-		this.teamA = teamA;
-	}
-
-	public Team getTeamB() {
-		return teamB;
-	}
-
-	public void setTeamB(Team teamB) {
-		this.teamB = teamB;
-	}
-
-	public int getAttemptsA() {
-		return attemptsA;
-	}
-
-	public void setAttemptsA(int attemptsA) {
-		this.attemptsA = attemptsA;
-	}
-
-	public int getAttemptsB() {
-		return attemptsB;
-	}
-
-	public void setAttemptsB(int attemptsB) {
-		this.attemptsB = attemptsB;
-	}
-
-	public int getGoalsA() {
-		return goalsA;
-	}
-
-	public void setGoalsA(int goalsA) {
-		this.goalsA = goalsA;
-	}
-
-	public int getGoalsB() {
-		return goalsB;
-	}
-
-	public void setGoalsB(int goalsB) {
-		this.goalsB = goalsB;
-	}
-
-	public int getYellowcardsA() {
-		return yellowcardsA;
-	}
-
-	public void setYellowcardsA(int yellowcardsA) {
-		this.yellowcardsA = yellowcardsA;
-	}
-
-	public int getYellowcardsB() {
-		return yellowcardsB;
-	}
-
-	public void setYellowcardsB(int yellowcardsB) {
-		this.yellowcardsB = yellowcardsB;
-	}
-
-	public int getRedcardsA() {
-		return redcardsA;
-	}
-
-	public void setRedcardsA(int redcardsA) {
-		this.redcardsA = redcardsA;
-	}
-
-	public int getRedcardsB() {
-		return redcardsB;
-	}
-
-	public void setRedcardsB(int redcardsB) {
-		this.redcardsB = redcardsB;
-	}
-
-	public int getInjuriesA() {
-		return injuriesA;
-	}
-
-	public void setInjuriesA(int injuriesA) {
-		this.injuriesA = injuriesA;
-	}
-
-	public int getInjuriesB() {
-		return injuriesB;
-	}
-
-	public void setInjuriesB(int injuriesB) {
-		this.injuriesB = injuriesB;
-	}
-
-	public int getAttempts() {
-		return attempts;
-	}
-
-	public void setAttempts(int attempts) {
-		this.attempts = attempts;
-	}
-
-	public int getToto() {
-		return toto;
-	}
-
-	public void setToto(int toto) {
-		this.toto = toto;
-	}
-
-	public int[] getGoalminutesA() {
-		return goalminutesA;
-	}
-
-	public void setGoalminutesA(int[] goalminutesA) {
-		this.goalminutesA = goalminutesA;
-	}
-
-	public int[] getGoalminutesB() {
-		return goalminutesB;
-	}
-
-	public void setGoalminutesB(int[] goalminutesB) {
-		this.goalminutesB = goalminutesB;
-	}
-
-	public int[] getAttemptminutesA() {
-		return attemptminutesA;
-	}
-
-	public void setAttemptminutesA(int[] attemptminutesA) {
-		this.attemptminutesA = attemptminutesA;
-	}
-
-	public int[] getAttemptminutesB() {
-		return attemptminutesB;
-	}
-
-	public void setAttemptminutesB(int[] attemptminutesB) {
-		this.attemptminutesB = attemptminutesB;
-	}
-
-	public int[] getYellowcardminutesA() {
-		return yellowcardminutesA;
-	}
-
-	public void setYellowcardminutesA(int[] yellowcardminutesA) {
-		this.yellowcardminutesA = yellowcardminutesA;
-	}
-
-	public int[] getRedcardminutesA() {
-		return redcardminutesA;
-	}
-
-	public void setRedcardminutesA(int[] redcardminutesA) {
-		this.redcardminutesA = redcardminutesA;
-	}
-
-	public int[] getYellowcardminutesB() {
-		return yellowcardminutesB;
-	}
-
-	public void setYellowcardminutesB(int[] yellowcardminutesB) {
-		this.yellowcardminutesB = yellowcardminutesB;
-	}
-
-	public int[] getRedcardminutesB() {
-		return redcardminutesB;
-	}
-
-	public void setRedcardminutesB(int[] redcardminutesB) {
-		this.redcardminutesB = redcardminutesB;
-	}
-
-	public int[] getInjuryminutesA() {
-		return injuryminutesA;
-	}
-
-	public void setInjuryminutesA(int[] injuryminutesA) {
-		this.injuryminutesA = injuryminutesA;
-	}
-
-	public int[] getInjuryminutesB() {
-		return injuryminutesB;
-	}
-
-	public void setInjuryminutesB(int[] injuryminutesB) {
-		this.injuryminutesB = injuryminutesB;
-	}
-
-	public static ArrayList<Player> getYellowPlayerA() {
-		return yellowPlayerA;
-	}
-
-	public static void setYellowPlayerA(ArrayList<Player> yellowPlayerA) {
-		gameEngine.yellowPlayerA = yellowPlayerA;
-	}
-
-	public static ArrayList<Player> getYellowPlayerB() {
-		return yellowPlayerB;
-	}
-
-	public static void setYellowPlayerB(ArrayList<Player> yellowPlayerB) {
-		gameEngine.yellowPlayerB = yellowPlayerB;
-	}
-
-	public static ArrayList<Player> getRedPlayerA() {
-		return redPlayerA;
-	}
-
-	public static void setRedPlayerA(ArrayList<Player> redPlayerA) {
-		gameEngine.redPlayerA = redPlayerA;
-	}
-
-	public static ArrayList<Player> getRedPlayerB() {
-		return redPlayerB;
-	}
-
-	public static void setRedPlayerB(ArrayList<Player> redPlayerB) {
-		gameEngine.redPlayerB = redPlayerB;
-	}
-
-	public static ArrayList<Player> getInjuredPlayerA() {
-		return injuredPlayerA;
-	}
-
-	public static void setInjuredPlayerA(ArrayList<Player> injuredPlayerA) {
-		gameEngine.injuredPlayerA = injuredPlayerA;
-	}
-
-	public static ArrayList<Player> getInjuredPlayerB() {
-		return injuredPlayerB;
-	}
-
-	public static void setInjuredPlayerB(ArrayList<Player> injuredPlayerB) {
-		gameEngine.injuredPlayerB = injuredPlayerB;
-	}
-
+	public Team getTeamA() {return teamA;}
+	public Team getTeamB() {return teamB;}
+	public int getAttemptsA() {return attemptsA;}
+	public int getAttemptsB() {return attemptsB;}
+	public int getGoalsA() {return goalsA;}
+	public int getGoalsB() {return goalsB;}
+	public int getYellowcardsA() {return yellowcardsA;}
+	public int getYellowcardsB() {return yellowcardsB;}
+	public int getRedcardsA() {return redcardsA;}
+	public int getRedcardsB() {return redcardsB;}
+	public int getInjuriesA() {return injuriesA;}
+	public int getInjuriesB() {return injuriesB;}
+	public int getAttempts() {return attempts;}
+	public int getToto() {return toto;}
+	public int[] getGoalminutesA() {return goalminutesA;}
+	public int[] getGoalminutesB() {return goalminutesB;}
+	public int[] getAttemptminutesA() {return attemptminutesA;}
+	public int[] getAttemptminutesB() {return attemptminutesB;}
+	public int[] getYellowcardminutesA() {return yellowcardminutesA;}
+	public int[] getYellowcardminutesB() {return yellowcardminutesB;}
+	public int[] getRedcardminutesA() {return redcardminutesA;}
+	public int[] getRedcardminutesB() {return redcardminutesB;}
+	public int[] getInjuryminutesA() {return injuryminutesA;}
+	public int[] getInjuryminutesB() {return injuryminutesB;}
+	public static ArrayList<Player> getYellowPlayerA() {return yellowPlayerA;}
+	public static ArrayList<Player> getYellowPlayerB() {return yellowPlayerB;}
+	public static ArrayList<Player> getRedPlayerA() {return redPlayerA;}
+	public static ArrayList<Player> getRedPlayerB() {return redPlayerB;}
+	public static ArrayList<Player> getInjuredPlayerA() {return injuredPlayerA;}
+	public static ArrayList<Player> getInjuredPlayerB() {return injuredPlayerB;}
 	
-
 }

@@ -1,12 +1,11 @@
 package Tests;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import Controller.Budget;
 import Model.DBmain;
-import Model.Fieldplayer;
-import Model.Goalkeeper;
 import Model.Player;
 import Model.Team;
 import Model.XmlParser;
@@ -23,6 +22,7 @@ public class BudgetTest {
 	Player p2 = t2.getPlayer(1);
 	
 	
+	@SuppressWarnings("static-access")
 	@Test
 	public void tosellTest() throws Exception{
 		s.setMyteam(t1);
@@ -38,21 +38,45 @@ public class BudgetTest {
 	}
 	
 	@Test
+	public void refundTest(){
+		assertEquals(1500000, t1.getBdgt_vir());
+		Budget.refund(1, t1);
+		assertEquals(1500001, t1.getBdgt_vir());
+	}
+	
+	@SuppressWarnings("static-access")
+	@Test
 	public void bidTest(){
-		s.setBuyc(0);
-		assertEquals(s.getBuyc(),0);
-		s.setMyteam(t1);
-		assertFalse(t1.containsPlayer(p2));
-		assertTrue(t2.containsPlayer(p2));
+		System.out.println(t2.getBdgt_vir());
+		for (int i = 0; i < 20; i++) {
+			s.setBuyc(0);
+			assertEquals(s.getBuyc(), 0);
+			s.setMyteam(t1);
+			assertFalse(t1.containsPlayer(p2));
+			assertTrue(t2.containsPlayer(p2));
+			try {
+				boolean b = Budget.bid(p2, t2, p2.getPri());
+				System.out.println(b);
+				if (!b) {
+					assertFalse(t1.containsPlayer(p2));
+					assertTrue(t2.containsPlayer(p2));
+				} 
+				else if(b) {
+					assertTrue(t1.containsPlayer(p2));
+					assertFalse(t2.containsPlayer(p2));
+				}
+			} catch (Exception e) {
+			}
+		}
+	}
+	
+	@SuppressWarnings("static-access")
+	@Test
+	public void buyTest(){
 		try {
-			if(Budget.bid(p2,t2,t1.getBdgt_vir())==false){
-				assertFalse(t1.containsPlayer(p2));
-				assertTrue(t2.containsPlayer(p2));
-			}
-			else{
-				assertTrue(t1.containsPlayer(p2));
-				assertFalse(t2.containsPlayer(p2));
-			}
+			s.setDB(db);
+			Budget.buy(p1, t1, 200000, t2);	
+			assertTrue(t2.containsPlayer(p1));
 		} catch (Exception e) {
 		}
 	}
