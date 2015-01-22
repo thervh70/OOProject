@@ -1,9 +1,6 @@
 package Model;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
 
 import javax.xml.parsers.*;
 
@@ -71,8 +68,8 @@ public class XmlParser {
 			switch(matchattr.item(i).getNodeName()) {
 			case "Home": homename = content; break;
 			case "Away": awayname = content; break;
-			case "Homescore": if(content.equals("0")) {homescore = -1; }else {homescore = Integer.parseInt(content); }break;
-			case "Awayscore": if(content.equals("0")) {awayscore = -1; }else {awayscore = Integer.parseInt(content); }break;
+			case "Homescore": {homescore = Integer.parseInt(content); }break;
+			case "Awayscore": {awayscore = Integer.parseInt(content); }break;
 			}
 		}
 		Team t1 = saveGame.getDB().findTeam(homename);
