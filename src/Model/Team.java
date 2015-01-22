@@ -398,9 +398,9 @@ public class Team {
 	public Standing getStanding() {return this.standing;}
 	/**@return a certain Player from a Team*/
 	public Player getPlayer(int i) {return team.get(i);}
-	/**@return the name from a Team*/
+	/**@return a certain Player from a selection of a Team*/
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
-	/**@return the name from a Team*/
+	/**@return the goalkeeper from a selection of a Team*/
 	public Goalkeeper getSelectionKeeper() {
 		for(int i = 0; i < getSelectionSize(); i++){
 			Player p = getSelectionPlayer(i);
@@ -414,8 +414,11 @@ public class Team {
 	 * Setters
 	 */
 	
+	/**Sets the name of a Team*/
 	public void setNm(String name) {this.nm = name;}
+	/**Sets the virtual budget of a Team*/
 	public void setBdgt_vir(int budget_vir) {this.bdgt_vir = budget_vir;}
+	/**Sets the real budget of a Team*/
 	public void setBdgt_rel(int budget_rel) {this.bdgt_rel = budget_rel;}
 	
 	/**

@@ -9,6 +9,7 @@ public class Competition {
 	/**
 	 * Create a competion. In this object we will have an arraylist with all the matches that are and played and those that will be played
 	 */
+	
 	public Competition() {
 		matches = new ArrayList<Match>();
 	}
@@ -17,6 +18,7 @@ public class Competition {
 	 * add a match to the competition
 	 * @param match		Match object
 	 */
+	
 	public void add(Match match){
 		if(!matches.contains(match)) {
 			matches.add(match);
@@ -27,6 +29,7 @@ public class Competition {
 	 * remove a match from the competition
 	 * @param match		Match object
 	 */
+	
 	public void remove(Match match) {
 		matches.remove(match);
 	}
@@ -38,6 +41,11 @@ public class Competition {
 		}
 		return txt;
 	}
+	
+	/**
+	 * Checks if two Competitions are equals to each other.
+	 * It checks if both Competitions contain the same matches!
+	 */
 	
 	public boolean equals(Object obj){
 		if(!(obj instanceof Competition)){
@@ -56,6 +64,7 @@ public class Competition {
 	/**
 	 * @return String representation of the competition
 	 */
+	
 	public String toWrite() {
 		String write = "   <Competition>\r\n";
 		for(int i=1;i<=34;i++) {
@@ -74,6 +83,7 @@ public class Competition {
 	/**
 	 * @return	the amount of matches
 	 */
+	
 	public int getSize(){
 		return matches.size();
 	}
@@ -82,6 +92,7 @@ public class Competition {
 	 * @param index
 	 * @return the Match object with this index in the arraylist
 	 */
+	
 	public Match get(int index){
 		return matches.get(index);
 	}
@@ -90,6 +101,7 @@ public class Competition {
 	 * @param day 
 	 * @return an arraylist with all the matches for a certain day
 	 */
+	
 	public ArrayList<Match> getMatchesForDay(int day){
 		ArrayList<Match> matches= new ArrayList<Match>();
 		for(int i = 0; i < this.getSize(); i++){
@@ -107,6 +119,7 @@ public class Competition {
 	 * @param day the day that has just passed
 	 * @param m
 	 */
+	
 	public void setMatchesForDay(int day, Match m){
 		for (int i = 0; i < this.matches.size(); i++) {
 			Match matchSchedule = this.matches.get(i);
