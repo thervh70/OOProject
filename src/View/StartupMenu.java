@@ -18,8 +18,8 @@ import javafx.stage.Stage;
 
 public class StartupMenu {
 	
-	/*The method start shows the startup menu for the new 
-	 * up and coming game Frits!
+	/**This shows the startupmenu where you can choose between a new game, to load a game or to exit the game.
+	 *
 	 * 
 	 * @param primaryStage - The window
 	 */
@@ -45,6 +45,9 @@ public class StartupMenu {
 		
 		//Give click functionality to "New Game", directs to Team Picking 
 		newGame.setOnAction(new EventHandler<ActionEvent>(){
+			/**Gives functionality to the "New Game" button to transition to the team picking screen on mouse click.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e){
 				try {
@@ -58,6 +61,9 @@ public class StartupMenu {
 		
 		//Give click functionality to "Load Game", directs to "Management Center"
 		loadGame.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Load Game" button to transition to the LoadGame screen on mouse click.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				LoadGame.start(primaryStage);
@@ -66,6 +72,9 @@ public class StartupMenu {
 		
 		//Give click functionality to "Exit", closes the window
 		exit.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Exit" button to exit the application on mouse click.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 

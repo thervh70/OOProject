@@ -204,6 +204,15 @@ public class FieldplayerTest {
 	}
 	
 	@Test
+	public void setCardTimeTest() {
+		assertEquals(fp1.getCard(), 0);
+		fp1.setCardTime(7);
+		assertEquals(fp1.getCardTime(), 7);
+		fp1.setCardTime(0);
+		assertEquals(fp1.getCardTime(), 0);
+	}
+	
+	@Test
 	public void setDurTest() {
 		assertEquals(fp1.getDur(), 0);
 		fp1.setDur(7);

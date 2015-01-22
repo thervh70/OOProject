@@ -10,6 +10,12 @@ import Model.Team;
 import Model.XmlParser;
 
 public class StandingTest {
+	
+	@Test
+	public void constructorTest() {
+		Standing s = new Standing();
+		assertNotEquals(null, s);
+	}
 
 	@Test
 	public void EqualsTest(){

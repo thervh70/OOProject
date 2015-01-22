@@ -28,6 +28,10 @@ public class TeamManagement {
 	private static HBox hbox;
 	private static Text att,def;
 	
+	/**Shows the TeamManagement screen, where the user can switch selection players with bench players.
+	 * 
+	 * @param primaryStage - The windowd of the application
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
@@ -345,6 +349,10 @@ public class TeamManagement {
 		primaryStage.show();
 	}
 	
+	/**Sets colours to table content to show players with yellow cards, red cards and injuries
+	 * 
+	 * @param t - The table column to search through
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void setColor(TableColumn t){
 		t.setCellFactory(new Callback<TableColumn, TableCell>() {
@@ -374,6 +382,13 @@ public class TeamManagement {
 		 });
 	}
 	
+	/**Switches a player in the selection with a player on the bench.
+	 * 
+	 * @param tableL - The left table, containing selection players.
+	 * @param tableR - The right table, containing bench players.
+	 * @param ps - 
+	 * @param root - 
+	 */
 	@SuppressWarnings("rawtypes")
 	private static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();

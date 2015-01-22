@@ -19,6 +19,10 @@ import javafx.stage.Stage;
 
 public class ManagementCenter {
 
+	/**Shows the ManagementCenter screen, where the user can pick to manage his team, check the results, go the the match center, etc.
+	 * 
+	 * @param primaryStage - The window for the application
+	 */
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
 		Button manage = new Button("Manage Team");

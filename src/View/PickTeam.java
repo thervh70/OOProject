@@ -34,7 +34,7 @@ public class PickTeam{
 	private static TableView<Fieldplayer> tableTeamField;
 	private static TableView<Goalkeeper> tableTeamKeeper;
 	
-	/* The start method shows the starting team picking screen
+	/**This shows the picking screen where you can pick your initial team.
 	 * 
 	 * @param primaryStage - The window shown 
 	 * @throws SAXException
@@ -208,27 +208,30 @@ public class PickTeam{
 		DBmain teams = XmlParser.parseDB();
 				
 		//Give the buttons functionality and show the players of each team
-		players = showPlayers(teams, root, players, ADO);
-		players = showPlayers(teams, root, players, Ajax);
-		players = showPlayers(teams, root, players, AZ);
-		players = showPlayers(teams, root, players, Excelsior);
-		players = showPlayers(teams, root, players, Dordrecht);
-		players = showPlayers(teams, root, players, Groningen);
-		players = showPlayers(teams, root, players, Twente);
-		players = showPlayers(teams, root, players, Utrecht);
-		players = showPlayers(teams, root, players, Feyenoord);
-		players = showPlayers(teams, root, players, Eagles);
-		players = showPlayers(teams, root, players, Heracles);
-		players = showPlayers(teams, root, players, NAC);
-		players = showPlayers(teams, root, players, PEC);
-		players = showPlayers(teams, root, players, PSV);
-		players = showPlayers(teams, root, players, Cambuur);
-		players = showPlayers(teams, root, players, Heerenveen);
-		players = showPlayers(teams, root, players, Vitesse);
-		players = showPlayers(teams, root, players, Willem);
+		showPlayers(teams, root, ADO);
+		showPlayers(teams, root, Ajax);
+		showPlayers(teams, root, AZ);
+		showPlayers(teams, root, Excelsior);
+		showPlayers(teams, root, Dordrecht);
+		showPlayers(teams, root, Groningen);
+		showPlayers(teams, root, Twente);
+		showPlayers(teams, root, Utrecht);
+		showPlayers(teams, root, Feyenoord);
+		showPlayers(teams, root, Eagles);
+		showPlayers(teams, root, Heracles);
+		showPlayers(teams, root, NAC);
+		showPlayers(teams, root, PEC);
+		showPlayers(teams, root, PSV);
+		showPlayers(teams, root, Cambuur);
+		showPlayers(teams, root, Heerenveen);
+		showPlayers(teams, root, Vitesse);
+		showPlayers(teams, root, Willem);
 		
 		//Give click functionality to "Continue", directs to "Management Center"
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Continue" button to throw a warning if the user has not yet selected a team.
+			 * If the user has selected a team, the button will transition to the Management Center screen on mouse click.
+			 */
 			@Override
 			public void handle(ActionEvent e){
 				if(choice == -1){
@@ -244,6 +247,10 @@ public class PickTeam{
 
 		//Give click functionality to "Back", directs to "Startup Menu"
 		Back.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Back" button to set the choice parameter back to deselect selected teams 
+			 * and transition back to the startup menu on mouse click.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e){
 				choice = -1;
@@ -257,19 +264,15 @@ public class PickTeam{
 		primaryStage.show();
 	}
 	
-	/** showPlayers(DBmain, Pane, VBox, Button) shows the players from the 
-	 * team that is selected by taking the players out of the DBmain
-	 * and adding them to a VBox which is added to the Pane.
-	 * The method also returns the VBox containing all the players,
-	 * names and attributes
+	/**Gives functionality to the team buttons, so the user can choose his/her team
+	 * Also shows the players of the team in a table
 	 */
-	public static VBox showPlayers(DBmain teams, Pane root, VBox players, Button name) {
+	public static void showPlayers(DBmain teams, Pane root, Button name) {
 		name.setOnAction(new EventHandler<ActionEvent>() {
 			
 			@SuppressWarnings("unused")
 			@Override
 			public void handle(ActionEvent e) {
-				players.getChildren().clear();
 				Team team = new Team(null, 0, 0);
 				switch(name.getText().toString()){
 				case "ADO": team = teams.getTeam(0); choice=0; break;
@@ -315,6 +318,5 @@ public class PickTeam{
 				tableTeamKeeper.setItems(teamKeeper);
 			}
 		});
-		return players;
 	}
 }

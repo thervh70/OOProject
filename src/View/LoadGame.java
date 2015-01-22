@@ -19,6 +19,10 @@ import javafx.stage.Stage;
 
 public class LoadGame {
 	
+	/**Shows the LoadGame screen, where the user can pick a save file to load and continue from
+	 * 
+	 * @param primaryStage - the window of the application
+	 */
 	public static void start(Stage primaryStage) {
 		
 		Pane root = new Pane();

@@ -17,6 +17,9 @@ import javafx.util.Duration;
 
 public class SplashScreen extends Application {
 	
+	/**This runs and shows the SplashScreen.
+	 * 
+	 */
 	public void start(Stage primaryStage) throws SAXException,IOException {
 		
 		Style.setScreen();
@@ -34,6 +37,9 @@ public class SplashScreen extends Application {
 		
         //When the mouse button is pressed, go to the next StartupMenu screen
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        	/**Gives functionality to the pane to transition to the startup menu on mouse click.
+        	 * 
+        	 */
              @Override
              public void handle(MouseEvent t) {
                 StartupMenu.start(primaryStage);
@@ -42,6 +48,9 @@ public class SplashScreen extends Application {
         
         //Same for when a key is pressed
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+        	/**Gives functionality to the scene to transition to the startup menu when a key is pressed.
+        	 * 
+        	 */
             public void handle(KeyEvent ke) {
             	StartupMenu.start(primaryStage);
             }
