@@ -98,4 +98,38 @@ public class StandingTest {
 		assertNotEquals(st.getRank(),0);
 	}
 	
+	@Test
+	public void comparePointsTest() {
+		Standing St1 = new Standing(6, "Ajax", 4, 1, 3);
+		Standing St2 = new Standing(3, "PSV", 3, 3, 0);
+		assertEquals(-3, St1.compare(St1, St2));
+	}
+	
+	@Test
+	public void compareGoalDifferenceTest() {
+		Standing St1 = new Standing(3, "Ajax", 4, 1, 3);
+		Standing St2 = new Standing(3, "PSV", 3, 3, 0);
+		assertEquals(-3, St1.compare(St1, St2));
+	}
+	
+	@Test
+	public void compareGoalsForTest() {
+		Standing St1 = new Standing(3, "Ajax", 4, 1, 3);
+		Standing St2 = new Standing(3, "PSV", 6, 3, 3);
+		assertEquals(2, St1.compare(St1, St2));
+	}
+	
+	@Test
+	public void compareTeamNameTest() {
+		Standing St1 = new Standing(3, "Ajax", 3, 1, 2);
+		Standing St2 = new Standing(3, "PSV", 3, 1, 2);
+		assertEquals(-15, St1.compare(St1, St2));
+	}
+	
+	@Test
+	public void compareToTest() {
+		Standing St1 = new Standing(3, "Ajax", 3, 1, 3);
+		Standing St2 = new Standing(3, "PSV", 3, 1, 2);
+		assertEquals(-15, St1.compareTo(St2));
+	}
 }

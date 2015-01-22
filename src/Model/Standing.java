@@ -105,7 +105,7 @@ public class Standing implements Comparator<Standing>, Comparable<Standing>{
 		if(St1.points == St2.points){
 			if(St1.goalDifference == St2.goalDifference){
 				if(St1.goalsFor == St2.goalsFor){
-					return St1.teamName.compareTo(St2.teamName);
+					return St1.teamName.toLowerCase().compareTo(St2.teamName.toLowerCase());
 				}
 				return St2.goalsFor - St1.goalsFor;
 			}
@@ -120,7 +120,7 @@ public class Standing implements Comparator<Standing>, Comparable<Standing>{
 	
 	@Override
 	public int compareTo(Standing St2) {
-		return this.teamName.compareTo(St2.getTeamName());
+		return this.teamName.toLowerCase().compareTo(St2.getTeamName().toLowerCase());
 	}
 
 	
