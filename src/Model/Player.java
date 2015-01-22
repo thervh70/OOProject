@@ -4,6 +4,7 @@ import Controller.saveGame;
 
 public abstract class Player {
 		
+	@SuppressWarnings("unused")
 	private String firstname, lastname, pos, name, injury;
 	private int age, pri, card = 0, cardTime;
 	private Integer dur;

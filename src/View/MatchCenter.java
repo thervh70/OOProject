@@ -242,7 +242,8 @@ public class MatchCenter {
 				    timeline.setCycleCount(Timeline.INDEFINITE);
 			        timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(0.2),new EventHandler<ActionEvent>() {
 			        	
-				        public void handle(ActionEvent event) {
+				        @SuppressWarnings("static-access")
+						public void handle(ActionEvent event) {
 				        	timeSeconds++;
 				        	r.setWidth(Style.getNewSize(timeSeconds*18));
 				        	timerLabel.setText(timeSeconds.toString());

@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.List;
 
 import Controller.saveGame;
-import Model.Player;
 import Model.Standing;
 import Model.Team;
 import javafx.collections.FXCollections;
@@ -19,7 +18,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 

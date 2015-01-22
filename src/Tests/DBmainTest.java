@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Controller.saveGame;
 import Model.DBmain;
 import Model.Fieldplayer;
 import Model.Goalkeeper;

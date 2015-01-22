@@ -1,16 +1,11 @@
 package View;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;
-import Model.Standing;
 import Model.Team;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;

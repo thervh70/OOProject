@@ -6,6 +6,8 @@ public class Team {
 	
 	private ArrayList<Player> team, selection;
 	private String nm;
+	
+	@SuppressWarnings("unused")
 	private int bdgt_vir, bdgt_rel, rank;
 	private int points, goalsFor, goalsAgainst, goalDifference = 0;
 	private Standing standing;

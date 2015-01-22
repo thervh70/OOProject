@@ -71,7 +71,6 @@ public class StandingTest {
 
 		DBmain db = XmlParser.parseDB();
 		Team team = db.getTeam(0);
-		Team team2 = db.getTeam(1);
 		Standing st = new Standing(0, team.getNm(),0,0,0);
 		st.setPoints(1);
 		st.setGoalsFor(2);

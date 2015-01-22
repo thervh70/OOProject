@@ -6,11 +6,9 @@ import org.junit.Test;
 
 import Controller.CreateSelection;
 import Controller.saveGame;
-import Model.DBmain;
 import Model.Fieldplayer;
 import Model.Goalkeeper;
 import Model.Team;
-import Model.XmlParser;
 
 public class CreateSelectionTest {
 

@@ -6,8 +6,6 @@ import org.junit.Test;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import java.io.FileNotFoundException;
-
 import Controller.saveGame;
 import Model.Competition;
 import Model.Match;

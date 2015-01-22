@@ -2,14 +2,11 @@ package Tests;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-
 import org.junit.Test;
 
 import Controller.saveGame;
 import Model.Competition;
 import Model.DBmain;
-import Model.Match;
 import Model.Scheduler;
 import Model.Team;
 import Model.XmlParser;
