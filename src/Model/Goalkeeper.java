@@ -140,23 +140,37 @@ public class Goalkeeper extends Player {
 	 * Getters
 	 */
 	
+	/** @return diving score of a keeper*/
 	public int getDiv() {return div;}
+	/** @return handling score of a keeper*/
 	public int getHan() {return han;}
+	/** @return kicking score of a keeper*/
 	public int getKick() {return kick;}
+	/** @return reflex score of a keeper*/
 	public int getRef() {return ref;}
+	/** @return speed score of a keeper*/
 	public int getSpd() {return spd;}
+	/** @return positioning score of a keeper*/
 	public int getPing() {return ping;}
+	/** @return height of a keeper*/
 	public int getHei() {return hei;}
 	
 	/**
 	 * Setters
 	 */
 	
+	/** Sets the diving score of a Goalkeeper*/
 	public void setDiv(int div) {this.div = div;}
+	/** Sets the handling score of a Goalkeeper*/
 	public void setHan(int han) {this.han = han;}
+	/** Sets the kicking score of a Goalkeeper*/
 	public void setKick(int kick) {this.kick = kick;}
+	/** Sets the reflex score of a Goalkeeper*/
 	public void setRef(int ref) {this.ref = ref;}
+	/** Sets the speed score of a Goalkeeper*/
 	public void setSpd(int spd) {this.spd = spd;}
+	/** Sets the positioning score of a Goalkeeper*/
 	public void setPing(int ping) {this.ping = ping;}
+	/** Sets the diving score of a Goalkeeper*/
 	public void setHei(int hei) {this.hei = hei;}
 }

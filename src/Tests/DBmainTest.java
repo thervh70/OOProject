@@ -184,24 +184,5 @@ public class DBmainTest {
 		assertNotEquals(d1.findTeam("Feyenoord"), t1);
 		assertEquals(d1.findTeam("ADO Den Haag"), null);
 	}
-	
-	@Test
-	public void getIndexTest() {
-		t1.addPlayer(p1);
-		t1.addPlayer(p2);
-		t2.addPlayer(p1);
-		t2.addPlayer(p5);
-		t3.addPlayer(p3);
-		t3.addPlayer(p4);
-		d1.addTeam(t1);
-		d1.addTeam(t2);
-		d1.addTeam(t3);
-		assertEquals(d1.getIndex(t2), 1);
-		d1.removeTeam(t2);
-		assertEquals(d1.getIndex(t3), 1);
-		d1.addTeam(1, t2);
-		assertEquals(d1.getIndex(t2), 1);
-		assertEquals(d1.getIndex(t4), -1);
-	}
 
 }

@@ -168,21 +168,33 @@ public class Fieldplayer extends Player {
 	 * Getters
 	 */
 
+	/** @return pace score of a Fieldplayer*/
 	public int getPac() {return pac;}
+	/** @return shooting score of a Fieldplayer*/
 	public int getSho() {return sho;}
+	/** @return passing score of a Fieldplayer*/
 	public int getPas() {return pas;}
+	/** @return dribbling score of a Fieldplayer*/
 	public int getDri() {return dri;}
+	/** @return defending score of a Fieldplayer*/
 	public int getDef() {return def;}
+	/** @return physical score of a Fieldplayer*/
 	public int getPhy() {return phy;}
 	
 	/**
 	 * Setters
 	 */
 
+	/** Sets the pace score of a Fieldplayer*/
 	public void setPac(int pac) {this.pac = pac;}
+	/** Sets the shooting score of a Fieldplayer*/
 	public void setSho(int sho) {this.sho = sho;}
+	/** Sets the passing score of a Fieldplayer*/
 	public void setPas(int pas) {this.pas = pas;}
+	/** Sets the dribbling score of a Fieldplayer*/
 	public void setDri(int dri) {this.dri = dri;}
+	/** Sets the defending score of a Fieldplayer*/
 	public void setDef(int def) {this.def = def;}
+	/** Sets the physical score of a Fieldplayer*/
 	public void setPhy(int phy) {this.phy = phy;}
 }

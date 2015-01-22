@@ -372,20 +372,35 @@ public class Team {
 	 * Getters
 	 */
 	
+	/**@return an ArrayList of Players from a Team*/
 	public ArrayList<Player> getTeam() {return this.team;}
+	/**@return an ArrayList of Players from a selection from a Team*/
 	public ArrayList<Player> getSelection() {return this.selection; }
+	/**@return the name from a Team*/
 	public String getNm() {return this.nm;}
+	/**@return the virtual budget from a Team*/
 	public int getBdgt_vir() {return this.bdgt_vir;}
+	/**@return the real budget from a Team*/
 	public int getBdgt_rel() {return this.bdgt_rel;}
+	/**@return the size from a Team*/
 	public int getSize() {return team.size();}
+	/**@return the size of the seleciton from a Team*/
 	public int getSelectionSize() {return selection.size();}
+	/**@return the points from a Team*/
 	public int getPoints() {return this.points;}
+	/**@return the goalsFor from a Team*/
 	public int getGoalsFor() {return this.goalsFor;}
+	/**@return the goalsAgainst from a Team*/
 	public int getGoalsAgainst() {return this.goalsAgainst;}
+	/**@return the goalsDif from a Team*/
 	public int getGoalDifference() {return this.goalDifference;}
+	/**@return the standing from a Team*/
 	public Standing getStanding() {return this.standing;}
+	/**@return a certain Player from a Team*/
 	public Player getPlayer(int i) {return team.get(i);}
+	/**@return the name from a Team*/
 	public Player getSelectionPlayer(int i) {return selection.get(i);}
+	/**@return the name from a Team*/
 	public Goalkeeper getSelectionKeeper() {
 		for(int i = 0; i < getSelectionSize(); i++){
 			Player p = getSelectionPlayer(i);

@@ -62,7 +62,6 @@ public class XmlParserTest {
 		c1.add(m2);
 		c1.add(m3);
 		c1.add(m4);
-		System.out.println(c1);
 		String infile = "src/Model/Resources/COMPETITION_TEST_DO_NOT_REMOVE.xml";
 		NodeList list = XmlParser.parseInit(infile);
 		Node comp = list.item(1);

@@ -3,7 +3,6 @@ package Tests;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import org.junit.Test;
 
@@ -152,7 +151,6 @@ public class CompetitionTest {
 		Match match2 = new Match(2,team, team2);
 		Competition comp = new Competition();
 		Competition comp2 = new Competition();
-		Competition comp3 = new Competition();
 		comp.add(match);
 		comp2.add(match);
 		comp2.add(match2);

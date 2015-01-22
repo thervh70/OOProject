@@ -145,18 +145,4 @@ public class DBmain {
 		}
 		return null;
 	}
-	
-	/**
-	 * @param team Team object
-	 * @return     The index of the given team in the arraylist
-	 */
-	public int getIndex(Team team) {
-	    for (int i = 0; i < d.size(); i++) {
-	        Team t = d.get(i);
-	        if (team.equals(t)) {
-	            return i;
-	        }
-	    }
-	    return -1;
-	}
 }

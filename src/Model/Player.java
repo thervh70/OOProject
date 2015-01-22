@@ -120,19 +120,29 @@ public abstract class Player {
 
 	/**
 	 * Getters
-	 * @return
 	 */
 	
+	/** @return the name of a Player*/
 	public String getName() {return name; }
+	/** @return the firstname of a Player*/
 	public String getFnm() {return firstname; }
+	/** @return the lastname of a Player*/
 	public String getLnm() {return lastname; }
+	/** @return the position of a Player*/
 	public String getPos() {return pos;	}
+	/** @return the age of a Player*/
 	public int getAge() {return age; }
+	/** @return the price of a Player*/
 	public int getPri() {return pri; }
+	/** @return the Availabiliy of a Player*/
 	public boolean getPlay() {return play; }
+	/** @return the card of a Player*/
 	public int getCard() {return card; }
+	/** @return the cardTime of a Player*/
 	public int getCardTime() {return cardTime; }
+	/** @return the duration of an injury of a Player*/
 	public int getDur() {return dur; }
+	/** @return the String format of the duration of an injury of a Player*/
 	public String getInjury() {
 		if(this.dur == 0){
 			return "";
@@ -144,18 +154,27 @@ public abstract class Player {
 
 	/**
 	 * Setters
-	 * @param firstname
 	 */
 	
+	/** Sets the firstname of a Player*/
 	public void setFnm(String firstname) {this.firstname = firstname;	}
+	/** Sets the lastname of a Player*/
 	public void setLnm(String lastname) {this.lastname = lastname;	}
+	/** Sets the position of a Player*/
 	public void setPos(String pos) {this.pos = pos; }
+	/** Sets the age of a Player*/
 	public void setAge(int age) {this.age = age; }
+	/** Sets the price of a Player*/
 	public void setPri(int pri) {this.pri = pri; }
+	/** Sets the availability of a Player*/
 	public void setPlay(boolean play) {this.play = play; }
+	/** Sets the card of a Player*/
 	public void setCard(int card) {this.card = card; }
+	/** Sets the cardTime of a Player*/
 	public void setCardTime(int cardTime) {this.cardTime = cardTime; }
+	/** Sets the card to 0 and the availability to true of a Player*/
 	public void setAvail() {this.card = 0; this.play = true; }
+	/** Sets the duration of an injury of a Player*/
 	public void setDur(int dur) {this.dur = dur; }
 	
 }

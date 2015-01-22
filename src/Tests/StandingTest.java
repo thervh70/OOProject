@@ -32,25 +32,38 @@ public class StandingTest {
 	}
 	
 	@Test
+	public void toStringTest() {
+		DBmain db = XmlParser.parseDB();
+		Team t1 = db.getTeam(0);
+		Standing s1 = new Standing(2, t1.getNm(), 5, 8, -3);
+		Standing s2 = new Standing(4, t1.getNm(), 3, 1, 2);
+		assertEquals(s1.toString(), "Standing [points=2, teamName=ADO Den Haag, goalsFor=5, goalsAgainst=8, goalDifference=-3]");
+		assertNotEquals(s2.toString(), "Standing [points=2, teamName=ADO Den Haag, goalsFor=5, goalsAgainst=8, goalDifference=-3]");
+	}
+	
+	@Test
 	public void GetterTest() {
 
 		DBmain db = XmlParser.parseDB();
 		Team team = db.getTeam(0);
 		Standing st = new Standing(1, team.getNm(),2,3,4);
-		assertTrue(st.getPoints() == 1);
-		assertFalse(st.getPoints() == 2);
+		assertEquals(st.getPoints(),1); 
+		assertNotEquals(st.getPoints(),2);
 
-		assertTrue(st.getGoalsFor() == 2);
-		assertFalse(st.getGoalsFor() == 3);
+		assertEquals(st.getGoalsFor(),2);
+		assertNotEquals(st.getGoalsFor(),3);
 
-		assertTrue(st.getGoalsAgainst() == 3);
-		assertFalse(st.getGoalsAgainst() == 4);
+		assertEquals(st.getGoalsAgainst(),3);
+		assertNotEquals(st.getGoalsAgainst(),4);
 		
-		assertTrue(st.getGoalDifference() == 4);
-		assertFalse(st.getGoalDifference() == 5);
+		assertEquals(st.getGoalDifference(),4);
+		assertNotEquals(st.getGoalDifference(),5);
 		
-		assertTrue(st.getTeamName().equals("ADO Den Haag"));
-		assertFalse(st.getTeamName().equals("Ajax"));
+		assertEquals(st.getTeamName(), "ADO Den Haag");
+		assertNotEquals(st.getTeamName(), "Ajax");
+		
+		assertEquals(st.getRank(),0);
+		assertNotEquals(st.getRank(),3);
 	}
 
 	@Test
@@ -65,20 +78,24 @@ public class StandingTest {
 		st.setGoalsAgainst(3);
 		st.setGoalDifference(4);
 		st.setTeamName("Ajax");
-		assertTrue(st.getPoints() == 1);
-		assertFalse(st.getPoints() == 2);
+		st.setRank(5);
+		assertEquals(st.getPoints(), 1);
+		assertNotEquals(st.getPoints(), 2);
 
-		assertTrue(st.getGoalsFor() == 2);
-		assertFalse(st.getGoalsFor() == 3);
+		assertEquals(st.getGoalsFor(), 2);
+		assertNotEquals(st.getGoalsFor(), 3);
 
-		assertTrue(st.getGoalsAgainst() == 3);
-		assertFalse(st.getGoalsAgainst() == 4);
+		assertEquals(st.getGoalsAgainst(), 3);
+		assertNotEquals(st.getGoalsAgainst(), 4);
 		
-		assertTrue(st.getGoalDifference() == 4);
-		assertFalse(st.getGoalDifference() == 5);
+		assertEquals(st.getGoalDifference(), 4);
+		assertNotEquals(st.getGoalDifference(), 5);
 		
-		assertTrue(st.getTeamName().equals("Ajax"));
-		assertFalse(st.getTeamName().equals("ADO Den Haag"));
+		assertEquals(st.getTeamName(), "Ajax");
+		assertNotEquals(st.getTeamName(), "ADO Den Haag");
+		
+		assertEquals(st.getRank(),5);
+		assertNotEquals(st.getRank(),0);
 	}
 	
 }

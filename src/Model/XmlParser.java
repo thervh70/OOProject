@@ -13,13 +13,11 @@ import org.xml.sax.SAXException;
 import Controller.saveGame;
 
 public class XmlParser {
-
+	
 	/**
-	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
-	 * parserPlayer and parseKeeper are called during this process.
-	 * 
-	 * @param division NodeList of all teams
-	 * @return DBmain
+	 * parseInit takes a String, uses this filename to get the childElements of the overhead-Node (<Save></Save> in this case)
+	 * @param infile the filename of the file that has to be read
+	 * @return a NodeList of all childNodes of the overhead-Node
 	 */
 	
 	public static NodeList parseInit(String infile) {
@@ -82,8 +80,14 @@ public class XmlParser {
 		Match m = new Match(day, t1, t2, homescore, awayscore);
 		return m;
 	}
-	
 
+	/**
+	 * Uses parseInit to get a NodeList of all childNodes. Then parses a Database to an object DBmain
+	 * 
+	 * @param division NodeList of all teams
+	 * @return a DBmain containing all Teams in the Database
+	 */
+	
 	public static DBmain parseDB() {
 		NodeList database = XmlParser.parseInit("src/Model/Resources/Database_v11.xml");
 		DBmain d = new DBmain();
@@ -100,7 +104,7 @@ public class XmlParser {
 	 * Method parseDB takes NodeList division and parses a DBmain from an xml-file. Methods parseTeam, 
 	 * parserPlayer and parseKeeper are called during this process.
 	 * 
-	 * Only difference is the ability to take a file-name as origin for parsing the data
+	 * Only difference with parseBD() is the ability to take a file-name as origin for parsing the data
 	 * 
 	 * @param division NodeList of all teams
 	 * @return DBmain
@@ -178,7 +182,7 @@ public class XmlParser {
 	/**
 	  * Method parsePlayer is called by parseTeam and parses a Fielplayer from xml to an object.
 	  * @param playerattributes
-	  * @return
+	  * @return an object Fieldplayer
 	  */
 	
 	private static Fieldplayer parsePlayer(NodeList playerattributes) {
@@ -211,7 +215,7 @@ public class XmlParser {
 	/**
 	  * Method parseKeeper is called by parseTeam and parses a Goalkeeper from xml to an object.
 	  * @param playerattributes
-	  * @return
+	  * @return an object Goalkeeper
 	  */
 	
 	private static Goalkeeper parseKeeper(NodeList playerattributes) {
@@ -239,98 +243,5 @@ public class XmlParser {
 	  	}
 	  	Goalkeeper p = new Goalkeeper(fname, lname, "GK", age, pri, play, card, dur, div, han, kick, ref, spd, ping, hei);
 	  	return p;
-	}
-	
-	/**
-	 * Method writeToXML writes a Database to a xml-file
-	 * @param db
-	 * @throws FileNotFoundException
-	 */
-	
-	/*public static void writeToXML(DBmain db) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Bestandsnaam?");
-		String file = "src/Model/Resources/" + sc.next();
-		sc.close();
-		PrintWriter pw = null;
-		try {
-			pw = new PrintWriter(file);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		String wrt = "<Save>\r\n" + db.toWrite() + "</Save>\r\n";
-		pw.print(wrt);
-		pw.close();
-	}*/
-	
-	/*public static void writeToXML(Competition c) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Bestandsnaam?");
-		String file = "src/Model/Resources/" + sc.next();
-		sc.close();
-		PrintWriter pw = null;
-		try {
-			pw = new PrintWriter(file);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		String wrt = "<Save>\r\n" + c.toWrite() + "</Save>\r\n";
-		pw.print(wrt);
-		pw.close();
-	}*/
-	
-	/**
-	 * This methods only purpose was to fix a mistake in the xml-file!
-	 */
-	
-	/*public static DBmain reparser(DBmain d) {
-		DBmain res = new DBmain();
-		for(int i=0;i<d.getSize();i++) {
-			Team t = d.getT(i);
-			String teamname = t.getNm();
-			int budget = t.getBdgt();
-			Team resT = new Team(teamname, budget);
-			for(int j=0;j<t.getSize();j++) {
-				Player p = t.getPlayer(j);
-				String fnm = p.getFnm();
-				String lnm = p.getLnm();
-				String pos = p.getPos();
-				int pac = p.getAge();
-				int sho = p.getPac();
-				int pas = p.getSho();
-				int dri = p.getPas();
-				int def = p.getDri();
-				int phy = p.getDef();
-				int age = p.getPhy();
-				Player resP = new Player(fnm, lnm, pos, age, pac, sho, pas, dri, def, phy);
-				resT.addPlayer(resP);
-			}
-			res.addTeam(resT);
-		}
-		return res;
-	}*/	
-	
-	/**
-	 * This methods only purpose was to fix a mistake in the xml-file!
-	 */
-	
-	/*public static DBmain reparser2(DBmain d) {
-		DBmain res = new DBmain();
-		for(int i=0;i<d.getSize();i++) {
-			Team t = d.getTeam(i);
-			String teamname = t.getNm();
-			int budget_vir = t.getBdgt_vir();
-			int budget_rel = t.getBdgt_rel();
-			Team resT = new Team(teamname, budget_vir, budget_rel);
-			for(int j=0;j<t.getSize();j++) {
-				Player p = t.getPlayer(j);
-				String pos = p.getPos();
-				if(pos.equals("RM")) {p.setPos("RW");}
-				else if(pos.equals("LM")) {p.setPos("LW");}
-				resT.addPlayer(p);
-			}
-			res.addTeam(resT);
-		}
-		return res;
-	}*/
+	}	
 }

@@ -12,7 +12,6 @@ public class SchedulerTest {
 
 	@Test
 	public void testGenerate() {
-		System.out.println(Math.random());
 		Competition comp = Scheduler.generate();
 		assertTrue(comp != null);
 	}
