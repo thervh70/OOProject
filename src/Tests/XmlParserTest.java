@@ -69,42 +69,4 @@ public class XmlParserTest {
 		c2 = XmlParser.parseCompetition(list2);
 		assertTrue(c1.toString().equals(c2.toString()));
 	}
-	
-	
-	/*@Test
-	public void writeToXMLDBTest() {
-		t1.addPlayer(p1);
-		t1.addPlayer(p2);
-		t1.addPlayer(p3);
-		t2.addPlayer(p4);
-		t2.addPlayer(p5);
-		t2.addPlayer(p6);
-		t2.addPlayer(p7);
-		d1.addTeam(t1);
-		d1.addTeam(t2);
-		System.out.println("tester.xml");
-//		XmlParser.writeToXML(d1);
-		String infile = "src/Model/Resources/tester.xml";
-		NodeList list = XmlParser.parseInit(infile);
-		Node db = list.item(1);
-		NodeList list2 = db.getChildNodes();
-		d2 = XmlParser.parseDB(list2);
-		assertEquals(d1, d2);
-	}*/
-	
-	/*@Test
-	public void writeToXMLCTest() {
-		DBmain db = XmlParser.parseDB();
-		saveGame.setDB(db);
-		c1.add(m1);
-		c1.add(m2);
-		c1.add(m3);
-		c1.add(m4);
-//		XmlParser.writeToXML(c1);
-		String infile = "src/Model/Resources/tester2.xml";
-		NodeList list = XmlParser.parseInit(infile);
-		Node c = list.item(1);
-		NodeList list2 = c.getChildNodes();
-		c2 = XmlParser.parseCompetition(list2);
-	}*/
 }

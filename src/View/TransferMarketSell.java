@@ -268,7 +268,6 @@ public class TransferMarketSell {
 									refreshPlayers(tableSelectionField, tableSelectionKeeper);
 									setColor(nameS);
 									setColor(nameKS);
-									System.out.println(playerSelect.getName() + " " + playerSelect.getPos());
 									playerSelect = null;
 									
 								} catch (Exception e){
