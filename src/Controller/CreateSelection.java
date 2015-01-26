@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import Model.*;
 /**Our class which handles selection creation
  * @author All
- *
  */
 public class CreateSelection {
 	
