@@ -36,6 +36,7 @@ public class TransferMarket {
 	private static Team teamSelect = null;
 	
 	/**This shows the transfer market where the user can buy players.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The window
 	 */
@@ -235,6 +236,7 @@ public class TransferMarket {
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the back button which directs to the management center on action.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -245,6 +247,7 @@ public class TransferMarket {
 		
 		 toSell.setOnAction(new EventHandler<ActionEvent>() {
 			 /**Gives functionality to the "To Sell" button which directs to the selling screen of the transfer market on action.
+			  * @author D18.1
 			  * 
 			  */
 			@Override
@@ -271,6 +274,7 @@ public class TransferMarket {
 			/**Gives functionality to the "Place bid" button on action.
 			 * The user will get a warning if no player is selected, if the user has already bid 3 times or if the user entered a negative bid.
 			 * If the requirements are met, the bid is placed and you will buy the player with a certain chance.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -359,6 +363,7 @@ public class TransferMarket {
 		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
 			/**Gives functionality to table rows of the fieldplayers on mouse click.
 			 * Shows the fieldplayer of the selected table row on the right side with his name, position and price.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -377,6 +382,7 @@ public class TransferMarket {
 		tableSelectionKeeper.setOnMouseClicked(new EventHandler <MouseEvent>(){
 			/**Gives functionality to table rows of the keepers on mouse click.
 			 * Shows the keeper of the selected table row on the right side with his name, position and price.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -434,6 +440,7 @@ public class TransferMarket {
 	}
 	
 	/**This sets the color of table content to a certain color to show players with yellow/red cards and injured players.
+	 * @author D18.1
 	 * 
 	 * @param t - The table column checked for the players to color.
 	 */

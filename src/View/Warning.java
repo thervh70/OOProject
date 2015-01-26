@@ -15,6 +15,7 @@ import javafx.stage.Popup;
 public class Warning{
 	
 	/**Makes a standard popup with the given string and disables the current pane while the popup is showing.
+	 * @author D18.1
 	 * 
 	 * @param t - The string to be added to the popup
 	 * @param root - The pane to which the popup will be added and the original screen will be disabled temporarily.
@@ -41,6 +42,7 @@ public class Warning{
 		
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			/**Gives functionality to the confirm button which closes the popup and reactivates the rest of the screen on click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -55,6 +57,7 @@ public class Warning{
 	}
 	
 	/**Makes a popup with a rectangle as background color and the given string as text and disables the current pane while the popup is showing.
+	 * @author D18.1
 	 * 
 	 * @param t - The string to be shown on the popup.
 	 * @param root - The pane where the popup should show which will be disabled temporarily.
@@ -81,6 +84,7 @@ public class Warning{
 		Style.setButtonStyle(confirm, 40);
 		
 		/**Gives functionality to the confirm button which closes the popup and reactivates the rest of the screen on click.
+		 * @author D18.1
 		 * 
 		 */
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -97,6 +101,7 @@ public class Warning{
 	}
 	
 	/**Makes a popup with a given text to which the user can answer yes or no.
+	 * @author D18.1
 	 * 
 	 * @param t - The string to be shown on the popup.
 	 * @param root - The pane the popup is shown over and which is temporarily disabled.
@@ -150,6 +155,7 @@ public class Warning{
 	}
 	
 	/**Makes a popup with a given text and prompts the user for input and shows yes/no buttons.
+	 * @author D18.1
 	 * 
 	 * @param t - The string to be shown on the popup
 	 * @param root - The pane the popup is shown over and which is temporarily disabled.

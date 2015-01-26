@@ -28,6 +28,7 @@ import javafx.util.Callback;
 public class Results {
 	
 	/**Shows the Results screen, which contains the results of the matches of the current day.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The window
 	 * @param match - 

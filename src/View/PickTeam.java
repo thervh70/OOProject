@@ -252,6 +252,7 @@ public class PickTeam{
 		Back.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Back" button to set the choice parameter back to deselect selected teams 
 			 * and transition back to the startup menu on mouse click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -269,6 +270,8 @@ public class PickTeam{
 	
 	/**Gives functionality to the team buttons, so the user can choose his/her team
 	 * Also shows the players of the team in a table
+	 * @author D18.1
+	 * 
 	 */
 	public static void showPlayers(DBmain teams, Pane root, Button name) {
 		name.setOnAction(new EventHandler<ActionEvent>() {

@@ -18,6 +18,7 @@ import javafx.util.Duration;
 public class SplashScreen extends Application {
 	
 	/**This runs and shows the SplashScreen.
+	 * @author D18.1
 	 * 
 	 */
 	public void start(Stage primaryStage) throws SAXException,IOException {
@@ -37,6 +38,7 @@ public class SplashScreen extends Application {
 
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
         	/**Gives functionality to the pane to transition to the startup menu on mouse click.
+        	 * @author D18.1
         	 * 
         	 */
              @Override
@@ -47,6 +49,7 @@ public class SplashScreen extends Application {
 
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
         	/**Gives functionality to the scene to transition to the startup menu when a key is pressed.
+        	 * @author D18.1
         	 * 
         	 */
             public void handle(KeyEvent ke) {
@@ -75,6 +78,7 @@ public class SplashScreen extends Application {
 	
 	
 	/**Start the program by loading the first screen, the splash screen
+	 * @author D18.1
 	 * 
 	 */
 	public static void main(String[] args) {

@@ -342,7 +342,7 @@ public class TeamManagement {
 			}
 		});
 		
-		/**Gives functionality to the switch button to switch the two selected fieldplayers when the button is pressed and refreshes the players shown.
+		/**Gives functionality to the switch button to switch the two selected keepers when the button is pressed and refreshes the keepers shown.
 		 * @author D18.1
 		 * 
 		 */

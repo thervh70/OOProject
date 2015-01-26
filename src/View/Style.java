@@ -25,6 +25,7 @@ public abstract class Style {
 	private static double height;
 	
 	/**Give an existing button the standard layout for buttons used in Frits.
+	 * @author D18.1
 	 * 
 	 * @param b - The button getting styled
 	 * @param size - 
@@ -47,6 +48,7 @@ public abstract class Style {
 		
 		b.setOnMouseEntered(new EventHandler<MouseEvent>() {
 			/**The button color will darken when the mouse enters the button.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -58,6 +60,7 @@ public abstract class Style {
 		
 		b.setOnMouseExited(new EventHandler<MouseEvent>() {
 			/**The button color will brighten when the mouse exits the button.
+			 * @author D18.1
 			 * 
 			 */
 			@Override

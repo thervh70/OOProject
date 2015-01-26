@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 public class StartupMenu {
 	
 	/**This shows the startupmenu where you can choose between a new game, to load a game or to exit the game.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The window
 	 */
@@ -44,6 +45,7 @@ public class StartupMenu {
 		
 		newGame.setOnAction(new EventHandler<ActionEvent>(){
 			/**Gives functionality to the "New Game" button to transition to the team picking screen on mouse click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -59,6 +61,7 @@ public class StartupMenu {
 
 		loadGame.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Load Game" button to transition to the LoadGame screen on mouse click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -69,6 +72,7 @@ public class StartupMenu {
 		
 		exit.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Exit" button to exit the application on mouse click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
