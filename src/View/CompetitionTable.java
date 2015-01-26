@@ -24,6 +24,7 @@ import javafx.util.Callback;
 public class CompetitionTable {
 	
 	/**This shows the CompetitionMatches screen, displaying a table showing the total ranking till now.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The GUI of Frits.
 	 * @param competitionTable - ObservableList<Standing> used in the table to display ranking.

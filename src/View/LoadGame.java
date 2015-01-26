@@ -19,7 +19,8 @@ import javafx.stage.Stage;
 
 public class LoadGame {
 	
-	/**Shows the LoadGame screen, where the user can pick a save file to load and continue from
+	/**Shows the LoadGame screen, where the user can pick a save file to load and continue from.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - the window of the application
 	 */
@@ -94,6 +95,7 @@ public class LoadGame {
 
 		Back.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Back" button and goes to the Startup Menu on action.
+			 * @author D18.1
 			 * 
 			 */
 			@Override

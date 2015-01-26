@@ -269,6 +269,7 @@ public class TeamManagement {
         TableColumn posKS = new TableColumn("PING");
         posKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("ping"));
         TableColumn heightKS = new TableColumn("HEI");
+
         heightKS.setCellValueFactory(new PropertyValueFactory<Goalkeeper, Integer>("hei"));		
         TableColumn injuryKS = new TableColumn("Injury");
         injuryKS.setCellValueFactory(new PropertyValueFactory<Player, Integer>("Injury"));
@@ -350,6 +351,7 @@ public class TeamManagement {
 	}
 	
 	/**Sets colours to table content to show players with yellow cards, red cards and injuries
+	 * @author D18.1
 	 * 
 	 * @param t - The table column to search through
 	 */
@@ -383,6 +385,7 @@ public class TeamManagement {
 	}
 	
 	/**Switches a player in the selection with a player on the bench.
+	 * @author D18.1
 	 * 
 	 * @param tableL - The left table, containing selection players.
 	 * @param tableR - The right table, containing bench players.
@@ -407,6 +410,7 @@ public class TeamManagement {
 	}
 	
 	/**Switches a keeper from the selection with one from the bench.
+	 * @author D18.1
 	 * 
 	 * @param tableL - The left table containing the keeper in the selection.
 	 * @param tableR - The right table containing the keepers on the bench.

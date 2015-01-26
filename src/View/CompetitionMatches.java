@@ -24,6 +24,7 @@ import javafx.util.Callback;
 		private static ObservableList<Match> matchList = FXCollections.observableArrayList();
 		
 		/**This shows the CompetitionMatches screen, displaying a table containing all past results.
+		 * @author D18.1
 		 * 
 		 * @param primaryStage - The GUI of Frits
 		 * @param competitionTable - An ObservableList<Standing> used by CompetitionTable
@@ -89,6 +90,7 @@ import javafx.util.Callback;
 		
 			back.setOnAction(new EventHandler<ActionEvent>() {
 				/**Gives functionality to the "Back" button which directs to management center on action.
+				 * @author D18.1
 				 * 
 				 */
 				@Override
@@ -99,6 +101,7 @@ import javafx.util.Callback;
 			
 			toRanking.setOnAction(new EventHandler<ActionEvent>() {
 				/**Gives functionality to the "To Ranking" button which directs to the ranking table on action.
+				 * @author D18.1
 				 * 
 				 */
 				@Override

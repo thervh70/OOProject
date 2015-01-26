@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 public class ManagementCenter {
 
 	/**Shows the ManagementCenter screen, where the user can pick to manage his team, check the results, go the the match center, etc.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The window for the application
 	 */
@@ -97,6 +98,7 @@ public class ManagementCenter {
 		
 		manage.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Manage Team" button and goes to the team management screen on click.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -107,6 +109,7 @@ public class ManagementCenter {
 		
 		table.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Competition table" button which directs to the ranking table screen on action.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -117,6 +120,7 @@ public class ManagementCenter {
 		
 		match.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Match Center" button which directs to the match center screen on action.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -133,6 +137,7 @@ public class ManagementCenter {
 		
 		market.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Transfer Market" button which directs to the buying screen of the transfer market on action.
+			 * @author D18.1
 			 * 
 			 */
 			@Override
@@ -143,6 +148,11 @@ public class ManagementCenter {
 		
 		
 		save.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Save Game" button which prompts the user for a filename if it is a new file or asks
+			 * if the user wants to overwrite the existing file on action.
+			 * @author D18.1
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent event) {
 				
@@ -192,6 +202,11 @@ public class ManagementCenter {
 		});
 		
 		menu.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Back to Main Menu" button which asks the user if he/she really wants to exit.
+			 * Confirming will direct to the startup menu on action.
+			 * @author D18.1
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				EventHandler<MouseEvent> yes = new EventHandler<MouseEvent>() {

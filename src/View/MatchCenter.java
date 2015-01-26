@@ -45,6 +45,7 @@ public class MatchCenter {
 	private static boolean played = false;
 	
 	/**Shows the Match Center screen, where the user can play out a match with his current selection.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - the window
 	 * @throws NullPointerException
@@ -225,6 +226,7 @@ public class MatchCenter {
        
 		start.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Start Match" button and plays out a match on click.
+			 * @author D18.1
 			 * 
 			 */
 	        @Override
@@ -375,6 +377,7 @@ public class MatchCenter {
        
        results.setOnAction(new EventHandler<ActionEvent>() {
     	   /**Gives functionality to the "Results" button to play out the game without the animation and go straight to the results on action.
+    	    * @author D18.1
     	    * 
     	    */
 			@Override
@@ -401,6 +404,7 @@ public class MatchCenter {
        
        back.setOnAction(new EventHandler<ActionEvent>() {
     	   /**Gives functionality to the "Back" button to go back to the management center on click.
+    	    * @author D18.1
     	    * 
     	    */
 			@Override
@@ -415,6 +419,7 @@ public class MatchCenter {
 	}
 	
 	/**Shows an attempt animation consisting of a piece of text and adds 1 to the attempt counter.
+	 * @author D18.1
 	 * 
 	 * @param user - A boolean to determine the correct location for the animation. true is left, false is right.
 	 * @param score - Boolean to specify if the attempt is successful or if it failed.
@@ -449,6 +454,7 @@ public class MatchCenter {
 		if(score){
 			st.setOnFinished(new EventHandler<ActionEvent>(){
 				/**This will call the goal animation after the attempt animation ended.
+				 * @author D18.1
 				 * 
 				 */
 				@Override
@@ -463,6 +469,7 @@ public class MatchCenter {
 		else{
 			st.setOnFinished(new EventHandler<ActionEvent>(){
 				/**This will call the miss animation after the attempt animation finished.
+				 * @author D18.1
 				 * 
 				 */
 				@Override
@@ -475,6 +482,7 @@ public class MatchCenter {
 		}
 	}
 	/**Shows an animation for a missed goal attempt consisting of a spinning piece of text.
+	 * @author D18.1
 	 * 
 	 * @param user - A boolean to determine the positi9oning of the miss animation. true is left, false is right.
 	 * @param text - The text to be animated.
@@ -504,6 +512,7 @@ public class MatchCenter {
 		
 		 st.setOnFinished(new EventHandler<ActionEvent>(){
 			 	/**Continues the match after the animation finished.
+			 	 * @author D18.1
 			 	 * 
 			 	 */
 				@Override
@@ -516,6 +525,7 @@ public class MatchCenter {
 	}
 	
 	/**Shows a text animation for a goal and adds 1 to the goal counter.
+	 * @author D18.1
 	 * 
 	 * @param user - A boolean to determine the positioning of the animation, true is left, false is right.
 	 * @param text - The text to be animated.
@@ -551,6 +561,7 @@ public class MatchCenter {
 	    
 	    st.setOnFinished(new EventHandler<ActionEvent>(){
 	    	/**Resumes the match after the goal animation ended and increases the goal counter by one with the corresponding team.
+	    	 * @author D18.1
 	    	 * 
 	    	 */
 			@Override
@@ -574,6 +585,7 @@ public class MatchCenter {
 	}
 	
 	/**Shows an animation with a yellow or red player name for when they receive a card.
+	 * @author D18.1
 	 * 
 	 * @param loc - A boolean to specify the positioning of the animation. true is left, false is right.
 	 * @param color - Boolean to show if the player receives a yellow or a red card. Yellow is false, red is true.
@@ -622,6 +634,7 @@ public class MatchCenter {
 	}
 	
 	/**Shows the name of a player in green text for when he gets injured.
+	 * @author D18.1
 	 * 
 	 * @param loc - A boolean to specify the location of the animation. true is left, false is right.
 	 * @param name - The name of the player that got injured.
@@ -654,6 +667,7 @@ public class MatchCenter {
 		
 		st.setOnFinished(new EventHandler<ActionEvent>(){
 			/**Continues the game after the injury animation finished.
+			 * @author D18.1
 			 * 
 			 */
 			@Override

@@ -35,6 +35,7 @@ public class PickTeam{
 	private static TableView<Goalkeeper> tableTeamKeeper;
 	
 	/**This shows the picking screen where you can pick your initial team.
+	 * @author D18.1
 	 * 
 	 * @param primaryStage - The window shown 
 	 * @throws SAXException
@@ -231,6 +232,8 @@ public class PickTeam{
 		Continue.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Continue" button to throw a warning if the user has not yet selected a team.
 			 * If the user has selected a team, the button will transition to the Management Center screen on mouse click.
+			 * @author D18.1
+			 * 
 			 */
 			@Override
 			public void handle(ActionEvent e){
