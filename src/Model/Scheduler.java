@@ -1,6 +1,7 @@
 package Model;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +13,10 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+/**
+ * Scheduler generates a Competition schedule
+ * @author Marcel
+ */
 
 public class Scheduler {
 

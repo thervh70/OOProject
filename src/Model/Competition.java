@@ -1,6 +1,10 @@
 package Model;
 
 import java.util.ArrayList;
+/**
+ * Objects Competition and their methods are declared here
+ * @author Mathias, Marcel
+ */
 
 public class Competition {
 

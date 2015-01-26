@@ -2,12 +2,17 @@ package Model;
 
 import java.io.IOException;
 
+
 import javax.xml.parsers.*;
 
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import Controller.saveGame;
+/**
+ * Here happens all the Parsing
+ * @author Mathias
+ */
 
 public class XmlParser {
 	

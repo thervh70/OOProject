@@ -1,8 +1,8 @@
 package Model;
 
 /**
+ * Objects Standing and their methods are declared here
  * @author Marcel
- *
  */
 import java.util.Comparator;
 

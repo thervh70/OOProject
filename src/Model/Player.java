@@ -1,7 +1,10 @@
 package Model;
 
 import Controller.saveGame;
-
+/**
+ * Player is abstract, Fieldplayer and Goalkeeper inherit from it
+ * @author Mathias
+ */
 public abstract class Player {
 		
 	@SuppressWarnings("unused")

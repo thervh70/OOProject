@@ -1,4 +1,8 @@
 package Model;
+/**
+ * Objects Fieldplayer and their methods are declared here
+ * @author Mathias
+ */
 
 public class Fieldplayer extends Player {
 	

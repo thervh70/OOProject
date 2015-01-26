@@ -1,6 +1,9 @@
 package Model;
 import java.util.ArrayList;
-
+/**
+ * Objects DBmain and their methods are declared here
+ * @author Mathias
+ */
 
 public class DBmain {
 	

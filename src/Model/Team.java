@@ -1,7 +1,10 @@
 package Model;
 
 import java.util.ArrayList;
-
+/**
+ * Objects Team and their methods are declared here
+ * @author Mathias
+ */
 public class Team {
 	
 	private ArrayList<Player> team, selection;

@@ -1,4 +1,8 @@
 package Model;
+/**
+ * Objects Match and their methods are declared here
+ * @author Mathias, Marcel
+ */
 
 import Controller.saveGame;
 

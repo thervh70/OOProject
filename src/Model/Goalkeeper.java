@@ -1,4 +1,8 @@
 package Model;
+/**
+ * Objects Goalkeeper and their methods are declared here
+ * @author Mathias
+ */
 
 public class Goalkeeper extends Player {
 	
