@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 /**
  * Scheduler generates a Competition schedule
- * @author Marcel
+ * @author D18.1
  */
 
 public class Scheduler {

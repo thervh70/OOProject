@@ -2,7 +2,7 @@ package Model;
 import java.util.ArrayList;
 /**
  * Objects DBmain and their methods are declared here
- * @author Mathias
+ * @author D18.1
  */
 
 public class DBmain {

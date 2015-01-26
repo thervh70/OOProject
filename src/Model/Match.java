@@ -1,7 +1,7 @@
 package Model;
 /**
  * Objects Match and their methods are declared here
- * @author Mathias, Marcel
+ * @author D18.1
  */
 
 import Controller.saveGame;

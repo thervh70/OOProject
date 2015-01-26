@@ -2,7 +2,7 @@ package Model;
 
 /**
  * Objects Standing and their methods are declared here
- * @author Marcel
+ * @author D18.1
  */
 import java.util.Comparator;
 

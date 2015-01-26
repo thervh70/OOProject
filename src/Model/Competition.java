@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 /**
  * Objects Competition and their methods are declared here
- * @author Mathias, Marcel
+ * @author D18.1
  */
 
 public class Competition {

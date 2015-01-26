@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 /**
  * Objects Team and their methods are declared here
- * @author Mathias
+ * @author D18.1
  */
 public class Team {
 	

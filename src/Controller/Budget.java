@@ -1,6 +1,6 @@
 package Controller;
 /**Our budget class, handles bidding on players and selling players
- * @author Bram
+ * @author D18.1
  */
 
 import java.util.Random;

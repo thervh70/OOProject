@@ -11,7 +11,7 @@ import org.xml.sax.SAXException;
 import Controller.saveGame;
 /**
  * Here happens all the Parsing
- * @author Mathias
+ * @author D18.1
  */
 
 public class XmlParser {

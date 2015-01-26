@@ -12,6 +12,9 @@ import Model.XmlParser;
 
 import org.w3c.dom.*;
 
+/**Our class that handles saving a game
+ * @author D18.1
+ */
 public class saveGame {
 
 	private static DBmain DB;

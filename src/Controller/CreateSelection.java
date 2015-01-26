@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import Model.*;
 /**Our class which handles selection creation
- * @author All
+ * @author D18.1
  */
 public class CreateSelection {
 	

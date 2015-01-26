@@ -10,9 +10,7 @@ import Model.Team;
 
 /**The root of our game.
  * This class calculates the score for a match along with the stats of a match.
- *  
- * @author Robin
- *
+ * @author D18.1
  */
 
 public class gameEngine {

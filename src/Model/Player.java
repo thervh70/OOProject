@@ -3,7 +3,7 @@ package Model;
 import Controller.saveGame;
 /**
  * Player is abstract, Fieldplayer and Goalkeeper inherit from it
- * @author Mathias
+ * @author D18.1
  */
 public abstract class Player {
 		
