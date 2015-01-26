@@ -14,6 +14,12 @@ import javafx.stage.Popup;
 
 public class Warning{
 	
+	/**Makes a standard popup with the given string and disables the current pane while the popup is showing.
+	 * 
+	 * @param t - The string to be added to the popup
+	 * @param root - The pane to which the popup will be added and the original screen will be disabled temporarily.
+	 * @return - The popup
+	 */
 	public static Popup makeWarning(String t, Pane root) {
 		root.setDisable(true);
 		Popup warning = new Popup();
@@ -34,6 +40,9 @@ public class Warning{
 		
 		
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
+			/**Gives functionality to the confirm button which closes the popup and reactivates the rest of the screen on click.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent m){
 				warning.hide();
@@ -45,6 +54,13 @@ public class Warning{
 		return warning;
 	}
 	
+	/**Makes a popup with a rectangle as background color and the given string as text and disables the current pane while the popup is showing.
+	 * 
+	 * @param t - The string to be shown on the popup.
+	 * @param root - The pane where the popup should show which will be disabled temporarily.
+	 * @param r - The rectangle which will be used for the background of the popup.
+	 * @return - The finished popup.
+	 */
 	public static Popup makeWarning(String t, Pane root, Rectangle r) {
 		root.setDisable(true);
 		Popup warning = new Popup();
@@ -64,7 +80,9 @@ public class Warning{
 		Style.setLocation(confirm, 165, 300);
 		Style.setButtonStyle(confirm, 40);
 		
-		
+		/**Gives functionality to the confirm button which closes the popup and reactivates the rest of the screen on click.
+		 * 
+		 */
 		confirm.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
 			public void handle(MouseEvent m){
@@ -78,6 +96,14 @@ public class Warning{
 		return warning;
 	}
 	
+	/**Makes a popup with a given text to which the user can answer yes or no.
+	 * 
+	 * @param t - The string to be shown on the popup.
+	 * @param root - The pane the popup is shown over and which is temporarily disabled.
+	 * @param event - 
+	 * @param event2
+	 * @return - The completed popup.
+	 */
 	public static Popup makeWarning(String t, Pane root, EventHandler<MouseEvent> event,EventHandler<MouseEvent> event2) {
 		root.setDisable(true);
 		Popup warning = new Popup();
@@ -123,6 +149,14 @@ public class Warning{
 		return warning;
 	}
 	
+	/**Makes a popup with a given text and prompts the user for input and shows yes/no buttons.
+	 * 
+	 * @param t - The string to be shown on the popup
+	 * @param root - The pane the popup is shown over and which is temporarily disabled.
+	 * @param event - 
+	 * @param event2
+	 * @return - The completed popup.
+	 */
 	public static Popup getInput(String t, Pane root, EventHandler<MouseEvent> event,EventHandler<MouseEvent> event2) {
 		root.setDisable(true);
 		Popup warning = new Popup();

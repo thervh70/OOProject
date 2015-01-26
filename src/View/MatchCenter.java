@@ -43,7 +43,12 @@ public class MatchCenter {
 	
 	//boolean for disabling 2nd match after start match
 	private static boolean played = false;
-	    
+	
+	/**Shows the Match Center screen, where the user can play out a match with his current selection.
+	 * 
+	 * @param primaryStage - the window
+	 * @throws NullPointerException
+	 */
 	public static void start(Stage primaryStage) throws NullPointerException {
 		Pane root = new Pane(); 
 		
@@ -219,7 +224,9 @@ public class MatchCenter {
 		Style.setLocation(back, 150, 870);
        
 		start.setOnAction(new EventHandler<ActionEvent>() {
-       	
+			/**Gives functionality to the "Start Match" button and plays out a match on click.
+			 * 
+			 */
 	        @Override
 			public void handle(ActionEvent event) {
 	        	
@@ -367,6 +374,9 @@ public class MatchCenter {
        });
        
        results.setOnAction(new EventHandler<ActionEvent>() {
+    	   /**Gives functionality to the "Results" button to play out the game without the animation and go straight to the results on action.
+    	    * 
+    	    */
 			@Override
 			public void handle(ActionEvent e) {
 				timeSeconds = 0;
@@ -390,6 +400,9 @@ public class MatchCenter {
 		});
        
        back.setOnAction(new EventHandler<ActionEvent>() {
+    	   /**Gives functionality to the "Back" button to go back to the management center on click.
+    	    * 
+    	    */
 			@Override
 			public void handle(ActionEvent e) {
 				ManagementCenter.start(primaryStage);
@@ -401,6 +414,14 @@ public class MatchCenter {
 		primaryStage.show();
 	}
 	
+	/**Shows an attempt animation consisting of a piece of text and adds 1 to the attempt counter.
+	 * 
+	 * @param user - A boolean to determine the correct location for the animation. true is left, false is right.
+	 * @param score - Boolean to specify if the attempt is successful or if it failed.
+	 * @param attempt
+	 * @param goal
+	 * @param miss
+	 */
 	public static void attemptAnimation(boolean user, boolean score, Text attempt,Text goal,Text miss){
 		timeline.pause();
 		attempt.setVisible(true);
@@ -427,7 +448,9 @@ public class MatchCenter {
 		
 		if(score){
 			st.setOnFinished(new EventHandler<ActionEvent>(){
-	
+				/**This will call the goal animation after the attempt animation ended.
+				 * 
+				 */
 				@Override
 				public void handle(ActionEvent event) {
 					attempt.setVisible(false);
@@ -439,7 +462,9 @@ public class MatchCenter {
 		
 		else{
 			st.setOnFinished(new EventHandler<ActionEvent>(){
-
+				/**This will call the miss animation after the attempt animation finished.
+				 * 
+				 */
 				@Override
 				public void handle(ActionEvent event) {
 					attempt.setVisible(false);
@@ -449,7 +474,11 @@ public class MatchCenter {
 			});
 		}
 	}
-	
+	/**Shows an animation for a missed goal attempt consisting of a spinning piece of text.
+	 * 
+	 * @param user - A boolean to determine the positi9oning of the miss animation. true is left, false is right.
+	 * @param text - The text to be animated.
+	 */
 	public static void missAnimation(boolean user, Text text){
 		text.setVisible(true);
 		if(user){
@@ -474,7 +503,9 @@ public class MatchCenter {
 		ft.play();
 		
 		 st.setOnFinished(new EventHandler<ActionEvent>(){
-
+			 	/**Continues the match after the animation finished.
+			 	 * 
+			 	 */
 				@Override
 				public void handle(ActionEvent event) {
 					text.setVisible(false);
@@ -484,6 +515,11 @@ public class MatchCenter {
 			});		
 	}
 	
+	/**Shows a text animation for a goal and adds 1 to the goal counter.
+	 * 
+	 * @param user - A boolean to determine the positioning of the animation, true is left, false is right.
+	 * @param text - The text to be animated.
+	 */
 	public static void goalAnimation(boolean user,Text text){
 		text.setVisible(true);
 		if(user){
@@ -514,7 +550,9 @@ public class MatchCenter {
 	    rt.play();
 	    
 	    st.setOnFinished(new EventHandler<ActionEvent>(){
-
+	    	/**Resumes the match after the goal animation ended and increases the goal counter by one with the corresponding team.
+	    	 * 
+	    	 */
 			@Override
 			public void handle(ActionEvent event) {
 				text.setVisible(false);
@@ -535,7 +573,12 @@ public class MatchCenter {
 		
 	}
 	
-	//color: false is yellow, true is red
+	/**Shows an animation with a yellow or red player name for when they receive a card.
+	 * 
+	 * @param loc - A boolean to specify the positioning of the animation. true is left, false is right.
+	 * @param color - Boolean to show if the player receives a yellow or a red card. Yellow is false, red is true.
+	 * @param name - The name of the player receiving the card.
+	 */
 	public static void cardAnimation(boolean loc, boolean color, Text name){
 		timeline.pause();
 		name.setVisible(true);
@@ -578,6 +621,11 @@ public class MatchCenter {
 		});		
 	}
 	
+	/**Shows the name of a player in green text for when he gets injured.
+	 * 
+	 * @param loc - A boolean to specify the location of the animation. true is left, false is right.
+	 * @param name - The name of the player that got injured.
+	 */
 	public static void injuryAnimation(boolean loc, Text name){
 		timeline.pause();
 		name.setVisible(true);
@@ -605,7 +653,9 @@ public class MatchCenter {
 		ft.play();
 		
 		st.setOnFinished(new EventHandler<ActionEvent>(){
-
+			/**Continues the game after the injury animation finished.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent event) {
 				name.setVisible(false);

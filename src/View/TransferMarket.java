@@ -35,6 +35,10 @@ public class TransferMarket {
 	private static Player playerSelect = null;
 	private static Team teamSelect = null;
 	
+	/**This shows the transfer market where the user can buy players.
+	 * 
+	 * @param primaryStage - The window
+	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage){
 		Pane root = new Pane();
@@ -230,6 +234,9 @@ public class TransferMarket {
 		root.getChildren().addAll(back,toSell, tableSelectionField, tableSelectionKeeper,players,keepers,comboBox,vbox,budget);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the back button which directs to the management center on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				ManagementCenter.start(primaryStage);
@@ -237,6 +244,9 @@ public class TransferMarket {
 		});
 		
 		 toSell.setOnAction(new EventHandler<ActionEvent>() {
+			 /**Gives functionality to the "To Sell" button which directs to the selling screen of the transfer market on action.
+			  * 
+			  */
 			@Override
 			public void handle(ActionEvent e) {
 				TransferMarketSell.start(primaryStage);
@@ -258,7 +268,11 @@ public class TransferMarket {
 		});
 		
 		confirm.setOnAction(new EventHandler <ActionEvent>(){
-
+			/**Gives functionality to the "Place bid" button on action.
+			 * The user will get a warning if no player is selected, if the user has already bid 3 times or if the user entered a negative bid.
+			 * If the requirements are met, the bid is placed and you will buy the player with a certain chance.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent event) {
 				if(playerSelect == null){
@@ -343,7 +357,10 @@ public class TransferMarket {
 		});
 		
 		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
-
+			/**Gives functionality to table rows on mouse click.
+			 * Shows the player shown in the table row selected on the right side with his name, position and price.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent event) {
 				Player p = (Player)tableSelectionField.getSelectionModel().getSelectedItem();
@@ -413,6 +430,10 @@ public class TransferMarket {
 		
 	}
 	
+	/**This sets the color of table content to a certain color to show players with yellow/red cards and injured players.
+	 * 
+	 * @param t - The table column checked for the players to color.
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void setColor(TableColumn t){
 		t.setCellFactory(new Callback<TableColumn, TableCell>() {

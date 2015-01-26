@@ -39,9 +39,9 @@ import javafx.util.Callback;
 			Style.setButtonStyle(back, 45);
 			Style.setLocation(back,150,870);
 			
-			Button toMatch = new Button("To Ranking");
-			Style.setButtonStyle(toMatch, 45);
-			Style.setLocation(toMatch, 1550, 870);
+			Button toRanking = new Button("To Ranking");
+			Style.setButtonStyle(toRanking, 45);
+			Style.setLocation(toRanking, 1550, 870);
 			
 			TableView<Match> table = new TableView();
 			table.setEditable(false);
@@ -88,25 +88,35 @@ import javafx.util.Callback;
 			table.setItems(matchList);
 		
 			back.setOnAction(new EventHandler<ActionEvent>() {
+				/**Gives functionality to the "Back" button which directs to management center on action.
+				 * 
+				 */
 				@Override
 				public void handle(ActionEvent e) {
 					ManagementCenter.start(primaryStage);
 				}
 			}); 
 			
-			toMatch.setOnAction(new EventHandler<ActionEvent>() {
+			toRanking.setOnAction(new EventHandler<ActionEvent>() {
+				/**Gives functionality to the "To Ranking" button which directs to the ranking table on action.
+				 * 
+				 */
 				@Override
 				public void handle(ActionEvent event) {
 					CompetitionTable.start(primaryStage);				
 				}				
 			});
 			
-			root.getChildren().addAll(back,table,toMatch);
+			root.getChildren().addAll(back,table,toRanking);
 	
 			primaryStage.getScene().setRoot(root);
 			primaryStage.show();
 		}
 		
+		/**
+		 * 
+		 * @param t
+		 */
 		@SuppressWarnings({ "unchecked", "rawtypes" })
 		private static void setColor(TableColumn t){
 			t.setCellFactory(new Callback<TableColumn, TableCell>() {

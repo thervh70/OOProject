@@ -24,6 +24,11 @@ public abstract class Style {
 	private static double width;
 	private static double height;
 	
+	/**Give an existing button the standard layout for buttons used in Frits.
+	 * 
+	 * @param b - The button getting styled
+	 * @param size - 
+	 */
 	public static void setButtonStyle(Button b, double size){
 		Color color = Color.WHITESMOKE;
 		CornerRadii corner = new CornerRadii(10);
@@ -41,7 +46,9 @@ public abstract class Style {
 		Background drag_buttonBack = new Background(drag_fill);
 		
 		b.setOnMouseEntered(new EventHandler<MouseEvent>() {
-
+			/**The button color will darken when the mouse enters the button.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent m) {
 				b.setBackground(drag_buttonBack);
@@ -50,7 +57,9 @@ public abstract class Style {
 		});
 		
 		b.setOnMouseExited(new EventHandler<MouseEvent>() {
-
+			/**The button color will brighten when the mouse exits the button.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent m) {
 				b.setBackground(buttonBack);
@@ -59,6 +68,11 @@ public abstract class Style {
 		});		
 	}
 	
+	/**
+	 * 
+	 * @param t
+	 * @param size
+	 */
 	public static void setTextStyle(Text t, int size){
 		Font textFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
 		Color color = Color.WHITESMOKE;
@@ -111,7 +125,7 @@ public abstract class Style {
 		width = screenSize.getWidth();
 		height = screenSize.getHeight();
 	}
-
+	
 	public static double getWidth() {
 		return width;
 	}

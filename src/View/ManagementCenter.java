@@ -96,6 +96,9 @@ public class ManagementCenter {
 		vbox2.setAlignment(Pos.CENTER);
 		
 		manage.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Manage Team" button and goes to the team management screen on click.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				TeamManagement.start(primaryStage);
@@ -103,6 +106,9 @@ public class ManagementCenter {
 		});
 		
 		table.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Competition table" button which directs to the ranking table screen on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				CompetitionTable.start(primaryStage);
@@ -110,6 +116,9 @@ public class ManagementCenter {
 		});
 		
 		match.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Match Center" button which directs to the match center screen on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				

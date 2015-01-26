@@ -29,6 +29,10 @@ public class TransferMarketSell {
 
 	private static Player playerSelect = null;
 	
+	/**Shows the transfer market screen where the user can sell his players.
+	 * 
+	 * @param primaryStage - The window
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void start(Stage primaryStage) {
 		Pane root = new Pane();
@@ -192,6 +196,9 @@ public class TransferMarketSell {
 		tableSelectionKeeper.getColumns().addAll(nameKS,positionKS,ageKS,worthKS,divingKS,handlingKS,kickingKS,reflexKS,speedKS,posKS,heightKS,injuryKS);	
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
+			/**Give functionality to the back button which directs to the management center on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				ManagementCenter.start(primaryStage);
@@ -199,6 +206,9 @@ public class TransferMarketSell {
 		});
 		
 		toBuy.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "To buy" button which directs to the buying screen of the transfer market.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				TransferMarket.start(primaryStage);
@@ -208,7 +218,9 @@ public class TransferMarketSell {
 		refreshPlayers(tableSelectionField, tableSelectionKeeper);
 		
 		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
-
+			/**Gives functionality to table rows of the field players which shows the selected field player on the right with his name, position and price.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent event) {
 				Player p = (Player)tableSelectionField.getSelectionModel().getSelectedItem();
@@ -223,7 +235,9 @@ public class TransferMarketSell {
 		});
 		
 		tableSelectionKeeper.setOnMouseClicked(new EventHandler <MouseEvent>(){
-
+			/**Gives functionality to table rows of the keepers which shows the selected keeper on the right with his name, position and price.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent event) {
 				Player p = (Player)tableSelectionKeeper.getSelectionModel().getSelectedItem();
@@ -237,8 +251,12 @@ public class TransferMarketSell {
 			}
 		});
 		
-	confirm.setOnAction(new EventHandler <ActionEvent>(){
-
+		confirm.setOnAction(new EventHandler <ActionEvent>(){
+			/**Gives functionality to the "Sell this player" button on action.
+			 * The button will give a warning if the user has selected no player, if the user already sold 3 players on that day
+			 * Sells a player if all requirements are met.
+			 * 
+			 */
 		@Override
 		public void handle(ActionEvent event) {
 			if(playerSelect == null){
@@ -327,6 +345,10 @@ public class TransferMarketSell {
 		tableSelectionKeeper.setItems(selectionKeeper);
 	}
 	
+	/**Gives color to 
+	 * 
+	 * @param t
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void setColor(TableColumn t){
 		t.setCellFactory(new Callback<TableColumn, TableCell>() {

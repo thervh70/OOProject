@@ -64,6 +64,9 @@ public class LoadGame {
 			buttons[i] = new Button("Load game");
 			Style.setLocation(buttons[i], 700, (200 + i*55));
 			buttons[i].setOnAction(new EventHandler<ActionEvent>(){
+				/**Gives the load buttons functionality to read a file and go to the management center with that file on action.
+				 * 
+				 */
 				public void handle(ActionEvent e){
 					try{
 						saveGame.loadSave(infile);
@@ -91,6 +94,9 @@ public class LoadGame {
 		
 		//Give click functionality to "Back", directs to "Startup Menu"
 		Back.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Back" button and goes to the Startup Menu on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e){
 				StartupMenu.start(primaryStage);

@@ -386,8 +386,8 @@ public class TeamManagement {
 	 * 
 	 * @param tableL - The left table, containing selection players.
 	 * @param tableR - The right table, containing bench players.
-	 * @param ps - 
-	 * @param root - 
+	 * @param ps - The window
+	 * @param root - The pane containing the GUI elements.
 	 */
 	@SuppressWarnings("rawtypes")
 	private static void movePlayer(TableView tableL, TableView tableR, Stage ps, Pane root){
@@ -406,6 +406,13 @@ public class TeamManagement {
 		}
 	}
 	
+	/**Switches a keeper from the selection with one from the bench.
+	 * 
+	 * @param tableL - The left table containing the keeper in the selection.
+	 * @param tableR - The right table containing the keepers on the bench.
+	 * @param ps
+	 * @param root
+	 */
 	@SuppressWarnings("rawtypes")
 	private static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
 		Player pL = (Player)tableL.getSelectionModel().getSelectedItem();
