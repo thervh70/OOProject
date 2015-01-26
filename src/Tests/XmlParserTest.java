@@ -45,7 +45,7 @@ public class XmlParserTest {
 		d1 = XmlParser.parseDB();
 		assertNotEquals(d1.getSize(), 0);
 		assertEquals(d2.getSize(), 0);
-		String infile = "src/Model/Resources/DB_TEST_DO_NOT_REMOVE.xml";
+		String infile = "src/Model/Resources/DB_test.xml";
 		NodeList list = XmlParser.parseInit(infile);
 		Node db = list.item(1);
 		NodeList list2 = db.getChildNodes();
@@ -60,7 +60,7 @@ public class XmlParserTest {
 		c1.add(m2);
 		c1.add(m3);
 		c1.add(m4);
-		String infile = "src/Model/Resources/COMPETITION_TEST_DO_NOT_REMOVE.xml";
+		String infile = "src/Model/Resources/Competition_test.xml";
 		NodeList list = XmlParser.parseInit(infile);
 		Node comp = list.item(1);
 		NodeList list2 = comp.getChildNodes();
