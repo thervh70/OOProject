@@ -327,6 +327,11 @@ public class TransferMarketSell {
 		primaryStage.show();
 	}
 	
+	/** Update a team after a player has been sold/bought
+	 * @author D18.1
+	 * @param tableSelectionField	The fieldplayers in the selection of this team
+	 * @param tableSelectionKeeper	The goalkeeper in the selection of this team
+	 */
 	public static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper){
 		Team t = saveGame.getMyTeam();
 		
@@ -351,9 +356,9 @@ public class TransferMarketSell {
 		tableSelectionKeeper.setItems(selectionKeeper);
 	}
 	
-	/**Gives color to 
-	 * 
-	 * @param t
+	/**Gives colors to a tablecolumn
+	 * @author 	D18.1
+	 * @param t	TableColumn to which this method will be applied
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void setColor(TableColumn t){

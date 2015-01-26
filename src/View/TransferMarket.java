@@ -402,6 +402,11 @@ public class TransferMarket {
 		primaryStage.show();
 	}
 	
+	/** Update a team after a player has been sold/bought
+	 * @param s						Name of the team
+	 * @param tableSelectionField	The fieldplayers in the selection of this team
+	 * @param tableSelectionKeeper	The goalkeeper in the selection of this team
+	 */
 	public static void refreshPlayers(String s, TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper){
 		
 		for(int i = 0; i < 18; i++){

@@ -446,12 +446,13 @@ public class TeamManagement {
 		}
 	}
 	
-	/**
+	/** Update the team management table after you have made a change to the selection
+	 * @author D18.1
 	 * 
-	 * @param tableSelectionField
-	 * @param tableSelectionKeeper
-	 * @param tableTeamField
-	 * @param tableTeamKeeper
+	 * @param tableSelectionField 	Table with the fieldplayers that are currently in the selection
+	 * @param tableSelectionKeeper	Table with the goalkeeper that is currently in the selection
+	 * @param tableTeamField		Table with the fieldplayers that are currently not in the selection
+	 * @param tableTeamKeeper		Table with the goalkeepers that are currently not in the selection.
 	 */
 	private static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
 		ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();

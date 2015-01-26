@@ -71,10 +71,10 @@ public abstract class Style {
 		});		
 	}
 	
-	/**
-	 * 
-	 * @param t
-	 * @param size
+	/** Apply a certain style to a text
+	 * @author D18.1
+	 * @param t		The Text object to which the style will be applied
+	 * @param size	The font-size of this Text object
 	 */
 	public static void setTextStyle(Text t, int size){
 		Font textFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
@@ -83,6 +83,11 @@ public abstract class Style {
 		t.setFill(color);
 	}
 	
+	/** Apply a certain style to a label
+	 * @author D18.1
+	 * @param l		Label to which the style will be applied
+	 * @param size	The font-size of this label
+	 */
 	public static void setLabelStyle(Label l, int size){
 	   	Font textFont = Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), getNewSize(size));
 	   	Color color = Color.WHITESMOKE;
@@ -90,6 +95,10 @@ public abstract class Style {
 		l.setTextFill(color);
 	}
 	
+	/**Apply a certain style to a Rectangle object
+	 * @author D18.1
+	 * @param r	Rectangle to which the style will be applied
+	 */
 	public static void setRectangleStyle(Rectangle r){
 		Color color = Color.YELLOW;
 		r.setFill(color);
@@ -98,6 +107,11 @@ public abstract class Style {
 		r.setOpacity(0.7);
 	}
 	
+	/**	Set the background for a certain screen
+	 * @author D18.1
+	 * @param image	Name of the background image that needs to be loaded for this particular screen
+	 * @return ImageView object that sets the background specific for this screen
+	 */
 	public static ImageView setBackground(String image){		
 		Image background = new Image(image);
 		ImageView imgView = new ImageView(background);
@@ -108,14 +122,31 @@ public abstract class Style {
 		return imgView;
 	}
 	
+	/** Return a font object with a specified size
+	 * @author D18.1
+	 * @param size	The size the Font needs to have
+	 * @return		The Font requested
+	 */
 	public static Font getFont(int size){
 		return Font.loadFont(Style.class.getResource("/View/Resources/AGENCYR.TTF").toExternalForm(), size);
 	}
 	
+	/** Adjusts a requested size to the resolution of the screen 
+	 * @author D18.1
+	 * 
+	 * @param size	Value which is correct for a screen with a width of 1920px, but needs to be adjusted
+	 * @return		The value adjusted to the different screen resolution
+	 */
 	public static double getNewSize(double size){
 		return (width/1920)*size;
 	}
 	
+	/** Adjusts the location of object on the screen the screen resolution
+	 * @author	D18.1
+	 * @param n	Visible object that needs to be readjusted
+	 * @param x	x coordinate of this object 
+	 * @param y	y coordinate
+	 */
 	public static void setLocation(Node n, double x, double y){
 		double ratioX = x/1920;
 		double ratioY = y/1080;
@@ -123,16 +154,28 @@ public abstract class Style {
 		n.setLayoutY(ratioY*height);
 	}
 
+	/**
+	 * 	Adjusts the screen size to different screen resolutions
+	 * @author D18.1
+	 */
 	public static void setScreen() {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		width = screenSize.getWidth();
 		height = screenSize.getHeight();
 	}
 	
+	/** Return the width of the screen
+	 * @author D18.1
+	 * @return The width of the screen
+	 */
 	public static double getWidth() {
 		return width;
 	}
 	
+	/**	Return the height of the screen
+	 * @author D18.1
+	 * @return The height of the screen
+	 */
 	public static double getHeight() {
 		return height;
 	}

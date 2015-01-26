@@ -138,8 +138,8 @@ public class Results {
 		column2.setResizable(false);
 		Score.setResizable(false);
 		
-		setColor(homeTeam);
-		setColor(awayTeam);
+		setUnderline(homeTeam);
+		setUnderline(awayTeam);
 		
 		tableResults.getColumns().addAll(homeTeam, column, awayTeam, column2, Score);
 		
@@ -159,8 +159,12 @@ public class Results {
 		primaryStage.show();
 	}
 	
+	/**	Underlines the name of the team the user plays as
+	 * @author D18.1
+	 * @param t	Table to which this method needs to be applied
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private static void setColor(TableColumn t){
+	private static void setUnderline(TableColumn t){
 		t.setCellFactory(new Callback<TableColumn, TableCell>() {
 			public TableCell call(TableColumn param) {
 				return new TableCell<Team, String>() {

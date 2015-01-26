@@ -71,8 +71,8 @@ import javafx.util.Callback;
 			homeScore.setResizable(false);
 			awayScore.setResizable(false);
 			
-			setColor(teamAway);
-			setColor(teamHome);
+			setUnderline(teamAway);
+			setUnderline(teamHome);
 			
 			table.getColumns().addAll(day,teamHome,homeScore,awayScore,teamAway);
 			
@@ -116,12 +116,12 @@ import javafx.util.Callback;
 			primaryStage.show();
 		}
 		
-		/**
-		 * 
-		 * @param t
+		/** Underline the entries in the competitionmatches table that holds the name of the team the user plays as
+		 * @author 	D18.1
+		 * @param t	TableColumn to which this method needs to be applied
 		 */
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		private static void setColor(TableColumn t){
+		private static void setUnderline(TableColumn t){
 			t.setCellFactory(new Callback<TableColumn, TableCell>() {
 				public TableCell call(TableColumn param) {
 					return new TableCell<Team, String>() {

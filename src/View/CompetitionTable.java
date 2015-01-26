@@ -102,7 +102,7 @@ public class CompetitionTable {
         goalsFor.setResizable(false);
         goalDifference.setResizable(false);
         
-        setColor(name);
+        setUnderline(name);
                
         table.getColumns().addAll(rank,name,points,goalsFor,goalsAgainst,goalDifference);
         
@@ -128,8 +128,12 @@ public class CompetitionTable {
 		primaryStage.show();
 	}
 	
+	/** Underlines the entries which hold the name of the team the user plays as
+	 * @author 	D18.1
+	 * @param t	TableColumn to which this method needs to be applied
+	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private static void setColor(TableColumn t){
+	private static void setUnderline(TableColumn t){
 		t.setCellFactory(new Callback<TableColumn, TableCell>() {
 			public TableCell call(TableColumn param) {
 				return new TableCell<Team, String>() {
