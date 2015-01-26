@@ -3,7 +3,10 @@ package Controller;
 import java.util.ArrayList;
 
 import Model.*;
-
+/**Our class which handles selection creation
+ * @author All
+ *
+ */
 public class CreateSelection {
 	
 	/**Check to see if a team isn't too small
