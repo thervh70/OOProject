@@ -57,9 +57,20 @@ public class CompetitionTable {
 		
 		ObservableList<Standing> competitionTable = FXCollections.observableArrayList();
 
-		for(int i = 0; i < 18; i++) {
-			standingList.get(i).setRank(i+1);
-			competitionTable.add(standingList.get(i));
+		
+		standingList.get(0).setRank(1);
+		competitionTable.add(standingList.get(0));
+		int i = 1;
+		while(i < 18){
+			if((standingList.get(i).getGoalDifference() == standingList.get(i-1).getGoalDifference()) && (standingList.get(i).getGoalsFor() == standingList.get(i-1).getGoalsFor())){
+				standingList.get(i).setRank(standingList.get(i-1).getRank());
+				competitionTable.add(standingList.get(i));
+				i += 1;
+			} else {
+				standingList.get(i).setRank(i+1);
+				competitionTable.add(standingList.get(i));
+				i += 1;
+			}
 		}
 		
 		table.setItems(competitionTable);
