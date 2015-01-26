@@ -315,6 +315,10 @@ public class TeamManagement {
 		root.getChildren().addAll(switchPlayer,switchKeeper, hbox);
 		
 		back.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the back button to refresh the team and go to the management center on action.
+			 * @author D18.1
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				saveGame.refreshTeam(backup, saveGame.getMyTeam());
@@ -323,6 +327,10 @@ public class TeamManagement {
 		});
 		
 		switchPlayer.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the switch button to switch the two selected fieldplayers when the button is pressed and refreshes the players shown.
+			 * @author D18.1
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				setColor(name);
@@ -334,6 +342,10 @@ public class TeamManagement {
 			}
 		});
 		
+		/**Gives functionality to the switch button to switch the two selected fieldplayers when the button is pressed and refreshes the players shown.
+		 * @author D18.1
+		 * 
+		 */
 		switchKeeper.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent e) {
