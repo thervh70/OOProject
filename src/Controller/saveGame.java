@@ -25,97 +25,131 @@ public class saveGame {
 	private static String file = "";
 
 
-	/**@return the ingame Competition*/
+	/**Method that gets the savegame competition
+	 * @return - competition
+	 */
 	public static Competition getCompetition() {
 		return competition;
 	}
 
-	/**Sets the ingame Competition*/
+	/**Method that sets the savegame competition
+	 * @param competition
+	 */
 	public static void setCompetition(Competition competition) {
 		saveGame.competition = competition;
 	}
 
-	/**@return the ingame Database*/
+	/**Method that returns the savegame database
+	 * @return - DB
+	 */
 	public static DBmain getDB() {
 		return DB;
 	}
 
-	/**Sets the ingame Database*/
+	/**Method that sets the savegame database
+	 * @param db
+	 */
 	public static void setDB(DBmain db) {
 		saveGame.DB = db;
 	}
 	
-	/**checks if cards and injuries have to be removed. If so, cards and injuries are removed*/
+	/**Method that checks if cards and injuries have to be removed. If so, cards and injuries are removed
+	 */
 	public static void clearDBcardsInjuries(){
 		DB.clearAllCardsInjuries();
 	}
 	
-	/**@return MyTeamName*/
+	/**Method that gets myteamname
+	 * @return - String
+	 */
 	public static String getMyTeamName(){
 		return myteam.getNm();
 	}
 	
-	/**Sets MyTeamName*/
+	/**Method that sets myteamname
+	 * @param myteam
+	 */
 	public static void setMyteam(Team myteam) {
 		saveGame.myteam = myteam;
 	}
 	
-	/**@return MyTeam*/
+	/**Method that gets myteam
+	 * @return - myteam
+	 */
 	public static Team getMyTeam(){
 		return myteam;
 	}
 
-	/**Sets MyTeam*/
+	/**Method that gets the current day
+	 * @return - day
+	 */
 	public static int getDay() {
 		return day;
 	}
 	
-	/**Sets day*/
+	/**Method to set the current day
+	 * @param day
+	 */
 	public static void setDay(int day) {
 		saveGame.day = day;
 	}
 	
-	/**@return Buycounter*/
+	/**Method that gets the buycounter
+	 * @return - buyc
+	 */
 	public static int getBuyc() {
 		return buyc;
 	}
 
-	/**Sets the Buycounter*/
+	/**Method that sets the buycounter
+	 * @param buyc
+	 */
 	public static void setBuyc(int buyc) {
 		saveGame.buyc = buyc;
 	}
 
-	/**@return Sellcounter*/
+	/**Method that gets the sellcounter
+	 * @return - sellc
+	 */
 	public static int getSellc() {
 		return sellc;
 	}
 
-	/**Sets Sellcounter*/
+	/**Method that sets the sellcounter
+	 * @param sellc
+	 */
 	public static void setSellc(int sellc) {
 		saveGame.sellc = sellc;
 	}
 
-	/**@return the filename of a game*/
+	/**Method that returns the filename of the savegame
+	 * @return - file
+	 */
 	public static String getFile() {
 		return file;
 	}
 
-	/**Sets the filename of a game*/
+	/**Method that sets the filename of the savegame
+	 * @param file
+	 */
 	public static void setFile(String file) {
 		saveGame.file = file;
 	}
 	
-	/**Raises the buycounter by 1*/
+	/**Method that raises the buycounter by one
+	 */
 	public static void cbuyUp(){
 		buyc++;
 	}
 	
-	/**Raises the sellcounter by 1*/
+	/**Method that raises the sellcounter by one
+	 */
 	public static void csellUp(){
 		sellc++;
 	}
 	
-	/**Raises the day by 1 if day is smaller than 34*/
+	/**Method that raises the current day by one if the current day is less than 34
+	 */
 	public static void nextDay(){
 		if(day < 34){
 			day++;
@@ -125,16 +159,21 @@ public class saveGame {
 		buyc=0;
 	}
 	
-	/**Sets the saveGame to all its default settings*/
+	/**Method that sets the savegame to all it's default settings
+	 */
 	public static void setDefaults(){
 		DB = null;
 		myteam = null;
 		competition = null;
 		day = 1;
 		file = "";
+		buyc = 0;
+		sellc = 0;
 	}	
 	
-	/**Creates a new save in saveGame*/
+	/**Method that creates a new save
+	 * @param t
+	 */
 	public static void newSave(Team t){
 		saveGame.DB = XmlParser.parseDB();
 		Competition competition = Scheduler.generate();
@@ -147,7 +186,9 @@ public class saveGame {
 		}
 	}
 	
-	/**Loads an existing game from Xml by using the XmlParser*/
+	/**Method that loads an excisting savegame
+	 * @param infile
+	 */
 	public static void loadSave(String infile){
 		NodeList saveElements = XmlParser.parseInit("src/Controller/Saves/" +  infile);
 		saveGame.setFile(infile);
@@ -171,7 +212,9 @@ public class saveGame {
 		competition = XmlParser.parseCompetition(comp.getChildNodes());
 	}
 
-	/**Writes a game to Xml*/
+	/**Method that creates a printable version of the save, so we can print it to xml
+	 * @param infile
+	 */
 	public static void write(String infile) {
 		File file = new File("src/Controller/Saves/" + infile);
 		PrintWriter wr;
@@ -195,13 +238,18 @@ public class saveGame {
 		}
 	}
 	
-	/**Refreshes a Team, replaces an old Team with a new Team*/
+	/**Methods that replaces an old team with a new team
+	 * @param old
+	 * @param fresh
+	 */
 	public static void refreshTeam(Team old, Team fresh){
 		DB.removeTeam(old);
 		DB.addTeam(fresh);
 	}
 	
-	/**Sets the Matchresults for a day*/
+	/**Method that sets the machresult for a day
+	 * @param m
+	 */
 	public static void setMatchResult(Match m){
 		competition.setMatchesForDay(day, m);
 	}
