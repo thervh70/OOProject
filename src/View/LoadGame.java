@@ -91,8 +91,7 @@ public class LoadGame {
 			root.getChildren().add(buttons[i]);
 			root.getChildren().add(text[i]);
 		}
-		
-		//Give click functionality to "Back", directs to "Startup Menu"
+
 		Back.setOnAction(new EventHandler<ActionEvent>() {
 			/**Gives functionality to the "Back" button and goes to the Startup Menu on action.
 			 * 

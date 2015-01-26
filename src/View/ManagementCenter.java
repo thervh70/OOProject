@@ -132,6 +132,9 @@ public class ManagementCenter {
 		});
 		
 		market.setOnAction(new EventHandler<ActionEvent>() {
+			/**Gives functionality to the "Transfer Market" button which directs to the buying screen of the transfer market on action.
+			 * 
+			 */
 			@Override
 			public void handle(ActionEvent e) {
 				TransferMarket.start(primaryStage);				

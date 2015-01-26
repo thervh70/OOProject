@@ -34,8 +34,7 @@ public class SplashScreen extends Application {
 		Text t = new Text("PRESS ANDY KEY TO START");
 		Style.setTextStyle(t,70);
 		Style.setLocation(t,1220,700);
-		
-        //When the mouse button is pressed, go to the next StartupMenu screen
+
         root.setOnMouseClicked(new EventHandler<MouseEvent>() {
         	/**Gives functionality to the pane to transition to the startup menu on mouse click.
         	 * 
@@ -45,8 +44,7 @@ public class SplashScreen extends Application {
                 StartupMenu.start(primaryStage);
              }
         });
-        
-        //Same for when a key is pressed
+
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
         	/**Gives functionality to the scene to transition to the startup menu when a key is pressed.
         	 * 

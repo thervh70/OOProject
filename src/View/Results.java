@@ -26,7 +26,12 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 public class Results {
-
+	
+	/**Shows the Results screen, which contains the results of the matches of the current day.
+	 * 
+	 * @param primaryStage - The window
+	 * @param match - 
+	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void start(Stage primaryStage, gameEngine match) {
 		Pane root = new Pane(); 

@@ -410,8 +410,8 @@ public class TeamManagement {
 	 * 
 	 * @param tableL - The left table containing the keeper in the selection.
 	 * @param tableR - The right table containing the keepers on the bench.
-	 * @param ps
-	 * @param root
+	 * @param ps - The window.
+	 * @param root - The pane containing the GUI elements.
 	 */
 	@SuppressWarnings("rawtypes")
 	private static void moveKeeper(TableView tableL, TableView tableR, Stage ps, Pane root){
@@ -430,6 +430,13 @@ public class TeamManagement {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param tableSelectionField
+	 * @param tableSelectionKeeper
+	 * @param tableTeamField
+	 * @param tableTeamKeeper
+	 */
 	private static void refreshPlayers(TableView<Fieldplayer> tableSelectionField, TableView<Goalkeeper> tableSelectionKeeper, TableView<Fieldplayer> tableTeamField, TableView<Goalkeeper> tableTeamKeeper){
 		ObservableList<Fieldplayer> selectionField = FXCollections.observableArrayList();
 		for (int i = 0; i < 11; i++) {

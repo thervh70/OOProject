@@ -357,8 +357,8 @@ public class TransferMarket {
 		});
 		
 		tableSelectionField.setOnMouseClicked(new EventHandler <MouseEvent>(){
-			/**Gives functionality to table rows on mouse click.
-			 * Shows the player shown in the table row selected on the right side with his name, position and price.
+			/**Gives functionality to table rows of the fieldplayers on mouse click.
+			 * Shows the fieldplayer of the selected table row on the right side with his name, position and price.
 			 * 
 			 */
 			@Override
@@ -375,7 +375,10 @@ public class TransferMarket {
 		});
 		
 		tableSelectionKeeper.setOnMouseClicked(new EventHandler <MouseEvent>(){
-
+			/**Gives functionality to table rows of the keepers on mouse click.
+			 * Shows the keeper of the selected table row on the right side with his name, position and price.
+			 * 
+			 */
 			@Override
 			public void handle(MouseEvent event) {
 				Player p = (Player)tableSelectionKeeper.getSelectionModel().getSelectedItem();
