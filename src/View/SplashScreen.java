@@ -32,7 +32,7 @@ public class SplashScreen extends Application {
 		//create background image
 		root.getChildren().add(Style.setBackground("/View/Resources/background_splashscreen.png"));
 
-		Text t = new Text("PRESS ANDY KEY TO START");
+		Text t = new Text("5 PUNTEN BINNEN HOPPA");
 		Style.setTextStyle(t,70);
 		Style.setLocation(t,1220,700);
 
