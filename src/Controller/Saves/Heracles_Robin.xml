@@ -205,22 +205,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Berend</Firstname>
-               <Lastname>Schootstra</Lastname>
-               <Age>19</Age>
-               <Price>150516</Price>
-               <Pace>57</Pace>
-               <Shooting>45</Shooting>
-               <Passing>54</Passing>
-               <Dribbling>59</Dribbling>
-               <Defending>57</Defending>
-               <Physical>52</Physical>
-               <Type>CDM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Erik</Firstname>
                <Lastname>Bakker</Lastname>
                <Age>24</Age>
@@ -237,38 +221,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Calvin</Firstname>
-               <Lastname>Mac-Intosh</Lastname>
-               <Age>25</Age>
-               <Price>112191</Price>
-               <Pace>68</Pace>
-               <Shooting>38</Shooting>
-               <Passing>50</Passing>
-               <Dribbling>56</Dribbling>
-               <Defending>65</Defending>
-               <Physical>67</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Wout</Firstname>
-               <Lastname>Droste</Lastname>
-               <Age>25</Age>
-               <Price>121432</Price>
-               <Pace>75</Pace>
-               <Shooting>28</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>66</Dribbling>
-               <Defending>64</Defending>
-               <Physical>66</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Mohammed</Firstname>
                <Lastname>El-Makrini</Lastname>
                <Age>27</Age>
@@ -280,38 +232,6 @@
                <Defending>65</Defending>
                <Physical>73</Physical>
                <Type>CDM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Michiel</Firstname>
-               <Lastname>Hemmen</Lastname>
-               <Age>27</Age>
-               <Price>113342</Price>
-               <Pace>42</Pace>
-               <Shooting>68</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>52</Dribbling>
-               <Defending>29</Defending>
-               <Physical>81</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Bartholomew</Firstname>
-               <Lastname>Ogbeche</Lastname>
-               <Age>30</Age>
-               <Price>162292</Price>
-               <Pace>81</Pace>
-               <Shooting>64</Shooting>
-               <Passing>46</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>27</Defending>
-               <Physical>70</Physical>
-               <Type>ST</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -396,6 +316,134 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
+            <Player>
+               <Firstname>Dejan</Firstname>
+               <Lastname>Meleg</Lastname>
+               <Age>20</Age>
+               <Price>141738</Price>
+               <Pace>67</Pace>
+               <Shooting>65</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>27</Defending>
+               <Physical>64</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Bob</Firstname>
+               <Lastname>Schepers</Lastname>
+               <Age>22</Age>
+               <Price>144547</Price>
+               <Pace>76</Pace>
+               <Shooting>60</Shooting>
+               <Passing>59</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>36</Defending>
+               <Physical>65</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mart</Firstname>
+               <Lastname>Dijkstra</Lastname>
+               <Age>24</Age>
+               <Price>163488</Price>
+               <Pace>48</Pace>
+               <Shooting>52</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>57</Dribbling>
+               <Defending>64</Defending>
+               <Physical>70</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Berend</Firstname>
+               <Lastname>Schootstra</Lastname>
+               <Age>19</Age>
+               <Price>150516</Price>
+               <Pace>57</Pace>
+               <Shooting>45</Shooting>
+               <Passing>54</Passing>
+               <Dribbling>59</Dribbling>
+               <Defending>57</Defending>
+               <Physical>52</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Calvin</Firstname>
+               <Lastname>Mac-Intosh</Lastname>
+               <Age>25</Age>
+               <Price>112191</Price>
+               <Pace>68</Pace>
+               <Shooting>38</Shooting>
+               <Passing>50</Passing>
+               <Dribbling>56</Dribbling>
+               <Defending>65</Defending>
+               <Physical>67</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Wout</Firstname>
+               <Lastname>Droste</Lastname>
+               <Age>25</Age>
+               <Price>121432</Price>
+               <Pace>75</Pace>
+               <Shooting>28</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>66</Dribbling>
+               <Defending>64</Defending>
+               <Physical>66</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Michiel</Firstname>
+               <Lastname>Hemmen</Lastname>
+               <Age>27</Age>
+               <Price>113342</Price>
+               <Pace>42</Pace>
+               <Shooting>68</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>52</Dribbling>
+               <Defending>29</Defending>
+               <Physical>81</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Bartholomew</Firstname>
+               <Lastname>Ogbeche</Lastname>
+               <Age>30</Age>
+               <Price>162292</Price>
+               <Pace>81</Pace>
+               <Shooting>64</Shooting>
+               <Passing>46</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>27</Defending>
+               <Physical>70</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
             <Keeper>
                <Firstname>Jurjan</Firstname>
                <Lastname>Wouda</Lastname>
@@ -430,22 +478,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
-            <Player>
-               <Firstname>Dejan</Firstname>
-               <Lastname>Meleg</Lastname>
-               <Age>20</Age>
-               <Price>141738</Price>
-               <Pace>67</Pace>
-               <Shooting>65</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>27</Defending>
-               <Physical>64</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
             <Player>
                <Firstname>Albert</Firstname>
                <Lastname>Rusnak</Lastname>
@@ -495,22 +527,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Bob</Firstname>
-               <Lastname>Schepers</Lastname>
-               <Age>22</Age>
-               <Price>144547</Price>
-               <Pace>76</Pace>
-               <Shooting>60</Shooting>
-               <Passing>59</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>36</Defending>
-               <Physical>65</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Sebastian</Firstname>
                <Lastname>Steblecki</Lastname>
                <Age>22</Age>
@@ -522,22 +538,6 @@
                <Defending>44</Defending>
                <Physical>55</Physical>
                <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Mart</Firstname>
-               <Lastname>Dijkstra</Lastname>
-               <Age>24</Age>
-               <Price>163488</Price>
-               <Pace>48</Pace>
-               <Shooting>52</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>57</Dribbling>
-               <Defending>64</Defending>
-               <Physical>70</Physical>
-               <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -586,646 +586,6 @@
                <Defending>29</Defending>
                <Physical>65</Physical>
                <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-         </Teammembers>
-      </Team>
-      <Team>
-         <Teamname>Ajax</Teamname>
-         <Virtual_budget>1500000</Virtual_budget>
-         <Budget>1500000</Budget>
-         <Points>13</Points>
-         <Goalsfor>16</Goalsfor>
-         <Goalsagainst>10</Goalsagainst>
-         <Selection>
-            <Player>
-               <Firstname>Nicolai</Firstname>
-               <Lastname>Boilesen</Lastname>
-               <Age>22</Age>
-               <Price>162262</Price>
-               <Pace>78</Pace>
-               <Shooting>48</Shooting>
-               <Passing>64</Passing>
-               <Dribbling>74</Dribbling>
-               <Defending>72</Defending>
-               <Physical>72</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Joel</Firstname>
-               <Lastname>Veltman</Lastname>
-               <Age>22</Age>
-               <Price>170057</Price>
-               <Pace>69</Pace>
-               <Shooting>37</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>71</Dribbling>
-               <Defending>77</Defending>
-               <Physical>71</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ricardo</Firstname>
-               <Lastname>Rhijn</Lastname>
-               <Age>23</Age>
-               <Price>159844</Price>
-               <Pace>85</Pace>
-               <Shooting>52</Shooting>
-               <Passing>66</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>70</Defending>
-               <Physical>75</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kolbeinn</Firstname>
-               <Lastname>Sigthorsson</Lastname>
-               <Age>24</Age>
-               <Price>123246</Price>
-               <Pace>69</Pace>
-               <Shooting>72</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>42</Defending>
-               <Physical>77</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Niklas</Firstname>
-               <Lastname>Moisander</Lastname>
-               <Age>29</Age>
-               <Price>128226</Price>
-               <Pace>67</Pace>
-               <Shooting>49</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>76</Defending>
-               <Physical>74</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Niki</Firstname>
-               <Lastname>Zimling</Lastname>
-               <Age>29</Age>
-               <Price>119849</Price>
-               <Pace>65</Pace>
-               <Shooting>66</Shooting>
-               <Passing>69</Passing>
-               <Dribbling>73</Dribbling>
-               <Defending>72</Defending>
-               <Physical>80</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Keeper>
-               <Firstname>Jasper</Firstname>
-               <Lastname>Cillessen</Lastname>
-               <Age>25</Age>
-               <Price>146158</Price>
-               <Diving>77</Diving>
-               <Handling>80</Handling>
-               <Kicking>74</Kicking>
-               <Reflexes>78</Reflexes>
-               <Speed>54</Speed>
-               <Positioning>81</Positioning>
-               <Height>188</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Davy</Firstname>
-               <Lastname>Klaassen</Lastname>
-               <Age>21</Age>
-               <Price>144729</Price>
-               <Pace>74</Pace>
-               <Shooting>75</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>72</Dribbling>
-               <Defending>62</Defending>
-               <Physical>76</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lerin</Firstname>
-               <Lastname>Duarte</Lastname>
-               <Age>24</Age>
-               <Price>121474</Price>
-               <Pace>75</Pace>
-               <Shooting>68</Shooting>
-               <Passing>75</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>60</Defending>
-               <Physical>74</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lasse</Firstname>
-               <Lastname>Schone</Lastname>
-               <Age>28</Age>
-               <Price>118890</Price>
-               <Pace>67</Pace>
-               <Shooting>77</Shooting>
-               <Passing>77</Passing>
-               <Dribbling>78</Dribbling>
-               <Defending>52</Defending>
-               <Physical>60</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Viktor</Firstname>
-               <Lastname>Fischer</Lastname>
-               <Age>20</Age>
-               <Price>128241</Price>
-               <Pace>77</Pace>
-               <Shooting>71</Shooting>
-               <Passing>71</Passing>
-               <Dribbling>81</Dribbling>
-               <Defending>35</Defending>
-               <Physical>60</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-         </Selection>
-         <Teammembers>
-            <Player>
-               <Firstname>Arkadiusz</Firstname>
-               <Lastname>Milik</Lastname>
-               <Age>20</Age>
-               <Price>168930</Price>
-               <Pace>74</Pace>
-               <Shooting>68</Shooting>
-               <Passing>61</Passing>
-               <Dribbling>59</Dribbling>
-               <Defending>37</Defending>
-               <Physical>73</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Nicolai</Firstname>
-               <Lastname>Boilesen</Lastname>
-               <Age>22</Age>
-               <Price>162262</Price>
-               <Pace>78</Pace>
-               <Shooting>48</Shooting>
-               <Passing>64</Passing>
-               <Dribbling>74</Dribbling>
-               <Defending>72</Defending>
-               <Physical>72</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Joel</Firstname>
-               <Lastname>Veltman</Lastname>
-               <Age>22</Age>
-               <Price>170057</Price>
-               <Pace>69</Pace>
-               <Shooting>37</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>71</Dribbling>
-               <Defending>77</Defending>
-               <Physical>71</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ricardo</Firstname>
-               <Lastname>Rhijn</Lastname>
-               <Age>23</Age>
-               <Price>159844</Price>
-               <Pace>85</Pace>
-               <Shooting>52</Shooting>
-               <Passing>66</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>70</Defending>
-               <Physical>75</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kolbeinn</Firstname>
-               <Lastname>Sigthorsson</Lastname>
-               <Age>24</Age>
-               <Price>123246</Price>
-               <Pace>69</Pace>
-               <Shooting>72</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>42</Defending>
-               <Physical>77</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Niklas</Firstname>
-               <Lastname>Moisander</Lastname>
-               <Age>29</Age>
-               <Price>128226</Price>
-               <Pace>67</Pace>
-               <Shooting>49</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>76</Defending>
-               <Physical>74</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Niki</Firstname>
-               <Lastname>Zimling</Lastname>
-               <Age>29</Age>
-               <Price>119849</Price>
-               <Pace>65</Pace>
-               <Shooting>66</Shooting>
-               <Passing>69</Passing>
-               <Dribbling>73</Dribbling>
-               <Defending>72</Defending>
-               <Physical>80</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Keeper>
-               <Firstname>Jasper</Firstname>
-               <Lastname>Cillessen</Lastname>
-               <Age>25</Age>
-               <Price>146158</Price>
-               <Diving>77</Diving>
-               <Handling>80</Handling>
-               <Kicking>74</Kicking>
-               <Reflexes>78</Reflexes>
-               <Speed>54</Speed>
-               <Positioning>81</Positioning>
-               <Height>188</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Davy</Firstname>
-               <Lastname>Klaassen</Lastname>
-               <Age>21</Age>
-               <Price>144729</Price>
-               <Pace>74</Pace>
-               <Shooting>75</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>72</Dribbling>
-               <Defending>62</Defending>
-               <Physical>76</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lerin</Firstname>
-               <Lastname>Duarte</Lastname>
-               <Age>24</Age>
-               <Price>121474</Price>
-               <Pace>75</Pace>
-               <Shooting>68</Shooting>
-               <Passing>75</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>60</Defending>
-               <Physical>74</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Thulani</Firstname>
-               <Lastname>Serero</Lastname>
-               <Age>24</Age>
-               <Price>163318</Price>
-               <Pace>84</Pace>
-               <Shooting>55</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>80</Dribbling>
-               <Defending>47</Defending>
-               <Physical>57</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Keeper>
-               <Firstname>Diederik</Firstname>
-               <Lastname>Boer</Lastname>
-               <Age>34</Age>
-               <Price>169959</Price>
-               <Diving>68</Diving>
-               <Handling>68</Handling>
-               <Kicking>57</Kicking>
-               <Reflexes>75</Reflexes>
-               <Speed>31</Speed>
-               <Positioning>71</Positioning>
-               <Height>194</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Nick</Firstname>
-               <Lastname>Viergever</Lastname>
-               <Age>25</Age>
-               <Price>131010</Price>
-               <Pace>67</Pace>
-               <Shooting>50</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>73</Defending>
-               <Physical>72</Physical>
-               <Type>CDM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Tobias</Firstname>
-               <Lastname>Sana</Lastname>
-               <Age>25</Age>
-               <Price>118462</Price>
-               <Pace>86</Pace>
-               <Shooting>59</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>30</Defending>
-               <Physical>43</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lasse</Firstname>
-               <Lastname>Schone</Lastname>
-               <Age>28</Age>
-               <Price>118890</Price>
-               <Pace>67</Pace>
-               <Shooting>77</Shooting>
-               <Passing>77</Passing>
-               <Dribbling>78</Dribbling>
-               <Defending>52</Defending>
-               <Physical>60</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Keeper>
-               <Firstname>Peter</Firstname>
-               <Lastname>Leeuwenburgh</Lastname>
-               <Age>20</Age>
-               <Price>158840</Price>
-               <Diving>70</Diving>
-               <Handling>62</Handling>
-               <Kicking>59</Kicking>
-               <Reflexes>68</Reflexes>
-               <Speed>44</Speed>
-               <Positioning>58</Positioning>
-               <Height>196</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Riechedly</Firstname>
-               <Lastname>Bazoer</Lastname>
-               <Age>18</Age>
-               <Price>119939</Price>
-               <Pace>75</Pace>
-               <Shooting>51</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>61</Defending>
-               <Physical>73</Physical>
-               <Type>CDM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jairo</Firstname>
-               <Lastname>Riedewald</Lastname>
-               <Age>18</Age>
-               <Price>142963</Price>
-               <Pace>65</Pace>
-               <Shooting>44</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>62</Defending>
-               <Physical>68</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Richairo</Firstname>
-               <Lastname>Zivkovic</Lastname>
-               <Age>18</Age>
-               <Price>134964</Price>
-               <Pace>79</Pace>
-               <Shooting>72</Shooting>
-               <Passing>55</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>30</Defending>
-               <Physical>56</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Robert</Firstname>
-               <Lastname>Muric</Lastname>
-               <Age>18</Age>
-               <Price>120403</Price>
-               <Pace>71</Pace>
-               <Shooting>51</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>26</Defending>
-               <Physical>44</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kenny</Firstname>
-               <Lastname>Tete</Lastname>
-               <Age>19</Age>
-               <Price>156503</Price>
-               <Pace>77</Pace>
-               <Shooting>33</Shooting>
-               <Passing>53</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>62</Defending>
-               <Physical>68</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Anwar</Firstname>
-               <Lastname>El-Ghazi</Lastname>
-               <Age>19</Age>
-               <Price>137753</Price>
-               <Pace>77</Pace>
-               <Shooting>66</Shooting>
-               <Passing>64</Passing>
-               <Dribbling>77</Dribbling>
-               <Defending>27</Defending>
-               <Physical>66</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Richardo</Firstname>
-               <Lastname>Kishna</Lastname>
-               <Age>19</Age>
-               <Price>174238</Price>
-               <Pace>86</Pace>
-               <Shooting>59</Shooting>
-               <Passing>69</Passing>
-               <Dribbling>81</Dribbling>
-               <Defending>29</Defending>
-               <Physical>60</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lucas</Firstname>
-               <Lastname>Andersen</Lastname>
-               <Age>20</Age>
-               <Price>141835</Price>
-               <Pace>71</Pace>
-               <Shooting>57</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>78</Dribbling>
-               <Defending>33</Defending>
-               <Physical>39</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Viktor</Firstname>
-               <Lastname>Fischer</Lastname>
-               <Age>20</Age>
-               <Price>128241</Price>
-               <Pace>77</Pace>
-               <Shooting>71</Shooting>
-               <Passing>71</Passing>
-               <Dribbling>81</Dribbling>
-               <Defending>35</Defending>
-               <Physical>60</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Stefano</Firstname>
-               <Lastname>Denswil</Lastname>
-               <Age>75</Age>
-               <Price>152524</Price>
-               <Pace>21</Pace>
-               <Shooting>64</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>60</Dribbling>
-               <Defending>60</Defending>
-               <Physical>70</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Mike</Firstname>
-               <Lastname>Hoorn</Lastname>
-               <Age>22</Age>
-               <Price>134199</Price>
-               <Pace>59</Pace>
-               <Shooting>29</Shooting>
-               <Passing>51</Passing>
-               <Dribbling>51</Dribbling>
-               <Defending>72</Defending>
-               <Physical>78</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ruben</Firstname>
-               <Lastname>Ligeon</Lastname>
-               <Age>22</Age>
-               <Price>166265</Price>
-               <Pace>89</Pace>
-               <Shooting>46</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>64</Defending>
-               <Physical>57</Physical>
-               <Type>RB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -1485,22 +845,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Michiel</Firstname>
-               <Lastname>Kramer</Lastname>
-               <Age>26</Age>
-               <Price>126133</Price>
-               <Pace>63</Pace>
-               <Shooting>65</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>60</Dribbling>
-               <Defending>34</Defending>
-               <Physical>65</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Aaron</Firstname>
                <Lastname>Meijers</Lastname>
                <Age>27</Age>
@@ -1597,22 +941,6 @@
                <Duration>2</Duration>
             </Player>
             <Player>
-               <Firstname>Vito</Firstname>
-               <Lastname>Wormgoor</Lastname>
-               <Age>26</Age>
-               <Price>142749</Price>
-               <Pace>50</Pace>
-               <Shooting>36</Shooting>
-               <Passing>53</Passing>
-               <Dribbling>51</Dribbling>
-               <Defending>64</Defending>
-               <Physical>76</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Mitchell</Firstname>
                <Lastname>Schet</Lastname>
                <Age>26</Age>
@@ -1624,6 +952,38 @@
                <Defending>33</Defending>
                <Physical>57</Physical>
                <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Michiel</Firstname>
+               <Lastname>Kramer</Lastname>
+               <Age>26</Age>
+               <Price>126133</Price>
+               <Pace>63</Pace>
+               <Shooting>65</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>60</Dribbling>
+               <Defending>34</Defending>
+               <Physical>65</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Vito</Firstname>
+               <Lastname>Wormgoor</Lastname>
+               <Age>26</Age>
+               <Price>142749</Price>
+               <Pace>50</Pace>
+               <Shooting>36</Shooting>
+               <Passing>53</Passing>
+               <Dribbling>51</Dribbling>
+               <Defending>64</Defending>
+               <Physical>76</Physical>
+               <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -2013,22 +1373,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Mitchell</Firstname>
-               <Lastname>Vrede</Lastname>
-               <Age>23</Age>
-               <Price>122014</Price>
-               <Pace>60</Pace>
-               <Shooting>65</Shooting>
-               <Passing>47</Passing>
-               <Dribbling>55</Dribbling>
-               <Defending>28</Defending>
-               <Physical>72</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Jordy</Firstname>
                <Lastname>Clasie</Lastname>
                <Age>23</Age>
@@ -2056,6 +1400,134 @@
                <Defending>67</Defending>
                <Physical>67</Physical>
                <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Luke</Firstname>
+               <Lastname>Wilkshire</Lastname>
+               <Age>33</Age>
+               <Price>172162</Price>
+               <Pace>70</Pace>
+               <Shooting>61</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>68</Defending>
+               <Physical>73</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Terence</Firstname>
+               <Lastname>Kongolo</Lastname>
+               <Age>20</Age>
+               <Price>145182</Price>
+               <Pace>78</Pace>
+               <Shooting>42</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>73</Defending>
+               <Physical>74</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Rick</Firstname>
+               <Lastname>Karsdorp</Lastname>
+               <Age>19</Age>
+               <Price>138456</Price>
+               <Pace>70</Pace>
+               <Shooting>66</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>49</Defending>
+               <Physical>70</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jean-Paul</Firstname>
+               <Lastname>Boetius</Lastname>
+               <Age>20</Age>
+               <Price>134619</Price>
+               <Pace>88</Pace>
+               <Shooting>71</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>82</Dribbling>
+               <Defending>26</Defending>
+               <Physical>49</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Elvis</Firstname>
+               <Lastname>Manu</Lastname>
+               <Age>21</Age>
+               <Price>128480</Price>
+               <Pace>86</Pace>
+               <Shooting>67</Shooting>
+               <Passing>55</Passing>
+               <Dribbling>72</Dribbling>
+               <Defending>28</Defending>
+               <Physical>74</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Wesley</Firstname>
+               <Lastname>Verhoek</Lastname>
+               <Age>28</Age>
+               <Price>128683</Price>
+               <Pace>65</Pace>
+               <Shooting>68</Shooting>
+               <Passing>69</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>30</Defending>
+               <Physical>67</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Karim</Firstname>
+               <Lastname>Ahmadi</Lastname>
+               <Age>29</Age>
+               <Price>138924</Price>
+               <Pace>68</Pace>
+               <Shooting>64</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>76</Dribbling>
+               <Defending>60</Defending>
+               <Physical>75</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mitchell</Firstname>
+               <Lastname>Vrede</Lastname>
+               <Age>23</Age>
+               <Price>122014</Price>
+               <Pace>60</Pace>
+               <Shooting>65</Shooting>
+               <Passing>47</Passing>
+               <Dribbling>55</Dribbling>
+               <Defending>28</Defending>
+               <Physical>72</Physical>
+               <Type>ST</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -2106,38 +1578,6 @@
                <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Luke</Firstname>
-               <Lastname>Wilkshire</Lastname>
-               <Age>33</Age>
-               <Price>172162</Price>
-               <Pace>70</Pace>
-               <Shooting>61</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>68</Defending>
-               <Physical>73</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Terence</Firstname>
-               <Lastname>Kongolo</Lastname>
-               <Age>20</Age>
-               <Price>145182</Price>
-               <Pace>78</Pace>
-               <Shooting>42</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>73</Defending>
-               <Physical>74</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>1</Card>
                <Duration>0</Duration>
             </Player>
             <Player>
@@ -2255,22 +1695,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Rick</Firstname>
-               <Lastname>Karsdorp</Lastname>
-               <Age>19</Age>
-               <Price>138456</Price>
-               <Pace>70</Pace>
-               <Shooting>66</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>49</Defending>
-               <Physical>70</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Rodny</Firstname>
                <Lastname>Lopes-Cabral</Lastname>
                <Age>19</Age>
@@ -2335,22 +1759,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Jean-Paul</Firstname>
-               <Lastname>Boetius</Lastname>
-               <Age>20</Age>
-               <Price>134619</Price>
-               <Pace>88</Pace>
-               <Shooting>71</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>82</Dribbling>
-               <Defending>26</Defending>
-               <Physical>49</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Anass</Firstname>
                <Lastname>Achahbar</Lastname>
                <Age>20</Age>
@@ -2362,22 +1770,6 @@
                <Defending>29</Defending>
                <Physical>45</Physical>
                <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Elvis</Firstname>
-               <Lastname>Manu</Lastname>
-               <Age>21</Age>
-               <Price>128480</Price>
-               <Pace>86</Pace>
-               <Shooting>67</Shooting>
-               <Passing>55</Passing>
-               <Dribbling>72</Dribbling>
-               <Defending>28</Defending>
-               <Physical>74</Physical>
-               <Type>LW</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -2396,38 +1788,6 @@
                <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Wesley</Firstname>
-               <Lastname>Verhoek</Lastname>
-               <Age>28</Age>
-               <Price>128683</Price>
-               <Pace>65</Pace>
-               <Shooting>68</Shooting>
-               <Passing>69</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>30</Defending>
-               <Physical>67</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Karim</Firstname>
-               <Lastname>Ahmadi</Lastname>
-               <Age>29</Age>
-               <Price>138924</Price>
-               <Pace>68</Pace>
-               <Shooting>64</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>76</Dribbling>
-               <Defending>60</Defending>
-               <Physical>75</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
                <Duration>0</Duration>
             </Player>
          </Teammembers>
@@ -2637,22 +1997,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Muamer</Firstname>
-               <Lastname>Tankovic</Lastname>
-               <Age>19</Age>
-               <Price>126554</Price>
-               <Pace>71</Pace>
-               <Shooting>63</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>28</Defending>
-               <Physical>61</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Markus</Firstname>
                <Lastname>Henriksen</Lastname>
                <Age>22</Age>
@@ -2664,22 +2008,6 @@
                <Defending>64</Defending>
                <Physical>80</Physical>
                <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Guus</Firstname>
-               <Lastname>Hupperts</Lastname>
-               <Age>22</Age>
-               <Price>160763</Price>
-               <Pace>84</Pace>
-               <Shooting>66</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>73</Dribbling>
-               <Defending>42</Defending>
-               <Physical>63</Physical>
-               <Type>LW</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -2765,22 +2093,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Jan</Firstname>
-               <Lastname>Wuytens</Lastname>
-               <Age>29</Age>
-               <Price>128723</Price>
-               <Pace>47</Pace>
-               <Shooting>46</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>57</Dribbling>
-               <Defending>70</Defending>
-               <Physical>77</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Simon</Firstname>
                <Lastname>Poulsen</Lastname>
                <Age>30</Age>
@@ -2792,6 +2104,102 @@
                <Defending>64</Defending>
                <Physical>72</Physical>
                <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Thom</Firstname>
+               <Lastname>Haye</Lastname>
+               <Age>19</Age>
+               <Price>125003</Price>
+               <Pace>72</Pace>
+               <Shooting>56</Shooting>
+               <Passing>64</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>55</Defending>
+               <Physical>58</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mikhail</Firstname>
+               <Lastname>Rosheuvel</Lastname>
+               <Age>24</Age>
+               <Price>166255</Price>
+               <Pace>86</Pace>
+               <Shooting>59</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>25</Defending>
+               <Physical>64</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Celso</Firstname>
+               <Lastname>Ortiz</Lastname>
+               <Age>25</Age>
+               <Price>141979</Price>
+               <Pace>65</Pace>
+               <Shooting>54</Shooting>
+               <Passing>66</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>68</Defending>
+               <Physical>71</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Muamer</Firstname>
+               <Lastname>Tankovic</Lastname>
+               <Age>19</Age>
+               <Price>126554</Price>
+               <Pace>71</Pace>
+               <Shooting>63</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>28</Defending>
+               <Physical>61</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Guus</Firstname>
+               <Lastname>Hupperts</Lastname>
+               <Age>22</Age>
+               <Price>160763</Price>
+               <Pace>84</Pace>
+               <Shooting>66</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>73</Dribbling>
+               <Defending>42</Defending>
+               <Physical>63</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jan</Firstname>
+               <Lastname>Wuytens</Lastname>
+               <Age>29</Age>
+               <Price>128723</Price>
+               <Pace>47</Pace>
+               <Shooting>46</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>57</Dribbling>
+               <Defending>70</Defending>
+               <Physical>77</Physical>
+               <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -2863,22 +2271,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Thom</Firstname>
-               <Lastname>Haye</Lastname>
-               <Age>19</Age>
-               <Price>125003</Price>
-               <Pace>72</Pace>
-               <Shooting>56</Shooting>
-               <Passing>64</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>55</Defending>
-               <Physical>58</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Wesley</Firstname>
                <Lastname>Hoedt</Lastname>
                <Age>20</Age>
@@ -2943,22 +2335,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Mikhail</Firstname>
-               <Lastname>Rosheuvel</Lastname>
-               <Age>24</Age>
-               <Price>166255</Price>
-               <Pace>86</Pace>
-               <Shooting>59</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>25</Defending>
-               <Physical>64</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Esteban</Firstname>
                <Lastname>Alvarado</Lastname>
                <Age>25</Age>
@@ -2970,22 +2346,6 @@
                <Defending>45</Defending>
                <Physical>68</Physical>
                <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Celso</Firstname>
-               <Lastname>Ortiz</Lastname>
-               <Age>25</Age>
-               <Price>141979</Price>
-               <Pace>65</Pace>
-               <Shooting>54</Shooting>
-               <Passing>66</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>68</Defending>
-               <Physical>71</Physical>
-               <Type>CDM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -3867,22 +3227,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
-            <Player>
-               <Firstname>Frank</Firstname>
-               <Lastname>Struijk</Lastname>
-               <Age>29</Age>
-               <Price>129835</Price>
-               <Pace>56</Pace>
-               <Shooting>38</Shooting>
-               <Passing>52</Passing>
-               <Dribbling>54</Dribbling>
-               <Defending>66</Defending>
-               <Physical>75</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
             <Keeper>
                <Firstname>Konstantinos</Firstname>
                <Lastname>Lamprou</Lastname>
@@ -3901,22 +3245,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Fabian</Firstname>
-               <Lastname>Sporkslede</Lastname>
-               <Age>21</Age>
-               <Price>168686</Price>
-               <Pace>69</Pace>
-               <Shooting>52</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>66</Dribbling>
-               <Defending>63</Defending>
-               <Physical>67</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Ricardo</Firstname>
                <Lastname>Ippel</Lastname>
                <Age>24</Age>
@@ -3927,6 +3255,86 @@
                <Dribbling>62</Dribbling>
                <Defending>57</Defending>
                <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Stijn</Firstname>
+               <Lastname>Wuytens</Lastname>
+               <Age>25</Age>
+               <Price>124266</Price>
+               <Pace>63</Pace>
+               <Shooting>49</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>66</Dribbling>
+               <Defending>59</Defending>
+               <Physical>62</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Robbie</Firstname>
+               <Lastname>Haemhouts</Lastname>
+               <Age>31</Age>
+               <Price>124154</Price>
+               <Pace>63</Pace>
+               <Shooting>63</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>59</Defending>
+               <Physical>60</Physical>
+               <Type>CM</Type>
+               <Available>false</Available>
+               <Card>1</Card>
+               <Duration>2</Duration>
+            </Player>
+            <Player>
+               <Firstname>Niek</Firstname>
+               <Lastname>Vossebelt</Lastname>
+               <Age>23</Age>
+               <Price>167366</Price>
+               <Pace>52</Pace>
+               <Shooting>55</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>61</Dribbling>
+               <Defending>59</Defending>
+               <Physical>74</Physical>
+               <Type>CM</Type>
+               <Available>false</Available>
+               <Card>0</Card>
+               <Duration>1</Duration>
+            </Player>
+            <Player>
+               <Firstname>Frank</Firstname>
+               <Lastname>Struijk</Lastname>
+               <Age>29</Age>
+               <Price>129835</Price>
+               <Pace>56</Pace>
+               <Shooting>38</Shooting>
+               <Passing>52</Passing>
+               <Dribbling>54</Dribbling>
+               <Defending>66</Defending>
+               <Physical>75</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Fabian</Firstname>
+               <Lastname>Sporkslede</Lastname>
+               <Age>21</Age>
+               <Price>168686</Price>
+               <Pace>69</Pace>
+               <Shooting>52</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>66</Dribbling>
+               <Defending>63</Defending>
+               <Physical>67</Physical>
                <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
@@ -3965,38 +3373,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
-            <Player>
-               <Firstname>Stijn</Firstname>
-               <Lastname>Wuytens</Lastname>
-               <Age>25</Age>
-               <Price>124266</Price>
-               <Pace>63</Pace>
-               <Shooting>49</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>66</Dribbling>
-               <Defending>59</Defending>
-               <Physical>62</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Robbie</Firstname>
-               <Lastname>Haemhouts</Lastname>
-               <Age>31</Age>
-               <Price>124154</Price>
-               <Pace>63</Pace>
-               <Shooting>63</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>59</Defending>
-               <Physical>60</Physical>
-               <Type>CM</Type>
-               <Available>false</Available>
-               <Card>1</Card>
-               <Duration>2</Duration>
-            </Player>
             <Player>
                <Firstname>Tim</Firstname>
                <Lastname>Cornelisse</Lastname>
@@ -4061,22 +3437,6 @@
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Niek</Firstname>
-               <Lastname>Vossebelt</Lastname>
-               <Age>23</Age>
-               <Price>167366</Price>
-               <Pace>52</Pace>
-               <Shooting>55</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>61</Dribbling>
-               <Defending>59</Defending>
-               <Physical>74</Physical>
-               <Type>CM</Type>
-               <Available>false</Available>
-               <Card>0</Card>
-               <Duration>1</Duration>
             </Player>
             <Player>
                <Firstname>Ali</Firstname>
@@ -4380,38 +3740,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Jordy</Firstname>
-               <Lastname>Deelen</Lastname>
-               <Age>21</Age>
-               <Price>147428</Price>
-               <Pace>71</Pace>
-               <Shooting>31</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>62</Defending>
-               <Physical>61</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ricky</Firstname>
-               <Lastname>Haaren</Lastname>
-               <Age>23</Age>
-               <Price>174508</Price>
-               <Pace>54</Pace>
-               <Shooting>55</Shooting>
-               <Passing>73</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>52</Defending>
-               <Physical>62</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Rick</Firstname>
                <Lastname>Voorde</Lastname>
                <Age>23</Age>
@@ -4524,6 +3852,70 @@
                <Card>1</Card>
                <Duration>0</Duration>
             </Player>
+            <Player>
+               <Firstname>Giovanno</Firstname>
+               <Lastname>Godeken</Lastname>
+               <Age>24</Age>
+               <Price>131637</Price>
+               <Pace>66</Pace>
+               <Shooting>47</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>49</Defending>
+               <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Robin</Firstname>
+               <Lastname>Gosens</Lastname>
+               <Age>20</Age>
+               <Price>166125</Price>
+               <Pace>66</Pace>
+               <Shooting>47</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>61</Dribbling>
+               <Defending>58</Defending>
+               <Physical>68</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jordy</Firstname>
+               <Lastname>Deelen</Lastname>
+               <Age>21</Age>
+               <Price>147428</Price>
+               <Pace>71</Pace>
+               <Shooting>31</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>62</Defending>
+               <Physical>61</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ricky</Firstname>
+               <Lastname>Haaren</Lastname>
+               <Age>23</Age>
+               <Price>174508</Price>
+               <Pace>54</Pace>
+               <Shooting>55</Shooting>
+               <Passing>73</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>52</Defending>
+               <Physical>62</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
             <Keeper>
                <Firstname>Robbert</Firstname>
                <Lastname>Loeke</Lastname>
@@ -4541,22 +3933,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
-            <Player>
-               <Firstname>Giovanno</Firstname>
-               <Lastname>Godeken</Lastname>
-               <Age>24</Age>
-               <Price>131637</Price>
-               <Pace>66</Pace>
-               <Shooting>47</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>49</Defending>
-               <Physical>66</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
             <Keeper>
                <Firstname>Virgil</Firstname>
                <Lastname>Deen</Lastname>
@@ -4588,22 +3964,6 @@
                <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Robin</Firstname>
-               <Lastname>Gosens</Lastname>
-               <Age>20</Age>
-               <Price>166125</Price>
-               <Pace>66</Pace>
-               <Shooting>47</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>61</Dribbling>
-               <Defending>58</Defending>
-               <Physical>68</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
                <Duration>0</Duration>
             </Player>
             <Player>
@@ -4925,22 +4285,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Uros</Firstname>
-               <Lastname>Durdevic</Lastname>
-               <Age>20</Age>
-               <Price>131221</Price>
-               <Pace>69</Pace>
-               <Shooting>67</Shooting>
-               <Passing>52</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>30</Defending>
-               <Physical>68</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Davy</Firstname>
                <Lastname>Propper</Lastname>
                <Age>23</Age>
@@ -5005,22 +4349,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Rochdi</Firstname>
-               <Lastname>Achtenteh</Lastname>
-               <Age>26</Age>
-               <Price>121034</Price>
-               <Pace>68</Pace>
-               <Shooting>52</Shooting>
-               <Passing>66</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>65</Defending>
-               <Physical>59</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Jan-Arie</Firstname>
                <Lastname>Heijden</Lastname>
                <Age>26</Age>
@@ -5080,6 +4408,70 @@
                <Defending>63</Defending>
                <Physical>65</Physical>
                <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Bertrand</Firstname>
+               <Lastname>Traore</Lastname>
+               <Age>19</Age>
+               <Price>129902</Price>
+               <Pace>87</Pace>
+               <Shooting>66</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>76</Dribbling>
+               <Defending>31</Defending>
+               <Physical>59</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Josh</Firstname>
+               <Lastname>McEachran</Lastname>
+               <Age>21</Age>
+               <Price>173945</Price>
+               <Pace>76</Pace>
+               <Shooting>66</Shooting>
+               <Passing>72</Passing>
+               <Dribbling>74</Dribbling>
+               <Defending>58</Defending>
+               <Physical>58</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Uros</Firstname>
+               <Lastname>Durdevic</Lastname>
+               <Age>20</Age>
+               <Price>131221</Price>
+               <Pace>69</Pace>
+               <Shooting>67</Shooting>
+               <Passing>52</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>30</Defending>
+               <Physical>68</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Rochdi</Firstname>
+               <Lastname>Achtenteh</Lastname>
+               <Age>26</Age>
+               <Price>121034</Price>
+               <Pace>68</Pace>
+               <Shooting>52</Shooting>
+               <Passing>66</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>65</Defending>
+               <Physical>59</Physical>
+               <Type>LB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -5151,22 +4543,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Bertrand</Firstname>
-               <Lastname>Traore</Lastname>
-               <Age>19</Age>
-               <Price>129902</Price>
-               <Pace>87</Pace>
-               <Shooting>66</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>76</Dribbling>
-               <Defending>31</Defending>
-               <Physical>59</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Gino</Firstname>
                <Lastname>Bosz</Lastname>
                <Age>21</Age>
@@ -5194,22 +4570,6 @@
                <Defending>31</Defending>
                <Physical>49</Physical>
                <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Josh</Firstname>
-               <Lastname>McEachran</Lastname>
-               <Age>21</Age>
-               <Price>173945</Price>
-               <Pace>76</Pace>
-               <Shooting>66</Shooting>
-               <Passing>72</Passing>
-               <Dribbling>74</Dribbling>
-               <Defending>58</Defending>
-               <Physical>58</Physical>
-               <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -5453,38 +4813,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Hans</Firstname>
-               <Lastname>Hateboer</Lastname>
-               <Age>20</Age>
-               <Price>138867</Price>
-               <Pace>72</Pace>
-               <Shooting>41</Shooting>
-               <Passing>52</Passing>
-               <Dribbling>58</Dribbling>
-               <Defending>65</Defending>
-               <Physical>71</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Lorenzo</Firstname>
-               <Lastname>Burnet</Lastname>
-               <Age>23</Age>
-               <Price>151029</Price>
-               <Pace>81</Pace>
-               <Shooting>41</Shooting>
-               <Passing>59</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>64</Defending>
-               <Physical>63</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Johan</Firstname>
                <Lastname>Kappelhof</Lastname>
                <Age>24</Age>
@@ -5612,6 +4940,70 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
+            <Player>
+               <Firstname>Rasmus</Firstname>
+               <Lastname>Lindgren</Lastname>
+               <Age>30</Age>
+               <Price>169235</Price>
+               <Pace>45</Pace>
+               <Shooting>65</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>62</Defending>
+               <Physical>72</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Yoell</Firstname>
+               <Lastname>Nieff</Lastname>
+               <Age>21</Age>
+               <Price>143416</Price>
+               <Pace>66</Pace>
+               <Shooting>63</Shooting>
+               <Passing>69</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>64</Defending>
+               <Physical>68</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Hans</Firstname>
+               <Lastname>Hateboer</Lastname>
+               <Age>20</Age>
+               <Price>138867</Price>
+               <Pace>72</Pace>
+               <Shooting>41</Shooting>
+               <Passing>52</Passing>
+               <Dribbling>58</Dribbling>
+               <Defending>65</Defending>
+               <Physical>71</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lorenzo</Firstname>
+               <Lastname>Burnet</Lastname>
+               <Age>23</Age>
+               <Price>151029</Price>
+               <Pace>81</Pace>
+               <Shooting>41</Shooting>
+               <Passing>59</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>64</Defending>
+               <Physical>63</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
             <Keeper>
                <Firstname>Marco</Firstname>
                <Lastname>Bizot</Lastname>
@@ -5663,22 +5055,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Rasmus</Firstname>
-               <Lastname>Lindgren</Lastname>
-               <Age>30</Age>
-               <Price>169235</Price>
-               <Pace>45</Pace>
-               <Shooting>65</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>62</Defending>
-               <Physical>72</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Burak</Firstname>
                <Lastname>Saban</Lastname>
                <Age>20</Age>
@@ -5706,22 +5082,6 @@
                <Defending>29</Defending>
                <Physical>66</Physical>
                <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Yoell</Firstname>
-               <Lastname>Nieff</Lastname>
-               <Age>21</Age>
-               <Price>143416</Price>
-               <Pace>66</Pace>
-               <Shooting>63</Shooting>
-               <Passing>69</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>64</Defending>
-               <Physical>68</Physical>
-               <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -6028,22 +5388,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Alex</Firstname>
-               <Lastname>Schalk</Lastname>
-               <Age>22</Age>
-               <Price>122791</Price>
-               <Pace>73</Pace>
-               <Shooting>65</Shooting>
-               <Passing>45</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>29</Defending>
-               <Physical>54</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Mawouna</Firstname>
                <Lastname>Amevor</Lastname>
                <Age>23</Age>
@@ -6075,22 +5419,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
-            <Player>
-               <Firstname>Marnix</Firstname>
-               <Lastname>Kolder</Lastname>
-               <Age>33</Age>
-               <Price>164467</Price>
-               <Pace>42</Pace>
-               <Shooting>68</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>37</Defending>
-               <Physical>73</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
             <Keeper>
                <Firstname>Mickey</Firstname>
                <Lastname>Hart</Lastname>
@@ -6108,38 +5436,6 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
-            <Player>
-               <Firstname>Xandro</Firstname>
-               <Lastname>Schenk</Lastname>
-               <Age>21</Age>
-               <Price>117383</Price>
-               <Pace>64</Pace>
-               <Shooting>44</Shooting>
-               <Passing>59</Passing>
-               <Dribbling>54</Dribbling>
-               <Defending>63</Defending>
-               <Physical>73</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Sven</Firstname>
-               <Lastname>Nieuwpoort</Lastname>
-               <Age>21</Age>
-               <Price>124425</Price>
-               <Pace>74</Pace>
-               <Shooting>26</Shooting>
-               <Passing>51</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>62</Defending>
-               <Physical>60</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
             <Player>
                <Firstname>Lesly</Firstname>
                <Lastname>Sa</Lastname>
@@ -6170,6 +5466,134 @@
                <Type>RW</Type>
                <Available>true</Available>
                <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jules</Firstname>
+               <Lastname>Reimerink</Lastname>
+               <Age>25</Age>
+               <Price>112950</Price>
+               <Pace>74</Pace>
+               <Shooting>51</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>25</Defending>
+               <Physical>60</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jeffrey</Firstname>
+               <Lastname>Rijsdijk</Lastname>
+               <Age>27</Age>
+               <Price>163083</Price>
+               <Pace>74</Pace>
+               <Shooting>65</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>39</Defending>
+               <Physical>64</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Peter</Firstname>
+               <Lastname>Ooijen</Lastname>
+               <Age>22</Age>
+               <Price>117321</Price>
+               <Pace>67</Pace>
+               <Shooting>62</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>63</Defending>
+               <Physical>58</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Sjoerd</Firstname>
+               <Lastname>Overgoor</Lastname>
+               <Age>28</Age>
+               <Price>137694</Price>
+               <Pace>61</Pace>
+               <Shooting>56</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>59</Defending>
+               <Physical>64</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Alex</Firstname>
+               <Lastname>Schalk</Lastname>
+               <Age>22</Age>
+               <Price>122791</Price>
+               <Pace>73</Pace>
+               <Shooting>65</Shooting>
+               <Passing>45</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>29</Defending>
+               <Physical>54</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Marnix</Firstname>
+               <Lastname>Kolder</Lastname>
+               <Age>33</Age>
+               <Price>164467</Price>
+               <Pace>42</Pace>
+               <Shooting>68</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>37</Defending>
+               <Physical>73</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Xandro</Firstname>
+               <Lastname>Schenk</Lastname>
+               <Age>21</Age>
+               <Price>117383</Price>
+               <Pace>64</Pace>
+               <Shooting>44</Shooting>
+               <Passing>59</Passing>
+               <Dribbling>54</Dribbling>
+               <Defending>63</Defending>
+               <Physical>73</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Sven</Firstname>
+               <Lastname>Nieuwpoort</Lastname>
+               <Age>21</Age>
+               <Price>124425</Price>
+               <Pace>74</Pace>
+               <Shooting>26</Shooting>
+               <Passing>51</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>62</Defending>
+               <Physical>60</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
                <Duration>0</Duration>
             </Player>
             <Keeper>
@@ -6219,38 +5643,6 @@
                <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jules</Firstname>
-               <Lastname>Reimerink</Lastname>
-               <Age>25</Age>
-               <Price>112950</Price>
-               <Pace>74</Pace>
-               <Shooting>51</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>25</Defending>
-               <Physical>60</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jeffrey</Firstname>
-               <Lastname>Rijsdijk</Lastname>
-               <Age>27</Age>
-               <Price>163083</Price>
-               <Pace>74</Pace>
-               <Shooting>65</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>39</Defending>
-               <Physical>64</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
                <Duration>0</Duration>
             </Player>
             <Keeper>
@@ -6335,22 +5727,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Peter</Firstname>
-               <Lastname>Ooijen</Lastname>
-               <Age>22</Age>
-               <Price>117321</Price>
-               <Pace>67</Pace>
-               <Shooting>62</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>63</Defending>
-               <Physical>58</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Lars</Firstname>
                <Lastname>Lambooij</Lastname>
                <Age>26</Age>
@@ -6362,22 +5738,6 @@
                <Defending>58</Defending>
                <Physical>62</Physical>
                <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Sjoerd</Firstname>
-               <Lastname>Overgoor</Lastname>
-               <Age>28</Age>
-               <Price>137694</Price>
-               <Pace>61</Pace>
-               <Shooting>56</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>59</Defending>
-               <Physical>64</Physical>
-               <Type>CDM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -6669,22 +6029,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Henrico</Firstname>
-               <Lastname>Drost</Lastname>
-               <Age>27</Age>
-               <Price>126664</Price>
-               <Pace>44</Pace>
-               <Shooting>38</Shooting>
-               <Passing>45</Passing>
-               <Dribbling>54</Dribbling>
-               <Defending>68</Defending>
-               <Physical>70</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Remy</Firstname>
                <Lastname>Amieux</Lastname>
                <Age>28</Age>
@@ -6696,22 +6040,6 @@
                <Defending>62</Defending>
                <Physical>71</Physical>
                <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Sepp</Firstname>
-               <Lastname>Roover</Lastname>
-               <Age>30</Age>
-               <Price>165833</Price>
-               <Pace>70</Pace>
-               <Shooting>48</Shooting>
-               <Passing>51</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>64</Defending>
-               <Physical>66</Physical>
-               <Type>RB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -6744,6 +6072,70 @@
                <Defending>32</Defending>
                <Physical>58</Physical>
                <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Joey</Firstname>
+               <Lastname>Suk</Lastname>
+               <Age>25</Age>
+               <Price>149765</Price>
+               <Pace>45</Pace>
+               <Shooting>65</Shooting>
+               <Passing>55</Passing>
+               <Dribbling>58</Dribbling>
+               <Defending>57</Defending>
+               <Physical>82</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Gill</Firstname>
+               <Lastname>Swerts</Lastname>
+               <Age>32</Age>
+               <Price>116000</Price>
+               <Pace>58</Pace>
+               <Shooting>43</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>59</Defending>
+               <Physical>72</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Henrico</Firstname>
+               <Lastname>Drost</Lastname>
+               <Age>27</Age>
+               <Price>126664</Price>
+               <Pace>44</Pace>
+               <Shooting>38</Shooting>
+               <Passing>45</Passing>
+               <Dribbling>54</Dribbling>
+               <Defending>68</Defending>
+               <Physical>70</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Sepp</Firstname>
+               <Lastname>Roover</Lastname>
+               <Age>30</Age>
+               <Price>165833</Price>
+               <Pace>70</Pace>
+               <Shooting>48</Shooting>
+               <Passing>51</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>64</Defending>
+               <Physical>66</Physical>
+               <Type>RB</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -6874,38 +6266,6 @@
                <Defending>64</Defending>
                <Physical>73</Physical>
                <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Joey</Firstname>
-               <Lastname>Suk</Lastname>
-               <Age>25</Age>
-               <Price>149765</Price>
-               <Pace>45</Pace>
-               <Shooting>65</Shooting>
-               <Passing>55</Passing>
-               <Dribbling>58</Dribbling>
-               <Defending>57</Defending>
-               <Physical>82</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Gill</Firstname>
-               <Lastname>Swerts</Lastname>
-               <Age>32</Age>
-               <Price>116000</Price>
-               <Pace>58</Pace>
-               <Shooting>43</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>59</Defending>
-               <Physical>72</Physical>
-               <Type>CDM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -7133,38 +6493,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Torgeir</Firstname>
-               <Lastname>Borven</Lastname>
-               <Age>23</Age>
-               <Price>144711</Price>
-               <Pace>76</Pace>
-               <Shooting>66</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>69</Dribbling>
-               <Defending>30</Defending>
-               <Physical>63</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kasper</Firstname>
-               <Lastname>Kusk</Lastname>
-               <Age>23</Age>
-               <Price>167302</Price>
-               <Pace>80</Pace>
-               <Shooting>68</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>32</Defending>
-               <Physical>61</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Kamohelo</Firstname>
                <Lastname>Mokotjo</Lastname>
                <Age>23</Age>
@@ -7229,22 +6557,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Hakim</Firstname>
-               <Lastname>Ziyech</Lastname>
-               <Age>21</Age>
-               <Price>162415</Price>
-               <Pace>73</Pace>
-               <Shooting>73</Shooting>
-               <Passing>73</Passing>
-               <Dribbling>74</Dribbling>
-               <Defending>42</Defending>
-               <Physical>57</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Darryl</Firstname>
                <Lastname>Lachman</Lastname>
                <Age>25</Age>
@@ -7288,6 +6600,86 @@
                <Defending>37</Defending>
                <Physical>57</Physical>
                <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Tim</Firstname>
+               <Lastname>Holscher</Lastname>
+               <Age>19</Age>
+               <Price>175065</Price>
+               <Pace>71</Pace>
+               <Shooting>60</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>43</Defending>
+               <Physical>59</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Shadrach</Firstname>
+               <Lastname>EEghan</Lastname>
+               <Age>20</Age>
+               <Price>166094</Price>
+               <Pace>80</Pace>
+               <Shooting>61</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>39</Defending>
+               <Physical>61</Physical>
+               <Type>CAM</Type>
+               <Available>false</Available>
+               <Card>2</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Torgeir</Firstname>
+               <Lastname>Borven</Lastname>
+               <Age>23</Age>
+               <Price>144711</Price>
+               <Pace>76</Pace>
+               <Shooting>66</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>69</Dribbling>
+               <Defending>30</Defending>
+               <Physical>63</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kasper</Firstname>
+               <Lastname>Kusk</Lastname>
+               <Age>23</Age>
+               <Price>167302</Price>
+               <Pace>80</Pace>
+               <Shooting>68</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>32</Defending>
+               <Physical>61</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Hakim</Firstname>
+               <Lastname>Ziyech</Lastname>
+               <Age>21</Age>
+               <Price>162415</Price>
+               <Pace>73</Pace>
+               <Shooting>73</Shooting>
+               <Passing>73</Passing>
+               <Dribbling>74</Dribbling>
+               <Defending>42</Defending>
+               <Physical>57</Physical>
+               <Type>CAM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -7420,38 +6812,6 @@
                <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Tim</Firstname>
-               <Lastname>Holscher</Lastname>
-               <Age>19</Age>
-               <Price>175065</Price>
-               <Pace>71</Pace>
-               <Shooting>60</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>67</Dribbling>
-               <Defending>43</Defending>
-               <Physical>59</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Shadrach</Firstname>
-               <Lastname>EEghan</Lastname>
-               <Age>20</Age>
-               <Price>166094</Price>
-               <Pace>80</Pace>
-               <Shooting>61</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>39</Defending>
-               <Physical>61</Physical>
-               <Type>CAM</Type>
-               <Available>false</Available>
-               <Card>2</Card>
                <Duration>0</Duration>
             </Player>
             <Player>
@@ -7773,22 +7133,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Jukka</Firstname>
-               <Lastname>Raitala</Lastname>
-               <Age>26</Age>
-               <Price>156768</Price>
-               <Pace>69</Pace>
-               <Shooting>35</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>57</Dribbling>
-               <Defending>64</Defending>
-               <Physical>71</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Joey</Firstname>
                <Lastname>Berg</Lastname>
                <Age>28</Age>
@@ -7800,22 +7144,6 @@
                <Defending>64</Defending>
                <Physical>83</Physical>
                <Type>CDM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Thomas</Firstname>
-               <Lastname>Dalgaard</Lastname>
-               <Age>30</Age>
-               <Price>135809</Price>
-               <Pace>62</Pace>
-               <Shooting>68</Shooting>
-               <Passing>42</Passing>
-               <Dribbling>59</Dribbling>
-               <Defending>29</Defending>
-               <Physical>69</Physical>
-               <Type>ST</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -7834,22 +7162,6 @@
                <Type>CAM</Type>
                <Available>true</Available>
                <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kenneth</Firstname>
-               <Lastname>Otigba</Lastname>
-               <Age>22</Age>
-               <Price>118914</Price>
-               <Pace>75</Pace>
-               <Shooting>35</Shooting>
-               <Passing>47</Passing>
-               <Dribbling>48</Dribbling>
-               <Defending>65</Defending>
-               <Physical>79</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
                <Duration>0</Duration>
             </Player>
             <Player>
@@ -7885,22 +7197,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Stefano</Firstname>
-               <Lastname>Marzo</Lastname>
-               <Age>23</Age>
-               <Price>165671</Price>
-               <Pace>75</Pace>
-               <Shooting>29</Shooting>
-               <Passing>54</Passing>
-               <Dribbling>61</Dribbling>
-               <Defending>64</Defending>
-               <Physical>62</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Jordy</Firstname>
                <Lastname>Buijs</Lastname>
                <Age>26</Age>
@@ -7914,6 +7210,86 @@
                <Type>CB</Type>
                <Available>true</Available>
                <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Michael</Firstname>
+               <Lastname>Chacon</Lastname>
+               <Age>20</Age>
+               <Price>136081</Price>
+               <Pace>74</Pace>
+               <Shooting>44</Shooting>
+               <Passing>59</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>59</Defending>
+               <Physical>64</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jukka</Firstname>
+               <Lastname>Raitala</Lastname>
+               <Age>26</Age>
+               <Price>156768</Price>
+               <Pace>69</Pace>
+               <Shooting>35</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>57</Dribbling>
+               <Defending>64</Defending>
+               <Physical>71</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Thomas</Firstname>
+               <Lastname>Dalgaard</Lastname>
+               <Age>30</Age>
+               <Price>135809</Price>
+               <Pace>62</Pace>
+               <Shooting>68</Shooting>
+               <Passing>42</Passing>
+               <Dribbling>59</Dribbling>
+               <Defending>29</Defending>
+               <Physical>69</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kenneth</Firstname>
+               <Lastname>Otigba</Lastname>
+               <Age>22</Age>
+               <Price>118914</Price>
+               <Pace>75</Pace>
+               <Shooting>35</Shooting>
+               <Passing>47</Passing>
+               <Dribbling>48</Dribbling>
+               <Defending>65</Defending>
+               <Physical>79</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Stefano</Firstname>
+               <Lastname>Marzo</Lastname>
+               <Age>23</Age>
+               <Price>165671</Price>
+               <Pace>75</Pace>
+               <Shooting>29</Shooting>
+               <Passing>54</Passing>
+               <Dribbling>61</Dribbling>
+               <Defending>64</Defending>
+               <Physical>62</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
                <Duration>0</Duration>
             </Player>
             <Keeper>
@@ -8080,22 +7456,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Michael</Firstname>
-               <Lastname>Chacon</Lastname>
-               <Age>20</Age>
-               <Price>136081</Price>
-               <Pace>74</Pace>
-               <Shooting>44</Shooting>
-               <Passing>59</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>59</Defending>
-               <Physical>64</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Stephen</Firstname>
                <Lastname>Warmolts</Lastname>
                <Age>20</Age>
@@ -8123,629 +7483,6 @@
                <Defending>63</Defending>
                <Physical>63</Physical>
                <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-         </Teammembers>
-      </Team>
-      <Team>
-         <Teamname>FC Utrecht</Teamname>
-         <Virtual_budget>1500000</Virtual_budget>
-         <Budget>1500000</Budget>
-         <Points>7</Points>
-         <Goalsfor>9</Goalsfor>
-         <Goalsagainst>13</Goalsagainst>
-         <Selection>
-            <Keeper>
-               <Firstname>Robbin</Firstname>
-               <Lastname>Ruiter</Lastname>
-               <Age>27</Age>
-               <Price>151462</Price>
-               <Diving>73</Diving>
-               <Handling>76</Handling>
-               <Kicking>72</Kicking>
-               <Reflexes>77</Reflexes>
-               <Speed>55</Speed>
-               <Positioning>75</Positioning>
-               <Height>196</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Yassin</Firstname>
-               <Lastname>Ayoub</Lastname>
-               <Age>20</Age>
-               <Price>138387</Price>
-               <Pace>71</Pace>
-               <Shooting>56</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>66</Defending>
-               <Physical>66</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Fernando</Firstname>
-               <Lastname>Quesada</Lastname>
-               <Age>20</Age>
-               <Price>152480</Price>
-               <Pace>71</Pace>
-               <Shooting>56</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>66</Defending>
-               <Physical>66</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Leon</Firstname>
-               <Lastname>Kogel</Lastname>
-               <Age>23</Age>
-               <Price>140273</Price>
-               <Pace>53</Pace>
-               <Shooting>68</Shooting>
-               <Passing>51</Passing>
-               <Dribbling>56</Dribbling>
-               <Defending>51</Defending>
-               <Physical>69</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Mark</Firstname>
-               <Lastname>Maarel</Lastname>
-               <Age>25</Age>
-               <Price>128958</Price>
-               <Pace>73</Pace>
-               <Shooting>41</Shooting>
-               <Passing>54</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>67</Defending>
-               <Physical>68</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ruud</Firstname>
-               <Lastname>Boymans</Lastname>
-               <Age>25</Age>
-               <Price>141075</Price>
-               <Pace>53</Pace>
-               <Shooting>70</Shooting>
-               <Passing>50</Passing>
-               <Dribbling>56</Dribbling>
-               <Defending>29</Defending>
-               <Physical>78</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ramon</Firstname>
-               <Lastname>Leeuwin</Lastname>
-               <Age>27</Age>
-               <Price>153977</Price>
-               <Pace>71</Pace>
-               <Shooting>45</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>69</Defending>
-               <Physical>78</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Willem</Firstname>
-               <Lastname>Janssen</Lastname>
-               <Age>28</Age>
-               <Price>137865</Price>
-               <Pace>65</Pace>
-               <Shooting>70</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>60</Defending>
-               <Physical>77</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Nacer</Firstname>
-               <Lastname>Barazite</Lastname>
-               <Age>24</Age>
-               <Price>128833</Price>
-               <Pace>72</Pace>
-               <Shooting>66</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>78</Dribbling>
-               <Defending>30</Defending>
-               <Physical>62</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Anouar</Firstname>
-               <Lastname>Kali</Lastname>
-               <Age>23</Age>
-               <Price>130574</Price>
-               <Pace>67</Pace>
-               <Shooting>61</Shooting>
-               <Passing>75</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>57</Defending>
-               <Physical>65</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Adam</Firstname>
-               <Lastname>Sarota</Lastname>
-               <Age>26</Age>
-               <Price>151106</Price>
-               <Pace>69</Pace>
-               <Shooting>58</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>59</Defending>
-               <Physical>72</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-         </Selection>
-         <Teammembers>
-            <Keeper>
-               <Firstname>Robbin</Firstname>
-               <Lastname>Ruiter</Lastname>
-               <Age>27</Age>
-               <Price>151462</Price>
-               <Diving>73</Diving>
-               <Handling>76</Handling>
-               <Kicking>72</Kicking>
-               <Reflexes>77</Reflexes>
-               <Speed>55</Speed>
-               <Positioning>75</Positioning>
-               <Height>196</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Yassin</Firstname>
-               <Lastname>Ayoub</Lastname>
-               <Age>20</Age>
-               <Price>138387</Price>
-               <Pace>71</Pace>
-               <Shooting>56</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>66</Defending>
-               <Physical>66</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Fernando</Firstname>
-               <Lastname>Quesada</Lastname>
-               <Age>20</Age>
-               <Price>152480</Price>
-               <Pace>71</Pace>
-               <Shooting>56</Shooting>
-               <Passing>70</Passing>
-               <Dribbling>75</Dribbling>
-               <Defending>66</Defending>
-               <Physical>66</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Leon</Firstname>
-               <Lastname>Kogel</Lastname>
-               <Age>23</Age>
-               <Price>140273</Price>
-               <Pace>53</Pace>
-               <Shooting>68</Shooting>
-               <Passing>51</Passing>
-               <Dribbling>56</Dribbling>
-               <Defending>51</Defending>
-               <Physical>69</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Mark</Firstname>
-               <Lastname>Maarel</Lastname>
-               <Age>25</Age>
-               <Price>128958</Price>
-               <Pace>73</Pace>
-               <Shooting>41</Shooting>
-               <Passing>54</Passing>
-               <Dribbling>62</Dribbling>
-               <Defending>67</Defending>
-               <Physical>68</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ruud</Firstname>
-               <Lastname>Boymans</Lastname>
-               <Age>25</Age>
-               <Price>141075</Price>
-               <Pace>53</Pace>
-               <Shooting>70</Shooting>
-               <Passing>50</Passing>
-               <Dribbling>56</Dribbling>
-               <Defending>29</Defending>
-               <Physical>78</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Michael</Firstname>
-               <Lastname>Zullo</Lastname>
-               <Age>26</Age>
-               <Price>127979</Price>
-               <Pace>81</Pace>
-               <Shooting>50</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>71</Dribbling>
-               <Defending>59</Defending>
-               <Physical>60</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Ramon</Firstname>
-               <Lastname>Leeuwin</Lastname>
-               <Age>27</Age>
-               <Price>153977</Price>
-               <Pace>71</Pace>
-               <Shooting>45</Shooting>
-               <Passing>60</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>69</Defending>
-               <Physical>78</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Willem</Firstname>
-               <Lastname>Janssen</Lastname>
-               <Age>28</Age>
-               <Price>137865</Price>
-               <Pace>65</Pace>
-               <Shooting>70</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>60</Defending>
-               <Physical>77</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Chris</Firstname>
-               <Lastname>Kum</Lastname>
-               <Age>29</Age>
-               <Price>118182</Price>
-               <Pace>74</Pace>
-               <Shooting>42</Shooting>
-               <Passing>53</Passing>
-               <Dribbling>59</Dribbling>
-               <Defending>66</Defending>
-               <Physical>71</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Nacer</Firstname>
-               <Lastname>Barazite</Lastname>
-               <Age>24</Age>
-               <Price>128833</Price>
-               <Pace>72</Pace>
-               <Shooting>66</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>78</Dribbling>
-               <Defending>30</Defending>
-               <Physical>62</Physical>
-               <Type>CAM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Edouard</Firstname>
-               <Lastname>Duplan</Lastname>
-               <Age>31</Age>
-               <Price>115604</Price>
-               <Pace>69</Pace>
-               <Shooting>61</Shooting>
-               <Passing>65</Passing>
-               <Dribbling>74</Dribbling>
-               <Defending>36</Defending>
-               <Physical>56</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Keeper>
-               <Firstname>Jeroen</Firstname>
-               <Lastname>Verhoeven</Lastname>
-               <Age>34</Age>
-               <Price>141913</Price>
-               <Diving>57</Diving>
-               <Handling>67</Handling>
-               <Kicking>70</Kicking>
-               <Reflexes>71</Reflexes>
-               <Speed>28</Speed>
-               <Positioning>65</Positioning>
-               <Height>197</Height>
-               <Type>GK</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Keeper>
-            <Player>
-               <Firstname>Rubio</Firstname>
-               <Lastname>Rubin</Lastname>
-               <Age>18</Age>
-               <Price>146201</Price>
-               <Pace>69</Pace>
-               <Shooting>56</Shooting>
-               <Passing>50</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>27</Defending>
-               <Physical>48</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Rodney</Firstname>
-               <Lastname>Antwi</Lastname>
-               <Age>19</Age>
-               <Price>136506</Price>
-               <Pace>89</Pace>
-               <Shooting>48</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>63</Dribbling>
-               <Defending>28</Defending>
-               <Physical>54</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jeff</Firstname>
-               <Lastname>Hardeveld</Lastname>
-               <Age>19</Age>
-               <Price>170502</Price>
-               <Pace>63</Pace>
-               <Shooting>38</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>55</Dribbling>
-               <Defending>61</Defending>
-               <Physical>65</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kristoffer</Firstname>
-               <Lastname>Petersen</Lastname>
-               <Age>20</Age>
-               <Price>164534</Price>
-               <Pace>78</Pace>
-               <Shooting>60</Shooting>
-               <Passing>53</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>33</Defending>
-               <Physical>50</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Sean</Firstname>
-               <Lastname>Klaiber</Lastname>
-               <Age>20</Age>
-               <Price>117942</Price>
-               <Pace>72</Pace>
-               <Shooting>52</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>58</Dribbling>
-               <Defending>58</Defending>
-               <Physical>66</Physical>
-               <Type>RB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Gyliano</Firstname>
-               <Lastname>Velzen</Lastname>
-               <Age>20</Age>
-               <Price>141167</Price>
-               <Pace>80</Pace>
-               <Shooting>45</Shooting>
-               <Passing>55</Passing>
-               <Dribbling>66</Dribbling>
-               <Defending>27</Defending>
-               <Physical>60</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Mark</Firstname>
-               <Lastname>Diemers</Lastname>
-               <Age>21</Age>
-               <Price>174871</Price>
-               <Pace>64</Pace>
-               <Shooting>59</Shooting>
-               <Passing>64</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>56</Defending>
-               <Physical>56</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Yannick</Firstname>
-               <Lastname>Cortie</Lastname>
-               <Age>21</Age>
-               <Price>130072</Price>
-               <Pace>67</Pace>
-               <Shooting>33</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>54</Dribbling>
-               <Defending>62</Defending>
-               <Physical>60</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Thomas</Firstname>
-               <Lastname>Oar</Lastname>
-               <Age>23</Age>
-               <Price>136942</Price>
-               <Pace>80</Pace>
-               <Shooting>60</Shooting>
-               <Passing>67</Passing>
-               <Dribbling>72</Dribbling>
-               <Defending>32</Defending>
-               <Physical>51</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Anouar</Firstname>
-               <Lastname>Kali</Lastname>
-               <Age>23</Age>
-               <Price>130574</Price>
-               <Pace>67</Pace>
-               <Shooting>61</Shooting>
-               <Passing>75</Passing>
-               <Dribbling>70</Dribbling>
-               <Defending>57</Defending>
-               <Physical>65</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Gevero</Firstname>
-               <Lastname>Markiet</Lastname>
-               <Age>23</Age>
-               <Price>161868</Price>
-               <Pace>63</Pace>
-               <Shooting>31</Shooting>
-               <Passing>49</Passing>
-               <Dribbling>59</Dribbling>
-               <Defending>63</Defending>
-               <Physical>78</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Danny</Firstname>
-               <Lastname>Verbeek</Lastname>
-               <Age>24</Age>
-               <Price>165055</Price>
-               <Pace>84</Pace>
-               <Shooting>57</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>69</Dribbling>
-               <Defending>24</Defending>
-               <Physical>59</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kai</Firstname>
-               <Lastname>Heerings</Lastname>
-               <Age>24</Age>
-               <Price>154513</Price>
-               <Pace>63</Pace>
-               <Shooting>29</Shooting>
-               <Passing>48</Passing>
-               <Dribbling>48</Dribbling>
-               <Defending>66</Defending>
-               <Physical>66</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Adam</Firstname>
-               <Lastname>Sarota</Lastname>
-               <Age>26</Age>
-               <Price>151106</Price>
-               <Pace>69</Pace>
-               <Shooting>58</Shooting>
-               <Passing>68</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>59</Defending>
-               <Physical>72</Physical>
-               <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -8957,38 +7694,6 @@
                <Duration>0</Duration>
             </Keeper>
             <Player>
-               <Firstname>Bas</Firstname>
-               <Lastname>Kuipers</Lastname>
-               <Age>20</Age>
-               <Price>132457</Price>
-               <Pace>65</Pace>
-               <Shooting>38</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>60</Dribbling>
-               <Defending>60</Defending>
-               <Physical>61</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Elso</Firstname>
-               <Lastname>Brito</Lastname>
-               <Age>20</Age>
-               <Price>170810</Price>
-               <Pace>70</Pace>
-               <Shooting>48</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>58</Defending>
-               <Physical>56</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Marko</Firstname>
                <Lastname>Maletic</Lastname>
                <Age>21</Age>
@@ -9016,38 +7721,6 @@
                <Defending>36</Defending>
                <Physical>66</Physical>
                <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Tom</Firstname>
-               <Lastname>Weert</Lastname>
-               <Age>24</Age>
-               <Price>158277</Price>
-               <Pace>65</Pace>
-               <Shooting>64</Shooting>
-               <Passing>48</Passing>
-               <Dribbling>61</Dribbling>
-               <Defending>27</Defending>
-               <Physical>58</Physical>
-               <Type>ST</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jeff</Firstname>
-               <Lastname>Stans</Lastname>
-               <Age>24</Age>
-               <Price>171044</Price>
-               <Pace>63</Pace>
-               <Shooting>56</Shooting>
-               <Passing>63</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>64</Defending>
-               <Physical>72</Physical>
-               <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -9116,6 +7789,134 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
+            <Player>
+               <Firstname>Daan</Firstname>
+               <Lastname>Blij</Lastname>
+               <Age>21</Age>
+               <Price>139042</Price>
+               <Pace>68</Pace>
+               <Shooting>63</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>51</Defending>
+               <Physical>56</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jordan</Firstname>
+               <Lastname>Botoka</Lastname>
+               <Age>21</Age>
+               <Price>148641</Price>
+               <Pace>86</Pace>
+               <Shooting>62</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>27</Defending>
+               <Physical>64</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kevin</Firstname>
+               <Lastname>Vermeulen</Lastname>
+               <Age>24</Age>
+               <Price>151869</Price>
+               <Pace>65</Pace>
+               <Shooting>56</Shooting>
+               <Passing>59</Passing>
+               <Dribbling>60</Dribbling>
+               <Defending>56</Defending>
+               <Physical>67</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Rick</Firstname>
+               <Lastname>Kruys</Lastname>
+               <Age>29</Age>
+               <Price>146889</Price>
+               <Pace>51</Pace>
+               <Shooting>54</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>61</Dribbling>
+               <Defending>58</Defending>
+               <Physical>65</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Bas</Firstname>
+               <Lastname>Kuipers</Lastname>
+               <Age>20</Age>
+               <Price>132457</Price>
+               <Pace>65</Pace>
+               <Shooting>38</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>60</Dribbling>
+               <Defending>60</Defending>
+               <Physical>61</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Elso</Firstname>
+               <Lastname>Brito</Lastname>
+               <Age>20</Age>
+               <Price>170810</Price>
+               <Pace>70</Pace>
+               <Shooting>48</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>58</Defending>
+               <Physical>56</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Tom</Firstname>
+               <Lastname>Weert</Lastname>
+               <Age>24</Age>
+               <Price>158277</Price>
+               <Pace>65</Pace>
+               <Shooting>64</Shooting>
+               <Passing>48</Passing>
+               <Dribbling>61</Dribbling>
+               <Defending>27</Defending>
+               <Physical>58</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jeff</Firstname>
+               <Lastname>Stans</Lastname>
+               <Age>24</Age>
+               <Price>171044</Price>
+               <Pace>63</Pace>
+               <Shooting>56</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>64</Defending>
+               <Physical>72</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
             <Keeper>
                <Firstname>Alessandro</Firstname>
                <Lastname>Damen</Lastname>
@@ -9150,38 +7951,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Daan</Firstname>
-               <Lastname>Blij</Lastname>
-               <Age>21</Age>
-               <Price>139042</Price>
-               <Pace>68</Pace>
-               <Shooting>63</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>64</Dribbling>
-               <Defending>51</Defending>
-               <Physical>56</Physical>
-               <Type>CM</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Jordan</Firstname>
-               <Lastname>Botoka</Lastname>
-               <Age>21</Age>
-               <Price>148641</Price>
-               <Pace>86</Pace>
-               <Shooting>62</Shooting>
-               <Passing>56</Passing>
-               <Dribbling>68</Dribbling>
-               <Defending>27</Defending>
-               <Physical>64</Physical>
-               <Type>RW</Type>
-               <Available>true</Available>
-               <Card>1</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Jurgen</Firstname>
                <Lastname>Mattheij</Lastname>
                <Age>21</Age>
@@ -9209,22 +7978,6 @@
                <Defending>61</Defending>
                <Physical>68</Physical>
                <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Kevin</Firstname>
-               <Lastname>Vermeulen</Lastname>
-               <Age>24</Age>
-               <Price>151869</Price>
-               <Pace>65</Pace>
-               <Shooting>56</Shooting>
-               <Passing>59</Passing>
-               <Dribbling>60</Dribbling>
-               <Defending>56</Defending>
-               <Physical>67</Physical>
-               <Type>CM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -9289,22 +8042,6 @@
                <Defending>64</Defending>
                <Physical>71</Physical>
                <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
-               <Firstname>Rick</Firstname>
-               <Lastname>Kruys</Lastname>
-               <Age>29</Age>
-               <Price>146889</Price>
-               <Pace>51</Pace>
-               <Shooting>54</Shooting>
-               <Passing>62</Passing>
-               <Dribbling>61</Dribbling>
-               <Defending>58</Defending>
-               <Physical>65</Physical>
-               <Type>CDM</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
@@ -9969,13 +8706,1266 @@
          </Teammembers>
       </Team>
       <Team>
-         <Teamname>Heracles Almelo</Teamname>
-         <Virtual_budget>1830333</Virtual_budget>
-         <Budget>1830333</Budget>
-         <Points>15</Points>
-         <Goalsfor>18</Goalsfor>
+         <Teamname>FC Utrecht</Teamname>
+         <Virtual_budget>1500000</Virtual_budget>
+         <Budget>1500000</Budget>
+         <Points>7</Points>
+         <Goalsfor>9</Goalsfor>
          <Goalsagainst>13</Goalsagainst>
          <Selection>
+            <Keeper>
+               <Firstname>Robbin</Firstname>
+               <Lastname>Ruiter</Lastname>
+               <Age>27</Age>
+               <Price>151462</Price>
+               <Diving>73</Diving>
+               <Handling>76</Handling>
+               <Kicking>72</Kicking>
+               <Reflexes>77</Reflexes>
+               <Speed>55</Speed>
+               <Positioning>75</Positioning>
+               <Height>196</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Yassin</Firstname>
+               <Lastname>Ayoub</Lastname>
+               <Age>20</Age>
+               <Price>138387</Price>
+               <Pace>71</Pace>
+               <Shooting>56</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>66</Defending>
+               <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Fernando</Firstname>
+               <Lastname>Quesada</Lastname>
+               <Age>20</Age>
+               <Price>152480</Price>
+               <Pace>71</Pace>
+               <Shooting>56</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>66</Defending>
+               <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Leon</Firstname>
+               <Lastname>Kogel</Lastname>
+               <Age>23</Age>
+               <Price>140273</Price>
+               <Pace>53</Pace>
+               <Shooting>68</Shooting>
+               <Passing>51</Passing>
+               <Dribbling>56</Dribbling>
+               <Defending>51</Defending>
+               <Physical>69</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mark</Firstname>
+               <Lastname>Maarel</Lastname>
+               <Age>25</Age>
+               <Price>128958</Price>
+               <Pace>73</Pace>
+               <Shooting>41</Shooting>
+               <Passing>54</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>67</Defending>
+               <Physical>68</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ruud</Firstname>
+               <Lastname>Boymans</Lastname>
+               <Age>25</Age>
+               <Price>141075</Price>
+               <Pace>53</Pace>
+               <Shooting>70</Shooting>
+               <Passing>50</Passing>
+               <Dribbling>56</Dribbling>
+               <Defending>29</Defending>
+               <Physical>78</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ramon</Firstname>
+               <Lastname>Leeuwin</Lastname>
+               <Age>27</Age>
+               <Price>153977</Price>
+               <Pace>71</Pace>
+               <Shooting>45</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>69</Defending>
+               <Physical>78</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Willem</Firstname>
+               <Lastname>Janssen</Lastname>
+               <Age>28</Age>
+               <Price>137865</Price>
+               <Pace>65</Pace>
+               <Shooting>70</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>60</Defending>
+               <Physical>77</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Nacer</Firstname>
+               <Lastname>Barazite</Lastname>
+               <Age>24</Age>
+               <Price>128833</Price>
+               <Pace>72</Pace>
+               <Shooting>66</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>78</Dribbling>
+               <Defending>30</Defending>
+               <Physical>62</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Anouar</Firstname>
+               <Lastname>Kali</Lastname>
+               <Age>23</Age>
+               <Price>130574</Price>
+               <Pace>67</Pace>
+               <Shooting>61</Shooting>
+               <Passing>75</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>57</Defending>
+               <Physical>65</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Adam</Firstname>
+               <Lastname>Sarota</Lastname>
+               <Age>26</Age>
+               <Price>151106</Price>
+               <Pace>69</Pace>
+               <Shooting>58</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>59</Defending>
+               <Physical>72</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+         </Selection>
+         <Teammembers>
+            <Keeper>
+               <Firstname>Robbin</Firstname>
+               <Lastname>Ruiter</Lastname>
+               <Age>27</Age>
+               <Price>151462</Price>
+               <Diving>73</Diving>
+               <Handling>76</Handling>
+               <Kicking>72</Kicking>
+               <Reflexes>77</Reflexes>
+               <Speed>55</Speed>
+               <Positioning>75</Positioning>
+               <Height>196</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Yassin</Firstname>
+               <Lastname>Ayoub</Lastname>
+               <Age>20</Age>
+               <Price>138387</Price>
+               <Pace>71</Pace>
+               <Shooting>56</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>66</Defending>
+               <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Fernando</Firstname>
+               <Lastname>Quesada</Lastname>
+               <Age>20</Age>
+               <Price>152480</Price>
+               <Pace>71</Pace>
+               <Shooting>56</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>66</Defending>
+               <Physical>66</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Leon</Firstname>
+               <Lastname>Kogel</Lastname>
+               <Age>23</Age>
+               <Price>140273</Price>
+               <Pace>53</Pace>
+               <Shooting>68</Shooting>
+               <Passing>51</Passing>
+               <Dribbling>56</Dribbling>
+               <Defending>51</Defending>
+               <Physical>69</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mark</Firstname>
+               <Lastname>Maarel</Lastname>
+               <Age>25</Age>
+               <Price>128958</Price>
+               <Pace>73</Pace>
+               <Shooting>41</Shooting>
+               <Passing>54</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>67</Defending>
+               <Physical>68</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ruud</Firstname>
+               <Lastname>Boymans</Lastname>
+               <Age>25</Age>
+               <Price>141075</Price>
+               <Pace>53</Pace>
+               <Shooting>70</Shooting>
+               <Passing>50</Passing>
+               <Dribbling>56</Dribbling>
+               <Defending>29</Defending>
+               <Physical>78</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ramon</Firstname>
+               <Lastname>Leeuwin</Lastname>
+               <Age>27</Age>
+               <Price>153977</Price>
+               <Pace>71</Pace>
+               <Shooting>45</Shooting>
+               <Passing>60</Passing>
+               <Dribbling>64</Dribbling>
+               <Defending>69</Defending>
+               <Physical>78</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Willem</Firstname>
+               <Lastname>Janssen</Lastname>
+               <Age>28</Age>
+               <Price>137865</Price>
+               <Pace>65</Pace>
+               <Shooting>70</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>60</Defending>
+               <Physical>77</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Nacer</Firstname>
+               <Lastname>Barazite</Lastname>
+               <Age>24</Age>
+               <Price>128833</Price>
+               <Pace>72</Pace>
+               <Shooting>66</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>78</Dribbling>
+               <Defending>30</Defending>
+               <Physical>62</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Anouar</Firstname>
+               <Lastname>Kali</Lastname>
+               <Age>23</Age>
+               <Price>130574</Price>
+               <Pace>67</Pace>
+               <Shooting>61</Shooting>
+               <Passing>75</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>57</Defending>
+               <Physical>65</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Adam</Firstname>
+               <Lastname>Sarota</Lastname>
+               <Age>26</Age>
+               <Price>151106</Price>
+               <Pace>69</Pace>
+               <Shooting>58</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>59</Defending>
+               <Physical>72</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Michael</Firstname>
+               <Lastname>Zullo</Lastname>
+               <Age>26</Age>
+               <Price>127979</Price>
+               <Pace>81</Pace>
+               <Shooting>50</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>71</Dribbling>
+               <Defending>59</Defending>
+               <Physical>60</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Chris</Firstname>
+               <Lastname>Kum</Lastname>
+               <Age>29</Age>
+               <Price>118182</Price>
+               <Pace>74</Pace>
+               <Shooting>42</Shooting>
+               <Passing>53</Passing>
+               <Dribbling>59</Dribbling>
+               <Defending>66</Defending>
+               <Physical>71</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Edouard</Firstname>
+               <Lastname>Duplan</Lastname>
+               <Age>31</Age>
+               <Price>115604</Price>
+               <Pace>69</Pace>
+               <Shooting>61</Shooting>
+               <Passing>65</Passing>
+               <Dribbling>74</Dribbling>
+               <Defending>36</Defending>
+               <Physical>56</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Keeper>
+               <Firstname>Jeroen</Firstname>
+               <Lastname>Verhoeven</Lastname>
+               <Age>34</Age>
+               <Price>141913</Price>
+               <Diving>57</Diving>
+               <Handling>67</Handling>
+               <Kicking>70</Kicking>
+               <Reflexes>71</Reflexes>
+               <Speed>28</Speed>
+               <Positioning>65</Positioning>
+               <Height>197</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Rubio</Firstname>
+               <Lastname>Rubin</Lastname>
+               <Age>18</Age>
+               <Price>146201</Price>
+               <Pace>69</Pace>
+               <Shooting>56</Shooting>
+               <Passing>50</Passing>
+               <Dribbling>68</Dribbling>
+               <Defending>27</Defending>
+               <Physical>48</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Rodney</Firstname>
+               <Lastname>Antwi</Lastname>
+               <Age>19</Age>
+               <Price>136506</Price>
+               <Pace>89</Pace>
+               <Shooting>48</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>63</Dribbling>
+               <Defending>28</Defending>
+               <Physical>54</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jeff</Firstname>
+               <Lastname>Hardeveld</Lastname>
+               <Age>19</Age>
+               <Price>170502</Price>
+               <Pace>63</Pace>
+               <Shooting>38</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>55</Dribbling>
+               <Defending>61</Defending>
+               <Physical>65</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kristoffer</Firstname>
+               <Lastname>Petersen</Lastname>
+               <Age>20</Age>
+               <Price>164534</Price>
+               <Pace>78</Pace>
+               <Shooting>60</Shooting>
+               <Passing>53</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>33</Defending>
+               <Physical>50</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Sean</Firstname>
+               <Lastname>Klaiber</Lastname>
+               <Age>20</Age>
+               <Price>117942</Price>
+               <Pace>72</Pace>
+               <Shooting>52</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>58</Dribbling>
+               <Defending>58</Defending>
+               <Physical>66</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Gyliano</Firstname>
+               <Lastname>Velzen</Lastname>
+               <Age>20</Age>
+               <Price>141167</Price>
+               <Pace>80</Pace>
+               <Shooting>45</Shooting>
+               <Passing>55</Passing>
+               <Dribbling>66</Dribbling>
+               <Defending>27</Defending>
+               <Physical>60</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mark</Firstname>
+               <Lastname>Diemers</Lastname>
+               <Age>21</Age>
+               <Price>174871</Price>
+               <Pace>64</Pace>
+               <Shooting>59</Shooting>
+               <Passing>64</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>56</Defending>
+               <Physical>56</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Yannick</Firstname>
+               <Lastname>Cortie</Lastname>
+               <Age>21</Age>
+               <Price>130072</Price>
+               <Pace>67</Pace>
+               <Shooting>33</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>54</Dribbling>
+               <Defending>62</Defending>
+               <Physical>60</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Thomas</Firstname>
+               <Lastname>Oar</Lastname>
+               <Age>23</Age>
+               <Price>136942</Price>
+               <Pace>80</Pace>
+               <Shooting>60</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>72</Dribbling>
+               <Defending>32</Defending>
+               <Physical>51</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Gevero</Firstname>
+               <Lastname>Markiet</Lastname>
+               <Age>23</Age>
+               <Price>161868</Price>
+               <Pace>63</Pace>
+               <Shooting>31</Shooting>
+               <Passing>49</Passing>
+               <Dribbling>59</Dribbling>
+               <Defending>63</Defending>
+               <Physical>78</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Danny</Firstname>
+               <Lastname>Verbeek</Lastname>
+               <Age>24</Age>
+               <Price>165055</Price>
+               <Pace>84</Pace>
+               <Shooting>57</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>69</Dribbling>
+               <Defending>24</Defending>
+               <Physical>59</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kai</Firstname>
+               <Lastname>Heerings</Lastname>
+               <Age>24</Age>
+               <Price>154513</Price>
+               <Pace>63</Pace>
+               <Shooting>29</Shooting>
+               <Passing>48</Passing>
+               <Dribbling>48</Dribbling>
+               <Defending>66</Defending>
+               <Physical>66</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+         </Teammembers>
+      </Team>
+      <Team>
+         <Teamname>Ajax</Teamname>
+         <Virtual_budget>1339716</Virtual_budget>
+         <Budget>1339716</Budget>
+         <Points>13</Points>
+         <Goalsfor>16</Goalsfor>
+         <Goalsagainst>10</Goalsagainst>
+         <Selection>
+            <Player>
+               <Firstname>Nicolai</Firstname>
+               <Lastname>Boilesen</Lastname>
+               <Age>22</Age>
+               <Price>162262</Price>
+               <Pace>78</Pace>
+               <Shooting>48</Shooting>
+               <Passing>64</Passing>
+               <Dribbling>74</Dribbling>
+               <Defending>72</Defending>
+               <Physical>72</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Joel</Firstname>
+               <Lastname>Veltman</Lastname>
+               <Age>22</Age>
+               <Price>170057</Price>
+               <Pace>69</Pace>
+               <Shooting>37</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>71</Dribbling>
+               <Defending>77</Defending>
+               <Physical>71</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ricardo</Firstname>
+               <Lastname>Rhijn</Lastname>
+               <Age>23</Age>
+               <Price>159844</Price>
+               <Pace>85</Pace>
+               <Shooting>52</Shooting>
+               <Passing>66</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>70</Defending>
+               <Physical>75</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kolbeinn</Firstname>
+               <Lastname>Sigthorsson</Lastname>
+               <Age>24</Age>
+               <Price>123246</Price>
+               <Pace>69</Pace>
+               <Shooting>72</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>42</Defending>
+               <Physical>77</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Niklas</Firstname>
+               <Lastname>Moisander</Lastname>
+               <Age>29</Age>
+               <Price>128226</Price>
+               <Pace>67</Pace>
+               <Shooting>49</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>76</Defending>
+               <Physical>74</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Niki</Firstname>
+               <Lastname>Zimling</Lastname>
+               <Age>29</Age>
+               <Price>119849</Price>
+               <Pace>65</Pace>
+               <Shooting>66</Shooting>
+               <Passing>69</Passing>
+               <Dribbling>73</Dribbling>
+               <Defending>72</Defending>
+               <Physical>80</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Keeper>
+               <Firstname>Jasper</Firstname>
+               <Lastname>Cillessen</Lastname>
+               <Age>25</Age>
+               <Price>146158</Price>
+               <Diving>77</Diving>
+               <Handling>80</Handling>
+               <Kicking>74</Kicking>
+               <Reflexes>78</Reflexes>
+               <Speed>54</Speed>
+               <Positioning>81</Positioning>
+               <Height>188</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Davy</Firstname>
+               <Lastname>Klaassen</Lastname>
+               <Age>21</Age>
+               <Price>144729</Price>
+               <Pace>74</Pace>
+               <Shooting>75</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>72</Dribbling>
+               <Defending>62</Defending>
+               <Physical>76</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lerin</Firstname>
+               <Lastname>Duarte</Lastname>
+               <Age>24</Age>
+               <Price>121474</Price>
+               <Pace>75</Pace>
+               <Shooting>68</Shooting>
+               <Passing>75</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>60</Defending>
+               <Physical>74</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lasse</Firstname>
+               <Lastname>Schone</Lastname>
+               <Age>28</Age>
+               <Price>118890</Price>
+               <Pace>67</Pace>
+               <Shooting>77</Shooting>
+               <Passing>77</Passing>
+               <Dribbling>78</Dribbling>
+               <Defending>52</Defending>
+               <Physical>60</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Viktor</Firstname>
+               <Lastname>Fischer</Lastname>
+               <Age>20</Age>
+               <Price>128241</Price>
+               <Pace>77</Pace>
+               <Shooting>71</Shooting>
+               <Passing>71</Passing>
+               <Dribbling>81</Dribbling>
+               <Defending>35</Defending>
+               <Physical>60</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+         </Selection>
+         <Teammembers>
+            <Player>
+               <Firstname>Nicolai</Firstname>
+               <Lastname>Boilesen</Lastname>
+               <Age>22</Age>
+               <Price>162262</Price>
+               <Pace>78</Pace>
+               <Shooting>48</Shooting>
+               <Passing>64</Passing>
+               <Dribbling>74</Dribbling>
+               <Defending>72</Defending>
+               <Physical>72</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Joel</Firstname>
+               <Lastname>Veltman</Lastname>
+               <Age>22</Age>
+               <Price>170057</Price>
+               <Pace>69</Pace>
+               <Shooting>37</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>71</Dribbling>
+               <Defending>77</Defending>
+               <Physical>71</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ricardo</Firstname>
+               <Lastname>Rhijn</Lastname>
+               <Age>23</Age>
+               <Price>159844</Price>
+               <Pace>85</Pace>
+               <Shooting>52</Shooting>
+               <Passing>66</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>70</Defending>
+               <Physical>75</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kolbeinn</Firstname>
+               <Lastname>Sigthorsson</Lastname>
+               <Age>24</Age>
+               <Price>123246</Price>
+               <Pace>69</Pace>
+               <Shooting>72</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>42</Defending>
+               <Physical>77</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Niklas</Firstname>
+               <Lastname>Moisander</Lastname>
+               <Age>29</Age>
+               <Price>128226</Price>
+               <Pace>67</Pace>
+               <Shooting>49</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>70</Dribbling>
+               <Defending>76</Defending>
+               <Physical>74</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>1</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Niki</Firstname>
+               <Lastname>Zimling</Lastname>
+               <Age>29</Age>
+               <Price>119849</Price>
+               <Pace>65</Pace>
+               <Shooting>66</Shooting>
+               <Passing>69</Passing>
+               <Dribbling>73</Dribbling>
+               <Defending>72</Defending>
+               <Physical>80</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Keeper>
+               <Firstname>Jasper</Firstname>
+               <Lastname>Cillessen</Lastname>
+               <Age>25</Age>
+               <Price>146158</Price>
+               <Diving>77</Diving>
+               <Handling>80</Handling>
+               <Kicking>74</Kicking>
+               <Reflexes>78</Reflexes>
+               <Speed>54</Speed>
+               <Positioning>81</Positioning>
+               <Height>188</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Davy</Firstname>
+               <Lastname>Klaassen</Lastname>
+               <Age>21</Age>
+               <Price>144729</Price>
+               <Pace>74</Pace>
+               <Shooting>75</Shooting>
+               <Passing>67</Passing>
+               <Dribbling>72</Dribbling>
+               <Defending>62</Defending>
+               <Physical>76</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lerin</Firstname>
+               <Lastname>Duarte</Lastname>
+               <Age>24</Age>
+               <Price>121474</Price>
+               <Pace>75</Pace>
+               <Shooting>68</Shooting>
+               <Passing>75</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>60</Defending>
+               <Physical>74</Physical>
+               <Type>CM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lasse</Firstname>
+               <Lastname>Schone</Lastname>
+               <Age>28</Age>
+               <Price>118890</Price>
+               <Pace>67</Pace>
+               <Shooting>77</Shooting>
+               <Passing>77</Passing>
+               <Dribbling>78</Dribbling>
+               <Defending>52</Defending>
+               <Physical>60</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Viktor</Firstname>
+               <Lastname>Fischer</Lastname>
+               <Age>20</Age>
+               <Price>128241</Price>
+               <Pace>77</Pace>
+               <Shooting>71</Shooting>
+               <Passing>71</Passing>
+               <Dribbling>81</Dribbling>
+               <Defending>35</Defending>
+               <Physical>60</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Arkadiusz</Firstname>
+               <Lastname>Milik</Lastname>
+               <Age>20</Age>
+               <Price>168930</Price>
+               <Pace>74</Pace>
+               <Shooting>68</Shooting>
+               <Passing>61</Passing>
+               <Dribbling>59</Dribbling>
+               <Defending>37</Defending>
+               <Physical>73</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Thulani</Firstname>
+               <Lastname>Serero</Lastname>
+               <Age>24</Age>
+               <Price>163318</Price>
+               <Pace>84</Pace>
+               <Shooting>55</Shooting>
+               <Passing>70</Passing>
+               <Dribbling>80</Dribbling>
+               <Defending>47</Defending>
+               <Physical>57</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Keeper>
+               <Firstname>Diederik</Firstname>
+               <Lastname>Boer</Lastname>
+               <Age>34</Age>
+               <Price>169959</Price>
+               <Diving>68</Diving>
+               <Handling>68</Handling>
+               <Kicking>57</Kicking>
+               <Reflexes>75</Reflexes>
+               <Speed>31</Speed>
+               <Positioning>71</Positioning>
+               <Height>194</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Nick</Firstname>
+               <Lastname>Viergever</Lastname>
+               <Age>25</Age>
+               <Price>131010</Price>
+               <Pace>67</Pace>
+               <Shooting>50</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>73</Defending>
+               <Physical>72</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Tobias</Firstname>
+               <Lastname>Sana</Lastname>
+               <Age>25</Age>
+               <Price>118462</Price>
+               <Pace>86</Pace>
+               <Shooting>59</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>30</Defending>
+               <Physical>43</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Keeper>
+               <Firstname>Peter</Firstname>
+               <Lastname>Leeuwenburgh</Lastname>
+               <Age>20</Age>
+               <Price>158840</Price>
+               <Diving>70</Diving>
+               <Handling>62</Handling>
+               <Kicking>59</Kicking>
+               <Reflexes>68</Reflexes>
+               <Speed>44</Speed>
+               <Positioning>58</Positioning>
+               <Height>196</Height>
+               <Type>GK</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Keeper>
+            <Player>
+               <Firstname>Riechedly</Firstname>
+               <Lastname>Bazoer</Lastname>
+               <Age>18</Age>
+               <Price>119939</Price>
+               <Pace>75</Pace>
+               <Shooting>51</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>61</Defending>
+               <Physical>73</Physical>
+               <Type>CDM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jairo</Firstname>
+               <Lastname>Riedewald</Lastname>
+               <Age>18</Age>
+               <Price>142963</Price>
+               <Pace>65</Pace>
+               <Shooting>44</Shooting>
+               <Passing>63</Passing>
+               <Dribbling>62</Dribbling>
+               <Defending>62</Defending>
+               <Physical>68</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Richairo</Firstname>
+               <Lastname>Zivkovic</Lastname>
+               <Age>18</Age>
+               <Price>134964</Price>
+               <Pace>79</Pace>
+               <Shooting>72</Shooting>
+               <Passing>55</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>30</Defending>
+               <Physical>56</Physical>
+               <Type>ST</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Robert</Firstname>
+               <Lastname>Muric</Lastname>
+               <Age>18</Age>
+               <Price>120403</Price>
+               <Pace>71</Pace>
+               <Shooting>51</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>26</Defending>
+               <Physical>44</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Kenny</Firstname>
+               <Lastname>Tete</Lastname>
+               <Age>19</Age>
+               <Price>156503</Price>
+               <Pace>77</Pace>
+               <Shooting>33</Shooting>
+               <Passing>53</Passing>
+               <Dribbling>67</Dribbling>
+               <Defending>62</Defending>
+               <Physical>68</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Anwar</Firstname>
+               <Lastname>El-Ghazi</Lastname>
+               <Age>19</Age>
+               <Price>137753</Price>
+               <Pace>77</Pace>
+               <Shooting>66</Shooting>
+               <Passing>64</Passing>
+               <Dribbling>77</Dribbling>
+               <Defending>27</Defending>
+               <Physical>66</Physical>
+               <Type>RW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Richardo</Firstname>
+               <Lastname>Kishna</Lastname>
+               <Age>19</Age>
+               <Price>174238</Price>
+               <Pace>86</Pace>
+               <Shooting>59</Shooting>
+               <Passing>69</Passing>
+               <Dribbling>81</Dribbling>
+               <Defending>29</Defending>
+               <Physical>60</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Lucas</Firstname>
+               <Lastname>Andersen</Lastname>
+               <Age>20</Age>
+               <Price>141835</Price>
+               <Pace>71</Pace>
+               <Shooting>57</Shooting>
+               <Passing>68</Passing>
+               <Dribbling>78</Dribbling>
+               <Defending>33</Defending>
+               <Physical>39</Physical>
+               <Type>CAM</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Stefano</Firstname>
+               <Lastname>Denswil</Lastname>
+               <Age>75</Age>
+               <Price>152524</Price>
+               <Pace>21</Pace>
+               <Shooting>64</Shooting>
+               <Passing>56</Passing>
+               <Dribbling>60</Dribbling>
+               <Defending>60</Defending>
+               <Physical>70</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Mike</Firstname>
+               <Lastname>Hoorn</Lastname>
+               <Age>22</Age>
+               <Price>134199</Price>
+               <Pace>59</Pace>
+               <Shooting>29</Shooting>
+               <Passing>51</Passing>
+               <Dribbling>51</Dribbling>
+               <Defending>72</Defending>
+               <Physical>78</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Ruben</Firstname>
+               <Lastname>Ligeon</Lastname>
+               <Age>22</Age>
+               <Price>166265</Price>
+               <Pace>89</Pace>
+               <Shooting>46</Shooting>
+               <Passing>62</Passing>
+               <Dribbling>75</Dribbling>
+               <Defending>64</Defending>
+               <Physical>57</Physical>
+               <Type>RB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
             <Keeper>
                <Firstname>Bram</Firstname>
                <Lastname>Castro</Lastname>
@@ -9993,6 +9983,16 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
+         </Teammembers>
+      </Team>
+      <Team>
+         <Teamname>Heracles Almelo</Teamname>
+         <Virtual_budget>1990617</Virtual_budget>
+         <Budget>1990617</Budget>
+         <Points>15</Points>
+         <Goalsfor>18</Goalsfor>
+         <Goalsagainst>13</Goalsagainst>
+         <Selection>
             <Player>
                <Firstname>Oussama</Firstname>
                <Lastname>Tannane</Lastname>
@@ -10153,25 +10153,25 @@
                <Card>0</Card>
                <Duration>0</Duration>
             </Player>
-         </Selection>
-         <Teammembers>
             <Keeper>
-               <Firstname>Bram</Firstname>
-               <Lastname>Castro</Lastname>
-               <Age>32</Age>
-               <Price>160284</Price>
-               <Diving>64</Diving>
-               <Handling>65</Handling>
-               <Kicking>66</Kicking>
-               <Reflexes>64</Reflexes>
-               <Speed>54</Speed>
-               <Positioning>64</Positioning>
-               <Height>191</Height>
+               <Firstname>Michael</Firstname>
+               <Lastname>Brouwer</Lastname>
+               <Age>21</Age>
+               <Price>152484</Price>
+               <Diving>63</Diving>
+               <Handling>58</Handling>
+               <Kicking>59</Kicking>
+               <Reflexes>60</Reflexes>
+               <Speed>40</Speed>
+               <Positioning>55</Positioning>
+               <Height>187</Height>
                <Type>GK</Type>
                <Available>true</Available>
                <Card>0</Card>
                <Duration>0</Duration>
             </Keeper>
+         </Selection>
+         <Teammembers>
             <Player>
                <Firstname>Oussama</Firstname>
                <Lastname>Tannane</Lastname>
@@ -10285,22 +10285,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Fahd</Firstname>
-               <Lastname>Aktaou</Lastname>
-               <Age>21</Age>
-               <Price>118687</Price>
-               <Pace>78</Pace>
-               <Shooting>43</Shooting>
-               <Passing>55</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>58</Defending>
-               <Physical>65</Physical>
-               <Type>LB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Mike</Firstname>
                <Lastname>Wierik</Lastname>
                <Age>22</Age>
@@ -10317,22 +10301,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Jeroen</Firstname>
-               <Lastname>Veldmate</Lastname>
-               <Age>26</Age>
-               <Price>149337</Price>
-               <Pace>33</Pace>
-               <Shooting>48</Shooting>
-               <Passing>57</Passing>
-               <Dribbling>46</Dribbling>
-               <Defending>64</Defending>
-               <Physical>76</Physical>
-               <Type>CB</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Milano</Firstname>
                <Lastname>Koenders</Lastname>
                <Age>28</Age>
@@ -10343,6 +10311,54 @@
                <Dribbling>63</Dribbling>
                <Defending>63</Defending>
                <Physical>71</Physical>
+               <Type>CB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Dragan</Firstname>
+               <Lastname>Paljic</Lastname>
+               <Age>31</Age>
+               <Price>130144</Price>
+               <Pace>75</Pace>
+               <Shooting>52</Shooting>
+               <Passing>58</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>61</Defending>
+               <Physical>64</Physical>
+               <Type>LW</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Fahd</Firstname>
+               <Lastname>Aktaou</Lastname>
+               <Age>21</Age>
+               <Price>118687</Price>
+               <Pace>78</Pace>
+               <Shooting>43</Shooting>
+               <Passing>55</Passing>
+               <Dribbling>65</Dribbling>
+               <Defending>58</Defending>
+               <Physical>65</Physical>
+               <Type>LB</Type>
+               <Available>true</Available>
+               <Card>0</Card>
+               <Duration>0</Duration>
+            </Player>
+            <Player>
+               <Firstname>Jeroen</Firstname>
+               <Lastname>Veldmate</Lastname>
+               <Age>26</Age>
+               <Price>149337</Price>
+               <Pace>33</Pace>
+               <Shooting>48</Shooting>
+               <Passing>57</Passing>
+               <Dribbling>46</Dribbling>
+               <Defending>64</Defending>
+               <Physical>76</Physical>
                <Type>CB</Type>
                <Available>true</Available>
                <Card>0</Card>
@@ -10559,22 +10575,6 @@
                <Duration>0</Duration>
             </Player>
             <Player>
-               <Firstname>Dragan</Firstname>
-               <Lastname>Paljic</Lastname>
-               <Age>31</Age>
-               <Price>130144</Price>
-               <Pace>75</Pace>
-               <Shooting>52</Shooting>
-               <Passing>58</Passing>
-               <Dribbling>65</Dribbling>
-               <Defending>61</Defending>
-               <Physical>64</Physical>
-               <Type>LW</Type>
-               <Available>true</Available>
-               <Card>0</Card>
-               <Duration>0</Duration>
-            </Player>
-            <Player>
                <Firstname>Bas</Firstname>
                <Lastname>Sibum</Lastname>
                <Age>32</Age>
@@ -10615,7 +10615,7 @@
    </Myteam>
    <Currentday>7</Currentday>
    <Buycounter>0</Buycounter>
-   <Sellcounter>2</Sellcounter>
+   <Sellcounter>3</Sellcounter>
    <Competition>
       <Round>
          <Day>1</Day>
