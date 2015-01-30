@@ -93,7 +93,7 @@ public class StartupMenu {
 					}
 				};
 				
-				Popup confirm = Warning.makeWarning("Do you really want to end \nthis presentation?", root, yes, no);
+				Popup confirm = Warning.makeWarning("Do you really want to quit?", root, yes, no);
 				confirm.show(primaryStage);	
 			}
 		});
