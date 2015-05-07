@@ -154,6 +154,9 @@ public class saveGame {
 		if(day < 34){
 			day++;
 		}
+		else if(day == 34){
+			setDay(0);
+		}
 		clearDBcardsInjuries();
 		sellc=0;
 		buyc=0;
